@@ -302,19 +302,19 @@ export default function InvoiceGeneratorPage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
           {
             "@context": "https://schema.org", "@type": "WebApplication",
-            "name": "Free Invoice Generator",
-            "description": "Create professional invoices instantly. Add line items, VAT, discounts and download as PDF. Free, no signup, no watermark.",
+            "name": "Invoice Generator",
+            "description": "Free invoice generator by ToolStack. Create professional invoices and download as PDF — no watermark, no signup. Supports 15 countries with automatic VAT, GST and Sales Tax. Free forever.",
             "url": "https://toolstack.tech/tools/invoice-generator",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-            "featureList": ["PDF download with no watermark", "VAT/tax calculation", "Discount support", "12 currencies", "No signup required", "100% private — runs in browser"],
+            "featureList": ["Watermark-free PDF download", "15 country tax profiles (VAT, GST, Sales Tax)", "100% browser-based — private", "Discount and line-item support", "No signup required"],
           },
           {
             "@context": "https://schema.org", "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-              { "@type": "ListItem", "position": 2, "name": "Finance", "item": "https://toolstack.tech/tools?category=finance" },
+              { "@type": "ListItem", "position": 2, "name": "Financial Tools", "item": "https://toolstack.tech/tools?category=finance" },
               { "@type": "ListItem", "position": 3, "name": "Invoice Generator", "item": "https://toolstack.tech/tools/invoice-generator" },
             ],
           },
@@ -336,13 +336,13 @@ export default function InvoiceGeneratorPage() {
         {/* Hero */}
         <div style={{ marginBottom: 48 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: "rgba(99,102,241,0.12)", border: "1px solid rgba(99,102,241,0.3)", marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe" }}>🧾 Finance · Free Forever · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe" }}>✓ Free Invoice Generator · No Watermark · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            Create a free<br /><span style={{ background: "linear-gradient(135deg, #6366f1, #a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>professional invoice.</span>
+            Free Invoice<br /><span style={{ background: "linear-gradient(135deg, #6366f1, #a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Generator.</span>
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", maxWidth: 540, lineHeight: 1.6 }}>
-            Add your details, line items and VAT — then download a clean PDF instantly. No watermark, no account, no cost.
+            Create professional invoices and download as PDF — no watermark, no signup, no subscription. Supports 15 countries with automatic currency, tax label and date format. Free forever.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["🔒 100% private", "📄 No watermark", "💸 No signup", "🌍 15 countries", "🧮 Tax & discounts"].map(b => (
@@ -609,14 +609,50 @@ export default function InvoiceGeneratorPage() {
         </div>
 
         {/* SEO CONTENT */}
-        <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 20, background: "rgba(99,102,241,0.05)", border: "1px solid rgba(99,102,241,0.13)" }}>
-          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>What makes a good invoice — and why freelancers get it wrong</h2>
-          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.75, margin: "0 0 16px" }}>
-            A professional invoice is more than a payment request — it is a legal document. For freelancers and small businesses in the UK, HMRC requires invoices to include your business name, address, the client&apos;s name and address, a unique invoice number, the issue date, a description of goods or services, the net amount, any VAT charged (with your VAT registration number if applicable), and the total amount due.
+        <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 24, background: "rgba(99,102,241,0.04)", border: "1px solid rgba(99,102,241,0.18)" }}>
+          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>What makes a professional invoice — and what free tools get wrong</h2>
+          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, marginBottom: 24 }}>
+            An <strong style={{ color: "white" }}>invoice</strong> is a formal billing document that records a transaction between a seller and a buyer. A professional invoice must include the seller&apos;s business name and address, the buyer&apos;s details, a unique invoice number, the issue and due dates, a line-item breakdown of services or products, any applicable tax (VAT, GST, Sales Tax), and the total amount due. Most countries have legal requirements about what invoices must contain to be tax-compliant.
           </p>
-          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.75, margin: 0 }}>
-            The most common invoicing mistakes are: missing invoice numbers (makes chasing late payments harder), not specifying a due date (legally, UK payment terms default to 30 days, but being explicit avoids disputes), omitting VAT information when VAT-registered, and not keeping copies. Using this generator, download every invoice as a PDF and store it in a folder by year — it&apos;s the simplest bookkeeping habit that saves hours at tax time.
+          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, marginBottom: 24 }}>
+            Most free invoice generators either add a watermark to the PDF, require an account, or send your business and client data to their servers. ToolStack&apos;s invoice generator runs entirely in your browser — nothing is transmitted. The PDF is generated client-side and downloaded directly to your device. Your business name, client name, bank details and invoice amounts never leave your machine.
           </p>
+
+          <div style={{ overflowX: "auto", margin: "20px 0 32px" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, textAlign: "left" }}>
+              <thead>
+                <tr style={{ background: "rgba(255,255,255,0.05)" }}>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#818cf8" }}>Feature</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>ToolStack</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Most free alternatives</th>
+                </tr>
+              </thead>
+              <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
+                <tr>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Watermark-free PDF</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>✓ Always</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Paid upgrade required</td>
+                </tr>
+                <tr style={{ background: "rgba(99,102,241,0.05)" }}>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Account required</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>No signup ever</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Usually required</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Data privacy</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>100% browser — never sent to server</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Stored on provider servers</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>VAT, GST, Sales Tax — handled automatically</h3>
+             <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
+               Tax requirements differ by country. The UK charges 20% standard VAT. Australia has 10% GST. Germany uses 19% MwSt. Ireland charges 23% VAT. The UAE has 5% VAT. When you select your country in this tool, the correct tax label and default rate are set automatically — so your invoice uses the right terminology and calculation for your jurisdiction. You can always override the rate manually for non-standard cases.
+             </p>
+          </div>
         </div>
 
         {/* FAQ */}

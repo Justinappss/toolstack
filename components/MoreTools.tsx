@@ -1,0 +1,396 @@
+"use client";
+import Link from "next/link";
+
+export const ALL_TOOLS = [
+  {
+    slug: "ai-prompt-generator",
+    name: "AI Prompt Generator",
+    desc: "Generate expert prompts for ChatGPT, Claude, Gemini & more using RISEN, STAR, Chain-of-Thought and 4 other frameworks.",
+    icon: "✦",
+    color: "#818cf8",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "AI",
+  },
+  {
+    slug: "word-counter",
+    name: "Word Counter & Readability",
+    desc: "Instant word count, character count, readability score, reading time, keyword density and AI grammar fixer.",
+    icon: "≡",
+    color: "#34d399",
+    bg: "rgba(52,211,153,0.1)",
+    border: "rgba(52,211,153,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "meta-description-generator",
+    name: "Meta Description Generator",
+    desc: "Generate SEO-optimised meta descriptions for any page. Character counter included. GPT-4o powered.",
+    icon: "⌖",
+    color: "#fbbf24",
+    bg: "rgba(251,191,36,0.1)",
+    border: "rgba(251,191,36,0.25)",
+    badge: "SEO",
+  },
+  {
+    slug: "email-subject-line-tester",
+    name: "Email Subject Line Tester",
+    desc: "Score your email subject lines for open rate potential, spam triggers and emotional power words.",
+    icon: "✉",
+    color: "#f472b6",
+    bg: "rgba(244,114,182,0.1)",
+    border: "rgba(244,114,182,0.25)",
+    badge: "Marketing",
+  },
+  {
+    slug: "hashtag-generator",
+    name: "Hashtag Generator",
+    desc: "Generate targeted hashtags for Instagram, TikTok, LinkedIn, YouTube & X. AI-powered 3-tier mix: popular, growing and niche hashtags.",
+    icon: "#",
+    color: "#a78bfa",
+    bg: "rgba(167,139,250,0.1)",
+    border: "rgba(167,139,250,0.25)",
+    badge: "Social",
+  },
+  {
+    slug: "blog-title-generator",
+    name: "Blog Title Generator",
+    desc: "Generate 10 click-worthy blog titles from any topic. SEO, listicles, how-tos, curiosity hooks and more. GPT-4o powered.",
+    icon: "✍",
+    color: "#f59e0b",
+    bg: "rgba(245,158,11,0.1)",
+    border: "rgba(245,158,11,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "password-generator",
+    name: "Password Generator",
+    desc: "Cryptographically secure random passwords. Custom length, symbols, numbers. Runs entirely in your browser.",
+    icon: "⚿",
+    color: "#10b981",
+    bg: "rgba(16,185,129,0.1)",
+    border: "rgba(16,185,129,0.25)",
+    badge: "Security",
+  },
+  {
+    slug: "qr-code-generator",
+    name: "QR Code Generator",
+    desc: "Generate QR codes for URLs, WiFi, email, phone and text. Free PNG & SVG download. No signup, no expiry, 100% private.",
+    icon: "⬛",
+    color: "#818cf8",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "Utility",
+  },
+  {
+    slug: "vat-calculator",
+    name: "VAT Calculator",
+    desc: "Add or remove VAT instantly for 40+ countries. UK, EU, UAE, Australia and more. Standard and reduced rates. Invoice calculator included.",
+    icon: "🧮",
+    color: "#fbbf24",
+    bg: "rgba(251,191,36,0.1)",
+    border: "rgba(251,191,36,0.25)",
+    badge: "Finance",
+  },
+  {
+    slug: "invoice-generator",
+    name: "Invoice Generator",
+    desc: "Create professional invoices in seconds. Add line items, VAT, discounts and download as PDF. Free, no signup, no watermark.",
+    icon: "🧾",
+    color: "#818cf8",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "Finance",
+  },
+  {
+    slug: "code-diff-checker",
+    name: "Code Diff Checker",
+    desc: "Compare two JSON or code files side-by-side with an IDE-grade visual diff editor. Instantly spot additions, deletions, and modifications.",
+    icon: "±",
+    color: "#f43f5e",
+    bg: "rgba(244,63,94,0.1)",
+    border: "rgba(244,63,94,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "json-formatter",
+    name: "JSON Formatter",
+    desc: "Format, validate and beautify JSON instantly. Syntax highlighting, error detection with line numbers, minify mode. 100% private.",
+    icon: "{ }",
+    color: "#34d399",
+    bg: "rgba(52,211,153,0.1)",
+    border: "rgba(52,211,153,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "paraphrasing-tool",
+    name: "Paraphrasing Tool",
+    desc: "Rewrite any text with AI. 6 modes: Standard, Fluency, Formal, Academic, Creative and Shorten. GPT-4o powered, no word limit, no signup.",
+    icon: "↔",
+    color: "#a78bfa",
+    bg: "rgba(167,139,250,0.1)",
+    border: "rgba(167,139,250,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "grammar-checker",
+    name: "Grammar Checker",
+    desc: "Check and fix grammar, spelling and punctuation with AI. Get corrected text plus explanations for every fix. GPT-4o powered, no word limit.",
+    icon: "✓",
+    color: "#38bdf8",
+    bg: "rgba(56,189,248,0.1)",
+    border: "rgba(56,189,248,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "text-summarizer",
+    name: "Text Summarizer",
+    desc: "Summarise any text with AI. 4 modes: paragraph, bullet points, key takeaways and executive summary. GPT-4o powered, no word limit, no signup.",
+    icon: "¶",
+    color: "#f97316",
+    bg: "rgba(249,115,22,0.1)",
+    border: "rgba(249,115,22,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "case-converter",
+    name: "Case Converter",
+    desc: "Convert text to UPPERCASE, lowercase, Title Case, Sentence case, camelCase, snake_case, PascalCase, kebab-case and more. 10 modes, instant, free.",
+    icon: "Aa",
+    color: "#14b8a6",
+    bg: "rgba(20,184,166,0.1)",
+    border: "rgba(20,184,166,0.25)",
+    badge: "Utility",
+  },
+  {
+    slug: "lorem-ipsum-generator",
+    name: "Lorem Ipsum Generator",
+    desc: "Generate Lorem Ipsum placeholder text instantly. Paragraphs, sentences, words or list items. HTML output included. Free, no signup, unlimited.",
+    icon: "¶",
+    color: "#c084fc",
+    bg: "rgba(168,85,247,0.1)",
+    border: "rgba(168,85,247,0.25)",
+    badge: "Utility",
+  },
+  {
+    slug: "cover-letter-generator",
+    name: "Cover Letter Generator",
+    desc: "Generate a professional AI cover letter in seconds. 4 tone modes: Professional, Enthusiastic, Concise and Creative. GPT-4o powered, unlimited, no signup.",
+    icon: "✉",
+    color: "#f43f5e",
+    bg: "rgba(244,63,94,0.1)",
+    border: "rgba(244,63,94,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "character-counter",
+    name: "Character Counter",
+    desc: "Count characters, words, sentences and paragraphs in real time. Live progress bars for Twitter, Instagram, LinkedIn, YouTube, TikTok and SMS limits.",
+    icon: "Abc",
+    color: "#06b6d4",
+    bg: "rgba(6,182,212,0.1)",
+    border: "rgba(6,182,212,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "business-name-generator",
+    name: "Business Name Generator",
+    desc: "AI brand architect mode — generate premium names with GoDaddy & TM checks.",
+    icon: "❖",
+    color: "#818cf8",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "Business",
+  },
+  {
+    name: "YouTube SEO Elite",
+    slug: "youtube-tag-generator",
+    desc: "Generate high-ranking tags & description hooks with AI.",
+    icon: "📹",
+    color: "#f87171",
+    bg: "rgba(255,0,0,0.1)",
+    border: "rgba(255,0,0,0.25)",
+    badge: "SEO",
+  },
+  {
+    slug: "email-signature-generator",
+    name: "Email Signature Generator",
+    desc: "Create professional HTML email signatures for Gmail, Outlook & Apple Mail. 4 templates, custom colours, social links. Free, no signup.",
+    icon: "✉",
+    color: "#38bdf8",
+    bg: "rgba(56,189,248,0.1)",
+    border: "rgba(56,189,248,0.25)",
+    badge: "Utility",
+  },
+  {
+    slug: "css-gradient-generator",
+    name: "CSS Gradient Generator",
+    desc: "Create beautiful CSS gradients with a visual editor. Linear, radial and conic with 12+ curated presets. Copy CSS instantly.",
+    icon: "🎨",
+    color: "#818cf8",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "color-contrast-checker",
+    name: "Colour Contrast Checker",
+    desc: "Check your colour combinations against WCAG guidelines for AA and AAA compliance.",
+    icon: "👁️",
+    color: "#c084fc",
+    bg: "rgba(168,85,247,0.1)",
+    border: "rgba(168,85,247,0.25)",
+    badge: "Design",
+  },
+  {
+    slug: "favicon-generator",
+    name: "Favicon Generator",
+    desc: "Generate perfect favicons from text or emoji in all standard sizes including Apple Touch constraints.",
+    icon: "🌟",
+    color: "#f43f5e",
+    bg: "rgba(244,63,94,0.1)",
+    border: "rgba(244,63,94,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "base64-encoder-decoder",
+    name: "Base64 Converter",
+    desc: "Instantly encode text to Base64 or decode Base64 strings back to text securely in your browser.",
+    icon: "🔐",
+    color: "#a78bfa",
+    bg: "rgba(139,92,246,0.1)",
+    border: "rgba(139,92,246,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "utm-builder",
+    name: "UTM Builder",
+    desc: "Generate tracking links for your campaigns to monitor traffic perfectly in Google Analytics.",
+    icon: "🎯",
+    color: "#60a5fa",
+    bg: "rgba(59,130,246,0.1)",
+    border: "rgba(59,130,246,0.25)",
+    badge: "Marketing",
+  },
+  {
+    slug: "markdown-editor",
+    name: "Markdown Editor",
+    desc: "Instantly render Markdown syntax into clean, standard HTML code with real-time visual previews.",
+    icon: "📝",
+    color: "#10b981",
+    bg: "rgba(16,185,129,0.1)",
+    border: "rgba(16,185,129,0.25)",
+    badge: "Writing",
+  },
+  {
+    slug: "regex-tester",
+    name: "Regex Tester",
+    desc: "Test, build, and debug Regular Expressions with real-time semantic highlighting and exact indexing.",
+    icon: "🔬",
+    color: "#a78bfa",
+    bg: "rgba(167,139,250,0.1)",
+    border: "rgba(167,139,250,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "sql-formatter",
+    name: "SQL Formatter",
+    desc: "Beautify raw, minified database queries into perfectly indented, readable syntax.",
+    icon: "🗄️",
+    color: "#60a5fa",
+    bg: "rgba(96,165,250,0.1)",
+    border: "rgba(96,165,250,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "unix-timestamp-converter",
+    name: "Epoch Converter",
+    desc: "Instantly translate Unix epoch integers into formatted dates across timezones.",
+    icon: "⏱️",
+    color: "#10b981",
+    bg: "rgba(16,185,129,0.1)",
+    border: "rgba(16,185,129,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "tip-calculator",
+    name: "Tip Calculator",
+    desc: "Calculate tips and split bills instantly. Tipping customs for 20+ countries, service quality presets, and per-person amounts.",
+    icon: "🍽️",
+    color: "#34d399",
+    bg: "rgba(52,211,153,0.1)",
+    border: "rgba(52,211,153,0.25)",
+    badge: "Finance",
+  },
+];
+
+export function MoreTools({ currentSlug }: { currentSlug: string }) {
+  const tools = ALL_TOOLS.filter(t => t.slug !== currentSlug);
+
+  return (
+    <div style={{ marginTop: 64, marginBottom: 16 }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 24, flexWrap: "wrap", gap: 12 }}>
+        <div>
+          <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 4px", letterSpacing: "-0.02em" }}>
+            More Free Tools
+          </h2>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: 0 }}>
+            60 tools being built — all free, no signup, instant results.
+          </p>
+        </div>
+        <Link href="/tools" style={{
+          display: "inline-flex", alignItems: "center", gap: 6,
+          fontSize: 13, fontWeight: 700, color: "#a5b4fc",
+          padding: "8px 16px", borderRadius: 10,
+          background: "rgba(99,102,241,0.1)", border: "1px solid rgba(99,102,241,0.25)",
+          textDecoration: "none",
+        }}
+          onMouseEnter={e => { e.currentTarget.style.background = "rgba(99,102,241,0.2)"; }}
+          onMouseLeave={e => { e.currentTarget.style.background = "rgba(99,102,241,0.1)"; }}
+        >
+          View all tools →
+        </Link>
+      </div>
+
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+        {tools.map(tool => (
+          <Link key={tool.slug} href={`/tools/${tool.slug}`} style={{ textDecoration: "none" }}>
+            <div style={{
+              padding: "20px 22px",
+              borderRadius: 18,
+              background: tool.bg,
+              border: `1px solid ${tool.border}`,
+              height: "100%",
+              cursor: "pointer",
+              position: "relative" as const,
+            }}
+              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = `0 8px 24px ${tool.bg}`; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
+            >
+              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+                <div style={{
+                  width: 36, height: 36, borderRadius: 10,
+                  background: `${tool.color}22`,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: 16, color: tool.color, fontWeight: 700,
+                }}>{tool.icon}</div>
+                <span style={{
+                  fontSize: 11, fontWeight: 700, letterSpacing: "0.06em",
+                  padding: "3px 9px", borderRadius: 999,
+                  background: `${tool.color}18`,
+                  border: `1px solid ${tool.color}35`,
+                  color: tool.color,
+                }}>{tool.badge}</span>
+              </div>
+              <h3 style={{ fontSize: 14, fontWeight: 800, color: "white", margin: "0 0 6px", lineHeight: 1.3 }}>{tool.name}</h3>
+              <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0, lineHeight: 1.6 }}>{tool.desc}</p>
+              <div style={{ marginTop: 14, fontSize: 12, fontWeight: 700, color: tool.color }}>Use free →</div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default MoreTools;
