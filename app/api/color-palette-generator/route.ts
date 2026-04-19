@@ -1,7 +1,4 @@
 import { NextResponse } from "next/server";
-import OpenAI from "openai";
-
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export async function POST(req: Request) {
     try {
@@ -9,6 +6,9 @@ export async function POST(req: Request) {
         if (!description?.trim()) {
             return NextResponse.json({ error: "Description is required." }, { status: 400 });
         }
+
+        const apiKey = process.env.OPENAI_API_KEY?.trim();
+        if (!apiKey) return NextResponse.json({ error: "Service unavailable." }, { status: 500 });
 
         const styleGuides: Record<string, string> = {
             brand: "professional, memorable, versatile — suitable for logos, marketing materials, and digital brand identity",
@@ -19,11 +19,13 @@ export async function POST(req: Request) {
             nature: "organic, earthy, grounded — inspired by natural materials, plants, and landscapes",
         };
 
-        const prompt = `You are a world-class brand designer. Generate a perfect 5-color palette for: "${description.trim()}"
+        const systemPrompt = `You are a world-class brand designer. Always respond with valid JSON only — no markdown, no explanation, no extra text.`;
+
+        const userPrompt = `Generate a perfect 5-color palette for: "${description.trim()}"
 
 Style direction: ${styleGuides[style] || styleGuides.brand}
 
-Return ONLY a JSON object with a "palette" key containing exactly 5 objects. No markdown, no explanation:
+Return ONLY a JSON object with a "palette" key containing exactly 5 objects:
 { "palette": [
   { "hex": "#1a2b3c", "name": "Creative Color Name", "role": "Primary", "usage": "Main brand color, CTAs, key headings" },
   { "hex": "#2d3e50", "name": "Creative Color Name", "role": "Secondary", "usage": "Supporting elements, hover states, dividers" },
@@ -35,24 +37,41 @@ Return ONLY a JSON object with a "palette" key containing exactly 5 objects. No 
 Rules:
 - Hexes must be valid 6-digit hex codes starting with #
 - All 5 roles must appear exactly once: Primary, Secondary, Accent, Background, Text
-- Colors must work together harmoniously and feel cohesive
+- Colors must work together harmoniously
 - Names must be creative and evocative (never generic like "Blue" or "Gray")
 - Background must be light enough for the Text color to be readable on it (WCAG AA)
-- Usage must be specific and practical (not generic)`;
+- Usage must be specific and practical`;
 
-        const completion = await openai.chat.completions.create({
-            model: "gpt-4o",
-            messages: [
-                { role: "system", content: "You are a world-class brand designer. Always respond with valid JSON only — no markdown, no explanation." },
-                { role: "user", content: prompt }
-            ],
-            temperature: 0.85,
-            response_format: { type: "json_object" },
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${apiKey}`,
+            },
+            body: JSON.stringify({
+                model: "gpt-4o",
+                messages: [
+                    { role: "system", content: systemPrompt },
+                    { role: "user", content: userPrompt },
+                ],
+                temperature: 0.85,
+                max_tokens: 800,
+            }),
         });
 
-        let content = completion.choices[0].message.content ?? "{}";
-        const parsed = JSON.parse(content);
-        // Handle both {palette: [...]} and direct array responses
+        const json = await response.json();
+        let content = json.choices?.[0]?.message?.content || "";
+        content = content.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
+
+        let parsed;
+        try {
+            parsed = JSON.parse(content);
+        } catch {
+            const match = content.match(/\{[\s\S]*\}/);
+            if (match) parsed = JSON.parse(match[0]);
+            else throw new Error("Could not parse AI response");
+        }
+
         const palette = Array.isArray(parsed) ? parsed : (parsed.palette ?? Object.values(parsed)[0]);
 
         if (!Array.isArray(palette) || palette.length !== 5) {
