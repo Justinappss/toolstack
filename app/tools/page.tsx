@@ -311,12 +311,42 @@ const ALL_TOOLS = [
     category: "Finance",
     accent: "#10b981",
     accentRgb: "16,185,129",
-    badge: "New",
+    badge: null,
     icon: "🍽️",
+  },
+  {
+    title: "Mortgage Calculator",
+    desc: "Monthly payments, total interest, and full amortisation schedule. Repayment and interest-only mortgages. 15 currencies.",
+    href: "/tools/mortgage-calculator",
+    category: "Finance",
+    accent: "#6366f1",
+    accentRgb: "99,102,241",
+    badge: "New",
+    icon: "🏠",
+  },
+  {
+    title: "Percentage Calculator",
+    desc: "Six calculators in one: find a percentage, calculate increase/decrease, percentage change, and percentage difference.",
+    href: "/tools/percentage-calculator",
+    category: "Math",
+    accent: "#fbbf24",
+    accentRgb: "251,191,36",
+    badge: "New",
+    icon: "%",
+  },
+  {
+    title: "Salary Calculator",
+    desc: "Calculate take-home pay after tax. Full UK PAYE 2024/25 and US Federal 2024 with complete deductions breakdown.",
+    href: "/tools/salary-calculator",
+    category: "Finance",
+    accent: "#34d399",
+    accentRgb: "52,211,153",
+    badge: "New",
+    icon: "💷",
   },
 ];
 
-const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Dev"];
+const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev"];
 
 const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",

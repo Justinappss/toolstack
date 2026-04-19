@@ -325,8 +325,38 @@ const LIVE_TOOLS = [
         category: "Finance",
         accent: "#10b981",
         accentRgb: "16,185,129",
-        badge: "New",
+        badge: null,
         image: "/tools/tip-calculator-preview.png",
+    },
+    {
+        title: "Mortgage Calculator",
+        desc: "Monthly payments, total interest, and full amortisation schedule. Repayment and interest-only. 15 currencies.",
+        href: "/tools/mortgage-calculator",
+        category: "Finance",
+        accent: "#6366f1",
+        accentRgb: "99,102,241",
+        badge: "New",
+        image: "/tools/mortgage-calculator-preview.png",
+    },
+    {
+        title: "Percentage Calculator",
+        desc: "Six calculators in one: find a percentage, calculate increase/decrease, percentage change, and percentage difference.",
+        href: "/tools/percentage-calculator",
+        category: "Math",
+        accent: "#fbbf24",
+        accentRgb: "251,191,36",
+        badge: "New",
+        image: "/tools/percentage-calculator-preview.png",
+    },
+    {
+        title: "Salary Calculator",
+        desc: "Calculate take-home pay after tax. Full UK PAYE 2024/25 and US Federal 2024 calculations with complete deductions breakdown.",
+        href: "/tools/salary-calculator",
+        category: "Finance",
+        accent: "#34d399",
+        accentRgb: "52,211,153",
+        badge: "New",
+        image: "/tools/salary-calculator-preview.png",
     },
 ];
 
@@ -438,7 +468,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    31 top-tier tools live · Free forever · No account
+                                    34 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -507,8 +537,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "31", label: "Live tools" },
-                                    { value: "29+", label: "Coming soon" },
+                                    { value: "34", label: "Live tools" },
+                                    { value: "26+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -743,7 +773,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 31 tools <ArrowRight size={14} />
+                        View all 34 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

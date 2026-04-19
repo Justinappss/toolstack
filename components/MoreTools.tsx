@@ -322,6 +322,36 @@ export const ALL_TOOLS = [
     border: "rgba(52,211,153,0.25)",
     badge: "Finance",
   },
+  {
+    slug: "mortgage-calculator",
+    name: "Mortgage Calculator",
+    desc: "Monthly payments, total interest, and full amortisation schedule. Repayment and interest-only mortgages. 15 currencies.",
+    icon: "🏠",
+    color: "#6366f1",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "Finance",
+  },
+  {
+    slug: "percentage-calculator",
+    name: "Percentage Calculator",
+    desc: "Six calculators in one: find a percentage, increase/decrease, percentage change, and percentage difference.",
+    icon: "%",
+    color: "#fbbf24",
+    bg: "rgba(251,191,36,0.1)",
+    border: "rgba(251,191,36,0.25)",
+    badge: "Math",
+  },
+  {
+    slug: "salary-calculator",
+    name: "Salary Calculator",
+    desc: "Calculate take-home pay after tax. Full UK PAYE 2024/25 and US Federal 2024 with complete deductions breakdown.",
+    icon: "💷",
+    color: "#34d399",
+    bg: "rgba(52,211,153,0.1)",
+    border: "rgba(52,211,153,0.25)",
+    badge: "Finance",
+  },
 ];
 
 export function MoreTools({ currentSlug }: { currentSlug: string }) {
