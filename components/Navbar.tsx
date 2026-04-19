@@ -1,10 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Search, LogIn, User } from "lucide-react";
+import { Search } from "lucide-react";
 import { ToolSearch } from "./ToolSearch";
-import { AuthModal } from "./AuthModal";
-import { supabase } from "@/utils/supabase";
 
 const NAV_LINKS = [
     ["All Tools", "/tools"],
@@ -19,25 +17,11 @@ export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const [isAuthOpen, setIsAuthOpen] = useState(false);
-    const [user, setUser] = useState<any>(null);
 
     useEffect(() => {
         const fn = () => setScrolled(window.scrollY > 30);
         window.addEventListener("scroll", fn);
-
-        supabase.auth.getSession().then(({ data: { session } }) => {
-            setUser(session?.user || null);
-        });
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-            setUser(session?.user || null);
-            if (session) setIsAuthOpen(false);
-        });
-
-        return () => {
-            window.removeEventListener("scroll", fn);
-            subscription.unsubscribe();
-        };
+        return () => window.removeEventListener("scroll", fn);
     }, []);
 
     return (
@@ -89,15 +73,9 @@ export function Navbar() {
                         <Search size={14} /> Search
                     </button>
 
-                    {user ? (
-                        <button onClick={() => supabase.auth.signOut()} style={{ background: "rgba(167, 139, 250, 0.1)", border: "1px solid rgba(167, 139, 250, 0.3)", color: "#c4b5fd", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700 }}>
-                            <User size={14} /> {user.email?.split('@')[0]}
-                        </button>
-                    ) : (
-                        <button onClick={() => setIsAuthOpen(true)} style={{ background: "white", border: "none", color: "black", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700 }}>
-                            <LogIn size={14} /> Sign In
-                        </button>
-                    )}
+                    <Link href="/tools" style={{ background: "white", border: "none", color: "black", padding: "8px 16px", borderRadius: 12, display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
+                        Browse Tools →
+                    </Link>
 
                     <button
                         onClick={() => setOpen(!open)}
@@ -147,7 +125,6 @@ export function Navbar() {
             )}
             
             <ToolSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
-            <AuthModal isOpen={isAuthOpen} onClose={() => setIsAuthOpen(false)} />
         </header>
     );
 }

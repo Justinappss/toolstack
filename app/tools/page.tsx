@@ -345,6 +345,16 @@ const ALL_TOOLS = [
     icon: "💷",
   },
   {
+    title: "Code Diff Checker",
+    desc: "Compare two code blocks or text files side-by-side with visual diff highlighting. Runs 100% in your browser — fully private.",
+    href: "/tools/code-diff-checker",
+    category: "Dev",
+    accent: "#10b981",
+    accentRgb: "16,185,129",
+    badge: null,
+    icon: "⇄",
+  },
+  {
     title: "AI Color Palette Generator",
     desc: "Describe your brand or project in plain words and get a perfect 5-color palette with hex codes, CSS variables, Tailwind config and usage guidance.",
     href: "/tools/color-palette-generator",

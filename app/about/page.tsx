@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Zap, Sparkles, Shield, Clock, ArrowRight } from "lucide-react";
+import { Zap, Sparkles, Shield, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "About ToolStack — Free Tools for Writers, Marketers & Developers",
-    description: "ToolStack is a free collection of 60+ AI and utility tools for writers, marketers, and developers. No signup, no paywalls, instant results.",
+    description: "ToolStack is a free collection of 36+ AI and utility tools for writers, marketers, and developers. No signup, no paywalls, instant results.",
     alternates: { canonical: "https://toolstack.tech/about" },
     openGraph: {
         title: "About ToolStack",
@@ -59,7 +59,7 @@ export default function AboutPage() {
                         </span>
                     </h1>
                     <p style={{ fontSize: 18, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, maxWidth: 620 }}>
-                        ToolStack is a professional ecosystem of 60+ free online tools engineered for writers, marketers, and developers who demand speed over friction.
+                        ToolStack is a professional ecosystem of 36+ free online tools engineered for writers, marketers, and developers who demand speed over friction.
                     </p>
                 </div>
 

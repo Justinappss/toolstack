@@ -394,8 +394,8 @@ const MARQUEE_TOOLS = [
 
 const COMING_SOON = [
     "Color Picker", "Unit Converter", "Timezone Converter",
-    "Salary Calculator", "Tip Calculator", "Readability Checker",
-    "Image Compressor",
+    "Currency Converter", "Readability Checker",
+    "Image Compressor", "Text to Speech",
 ];
 
 const RECENT_POSTS = [

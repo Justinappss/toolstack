@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: { default: "ToolStack — Free AI & Utility Tools", template: "%s | ToolStack" },
-  description: "60+ free online tools for writers, marketers, developers, and business owners. AI-powered, instant results, no signup required.",
+  description: "36+ free online tools for writers, marketers, developers, and business owners. AI-powered, instant results, no signup required.",
   keywords: ["free online tools", "ai tools", "utility tools", "prompt generator", "word counter", "seo tools"],
   metadataBase: new URL("https://toolstack.tech"),
   manifest: "/manifest.json",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "ToolStack",
     title: "ToolStack — Free AI & Utility Tools",
-    description: "60+ free online tools. Instant results, no signup required.",
+    description: "36+ free online tools. Instant results, no signup required.",
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://x.com/toolstack",
                 "https://linkedin.com/company/toolstack"
               ],
-              "description": "60+ free online AI & utility tools for writers, marketers, and developers."
+              "description": "36+ free online AI & utility tools for writers, marketers, and developers."
             }),
           }}
         />
