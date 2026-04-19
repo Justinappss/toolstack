@@ -355,6 +355,16 @@ const ALL_TOOLS = [
     icon: "⇄",
   },
   {
+    title: "JWT Decoder",
+    desc: "Decode any JSON Web Token instantly. View header, payload, and all claims. Check expiry, issuer, and subject. 100% client-side.",
+    href: "/tools/jwt-decoder",
+    category: "Dev",
+    accent: "#f59e0b",
+    accentRgb: "245,158,11",
+    badge: "New",
+    icon: "🔑",
+  },
+  {
     title: "AI Color Palette Generator",
     desc: "Describe your brand or project in plain words and get a perfect 5-color palette with hex codes, CSS variables, Tailwind config and usage guidance.",
     href: "/tools/color-palette-generator",

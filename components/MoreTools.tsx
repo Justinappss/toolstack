@@ -113,6 +113,16 @@ export const ALL_TOOLS = [
     badge: "Dev",
   },
   {
+    slug: "jwt-decoder",
+    name: "JWT Decoder",
+    desc: "Decode any JSON Web Token instantly. View header, payload, and all claims. Check expiry, issuer, and subject. 100% client-side — token never leaves your browser.",
+    icon: "🔑",
+    color: "#f59e0b",
+    bg: "rgba(245,158,11,0.1)",
+    border: "rgba(245,158,11,0.25)",
+    badge: "Dev",
+  },
+  {
     slug: "json-formatter",
     name: "JSON Formatter",
     desc: "Format, validate and beautify JSON instantly. Syntax highlighting, error detection with line numbers, minify mode. 100% private.",

@@ -51,6 +51,7 @@ const TOOL_CATEGORIES = [
             { label: "SQL Formatter", href: "/tools/sql-formatter" },
             { label: "Unix Epoch Converter", href: "/tools/unix-timestamp-converter" },
             { label: "Code Diff Checker", href: "/tools/code-diff-checker" },
+            { label: "JWT Decoder", href: "/tools/jwt-decoder" },
             { label: "Age Calculator", href: "/tools/age-calculator" },
         ],
     },
