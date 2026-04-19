@@ -42,6 +42,7 @@ const TOOL_CATEGORIES = [
             { label: "Email Signature Generator", href: "/tools/email-signature-generator" },
             { label: "CSS Gradient Generator", href: "/tools/css-gradient-generator" },
             { label: "Colour Contrast Checker", href: "/tools/color-contrast-checker" },
+            { label: "AI Color Palette Generator", href: "/tools/color-palette-generator" },
             { label: "Favicon Generator", href: "/tools/favicon-generator" },
             { label: "Base64 Encoder / Decoder", href: "/tools/base64-encoder-decoder" },
             { label: "UTM Campaign Builder", href: "/tools/utm-builder" },

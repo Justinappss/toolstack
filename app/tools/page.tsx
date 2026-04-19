@@ -341,12 +341,22 @@ const ALL_TOOLS = [
     category: "Finance",
     accent: "#fbbf24",
     accentRgb: "251,191,36",
-    badge: "New",
+    badge: null,
     icon: "💷",
+  },
+  {
+    title: "AI Color Palette Generator",
+    desc: "Describe your brand or project in plain words and get a perfect 5-color palette with hex codes, CSS variables, Tailwind config and usage guidance.",
+    href: "/tools/color-palette-generator",
+    category: "Design",
+    accent: "#e879f9",
+    accentRgb: "232,121,249",
+    badge: "New",
+    icon: "🎨",
   },
 ];
 
-const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev"];
+const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design"];
 
 const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",

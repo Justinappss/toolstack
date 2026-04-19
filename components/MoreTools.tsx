@@ -233,6 +233,16 @@ export const ALL_TOOLS = [
     badge: "Dev",
   },
   {
+    slug: "color-palette-generator",
+    name: "AI Color Palette Generator",
+    desc: "Describe your brand in words and get a professional 5-color palette with hex codes, CSS variables and Tailwind config instantly.",
+    icon: "🎨",
+    color: "#e879f9",
+    bg: "rgba(232,121,249,0.1)",
+    border: "rgba(232,121,249,0.25)",
+    badge: "Design",
+  },
+  {
     slug: "color-contrast-checker",
     name: "Colour Contrast Checker",
     desc: "Check your colour combinations against WCAG guidelines for AA and AAA compliance.",

@@ -355,8 +355,18 @@ const LIVE_TOOLS = [
         category: "Finance",
         accent: "#fbbf24",
         accentRgb: "251,191,36",
-        badge: "New",
+        badge: null,
         image: "/tools/salary-calculator-preview.png",
+    },
+    {
+        title: "AI Color Palette Generator",
+        desc: "Describe your brand or project in words and get a perfect 5-color palette with hex codes, CSS variables and Tailwind config.",
+        href: "/tools/color-palette-generator",
+        category: "Design",
+        accent: "#e879f9",
+        accentRgb: "232,121,249",
+        badge: "New",
+        image: "/tools/color-palette-generator-preview.png",
     },
 ];
 
@@ -468,7 +478,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    34 top-tier tools live · Free forever · No account
+                                    35 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -537,8 +547,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "34", label: "Live tools" },
-                                    { value: "26+", label: "Coming soon" },
+                                    { value: "35", label: "Live tools" },
+                                    { value: "25+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -773,7 +783,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 34 tools <ArrowRight size={14} />
+                        View all 35 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 
