@@ -1,7 +1,7 @@
 "use client";
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 
 interface Tool {
     title: string;
@@ -14,7 +14,20 @@ interface Tool {
     image: string;
 }
 
-export function ToolSearch({ tools = [], isOpen: _isOpen, onClose: _onClose }: { tools?: Tool[]; isOpen?: boolean; onClose?: () => void }) {
+export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; isOpen?: boolean; onClose?: () => void }) {
+    // Modal mode: isOpen prop is provided. Inline mode: isOpen is undefined.
+    const isModalMode = isOpen !== undefined;
+
+    // Close on Escape
+    useEffect(() => {
+        if (!isModalMode) return;
+        const handler = (e: KeyboardEvent) => { if (e.key === "Escape") onClose?.(); };
+        window.addEventListener("keydown", handler);
+        return () => window.removeEventListener("keydown", handler);
+    }, [isModalMode, onClose]);
+
+    // In modal mode, render nothing when closed
+    if (isModalMode && !isOpen) return null;
     const [query, setQuery] = useState("");
     const [activeCategory, setActiveCategory] = useState("All");
     const [requestText, setRequestText] = useState("");
@@ -61,7 +74,7 @@ export function ToolSearch({ tools = [], isOpen: _isOpen, onClose: _onClose }: {
         setSending(false);
     }
 
-    return (
+    const inner = (
         <>
             {/* Category pills */}
             <div style={{
@@ -367,5 +380,50 @@ export function ToolSearch({ tools = [], isOpen: _isOpen, onClose: _onClose }: {
                 </div>
             )}
         </>
+    );
+
+    if (!isModalMode) return inner;
+
+    return (
+        <div
+            onClick={onClose}
+            style={{
+                position: "fixed", inset: 0, zIndex: 200,
+                background: "rgba(0,0,0,0.75)",
+                backdropFilter: "blur(8px)",
+                WebkitBackdropFilter: "blur(8px)",
+                display: "flex", alignItems: "flex-start", justifyContent: "center",
+                padding: "80px 24px 40px",
+                overflowY: "auto",
+            }}
+        >
+            <div
+                onClick={e => e.stopPropagation()}
+                style={{
+                    width: "100%", maxWidth: 760,
+                    background: "#0d0d16",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    borderRadius: 20,
+                    padding: "28px 28px 32px",
+                    boxShadow: "0 32px 80px rgba(0,0,0,0.6)",
+                    position: "relative",
+                }}
+            >
+                <button
+                    onClick={onClose}
+                    style={{
+                        position: "absolute", top: 16, right: 16,
+                        background: "rgba(255,255,255,0.06)",
+                        border: "1px solid rgba(255,255,255,0.1)",
+                        borderRadius: 8, width: 32, height: 32,
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                        cursor: "pointer", color: "rgba(255,255,255,0.5)",
+                    }}
+                >
+                    <X size={15} />
+                </button>
+                {inner}
+            </div>
+        </div>
     );
 }
