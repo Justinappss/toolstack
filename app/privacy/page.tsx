@@ -70,7 +70,7 @@ export default function PrivacyPage() {
 
                     <div style={SECTION}>
                         <h2 style={H2}>1. Who we are</h2>
-                        <p style={P}>ToolStack (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) operates the website at toolstack.tech. We provide free online tools for writers, marketers, developers, and business professionals. For questions about this policy, contact us at <a href="mailto:hello@toolstack.tech" style={{ color: "#818cf8" }}>hello@toolstack.tech</a>.</p>
+                        <p style={P}>ToolStack (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) operates the website at toolstack.tech. We provide free online tools for writers, marketers, developers, and business professionals. For questions about this policy, contact us at <a href="mailto:justinmakemoneyonline@gmail.com" style={{ color: "#818cf8" }}>justinmakemoneyonline@gmail.com</a>.</p>
                     </div>
 
                     <div style={SECTION}>
@@ -131,7 +131,7 @@ export default function PrivacyPage() {
                             <li style={LI}>Object to or restrict certain processing</li>
                             <li style={LI}>Withdraw consent at any time</li>
                         </ul>
-                        <p style={P}>To exercise these rights, contact us at <a href="mailto:hello@toolstack.tech" style={{ color: "#818cf8" }}>hello@toolstack.tech</a>.</p>
+                        <p style={P}>To exercise these rights, contact us at <a href="mailto:justinmakemoneyonline@gmail.com" style={{ color: "#818cf8" }}>justinmakemoneyonline@gmail.com</a>.</p>
                     </div>
 
                     <div style={SECTION}>

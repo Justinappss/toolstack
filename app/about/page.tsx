@@ -128,7 +128,7 @@ export default function AboutPage() {
                     <h2 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Global Authority</h2>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", lineHeight: 1.7, margin: 0 }}>
                         ToolStack is part of a global network of AI utilities. For business inquiries, tool requests, or partnership opportunities, reach us at{" "}
-                        <a href="mailto:hello@toolstack.tech" style={{ color: "#818cf8", textDecoration: "none", fontWeight: 600 }}>hello@toolstack.tech</a>.
+                        <a href="mailto:justinmakemoneyonline@gmail.com" style={{ color: "#818cf8", textDecoration: "none", fontWeight: 600 }}>justinmakemoneyonline@gmail.com</a>.
                     </p>
                 </div>
             </div>
