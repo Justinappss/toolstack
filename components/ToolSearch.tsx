@@ -16,22 +16,31 @@ interface Tool {
 
 export function ToolSearch({ tools = [], isOpen: _isOpen, onClose: _onClose }: { tools?: Tool[]; isOpen?: boolean; onClose?: () => void }) {
     const [query, setQuery] = useState("");
+    const [activeCategory, setActiveCategory] = useState("All");
     const [requestText, setRequestText] = useState("");
     const [requestSent, setRequestSent] = useState(false);
     const [sending, setSending] = useState(false);
     const inputRef = useRef<HTMLInputElement>(null);
 
-    const filtered = useMemo(() => {
-        if (!query.trim()) return tools;
-        const q = query.toLowerCase();
-        return tools.filter(t =>
-            t.title.toLowerCase().includes(q) ||
-            t.desc.toLowerCase().includes(q) ||
-            t.category.toLowerCase().includes(q)
-        );
-    }, [query, tools]);
+    const categories = useMemo(() => {
+        const cats = Array.from(new Set(tools.map(t => t.category))).sort();
+        return ["All", ...cats];
+    }, [tools]);
 
-    const noResults = query.trim().length > 0 && filtered.length === 0;
+    const filtered = useMemo(() => {
+        let list = activeCategory === "All" ? tools : tools.filter(t => t.category === activeCategory);
+        if (query.trim()) {
+            const q = query.toLowerCase();
+            list = list.filter(t =>
+                t.title.toLowerCase().includes(q) ||
+                t.desc.toLowerCase().includes(q) ||
+                t.category.toLowerCase().includes(q)
+            );
+        }
+        return list;
+    }, [query, activeCategory, tools]);
+
+    const noResults = filtered.length === 0 && (query.trim().length > 0 || activeCategory !== "All");
 
     async function handleRequest() {
         const text = requestText.trim();
@@ -54,6 +63,38 @@ export function ToolSearch({ tools = [], isOpen: _isOpen, onClose: _onClose }: {
 
     return (
         <>
+            {/* Category pills */}
+            <div style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 8,
+                marginBottom: 20,
+            }}>
+                {categories.map(cat => {
+                    const isActive = cat === activeCategory;
+                    return (
+                        <button
+                            key={cat}
+                            onClick={() => { setActiveCategory(cat); setQuery(""); }}
+                            style={{
+                                padding: "7px 16px",
+                                borderRadius: 999,
+                                border: `1px solid ${isActive ? "rgba(99,102,241,0.5)" : "rgba(255,255,255,0.08)"}`,
+                                background: isActive ? "rgba(99,102,241,0.15)" : "rgba(255,255,255,0.03)",
+                                fontSize: 13,
+                                fontWeight: isActive ? 700 : 600,
+                                color: isActive ? "#a5b4fc" : "rgba(255,255,255,0.5)",
+                                cursor: "pointer",
+                                transition: "all 0.15s",
+                                fontFamily: "inherit",
+                            }}
+                        >
+                            {cat}
+                        </button>
+                    );
+                })}
+            </div>
+
             {/* Search bar */}
             <div style={{
                 position: "relative",
@@ -252,10 +293,12 @@ export function ToolSearch({ tools = [], isOpen: _isOpen, onClose: _onClose }: {
                         </div>
 
                         <h3 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 8, letterSpacing: "-0.02em" }}>
-                            No tools found for &quot;{query}&quot;
+                            {query.trim() ? `No tools found for "${query}"` : `No tools in ${activeCategory} yet`}
                         </h3>
                         <p style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", marginBottom: 28, maxWidth: 420, margin: "0 auto 28px" }}>
-                            We don&apos;t have that tool yet — but tell us what you need and we&apos;ll build it.
+                            {query.trim()
+                                ? "We don't have that tool yet — but tell us what you need and we'll build it."
+                                : "More tools are being added every week. Tell us what you'd like to see."}
                         </p>
 
                         {requestSent ? (
