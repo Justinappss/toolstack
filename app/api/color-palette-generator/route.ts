@@ -23,14 +23,14 @@ export async function POST(req: Request) {
 
 Style direction: ${styleGuides[style] || styleGuides.brand}
 
-Return ONLY a JSON array with exactly 5 objects. No markdown, no explanation, no extra text:
-[
+Return ONLY a JSON object with a "palette" key containing exactly 5 objects. No markdown, no explanation:
+{ "palette": [
   { "hex": "#1a2b3c", "name": "Creative Color Name", "role": "Primary", "usage": "Main brand color, CTAs, key headings" },
   { "hex": "#2d3e50", "name": "Creative Color Name", "role": "Secondary", "usage": "Supporting elements, hover states, dividers" },
   { "hex": "#e8a030", "name": "Creative Color Name", "role": "Accent", "usage": "Highlights, icons, badges, interactive elements" },
   { "hex": "#f4f5f7", "name": "Creative Color Name", "role": "Background", "usage": "Page backgrounds, card surfaces, containers" },
   { "hex": "#1c1d22", "name": "Creative Color Name", "role": "Text", "usage": "Body copy, labels, secondary text" }
-]
+]}
 
 Rules:
 - Hexes must be valid 6-digit hex codes starting with #
@@ -42,14 +42,18 @@ Rules:
 
         const completion = await openai.chat.completions.create({
             model: "gpt-4o",
-            messages: [{ role: "user", content: prompt }],
+            messages: [
+                { role: "system", content: "You are a world-class brand designer. Always respond with valid JSON only — no markdown, no explanation." },
+                { role: "user", content: prompt }
+            ],
             temperature: 0.85,
+            response_format: { type: "json_object" },
         });
 
-        let content = completion.choices[0].message.content ?? "[]";
-        content = content.replace(/```json\n?/g, "").replace(/```\n?/g, "").trim();
-
-        const palette = JSON.parse(content);
+        let content = completion.choices[0].message.content ?? "{}";
+        const parsed = JSON.parse(content);
+        // Handle both {palette: [...]} and direct array responses
+        const palette = Array.isArray(parsed) ? parsed : (parsed.palette ?? Object.values(parsed)[0]);
 
         if (!Array.isArray(palette) || palette.length !== 5) {
             return NextResponse.json({ error: "Invalid palette generated. Please try again." }, { status: 500 });
