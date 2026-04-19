@@ -6,7 +6,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { HistorySidebar } from "@/components/HistorySidebar";
 import { CommandPalette } from "@/components/CommandPalette";
 import { SmartPasteListener } from "@/components/SmartPasteListener";
 
@@ -74,7 +73,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <CommandPalette />
         <SmartPasteListener />
-        <HistorySidebar />
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
