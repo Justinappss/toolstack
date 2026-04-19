@@ -1,7 +1,23 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
+import { ToolSearch } from "./ToolSearch";
+import { ALL_TOOLS as MORE_TOOLS } from "./MoreTools";
+
+// Transform MoreTools registry into ToolSearch format
+function buildSearchTools() {
+    return MORE_TOOLS.map(t => ({
+        title: t.name,
+        desc: t.desc,
+        href: `/tools/${t.slug}`,
+        accent: t.color,
+        accentRgb: t.bg.match(/rgba?\(([^)]+)\)/)?.[1]?.split(",").slice(0, 3).join(",") ?? "129,140,248",
+        category: t.badge,
+        badge: null as null,
+        image: `/tools/${t.slug}-preview.png`,
+    }));
+}
 
 const NAV_LINKS = [
     ["All Tools", "/tools"],
@@ -15,16 +31,14 @@ const NAV_LINKS = [
 export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
+    const [searchOpen, setSearchOpen] = useState(false);
+    const searchTools = useMemo(() => buildSearchTools(), []);
 
     useEffect(() => {
         const fn = () => setScrolled(window.scrollY > 30);
         window.addEventListener("scroll", fn);
         return () => window.removeEventListener("scroll", fn);
     }, []);
-
-    function openSearch() {
-        document.dispatchEvent(new KeyboardEvent("keydown", { key: "k", metaKey: true, bubbles: true }));
-    }
 
     return (
         <header style={{
@@ -67,7 +81,7 @@ export function Navbar() {
                 </nav>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <button onClick={openSearch} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
+                    <button onClick={() => setSearchOpen(true)} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
                         <Search size={14} /> Search
                     </button>
 
@@ -121,6 +135,7 @@ export function Navbar() {
                     </Link>
                 </div>
             )}
+            <ToolSearch tools={searchTools} isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
         </header>
     );
 }
