@@ -26,17 +26,6 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
     // Modal mode: isOpen prop is provided. Inline mode: isOpen is undefined.
     const isModalMode = isOpen !== undefined;
 
-    // Close on Escape (modal mode only)
-    useEffect(() => {
-        if (!isModalMode || !isOpen) return;
-        const handler = (e: KeyboardEvent) => { if (e.key === "Escape") onClose?.(); };
-        window.addEventListener("keydown", handler);
-        return () => window.removeEventListener("keydown", handler);
-    }, [isModalMode, isOpen, onClose]);
-
-    // In modal mode, render nothing when closed
-    if (isModalMode && !isOpen) return null;
-
     const categories = useMemo(() => {
         const cats = Array.from(new Set(tools.map(t => t.category))).sort();
         return ["All", ...cats];
@@ -56,6 +45,17 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
     }, [query, activeCategory, tools]);
 
     const noResults = filtered.length === 0 && (query.trim().length > 0 || activeCategory !== "All");
+
+    // Close on Escape (modal mode only) — after all hooks
+    useEffect(() => {
+        if (!isModalMode || !isOpen) return;
+        const handler = (e: KeyboardEvent) => { if (e.key === "Escape") onClose?.(); };
+        window.addEventListener("keydown", handler);
+        return () => window.removeEventListener("keydown", handler);
+    }, [isModalMode, isOpen, onClose]);
+
+    // In modal mode, render nothing when closed — after all hooks
+    if (isModalMode && !isOpen) return null;
 
     async function handleRequest() {
         const text = requestText.trim();
