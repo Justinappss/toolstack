@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
-import { ToolSearch } from "./ToolSearch";
 
 const NAV_LINKS = [
     ["All Tools", "/tools"],
@@ -16,13 +15,16 @@ const NAV_LINKS = [
 export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     useEffect(() => {
         const fn = () => setScrolled(window.scrollY > 30);
         window.addEventListener("scroll", fn);
         return () => window.removeEventListener("scroll", fn);
     }, []);
+
+    function openSearch() {
+        document.dispatchEvent(new KeyboardEvent("keydown", { key: "k", metaKey: true, bubbles: true }));
+    }
 
     return (
         <header style={{
@@ -42,11 +44,7 @@ export function Navbar() {
                         alt="ToolStack"
                         width={34}
                         height={34}
-                        style={{
-                            borderRadius: 10,
-                            boxShadow: "0 4px 16px rgba(99,102,241,0.4)",
-                            flexShrink: 0,
-                        }}
+                        style={{ borderRadius: 10, boxShadow: "0 4px 16px rgba(99,102,241,0.4)", flexShrink: 0 }}
                     />
                     <span style={{ fontSize: 17, fontWeight: 800, color: "white", letterSpacing: "-0.02em" }}>
                         Tool<span style={{ color: "#818cf8" }}>Stack</span>
@@ -69,7 +67,7 @@ export function Navbar() {
                 </nav>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <button onClick={() => setIsSearchOpen(true)} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
+                    <button onClick={openSearch} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
                         <Search size={14} /> Search
                     </button>
 
@@ -123,8 +121,6 @@ export function Navbar() {
                     </Link>
                 </div>
             )}
-            
-            <ToolSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
         </header>
     );
 }

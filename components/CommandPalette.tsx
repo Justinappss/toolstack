@@ -55,7 +55,7 @@ export function CommandPalette() {
               <Search size={18} color="rgba(255,255,255,0.4)" />
               <Command.Input
                 autoFocus
-                placeholder="Search 25+ tools..."
+                placeholder="Search 37 tools..."
                 style={{
                   width: "100%", padding: "18px 12px",
                   background: "transparent", border: "none", outline: "none",
