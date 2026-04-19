@@ -50,6 +50,7 @@ const TOOL_CATEGORIES = [
             { label: "Regex Tester", href: "/tools/regex-tester" },
             { label: "SQL Formatter", href: "/tools/sql-formatter" },
             { label: "Unix Epoch Converter", href: "/tools/unix-timestamp-converter" },
+            { label: "Age Calculator", href: "/tools/age-calculator" },
         ],
     },
 ];

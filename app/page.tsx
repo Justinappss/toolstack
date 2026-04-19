@@ -365,8 +365,18 @@ const LIVE_TOOLS = [
         category: "Design",
         accent: "#e879f9",
         accentRgb: "232,121,249",
-        badge: "New",
+        badge: null,
         image: "/tools/color-palette-generator-preview.png",
+    },
+    {
+        title: "Age Calculator",
+        desc: "Find your exact age in years, months, days and hours. Zodiac sign, generation, days to next birthday, and life progress.",
+        href: "/tools/age-calculator",
+        category: "Utility",
+        accent: "#22d3ee",
+        accentRgb: "34,211,238",
+        badge: "New",
+        image: "/tools/age-calculator-preview.png",
     },
 ];
 
@@ -478,7 +488,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    35 top-tier tools live · Free forever · No account
+                                    36 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -547,8 +557,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "35", label: "Live tools" },
-                                    { value: "25+", label: "Coming soon" },
+                                    { value: "36", label: "Live tools" },
+                                    { value: "24+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -783,7 +793,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 35 tools <ArrowRight size={14} />
+                        View all 36 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

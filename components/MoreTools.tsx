@@ -362,6 +362,16 @@ export const ALL_TOOLS = [
     border: "rgba(251,191,36,0.25)",
     badge: "Finance",
   },
+  {
+    slug: "age-calculator",
+    name: "Age Calculator",
+    desc: "Calculate your exact age in years, months, days and hours. Zodiac sign, generation, days until your next birthday.",
+    icon: "🎂",
+    color: "#22d3ee",
+    bg: "rgba(34,211,238,0.1)",
+    border: "rgba(34,211,238,0.25)",
+    badge: "Utility",
+  },
 ];
 
 export function MoreTools({ currentSlug }: { currentSlug: string }) {

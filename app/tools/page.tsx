@@ -351,8 +351,18 @@ const ALL_TOOLS = [
     category: "Design",
     accent: "#e879f9",
     accentRgb: "232,121,249",
-    badge: "New",
+    badge: null,
     icon: "🎨",
+  },
+  {
+    title: "Age Calculator",
+    desc: "Calculate your exact age in years, months, days, hours and minutes. Get your zodiac sign, generation, days until next birthday, and more. Free, instant.",
+    href: "/tools/age-calculator",
+    category: "Utility",
+    accent: "#22d3ee",
+    accentRgb: "34,211,238",
+    badge: "New",
+    icon: "🎂",
   },
 ];
 
@@ -369,6 +379,8 @@ const CATEGORY_MAP: Record<string, string> = {
   finance: "Finance",
   dev: "Dev",
   business: "Business",
+  math: "Math",
+  design: "Design",
 };
 
 function ToolsGrid() {
