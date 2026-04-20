@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "logo": "https://toolstack.tech/favicon.png",
               "sameAs": [
                 "https://x.com/toolstack",
-                "https://linkedin.com/company/toolstack"
+                "https://www.linkedin.com/company/toolstacktech"
               ],
               "description": "36+ free online AI & utility tools for writers, marketers, and developers."
             }),
