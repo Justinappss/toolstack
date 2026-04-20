@@ -81,11 +81,11 @@ export function Navbar() {
                 </nav>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <button onClick={() => setSearchOpen(true)} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
+                    <button onClick={() => setSearchOpen(true)} className="desktop-cta" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
                         <Search size={14} /> Search
                     </button>
 
-                    <Link href="/tools" style={{ background: "white", border: "none", color: "black", padding: "8px 16px", borderRadius: 12, display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
+                    <Link href="/tools" className="desktop-cta" style={{ background: "white", border: "none", color: "black", padding: "8px 16px", borderRadius: 12, alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
                         Browse Tools →
                     </Link>
 
@@ -95,7 +95,7 @@ export function Navbar() {
                         aria-label={open ? "Close menu" : "Open menu"}
                         style={{
                             width: 36, height: 36, borderRadius: 10, border: "1px solid rgba(255,255,255,0.1)",
-                            background: "rgba(255,255,255,0.04)", display: "none", alignItems: "center",
+                            background: "rgba(255,255,255,0.04)", alignItems: "center",
                             justifyContent: "center", cursor: "pointer", color: "white",
                         }}
                     >
