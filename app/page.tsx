@@ -554,6 +554,13 @@ export default function Home() {
                                 </Link>
                             </div>
 
+                            {/* Product Hunt badge */}
+                            <div className="fade-up-delay-4" style={{ marginTop: 4 }}>
+                                <a href="https://www.producthunt.com/products/toolstack-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-toolstack-2" target="_blank" rel="noopener noreferrer">
+                                    <img alt="ToolStack on Product Hunt" width="200" height="43" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1126961&theme=dark&t=1776719417942" style={{ display: "block" }} />
+                                </a>
+                            </div>
+
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[

@@ -170,14 +170,9 @@ export function Footer() {
                     display: "flex", alignItems: "center", justifyContent: "space-between",
                     flexWrap: "wrap", gap: 12,
                 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
-                        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>
-                            © 2026 ToolStack — all tools are free to use. No account required.
-                        </p>
-                        <a href="https://www.producthunt.com/products/toolstack-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-toolstack-2" target="_blank" rel="noopener noreferrer">
-                            <img alt="ToolStack on Product Hunt" width="125" height="27" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1126961&theme=dark&t=1776719417942" />
-                        </a>
-                    </div>
+                    <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>
+                        © 2026 ToolStack — all tools are free to use. No account required.
+                    </p>
                     <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>
                         Built with GPT-4o · Powered by Vercel
                     </p>
