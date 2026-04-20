@@ -32,12 +32,20 @@ export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [open, setOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const searchTools = useMemo(() => buildSearchTools(), []);
 
     useEffect(() => {
         const fn = () => setScrolled(window.scrollY > 30);
         window.addEventListener("scroll", fn);
         return () => window.removeEventListener("scroll", fn);
+    }, []);
+
+    useEffect(() => {
+        const check = () => setIsMobile(window.innerWidth < 768);
+        check();
+        window.addEventListener("resize", check);
+        return () => window.removeEventListener("resize", check);
     }, []);
 
     return (
@@ -81,21 +89,25 @@ export function Navbar() {
                 </nav>
 
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                    <button onClick={() => setSearchOpen(true)} className="desktop-cta" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
-                        <Search size={14} /> Search
-                    </button>
+                    {!isMobile && (
+                        <button onClick={() => setSearchOpen(true)} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", padding: "8px 16px", borderRadius: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600 }}>
+                            <Search size={14} /> Search
+                        </button>
+                    )}
 
-                    <Link href="/tools" className="desktop-cta" style={{ background: "white", border: "none", color: "black", padding: "8px 16px", borderRadius: 12, alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
-                        Browse Tools →
-                    </Link>
+                    {!isMobile && (
+                        <Link href="/tools" style={{ background: "white", border: "none", color: "black", padding: "8px 16px", borderRadius: 12, display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
+                            Browse Tools →
+                        </Link>
+                    )}
 
+                    {isMobile && (
                     <button
                         onClick={() => setOpen(!open)}
-                        className="mobile-menu-btn"
                         aria-label={open ? "Close menu" : "Open menu"}
                         style={{
                             width: 36, height: 36, borderRadius: 10, border: "1px solid rgba(255,255,255,0.1)",
-                            background: "rgba(255,255,255,0.04)", alignItems: "center",
+                            background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center",
                             justifyContent: "center", cursor: "pointer", color: "white",
                         }}
                     >
@@ -105,6 +117,7 @@ export function Navbar() {
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><line x1="3" y1="8" x2="21" y2="8" /><line x1="3" y1="16" x2="21" y2="16" /></svg>
                         )}
                     </button>
+                    )}
                 </div>
             </div>
 
