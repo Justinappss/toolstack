@@ -145,7 +145,7 @@ export default function WebsiteDownChecker() {
                 <div style={{ position: "absolute", bottom: "10%", right: "-5%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(99,102,241,0.07) 0%, transparent 65%)", filter: "blur(80px)" }} />
             </div>
 
-            <div style={{ position: "relative", zIndex: 1, maxWidth: 740, margin: "0 auto", padding: "72px 20px 100px" }}>
+            <div style={{ position: "relative", zIndex: 1, maxWidth: 860, margin: "0 auto", padding: "72px 20px 100px" }}>
 
                 {/* Breadcrumb */}
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>

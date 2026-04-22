@@ -110,7 +110,7 @@ export default function PdfGeneratorPage() {
                 borderBottom: "1px solid rgba(255,255,255,0.05)",
                 padding: "56px 24px 40px",
             }}>
-                <div style={{ maxWidth: 800, margin: "0 auto" }}>
+                <div style={{ maxWidth: 860, margin: "0 auto" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
                         <Link href="/tools" style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>
                             All Tools
@@ -136,7 +136,7 @@ export default function PdfGeneratorPage() {
             </div>
 
             {/* Tool */}
-            <div style={{ maxWidth: 800, margin: "0 auto", padding: "40px 24px" }}>
+            <div style={{ maxWidth: 860, margin: "0 auto", padding: "40px 24px" }}>
 
                 {/* Settings bar */}
                 <div style={{

@@ -113,7 +113,7 @@ export default function IpLookupPage() {
                 borderBottom: "1px solid rgba(255,255,255,0.05)",
                 padding: "56px 24px 40px",
             }}>
-                <div style={{ maxWidth: 760, margin: "0 auto" }}>
+                <div style={{ maxWidth: 860, margin: "0 auto" }}>
                     <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                         <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                         <span>›</span>
@@ -140,7 +140,7 @@ export default function IpLookupPage() {
                 </div>
             </div>
 
-            <div style={{ maxWidth: 760, margin: "0 auto", padding: "40px 24px 80px" }}>
+            <div style={{ maxWidth: 860, margin: "0 auto", padding: "40px 24px 80px" }}>
 
                 {/* My IP card */}
                 <div style={{ marginBottom: 32, padding: 28, background: "rgba(99,102,241,0.06)", border: "1px solid rgba(99,102,241,0.2)", borderRadius: 24 }}>
