@@ -123,6 +123,16 @@ export const ALL_TOOLS = [
     badge: "Dev",
   },
   {
+    slug: "website-down-checker",
+    name: "Website Down Checker",
+    desc: "Check if any website is down or just you. See HTTP status code, response time, and server availability instantly. No signup required.",
+    icon: "🌐",
+    color: "#34d399",
+    bg: "rgba(52,211,153,0.1)",
+    border: "rgba(52,211,153,0.25)",
+    badge: "Dev",
+  },
+  {
     slug: "json-formatter",
     name: "JSON Formatter",
     desc: "Format, validate and beautify JSON instantly. Syntax highlighting, error detection with line numbers, minify mode. 100% private.",

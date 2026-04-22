@@ -52,6 +52,7 @@ const TOOL_CATEGORIES = [
             { label: "Unix Epoch Converter", href: "/tools/unix-timestamp-converter" },
             { label: "Code Diff Checker", href: "/tools/code-diff-checker" },
             { label: "JWT Decoder", href: "/tools/jwt-decoder" },
+            { label: "Website Down Checker", href: "/tools/website-down-checker" },
             { label: "Age Calculator", href: "/tools/age-calculator" },
         ],
     },

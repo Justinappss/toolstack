@@ -365,6 +365,16 @@ const ALL_TOOLS = [
     icon: "🔑",
   },
   {
+    title: "Website Down Checker",
+    desc: "Check if any website is down or just you. See HTTP status code, response time, and server availability instantly.",
+    href: "/tools/website-down-checker",
+    category: "Dev",
+    accent: "#34d399",
+    accentRgb: "52,211,153",
+    badge: "New",
+    icon: "🌐",
+  },
+  {
     title: "AI Color Palette Generator",
     desc: "Describe your brand or project in plain words and get a perfect 5-color palette with hex codes, CSS variables, Tailwind config and usage guidance.",
     href: "/tools/color-palette-generator",
