@@ -67,7 +67,7 @@ export default function BlogPost() {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
                         <span style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.08em", textTransform: "uppercase" as const, padding: "4px 10px", borderRadius: 999, border: `1px solid ${accentBorder}`, background: accentBg }}>Security</span>
-                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.3)" }}>April 22, 2026 · 7 min read</span>
+                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.3)" }}>April 19, 2026 · 7 min read</span>
                     </div>
                     <h1 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.025em", marginBottom: 28, color: "white" }}>
                         SSL Certificate Explained: What It Is, How to Check It & When It Expires
@@ -76,7 +76,7 @@ export default function BlogPost() {
                         <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg, #6366f1, #7c3aed)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "white", flexShrink: 0 }}>JP</div>
                         <div>
                             <p style={{ fontSize: 14, fontWeight: 600, color: "white", margin: 0 }}>Justin Pirrie</p>
-                            <p style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", margin: 0 }}>Founder, ToolStack · April 22, 2026</p>
+                            <p style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", margin: 0 }}>Founder, ToolStack · April 19, 2026</p>
                         </div>
                     </div>
                 </div>
