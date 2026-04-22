@@ -325,7 +325,7 @@ export default function PdfGeneratorPage() {
                 </div>
 
                 <AdvertiseGPTBanner />
-                <MoreTools currentHref="/tools/pdf-generator" />
+                <MoreTools currentSlug="pdf-generator" />
             </div>
         </div>
     );
