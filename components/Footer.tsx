@@ -55,6 +55,8 @@ const TOOL_CATEGORIES = [
             { label: "Website Down Checker", href: "/tools/website-down-checker" },
             { label: "Age Calculator", href: "/tools/age-calculator" },
             { label: "PDF Generator", href: "/tools/pdf-generator" },
+            { label: "IP Address Lookup", href: "/tools/ip-address-lookup" },
+            { label: "SSL Certificate Checker", href: "/tools/ssl-checker" },
         ],
     },
 ];
