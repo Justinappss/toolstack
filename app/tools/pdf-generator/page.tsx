@@ -13,21 +13,27 @@ const PAGE_SIZES = [
 
 const FONT_SIZES = [10, 11, 12, 14, 16, 18];
 
-const FONTS = ["Helvetica", "Times", "Courier"];
+const FONTS = [
+    { label: "Helvetica", value: "helvetica" },
+    { label: "Times", value: "times" },
+    { label: "Courier", value: "courier" },
+];
 
 export default function PdfGeneratorPage() {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     const [pageSize, setPageSize] = useState("a4");
     const [fontSize, setFontSize] = useState(12);
-    const [font, setFont] = useState("Helvetica");
+    const [font, setFont] = useState("helvetica");
     const [orientation, setOrientation] = useState<"portrait" | "landscape">("portrait");
     const [loading, setLoading] = useState(false);
     const [fileName, setFileName] = useState("document");
+    const [error, setError] = useState("");
 
     const generate = useCallback(async () => {
         if (!content.trim() && !title.trim()) return;
         setLoading(true);
+        setError("");
         try {
             const { jsPDF } = await import("jspdf");
             const size = PAGE_SIZES.find(p => p.value === pageSize)!;
@@ -87,6 +93,7 @@ export default function PdfGeneratorPage() {
             doc.save(`${fileName || "document"}.pdf`);
         } catch (e) {
             console.error(e);
+            setError("Something went wrong generating the PDF. Please try again.");
         } finally {
             setLoading(false);
         }
@@ -176,7 +183,7 @@ export default function PdfGeneratorPage() {
                             width: "100%", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)",
                             borderRadius: 8, padding: "7px 10px", color: "white", fontSize: 13, cursor: "pointer",
                         }}>
-                            {FONTS.map(f => <option key={f} value={f}>{f}</option>)}
+                            {FONTS.map(f => <option key={f.value} value={f.value}>{f.label}</option>)}
                         </select>
                     </div>
                     {/* Font size */}
@@ -270,6 +277,12 @@ export default function PdfGeneratorPage() {
                 >
                     {loading ? "Generating PDF…" : "⬇ Download PDF"}
                 </button>
+
+                {error && (
+                    <div style={{ marginTop: 12, padding: "12px 16px", background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.25)", borderRadius: 10, color: "#f87171", fontSize: 13, fontWeight: 600 }}>
+                        {error}
+                    </div>
+                )}
 
                 {/* Info cards */}
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginTop: 40 }}>
