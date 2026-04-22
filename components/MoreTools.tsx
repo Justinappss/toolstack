@@ -133,6 +133,16 @@ export const ALL_TOOLS = [
     badge: "Dev",
   },
   {
+    slug: "pdf-generator",
+    name: "PDF Generator",
+    desc: "Type or paste your text, customise fonts and page size, then download as a clean PDF instantly. No signup, no watermarks, 100% private.",
+    icon: "📄",
+    color: "#ef4444",
+    bg: "rgba(239,68,68,0.1)",
+    border: "rgba(239,68,68,0.25)",
+    badge: "Utility",
+  },
+  {
     slug: "json-formatter",
     name: "JSON Formatter",
     desc: "Format, validate and beautify JSON instantly. Syntax highlighting, error detection with line numbers, minify mode. 100% private.",

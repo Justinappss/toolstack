@@ -391,8 +391,18 @@ const ALL_TOOLS = [
     category: "Utility",
     accent: "#22d3ee",
     accentRgb: "34,211,238",
-    badge: "New",
+    badge: null,
     icon: "🎂",
+  },
+  {
+    title: "PDF Generator",
+    desc: "Type or paste your text, choose font and page size, and download a clean PDF instantly. No watermarks, no signup, 100% private.",
+    href: "/tools/pdf-generator",
+    category: "Utility",
+    accent: "#ef4444",
+    accentRgb: "239,68,68",
+    badge: "New",
+    icon: "📄",
   },
 ];
 
@@ -543,10 +553,10 @@ function ToolsGrid() {
         }}>
           <p style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", letterSpacing: "0.06em", margin: "0 0 12px" }}>COMING SOON</p>
           <h2 style={{ fontSize: 28, fontWeight: 900, color: "white", margin: "0 0 12px", letterSpacing: "-0.02em" }}>
-            60 tools in total
+            More tools on the way
           </h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0, maxWidth: 480, marginInline: "auto" }}>
-            Base64 Encoder, Color Picker, Regex Tester, Unit Converter, Markdown Editor, and many more — all free, no signup.
+            PDF tools, image converters, unit converter, readability checker, and many more — all free, no signup.
           </p>
         </div>
 

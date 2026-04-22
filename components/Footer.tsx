@@ -54,6 +54,7 @@ const TOOL_CATEGORIES = [
             { label: "JWT Decoder", href: "/tools/jwt-decoder" },
             { label: "Website Down Checker", href: "/tools/website-down-checker" },
             { label: "Age Calculator", href: "/tools/age-calculator" },
+            { label: "PDF Generator", href: "/tools/pdf-generator" },
         ],
     },
 ];
