@@ -16,6 +16,30 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "regex-cheat-sheet-beginners",
+        title: "Regex Cheat Sheet for Beginners: The Patterns You Actually Use",
+        description: "A practical regex reference covering the patterns developers reach for most — character classes, anchors, quantifiers, groups, and real-world examples with a free tester.",
+        date: "April 25, 2026",
+        readTime: "6 min read",
+        tag: "Engineering",
+        accent: "#10b981",
+        accentBg: "rgba(16,185,129,0.08)",
+        accentBorder: "rgba(16,185,129,0.2)",
+        featured: true,
+    },
+    {
+        slug: "how-to-generate-qr-code-wifi",
+        title: "How to Generate a QR Code for Your WiFi (No App Needed)",
+        description: "Let guests connect to your WiFi instantly by scanning a QR code — no typing passwords. Learn how to create one free in seconds, the format it uses, and where to display it.",
+        date: "April 23, 2026",
+        readTime: "4 min read",
+        tag: "Utility",
+        accent: "#22d3ee",
+        accentBg: "rgba(34,211,238,0.08)",
+        accentBorder: "rgba(34,211,238,0.2)",
+        featured: false,
+    },
+    {
         slug: "what-is-a-jwt-token",
         title: "What Is a JWT Token? Structure, Claims & How to Decode One",
         description: "JWT tokens are used in almost every modern API for authentication. Learn how they're structured, what the three parts mean, common claims to know, and how to decode one instantly.",
@@ -25,7 +49,7 @@ const posts = [
         accent: "#f59e0b",
         accentBg: "rgba(245,158,11,0.08)",
         accentBorder: "rgba(245,158,11,0.2)",
-        featured: true,
+        featured: false,
     },
     {
         slug: "what-is-my-ip-address",
