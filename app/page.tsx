@@ -435,8 +435,28 @@ const LIVE_TOOLS = [
         category: "Security",
         accent: "#34d399",
         accentRgb: "52,211,153",
-        badge: "New",
+        badge: null,
         image: "/tools/ssl-checker-preview.png",
+    },
+    {
+        title: "WHOIS Domain Lookup",
+        desc: "Check domain registration date, expiry, registrar and nameservers instantly. See who owns any domain.",
+        href: "/tools/whois-lookup",
+        category: "Domain",
+        accent: "#f97316",
+        accentRgb: "249,115,22",
+        badge: "New",
+        image: "/tools/whois-lookup-preview.png",
+    },
+    {
+        title: "Compound Interest Calculator",
+        desc: "See how your investment grows with compounding. Add monthly contributions, choose frequency, view year-by-year breakdown.",
+        href: "/tools/compound-interest-calculator",
+        category: "Finance",
+        accent: "#fbbf24",
+        accentRgb: "251,191,36",
+        badge: "New",
+        image: "/tools/compound-interest-preview.png",
     },
 ];
 
@@ -548,7 +568,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    42 top-tier tools live · Free forever · No account
+                                    44 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -624,7 +644,7 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "42", label: "Live tools" },
+                                    { value: "44", label: "Live tools" },
                                     { value: "20+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
@@ -860,7 +880,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 42 tools <ArrowRight size={14} />
+                        View all 44 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

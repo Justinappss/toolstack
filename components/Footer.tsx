@@ -57,6 +57,8 @@ const TOOL_CATEGORIES = [
             { label: "PDF Generator", href: "/tools/pdf-generator" },
             { label: "IP Address Lookup", href: "/tools/ip-address-lookup" },
             { label: "SSL Certificate Checker", href: "/tools/ssl-checker" },
+            { label: "WHOIS Domain Lookup", href: "/tools/whois-lookup" },
+            { label: "Compound Interest Calculator", href: "/tools/compound-interest-calculator" },
         ],
     },
 ];
