@@ -455,8 +455,38 @@ const LIVE_TOOLS = [
         category: "Finance",
         accent: "#fbbf24",
         accentRgb: "251,191,36",
-        badge: "New",
+        badge: null,
         image: "/tools/compound-interest-preview.png",
+    },
+    {
+        title: "UUID Generator",
+        desc: "Generate UUID v4, v1, v5, ULID and NanoID in bulk. Copy all or download as .txt. 100% client-side.",
+        href: "/tools/uuid-generator",
+        category: "Dev",
+        accent: "#38bdf8",
+        accentRgb: "56,189,248",
+        badge: "",
+        image: "/tools/uuid-generator-preview.png",
+    },
+    {
+        title: "YouTube Thumbnail Downloader",
+        desc: "Download any YouTube video thumbnail in all 5 resolutions. Max, SD, HQ, MQ and Default. Free, no signup.",
+        href: "/tools/youtube-thumbnail-downloader",
+        category: "Video",
+        accent: "#ff0000",
+        accentRgb: "255,0,0",
+        badge: "New",
+        image: "/tools/youtube-thumbnail-downloader-preview.png",
+    },
+    {
+        title: "Online Stopwatch",
+        desc: "Stopwatch with lap times and countdown timer. Centisecond accurate. Keyboard shortcuts: Space, L, R.",
+        href: "/tools/online-stopwatch",
+        category: "Utility",
+        accent: "#38bdf8",
+        accentRgb: "56,189,248",
+        badge: "New",
+        image: "/tools/online-stopwatch-preview.png",
     },
 ];
 
@@ -568,7 +598,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    44 top-tier tools live · Free forever · No account
+                                    47 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -644,7 +674,7 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "44", label: "Live tools" },
+                                    { value: "47", label: "Live tools" },
                                     { value: "20+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
@@ -880,7 +910,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 44 tools <ArrowRight size={14} />
+                        View all 47 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 
