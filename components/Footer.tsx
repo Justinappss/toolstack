@@ -64,6 +64,8 @@ const TOOL_CATEGORIES = [
             { label: "Online Stopwatch", href: "/tools/online-stopwatch" },
             { label: "Card Grading Profit Calculator", href: "/tools/card-grading-profit-calculator" },
             { label: "Whatnot Seller Fee Calculator", href: "/tools/whatnot-seller-fee-calculator" },
+            { label: "Grading Company Comparison", href: "/tools/grading-company-comparison" },
+            { label: "Card Flip ROI Calculator", href: "/tools/card-flip-roi-calculator" },
         ],
     },
 ];

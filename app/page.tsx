@@ -505,8 +505,28 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#f97316",
         accentRgb: "249,115,22",
-        badge: "New",
+        badge: null,
         image: "/tools/whatnot-seller-fee-calculator-preview.png",
+    },
+    {
+        title: "Grading Company Comparison",
+        desc: "PSA vs BGS vs SGC vs CGC — fees, turnaround times and resale value side-by-side. Get a personalised recommendation instantly.",
+        href: "/tools/grading-company-comparison",
+        category: "Collectibles",
+        accent: "#f59e0b",
+        accentRgb: "245,158,11",
+        badge: "New",
+        image: "/tools/grading-company-comparison-preview.png",
+    },
+    {
+        title: "Card Flip ROI Calculator",
+        desc: "See your real profit after eBay fees, shipping and costs before you list. Multi-platform comparison built in.",
+        href: "/tools/card-flip-roi-calculator",
+        category: "Collectibles",
+        accent: "#10b981",
+        accentRgb: "16,185,129",
+        badge: "New",
+        image: "/tools/card-flip-roi-calculator-preview.png",
     },
 ];
 
@@ -618,7 +638,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    49 top-tier tools live · Free forever · No account
+                                    51 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -694,8 +714,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "49", label: "Live tools" },
-                                    { value: "20+", label: "Coming soon" },
+                                    { value: "51", label: "Live tools" },
+                                    { value: "9+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -930,7 +950,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 49 tools <ArrowRight size={14} />
+                        View all 51 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

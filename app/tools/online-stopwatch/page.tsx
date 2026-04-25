@@ -412,6 +412,12 @@ export default function OnlineStopwatch() {
               </g>
               <circle cx="250" cy="250" r="188" fill="url(#sw-faceGrad)"/>
               <circle cx="250" cy="250" r="188" fill="url(#sw-brush)" opacity=".25"/>
+              {/* TAG Heuer dial branding */}
+              <text x="250" y="148" textAnchor="middle" fontFamily="'Arial Black','Arial',sans-serif" fontWeight="900" fontSize="18" letterSpacing="6" fill="rgba(234,246,255,0.92)">TAG HEUER</text>
+              <line x1="210" y1="155" x2="290" y2="155" stroke="rgba(234,246,255,0.2)" strokeWidth="0.75"/>
+              <text x="250" y="170" textAnchor="middle" fontFamily="'Arial','Helvetica',sans-serif" fontWeight="400" fontSize="10" letterSpacing="4" fill="rgba(234,246,255,0.45)">CHRONOGRAPH</text>
+              <text x="250" y="338" textAnchor="middle" fontFamily="'Arial','Helvetica',sans-serif" fontWeight="400" fontSize="9" letterSpacing="4" fill="rgba(234,246,255,0.38)">SWISS MADE</text>
+              <line x1="225" y1="342" x2="275" y2="342" stroke="rgba(234,233,233,0.15)" strokeWidth="0.6"/>
               <g>
                 {minuteTicks.map((t, i) => (
                   <line key={i} x1={t.x1} y1={t.y1} x2={t.x2} y2={t.y2}
