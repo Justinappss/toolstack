@@ -59,6 +59,11 @@ const TOOL_CATEGORIES = [
             { label: "SSL Certificate Checker", href: "/tools/ssl-checker" },
             { label: "WHOIS Domain Lookup", href: "/tools/whois-lookup" },
             { label: "Compound Interest Calculator", href: "/tools/compound-interest-calculator" },
+            { label: "UUID Generator", href: "/tools/uuid-generator" },
+            { label: "YouTube Thumbnail Downloader", href: "/tools/youtube-thumbnail-downloader" },
+            { label: "Online Stopwatch", href: "/tools/online-stopwatch" },
+            { label: "Card Grading Profit Calculator", href: "/tools/card-grading-profit-calculator" },
+            { label: "Whatnot Seller Fee Calculator", href: "/tools/whatnot-seller-fee-calculator" },
         ],
     },
 ];
@@ -66,6 +71,7 @@ const TOOL_CATEGORIES = [
 const COMPANY = [
     { label: "About", href: "/about" },
     { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use", href: "/terms" },
     { label: "All Tools", href: "/tools" },

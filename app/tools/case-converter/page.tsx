@@ -2,7 +2,6 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 // ─── Case conversion functions ───────────────────────────────────────────────
 const MINOR_WORDS = new Set([
@@ -400,7 +399,7 @@ export default function CaseConverterPage() {
         </div>
 
         <MoreTools currentSlug="case-converter" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

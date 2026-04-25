@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const COUNTRIES = [
   { code: "GB", name: "United Kingdom", flag: "🇬🇧", currency: "GBP", symbol: "£", defaultRate: "4.5" },
@@ -384,7 +383,7 @@ export default function MortgageCalculator() {
           <MoreTools currentSlug="mortgage-calculator" />
         </div>
         <div style={{ marginTop: 24 }}>
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
     </div>

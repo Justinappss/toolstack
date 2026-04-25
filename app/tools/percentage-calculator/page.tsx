@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const MODES = [
   {
@@ -310,7 +309,7 @@ export default function PercentageCalculator() {
           <MoreTools currentSlug="percentage-calculator" />
         </div>
         <div style={{ marginTop: 24 }}>
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
     </div>

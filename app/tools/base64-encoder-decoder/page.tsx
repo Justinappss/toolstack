@@ -4,7 +4,6 @@ import { useState, useCallback, useEffect } from "react";
 import { ArrowRightLeft, Copy, Check, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 import { PipeDataButton } from "@/components/PipeDataButton";
 
@@ -330,7 +329,7 @@ export default function Base64Encoder() {
         </section>
 
         <MoreTools currentSlug="base64-encoder-decoder" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

@@ -2,7 +2,6 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface AgeResult {
     years: number;
@@ -580,7 +579,7 @@ export default function AgeCalculator() {
                 </section>
 
                 <MoreTools currentSlug="age-calculator" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </div>
     );

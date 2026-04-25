@@ -3,7 +3,6 @@
 import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 // ─── SVG Brand Icons ──────────────────────────────────────────────────────────
 
@@ -776,7 +775,7 @@ export default function HashtagGenerator() {
           </section>
 
           <MoreTools currentSlug="hashtag-generator" />
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
 

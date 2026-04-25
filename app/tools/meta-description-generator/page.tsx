@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -790,7 +789,7 @@ export default function MetaDescriptionGenerator() {
 
                 {/* More Tools + Banner */}
                 <MoreTools currentSlug="meta-description-generator" />
-                <AdvertiseGPTBanner />
+                
 
             </div>
 

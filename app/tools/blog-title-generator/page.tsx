@@ -4,7 +4,6 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const CONTENT_TYPES = ["Blog Post", "Newsletter", "Article", "YouTube Video", "LinkedIn Post", "Twitter Thread"];
 
@@ -485,7 +484,7 @@ export default function BlogTitleGeneratorPage() {
           <MoreTools currentSlug="blog-title-generator" />
         </div>
 
-        <AdvertiseGPTBanner />
+        
       </div>
 
       {/* JSON-LD: WebApplication */}

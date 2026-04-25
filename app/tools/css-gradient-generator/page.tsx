@@ -4,7 +4,6 @@ import { useState, useMemo, useCallback } from "react";
 import { Copy, Check, RotateCcw, Plus, Trash2, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── CONFIG ─────────────────────────────────────────────────────────────────
@@ -383,7 +382,7 @@ export default function CSSGradientGenerator() {
         </section>
 
         <MoreTools currentSlug="css-gradient-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

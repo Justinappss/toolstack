@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 type PowerCategory = "urgency" | "curiosity" | "fomo" | "value" | "personalization";
 interface PowerWord { word: string; category: PowerCategory; }
@@ -668,7 +667,7 @@ export default function EmailSubjectLineTesterPage() {
                 </div>
 
                 <MoreTools currentSlug="email-subject-line-tester" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </div>
     );

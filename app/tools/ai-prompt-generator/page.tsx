@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Sparkles, Copy, Check, RefreshCw, Zap, Star, Download, ExternalLink, ChevronRight, Search, Code2, BarChart3, FileText, Briefcase, MessageSquare, GraduationCap, Megaphone, Lightbulb, FlaskConical } from "lucide-react";
 import Link from "next/link";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── TYPES ─────────────────────────────────────────────────────────────────
@@ -788,7 +787,7 @@ export default function AIPromptGenerator() {
 
           {/* AdvertiseGPT CTA */}
           <div style={{ padding: "0 0 80px" }}>
-            <AdvertiseGPTBanner />
+            
           </div>
 
         </div>

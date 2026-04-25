@@ -5,7 +5,6 @@ import { Sparkles, Copy, Check, Info, Globe, Shield, RefreshCw } from "lucide-re
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── SVG ICONS ─────────────────────────────────────────────────────────────
@@ -430,7 +429,7 @@ export default function BusinessNameGenerator() {
         </div>
 
         <MoreTools currentSlug="business-name-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

@@ -3,7 +3,6 @@
 import { useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import { ChevronRight, Copy, Check, Trash2, FileText, Clock, BarChart2, Hash, AlignLeft, Zap, Eye, Wand2, RotateCcw, Download } from "lucide-react";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── HELPERS ────────────────────────────────────────────────────────────────
@@ -859,7 +858,7 @@ export default function WordCounter() {
           <MoreTools currentSlug="word-counter" />
 
           {/* ── ADVERTSGPT BANNER ── */}
-          <AdvertiseGPTBanner />
+          
 
         </div>
       </div>

@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface WhoisResult {
     domain: string;
@@ -315,7 +314,7 @@ export default function WhoisLookupPage() {
                 )}
 
                 <MoreTools currentSlug="whois-lookup" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </main>
     );

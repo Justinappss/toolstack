@@ -4,7 +4,6 @@ import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const CHARS = {
   upper:   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -469,7 +468,7 @@ export default function PasswordGeneratorPage() {
           <MoreTools currentSlug="password-generator" />
         </div>
 
-        <AdvertiseGPTBanner />
+        
       </div>
 
       {/* Slider thumb styling */}

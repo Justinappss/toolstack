@@ -300,7 +300,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${base}/tools/uuid-generator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${base}/tools/youtube-thumbnail-downloader`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${base}/tools/online-stopwatch`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: `${base}/tools/compound-interest-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${base}/tools/card-grading-profit-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${base}/tools/whatnot-seller-fee-calculator`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.95,
@@ -406,6 +436,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "yearly",
       priority: 0.3,
+    },
+    {
+      url: `${base}/contact`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.4,
     },
   ];
 }

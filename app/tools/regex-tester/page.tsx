@@ -4,7 +4,6 @@ import { useState, useCallback, useEffect, useMemo } from "react";
 import { AlertCircle, Filter, BookOpen, ChevronRight, Copy, Check } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 const HOW_IT_WORKS = [
@@ -404,7 +403,7 @@ export default function RegexTester() {
         </section>
 
         <MoreTools currentSlug="regex-tester" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

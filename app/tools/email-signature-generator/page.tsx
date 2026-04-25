@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import { Copy, Check, Eye, Palette } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── CONFIG ─────────────────────────────────────────────────────────────────
@@ -506,7 +505,7 @@ export default function EmailSignatureGenerator() {
 
         {/* ── MoreTools + Banner ────────────────────────────────────── */}
         <MoreTools currentSlug="email-signature-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

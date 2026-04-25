@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const PAGE_SIZES = [
     { label: "A4", value: "a4", w: 210, h: 297 },
@@ -337,7 +336,7 @@ export default function PdfGeneratorPage() {
                     ))}
                 </div>
 
-                <AdvertiseGPTBanner />
+                
                 <MoreTools currentSlug="pdf-generator" />
             </div>
         </div>

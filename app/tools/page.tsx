@@ -441,12 +441,62 @@ const ALL_TOOLS = [
     category: "Finance",
     accent: "#fbbf24",
     accentRgb: "251,191,36",
-    badge: "New",
+    badge: null,
     icon: "📈",
+  },
+  {
+    title: "UUID Generator",
+    desc: "Generate UUID v4, v1, v5, ULID and NanoID in bulk. Uppercase, no-hyphens and braces formatting. Copy all or download as .txt.",
+    href: "/tools/uuid-generator",
+    category: "Dev",
+    accent: "#38bdf8",
+    accentRgb: "56,189,248",
+    badge: null,
+    icon: "⟨/⟩",
+  },
+  {
+    title: "YouTube Thumbnail Downloader",
+    desc: "Download any YouTube video thumbnail in all available resolutions — HD, SD, and default. Paste a URL and get all sizes instantly.",
+    href: "/tools/youtube-thumbnail-downloader",
+    category: "Video",
+    accent: "#ff0000",
+    accentRgb: "255,0,0",
+    badge: "New",
+    icon: "▶",
+  },
+  {
+    title: "Online Stopwatch",
+    desc: "Free stopwatch with lap times and countdown timer. Accurate to the millisecond. Keyboard shortcuts, copy laps, runs in your browser.",
+    href: "/tools/online-stopwatch",
+    category: "Utility",
+    accent: "#38bdf8",
+    accentRgb: "56,189,248",
+    badge: "New",
+    icon: "⏱",
+  },
+  {
+    title: "Card Grading Profit Calculator",
+    desc: "Is grading your card worth it? Calculate profit and ROI across PSA, BGS, SGC and CSG. Includes eBay fee breakdown and grader comparison.",
+    href: "/tools/card-grading-profit-calculator",
+    category: "Collectibles",
+    accent: "#f59e0b",
+    accentRgb: "245,158,11",
+    badge: "New",
+    icon: "🏆",
+  },
+  {
+    title: "Whatnot Seller Fee Calculator",
+    desc: "Calculate your Whatnot commission, payment processing fees and net payout by category. Side-by-side eBay comparison included.",
+    href: "/tools/whatnot-seller-fee-calculator",
+    category: "Collectibles",
+    accent: "#f97316",
+    accentRgb: "249,115,22",
+    badge: "New",
+    icon: "🔥",
   },
 ];
 
-const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design"];
+const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles"];
 
 const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",
@@ -461,6 +511,8 @@ const CATEGORY_MAP: Record<string, string> = {
   business: "Business",
   math: "Math",
   design: "Design",
+  video: "Video",
+  collectibles: "Collectibles",
 };
 
 function ToolsGrid() {

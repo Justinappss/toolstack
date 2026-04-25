@@ -2,7 +2,6 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface ColorSwatch {
     hex: string;
@@ -709,7 +708,7 @@ export default function ColorPaletteGenerator() {
                 </section>
 
                 <MoreTools currentSlug="color-palette-generator" />
-                <AdvertiseGPTBanner />
+                
             </div>
 
             <style>{`

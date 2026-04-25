@@ -172,3 +172,84 @@ body {
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* ─── Banner v2 (radar + subscriber feed) ────────────────────── */
+@keyframes pulseDot {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.3); }
+}
+@keyframes bannerShimmer {
+  0%   { transform: translateX(-100%); }
+  60%  { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
+}
+@keyframes conicSpin {
+  to { transform: rotate(360deg); }
+}
+@keyframes auraDriftV {
+  0%   { transform: translate(-6%, -4%) scale(1.02); }
+  50%  { transform: translate(6%, 4%)   scale(1.10); }
+  100% { transform: translate(-6%, -4%) scale(1.02); }
+}
+@keyframes auraDriftC {
+  0%   { transform: translate(5%, 4%)  scale(1.04); }
+  50%  { transform: translate(-5%, -4%) scale(1.12); }
+  100% { transform: translate(5%, 4%)  scale(1.04); }
+}
+@keyframes bannerSlideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.bnr-wrap {
+  position: relative;
+  border-radius: 32px;
+  isolation: isolate;
+  height: 100%;
+}
+.bnr-wrap::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 34px;
+  padding: 2px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    var(--glowA) 15%,
+    var(--glowB) 35%,
+    transparent 50%,
+    var(--glowA) 70%,
+    var(--glowB) 90%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(#000,#000) content-box, linear-gradient(#000,#000);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0.9;
+  animation: conicSpin 8s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+.bnr-wrap::after {
+  content: "";
+  position: absolute;
+  inset: -30px;
+  border-radius: 44px;
+  background:
+    radial-gradient(40% 60% at 20% 30%, var(--glowA), transparent 70%),
+    radial-gradient(50% 60% at 80% 70%, var(--glowB), transparent 70%);
+  filter: blur(40px);
+  opacity: 0.55;
+  z-index: -1;
+  pointer-events: none;
+  animation: var(--auraAnim) 12s ease-in-out infinite;
+}
+.bnr-inner { position: relative; z-index: 1; height: 100%; }
+
+@media (max-width: 640px) {
+  .bnr-wrap::after {
+    inset: -12px;
+    filter: blur(20px);
+    opacity: 0.4;
+  }
+}

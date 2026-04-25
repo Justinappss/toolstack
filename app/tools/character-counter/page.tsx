@@ -2,7 +2,6 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 // ─── Platform limits ─────────────────────────────────────────────────────────
 const PLATFORMS = [
@@ -404,7 +403,7 @@ export default function CharacterCounterPage() {
         </div>
 
         <MoreTools currentSlug="character-counter" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface JwtResult {
     header: Record<string, unknown>;
@@ -469,7 +468,7 @@ export default function JwtDecoder() {
                 </section>
 
                 <MoreTools currentSlug="jwt-decoder" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </div>
     );

@@ -4,7 +4,6 @@ import { useState, useMemo, useCallback } from "react";
 import { Check, Copy, RefreshCcw, Info, ArrowRightLeft } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── UTILS ──────────────────────────────────────────────────────────────────
@@ -348,7 +347,7 @@ export default function ColorContrastChecker() {
         </section>
 
         <MoreTools currentSlug="color-contrast-checker" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

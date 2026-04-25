@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface IpData {
     ip: string;
@@ -248,7 +247,7 @@ export default function IpLookupPage() {
                 </section>
 
                 <MoreTools currentSlug="ip-address-lookup" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </div>
     );

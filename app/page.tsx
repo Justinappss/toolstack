@@ -488,6 +488,26 @@ const LIVE_TOOLS = [
         badge: "New",
         image: "/tools/online-stopwatch-preview.png",
     },
+    {
+        title: "Card Grading Profit Calculator",
+        desc: "Is grading your card worth it? Calculate profit and ROI across PSA, BGS, SGC and CSG with eBay fee breakdown.",
+        href: "/tools/card-grading-profit-calculator",
+        category: "Collectibles",
+        accent: "#f59e0b",
+        accentRgb: "245,158,11",
+        badge: "New",
+        image: "/tools/card-grading-profit-calculator-preview.png",
+    },
+    {
+        title: "Whatnot Seller Fee Calculator",
+        desc: "Calculate Whatnot commission and payment processing fees by category. Net payout and eBay comparison.",
+        href: "/tools/whatnot-seller-fee-calculator",
+        category: "Collectibles",
+        accent: "#f97316",
+        accentRgb: "249,115,22",
+        badge: "New",
+        image: "/tools/whatnot-seller-fee-calculator-preview.png",
+    },
 ];
 
 const MARQUEE_TOOLS = [
@@ -598,7 +618,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    47 top-tier tools live · Free forever · No account
+                                    49 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -674,7 +694,7 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "47", label: "Live tools" },
+                                    { value: "49", label: "Live tools" },
                                     { value: "20+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
@@ -910,7 +930,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 47 tools <ArrowRight size={14} />
+                        View all 49 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

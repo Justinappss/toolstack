@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 // ─── Lorem Ipsum corpus ──────────────────────────────────────────────────────
 const SENTENCES = [
@@ -437,7 +436,7 @@ export default function LoremIpsumPage() {
         </div>
 
         <MoreTools currentSlug="lorem-ipsum-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

@@ -2,7 +2,6 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface CheckResult {
     url: string;
@@ -372,7 +371,7 @@ export default function WebsiteDownChecker() {
                 </section>
 
                 <MoreTools currentSlug="website-down-checker" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </div>
     );

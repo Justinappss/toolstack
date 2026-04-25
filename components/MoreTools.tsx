@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 export const ALL_TOOLS = [
   {
@@ -171,6 +172,36 @@ export const ALL_TOOLS = [
     bg: "rgba(249,115,22,0.1)",
     border: "rgba(249,115,22,0.25)",
     badge: "Domain",
+  },
+  {
+    slug: "uuid-generator",
+    name: "UUID Generator",
+    desc: "Generate UUID v4, v1, v5, ULID and NanoID in bulk. Uppercase, no-hyphens and braces formatting. Copy all or download as .txt — 100% client-side.",
+    icon: "⟨/⟩",
+    color: "#38bdf8",
+    bg: "rgba(56,189,248,0.1)",
+    border: "rgba(56,189,248,0.25)",
+    badge: "Dev",
+  },
+  {
+    slug: "youtube-thumbnail-downloader",
+    name: "YouTube Thumbnail Downloader",
+    desc: "Download any YouTube video thumbnail in all 5 resolutions instantly — Max, SD, HQ, MQ and Default. Free, no signup.",
+    icon: "▶",
+    color: "#ff0000",
+    bg: "rgba(255,0,0,0.1)",
+    border: "rgba(255,0,0,0.25)",
+    badge: "New",
+  },
+  {
+    slug: "online-stopwatch",
+    name: "Online Stopwatch",
+    desc: "Stopwatch with lap times and countdown timer. Accurate to the centisecond. Space to start, L to lap, R to reset.",
+    icon: "⏱",
+    color: "#38bdf8",
+    bg: "rgba(56,189,248,0.1)",
+    border: "rgba(56,189,248,0.25)",
+    badge: "New",
   },
   {
     slug: "compound-interest-calculator",
@@ -442,13 +473,34 @@ export const ALL_TOOLS = [
     border: "rgba(34,211,238,0.25)",
     badge: "Utility",
   },
+  {
+    slug: "card-grading-profit-calculator",
+    name: "Card Grading Profit Calculator",
+    desc: "Is grading your card worth it? Calculate profit, ROI and compare PSA, BGS, SGC and CSG fees side by side.",
+    icon: "🏆",
+    color: "#f59e0b",
+    bg: "rgba(245,158,11,0.1)",
+    border: "rgba(245,158,11,0.25)",
+    badge: "New",
+  },
+  {
+    slug: "whatnot-seller-fee-calculator",
+    name: "Whatnot Seller Fee Calculator",
+    desc: "Calculate Whatnot commission and payment processing fees by category. See net payout and compare vs eBay.",
+    icon: "🔥",
+    color: "#f97316",
+    bg: "rgba(249,115,22,0.1)",
+    border: "rgba(249,115,22,0.25)",
+    badge: "New",
+  },
 ];
 
 export function MoreTools({ currentSlug }: { currentSlug: string }) {
   const tools = ALL_TOOLS.filter(t => t.slug !== currentSlug);
 
   return (
-    <div style={{ marginTop: 64, marginBottom: 16 }}>
+    <div style={{ marginTop: 0, marginBottom: 16 }}>
+      <AdvertiseGPTBanner />
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 24, flexWrap: "wrap", gap: 12 }}>
         <div>
           <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 4px", letterSpacing: "-0.02em" }}>
@@ -497,8 +549,8 @@ export function MoreTools({ currentSlug }: { currentSlug: string }) {
                 <span style={{
                   fontSize: 11, fontWeight: 700, letterSpacing: "0.06em",
                   padding: "3px 9px", borderRadius: 999,
-                  background: `${tool.color}18`,
-                  border: `1px solid ${tool.color}35`,
+                  background: `${tool.color}10`,
+                  border: `1px solid ${tool.color}30`,
                   color: tool.color,
                 }}>{tool.badge}</span>
               </div>

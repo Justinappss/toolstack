@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 type Correction = {
   original: string;
@@ -542,7 +541,7 @@ export default function GrammarCheckerPage() {
         </div>
 
         <MoreTools currentSlug="grammar-checker" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

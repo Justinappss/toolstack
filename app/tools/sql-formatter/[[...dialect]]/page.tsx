@@ -5,7 +5,6 @@ import { Download, Copy, Check, Trash2, Database, Settings } from "lucide-react"
 import Link from "next/link";
 import { format as formatSql } from "sql-formatter";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 import { PipeDataButton } from "@/components/PipeDataButton";
 import { ShareSnippetButton } from "@/components/ShareSnippetButton";
@@ -384,7 +383,7 @@ export default function SqlFormatter({ params }: { params: { dialect?: string[] 
           </section>
 
           <MoreTools currentSlug="sql-formatter" />
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
     </div>

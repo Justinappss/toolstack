@@ -2,7 +2,6 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const accent = "#fbbf24";
 const accentBg = "rgba(251,191,36,0.08)";
@@ -346,7 +345,7 @@ export default function CompoundInterestCalculator() {
                 )}
 
                 <MoreTools currentSlug="compound-interest-calculator" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </main>
     );

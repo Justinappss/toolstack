@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const MODES = [
   { id: "standard", label: "Standard", icon: "↔", desc: "Same meaning, different words" },
@@ -468,7 +467,7 @@ export default function ParaphrasingToolPage() {
         </div>
 
         <MoreTools currentSlug="paraphrasing-tool" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

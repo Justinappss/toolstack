@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const CURRENCIES = [
   { code: "GBP", symbol: "£", label: "GBP — British Pound" },
@@ -677,7 +676,7 @@ export default function InvoiceGeneratorPage() {
         <div style={{ marginTop: 64 }}>
           <MoreTools currentSlug="invoice-generator" />
         </div>
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

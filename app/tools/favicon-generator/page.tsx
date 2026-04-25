@@ -5,7 +5,6 @@ import { Download, Check, Type, Sparkles, Copy } from "lucide-react";
 import Link from "next/link";
 import JSZip from "jszip";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 const FONTS = [
@@ -448,7 +447,7 @@ export default function FaviconGenerator() {
         </section>
 
         <MoreTools currentSlug="favicon-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

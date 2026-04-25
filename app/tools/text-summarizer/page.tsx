@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const MODES = [
   { id: "paragraph",     label: "¶ Paragraph",      desc: "Flowing prose summary" },
@@ -492,7 +491,7 @@ export default function TextSummarizerPage() {
         </div>
 
         <MoreTools currentSlug="text-summarizer" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

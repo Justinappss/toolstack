@@ -5,7 +5,6 @@ import { Download, Copy, Check, Trash2, Eye, Code } from "lucide-react";
 import Link from "next/link";
 import { marked } from "marked";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 import { PipeDataButton } from "@/components/PipeDataButton";
 
@@ -388,7 +387,7 @@ export default function MarkdownEditor() {
           </section>
 
           <MoreTools currentSlug="markdown-editor" />
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
     </div>

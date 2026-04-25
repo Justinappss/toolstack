@@ -5,7 +5,6 @@ import { Sparkles, Copy, Check, Layout, RefreshCw, Trash2, BarChart3, Info } fro
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 // ─── SVG ICONS ─────────────────────────────────────────────────────────────
@@ -397,7 +396,7 @@ export default function YouTubeTagGenerator() {
         </div>
 
         <MoreTools currentSlug="youtube-tag-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
 
       <style dangerouslySetInnerHTML={{ __html: `

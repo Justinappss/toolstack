@@ -4,7 +4,6 @@ import { useState, useCallback, useEffect } from "react";
 import { Clock, Copy, Check, ArrowDown, ArrowUp } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { MoreTools } from "@/components/MoreTools";
 
 const HOW_IT_WORKS = [
@@ -355,7 +354,7 @@ export default function UnixConverter() {
         </section>
 
         <MoreTools currentSlug="unix-timestamp-converter" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

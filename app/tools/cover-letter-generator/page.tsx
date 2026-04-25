@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const TONES = [
   { id: "professional", label: "💼 Professional", desc: "Formal, authoritative, confident" },
@@ -479,7 +478,7 @@ export default function CoverLetterPage() {
         </div>
 
         <MoreTools currentSlug="cover-letter-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

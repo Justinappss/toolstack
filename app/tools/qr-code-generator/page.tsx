@@ -3,7 +3,6 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import QRCode from "qrcode";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const QR_TYPES = [
   { id: "url",   label: "URL",   icon: "🔗", placeholder: "https://example.com" },
@@ -479,7 +478,7 @@ export default function QRCodeGeneratorPage() {
 
         {/* MoreTools + Banner */}
         <MoreTools currentSlug="qr-code-generator" />
-        <AdvertiseGPTBanner />
+        
       </div>
 
       {/* JSON-LD: WebApplication */}

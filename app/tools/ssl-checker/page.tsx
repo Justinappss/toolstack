@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 interface SslResult {
     domain: string;
@@ -320,7 +319,7 @@ export default function SslCheckerPage() {
                 </section>
 
                 <MoreTools currentSlug="ssl-checker" />
-                <AdvertiseGPTBanner />
+                
             </div>
         </div>
     );

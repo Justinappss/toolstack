@@ -2,7 +2,6 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 // ── UK 2024/25 tax year ──────────────────────────────────────────────────────
 function calcUK(gross: number) {
@@ -411,7 +410,7 @@ export default function SalaryCalculator() {
           <MoreTools currentSlug="salary-calculator" />
         </div>
         <div style={{ marginTop: 24 }}>
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
     </div>

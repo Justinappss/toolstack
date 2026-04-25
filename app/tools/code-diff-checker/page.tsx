@@ -3,7 +3,6 @@
 import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { DiffEditor } from "@monaco-editor/react";
 import { ArrowLeftRight, Trash2, Code2 } from "lucide-react";
 import { saveToHistory } from "@/components/HistorySidebar";
@@ -247,7 +246,7 @@ export default function DiffCheckerPage() {
           </section>
 
           <MoreTools currentSlug="code-diff-checker" />
-          <AdvertiseGPTBanner />
+          
         </div>
       </div>
     </div>

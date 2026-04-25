@@ -2,7 +2,6 @@
 import React, { useState, useCallback, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { PipeDataButton } from "@/components/PipeDataButton";
 import { ShareSnippetButton } from "@/components/ShareSnippetButton";
 import { Editor } from "@monaco-editor/react";
@@ -561,7 +560,7 @@ export default function JSONFormatterPage() {
         </div>
 
         <MoreTools currentSlug="json-formatter" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );

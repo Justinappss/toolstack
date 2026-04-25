@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const COUNTRIES = [
   { code: "GB", name: "United Kingdom", flag: "🇬🇧", standard: 20, reduced: 5, currency: "£", currencyCode: "GBP" },
@@ -501,7 +500,7 @@ export default function VATCalculatorPage() {
         </div>
 
         <MoreTools currentSlug="vat-calculator" />
-        <AdvertiseGPTBanner />
+        
       </div>
 
       {/* JSON-LD: WebApplication */}

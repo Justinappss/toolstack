@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 /* ─── Country tipping data ─────────────────────────────── */
 type CountryTip = {
@@ -627,7 +626,7 @@ export default function TipCalculatorPage() {
         </section>
 
         <MoreTools currentSlug="tip-calculator" />
-        <AdvertiseGPTBanner />
+        
       </div>
     </div>
   );
