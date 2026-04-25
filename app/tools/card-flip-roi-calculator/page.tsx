@@ -351,7 +351,7 @@ export default function CardFlipROIPage() {
         {!hasValues && (
           <div style={{ border: "1px dashed rgba(255,255,255,.1)", borderRadius: 20, padding: "40px 28px", textAlign: "center", marginBottom: 16 }}>
             <div style={{ fontSize: 32, marginBottom: 12 }}>📈</div>
-            <p style={{ color: "rgba(255,255,255,.45)", fontSize: 14, margin: 0 }}>Enter your buy price and expected sell price above to see your profit, ROI and break-even.</p>
+            <p style={{ color: "rgba(255,255,255,.6)", fontSize: 14, margin: 0 }}>Enter your buy price and expected sell price above to see your profit, ROI and break-even.</p>
           </div>
         )}
 
