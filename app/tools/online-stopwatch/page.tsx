@@ -138,12 +138,17 @@ const CSS = `
 .sw-mini-btn{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:rgba(234,246,255,.6);border-radius:8px;padding:6px 12px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}
 footer{position:relative;z-index:1}
 @media(max-width:860px){
-  .sw-scene{padding-bottom:20px}
-  .sw-watch{position:relative;width:min(380px,70vw);margin:0 auto;top:0}
-  .sw-readout{margin-left:0;width:100%}
+  .sw-scene{padding-bottom:20px;min-height:0}
+  .sw-watch{position:relative;width:min(280px,62vw);margin:0 auto 16px;top:0}
+  .sw-readout{margin-left:0;width:100%;padding:18px 14px}
+  .sw-readout-top{flex-direction:column;gap:6px}
+  .sw-digits{font-size:clamp(28px,11vw,52px)}
+  .sw-cd-inputs{font-size:clamp(28px,11vw,52px)}
   .sw-bottom{margin-left:0;width:100%;justify-content:center}
+  .sw-ctrl-bar{justify-content:center}
+  .sw-laps-chip{flex-wrap:wrap;justify-content:center}
   .sw-hero h1{font-size:32px}
-  .sw-lap-row{grid-template-columns:80px 1fr 100px 100px}
+  .sw-lap-row{grid-template-columns:70px 1fr 90px 90px}
 }
 `;
 
