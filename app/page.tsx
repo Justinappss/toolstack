@@ -545,8 +545,28 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#3b82f6",
         accentRgb: "59,130,246",
-        badge: "New",
+        badge: null,
         image: "/tools/ebay-best-offer-calculator-preview.png",
+    },
+    {
+        title: "Panini Sticker Album Calculator",
+        desc: "How many packs to complete any Panini album? World Cup 2026, Premier League, Champions League. See swap savings in your currency.",
+        href: "/tools/panini-sticker-calculator",
+        category: "Collectibles",
+        accent: "#ef4444",
+        accentRgb: "239,68,68",
+        badge: "New",
+        image: "/tools/panini-sticker-calculator-preview.png",
+    },
+    {
+        title: "Pack Break EV Calculator",
+        desc: "Is this box worth opening? Calculate expected value per pack for Pokémon, sports cards and football cards with platform fees built in.",
+        href: "/tools/pack-break-ev-calculator",
+        category: "Collectibles",
+        accent: "#a855f7",
+        accentRgb: "168,85,247",
+        badge: "New",
+        image: "/tools/pack-break-ev-calculator-preview.png",
     },
 ];
 
@@ -658,7 +678,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    53 top-tier tools live · Free forever · No account
+                                    55 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -734,8 +754,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "53", label: "Live tools" },
-                                    { value: "9+", label: "Coming soon" },
+                                    { value: "55", label: "Live tools" },
+                                    { value: "7+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -970,7 +990,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 53 tools <ArrowRight size={14} />
+                        View all 55 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

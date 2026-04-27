@@ -68,6 +68,8 @@ const TOOL_CATEGORIES = [
             { label: "Card Flip ROI Calculator", href: "/tools/card-flip-roi-calculator" },
             { label: "Card Box Break Calculator", href: "/tools/card-box-break-calculator" },
             { label: "eBay Best Offer Calculator", href: "/tools/ebay-best-offer-calculator" },
+            { label: "Panini Sticker Calculator", href: "/tools/panini-sticker-calculator" },
+            { label: "Pack Break EV Calculator", href: "/tools/pack-break-ev-calculator" },
         ],
     },
 ];
