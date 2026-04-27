@@ -96,7 +96,7 @@ export default function YoutubeThumbnailDownloader() {
         <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.45)" }}>
           <a href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</a>
           <span>/</span>
-          <a href="/tools" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Tools</a>
+          <a href="/tools?category=video" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Video</a>
           <span>/</span>
           <span style={{ color: accent }}>YouTube Thumbnail Downloader</span>
         </nav>
@@ -327,7 +327,7 @@ export default function YoutubeThumbnailDownloader() {
               "@type": "BreadcrumbList",
               "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://toolstack.tech/tools" },
+                { "@type": "ListItem", "position": 2, "name": "Video", "item": "https://toolstack.tech/tools?category=video" },
                 { "@type": "ListItem", "position": 3, "name": "YouTube Thumbnail Downloader", "item": "https://toolstack.tech/tools/youtube-thumbnail-downloader" },
               ],
             },
@@ -340,6 +340,7 @@ export default function YoutubeThumbnailDownloader() {
                 { "@type": "Question", "name": "Does this work with YouTube Shorts?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste the full Shorts URL and all available thumbnail resolutions will appear instantly." } },
                 { "@type": "Question", "name": "What is the highest quality YouTube thumbnail size?", "acceptedAnswer": { "@type": "Answer", "text": "maxresdefault.jpg at 1280×720 pixels is the highest quality, used by YouTube on the video page itself." } },
                 { "@type": "Question", "name": "What is the best YouTube thumbnail downloader?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's YouTube Thumbnail Downloader shows all five resolutions simultaneously with instant previews and one-click downloads — all free with no signup required." } },
+                { "@type": "Question", "name": "Do I need to create an account to download thumbnails?", "acceptedAnswer": { "@type": "Answer", "text": "No. ToolStack is completely free with no account required. Paste your URL, preview the thumbnails, and download — nothing else needed." } },
               ],
             },
           ]),

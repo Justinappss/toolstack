@@ -247,7 +247,7 @@ export default function EmailSubjectLineTesterPage() {
               {
                 "@context": "https://schema.org",
                 "@type": "WebApplication",
-                "name": "EmailVibe Pro",
+                "name": "Email Subject Line Tester",
                 "url": "https://toolstack.tech/tools/email-subject-line-tester",
                 "description": "Free email subject line tester. Score your subject lines for open rate potential, spam triggers, and length. Get AI-suggested alternatives. No signup.",
                 "applicationCategory": "BusinessApplication",
@@ -267,13 +267,14 @@ export default function EmailSubjectLineTesterPage() {
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
                   { "@type": "ListItem", "position": 2, "name": "Marketing", "item": "https://toolstack.tech/tools?category=marketing" },
-                  { "@type": "ListItem", "position": 3, "name": "EmailVibe Pro", "item": "https://toolstack.tech/tools/email-subject-line-tester" },
+                  { "@type": "ListItem", "position": 3, "name": "Email Subject Line Tester", "item": "https://toolstack.tech/tools/email-subject-line-tester" },
                 ],
               },
               {
                 "@context": "https://schema.org",
                 "@type": "FAQPage",
                 "mainEntity": [
+                  { "@type": "Question", "name": "What is the best email subject line tester?", "acceptedAnswer": { "@type": "Answer", text: "ToolStack's free email subject line tester is the most complete option available. It scores your subject line across seven factors — length, spam triggers, power words, capitalisation, punctuation, emoji, and engagement signals — gives you a letter grade with a score breakdown, shows inbox previews for Gmail and Outlook, and generates five AI-rewritten alternatives. No signup required." } },
                   { "@type": "Question", "name": "What is a good email subject line score?", "acceptedAnswer": { "@type": "Answer", text: "A score of 80+ (grade A) is excellent. 65–79 (grade B) is good. Aim for at least 65." } },
                   { "@type": "Question", "name": "What are email spam trigger words?", "acceptedAnswer": { "@type": "Answer", text: "Spam triggers are phrases flagged by filters, including 'guaranteed', 'act now', 'click here' and 'earn money'." } },
                   { "@type": "Question", "name": "What is the ideal email subject line length?", "acceptedAnswer": { "@type": "Answer", text: "40–60 characters. This ensures full display in Gmail desktop and mobile without clipping." } },
@@ -284,7 +285,7 @@ export default function EmailSubjectLineTesterPage() {
               },
             ]) }} />
 
-            <div style={{ maxWidth: 980, margin: "0 auto", padding: "40px 20px 80px" }}>
+            <div style={{ maxWidth: 860, margin: "0 auto", padding: "40px 20px 80px" }}>
 
                 {/* Breadcrumb */}
                 <nav style={{ marginBottom: 28, display: "flex", alignItems: "center", gap: 6, fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.3)" }}>
@@ -292,20 +293,20 @@ export default function EmailSubjectLineTesterPage() {
                     <span>/</span>
                     <Link href="/tools" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>All Tools</Link>
                     <span>/</span>
-                    <span style={{ color: "#f472b6" }}>EmailVibe Pro</span>
+                    <span style={{ color: "#f472b6" }}>Email Subject Line Tester</span>
                 </nav>
 
                 {/* Header */}
                 <div style={{ textAlign: "center", marginBottom: 36 }}>
-                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 16, fontSize: 11, fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f472b6", background: "rgba(244,114,182,0.12)", border: "1px solid rgba(244,114,182,0.3)", padding: "5px 14px", borderRadius: 999 }}>✓ EmailVibe Pro · AI-Powered · No Signup</div>
+                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 16, fontSize: 11, fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: "#f472b6", background: "rgba(244,114,182,0.12)", border: "1px solid rgba(244,114,182,0.3)", padding: "5px 14px", borderRadius: 999 }}>✓ Email Subject Line Tester · AI-Powered · No Signup</div>
                     <h1 style={{ fontSize: "clamp(28px,5vw,56px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.0, margin: "0 0 14px", color: "white" }}>
-                        EmailVibe<br />
+                        Email Subject<br />
                         <span style={{ background: "linear-gradient(135deg, #f472b6 0%, #ec4899 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-                          Pro.
+                          Line Tester.
                         </span>
                     </h1>
                     <p style={{ fontSize: 16, color: "rgba(255,255,255,0.45)", maxWidth: 520, margin: "0 auto 22px", lineHeight: 1.6 }}>
-                        The professional suite for inbox authority. EmailVibe Pro analyzes subject lines for maximum semantic resonance, spam immunity, and click-through fidelity.
+                        Score your email subject lines instantly. Checks for spam triggers, power words, ideal length, and capitalisation — then suggests AI-rewritten alternatives. Free, no signup.
                     </p>
                     <div style={{ display: "flex", justifyContent: "center", gap: 20, flexWrap: "wrap" }}>
                         {["⚡ Real-time scoring", "🆚 A/B compare", "🚫 Spam detection", "📥 Inbox previews", "✦ AI rewrites"].map(f => (
@@ -651,6 +652,7 @@ export default function EmailSubjectLineTesterPage() {
                     <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 20px", letterSpacing: "-0.02em" }}>Frequently Asked Questions</h2>
                     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                         {[
+                            { q: "What is the best email subject line tester?", a: "ToolStack's free email subject line tester is the most complete option available. It scores your subject line across seven factors — length, spam triggers, power words, capitalisation, punctuation, emoji, and engagement signals — gives you a letter grade with a breakdown, shows inbox previews for Gmail and Outlook, and generates five AI-rewritten alternatives across urgency, curiosity, value, FOMO and personalisation angles. No signup required." },
                             { q: "What is a good email subject line score?", a: "A score of 80+ (grade A) is excellent and should deliver strong open rates. 65–79 (grade B) is good. Aim for at least 65 to maximise performance. Anything under 50 needs significant improvement before sending." },
                             { q: "What are email spam trigger words?", a: "Spam triggers are phrases that spam filters and email clients flag as suspicious, including 'guaranteed', 'act now', 'click here' and 'earn money'. Removing all spam triggers is the single highest-impact change you can make to improve deliverability." },
                             { q: "What is the ideal email subject line length?", a: "The ideal email subject line is 40–60 characters. This ensures full display in Gmail desktop (up to 70 chars) and Gmail mobile (up to 40 chars) without clipping. Subjects under 20 characters lack context; over 80 and most clients will truncate them." },

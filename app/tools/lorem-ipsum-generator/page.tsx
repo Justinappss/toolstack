@@ -190,8 +190,8 @@ export default function LoremIpsumPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "LoremGen Elite",
-          "description": "LoremGen Elite is the professional placeholder text generator for designers and developers. Generate high-fidelity Lorem Ipsum in 4 formats with HTML integration.",
+          "name": "Lorem Ipsum Generator",
+          "description": "Free Lorem Ipsum generator for designers and developers. Generate placeholder text in 4 formats — paragraphs, sentences, words, and list items — with optional HTML output. No signup.",
           "url": "https://toolstack.tech/tools/lorem-ipsum-generator",
           "applicationCategory": "UtilityApplication",
           "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
@@ -203,7 +203,7 @@ export default function LoremIpsumPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
-            { "@type": "ListItem", "position": 3, "name": "LoremGen Elite", "item": "https://toolstack.tech/tools/lorem-ipsum-generator" },
+            { "@type": "ListItem", "position": 3, "name": "Lorem Ipsum Generator", "item": "https://toolstack.tech/tools/lorem-ipsum-generator" },
           ],
         },
         {
@@ -226,13 +226,13 @@ export default function LoremIpsumPage() {
         {/* Hero */}
         <div style={{ marginBottom: 40, maxWidth: 680 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: `rgba(${accentRgb},0.1)`, border: `1px solid rgba(${accentRgb},0.28)`, marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#d8b4fe" }}>✓ LoremGen Elite · 4 Formats · HTML Output · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#d8b4fe" }}>✓ Lorem Ipsum Generator · 4 Formats · HTML Output · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            LoremGen<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #c084fc)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Elite.</span>
+            Lorem Ipsum<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #c084fc)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Generator.</span>
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", lineHeight: 1.6 }}>
-            The professional standard for layout placeholder. LoremGen Elite delivers high-fidelity dummy text across paragraphs, sentences, words, and lists with seamless HTML integration.
+            Generate placeholder text in 4 formats — paragraphs, sentences, words, or list items — with optional HTML output. Classic Lorem Ipsum start or fully randomised. Free, instant, no signup.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["¶ 4 generation formats", "{ } HTML output", "⚡ Instant generation", "🔓 No signup", "♾ Unlimited use"].map(b => (
@@ -328,44 +328,49 @@ export default function LoremIpsumPage() {
 
         {/* SEO CONTENT */}
         <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 20, background: `rgba(${accentRgb},0.04)`, border: `1px solid rgba(${accentRgb},0.12)` }}>
-          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>The role of placeholder text in modern design — and why LoremGen Elite leads in 2026</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>When to use each Lorem Ipsum format</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, margin: "0 0 16px" }}>
-            A <strong style={{ color: "white" }}>Lorem Ipsum Generator</strong> is defined as a digital utility used to synthesize mock text for visual design layouts, providing a neutral aesthetic that simulates natural language patterns without distracting the reviewer with actual content. At [LoremGen Elite](/tools/lorem-ipsum-generator), we define the benchmark for fidelity in placeholder generation. 
+            A <strong style={{ color: "white" }}>Lorem Ipsum generator</strong> produces neutral placeholder text so designers and developers can build layouts without real copy. The classic passage has been the industry standard since the 1500s because it visually mimics natural text — similar word lengths, punctuation rhythm, and sentence variety — without triggering readers to engage with the content instead of the layout.
           </p>
 
           <div style={{ overflowX: "auto", margin: "10px 0 24px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
               <thead>
                 <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accent }}>Output Type</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Fidelity Score</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Usage Category</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accent }}>Format</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Best for</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Typical use</th>
                 </tr>
               </thead>
               <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Full Paragraphs</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>98% (Natural flow)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>CMS / Blog Mockups</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Paragraphs</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Page content mockups</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Blog layouts, CMS templates</td>
                 </tr>
                 <tr style={{ background: "rgba(255,255,255,0.02)" }}>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>List Items</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>95% (Structural)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Navigation / Features</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Sentences</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Short text area mockups</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Card subtitles, descriptions</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Raw Words</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>100% (Exact)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>UI / Component Dev</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Words</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Character-limited fields</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Button labels, nav items</td>
+                </tr>
+                <tr style={{ background: "rgba(255,255,255,0.02)" }}>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>List items</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Menu and feature mockups</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Navigation, feature lists</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 42% Design Approval Variance</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Why not use real text for mockups?</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8 }}>
-               UI/UX studies in 2026 reveal that design prototypes using high-fidelity placeholder text from LoremGen Elite receive <strong style={{ color: "white" }}>42% fewer "feedback loops"</strong> regarding content-distraction compared to prototypes using actual mock copy. It effectively segregates visual review from editorial review.
+               Real text in mockups causes reviewers to focus on the copy — editing words, questioning phrasing — instead of evaluating the visual design. Lorem Ipsum eliminates that problem entirely. It also prevents accidentally using copyrighted or sensitive content in screenshots or presentations. Use placeholder text during design and development, then replace it with your real copy before going live. Never ship Lorem Ipsum on a public-facing page — search engines treat it as thin content.
              </p>
           </div>
         </div>

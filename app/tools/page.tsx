@@ -514,6 +514,26 @@ const ALL_TOOLS = [
     badge: "New",
     icon: "📈",
   },
+  {
+    title: "Card Box Break Calculator",
+    desc: "Price your break spots to cover box cost, platform fees and shipping. See profit at 50%, 75% and 100% fill rates. Whatnot and eBay fees built in.",
+    href: "/tools/card-box-break-calculator",
+    category: "Collectibles",
+    accent: "#f59e0b",
+    accentRgb: "245,158,11",
+    badge: "New",
+    icon: "🎰",
+  },
+  {
+    title: "eBay Best Offer Calculator",
+    desc: "Calculate your break-even offer and get an Accept, Counter or Decline recommendation for any eBay Best Offer. Full profit breakdown at every price level.",
+    href: "/tools/ebay-best-offer-calculator",
+    category: "Collectibles",
+    accent: "#3b82f6",
+    accentRgb: "59,130,246",
+    badge: "New",
+    icon: "🏷️",
+  },
 ];
 
 const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles"];

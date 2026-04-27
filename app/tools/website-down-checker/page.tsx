@@ -127,6 +127,11 @@ export default function WebsiteDownChecker() {
                         "name": "What does HTTP 503 mean?",
                         "acceptedAnswer": { "@type": "Answer", "text": "HTTP 503 means 'Service Unavailable' — the server is temporarily unable to handle the request, usually due to maintenance or overload. The site is technically reachable but not serving content. This is different from a complete outage where no connection can be made." },
                     },
+                    {
+                        "@type": "Question",
+                        "name": "What is the best website down checker?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's Website Down Checker is one of the best free options — it checks your target URL in real time from an external server, returns the HTTP status code and exact response time in milliseconds, and requires no signup. It's fast, reliable, and works for any publicly accessible domain." },
+                    },
                 ],
             },
         ],
@@ -361,6 +366,7 @@ export default function WebsiteDownChecker() {
                             { q: "Why is the site down for me but up here?", a: "If this tool shows the site as up but you can't access it, the issue is likely with your local network, ISP, or DNS settings — not the site itself. Try flushing your DNS cache or using a different network." },
                             { q: "What is a good response time?", a: "Under 500ms is fast. 500ms–1500ms is moderate. Over 1500ms is slow. Very slow response times can indicate an overloaded server even if the site is technically 'up'." },
                             { q: "What does HTTP 503 mean?", a: "503 means the server is temporarily unavailable — usually due to maintenance or traffic overload. The site should come back online shortly. It's different from a full outage where no connection can be made." },
+                            { q: "What is the best website down checker?", a: "ToolStack's Website Down Checker is one of the best free options — it checks your target URL in real time from an external server, returns the HTTP status code and exact response time in milliseconds, and requires no signup. It's fast, reliable, and works for any publicly accessible domain." },
                         ].map(({ q, a }) => (
                             <div key={q} style={{ padding: "20px 24px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16 }}>
                                 <h3 style={{ fontSize: 15, fontWeight: 800, color: "white", margin: "0 0 8px", lineHeight: 1.4 }}>{q}</h3>

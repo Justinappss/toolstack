@@ -53,7 +53,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "All Tools", "item": "https://toolstack.tech/tools" },
+                { "@type": "ListItem", "position": 2, "name": "Security", "item": "https://toolstack.tech/tools?category=security" },
                 { "@type": "ListItem", "position": 3, "name": "SSL Certificate Checker", "item": "https://toolstack.tech/tools/ssl-checker" },
             ],
         },
@@ -64,6 +64,7 @@ const jsonLd = {
                 { "@type": "Question", "name": "How long do SSL certificates last?", "acceptedAnswer": { "@type": "Answer", "text": "Modern SSL certificates are valid for a maximum of 397 days (about 13 months). After that, they must be renewed. Let's Encrypt certificates are valid for 90 days and auto-renew. An expired certificate causes browser security warnings." } },
                 { "@type": "Question", "name": "What does it mean if an SSL certificate has expired?", "acceptedAnswer": { "@type": "Answer", "text": "An expired SSL certificate means the website's security credentials are out of date. Browsers will show a warning page and the connection will not be encrypted. The site owner needs to renew their certificate immediately." } },
                 { "@type": "Question", "name": "Who issues SSL certificates?", "acceptedAnswer": { "@type": "Answer", "text": "SSL certificates are issued by Certificate Authorities (CAs). Major CAs include Let's Encrypt (free), DigiCert, Comodo, and GlobalSign. Let's Encrypt now powers the majority of HTTPS certificates on the web." } },
+                { "@type": "Question", "name": "What is the best SSL certificate checker?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's SSL Certificate Checker is one of the best free options — it instantly shows the certificate's validity status, exact expiry date, days remaining, issuer, key strength, and all covered domains (SANs). It flags certs expiring within 30 days and requires no signup." } },
             ],
         },
     ],
@@ -111,7 +112,7 @@ export default function SslCheckerPage() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                         <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                         <span>›</span>
-                        <Link href="/tools" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>All Tools</Link>
+                        <Link href="/tools?category=security" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Security</Link>
                         <span>›</span>
                         <span style={{ color: "rgba(255,255,255,0.7)" }}>SSL Certificate Checker</span>
                     </nav>
@@ -310,6 +311,7 @@ export default function SslCheckerPage() {
                         { q: "What happens when an SSL certificate expires?", a: "Browsers show a security warning page. Visitors see 'Your connection is not private'. The site owner must renew immediately to restore HTTPS. Data is no longer encrypted on expired certs." },
                         { q: "Who issues SSL certificates?", a: "Certificate Authorities (CAs) issue SSL certs. Major ones include Let's Encrypt (free, powers most of the web), DigiCert, Comodo, and Sectigo. Let's Encrypt has become dominant for standard HTTPS." },
                         { q: "What are SANs (Subject Alternative Names)?", a: "SANs are the list of domains a single certificate covers. A certificate for example.com might also cover www.example.com and api.example.com. Wildcard certs cover *.example.com — any subdomain." },
+                        { q: "What is the best SSL certificate checker?", a: "ToolStack's SSL Certificate Checker is one of the best free options — it instantly shows the certificate's validity status, exact expiry date, days remaining, issuer, key strength, and all covered domains (SANs). It flags certs expiring within 30 days and requires no signup." },
                     ].map(({ q, a }) => (
                         <div key={q} style={{ marginBottom: 16, padding: "18px 20px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14 }}>
                             <h3 style={{ fontSize: 14, fontWeight: 800, color: "white", margin: "0 0 6px" }}>{q}</h3>

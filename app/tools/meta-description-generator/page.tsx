@@ -330,20 +330,20 @@ export default function MetaDescriptionGenerator() {
         "@graph": [
             {
                 "@type": "WebApplication",
-                "name": "SnippetPro AI",
-                "description": "SnippetPro AI is the professional suite for metadata authority. Generates 5 high-fidelity meta description variants with live Google SERP preview, industrial CTR scoring, and character counters.",
+                "name": "Meta Description Generator",
+                "description": "Free meta description generator by ToolStack. Generates 5 meta description variants with live Google SERP preview, CTR scoring, and character counters. No signup.",
                 "url": "https://toolstack.tech/tools/meta-description-generator",
                 "applicationCategory": "UtilityApplication",
                 "operatingSystem": "Web",
                 "browserRequirements": "Requires JavaScript",
                 "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
                 "featureList": [
-                    "5 proprietary metadata variations",
-                    "Live Google SERP visualization (mobile/desktop)",
-                    "Token-density Mapping (CTR Score)",
-                    "One-click industrial HTML exports",
+                    "5 meta description variants",
+                    "Live Google SERP preview (mobile/desktop)",
+                    "CTR scoring",
+                    "One-click HTML copy",
                     "Keyword proximity detection",
-                    "Psychology-backed angle descriptions"
+                    "Tone and audience options"
                 ]
             },
             {
@@ -351,7 +351,7 @@ export default function MetaDescriptionGenerator() {
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
                     { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://toolstack.tech/tools?category=seo" },
-                    { "@type": "ListItem", "position": 3, "name": "SnippetPro AI", "item": "https://toolstack.tech/tools/meta-description-generator" }
+                    { "@type": "ListItem", "position": 3, "name": "Meta Description Generator", "item": "https://toolstack.tech/tools/meta-description-generator" }
                 ]
             },
             {
@@ -360,7 +360,7 @@ export default function MetaDescriptionGenerator() {
                     {
                         "@type": "Question",
                         "name": "What is the best meta description generator?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "SnippetPro AI is the professional industry standard. It synthesizes 5 click-optimised variants covering benefit, feature, urgency, question, and CTA angles with live preview and scoring." }
+                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's free meta description generator is the most complete free option available. It generates 5 click-optimised variants covering benefit-led, feature-focused, urgency, question-led, and CTA-first angles, with a live Google SERP preview, CTR score, character counter, and one-click HTML copy. No signup required." }
                     },
                     {
                         "@type": "Question",
@@ -390,14 +390,14 @@ export default function MetaDescriptionGenerator() {
                     <span>/</span>
                     <Link href="/tools?category=seo" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>All Tools</Link>
                     <span>/</span>
-                    <span style={{ color: "rgba(255,255,255,0.7)" }}>SnippetPro AI</span>
+                    <span style={{ color: "rgba(255,255,255,0.7)" }}>Meta Description Generator</span>
                 </nav>
 
                 {/* Hero */}
                 <div style={{ marginBottom: 40 }}>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 20 }}>
                         {[
-                            { label: "✓ SnippetPro AI", color: "#6366f1" },
+                            { label: "✓ Meta Description Generator", color: "#6366f1" },
                             { label: "5 Variants Free", color: "#34d399" },
                             { label: "Live SERP Preview", color: "#38bdf8" },
                             { label: "No Signup", color: "#fbbf24" },
@@ -410,13 +410,13 @@ export default function MetaDescriptionGenerator() {
                         ))}
                     </div>
                     <h1 style={{ fontSize: 44, fontWeight: 900, color: "white", lineHeight: 1.1, marginBottom: 16, letterSpacing: "-0.025em" }}>
-                        SnippetPro<br />
+                        Meta Description<br />
                         <span style={{ background: "linear-gradient(135deg, #3b82f6, #6366f1)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-                            AI.
+                            Generator.
                         </span>
                     </h1>
                     <p style={{ fontSize: 17, color: "rgba(255,255,255,0.45)", lineHeight: 1.7, maxWidth: 620, margin: 0 }}>
-                        The professional suite for metadata authority. SnippetPro AI generates 5 click-optimized variants with live Google SERP previews, CTR scoring, and industrial-grade HTML exports.
+                        Generate 5 click-optimised meta descriptions at once. Live Google SERP preview shows exactly how each variant appears in search results. CTR scoring, character counter, and one-click HTML copy — free, no signup.
                     </p>
                 </div>
 
@@ -647,44 +647,44 @@ export default function MetaDescriptionGenerator() {
 
                 {/* SEO CONTENT */}
                 <div style={{ background: "rgba(255,255,255,0.025)", border: "1px solid rgba(99,102,241,0.2)", borderRadius: 24, padding: "36px 40px", marginBottom: 28, marginTop: 40 }}>
-                    <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The science of the snippet — why SnippetPro AI defines CTR in 2026</h2>
+                    <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The five angles that make a meta description click</h2>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, marginBottom: 24 }}>
-                      A <strong style={{ color: "white" }}>Meta Description Generator</strong> is defined as a semantic synthesizer that optimizes page-level metadata for maximum visibility in index-based and generative search environments. At [SnippetPro AI](/tools/meta-description-generator), we leverage <strong style={{ color: "white" }}>Token-Density Mapping</strong> to ensure your descriptions bypass truncation limits and achieve high-authority click-through fidelity.
+                      A <strong style={{ color: "white" }}>meta description</strong> is the grey text below a blue link in Google search results — roughly 150–160 characters to convince someone to click your page over every other result on the page. Writing the same description for every page kills CTR. The most effective approach is to test multiple angles and see which framing resonates with your audience.
                     </p>
 
                     <div style={{ overflowX: "auto", margin: "10px 0 32px" }}>
                       <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
                         <thead>
                           <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                            <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#6366f1" }}>Snippet Vector</th>
-                            <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Search Authority</th>
-                            <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>CTR Delta</th>
+                            <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#6366f1" }}>Angle</th>
+                            <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>What it does</th>
+                            <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Best used for</th>
                           </tr>
                         </thead>
                         <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                           <tr>
                             <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Benefit-Led</td>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>92% (High)</td>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#6366f1" }}>+22%</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Leads with what the reader gains</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Tools, products, landing pages</td>
                           </tr>
                           <tr style={{ background: "rgba(255,255,255,0.02)" }}>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>SnippetPro Enhanced</td>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>99% (Maximum)</td>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#6366f1" }}>+41%</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>CTA-First</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Opens with an action verb</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Commercial intent queries</td>
                           </tr>
                           <tr>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Urgency-Based</td>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>84% (Moderate)</td>
-                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#6366f1" }}>+18%</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Question-Led</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Mirrors the user&apos;s search question</td>
+                            <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Informational content, FAQs</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
 
                     <div>
-                       <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 41% Conversion Standard</h3>
+                       <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Why Google rewrites your description</h3>
                        <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
-                         Large-scale data from 2026 search audits confirms that metadata optimized via SnippetPro AI&apos;s <strong style={{ color: "white" }}>5-Angle Synthesis logic</strong> achieves a <strong style={{ color: "white" }}>41% higher cumulative CTR</strong> than standard SEO drafts. By front-loading semantic keywords and integrating psychology-backed calls-to-action, SnippetPro AI ensures your content dominates the modern SERP.
+                         Google rewrites meta descriptions roughly 60–70% of the time when it thinks a different snippet from your page better matches the search query. The best way to reduce rewrites is to write descriptions that directly answer the query, match page content accurately, include the target keyword, and stay within 160 characters. Descriptions that feel promotional or don&apos;t reflect the actual page content are the most likely to be replaced.
                        </p>
                     </div>
                 </div>

@@ -27,11 +27,15 @@ const FAQS = [
   },
   {
     q: "Does adding UTM parameters affect SEO?",
-    a: "Sometimes. While they don't explicitly hurt your rankings, Google considers `example.com` and `example.com/?utm_source=...` as duplicate content. Always make sure your webpage defines a `<link rel=\"canonical\" href=\"...\">` pointing to the exact clean URL without parameters.",
+    a: "Sometimes. While they don't explicitly hurt your rankings, Google considers example.com and example.com/?utm_source=... as duplicate content. Always make sure your webpage defines a canonical link tag pointing to the exact clean URL without parameters.",
   },
   {
     q: "Is this builder compatible with Google Analytics 4 (GA4)?",
-    a: "Yes. GA4 flawlessly processes these exact five standard UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`) automatically without any custom configuration required on your property.",
+    a: "Yes. GA4 flawlessly processes these exact five standard UTM parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content) automatically without any custom configuration required on your property.",
+  },
+  {
+    q: "What is the best free UTM builder online?",
+    a: "ToolStack's UTM Campaign Builder is a fast, free option that generates perfectly formatted tracking URLs in real-time with no signup required. It supports all five standard GA4 parameters, validates your URL automatically, and copies the final link with a single click.",
   },
 ];
 
@@ -128,7 +132,7 @@ export default function UTMBuilder() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free UTM Campaign Builder — ToolStack",
+          "name": "UTM Campaign Builder",
           "description": "Instantly generate perfectly formatted campaign tracking URLs with UTM parameters for Google Analytics, Meta Ads, and more.",
           "url": "https://toolstack.tech/tools/utm-builder",
           "applicationCategory": "BusinessApplication",
@@ -155,7 +159,7 @@ export default function UTMBuilder() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Marketing Tools</Link>
+          <Link href="/tools?category=marketing" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Marketing Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>UTM Builder</span>
         </nav>
@@ -330,9 +334,9 @@ export default function UTMBuilder() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
             {[
-              { t: "The Attribution Problem", d: "Without UTM markers, standard 'Direct Traffic' becomes a black hole. When a user clicks a naked link from an SMS blast or an encrypted messaging app (like WhatsApp), GA4 drops the referrer entirely unless an explicit `utm_source` intercepts the process." },
-              { t: "A/B Testing Precision", d: "By utilizing the `utm_content` field creatively, expert media buyers can isolate performance. For instance, linking the top navigation banner and the footer button on the same ad with different content tags will reveal exactly which CTA actually resulted in a sale." },
-              { t: "Consistent Naming Conventions", d: "Algorithms are rigid. Ensure your team adopts a lower-case only, dash-spaced naming convention (e.g., `spring-launch` over `Spring Launch`). Inconsistency spreads your conversion data across hundreds of fractured rows in GA4 reporting." },
+              { t: "The Attribution Problem", d: "Without UTM markers, standard 'Direct Traffic' becomes a black hole. When a user clicks a naked link from an SMS blast or an encrypted messaging app (like WhatsApp), GA4 drops the referrer entirely unless an explicit utm_source intercepts the process." },
+              { t: "A/B Testing Precision", d: "By utilizing the utm_content field creatively, expert media buyers can isolate performance. For instance, linking the top navigation banner and the footer button on the same ad with different content tags will reveal exactly which CTA actually resulted in a sale." },
+              { t: "Consistent Naming Conventions", d: "Algorithms are rigid. Ensure your team adopts a lower-case only, dash-spaced naming convention (e.g., spring-launch over Spring Launch). Inconsistency spreads your conversion data across hundreds of fractured rows in GA4 reporting." },
             ].map((item, i) => (
               <div key={i} style={{ padding: "20px", borderRadius: 16, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
                 <h3 style={{ fontSize: 15, fontWeight: 800, color: "white", margin: "0 0 8px" }}>{item.t}</h3>

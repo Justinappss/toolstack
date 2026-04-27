@@ -528,6 +528,26 @@ const LIVE_TOOLS = [
         badge: "New",
         image: "/tools/card-flip-roi-calculator-preview.png",
     },
+    {
+        title: "Card Box Break Calculator",
+        desc: "Price your break spots to break even — then see your profit at 50%, 75% and 100% fill rates. Whatnot and eBay fees built in.",
+        href: "/tools/card-box-break-calculator",
+        category: "Collectibles",
+        accent: "#f59e0b",
+        accentRgb: "245,158,11",
+        badge: "New",
+        image: "/tools/card-box-break-calculator-preview.png",
+    },
+    {
+        title: "eBay Best Offer Calculator",
+        desc: "Know your break-even instantly. Get an Accept, Counter or Decline recommendation for any eBay Best Offer with full profit breakdown.",
+        href: "/tools/ebay-best-offer-calculator",
+        category: "Collectibles",
+        accent: "#3b82f6",
+        accentRgb: "59,130,246",
+        badge: "New",
+        image: "/tools/ebay-best-offer-calculator-preview.png",
+    },
 ];
 
 const MARQUEE_TOOLS = [
@@ -638,7 +658,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    51 top-tier tools live · Free forever · No account
+                                    53 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -714,7 +734,7 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "51", label: "Live tools" },
+                                    { value: "53", label: "Live tools" },
                                     { value: "9+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
@@ -950,7 +970,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 51 tools <ArrowRight size={14} />
+                        View all 53 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

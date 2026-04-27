@@ -268,13 +268,13 @@ export default function BusinessNameGenerator() {
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "#a5b4fc" }}>✓ AI Business Name Generator · AI-Powered · Free Forever · No Signup</span>
           </div>
           <h1 style={{ fontSize: "clamp(32px, 6vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, margin: "0 0 18px", color: "white" }}>
-            AI Business Name<br />
+            AI Business<br />
             <span style={{ background: `linear-gradient(135deg, ${accentColor}, #22d3ee)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-              Forge Engine.
+              Name Generator.
             </span>
           </h1>
           <p style={{ fontSize: "clamp(15px, 2.5vw, 18px)", color: "rgba(255,255,255,0.45)", maxWidth: 680, margin: "0 auto", lineHeight: 1.65, fontWeight: 400 }}>
-             Forge a memorable identity with the help of GPT-4o. Our engine analyzes industry semantics, brand phonetics, and emotional resonance to generate professional-grade names for your next venture.
+             Generate memorable business names with GPT-4o. Enter your industry and brand style — the AI analyses semantic patterns and emotional resonance to suggest professional-grade names for your next venture.
           </p>
         </div>
 

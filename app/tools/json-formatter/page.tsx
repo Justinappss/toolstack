@@ -276,14 +276,14 @@ export default function JSONFormatterPage() {
 
         {/* Badge */}
         <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 99, background: "rgba(99,102,241,0.1)", border: "1px solid rgba(99,102,241,0.2)", marginBottom: 20 }}>
-          <span style={{ fontSize: 13, fontWeight: 700, color: "#a5b4fc" }}>{"{ }"} JSON Forge IDE · Validator · Minifier · Multi-Tab · Free</span>
+          <span style={{ fontSize: 13, fontWeight: 700, color: "#a5b4fc" }}>{"{ }"} JSON Formatter · Validator · Minifier · Multi-Tab · Free</span>
         </div>
 
         {/* H1 */}
         <h1 style={{ fontSize: "clamp(36px, 5vw, 52px)", fontWeight: 900, color: "white", lineHeight: 1.08, letterSpacing: "-0.03em", margin: "0 0 16px" }}>
-          JSON Forge{" "}
+          JSON{" "}
           <span style={{ background: "linear-gradient(135deg, #6366f1, #34d399)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-            IDE.
+            Formatter.
           </span>
         </h1>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.5)", lineHeight: 1.65, maxWidth: 640, margin: "0 0 28px" }}>
@@ -509,7 +509,7 @@ export default function JSONFormatterPage() {
           <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", marginBottom: 20, letterSpacing: "-0.02em" }}>The Developer&apos;s Power Guide to JSON in 2026</h2>
           <div style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, display: "flex", flexDirection: "column", gap: 20 }}>
             <p>
-              JSON (JavaScript Object Notation) is defined as a lightweight, text-based, language-independent data-interchange format derived from JavaScript, used for representing structured data as attribute-value pairs and arrays. However, as distributed systems and microservices become more complex, the bottleneck in development is no longer network speed—it is <strong style={{ color: "white" }}>Human-Parsable Visibility</strong>. [JSON Forge IDE](/tools/json-formatter) is built to turn &quot;wall of text&quot; data into actionable intelligence.
+              JSON (JavaScript Object Notation) is defined as a lightweight, text-based, language-independent data-interchange format derived from JavaScript, used for representing structured data as attribute-value pairs and arrays. However, as distributed systems and microservices become more complex, the bottleneck in development is no longer network speed—it is <strong style={{ color: "white" }}>Human-Parsable Visibility</strong>. ToolStack&apos;s JSON Formatter is built to turn &quot;wall of text&quot; data into actionable intelligence.
             </p>
             {/* Redacted for brevity in update, keep your previous standard content here mostly */}
             <p>
@@ -560,8 +560,41 @@ export default function JSONFormatterPage() {
         </div>
 
         <MoreTools currentSlug="json-formatter" />
-        
+
       </div>
+
+      {/* JSON-LD: WebApplication + BreadcrumbList + FAQPage */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "JSON Formatter",
+          "url": "https://toolstack.tech/tools/json-formatter",
+          "description": "Free online JSON formatter, validator, and minifier. Format, beautify, and lint JSON instantly in your browser with syntax error highlighting, tree view, and multi-tab support. No signup, 100% private.",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Any",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "featureList": ["JSON formatting and beautification", "JSON validation with error positions", "JSON minification", "Tree view explorer", "Multi-tab workspace", "100% browser-side — no data sent to server"],
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
+            { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools?category=dev" },
+            { "@type": "ListItem", "position": 3, "name": "JSON Formatter", "item": "https://toolstack.tech/tools/json-formatter" },
+          ],
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": FAQS.map(f => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+          })),
+        },
+      ])}} />
     </div>
   );
 }

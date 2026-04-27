@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free Email Subject Line Tester — Spam Score & Open Rate Analysis | ToolStack",
-    description: "Optimize email open rates with EmailVibe Pro. Real-time scoring, spam detection, and AI-powered alternatives.",
+    description: "Score your email subject lines for spam triggers, open rate potential, and length. Get AI-rewritten alternatives. Free, no signup.",
     url: "https://toolstack.tech/tools/email-subject-line-tester",
     siteName: "ToolStack",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free Email Subject Line Tester — Spam Score & Open Rate Analysis | ToolStack",
-    description: "Optimize email open rates with EmailVibe Pro. Real-time scoring, spam detection, and AI-powered alternatives.",
+    description: "Score your email subject lines for spam triggers, open rate potential, and length. AI alternatives included. Free, no signup.",
   },
 };
 

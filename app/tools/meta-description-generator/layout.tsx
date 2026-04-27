@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free AI Meta Description Generator — Google SERP Preview | ToolStack",
-    description: "Generate high-CTR meta descriptions with SnippetPro AI. Live Google SERP previews, industrial-grade scoring, and AI-powered authority generation.",
+    description: "Generate high-CTR meta descriptions instantly. Live Google SERP preview, CTR scoring, and 5 angle variants — free, no signup.",
     url: "https://toolstack.tech/tools/meta-description-generator",
     siteName: "ToolStack",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free AI Meta Description Generator — Google SERP Preview | ToolStack",
-    description: "Generate high-CTR meta descriptions with SnippetPro AI. Live Google SERP previews, industrial-grade scoring, and AI-powered authority generation.",
+    description: "Generate high-CTR meta descriptions instantly. Live Google SERP preview, CTR scoring, 5 variants. Free, no signup.",
   },
 };
 

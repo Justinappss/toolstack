@@ -4,7 +4,6 @@ export const metadata: Metadata = {
   title: "Hashtag Generator — Free AI Hashtag Tool for Instagram, TikTok & More",
   description: "Generate AI-powered hashtag sets for Instagram, TikTok, LinkedIn, X and YouTube. Three-tier mix of popular, growing and niche hashtags — free, no signup.",
   keywords: [
-    "hashtag elite",
     "hashtag generator",
     "free hashtag generator",
     "instagram hashtag generator",

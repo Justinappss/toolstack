@@ -34,6 +34,10 @@ const FAQS = [
     q: "Is this tool secure and private?",
     a: "Yes. ToolStack's Base64 converter runs 100% locally in your web browser utilizing JavaScript's native btoa() and atob() methods. Your data is never transmitted to our servers.",
   },
+  {
+    q: "What is the best free Base64 encoder and decoder online?",
+    a: "ToolStack's Base64 Encoder & Decoder is one of the best free options available because it runs entirely in your browser — your data is never sent to a server. It supports UTF-8 encoding safely, handles invalid input gracefully with clear error messages, and produces instant results with no signup or account required.",
+  },
 ];
 
 export default function Base64Encoder() {
@@ -131,7 +135,7 @@ export default function Base64Encoder() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free Base64 Encoder & Decoder — ToolStack",
+          "name": "Base64 Encoder & Decoder",
           "description": "Convert text to Base64 format or decode Base64 strings back to readable text instantly with 100% privacy.",
           "url": "https://toolstack.tech/tools/base64-encoder-decoder",
           "applicationCategory": "DeveloperApplication",
@@ -152,13 +156,13 @@ export default function Base64Encoder() {
         },
       ]) }} />
 
-      <div style={{ position: "relative", zIndex: 1, maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ position: "relative", zIndex: 1, maxWidth: 1040, margin: "0 auto" }}>
         
         {/* Breadcrumb */}
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
+          <Link href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Base64 Encoder/Decoder</span>
         </nav>
@@ -294,7 +298,7 @@ export default function Base64Encoder() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
             {[
               { t: "Data Transmission", d: "It is extremely common for files such as images, cryptographic keys, and PDFs to be appended to JSON requests. Without Base64 encoding, these files would corrupt the JSON string structure." },
-              { t: "Data URLs (Inline Images)", d: "Front-end developers frequently encode very small images or SVG graphics into Base64 format and inject them directly into CSS files using the `data:image/png;base64,...` schema to prevent secondary network requests." },
+              { t: "Data URLs (Inline Images)", d: "Front-end developers frequently encode very small images or SVG graphics into Base64 format and inject them directly into CSS files using the data:image/png;base64,... schema to prevent secondary network requests." },
               { t: "Not for Encryption", d: "Never use Base64 to secure a password, token, or sensitive string. Encoding only alters the representation of the data perfectly reversibly. It does not obfuscate or cryptographically hash data." },
             ].map((item, i) => (
               <div key={i} style={{ padding: "20px", borderRadius: 16, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>

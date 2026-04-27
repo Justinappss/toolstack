@@ -348,6 +348,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${base}/tools/card-box-break-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${base}/tools/ebay-best-offer-calculator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: `${base}/blog`,
       lastModified: now,
       changeFrequency: "daily",

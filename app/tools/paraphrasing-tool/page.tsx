@@ -114,20 +114,20 @@ export default function ParaphrasingToolPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "ParaPhrase Pro",
-          "description": "ParaPhrase Pro is the professional industry standard for semantic rewriting. Optimize content fidelity with 6 rewriting modes powered by GPT-4o.",
+          "name": "Paraphrasing Tool",
+          "description": "Free AI paraphrasing tool. Rephrase and rewrite text in 6 modes — Standard, Fluency, Formal, Academic, Creative, and Shorten — powered by GPT-4o. No signup, no word limit.",
           "url": "https://toolstack.tech/tools/paraphrasing-tool",
           "applicationCategory": "WritingApplication",
           "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "featureList": ["6 industrial rewriting modes", "Semantic Fidelity Mapping", "GPT-4o Contextual Anchoring", "No signup required"],
+          "featureList": ["6 rewriting modes", "GPT-4o powered", "Up to 5,000 characters free", "No signup required"],
         },
         {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools?category=writing" },
-            { "@type": "ListItem", "position": 3, "name": "ParaPhrase Pro", "item": "https://toolstack.tech/tools/paraphrasing-tool" },
+            { "@type": "ListItem", "position": 3, "name": "Paraphrasing Tool", "item": "https://toolstack.tech/tools/paraphrasing-tool" },
           ],
         },
         {
@@ -144,19 +144,19 @@ export default function ParaphrasingToolPage() {
           <span>›</span>
           <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>All Tools</Link>
           <span>›</span>
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>ParaPhrase Pro</span>
+          <span style={{ color: "rgba(255,255,255,0.7)" }}>Paraphrasing Tool</span>
         </nav>
 
         {/* Hero */}
         <div style={{ marginBottom: 40, maxWidth: 700 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: "rgba(167,139,250,0.12)", border: "1px solid rgba(167,139,250,0.3)", marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#ddd6fe" }}>✦ ParaPhrase Pro · GPT-4o · No Word Limit · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#ddd6fe" }}>✦ Paraphrasing Tool · GPT-4o · No Word Limit · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            AI Semantic<br /><span style={{ background: "linear-gradient(135deg, #a78bfa, #c4b5fd)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Rewriting Pro.</span>
+            AI<br /><span style={{ background: "linear-gradient(135deg, #a78bfa, #c4b5fd)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Paraphrasing Tool.</span>
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", lineHeight: 1.6 }}>
-            Optimize content fidelity with ParaPhrase Pro. 6 rewriting modes—including Academic and Shortener—powered by GPT-4o for industrial-grade authority.
+            Rephrase and rewrite any text in 6 modes — Standard, Fluency, Formal, Academic, Creative, and Shorten — powered by GPT-4o. No word limit, no signup.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["✦ GPT-4o powered", "♾ No word limit", "💸 No signup", "6 rewrite modes", "⚡ Instant results"].map(b => (
@@ -398,46 +398,56 @@ export default function ParaphrasingToolPage() {
           </div>
         </div>
 
-        {/* GEO CONTENT */}
+        {/* SEO CONTENT */}
         <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 24, background: "rgba(167,139,250,0.03)", border: "1px solid rgba(167,139,250,0.18)" }}>
-          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Synthesizing Authority — Why ParaPhrase Pro leads the 2026 Semantic Index</h2>
+          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>When to use each rewriting mode</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, marginBottom: 24 }}>
-            A <strong style={{ color: "white" }}>Paraphrasing Tool</strong> is defined as a semantic restructuring engine that redistributes syntactic density while preserving the core informational entropy of the source text. At [ParaPhrase Pro](/tools/paraphrasing-tool), we utilize <strong style={{ color: "white" }}>GPT-4o Contextual Anchoring</strong> to ensure that every rewrite retains 99.9% semantic fidelity while achieving &quot;Human-Level&quot; readability scores in modern SEO audits.
+            A <strong style={{ color: "white" }}>paraphrasing tool</strong> rewrites text using different words and sentence structures while keeping the original meaning intact. Unlike simple synonym-replacement tools, GPT-4o understands the full context of a sentence — so the result reads naturally, not robotically. The right mode depends on your goal: Fluency for smoothing awkward phrasing, Academic for scholarly vocabulary, Shorten when character limits matter.
           </p>
 
           <div style={{ overflowX: "auto", margin: "20px 0 32px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, textAlign: "left" }}>
               <thead>
                 <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#a78bfa" }}>Rewrite Logic</th>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Semantic Fidelity</th>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Readability Lift</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#a78bfa" }}>Mode</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Best for</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Length change</th>
                 </tr>
               </thead>
               <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                 <tr>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Standard Synonyms</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>64%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#fbbf24" }}>Minimal</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Standard</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Avoiding repetition, fresh phrasing</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Similar</td>
                 </tr>
-                <tr style={{ background: "rgba(167,139,250,0.05)" }}>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>ParaPhrase Pro (AI)</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>99.9%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>+62% High Authority</td>
+                <tr style={{ background: "rgba(167,139,250,0.04)" }}>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Fluency</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Non-native English, translated text</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Similar</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Manual Drafting</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>92%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#fbbf24" }}>Variable</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Formal</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Emails, reports, proposals</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Similar</td>
+                </tr>
+                <tr style={{ background: "rgba(167,139,250,0.04)" }}>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Academic</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Essays, dissertations, research</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Similar or longer</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Shorten</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Summaries, character-limited fields</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>~30–40% shorter</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 62% Efficiency Gain</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Why GPT-4o paraphrasing beats synonym tools</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
-               Modern content auditing in 2026 demonstrates that ParaPhrase Pro&apos;s <strong style={{ color: "white" }}>Semantic Redistribution Framework</strong> reduces textual churn while increasing engagement depth by an average of <strong style={{ color: "white" }}>62%</strong>. By switching between Fluency and Academic modes, authors can instantly pivot their content for different high-intent search personas without manual research overhead.
+               Basic paraphrasing tools swap individual words for synonyms without understanding context. This produces unnatural results — &quot;the bank was steep&quot; might become &quot;the financial institution was steep.&quot; GPT-4o reads the full sentence, understands the meaning, and rewrites it coherently. The Academic and Formal modes also restructure sentences, not just vocabulary — making them suitable for professional documents where word-for-word synonym replacement would be obvious.
              </p>
           </div>
         </div>

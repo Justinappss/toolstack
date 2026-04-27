@@ -18,7 +18,19 @@ const FAQS = [
   },
   {
     q: "What languages are supported?",
-    a: "The tool automatically defaults to JSON formatting, but because it relies on the underlying VS Code engine, you can paste JavaScript, HTML, CSS, standard text, or any strict code language and the diff algorithm will accurately highlight the logical gaps.",
+    a: "The tool automatically defaults to JSON formatting, but because it relies on the underlying VS Code engine, you can paste JavaScript, TypeScript, HTML, CSS, SQL, Python, Markdown, or plain text and the diff algorithm will accurately highlight the logical gaps.",
+  },
+  {
+    q: "What is the best code diff checker?",
+    a: "ToolStack's Code Diff Checker is one of the best free options because it uses the same Monaco Editor engine that powers VS Code — giving you IDE-grade syntax highlighting and diff visualization directly in your browser, with no signup, no upload limits, and complete privacy.",
+  },
+  {
+    q: "How do I compare two JSON files?",
+    a: "Select JSON from the Format dropdown, paste your original JSON into the left panel and your modified JSON into the right panel, then click Diff. The editor highlights added lines in green and removed lines in red, making it easy to spot structural or value-level differences at a glance.",
+  },
+  {
+    q: "Can I use this to review code changes before committing?",
+    a: "Yes. Paste the original version of your file on the left and the modified version on the right to see a clear side-by-side diff before you commit. It is a quick sanity check for spotting unintended changes, leftover debug statements, or formatting inconsistencies.",
   },
 ];
 
@@ -75,7 +87,7 @@ export default function DiffCheckerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Code Diff Checker — ToolStack",
+          "name": "Code Diff Checker",
           "description": "Compare two JSON or code files side-by-side with an IDE-grade visual diff editor.",
           "url": "https://toolstack.tech/tools/code-diff-checker",
           "applicationCategory": "DeveloperApplication",
@@ -90,6 +102,14 @@ export default function DiffCheckerPage() {
             { "@type": "ListItem", "position": 3, "name": "Code Diff Checker", "item": "https://toolstack.tech/tools/code-diff-checker" },
           ],
         },
+        {
+          "@context": "https://schema.org", "@type": "FAQPage",
+          "mainEntity": FAQS.map(f => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+          })),
+        },
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1400, margin: "0 auto" }}>
@@ -98,7 +118,7 @@ export default function DiffCheckerPage() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", maxWidth: 1000, margin: "0 auto 32px" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
+          <Link href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Code Diff Checker</span>
         </nav>

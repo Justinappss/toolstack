@@ -94,7 +94,7 @@ export default function CharacterCounterPage() {
   const accent = "#06b6d4";
   const accentRgb = "6,182,212";
 
-  const statCard = (label: string, value: string | number, highlight?: boolean): React.CSSProperties => ({
+  const statCard = (_label: string, _value: string | number, highlight?: boolean): React.CSSProperties => ({
     padding: "16px 18px", borderRadius: 14,
     background: highlight ? `rgba(${accentRgb},0.08)` : "rgba(255,255,255,0.03)",
     border: `1px solid ${highlight ? `rgba(${accentRgb},0.2)` : "rgba(255,255,255,0.07)"}`,
@@ -113,8 +113,8 @@ export default function CharacterCounterPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "CharStat Ultra",
-          "description": "CharStat Ultra is the professional online character counter for SEO and Social Media. Features 9 platform-specific limit validations and precision reading metrics.",
+          "name": "Character Counter",
+          "description": "Free online character counter. Count characters, words, sentences, paragraphs, and lines in real time. Live platform limits for Twitter, LinkedIn, Instagram, SMS and more. No signup.",
           "url": "https://toolstack.tech/tools/character-counter",
           "applicationCategory": "UtilityApplication",
           "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
@@ -126,7 +126,7 @@ export default function CharacterCounterPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools?category=writing" },
-            { "@type": "ListItem", "position": 3, "name": "CharStat Ultra", "item": "https://toolstack.tech/tools/character-counter" },
+            { "@type": "ListItem", "position": 3, "name": "Character Counter", "item": "https://toolstack.tech/tools/character-counter" },
           ],
         },
         {
@@ -143,19 +143,19 @@ export default function CharacterCounterPage() {
           <span>›</span>
           <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>All Tools</Link>
           <span>›</span>
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>CharStat Ultra</span>
+          <span style={{ color: "rgba(255,255,255,0.7)" }}>Character Counter</span>
         </nav>
 
         {/* Hero */}
         <div style={{ marginBottom: 40, maxWidth: 680 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: `rgba(${accentRgb},0.1)`, border: `1px solid rgba(${accentRgb},0.28)`, marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#67e8f9" }}>✓ CharStat Ultra · 9 Platforms · Instant · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#67e8f9" }}>✓ Character Counter · 9 Platforms · Instant · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            CharStat<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #22d3ee)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Ultra.</span>
+            Character<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #22d3ee)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Counter.</span>
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", lineHeight: 1.6 }}>
-            The professional suite for metadata precision. CharStat Ultra provides real-time character metrics, platform validation, and keyword analysis to maximize content authority.
+            Count characters, words, sentences, and more in real time. Live progress bars for 9 platforms — Twitter, Instagram, LinkedIn, TikTok, YouTube, SMS and more. Free, instant, no signup.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["Abc Characters + words", "📊 9 platform limits", "⚡ Instant count", "🔓 No signup", "♾ Unlimited text"].map(b => (
@@ -295,44 +295,49 @@ export default function CharacterCounterPage() {
 
         {/* SEO CONTENT */}
         <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 24, background: "rgba(255,255,255,0.02)", border: `1px solid rgba(${accentRgb},0.15)` }}>
-          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>The science of character constraints — and why CharStat Ultra leads in 2026</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Character limits that matter — platform by platform</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.8, margin: "0 0 24px" }}>
-            A <strong style={{ color: "white" }}>Character Counter</strong> is defined as a computational utility that iterates through a string of data to quantify individual units of text (graphemes), providing structural analysis for linguistic and technical validation. At [CharStat Ultra](/tools/character-counter), we define the benchmark for precision in real-time text analysis.
+            A <strong style={{ color: "white" }}>character counter</strong> counts every letter, number, space, and symbol in your text. Different platforms enforce different limits, and exceeding them means your content gets cut off, rejected, or penalised. Knowing the exact count before you paste saves time and avoids truncated messages in production.
           </p>
 
           <div style={{ overflowX: "auto", margin: "10px 0 32px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
               <thead>
                 <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accent }}>Analysis Type</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Precision Grade</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Authority Value</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accent }}>Platform</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Character limit</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Notes</th>
                 </tr>
               </thead>
               <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Grapheme Counting</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>100% (High-Fidelity)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Platform Compliance</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Twitter / X</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>280</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>URLs always count as 23 characters</td>
                 </tr>
                 <tr style={{ background: "rgba(255,255,255,0.02)" }}>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Keyword Density</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>98% (Algorithmic)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>SEO Optimization</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>SMS</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>160</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Over 160 chars splits into 2 messages</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Reading Velocity</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>95% (Research-Backed)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>UX Retention</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Meta Description</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>160</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Google truncates at ~155–160 in results</td>
+                </tr>
+                <tr style={{ background: "rgba(255,255,255,0.02)" }}>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Instagram Caption</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>2,200</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>First 125 visible before "more" button</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 2.8s Engagement Window</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Why characters with spaces vs. without spaces matters</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.8 }}>
-               Content studies in 2026 reveal that social media posts optimized with CharStat Ultra&apos;s precise limit tracking achieve <strong style={{ color: "white" }}>37% higher scroll-stop rates</strong>. By ensuring critical information fits within the first 125 characters (Instagram) or the 280-character (Twitter) visible fold, creators maximize the 2.8s human attention window.
+               Most social platforms (Twitter, Instagram, LinkedIn) count characters <em>with</em> spaces — every space is a character. Some academic and technical contexts count <em>without</em> spaces, measuring only content characters. The counter displays both so you can match whichever standard the platform or brief requires. Emojis count as 2 characters each (UTF-16 encoding), which matches how Twitter and Instagram validate them.
              </p>
           </div>
         </div>

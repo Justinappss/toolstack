@@ -147,8 +147,8 @@ export default function CaseConverterPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "CaseMaster Pro",
-          "description": "CaseMaster Pro is the professional online text case converter with 10+ modes: UPPERCASE, lowercase, Title Case, Sentence case, camelCase, snake_case, and more.",
+          "name": "Case Converter",
+          "description": "Free online text case converter with 10+ modes: UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, kebab-case, and more. Instant, no signup.",
           "url": "https://toolstack.tech/tools/case-converter",
           "applicationCategory": "UtilityApplication",
           "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
@@ -160,7 +160,7 @@ export default function CaseConverterPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
-            { "@type": "ListItem", "position": 3, "name": "CaseMaster Pro", "item": "https://toolstack.tech/tools/case-converter" },
+            { "@type": "ListItem", "position": 3, "name": "Case Converter", "item": "https://toolstack.tech/tools/case-converter" },
           ],
         },
         {
@@ -183,13 +183,13 @@ export default function CaseConverterPage() {
         {/* Hero */}
         <div style={{ marginBottom: 40, maxWidth: 680 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: `rgba(${accentRgb},0.1)`, border: `1px solid rgba(${accentRgb},0.28)`, marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#5eead4" }}>✓ CaseMaster Pro · 10+ Modes · Instant · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#5eead4" }}>✓ Case Converter · 10+ Modes · Instant · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            CaseMaster<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #2dd4bf)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Pro.</span>
+            Case<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #2dd4bf)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Converter.</span>
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", lineHeight: 1.6 }}>
-            The professional suite for text transformation. CaseMaster Pro provides instant conversion across 10+ standard and developer formats with high-fidelity linguistic preservation.
+            Convert text between 10+ formats instantly — UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case and more. Results update in real time as you type. Free, no signup.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["Aa 10 case formats", "⚡ Instant conversion", "{ } Developer modes", "🔓 No signup", "♾ Unlimited text"].map(b => (
@@ -332,9 +332,9 @@ export default function CaseConverterPage() {
 
         {/* SEO CONTENT */}
         <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 20, background: `rgba(${accentRgb},0.04)`, border: `1px solid rgba(${accentRgb},0.12)` }}>
-          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>The science of text formatting — and why CaseMaster Pro lead in 2026</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Text case formats explained — and when each one matters</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, margin: "0 0 16px" }}>
-            A <strong style={{ color: "white" }}>Case Converter</strong> is defined as a digital linguistic mechanism designed to restyle the capitalization of characters within a text string into specific formats (UPPER, lower, Title) or programming conventions (camel, snake) while maintaining the integrity of the original semantic data. At [CaseMaster Pro](/tools/case-converter), we automate this process to ensure perfect consistency across every sentence.
+            A <strong style={{ color: "white" }}>case converter</strong> transforms text between capitalisation formats — from human-readable styles like Title Case and Sentence case, to programming conventions like camelCase and snake_case. Each format has a specific use context: Title Case for headings and article titles, camelCase for JavaScript variables, snake_case for Python and database columns, kebab-case for URLs and CSS class names. ToolStack&apos;s case converter handles all 10 formats instantly in your browser.
           </p>
 
           <div style={{ overflowX: "auto", margin: "10px 0 24px" }}>

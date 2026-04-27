@@ -205,7 +205,7 @@ export default function SalaryCalculator() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, color: "rgba(255,255,255,0.35)", marginBottom: 32, flexWrap: "wrap" as const }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>ToolStack</Link>
           <span>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Tools</Link>
+          <Link href="/tools?category=finance" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Finance Tools</Link>
           <span>/</span>
           <span style={{ color: "rgba(255,255,255,0.65)" }}>Salary Calculator</span>
         </nav>

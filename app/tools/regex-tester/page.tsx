@@ -33,6 +33,10 @@ const FAQS = [
     q: "Is my test data uploaded anywhere?",
     a: "Absolutely not. ToolStack's Regex Tester evaluates everything directly within your local browser runtime. We never send your test strings or analytical data to external servers, making it 100% safe to test sensitive proprietary logs.",
   },
+  {
+    q: "What is the best free online Regex tester?",
+    a: "ToolStack's Regex Tester is a fast, free option that provides real-time visual highlighting of matches as you type. It supports all standard ECMAScript flags (g, i, m), displays every match with its index position, includes a built-in cheatsheet, and runs entirely in your browser with no data sent to any server.",
+  },
 ];
 
 const QUICK_REFERENCE = [
@@ -161,7 +165,7 @@ export default function RegexTester() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free Regex Tester — ToolStack",
+          "name": "Regex Tester",
           "description": "Instantly test and debug regular expressions against strings with real-time visual highlighting and match details.",
           "url": "https://toolstack.tech/tools/regex-tester",
           "applicationCategory": "DeveloperApplication",
@@ -182,13 +186,13 @@ export default function RegexTester() {
         },
       ]) }} />
 
-      <div style={{ position: "relative", zIndex: 1, maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ position: "relative", zIndex: 1, maxWidth: 1040, margin: "0 auto" }}>
         
         {/* Breadcrumb */}
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
+          <Link href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Regex Tester</span>
         </nav>
@@ -367,8 +371,8 @@ export default function RegexTester() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
             {[
-              { t: "Lookaheads and Lookbehinds", d: "Modern software architecture requires complex validation. Utilizing positive lookaheads `(?=...)` ensures the engine validates requirements (such as enforcing both numbers and letters in a password field) without inherently consuming the characters, thereby retaining the initial parsing match state." },
-              { t: "Avoiding Infinite Loops", d: "When utilizing Global flags `g` combined with wildcard asterisks `*` on certain engines, the parser can infinitely loop over zero-length boundaries. Using visual testers limits deployment latency failures by proactively surfacing infinite loops." },
+              { t: "Lookaheads and Lookbehinds", d: "Modern software architecture requires complex validation. Utilizing positive lookaheads (?=...) ensures the engine validates requirements (such as enforcing both numbers and letters in a password field) without inherently consuming the characters, thereby retaining the initial parsing match state." },
+              { t: "Avoiding Infinite Loops", d: "When utilizing Global flags (g) combined with wildcard asterisks (*) on certain engines, the parser can infinitely loop over zero-length boundaries. Using visual testers limits deployment latency failures by proactively surfacing infinite loops." },
               { t: "Cross-Platform Nuances", d: "The JavaScript regex flavor inherently lacks certain server-side features (like dotall `/s` modifiers in older environments, though recently patched, or `.NET` specific logic). Running your strings through this visualizer effectively guarantees standard frontend compatibility." },
             ].map((item, i) => (
               <div key={i} style={{ padding: "20px", borderRadius: 16, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>

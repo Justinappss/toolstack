@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Card Flip ROI Calculator — Free Sports Card Profit Tool 2026",
-  description: "Calculate your exact profit and ROI when flipping sports cards. eBay fees, shipping, and platform comparison built in. Free, no signup — see your real take-home instantly.",
+  description: "Calculate exact profit and ROI on any card flip. eBay fees, Whatnot, shipping costs built in. Free platform comparison — see your real take-home instantly.",
   keywords: [
     "card flip ROI calculator",
     "sports card profit calculator",

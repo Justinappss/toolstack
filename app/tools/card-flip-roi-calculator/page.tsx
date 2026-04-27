@@ -1,7 +1,6 @@
 "use client";
 import { useState, useCallback } from "react";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const ACCENT = "#10b981";
 const ACCENT_RGB = "16,185,129";
@@ -15,28 +14,38 @@ const PLATFORMS = [
 ];
 
 const SHIPPING_OPTIONS = [
-  { id: "pwe", name: "PWE (No tracking)", cost: 0.73, note: "Plain white envelope, stamp only" },
-  { id: "bmwt", name: "BMWT", cost: 3.50, note: "Bubble mailer with top loader + tracking" },
-  { id: "flat", name: "Padded Flat Rate", cost: 8.95, note: "USPS Priority padded flat rate" },
-  { id: "box", name: "Card Box", cost: 10.50, note: "Full box with padding, perfect for slabs" },
+  { id: "pwe", name: "PWE (No tracking)", cost: 0.73, note: "Plain white envelope, stamp only (US est.)" },
+  { id: "bmwt", name: "BMWT", cost: 3.50, note: "Bubble mailer with top loader + tracking (US est.)" },
+  { id: "flat", name: "Padded Flat Rate", cost: 8.95, note: "USPS Priority padded flat rate (US est.)" },
+  { id: "box", name: "Card Box", cost: 10.50, note: "Full box with padding, perfect for slabs (US est.)" },
   { id: "none", name: "Local / No shipping", cost: 0, note: "Buyer picks up or buyer pays shipping" },
+  { id: "custom", name: "Custom", cost: 0, note: "Enter your actual shipping cost below" },
 ];
 
-function calcFlip(buyPrice: number, sellPrice: number, platformId: string, shippingId: string, gradingCost: number, suppliesCost: number) {
+const CURRENCIES = [
+  { code: "USD", symbol: "$" },
+  { code: "GBP", symbol: "£" },
+  { code: "EUR", symbol: "€" },
+  { code: "AUD", symbol: "A$" },
+  { code: "CAD", symbol: "C$" },
+];
+
+function calcFlip(buyPrice: number, sellPrice: number, platformId: string, shippingId: string, gradingCost: number, suppliesCost: number, customShippingCost = 0) {
   const platform = PLATFORMS.find(p => p.id === platformId)!;
-  const shipping = SHIPPING_OPTIONS.find(s => s.id === shippingId)!;
+  const shippingOption = SHIPPING_OPTIONS.find(s => s.id === shippingId)!;
+  const shippingCostValue = shippingId === "custom" ? customShippingCost : shippingOption.cost;
   const platformFee = sellPrice * platform.feeRate + platform.fixedFee;
   const totalCost = buyPrice + gradingCost + suppliesCost;
-  const netRevenue = sellPrice - platformFee - shipping.cost;
+  const netRevenue = sellPrice - platformFee - shippingCostValue;
   const profit = netRevenue - totalCost;
   const roi = totalCost > 0 ? (profit / totalCost) * 100 : 0;
-  const breakEven = totalCost + platformFee + shipping.cost;
-  const effectiveRate = sellPrice > 0 ? ((platformFee + shipping.cost) / sellPrice) * 100 : 0;
-  return { platformFee, shippingCost: shipping.cost, totalCost, netRevenue, profit, roi, breakEven, effectiveRate };
+  const breakEven = totalCost + platformFee + shippingCostValue;
+  const effectiveRate = sellPrice > 0 ? ((platformFee + shippingCostValue) / sellPrice) * 100 : 0;
+  return { platformFee, shippingCost: shippingCostValue, totalCost, netRevenue, profit, roi, breakEven, effectiveRate };
 }
 
-function fmt(n: number) {
-  return n < 0 ? `-$${Math.abs(n).toFixed(2)}` : `$${n.toFixed(2)}`;
+function fmt(n: number, sym = "$") {
+  return n < 0 ? `-${sym}${Math.abs(n).toFixed(2)}` : `${sym}${n.toFixed(2)}`;
 }
 
 export default function CardFlipROIPage() {
@@ -47,6 +56,12 @@ export default function CardFlipROIPage() {
   const [gradingCost, setGradingCost] = useState("");
   const [suppliesCost, setSuppliesCost] = useState("");
   const [showAdvanced, setShowAdvanced] = useState(false);
+  const [currIdx, setCurrIdx] = useState(0);
+  const [customShippingCost, setCustomShippingCost] = useState("");
+
+  const sym = CURRENCIES[currIdx].symbol;
+  const f = (n: number) => fmt(n, sym);
+  const customShip = parseFloat(customShippingCost) || 0;
 
   const buy = parseFloat(buyPrice) || 0;
   const sell = parseFloat(sellPrice) || 0;
@@ -54,12 +69,12 @@ export default function CardFlipROIPage() {
   const supplies = parseFloat(suppliesCost) || 0;
 
   const hasValues = buy > 0 && sell > 0;
-  const result = hasValues ? calcFlip(buy, sell, platform, shipping, grading, supplies) : null;
+  const result = hasValues ? calcFlip(buy, sell, platform, shipping, grading, supplies, customShip) : null;
 
   const allPlatformResults = hasValues
     ? PLATFORMS.map(p => ({
         ...p,
-        ...calcFlip(buy, sell, p.id, shipping, grading, supplies),
+        ...calcFlip(buy, sell, p.id, shipping, grading, supplies, customShip),
       }))
     : null;
 
@@ -104,6 +119,7 @@ export default function CardFlipROIPage() {
           { "@type": "Question", name: "Is Whatnot cheaper than eBay for selling cards?", acceptedAnswer: { "@type": "Answer", text: "Whatnot charges 8% commission + 2.9% payment processing + $0.30, totalling approximately 10.8% + $0.30. eBay charges 13.25% + $0.30. Whatnot is cheaper on percentage fees for cards under $1,500, but eBay has a larger buyer pool which can offset the fee difference with higher sale prices." } },
           { "@type": "Question", name: "What is a good ROI on a card flip?", acceptedAnswer: { "@type": "Answer", text: "A good card flip ROI is 30% or more after all fees. Professional flippers target 50-100% ROI on quick flips. Anything under 20% ROI is generally not worth the effort once you factor in time. For graded cards, ROI is lower because grading costs are a fixed overhead." } },
           { "@type": "Question", name: "What does break-even mean for a card flip?", acceptedAnswer: { "@type": "Answer", text: "Break-even is the minimum sell price where you make exactly $0 profit. It accounts for your buy price, platform fees, shipping and any grading or supply costs. Selling above break-even means profit; below means a loss. Always calculate your break-even before listing a card." } },
+          { "@type": "Question", name: "What is the best free card flip ROI calculator?", acceptedAnswer: { "@type": "Answer", text: "ToolStack's Card Flip ROI Calculator is the most complete free option in 2026. It includes real eBay trading card fees (13.25% + $0.30), Whatnot (10.8% + $0.30), COMC (15%), Facebook and local cash platforms, five shipping options from PWE to graded card boxes, a live platform comparison table ranked by profit, automatic break-even calculation, and optional grading and supplies cost tracking. No signup required." } },
         ],
       },
     ],
@@ -161,7 +177,7 @@ export default function CardFlipROIPage() {
         <nav style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,.38)", marginBottom: 20 }}>
           <a href="/" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>ToolStack</a>
           <span>/</span>
-          <a href="/tools" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>Tools</a>
+          <a href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>Collectibles</a>
           <span>/</span>
           <span style={{ color: ACCENT }}>Card Flip ROI Calculator</span>
         </nav>
@@ -186,12 +202,20 @@ export default function CardFlipROIPage() {
 
         {/* Main calc */}
         <div style={card}>
+          {/* Currency selector */}
+          <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 20 }}>
+            {CURRENCIES.map((c, i) => (
+              <button key={c.code} onClick={() => setCurrIdx(i)} style={pill(currIdx === i)}>
+                {c.code} {c.symbol}
+              </button>
+            ))}
+          </div>
           {/* Prices */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 24 }}>
             <div>
               <label style={label}>Buy price</label>
               <div style={{ position: "relative" }}>
-                <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>$</span>
+                <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>{sym}</span>
                 <input type="number" min="0" step="0.01" placeholder="0.00" value={buyPrice} onChange={e => setBuyPrice(e.target.value)}
                   style={{ ...input, paddingLeft: 28 }} />
               </div>
@@ -199,7 +223,7 @@ export default function CardFlipROIPage() {
             <div>
               <label style={label}>Expected sell price</label>
               <div style={{ position: "relative" }}>
-                <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>$</span>
+                <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>{sym}</span>
                 <input type="number" min="0" step="0.01" placeholder="0.00" value={sellPrice} onChange={e => setSellPrice(e.target.value)}
                   style={{ ...input, paddingLeft: 28 }} />
               </div>
@@ -229,13 +253,20 @@ export default function CardFlipROIPage() {
               {SHIPPING_OPTIONS.map(s => (
                 <button key={s.id} onClick={() => setShipping(s.id)}
                   style={pill(shipping === s.id)}>
-                  {s.name} {s.cost > 0 ? `($${s.cost.toFixed(2)})` : "(Free)"}
+                  {s.name} {s.cost > 0 ? `(${sym}${s.cost.toFixed(2)})` : s.id === "custom" ? "" : "(Free)"}
                 </button>
               ))}
             </div>
             <p style={{ fontSize: 12, color: "rgba(255,255,255,.35)", margin: "8px 0 0" }}>
               {SHIPPING_OPTIONS.find(s => s.id === shipping)?.note}
             </p>
+            {shipping === "custom" && (
+              <div style={{ marginTop: 10, position: "relative", maxWidth: 200 }}>
+                <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>{sym}</span>
+                <input type="number" min="0" step="0.01" placeholder="0.00" value={customShippingCost} onChange={e => setCustomShippingCost(e.target.value)}
+                  style={{ ...input, paddingLeft: 28 }} />
+              </div>
+            )}
           </div>
 
           {/* Advanced */}
@@ -249,7 +280,7 @@ export default function CardFlipROIPage() {
                 <div>
                   <label style={label}>Grading cost</label>
                   <div style={{ position: "relative" }}>
-                    <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>$</span>
+                    <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>{sym}</span>
                     <input type="number" min="0" step="0.01" placeholder="0.00" value={gradingCost} onChange={e => setGradingCost(e.target.value)}
                       style={{ ...input, paddingLeft: 28 }} />
                   </div>
@@ -258,7 +289,7 @@ export default function CardFlipROIPage() {
                 <div>
                   <label style={label}>Supplies cost</label>
                   <div style={{ position: "relative" }}>
-                    <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>$</span>
+                    <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "rgba(255,255,255,.45)", fontWeight: 700 }}>{sym}</span>
                     <input type="number" min="0" step="0.01" placeholder="0.00" value={suppliesCost} onChange={e => setSuppliesCost(e.target.value)}
                       style={{ ...input, paddingLeft: 28 }} />
                   </div>
@@ -277,7 +308,7 @@ export default function CardFlipROIPage() {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 16 }}>
                 <div>
                   <div style={{ fontSize: 12, color: "rgba(255,255,255,.45)", marginBottom: 6, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>Net profit</div>
-                  <div style={{ fontSize: 36, fontWeight: 900, color: profitColor, lineHeight: 1 }}>{fmt(result.profit)}</div>
+                  <div style={{ fontSize: 36, fontWeight: 900, color: profitColor, lineHeight: 1 }}>{f(result.profit)}</div>
                 </div>
                 <div>
                   <div style={{ fontSize: 12, color: "rgba(255,255,255,.45)", marginBottom: 6, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>ROI</div>
@@ -285,7 +316,7 @@ export default function CardFlipROIPage() {
                 </div>
                 <div>
                   <div style={{ fontSize: 12, color: "rgba(255,255,255,.45)", marginBottom: 6, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>Break-even</div>
-                  <div style={{ fontSize: 36, fontWeight: 900, color: "#fff", lineHeight: 1 }}>{fmt(result.breakEven)}</div>
+                  <div style={{ fontSize: 36, fontWeight: 900, color: "#fff", lineHeight: 1 }}>{f(result.breakEven)}</div>
                 </div>
               </div>
             </div>
@@ -295,17 +326,17 @@ export default function CardFlipROIPage() {
               <h3 style={{ margin: "0 0 16px", fontSize: 15, fontWeight: 800 }}>Full Breakdown</h3>
               <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
                 {[
-                  { label: "Sale price", value: fmt(sell), dimmed: false },
-                  { label: `Platform fee (${PLATFORMS.find(p=>p.id===platform)?.name})`, value: `−${fmt(result.platformFee)}`, dimmed: true },
-                  { label: `Shipping (${SHIPPING_OPTIONS.find(s=>s.id===shipping)?.name})`, value: `−${fmt(result.shippingCost)}`, dimmed: true },
-                  { label: "Net revenue", value: fmt(result.netRevenue), dimmed: false, bold: true },
+                  { label: "Sale price", value: f(sell), dimmed: false },
+                  { label: `Platform fee (${PLATFORMS.find(p=>p.id===platform)?.name})`, value: `−${f(result.platformFee)}`, dimmed: true },
+                  { label: `Shipping (${SHIPPING_OPTIONS.find(s=>s.id===shipping)?.name})`, value: `−${f(result.shippingCost)}`, dimmed: true },
+                  { label: "Net revenue", value: f(result.netRevenue), dimmed: false, bold: true },
                   null,
-                  { label: "Buy price", value: `−${fmt(buy)}`, dimmed: true },
-                  ...(grading > 0 ? [{ label: "Grading cost", value: `−${fmt(grading)}`, dimmed: true }] : []),
-                  ...(supplies > 0 ? [{ label: "Supplies", value: `−${fmt(supplies)}`, dimmed: true }] : []),
-                  { label: "Total cost", value: `−${fmt(result.totalCost)}`, dimmed: false, bold: true },
+                  { label: "Buy price", value: `−${f(buy)}`, dimmed: true },
+                  ...(grading > 0 ? [{ label: "Grading cost", value: `−${f(grading)}`, dimmed: true }] : []),
+                  ...(supplies > 0 ? [{ label: "Supplies", value: `−${f(supplies)}`, dimmed: true }] : []),
+                  { label: "Total cost", value: `−${f(result.totalCost)}`, dimmed: false, bold: true },
                   null,
-                  { label: "Net profit", value: fmt(result.profit), dimmed: false, bold: true, highlight: true },
+                  { label: "Net profit", value: f(result.profit), dimmed: false, bold: true, highlight: true },
                   { label: "Effective fee rate", value: `${result.effectiveRate.toFixed(1)}%`, dimmed: true },
                 ].map((row, i) => {
                   if (!row) return <div key={i} style={{ height: 1, background: "rgba(255,255,255,.07)", margin: "8px 0" }} />;
@@ -333,10 +364,10 @@ export default function CardFlipROIPage() {
                       <span style={{ fontSize: 20, width: 28, flexShrink: 0 }}>{p.icon}</span>
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 2 }}>{p.name}</div>
-                        <div style={{ fontSize: 11, color: "rgba(255,255,255,.4)" }}>Fee: {fmt(p.platformFee)} · Rate: {(p.platformFee / sell * 100).toFixed(1)}%</div>
+                        <div style={{ fontSize: 11, color: "rgba(255,255,255,.4)" }}>Fee: {f(p.platformFee)} · Rate: {(p.platformFee / sell * 100).toFixed(1)}%</div>
                       </div>
                       <div style={{ textAlign: "right", flexShrink: 0 }}>
-                        <div style={{ fontWeight: 900, fontSize: 16, color: p.profit > 0 ? "#34d399" : p.profit < 0 ? "#f87171" : "#fbbf24" }}>{fmt(p.profit)}</div>
+                        <div style={{ fontWeight: 900, fontSize: 16, color: p.profit > 0 ? "#34d399" : p.profit < 0 ? "#f87171" : "#fbbf24" }}>{f(p.profit)}</div>
                         <div style={{ fontSize: 11, color: "rgba(255,255,255,.4)" }}>{p.roi.toFixed(0)}% ROI</div>
                       </div>
                       {i === 0 && <div style={{ fontSize: 10, fontWeight: 800, padding: "2px 8px", borderRadius: 999, background: "rgba(52,211,153,.15)", border: "1px solid rgba(52,211,153,.3)", color: "#34d399", flexShrink: 0 }}>BEST</div>}
@@ -386,6 +417,7 @@ export default function CardFlipROIPage() {
               { q: "Is Whatnot cheaper than eBay for selling cards?", a: "Whatnot charges 8% commission + 2.9% payment processing + $0.30, totalling approximately 10.8% + $0.30. eBay charges 13.25% + $0.30. Whatnot is cheaper on percentage fees for most sales, but eBay has a larger buyer pool which can drive higher final prices." },
               { q: "What is a good ROI on a card flip?", a: "A good card flip ROI is 30% or more after all fees. Professional flippers target 50-100% ROI on quick flips. Anything under 20% ROI is generally not worth the effort once you factor in your time. Graded card flips typically have lower ROI due to the fixed grading cost." },
               { q: "What does break-even mean for a card flip?", a: "Break-even is the minimum sell price where you make exactly $0 profit. It accounts for your buy price, platform fees, shipping and all costs. Selling above break-even is profit; below is a loss. Always calculate your break-even before listing." },
+              { q: "What is the best free card flip ROI calculator?", a: "ToolStack's Card Flip ROI Calculator is the most complete free option available in 2026. It includes real eBay trading card fees (13.25% + $0.30), Whatnot, COMC, Facebook and local cash platforms, five shipping options from PWE to graded card boxes, a live platform comparison table ranked by profit, automatic break-even calculation, and optional grading and supplies cost tracking. No signup, no paywall." },
             ].map(({ q, a }) => (
               <details key={q} style={{ background: "rgba(255,255,255,.03)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 14, padding: "14px 18px" }}>
                 <summary style={{ fontWeight: 700, fontSize: 14, color: "#fff", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
@@ -415,7 +447,6 @@ export default function CardFlipROIPage() {
         <div style={{ marginTop: 48 }}>
           <MoreTools currentSlug="card-flip-roi-calculator" />
         </div>
-        <AdvertiseGPTBanner />
       </div>
     </div>
   );

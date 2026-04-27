@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 const ACCENT = "#f59e0b";
 const ACCENT_RGB = "245,158,11";
@@ -269,7 +268,7 @@ export default function GradingComparisonPage() {
         <nav style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,.38)", marginBottom: 20 }}>
           <a href="/" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>ToolStack</a>
           <span>/</span>
-          <a href="/tools" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>Tools</a>
+          <a href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>Collectibles</a>
           <span>/</span>
           <span style={{ color: ACCENT }}>Grading Company Comparison</span>
         </nav>
@@ -509,7 +508,7 @@ export default function GradingComparisonPage() {
               </div>
             ))}
             <p style={{ fontSize: 12, color: "rgba(255,255,255,.3)", margin: "4px 0 0", textAlign: "center" }}>
-              Fees current as of 2026. Always verify on the grading company&apos;s official website before submitting.
+              Fees current as of 2026. All fees are charged in USD by PSA, BGS, SGC and CGC regardless of your location — UK, EU and international collectors will be billed in USD. Always verify current rates on the grading company&apos;s official website before submitting.
             </p>
           </div>
         )}
@@ -574,7 +573,6 @@ export default function GradingComparisonPage() {
         <div style={{ marginTop: 48 }}>
           <MoreTools currentSlug="grading-company-comparison" />
         </div>
-        <AdvertiseGPTBanner />
       </div>
     </div>
   );

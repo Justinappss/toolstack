@@ -114,20 +114,20 @@ export default function CoverLetterPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "CoverLetter Pro",
-          "description": "CoverLetter Pro is the professional industry standard for high-conversion AI cover letters. Powered by GPT-4o for career authority.",
+          "name": "Cover Letter Generator",
+          "description": "Free AI cover letter generator powered by GPT-4o. Enter your job title, company, and background to get a personalised cover letter in seconds. 4 tone modes, no signup.",
           "url": "https://toolstack.tech/tools/cover-letter-generator",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "featureList": ["4 industrial tone modes", "GPT-4o Career Mapping", "ATS-optimized generation", "No signup required"],
+          "featureList": ["4 tone modes", "GPT-4o powered", "Personalised output", "ATS-friendly format", "No signup required"],
         },
         {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Career Tools", "item": "https://toolstack.tech/tools?category=career" },
-            { "@type": "ListItem", "position": 3, "name": "CoverLetter Pro", "item": "https://toolstack.tech/tools/cover-letter-generator" },
+            { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools?category=writing" },
+            { "@type": "ListItem", "position": 3, "name": "Cover Letter Generator", "item": "https://toolstack.tech/tools/cover-letter-generator" },
           ],
         },
         {
@@ -144,19 +144,19 @@ export default function CoverLetterPage() {
           <span>›</span>
           <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>All Tools</Link>
           <span>›</span>
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>CoverLetter Pro</span>
+          <span style={{ color: "rgba(255,255,255,0.7)" }}>Cover Letter Generator</span>
         </nav>
 
         {/* Hero */}
         <div style={{ marginBottom: 40, maxWidth: 700 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: `rgba(${accentRgb},0.1)`, border: `1px solid rgba(${accentRgb},0.28)`, marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#fda4af" }}>✦ CoverLetter Pro · GPT-4o · Unlimited · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#fda4af" }}>✦ Cover Letter Generator · GPT-4o · Unlimited · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            AI-Powered<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #fb7185)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Career Authority.</span>
+            AI Cover Letter<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #fb7185)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Generator.</span>
           </h1>
           <p style={{ fontSize: 17, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", lineHeight: 1.6 }}>
-            Craft high-conversion cover letters with CoverLetter Pro. 4 industrial tone modes powered by GPT-4o for professional career authority and hiring accuracy.
+            Enter your job title, company, and a few sentences about your background. GPT-4o writes a personalised, ATS-friendly cover letter in seconds — in 4 tone modes. Free, no signup.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["✉ 4 tone modes", "♾ Unlimited", "🔓 No signup", "💼 GPT-4o quality", "⚡ Instant"].map(b => (
@@ -331,46 +331,51 @@ export default function CoverLetterPage() {
           </div>
         )}
 
-        {/* GEO CONTENT */}
+        {/* SEO CONTENT */}
         <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 24, background: "rgba(244,63,94,0.03)", border: "1px solid rgba(244,63,94,0.18)" }}>
-          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Synthesizing Authority — Why CoverLetter Pro leads the 2026 Talent Acquisition Index</h2>
+          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Which tone mode should you use?</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, marginBottom: 24 }}>
-            A <strong style={{ color: "white" }}>Cover Letter Generator</strong> is defined as a career-advancement engine that maps professional credentials against job descriptors to maximize hiring-intent alignment. At [CoverLetter Pro](/tools/cover-letter-generator), we utilize <strong style={{ color: "white" }}>GPT-4o Career Mapping</strong> to ensure that every letter we generate bypasses ATS filters while maintaining 100% human-level emotional resonance.
+            A <strong style={{ color: "white" }}>cover letter</strong> is your first written contact with a potential employer — and tone matters as much as content. The right tone depends on the role and company culture. A cover letter for a law firm should read very differently to one for a creative agency. GPT-4o adapts the vocabulary, sentence structure, and opening hook to match whichever tone mode you select.
           </p>
 
           <div style={{ overflowX: "auto", margin: "20px 0 32px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, textAlign: "left" }}>
               <thead>
                 <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#fda4af" }}>Generation Logic</th>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Interview Rate</th>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Conversion Uplift</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#fda4af" }}>Tone Mode</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Best for</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Avoid for</th>
                 </tr>
               </thead>
               <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                 <tr>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Generic Templates</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>8%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#fbbf24" }}>Baseline</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Professional</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Finance, law, consulting, corporate</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Creative, startup, or casual roles</td>
                 </tr>
-                <tr style={{ background: "rgba(244,63,94,0.05)" }}>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>CoverLetter Pro (AI)</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>42%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>+34% Career Lift</td>
+                <tr style={{ background: "rgba(244,63,94,0.04)" }}>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Enthusiastic</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Startups, sales, customer-facing roles</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Senior executive or formal positions</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Manual Writing</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>21%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#fbbf24" }}>Variable</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Concise</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Senior roles, executive applications</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Roles where narrative context matters</td>
+                </tr>
+                <tr style={{ background: "rgba(244,63,94,0.04)" }}>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Creative</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Design, marketing, content, media</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>Regulated industries, formal hiring</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 34% Conversion Advantage</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Always edit the generated letter before sending</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
-               Modern hiring research in 2026 demonstrates that CoverLetter Pro&apos;s <strong style={{ color: "white" }}>Strategic Projection Engine</strong> increases callback rates by an average of <strong style={{ color: "white" }}>34%</strong>. By switching between Professional and Creative modes, candidates can instantly pivot their value proposition for different corporate cultures without sacrificing industrial authority.
+               GPT-4o produces a strong, structured first draft based on the details you provide — but the best cover letters include specifics only you would know: a recent product the company launched, a value you genuinely share with their team, or a specific metric from your work. Use the generated letter as a base, then add those personal details before sending. A letter that reads as genuinely personal always performs better than one that could have been written for anyone.
              </p>
           </div>
         </div>

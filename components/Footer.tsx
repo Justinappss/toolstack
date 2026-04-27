@@ -66,6 +66,8 @@ const TOOL_CATEGORIES = [
             { label: "Whatnot Seller Fee Calculator", href: "/tools/whatnot-seller-fee-calculator" },
             { label: "Grading Company Comparison", href: "/tools/grading-company-comparison" },
             { label: "Card Flip ROI Calculator", href: "/tools/card-flip-roi-calculator" },
+            { label: "Card Box Break Calculator", href: "/tools/card-box-break-calculator" },
+            { label: "eBay Best Offer Calculator", href: "/tools/ebay-best-offer-calculator" },
         ],
     },
 ];

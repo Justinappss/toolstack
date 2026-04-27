@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free AI Paraphrasing Tool — 6 Rewriting Modes, GPT-4o | ToolStack",
-    description: "Optimize content fidelity with ParaPhrase Pro. 6 rewriting modes including Academic and shortener, powered by GPT-4o.",
+    description: "Rephrase and rewrite text in 6 modes: Standard, Fluency, Formal, Academic, Creative, and Shorten. Powered by GPT-4o. Free, no signup.",
     url: "https://toolstack.tech/tools/paraphrasing-tool",
     siteName: "ToolStack",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free AI Paraphrasing Tool — 6 Rewriting Modes, GPT-4o | ToolStack",
-    description: "Optimize content fidelity with ParaPhrase Pro. 6 rewriting modes including Academic and shortener, powered by GPT-4o.",
+    description: "Rephrase and rewrite text in 6 modes: Standard, Fluency, Formal, Academic, Creative, and Shorten. Powered by GPT-4o. Free, no signup.",
   },
 };
 

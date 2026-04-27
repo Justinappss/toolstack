@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free AI Cover Letter Generator — GPT-4o, 4 Tones | ToolStack",
-    description: "Craft high-conversion cover letters with CoverLetter Pro. 4 industrial tone modes powered by GPT-4o.",
+    description: "Generate a professional cover letter in seconds with GPT-4o. 4 tone modes: Professional, Confident, Creative, and Concise. ATS-friendly, no signup.",
     url: "https://toolstack.tech/tools/cover-letter-generator",
     siteName: "ToolStack",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free AI Cover Letter Generator — GPT-4o, 4 Tones | ToolStack",
-    description: "High-conversion cover letters with CoverLetter Pro. 4 tone modes, GPT-4o powered.",
+    description: "Generate a professional cover letter in seconds with GPT-4o. 4 tone modes, ATS-friendly, no signup.",
   },
 };
 

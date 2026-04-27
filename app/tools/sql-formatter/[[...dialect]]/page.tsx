@@ -39,6 +39,10 @@ const FAQS = [
     q: "What does 'Keyword Case' do?",
     a: "It standardizes how SQL commands (like SELECT, FROM, WHERE) are capitalized. The industry standard is 'Upper' (capitalized commands, lowercase tables/columns), making it easier to distinguish logic from data visually.",
   },
+  {
+    q: "What is the best free online SQL formatter?",
+    a: "ToolStack's SQL Formatter is one of the best free options available. It uses a professional-grade sql-formatter engine, supports multiple dialects (PostgreSQL, MySQL, SQLite, T-SQL), offers keyword case control, features a Monaco code editor with syntax highlighting, and runs entirely in your browser with no signup required.",
+  },
 ];
 
 type Dialect = "sql" | "postgresql" | "mysql" | "sqlite" | "tsql";
@@ -157,7 +161,7 @@ export default function SqlFormatter({ params }: { params: { dialect?: string[] 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free SQL Formatter — ToolStack",
+          "name": "SQL Formatter",
           "description": "Instantly beautify raw, messy SQL queries into readable, perfectly indented syntax. Runs securely browser-side.",
           "url": "https://toolstack.tech/tools/sql-formatter",
           "applicationCategory": "DeveloperApplication",
@@ -184,7 +188,7 @@ export default function SqlFormatter({ params }: { params: { dialect?: string[] 
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", maxWidth: 1000, margin: "0 auto 32px" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
+          <Link href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>SQL Formatter</span>
         </nav>
@@ -347,7 +351,7 @@ export default function SqlFormatter({ params }: { params: { dialect?: string[] 
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
               {[
-                { t: "Error Isolation", d: "When a complex query with multiple `LEFT JOIN` and nested `WHERE` clauses throws an error, formatting it instantly visually isolates the branching logic, allowing you to spot missing parentheses or invalid syntax immediately." },
+                { t: "Error Isolation", d: "When a complex query with multiple LEFT JOIN and nested WHERE clauses throws an error, formatting it instantly visually isolates the branching logic, allowing you to spot missing parentheses or invalid syntax immediately." },
                 { t: "Code Review Standards", d: "Merging dense, single-line SQL queries into production repositories is a bad practice. Reviewers cannot easily read the diff. Pre-formatting your SQL utilizing uppercase standard commands ensures the pull request is clean and readable." },
                 { t: "Cross-Dialect Security", d: "Different databases process queries and quotations differently. By utilizing our specific dialect parsing (e.g., PostgreSQL vs MySQL), the formatter guarantees that your quotation logic is preserved exactly as that specific engine expects." },
               ].map((item, i) => (

@@ -504,6 +504,26 @@ export const ALL_TOOLS = [
     badge: "New",
   },
   {
+    slug: "card-box-break-calculator",
+    name: "Card Box Break Calculator",
+    desc: "Price your break spots to cover box cost, platform fees and shipping. See profit at 50%, 75% and 100% fill rates. Whatnot and eBay fees built in.",
+    icon: "🎰",
+    color: "#f59e0b",
+    bg: "rgba(245,158,11,0.1)",
+    border: "rgba(245,158,11,0.25)",
+    badge: "New",
+  },
+  {
+    slug: "ebay-best-offer-calculator",
+    name: "eBay Best Offer Calculator",
+    desc: "Calculate your break-even offer and get an Accept, Counter or Decline recommendation for any eBay Best Offer. Full profit breakdown at every price level.",
+    icon: "🏷️",
+    color: "#3b82f6",
+    bg: "rgba(59,130,246,0.1)",
+    border: "rgba(59,130,246,0.25)",
+    badge: "New",
+  },
+  {
     slug: "whatnot-seller-fee-calculator",
     name: "Whatnot Seller Fee Calculator",
     desc: "Calculate Whatnot commission and payment processing fees by category. See net payout and compare vs eBay.",
@@ -545,18 +565,20 @@ export function MoreTools({ currentSlug }: { currentSlug: string }) {
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-        {tools.map(tool => (
-          <Link key={tool.slug} href={`/tools/${tool.slug}`} style={{ textDecoration: "none" }}>
+        {tools.map(tool => {
+          const isSoon = (tool as { comingSoon?: boolean }).comingSoon;
+          const card = (
             <div style={{
               padding: "20px 22px",
               borderRadius: 18,
               background: tool.bg,
               border: `1px solid ${tool.border}`,
               height: "100%",
-              cursor: "pointer",
+              cursor: isSoon ? "default" : "pointer",
               position: "relative" as const,
+              opacity: isSoon ? 0.5 : 1,
             }}
-              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = `0 8px 24px ${tool.bg}`; }}
+              onMouseEnter={e => { if (!isSoon) { (e.currentTarget as HTMLDivElement).style.transform = "translateY(-2px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = `0 8px 24px ${tool.bg}`; } }}
               onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
@@ -576,10 +598,13 @@ export function MoreTools({ currentSlug }: { currentSlug: string }) {
               </div>
               <h3 style={{ fontSize: 14, fontWeight: 800, color: "white", margin: "0 0 6px", lineHeight: 1.3 }}>{tool.name}</h3>
               <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0, lineHeight: 1.6 }}>{tool.desc}</p>
-              <div style={{ marginTop: 14, fontSize: 12, fontWeight: 700, color: tool.color }}>Use free →</div>
+              <div style={{ marginTop: 14, fontSize: 12, fontWeight: 700, color: tool.color }}>{isSoon ? "Coming soon" : "Use free →"}</div>
             </div>
-          </Link>
-        ))}
+          );
+          return isSoon
+            ? <div key={tool.slug}>{card}</div>
+            : <Link key={tool.slug} href={`/tools/${tool.slug}`} style={{ textDecoration: "none" }}>{card}</Link>;
+        })}
       </div>
     </div>
   );

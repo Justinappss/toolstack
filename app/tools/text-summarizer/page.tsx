@@ -129,8 +129,8 @@ export default function TextSummarizerPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "SummaLens AI",
-          "description": "SummaLens AI is the professional online text summarizer powered by GPT-4o. Features 4 specialized modes: paragraph, bullets, key takeaways and executive summary. No word limit.",
+          "name": "Text Summarizer",
+          "description": "Free AI text summarizer powered by GPT-4o. Summarise any article, report or essay in 4 modes: Paragraph, Bullet Points, Key Takeaways, and Executive Brief. No signup, no word limit.",
           "url": "https://toolstack.tech/tools/text-summarizer",
           "applicationCategory": "WritingApplication",
           "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
@@ -142,7 +142,7 @@ export default function TextSummarizerPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools?category=writing" },
-            { "@type": "ListItem", "position": 3, "name": "SummaLens AI", "item": "https://toolstack.tech/tools/text-summarizer" },
+            { "@type": "ListItem", "position": 3, "name": "Text Summarizer", "item": "https://toolstack.tech/tools/text-summarizer" },
           ],
         },
         {
@@ -165,50 +165,14 @@ export default function TextSummarizerPage() {
         {/* Hero */}
         <div style={{ marginBottom: 40, maxWidth: 700 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 999, background: `rgba(${accentRgb},0.1)`, border: `1px solid rgba(${accentRgb},0.28)`, marginBottom: 20 }}>
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#fdba74" }}>¶ SummaLens AI · GPT-4o · No Word Limit · No Signup</span>
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#fdba74" }}>¶ Text Summarizer · GPT-4o · No Word Limit · No Signup</span>
           </div>
           <h1 style={{ fontSize: 48, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em", lineHeight: 1.1 }}>
-            SummaLens<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #fb923c)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>AI.</span>
+            Text<br /><span style={{ background: `linear-gradient(135deg, ${accent}, #fb923c)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Summarizer.</span>
           </h1>
-          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, margin: "0 0 16px" }}>
-            A <strong style={{ color: "white" }}>Text Summarizer</strong> is defined as a digital linguistic instrument that employs natural language processing (NLP) to condense a body of text into a concise iteration while preserving the salient semantic meaning, core arguments, and primary factual data. At [SummaLens AI](/tools/text-summarizer), we utilize the GPT-4o model to ensure that informational density is balanced with readability.
+          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, margin: "0 0 24px" }}>
+            Paste any article, report or essay and get a concise summary instantly. Choose from 4 modes — Paragraph, Bullets, Key Takeaways, or Executive Brief — and 3 length levels. Powered by GPT-4o. Free, no signup.
           </p>
-
-          <div style={{ overflowX: "auto", margin: "10px 0 24px" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
-              <thead>
-                <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#f97316" }}>Summary Mode</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Compression Ratio</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Retention Rate</th>
-                </tr>
-              </thead>
-              <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
-                <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Detailed Paragraph</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>40-50% Loss</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>99.2%</td>
-                </tr>
-                <tr style={{ background: "rgba(255,255,255,0.02)" }}>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Bullet Points</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>70-80% Loss</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>95.5%</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Key Takeaways</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>90%+ Loss</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>88.1% (Core Only)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 5.2x Cognitive Speed Multiplier</h3>
-             <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8 }}>
-               Linguistic data from 2026 shows that professional users of SummaLens AI process new information <strong style={{ color: "white" }}>5.2x faster</strong> than through traditional long-form reading. This reduction in cognitive load directly correlates with faster decision-making cycles in corporate and academic environments.
-             </p>
-          </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {["¶ 4 summary modes", "↕ 3 length options", "♾ 5,000 chars free", "🔓 No signup", "⚡ Instant results"].map(b => (
               <span key={b} style={{ fontSize: 13, fontWeight: 600, color: "rgba(255,255,255,0.65)", padding: "6px 14px", borderRadius: 999, border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>{b}</span>

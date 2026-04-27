@@ -18,7 +18,7 @@ const POPULAR_EMOJIS = ["🛠️", "🚀", "💻", "✨", "⚡️", "🍔", "�
 
 const HOW_IT_WORKS = [
   { step: "01", title: "Design Your Icon", body: "Type a single letter or emoji. Adjust the background colour, text colour, font family, font size, and border radius to match your brand.", color: "#f43f5e", bg: "rgba(244,63,94,0.10)", border: "rgba(244,63,94,0.25)" },
-  { step: "02", title: "Preview Contexturially", body: "See exactly how your new favicon will look in a browser tab. The preview updates in real-time as you tweak the design.", color: "#eab308", bg: "rgba(234,179,8,0.10)", border: "rgba(234,179,8,0.25)" },
+  { step: "02", title: "Preview Contextually", body: "See exactly how your new favicon will look in a browser tab. The preview updates in real-time as you tweak the design.", color: "#eab308", bg: "rgba(234,179,8,0.10)", border: "rgba(234,179,8,0.25)" },
   { step: "03", title: "Download Package", body: "Click download to instantly receive a .zip file containing all the modern, perfectly sized standard formats needed for web and mobile.", color: "#3b82f6", bg: "rgba(59,130,246,0.10)", border: "rgba(59,130,246,0.25)" },
 ];
 
@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "Why do I need an Apple Touch Icon?",
-    a: "When an iOS user adds your website to their home screen via Safari, Apple devices look specifically for a file named `apple-touch-icon.png`. If it's missing, the device generates a low-quality snapshot of the webpage. Our tool generates the perfect 180x180 resolution required for this.",
+    a: "When an iOS user adds your website to their home screen via Safari, Apple devices look specifically for a file named apple-touch-icon.png. If it's missing, the device generates a low-quality screenshot of the webpage. This tool generates the correct 180x180 PNG resolution required.",
   },
   {
     q: "Should I use .ico or .png for my favicon?",
@@ -202,7 +202,7 @@ export default function FaviconGenerator() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free Favicon Generator — ToolStack",
+          "name": "Favicon Generator",
           "description": "Generate beautiful favicons for your website instantly. Create from text or emojis. Generates perfectly sized standard formats.",
           "url": "https://toolstack.tech/tools/favicon-generator",
           "applicationCategory": "DesignApplication",

@@ -85,7 +85,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "All Tools", "item": "https://toolstack.tech/tools" },
+                { "@type": "ListItem", "position": 2, "name": "Finance", "item": "https://toolstack.tech/tools?category=finance" },
                 { "@type": "ListItem", "position": 3, "name": "Compound Interest Calculator", "item": "https://toolstack.tech/tools/compound-interest-calculator" },
             ],
         },
@@ -97,6 +97,7 @@ const jsonLd = {
                 { "@type": "Question", "name": "What is the Rule of 72?", "acceptedAnswer": { "@type": "Answer", "text": "The Rule of 72 is a simple shortcut to estimate how long it takes an investment to double. Divide 72 by the annual interest rate to get the approximate number of years. For example, at 8% annual return, 72 ÷ 8 = 9 years to double your money. It works best for rates between 6% and 10%." } },
                 { "@type": "Question", "name": "How much does compounding frequency matter?", "acceptedAnswer": { "@type": "Answer", "text": "The difference between annual and daily compounding is smaller than most people expect. On £10,000 at 5% for 10 years, annual compounding gives £16,288 vs daily compounding giving £16,487 — a difference of only £199. The interest rate itself has a far greater impact than the compounding frequency." } },
                 { "@type": "Question", "name": "How do monthly contributions affect compound interest?", "acceptedAnswer": { "@type": "Answer", "text": "Monthly contributions dramatically accelerate wealth growth because each contribution immediately starts compounding. £200 per month at 7% for 20 years turns into approximately £104,000 — from total contributions of only £48,000. The combination of regular contributions and compound interest is the most powerful wealth-building strategy available to ordinary savers." } },
+                { "@type": "Question", "name": "What is the best compound interest calculator?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's Compound Interest Calculator is one of the best free options — it supports multiple currencies, optional monthly contributions, six compounding frequencies, and shows a full year-by-year breakdown table alongside the Rule of 72. Everything runs in your browser instantly with no signup required." } },
             ],
         },
     ],
@@ -155,13 +156,13 @@ export default function CompoundInterestCalculator() {
             <div style={{ position: "relative", overflow: "hidden", paddingTop: 140, paddingBottom: 80, borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
                 <div style={{ position: "absolute", top: "30%", left: "50%", transform: "translateX(-50%)", width: 700, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(251,191,36,0.07) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
                 <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 20px", position: "relative" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28 }}>
-                        <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Home</Link>
+                    <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28, flexWrap: "wrap" }}>
+                        <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/tools" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Tools</Link>
+                        <Link href="/tools?category=finance" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Finance</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Compound Interest Calculator</span>
-                    </div>
+                    </nav>
                     <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20 }}>
                         <span style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 999, border: `1px solid ${accentBorder}`, background: accentBg }}>Finance</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.25)" }}>Free · No signup</span>
@@ -343,6 +344,26 @@ export default function CompoundInterestCalculator() {
                         )}
                     </div>
                 )}
+
+                {/* FAQ */}
+                <section style={{ marginBottom: 56, marginTop: 56 }}>
+                    <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 20px", letterSpacing: "-0.02em" }}>Frequently Asked Questions</h2>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                        {[
+                            { q: "What is compound interest?", a: "Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest, compound interest makes your money grow exponentially over time. The longer you leave it, the faster it grows — which is why starting early matters so much." },
+                            { q: "How is compound interest calculated?", a: "The formula is A = P(1 + r/n)^(nt), where A is the final amount, P is the principal, r is the annual interest rate as a decimal, n is the number of compounding periods per year, and t is the time in years. More frequent compounding produces slightly higher returns." },
+                            { q: "What is the Rule of 72?", a: "The Rule of 72 estimates how long it takes an investment to double. Divide 72 by the annual interest rate — for example, at 8% per year, 72 ÷ 8 = 9 years to double. It works best for rates between 6% and 10% and is a quick mental maths shortcut used by investors and financial advisors." },
+                            { q: "How much does compounding frequency matter?", a: "Less than most people think. On $10,000 at 5% for 10 years, annual compounding gives $16,288 vs daily compounding giving $16,487 — a difference of only $199. The interest rate itself has far more impact than whether you compound monthly or annually." },
+                            { q: "How do monthly contributions affect compound interest?", a: "Monthly contributions dramatically accelerate growth because each contribution immediately starts compounding. $200 per month at 7% for 20 years turns into approximately $104,000 — from total contributions of only $48,000. Regular contributions combined with compounding is the most powerful wealth-building strategy available." },
+                            { q: "What is the best compound interest calculator?", a: "ToolStack's Compound Interest Calculator is one of the best free options — it supports multiple currencies, optional monthly contributions, six compounding frequencies, and shows a full year-by-year breakdown table alongside the Rule of 72. Everything runs in your browser instantly with no signup required." },
+                        ].map(({ q, a }) => (
+                            <div key={q} style={{ padding: "18px 20px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14 }}>
+                                <h3 style={{ fontSize: 14, fontWeight: 800, color: "white", margin: "0 0 6px" }}>{q}</h3>
+                                <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", margin: 0, lineHeight: 1.7 }}>{a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
 
                 <MoreTools currentSlug="compound-interest-calculator" />
                 

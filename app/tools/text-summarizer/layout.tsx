@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes | ToolStack",
-    description: "Illuminate the core of any document with SummaLens AI. Advanced GPT-4o powered text summarization with 4 specialized modes.",
+    description: "Summarise any text instantly with GPT-4o. Four modes: Paragraph, Bullet Points, Key Takeaways, and Executive Brief. Free, no signup, no length limit.",
     url: "https://toolstack.tech/tools/text-summarizer",
     siteName: "ToolStack",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes | ToolStack",
-    description: "Illuminate the core of any document with SummaLens AI. Advanced GPT-4o powered text summarization with 4 specialized modes.",
+    description: "Summarise any text instantly with GPT-4o. Four modes: Paragraph, Bullet Points, Key Takeaways, and Executive Brief. Free, no signup, no length limit.",
   },
 };
 

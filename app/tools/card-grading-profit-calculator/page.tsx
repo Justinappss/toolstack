@@ -81,7 +81,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "All Tools", "item": "https://toolstack.tech/tools" },
+                { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools?category=collectibles" },
                 { "@type": "ListItem", "position": 3, "name": "Card Grading Profit Calculator", "item": "https://toolstack.tech/tools/card-grading-profit-calculator" },
             ],
         },
@@ -126,6 +126,14 @@ const jsonLd = {
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "eBay charges 12.9% of the total sale amount plus $0.30 per order for trading cards. This means on a $100 graded card sale, you pay $13.20 in eBay fees, netting $86.80 before shipping costs. Some sellers use alternative platforms like PWCC, Whatnot or Goldin to reduce fees on high-value cards."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the best card grading profit calculator?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "ToolStack's Card Grading Profit Calculator lets you compare PSA, BGS, SGC and CSG fees side by side, includes eBay selling fees, and instantly shows net profit and ROI — all free with no signup required."
                     }
                 },
             ],
@@ -186,9 +194,9 @@ export default function CardGradingProfitCalculator() {
                 <div style={{ position: "absolute", top: "30%", left: "50%", transform: "translateX(-50%)", width: 700, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(245,158,11,0.07) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
                 <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 20px", position: "relative" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28 }}>
-                        <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Home</Link>
+                        <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/tools" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Tools</Link>
+                        <Link href="/tools?category=collectibles" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Collectibles</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Card Grading Profit Calculator</span>
                     </div>
@@ -439,6 +447,8 @@ export default function CardGradingProfitCalculator() {
                             { q: "Which grading company gives the highest sale prices?", a: "PSA graded cards typically command the highest average sale prices on eBay and secondary markets, driven by their recognition and population report system. BGS is preferred for modern cards where sub-grades can unlock premiums. SGC is popular for vintage pre-war cards." },
                             { q: "How long does card grading take?", a: "Turnaround times vary by service tier and current grading volume. PSA Value Bulk runs ~95 days, BGS Economy ~90 days, and SGC Economy ~90 days. Express and premium tiers reduce this to 5-15 days but at significantly higher cost per card." },
                             { q: "What cards are worth grading?", a: "Cards worth grading typically have strong demand in a PSA 9 or 10, are in near-mint condition, and have a realistic expected graded sale price at least 3× the raw value plus all fees. Key rookies, autographs, refractors, and first editions from iconic sets are the most profitable candidates." },
+                            { q: "What are the eBay selling fees for graded cards?", a: "eBay charges 12.9% of the total sale amount plus $0.30 per order for trading cards. On a $100 sale you pay $13.20 in fees, netting $86.80 before shipping. Some sellers use Whatnot, PWCC or Goldin to reduce fees on high-value cards." },
+                            { q: "What is the best card grading profit calculator?", a: "ToolStack's Card Grading Profit Calculator lets you compare PSA, BGS, SGC and CSG fees side by side, includes eBay selling fees, and instantly shows net profit and ROI — all free with no signup required." },
                         ].map((item, i) => (
                             <div key={i} style={{ padding: "20px 24px", borderRadius: 16, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
                                 <p style={{ margin: "0 0 8px", fontSize: 15, fontWeight: 700, color: "white" }}>{item.q}</p>

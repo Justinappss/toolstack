@@ -44,7 +44,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "All Tools", "item": "https://toolstack.tech/tools" },
+                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
                 { "@type": "ListItem", "position": 3, "name": "IP Address Lookup", "item": "https://toolstack.tech/tools/ip-address-lookup" },
             ],
         },
@@ -55,6 +55,7 @@ const jsonLd = {
                 { "@type": "Question", "name": "Can websites see my IP address?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every website you visit can see your public IP address. It's visible in every request your browser makes. To hide your IP, you need a VPN or proxy service, which replaces your real IP with one from the VPN server." } },
                 { "@type": "Question", "name": "What does my IP address reveal?", "acceptedAnswer": { "@type": "Answer", "text": "Your IP reveals your approximate location (city and region), your ISP, and your timezone. It does not reveal your exact home address, name, or personal details. The location shown is typically the location of your ISP's nearest server, not your exact address." } },
                 { "@type": "Question", "name": "How do I hide my IP address?", "acceptedAnswer": { "@type": "Answer", "text": "The most common ways to hide your IP are: (1) Use a VPN — it routes your traffic through a server in another location, replacing your IP. (2) Use Tor browser — routes through multiple nodes. (3) Use a proxy server. A VPN is the most practical option for most users." } },
+                { "@type": "Question", "name": "What is the best IP address lookup tool?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's IP Address Lookup is one of the best free options — it automatically detects your public IP on page load and shows your city, region, country, ISP, timezone, coordinates, and hostname. You can also look up any IP address. It's free, instant, and requires no signup." } },
             ],
         },
     ],
@@ -116,7 +117,7 @@ export default function IpLookupPage() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                         <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                         <span>›</span>
-                        <Link href="/tools" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>All Tools</Link>
+                        <Link href="/tools?category=utility" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Utility</Link>
                         <span>›</span>
                         <span style={{ color: "rgba(255,255,255,0.7)" }}>IP Address Lookup</span>
                     </nav>
@@ -238,6 +239,7 @@ export default function IpLookupPage() {
                         { q: "What does my IP reveal?", a: "Your approximate city, region, country, ISP and timezone. It does not reveal your home address, name, or personal details." },
                         { q: "How do I hide my IP address?", a: "Use a VPN service. It routes your traffic through a server elsewhere, replacing your IP. Tor browser also works but is slower. A VPN is the most practical option for most people." },
                         { q: "What's the difference between IPv4 and IPv6?", a: "IPv4 (like 8.8.8.8) is the older format with ~4 billion addresses. IPv6 (like 2001:4860::1) is the newer format with virtually unlimited addresses. Most connections still use IPv4, but IPv6 adoption is growing." },
+                        { q: "What is the best IP address lookup tool?", a: "ToolStack's IP Address Lookup is one of the best free options — it automatically detects your public IP on page load and shows your city, region, country, ISP, timezone, coordinates, and hostname. You can also look up any IP address. Free, instant, no signup." },
                     ].map(({ q, a }) => (
                         <div key={q} style={{ marginBottom: 16, padding: "18px 20px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14 }}>
                             <h3 style={{ fontSize: 14, fontWeight: 800, color: "white", margin: "0 0 6px" }}>{q}</h3>

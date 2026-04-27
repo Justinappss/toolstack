@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free Password Generator — Secure, Random, No Signup | ToolStack",
-    description: "Generate ironclad, cryptographically secure passwords with VaultGuard Pro. 100% client-side security.",
+    description: "Generate strong, random passwords instantly. Custom length, character sets, bulk generation. Cryptographically secure — runs 100% in your browser.",
     url: "https://toolstack.tech/tools/password-generator",
     siteName: "ToolStack",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free Password Generator — Secure, Random, No Signup | ToolStack",
-    description: "Generate ironclad, cryptographically secure passwords with VaultGuard Pro. 100% client-side security.",
+    description: "Generate strong, random passwords instantly. Cryptographically secure — runs 100% in your browser.",
   },
 };
 

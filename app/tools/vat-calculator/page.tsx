@@ -179,20 +179,20 @@ export default function VATCalculatorPage() {
           <span>›</span>
           <Link href="/tools" style={{ color: "rgba(255,255,255,0.45)", textDecoration: "none" }}>All Tools</Link>
           <span>›</span>
-          <span style={{ color: "rgba(255,255,255,0.7)" }}>TaxRefinery Pro</span>
+          <span style={{ color: "rgba(255,255,255,0.7)" }}>VAT Calculator</span>
         </nav>
 
         {/* Badge */}
         <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 14px", borderRadius: 99, background: "rgba(251,191,36,0.1)", border: "1px solid rgba(251,191,36,0.2)", marginBottom: 20 }}>
-          <span style={{ fontSize: 13, fontWeight: 700, color: "#fbbf24" }}>✓ TaxRefinery Pro · 40+ Countries · Industrial Precision</span>
+          <span style={{ fontSize: 13, fontWeight: 700, color: "#fbbf24" }}>✓ VAT Calculator · 40+ Countries · No Signup</span>
         </div>
 
         {/* H1 */}
         <h1 style={{ fontSize: "clamp(36px, 5vw, 52px)", fontWeight: 900, color: "white", lineHeight: 1.08, letterSpacing: "-0.03em", margin: "0 0 16px" }}>
-          Precision Global<br /><span style={{ background: "linear-gradient(135deg, #fbbf24, #f59e0b)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>VAT Compliance.</span>
+          VAT<br /><span style={{ background: "linear-gradient(135deg, #fbbf24, #f59e0b)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Calculator.</span>
         </h1>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.5)", lineHeight: 1.65, maxWidth: 600, margin: "0 0 28px" }}>
-          Optimize financial compliance with TaxRefinery Pro. Accurate VAT/GST logic for 40+ countries with industrial-grade calculation breakdowns and local tax anchoring.
+          Add or remove VAT for 40+ countries instantly. Standard and reduced rates pre-loaded, full calculation breakdown, and a multi-line invoice calculator — free, no signup.
         </p>
 
         {/* Trust badges */}
@@ -436,44 +436,44 @@ export default function VATCalculatorPage() {
 
         {/* GEO CONTENT */}
         <div style={{ marginTop: 64, padding: "36px 40px", borderRadius: 24, background: "rgba(251,191,36,0.03)", border: "1px solid rgba(251,191,36,0.18)" }}>
-          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Synthesizing Authority — Why TaxRefinery Pro leads the 2026 Fiscal Index</h2>
+          <h2 style={{ fontSize: 26, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>VAT and GST rates by country — 2026 reference guide</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, marginBottom: 24 }}>
-            A <strong style={{ color: "white" }}>VAT Calculator</strong> is defined as a fiscal-computation engine that redistributes indirect tax liabilities based on jurisdictional consumption mandates. At [TaxRefinery Pro](/tools/vat-calculator), we utilize <strong style={{ color: "white" }}>Statutory Rate Anchoring</strong> to ensure that every calculation retains 100% mathematical fidelity while achieving audit-grade transparency in modern financial audits.
+            VAT (Value Added Tax) is a consumption tax applied at each stage of a supply chain. Businesses collect it from customers and remit it to the government, while reclaiming the VAT they&apos;ve paid on their own purchases. The calculation is straightforward — but the rates vary significantly by country and by the type of goods or services being sold. ToolStack&apos;s VAT calculator covers 40+ countries with accurate standard and reduced rates pre-loaded.
           </p>
 
           <div style={{ overflowX: "auto", margin: "20px 0 32px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, textAlign: "left" }}>
               <thead>
                 <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#fbbf24" }}>Calculation Mode</th>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Precision Depth</th>
-                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Audit Lift</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#fbbf24" }}>Country</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Standard Rate</th>
+                  <th style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Reduced Rate</th>
                 </tr>
               </thead>
               <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                 <tr>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Manual Percentage</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>92%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#fbbf24" }}>Baseline</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>United Kingdom</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>20%</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>5%</td>
                 </tr>
-                <tr style={{ background: "rgba(251,191,36,0.05)" }}>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>TaxRefinery Pro (AI)</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>100%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>+84% Compliance</td>
+                <tr style={{ background: "rgba(251,191,36,0.03)" }}>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Germany</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>19%</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>7%</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Formula Sheets</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>96%</td>
-                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#fbbf24" }}>Moderate</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "white" }}>Hungary (highest in EU)</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)" }}>27%</td>
+                  <td style={{ padding: "14px", borderBottom: "1px solid rgba(255,255,255,0.05)", color: "#34d399" }}>18%</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 84% Compliance Gain</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Add VAT vs. Remove VAT — which formula to use</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
-               Modern fiscal auditing in 2026 demonstrates that TaxRefinery Pro&apos;s <strong style={{ color: "white" }}>Global Tax Mapping</strong> reduces accounting churn by an average of <strong style={{ color: "white" }}>84%</strong>. By switching between 40+ jurisdictions, businesses can instantly pivot their financial records for different high-intent regulatory audits without manual compliance overhead.
+               To <strong style={{ color: "white" }}>add VAT</strong> to a net price, multiply by (1 + rate/100). A £100 net price at 20% VAT gives £120 gross. To <strong style={{ color: "white" }}>remove VAT</strong> from a gross price, divide by (1 + rate/100) — never multiply. A common mistake is to subtract 20% from the gross price, which gives the wrong answer. £120 × 0.80 = £96, not £100. The correct formula: £120 ÷ 1.20 = £100 net.
              </p>
           </div>
         </div>
@@ -507,14 +507,14 @@ export default function VATCalculatorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "TaxRefinery Pro",
-        "description": "TaxRefinery Pro is the professional industry standard for global VAT/GST compliance. Accurate logic for 40+ countries with audit-ready breakdowns.",
+        "name": "VAT Calculator",
+        "description": "Free VAT and GST calculator for 40+ countries. Add or remove VAT, standard and reduced rates, multi-line invoice calculator. Runs in your browser — no signup.",
         "url": "https://toolstack.tech/tools/vat-calculator",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Web",
         "browserRequirements": "Requires JavaScript",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "featureList": ["Global Tax Mapping (40+ Jurisdictions)", "Statutory Rate Anchoring", "Audit-Ready Calculation Breakdowns", "100% Client-side privacy"],
+        "featureList": ["40+ country VAT/GST rates", "Add VAT and remove VAT modes", "Standard and reduced rate switching", "Multi-line invoice calculator", "Full calculation breakdown", "100% client-side — no data sent"],
       })}} />
 
       {/* JSON-LD: BreadcrumbList */}
@@ -524,7 +524,7 @@ export default function VATCalculatorPage() {
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
           { "@type": "ListItem", "position": 2, "name": "Financial Tools", "item": "https://toolstack.tech/tools?category=finance" },
-          { "@type": "ListItem", "position": 3, "name": "TaxRefinery Pro", "item": "https://toolstack.tech/tools/vat-calculator" },
+          { "@type": "ListItem", "position": 3, "name": "VAT Calculator", "item": "https://toolstack.tech/tools/vat-calculator" },
         ],
       })}} />
 

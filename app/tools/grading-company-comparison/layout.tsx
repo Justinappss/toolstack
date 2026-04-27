@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "PSA vs BGS vs SGC vs CGC Comparison 2026 — Free Grading Guide",
-  description: "Compare PSA, BGS, SGC and CGC card grading fees, turnaround times and resale value side-by-side. Free tool finds the best grading company for your card in seconds.",
+  title: "PSA vs BGS vs SGC vs CGC — Free Grading Comparison 2026",
+  description: "Compare PSA, BGS, SGC and CGC on fees, turnaround times and resale value. Free grading comparison tool — find the best company for your card in seconds.",
   keywords: [
     "PSA vs BGS",
     "PSA vs SGC",

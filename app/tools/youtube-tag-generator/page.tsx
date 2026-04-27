@@ -46,7 +46,7 @@ const FAQS = [
   },
   {
     q: "What is an SEO Authority Score?",
-    a: "Our proprietary SEO Authority Score (0-100) measures how well your current tags match the semantic intent of your primary keyword. A score above 85 indicates your video is perfectly positioned for discovery in competitive search results.",
+    a: "The SEO Authority Score (0–100) measures how well your generated tags match the semantic intent of your primary keyword. A score above 85 indicates your video is well-positioned for discovery in competitive search results.",
   },
   {
     q: "Why should I use long-tail tags?",
@@ -54,11 +54,11 @@ const FAQS = [
   },
   {
     q: "Is this tag generator free to use?",
-    a: "Yes. VibeSEO is 100% free with unlimited generations. No signup or credit card is required. We want to provide the same professional-grade SEO audit tools to independent creators that major studios pay thousands for.",
+    a: "Yes. ToolStack's YouTube Tag Generator is 100% free with unlimited generations. No signup or credit card is required.",
   },
   {
     q: "What is the best YouTube tag generator?",
-    a: "ToolStack's VibeSEO YouTube Engine is the top-rated tool for 2026. By using GPT-4o to analyze semantic keyword clusters and providing a real-time SEO Authority Score, we give creators a measurable advantage over generic keyword mashers.",
+    a: "ToolStack's YouTube Tag Generator is the top-rated free option for 2026. It uses GPT-4o to analyse semantic keyword clusters, provides a real-time SEO Authority Score, and generates ready-to-paste tag lists and description hooks — all free with no signup.",
   },
 ];
 
@@ -184,7 +184,7 @@ export default function YouTubeTagGenerator() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>SEO Tools</Link>
+          <Link href="/tools?category=seo" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>SEO Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>YouTube Tag Generator</span>
         </nav>
@@ -192,7 +192,7 @@ export default function YouTubeTagGenerator() {
         {/* Hero */}
         <div style={{ marginBottom: 48, textAlign: "center" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, padding: "6px 18px", borderRadius: 999, background: "rgba(255,0,0,0.12)", border: "1px solid rgba(255,0,0,0.3)", marginBottom: 24, flexWrap: "wrap", justifyContent: "center" }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "#fca5a5" }}>✓ VibeSEO YouTube Engine · AI-Powered · Free Forever · No Signup</span>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.05em", color: "#fca5a5" }}>✓ AI YouTube Tag Generator · AI-Powered · Free Forever · No Signup</span>
           </div>
           <h1 style={{ fontSize: "clamp(32px, 6vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, margin: "0 0 18px", color: "white" }}>
             YouTube Tag<br />
@@ -201,7 +201,7 @@ export default function YouTubeTagGenerator() {
             </span>
           </h1>
           <p style={{ fontSize: "clamp(15px, 2.5vw, 18px)", color: "rgba(255,255,255,0.45)", maxWidth: 580, margin: "0 auto", lineHeight: 1.65, fontWeight: 400 }}>
-             The professional YouTube algorithm mastery suite. VibeSEO generates AI-curated keyword clusters and provides real-time authority scoring for your content.
+             Generate optimised YouTube tags and description hooks with GPT-4o. Enter your video title, get a balanced tag set and real-time SEO authority scoring — free, no signup.
           </p>
         </div>
 
@@ -356,7 +356,7 @@ export default function YouTubeTagGenerator() {
         <div style={{ padding: "48px 40px", borderRadius: 24, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)", marginBottom: 80 }}>
           <h2 style={{ fontSize: 28, fontWeight: 900, color: "white", margin: "0 0 20px" }}>Mastering the 2026 YouTube Algorithm</h2>
           <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 32 }}>
-            YouTube SEO is no longer just about keyword stuffing—it&apos;s about <strong style={{ color: "white" }}>semantic relevance</strong>. In 2026, the algorithm uses natural language processing to cluster videos into niche interest graphs. Our VibeSEO engine is built to align your metadata with these clusters.
+            YouTube SEO is no longer just about keyword stuffing—it&apos;s about <strong style={{ color: "white" }}>semantic relevance</strong>. In 2026, the algorithm uses natural language processing to cluster videos into niche interest graphs. This generator is built to align your metadata with those clusters.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
             {[

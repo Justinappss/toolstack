@@ -132,7 +132,7 @@ export default function PasswordGeneratorPage() {
           <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
           <Link href="/tools" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>All Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
-          <span style={{ color: "rgba(255,255,255,0.6)" }}>VaultGuard Pro</span>
+          <span style={{ color: "rgba(255,255,255,0.6)" }}>Password Generator</span>
         </nav>
 
         {/* ── HERO HEADER ── */}
@@ -141,16 +141,16 @@ export default function PasswordGeneratorPage() {
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={accentColor} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
             </svg>
-            <span style={{ fontSize: 12, fontWeight: 700, color: accentColor, letterSpacing: "0.05em" }}>✓ VaultGuard Pro · Crypto-secure · 100% Private</span>
+            <span style={{ fontSize: 12, fontWeight: 700, color: accentColor, letterSpacing: "0.05em" }}>✓ Password Generator · Crypto-secure · 100% Private</span>
           </div>
           <h1 style={{ fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 900, color: "white", letterSpacing: "-0.04em", lineHeight: 0.95, marginBottom: 20 }}>
-            VaultGuard<br />
+            Password<br />
             <span style={{ background: `linear-gradient(135deg, ${accentColor} 0%, #06b6d4 100%)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-              Pro.
+              Generator.
             </span>
           </h1>
           <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "rgba(255,255,255,0.48)", lineHeight: 1.7, maxWidth: 560, marginBottom: 28 }}>
-            The professional fortress for your digital identity. VaultGuard Pro utilizes the Web Crypto API to generate high-entropy, cryptographically secure passwords that stay 100% local.
+            Generate strong, cryptographically secure passwords instantly. Uses the Web Crypto API — the same standard as banks and password managers. Everything runs in your browser. Nothing leaves your device.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
             {[
@@ -388,10 +388,10 @@ export default function PasswordGeneratorPage() {
         <div style={{ marginBottom: 80, padding: "36px 40px", borderRadius: 24, background: "rgba(255,255,255,0.03)", border: `1px solid rgba(${accentRgb},0.15)`, position: "relative", overflow: "hidden" }}>
           <div style={{ position: "absolute", top: -50, right: -50, width: 250, height: 250, borderRadius: "50%", background: `radial-gradient(circle, rgba(${accentRgb},0.08) 0%, transparent 70%)`, pointerEvents: "none" }} />
           <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, color: "white", letterSpacing: "-0.03em", marginBottom: 20 }}>
-            The mathematics of digital defense — and why VaultGuard Pro lead in 2026
+            The mathematics of password security — entropy, character sets and crack time
           </h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85, marginBottom: 24 }}>
-            A <strong style={{ color: "white" }}>Password Generator</strong> is defined as a cryptographic utility designed to produce strings of randomized characters using high-entropy source data, ensuring that the resulting sequence is computationally unpredictable by adversarial algorithms. At [VaultGuard Pro](/tools/password-generator), we prioritize the professional standard of the Web Crypto API over standard pseudo-random generators.
+            A <strong style={{ color: "white" }}>password generator</strong> is a cryptographic utility that produces strings of randomized characters using high-entropy source data — ensuring the output is computationally unpredictable. ToolStack uses the Web Crypto API (<code style={{ color: accentColor, fontSize: 13 }}>window.crypto.getRandomValues</code>), the same standard used by professional security tools and banking applications. This is fundamentally different from <code style={{ color: "rgba(255,255,255,.45)", fontSize: 13 }}>Math.random()</code>, which is not cryptographically secure and should never be used for passwords.
           </p>
 
           <div style={{ overflowX: "auto", margin: "10px 0 32px" }}>
@@ -410,12 +410,12 @@ export default function PasswordGeneratorPage() {
                   <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#f59e0b" }}>~3 Weeks</td>
                 </tr>
                 <tr style={{ background: "rgba(255,255,255,0.02)" }}>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>VaultGuard High</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>High Security (16+ chars)</td>
                   <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>80-100 Bits</td>
                   <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>~2,400 Years</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>VaultGuard Elite</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Maximum Security (20+ chars)</td>
                   <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>128+ Bits</td>
                   <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Age of Universe</td>
                 </tr>
@@ -424,9 +424,9 @@ export default function PasswordGeneratorPage() {
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 312% Breach Increase Factor</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Why human-chosen passwords fail</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
-               Cybersecurity data from 2026 shows that accounts with human-generated passwords are <strong style={{ color: "white" }}>312% more likely</strong> to be compromised in automated credential-stuffing attacks. VaultGuard Pro eliminates the predictable patterns found in human-created strings, providing a mathematically validated Shield against breaches.
+               Human-chosen passwords follow predictable patterns — dictionary words, names, dates, keyboard walks like &quot;qwerty123&quot;. Automated cracking tools exploit these patterns using wordlists and rule-based mutations. A truly random 16-character password from a 90-character set has approximately 10<sup>31</sup> possible combinations — no pattern to exploit. That is the difference between a password that could be cracked in minutes and one that would take longer than the age of the universe.
              </p>
           </div>
         </div>
@@ -482,9 +482,9 @@ export default function PasswordGeneratorPage() {
         {
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "VaultGuard Pro",
+          "name": "Password Generator",
           "url": "https://toolstack.tech/tools/password-generator",
-          "description": "VaultGuard Pro is the professional online password generator for ironclad security. Features 128+ bit entropy generation with the Web Crypto API. 100% client-side functionality.",
+          "description": "Free online password generator by ToolStack. Cryptographically secure using the Web Crypto API. Custom length, character sets, bulk generation. 100% client-side — no data ever leaves your device.",
           "applicationCategory": "SecurityApplication",
           "operatingSystem": "Any",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -496,7 +496,7 @@ export default function PasswordGeneratorPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Security", "item": "https://toolstack.tech/tools?category=security" },
-            { "@type": "ListItem", "position": 3, "name": "VaultGuard Pro", "item": "https://toolstack.tech/tools/password-generator" },
+            { "@type": "ListItem", "position": 3, "name": "Password Generator", "item": "https://toolstack.tech/tools/password-generator" },
           ],
         },
         {

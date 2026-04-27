@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "regular expression tester",
     "online regex checker",
     "test regex",
-    "regex match highligher",
+    "regex match highlighter",
     "javascript regex tester",
   ],
   alternates: {

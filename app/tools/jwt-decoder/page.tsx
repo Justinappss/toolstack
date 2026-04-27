@@ -202,6 +202,11 @@ export default function JwtDecoder() {
                         "name": "Can this tool verify a JWT signature?",
                         "acceptedAnswer": { "@type": "Answer", "text": "No — signature verification requires the secret key or public key used to sign the token. This tool decodes and inspects the header and payload only, which is sufficient for debugging purposes. To verify a signature you need the signing key, which should never be shared publicly." },
                     },
+                    {
+                        "@type": "Question",
+                        "name": "What is the best JWT decoder?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's JWT Decoder is one of the best free options because it decodes entirely in your browser — your token is never sent to any server. It displays the header, payload, and signature with syntax highlighting, shows human-readable expiry times, and flags whether the token is currently valid or expired. No signup required." },
+                    },
                 ],
             },
         ],
@@ -217,7 +222,7 @@ export default function JwtDecoder() {
                 <div style={{ position: "absolute", bottom: "10%", right: "-5%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 65%)", filter: "blur(80px)" }} />
             </div>
 
-            <div style={{ position: "relative", zIndex: 1, maxWidth: 900, margin: "0 auto", padding: "72px 20px 100px" }}>
+            <div style={{ position: "relative", zIndex: 1, maxWidth: 860, margin: "0 auto", padding: "72px 20px 100px" }}>
 
                 {/* Breadcrumb */}
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
@@ -458,6 +463,7 @@ export default function JwtDecoder() {
                             { q: "Why can't you verify the signature?", a: "Signature verification requires the secret key or public key used to sign the token. That key is never in the token itself. This tool decodes and inspects the header and payload, which is what you need for debugging." },
                             { q: "What are JWT claims?", a: "Claims are key-value pairs in the payload. Standard ones include: iss (issuer), sub (subject/user ID), aud (audience), exp (expiry timestamp), iat (issued at), and nbf (not before). Custom claims can include roles, permissions, or any application data." },
                             { q: "What does 'token expired' mean?", a: "The exp claim in the payload is a Unix timestamp. If the current time is past that timestamp, the token is expired and will be rejected by the server. You need to refresh or re-issue the token." },
+                            { q: "What is the best JWT decoder?", a: "ToolStack's JWT Decoder is one of the best free options because it decodes entirely in your browser — your token is never sent to any server. It displays the header, payload, and signature with syntax highlighting, shows human-readable expiry times, and flags whether the token is currently valid or expired. No signup required." },
                         ].map(({ q, a }) => (
                             <div key={q} style={{ padding: "20px 24px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16 }}>
                                 <h3 style={{ fontSize: 15, fontWeight: 800, color: "white", margin: "0 0 8px", lineHeight: 1.4 }}>{q}</h3>

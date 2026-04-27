@@ -65,6 +65,10 @@ const FAQS = [
     q: "What kind of HTML does it output?",
     a: "It generates clean, semantic HTML5 tags without any inline styles or complicated CSS classes. This ensures your output is completely portable and will inherit the styling of whatever platform or CMS you paste it into.",
   },
+  {
+    q: "What is the best free online Markdown editor?",
+    a: "ToolStack's Markdown Editor is one of the best free options for writers and developers. It provides a real-time split-pane preview, outputs clean semantic HTML5, supports GitHub Flavored Markdown (tables, code blocks, task lists), and runs entirely in your browser with no account or signup required.",
+  },
 ];
 
 export default function MarkdownEditor() {
@@ -159,7 +163,7 @@ export default function MarkdownEditor() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free Markdown to HTML Converter — ToolStack",
+          "name": "Markdown to HTML Converter",
           "description": "Write, edit, and preview Markdown files instantly. Export perfectly formatted clean HTML code.",
           "url": "https://toolstack.tech/tools/markdown-editor",
           "applicationCategory": "DeveloperApplication",
@@ -186,7 +190,7 @@ export default function MarkdownEditor() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", maxWidth: 1000, margin: "0 auto 32px" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Writing Tools</Link>
+          <Link href="/tools?category=writing" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Writing Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Markdown Editor</span>
         </nav>
@@ -353,7 +357,7 @@ export default function MarkdownEditor() {
               {[
                 { t: "Portability & CMS Native", d: "Content written in Markdown is universally portable. Whether importing straight into Headless CMS systems (like Sanity or Contentful), posting to GitHub repositories, or converting sequentially via React pipelines, your formatted document will never break." },
                 { t: "Clean HTML Generation", d: "The principal benefit of writing in our Markdown Editor over a WYSIWYG (What You See Is What You Get) visual editor is the HTML output. Visual editors notoriously inject dirty CSS classes and redundant spans into their code. This engine guarantees 100% semantic compliance." },
-                { t: "Distraction Free", d: "Eliminating the toolbar fundamentally changes the psychological approach to writing. Rather than hunting for the 'Bold' button or struggling with bullet point alignments, writers maintain their flow state by injecting rapid symbols like `#` for headings and `**` for emphasis." },
+                { t: "Distraction Free", d: "Eliminating the toolbar fundamentally changes the psychological approach to writing. Rather than hunting for the 'Bold' button or struggling with bullet point alignments, writers maintain their flow state by injecting rapid symbols like # for headings and ** for emphasis." },
               ].map((item, i) => (
                 <div key={i} style={{ padding: "20px", borderRadius: 16, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
                   <h3 style={{ fontSize: 15, fontWeight: 800, color: "white", margin: "0 0 8px" }}>{item.t}</h3>

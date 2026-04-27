@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free VAT & GST Calculator — 40+ Countries | ToolStack",
-    description: "Optimize financial compliance with TaxRefinery Pro. Accurate VAT/GST logic for 40+ countries.",
+    description: "Add or remove VAT for 40+ countries instantly. Standard and reduced rates pre-loaded, invoice calculator included. Free, no signup.",
     url: "https://toolstack.tech/tools/vat-calculator",
     siteName: "ToolStack",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free VAT & GST Calculator — 40+ Countries | ToolStack",
-    description: "Global VAT/GST compliance with TaxRefinery Pro. Accurate, instant financial logic.",
+    description: "Add or remove VAT for 40+ countries instantly. Standard and reduced rates, invoice calculator. Free, no signup.",
   },
 };
 

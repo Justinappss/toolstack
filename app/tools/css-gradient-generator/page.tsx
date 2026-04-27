@@ -147,7 +147,7 @@ export default function CSSGradientGenerator() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free CSS Gradient Generator — ToolStack",
+          "name": "CSS Gradient Generator",
           "description": "Create beautiful CSS gradients with a visual editor. Linear, radial and conic gradients with multi-stop colours. Copy CSS code instantly.",
           "url": "https://toolstack.tech/tools/css-gradient-generator",
           "applicationCategory": "DesignApplication",
@@ -159,7 +159,7 @@ export default function CSSGradientGenerator() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools?category=dev" },
+            { "@type": "ListItem", "position": 2, "name": "Design Tools", "item": "https://toolstack.tech/tools?category=design" },
             { "@type": "ListItem", "position": 3, "name": "CSS Gradient Generator", "item": "https://toolstack.tech/tools/css-gradient-generator" },
           ],
         },
@@ -174,7 +174,7 @@ export default function CSSGradientGenerator() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
+          <Link href="/tools?category=design" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Design Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>CSS Gradient Generator</span>
         </nav>

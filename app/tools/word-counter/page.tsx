@@ -388,12 +388,12 @@ export default function WordCounter() {
 
     const download = useCallback(() => {
         if (!text.trim()) return;
-        const statsStr = `═══ WordMetrics Ultra Report ═══\n\nWords: ${words}\nCharacters: ${chars}\nSentences: ${sentences}\nParagraphs: ${paragraphs}\nReading Time: ${readTime}\nFlesch Score: ${flesch ?? "N/A"}\n\n═══ Text ═══\n\n${text}`;
+        const statsStr = `═══ Word Counter Report ═══\n\nWords: ${words}\nCharacters: ${chars}\nSentences: ${sentences}\nParagraphs: ${paragraphs}\nReading Time: ${readTime}\nFlesch Score: ${flesch ?? "N/A"}\n\n═══ Text ═══\n\n${text}`;
         const blob = new Blob([statsStr], { type: "text/plain" });
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = `wordmetrics-report-${new Date().toISOString().split('T')[0]}.txt`;
+        a.download = `word-counter-report-${new Date().toISOString().split('T')[0]}.txt`;
         a.click();
         URL.revokeObjectURL(url);
     }, [text, words, chars, sentences, paragraphs, readTime, flesch]);
@@ -405,14 +405,14 @@ export default function WordCounter() {
         {
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "WordMetrics Ultra",
+          "name": "Word Counter & Readability Checker",
           "description": "Free word counter with Flesch readability score, reading time estimate, keyword density, and sentence count. No signup, runs in your browser.",
           "url": "https://toolstack.tech/tools/word-counter",
           "applicationCategory": "UtilityApplication",
           "operatingSystem": "Web",
           "browserRequirements": "Requires JavaScript",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "featureList": ["WordMetrics word counting", "Character count", "Readability score", "Reading time", "Keyword density analysis", "Export as .txt", "Flesch Reading Ease"],
+          "featureList": ["Word counting", "Character count", "Readability score", "Reading time", "Keyword density analysis", "Export as .txt", "Flesch Reading Ease"],
         },
         {
           "@context": "https://schema.org",
@@ -420,7 +420,7 @@ export default function WordCounter() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools?category=writing" },
-            { "@type": "ListItem", "position": 3, "name": "WordMetrics Ultra", "item": "https://toolstack.tech/tools/word-counter" },
+            { "@type": "ListItem", "position": 3, "name": "Word Counter", "item": "https://toolstack.tech/tools/word-counter" },
           ],
         },
         {
@@ -445,7 +445,7 @@ export default function WordCounter() {
           <div style={{ position: "absolute", bottom: "10%", left: "30%", width: 600, height: 400, background: "radial-gradient(circle, rgba(139,92,246,0.04) 0%, transparent 70%)", borderRadius: "50%" }} />
         </div>
 
-        <div style={{ maxWidth: 920, margin: "0 auto", padding: "0 24px 100px", position: "relative", zIndex: 1 }}>
+        <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 24px 100px", position: "relative", zIndex: 1 }}>
 
           {/* ── BREADCRUMB ── */}
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 40, paddingTop: 20 }}>
@@ -474,11 +474,11 @@ export default function WordCounter() {
               </div>
             </div>
             <h1 style={{ fontSize: "clamp(36px,5.5vw,64px)", fontWeight: 900, lineHeight: 1.05, letterSpacing: "-0.03em", marginBottom: 14, color: "white" }}>
-              WordMetrics{" "}
-              <span style={{ background: "linear-gradient(135deg,#818cf8 0%,#34d399 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Ultra.</span>
+              Word{" "}
+              <span style={{ background: "linear-gradient(135deg,#818cf8 0%,#34d399 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Counter.</span>
             </h1>
             <p style={{ fontSize: 17, color: "rgba(255,255,255,0.45)", lineHeight: 1.65, maxWidth: 580, margin: 0 }}>
-              The high-performance writing lab. Analyze word counts, character limits, Flesch scores, and reading time with professional precision. Optimized for SEO and LLM citation.
+              Count words, characters, sentences, and paragraphs in real time. Get a Flesch readability score, reading time estimate, keyword density analysis, and writing tips — all free, no signup.
             </p>
           </div>
 
@@ -773,7 +773,7 @@ export default function WordCounter() {
             <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", marginBottom: 20, letterSpacing: "-0.02em" }}>The Ultimate Guide to Word Counting & Readability in 2026</h2>
             <div style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.8, display: "flex", flexDirection: "column", gap: 20 }}>
             <p>
-                A <strong style={{ color: "white" }}>Word Counter</strong> is defined as a digital utility that calculates the number of characters, words, sentences, and paragraphs in a text while analyzing complex readability metrics like the Flesch-Kincaid scale. In the modern era of <strong style={{ color: "white" }}>Generative Engine Optimization (GEO)</strong>, the way we count and process text has fundamentally shifted. It&apos;s no longer enough to just measure length; you must measure <strong style={{ color: "white" }}>density of value</strong>. [WordMetrics Ultra](/tools/word-counter) is engineered to provide the technical depth required to rank in 2026.
+                A <strong style={{ color: "white" }}>word counter</strong> calculates the number of characters, words, sentences, and paragraphs in a body of text — and the best ones go further, analyzing readability metrics like the Flesch-Kincaid scale to tell you whether your writing is actually clear. Word count alone is a crude measure; the real question is whether your content covers a topic with enough depth, clarity, and structure to earn a reader&apos;s attention.
               </p>
 
               <div style={{ overflowX: "auto", margin: "10px 0" }}>
@@ -781,25 +781,25 @@ export default function WordCounter() {
                   <thead>
                     <tr style={{ background: "rgba(255,255,255,0.05)" }}>
                       <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#818cf8" }}>Content Type</th>
-                      <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Target Count</th>
-                      <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>AI Citation Probability</th>
+                      <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Typical Word Count</th>
+                      <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>Typical Purpose</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Micro-Blog</td>
-                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>300 - 500</td>
-                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Low (~12%)</td>
+                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Micro-Blog / News</td>
+                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>300 – 500</td>
+                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Quick updates, social-driven traffic</td>
                     </tr>
                     <tr style={{ background: "rgba(255,255,255,0.02)" }}>
                       <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Standard Guide</td>
-                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>1,200 - 1,500</td>
-                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>High (~65%)</td>
+                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>1,200 – 1,500</td>
+                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>How-to articles, targeted keyword topics</td>
                     </tr>
                     <tr>
                       <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Pillar Article</td>
                       <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>2,500+</td>
-                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Extreme (~92%)</td>
+                      <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Comprehensive topic coverage, link bait</td>
                     </tr>
                   </tbody>
                 </table>

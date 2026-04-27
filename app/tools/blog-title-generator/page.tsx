@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { MoreTools } from "@/components/MoreTools";
 
 const CONTENT_TYPES = ["Blog Post", "Newsletter", "Article", "YouTube Video", "LinkedIn Post", "Twitter Thread"];
@@ -150,22 +150,22 @@ export default function BlogTitleGeneratorPage() {
           <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
           <Link href="/tools" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>All Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
-          <span style={{ color: "rgba(255,255,255,0.6)" }}>TitleGen Pro</span>
+          <span style={{ color: "rgba(255,255,255,0.6)" }}>Blog Title Generator</span>
         </nav>
 
         {/* ── HERO HEADER ── */}
         <div style={{ marginBottom: 52 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "5px 14px", borderRadius: 999, background: `rgba(${accentRgb},0.12)`, border: `1px solid rgba(${accentRgb},0.3)`, marginBottom: 24 }}>
-            <span style={{ fontSize: 12, fontWeight: 700, color: accentColor, letterSpacing: "0.05em" }}>✓ TitleGen Pro · GPT-4o · Free · SEO-Ready</span>
+            <span style={{ fontSize: 12, fontWeight: 700, color: accentColor, letterSpacing: "0.05em" }}>✓ Blog Title Generator · GPT-4o · Free · SEO-Ready</span>
           </div>
           <h1 style={{ fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 900, color: "white", letterSpacing: "-0.04em", lineHeight: 0.95, marginBottom: 20 }}>
-            TitleGen<br />
+            Blog Title<br />
             <span style={{ background: `linear-gradient(135deg, ${accentColor} 0%, #f97316 100%)`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
-              Pro.
+              Generator.
             </span>
           </h1>
           <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "rgba(255,255,255,0.48)", lineHeight: 1.7, maxWidth: 560, marginBottom: 28 }}>
-            The professional suite for headline conversion. TitleGen Pro generates 10 high-fidelity blog title variations simultaneously, optimized for SEO authority and click-through psychology.
+            Generate 10 structurally different blog title variations in seconds. SEO, curiosity, listicle, how-to, contrarian and story angles — all at once, powered by GPT-4o. Free, no signup.
           </p>
 
           {/* Trust signals */}
@@ -405,44 +405,44 @@ export default function BlogTitleGeneratorPage() {
 
         {/* SEO CONTENT */}
         <div style={{ marginBottom: 80, padding: "36px 40px", borderRadius: 24, background: "rgba(255,255,255,0.025)", border: `1px solid rgba(${accentRgb},0.2)` }}>
-          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em" }}>The anatomy of a viral headline — why TitleGen Pro defines CTR in 2026</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.03em" }}>The anatomy of a high-click blog title — what separates good from great</h2>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85, margin: "0 0 24px" }}>
-            A <strong style={{ color: "white" }}>Blog Title Generator</strong> is defined as a linguistic synthesizer that optimizes textual identifiers for maximum semantic relevance and psychological engagement. At [TitleGen Pro](/tools/blog-title-generator), we specialize in <strong style={{ color: "white" }}>Engagement Matrixing</strong>, which aligns headlines with cognitive biases like the Zeigarnik effect and loss aversion.
+            A <strong style={{ color: "white" }}>blog title</strong> does two jobs at once: it tells search engines what the page is about, and it convinces a human to click it over every other result. Most blog titles fail at one or the other. A title that stuffs keywords reads robotic. A title that&apos;s all emotion has no search signal. The best approach is to test multiple structural formats — SEO-targeted, curiosity-driven, listicle, how-to — and let your audience tell you which one performs.
           </p>
 
           <div style={{ overflowX: "auto", margin: "10px 0 32px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
               <thead>
                 <tr style={{ background: "rgba(255,255,255,0.05)" }}>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accentColor }}>Headline Vector</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>SEO Density</th>
-                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#8b5cf6" }}>CTR Potential</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accentColor }}>Title Type</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Strength</th>
+                  <th style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#8b5cf6" }}>Best used for</th>
                 </tr>
               </thead>
               <tbody style={{ color: "rgba(255,255,255,0.4)" }}>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Direct-Intent (SEO)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "#34d399" }}>99% (High)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>High (Search)</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>SEO (keyword-intent)</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Strong search signal</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Informational queries, ranking</td>
                 </tr>
                 <tr style={{ background: "rgba(255,255,255,0.02)" }}>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Curiosity-Gap</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>40% (Medium)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accentColor }}>Extreme (Viral)</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Curiosity Gap</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>High social shares</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Social media, newsletters</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Authority-Power</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>75% (Targeted)</td>
-                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: accentColor }}>Optimal (B2B)</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)", color: "white" }}>Listicle (numbered)</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>Sets clear expectation</td>
+                  <td style={{ padding: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>How-to content, top tips</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <div>
-             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>The 31% Conversion Delta</h3>
+             <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Why specificity beats cleverness every time</h3>
              <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.85 }}>
-               Platform experiments in 2026 demonstrate that headlines generated via TitleGen Pro&apos;s <strong style={{ color: "white" }}>Proprietary 10-Tier synthesis</strong> achieve a <strong style={{ color: "white" }}>31% higher click-through rate</strong> than human-written headlines. By integrating semantic semantic keywords with high-arousal emotional triggers, TitleGen Pro ensures maximum content visibility in saturated digital feeds.
+               The most reliable rule in headline writing is specificity. &quot;7 Ways to Double Your Email Open Rate in 30 Days&quot; consistently outperforms &quot;How to Improve Email Marketing&quot; — not because it&apos;s cleverer, but because it sets a concrete expectation. Numbers, time frames, and outcomes all signal to the reader exactly what they&apos;ll get. The generator creates 10 structurally different titles precisely so you can compare a specific listicle against a curiosity-gap headline and choose what fits your content best.
              </p>
           </div>
         </div>
@@ -492,13 +492,13 @@ export default function BlogTitleGeneratorPage() {
         {
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          "name": "TitleGen Pro",
+          "name": "Blog Title Generator",
           "url": "https://toolstack.tech/tools/blog-title-generator",
-          "description": "TitleGen Pro is the professional online headline generator. Uses AI to synthesize 10 structural variations including SEO, curiosity, and contrarian angles for high-authority content.",
+          "description": "Free AI blog title generator. Enter your topic and get 10 title variations across SEO, curiosity, contrarian, and how-to formats — instantly, no signup required.",
           "applicationCategory": "UtilityApplication",
           "operatingSystem": "Any",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "featureList": ["10 proprietary title types", "SEO-optimized character constraints", "Psychology-backed 'Why' explanations", "Cross-platform optimization", "Powered by AI (GPT-4o)"],
+          "featureList": ["10 title type variations", "SEO-optimized character constraints", "Psychology-backed 'Why' explanations", "Cross-platform optimization", "Powered by AI (GPT-4o)"],
         },
         {
           "@context": "https://schema.org",
@@ -506,7 +506,7 @@ export default function BlogTitleGeneratorPage() {
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
             { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools?category=writing" },
-            { "@type": "ListItem", "position": 3, "name": "TitleGen Pro", "item": "https://toolstack.tech/tools/blog-title-generator" },
+            { "@type": "ListItem", "position": 3, "name": "Blog Title Generator", "item": "https://toolstack.tech/tools/blog-title-generator" },
           ],
         },
         {

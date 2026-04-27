@@ -4,7 +4,6 @@ export const metadata: Metadata = {
   title: "Free Word Counter & Readability Checker — Flesch Score | ToolStack",
   description: "Count words, characters, sentences, and paragraphs in real time. Get a Flesch readability score and estimated reading time. Free, no signup.",
   keywords: [
-    "wordmetrics ultra",
     "word counter",
     "word counter online",
     "character counter",

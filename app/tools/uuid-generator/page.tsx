@@ -178,7 +178,7 @@ export default function UUIDGeneratorPage() {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-        { "@type": "ListItem", "position": 2, "name": "Developer Tools", "item": "https://toolstack.tech/tools" },
+        { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools?category=dev" },
         { "@type": "ListItem", "position": 3, "name": "UUID Generator", "item": "https://toolstack.tech/tools/uuid-generator" }
       ]
     },
@@ -213,7 +213,7 @@ export default function UUIDGeneratorPage() {
         <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.55)" }}>
           <a href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</a>
           <span>/</span>
-          <a href="/tools" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Developer Tools</a>
+          <a href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Dev Tools</a>
           <span>/</span>
           <span style={{ color: "rgba(255,255,255,0.65)" }}>UUID Generator</span>
         </nav>

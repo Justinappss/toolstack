@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Free Lorem Ipsum Generator — Paragraphs, Sentences & HTML | ToolStack",
-    description: "Generate high-fidelity placeholder text instantly with LoremGen Elite. 4 specialized formats with optional HTML integration.",
+    description: "Generate placeholder text in paragraphs, sentences, words, or HTML format. Classic Lorem Ipsum or randomised variations. Free, no signup.",
     url: "https://toolstack.tech/tools/lorem-ipsum-generator",
     siteName: "ToolStack",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Free Lorem Ipsum Generator — Paragraphs, Sentences & HTML | ToolStack",
-    description: "Generate high-fidelity placeholder text instantly with LoremGen Elite. 4 specialized formats with optional HTML integration.",
+    description: "Generate placeholder text in paragraphs, sentences, words, or HTML format. Classic Lorem Ipsum or randomised variations. Free, no signup.",
   },
 };
 

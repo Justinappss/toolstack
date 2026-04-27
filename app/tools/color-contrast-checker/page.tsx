@@ -147,7 +147,7 @@ export default function ColorContrastChecker() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         {
           "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Free Colour Contrast Checker — ToolStack",
+          "name": "Colour Contrast Checker",
           "description": "Check your colour combinations against WCAG 2.1 accessibility guidelines. Free, visual contrast checker for AA and AAA compliance.",
           "url": "https://toolstack.tech/tools/color-contrast-checker",
           "applicationCategory": "DesignApplication",
@@ -159,7 +159,7 @@ export default function ColorContrastChecker() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Utility Tools", "item": "https://toolstack.tech/tools?category=utility" },
+            { "@type": "ListItem", "position": 2, "name": "Design Tools", "item": "https://toolstack.tech/tools?category=design" },
             { "@type": "ListItem", "position": 3, "name": "Colour Contrast Checker", "item": "https://toolstack.tech/tools/color-contrast-checker" },
           ],
         },
@@ -174,7 +174,7 @@ export default function ColorContrastChecker() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Utility Tools</Link>
+          <Link href="/tools?category=design" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Design Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Colour Contrast Checker</span>
         </nav>

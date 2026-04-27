@@ -18,6 +18,41 @@ const FONTS = [
     { label: "Courier", value: "courier" },
 ];
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebApplication",
+            "name": "PDF Generator",
+            "description": "Type or paste your text, choose font and page size, and download a clean PDF instantly. No watermarks, no signup, 100% private.",
+            "url": "https://toolstack.tech/tools/pdf-generator",
+            "applicationCategory": "UtilityApplication",
+            "operatingSystem": "Web",
+            "browserRequirements": "Requires JavaScript",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
+                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+                { "@type": "ListItem", "position": 3, "name": "PDF Generator", "item": "https://toolstack.tech/tools/pdf-generator" },
+            ],
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                { "@type": "Question", "name": "Is my text sent to any server?", "acceptedAnswer": { "@type": "Answer", "text": "No. The PDF is generated entirely in your browser using JavaScript. Nothing is uploaded or stored on any server." } },
+                { "@type": "Question", "name": "Can I use this for professional documents?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The output is a clean, properly formatted PDF with no watermarks or branding. Use it for reports, letters, notes, or any text document." } },
+                { "@type": "Question", "name": "How do I add multiple paragraphs?", "acceptedAnswer": { "@type": "Answer", "text": "Leave a blank line between paragraphs — the same way you would in any word processor. The generator preserves paragraph spacing automatically." } },
+                { "@type": "Question", "name": "What fonts are available?", "acceptedAnswer": { "@type": "Answer", "text": "Helvetica (clean, modern), Times (classic serif), and Courier (monospaced, great for code or scripts). These are standard PDF-embedded fonts." } },
+                { "@type": "Question", "name": "Can I generate a multi-page PDF?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your content exceeds one page, the generator automatically adds new pages and numbers each one." } },
+                { "@type": "Question", "name": "What is the best free PDF generator?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's PDF Generator is one of the best free options — it runs entirely in your browser so your text never leaves your device, produces clean PDFs with no watermarks or branding, supports A4, Letter, Legal and A3 page sizes in portrait or landscape, and requires no signup or installation." } },
+            ],
+        },
+    ],
+};
+
 export default function PdfGeneratorPage() {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
@@ -103,6 +138,7 @@ export default function PdfGeneratorPage() {
 
     return (
         <div style={{ minHeight: "100vh", background: "#06060c" }}>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             {/* Hero */}
             <div style={{
                 background: "linear-gradient(135deg, rgba(239,68,68,0.08) 0%, rgba(6,6,12,0) 60%)",
@@ -110,13 +146,13 @@ export default function PdfGeneratorPage() {
                 padding: "56px 24px 40px",
             }}>
                 <div style={{ maxWidth: 860, margin: "0 auto" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
-                        <Link href="/tools" style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>
-                            All Tools
-                        </Link>
+                    <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
+                        <Link href="/" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
-                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>PDF Generator</span>
-                    </div>
+                        <Link href="/tools?category=utility" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Utility</Link>
+                        <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
+                        <span style={{ color: "rgba(255,255,255,0.6)" }}>PDF Generator</span>
+                    </nav>
                     <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 12 }}>
                         <div style={{
                             width: 48, height: 48, borderRadius: 14,
@@ -327,6 +363,10 @@ export default function PdfGeneratorPage() {
                         {
                             q: "Can I generate a multi-page PDF?",
                             a: "Yes. If your content exceeds one page, the generator automatically adds new pages and numbers each one.",
+                        },
+                        {
+                            q: "What is the best free PDF generator?",
+                            a: "ToolStack's PDF Generator is one of the best free options — it runs entirely in your browser so your text never leaves your device, produces clean PDFs with no watermarks or branding, supports A4, Letter, Legal and A3 in portrait or landscape, and requires no signup or installation.",
                         },
                     ].map(({ q, a }) => (
                         <div key={q} style={{ marginBottom: 20, paddingBottom: 20, borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
