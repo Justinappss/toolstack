@@ -70,6 +70,8 @@ const TOOL_CATEGORIES = [
             { label: "eBay Best Offer Calculator", href: "/tools/ebay-best-offer-calculator" },
             { label: "Panini Sticker Calculator", href: "/tools/panini-sticker-calculator" },
             { label: "Pack Break EV Calculator", href: "/tools/pack-break-ev-calculator" },
+            { label: "WC 2026 Accumulator Calculator", href: "/tools/world-cup-accumulator-calculator" },
+            { label: "World Cup 2026 Team Finder", href: "/tools/world-cup-team-finder" },
         ],
     },
 ];

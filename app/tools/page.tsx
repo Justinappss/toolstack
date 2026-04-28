@@ -541,7 +541,7 @@ const ALL_TOOLS = [
     category: "Collectibles",
     accent: "#ef4444",
     accentRgb: "239,68,68",
-    badge: "New",
+    badge: null,
     icon: "📒",
   },
   {
@@ -551,12 +551,32 @@ const ALL_TOOLS = [
     category: "Collectibles",
     accent: "#a855f7",
     accentRgb: "168,85,247",
-    badge: "New",
+    badge: null,
     icon: "🎁",
+  },
+  {
+    title: "WC 2026 Accumulator Calculator",
+    desc: "Build your World Cup 2026 accumulator bet in seconds. Decimal, fractional or American odds, 2–8 selections, combined return and implied probability instantly.",
+    href: "/tools/world-cup-accumulator-calculator",
+    category: "Sports",
+    accent: "#22c55e",
+    accentRgb: "34,197,94",
+    badge: "New",
+    icon: "⚽",
+  },
+  {
+    title: "World Cup 2026 Team Finder",
+    desc: "Which World Cup 2026 team should you support? Answer 5 personality questions and get matched to one of 24 nations with a full team profile.",
+    href: "/tools/world-cup-team-finder",
+    category: "Sports",
+    accent: "#f59e0b",
+    accentRgb: "245,158,11",
+    badge: "New",
+    icon: "🏆",
   },
 ];
 
-const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles"];
+const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles", "Sports"];
 
 const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",
@@ -573,6 +593,7 @@ const CATEGORY_MAP: Record<string, string> = {
   design: "Design",
   video: "Video",
   collectibles: "Collectibles",
+  sports: "Sports",
 };
 
 function ToolsGrid() {

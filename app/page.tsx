@@ -555,7 +555,7 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#ef4444",
         accentRgb: "239,68,68",
-        badge: "New",
+        badge: null,
         image: "/tools/panini-sticker-calculator-preview.png",
     },
     {
@@ -565,8 +565,28 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#a855f7",
         accentRgb: "168,85,247",
-        badge: "New",
+        badge: null,
         image: "/tools/pack-break-ev-calculator-preview.png",
+    },
+    {
+        title: "WC 2026 Accumulator Calculator",
+        desc: "Build your World Cup 2026 acca in seconds. Decimal, fractional or American odds, 2–8 selections, combined return and implied probability instantly.",
+        href: "/tools/world-cup-accumulator-calculator",
+        category: "Sports",
+        accent: "#22c55e",
+        accentRgb: "34,197,94",
+        badge: "New",
+        image: "/tools/world-cup-accumulator-calculator-preview.png",
+    },
+    {
+        title: "World Cup 2026 Team Finder",
+        desc: "Which World Cup 2026 team should you support? Answer 5 questions and get matched to one of 24 nations with a full team profile.",
+        href: "/tools/world-cup-team-finder",
+        category: "Sports",
+        accent: "#f59e0b",
+        accentRgb: "245,158,11",
+        badge: "New",
+        image: "/tools/world-cup-team-finder-preview.png",
     },
 ];
 
@@ -678,7 +698,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    55 top-tier tools live · Free forever · No account
+                                    57 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -754,8 +774,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "55", label: "Live tools" },
-                                    { value: "7+", label: "Coming soon" },
+                                    { value: "57", label: "Live tools" },
+                                    { value: "5+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -990,7 +1010,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 55 tools <ArrowRight size={14} />
+                        View all 57 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 
