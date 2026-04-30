@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: { default: "ToolStack — Free AI & Utility Tools", template: "%s | ToolStack" },
-  description: "36+ free online tools for writers, marketers, developers, and business owners. AI-powered, instant results, no signup required.",
+  description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
   keywords: ["free online tools", "ai tools", "utility tools", "prompt generator", "word counter", "seo tools"],
   metadataBase: new URL("https://toolstack.tech"),
   manifest: "/manifest.json",
@@ -25,21 +25,21 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "ToolStack",
     title: "ToolStack — Free AI & Utility Tools",
-    description: "36+ free online tools. Instant results, no signup required.",
+    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
     images: [
       {
-        url: "https://toolstack.tech/logo.png",
+        url: "https://toolstack.tech/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ToolStack Preview",
+        alt: "ToolStack Dashboard",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ToolStack — Free AI & Utility Tools",
-    description: "36+ free online tools. Instant results, no signup required.",
-    images: ["https://toolstack.tech/logo.png"],
+    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
+    images: ["https://toolstack.tech/og-image.png"],
   },
   robots: { index: true, follow: true },
 };
