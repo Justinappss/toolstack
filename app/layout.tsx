@@ -26,8 +26,21 @@ export const metadata: Metadata = {
     siteName: "ToolStack",
     title: "ToolStack — Free AI & Utility Tools",
     description: "36+ free online tools. Instant results, no signup required.",
+    images: [
+      {
+        url: "https://toolstack.tech/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "ToolStack Preview",
+      },
+    ],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "ToolStack — Free AI & Utility Tools",
+    description: "36+ free online tools. Instant results, no signup required.",
+    images: ["https://toolstack.tech/logo.png"],
+  },
   robots: { index: true, follow: true },
 };
 

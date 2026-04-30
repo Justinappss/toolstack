@@ -1,7 +1,9 @@
 "use client";
 import { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, X } from "lucide-react";
+import { ThumbnailAnimation } from "./ThumbnailAnimations";
 
 interface Tool {
     title: string;
@@ -183,8 +185,16 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                     gap: 24,
                     marginBottom: 24,
                 }}>
-                    {filtered.map((tool) => (
-                        <Link key={tool.title} href={tool.href} style={{ textDecoration: "none" }}>
+                    {filtered.map((tool, i) => (
+                        <motion.div
+                            key={tool.title}
+                            initial={{ opacity: 0, y: 28 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-40px" }}
+                            transition={{ type: "spring", stiffness: 110, damping: 18, delay: Math.min(i, 12) * 0.04 }}
+                            whileHover={{ y: -6, transition: { type: "spring", stiffness: 320, damping: 22 } }}
+                        >
+                        <Link href={tool.href} style={{ textDecoration: "none" }}>
                             <div
                                 className="tool-card-v2"
                                 style={{
@@ -249,6 +259,7 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                                             }}>{tool.badge}</span>
                                         )}
                                     </div>
+                                    <ThumbnailAnimation href={tool.href} accent={tool.accent} accentRgb={tool.accentRgb} />
                                 </div>
 
                                 {/* Content */}
@@ -274,6 +285,7 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                                 </div>
                             </div>
                         </Link>
+                        </motion.div>
                     ))}
                 </div>
             )}
