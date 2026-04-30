@@ -5,16 +5,29 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
-    description: "Free online tools for writers, marketers and developers. AI prompt generator, word counter, SEO tools and more. Instant results, no signup ever required.",
+    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
     alternates: { canonical: "https://toolstack.tech" },
     openGraph: {
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Free online tools for writers, marketers and developers. Instant results, no signup.",
+        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
         url: "https://toolstack.tech",
         siteName: "ToolStack",
         type: "website",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "ToolStack Dashboard",
+            },
+        ],
     },
-    twitter: { card: "summary_large_image" },
+    twitter: { 
+        card: "summary_large_image",
+        title: "ToolStack — Free AI & Utility Tools",
+        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
+        images: ["https://toolstack.tech/og-image.png"],
+    },
 };
 
 const LIVE_TOOLS = [
