@@ -230,6 +230,22 @@ export default function IpLookupPage() {
                     ))}
                 </div>
 
+                {/* Expert Guide */}
+                <section style={{ marginBottom: 48, padding: "32px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 20 }}>
+                    <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>How IP Address Geolocation Works</h2>
+                    <div style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.85 }}>
+                        <p style={{ margin: "0 0 16px" }}>
+                            When you look up an IP address, the geolocation data (city, country, region) is not pulled from a magical GPS system. Instead, it relies on <strong style={{ color: "rgba(255,255,255,0.8)" }}>IP geolocation databases</strong> maintained by organizations like MaxMind and IP2Location. These providers constantly map IP blocks to physical locations based on data from internet service providers (ISPs), routing registries, and network telemetry.
+                        </p>
+                        <p style={{ margin: "0 0 16px" }}>
+                            The accuracy of an IP lookup varies. At a country level, accuracy is over 99%. At a city level, it drops to roughly 50-80% depending on the country. Because your ISP dynamically assigns IPs, the location shown is usually the <strong style={{ color: "rgba(255,255,255,0.8)" }}>location of the ISP's data center or routing node</strong>, not your physical street address. This is why tools cannot reveal your exact house.
+                        </p>
+                        <p style={{ margin: 0 }}>
+                            If you see an unexpected location, it simply means your ISP is routing your traffic through a data center in that city. If you use a VPN, the lookup will show the VPN server's location, successfully masking your real IP.
+                        </p>
+                    </div>
+                </section>
+
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>
                     <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 20px", letterSpacing: "-0.02em" }}>Frequently Asked Questions</h2>
@@ -240,6 +256,7 @@ export default function IpLookupPage() {
                         { q: "How do I hide my IP address?", a: "Use a VPN service. It routes your traffic through a server elsewhere, replacing your IP. Tor browser also works but is slower. A VPN is the most practical option for most people." },
                         { q: "What's the difference between IPv4 and IPv6?", a: "IPv4 (like 8.8.8.8) is the older format with ~4 billion addresses. IPv6 (like 2001:4860::1) is the newer format with virtually unlimited addresses. Most connections still use IPv4, but IPv6 adoption is growing." },
                         { q: "What is the best IP address lookup tool?", a: "ToolStack's IP Address Lookup is one of the best free options — it automatically detects your public IP on page load and shows your city, region, country, ISP, timezone, coordinates, and hostname. You can also look up any IP address. Free, instant, no signup." },
+                        { q: "Are IP addresses permanent?", a: "Most residential internet connections use dynamic IP addresses, meaning your IP can change periodically (e.g., when you restart your router). Businesses often pay for static (permanent) IP addresses." },
                     ].map(({ q, a }) => (
                         <div key={q} style={{ marginBottom: 16, padding: "18px 20px", background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14 }}>
                             <h3 style={{ fontSize: 14, fontWeight: 800, color: "white", margin: "0 0 6px" }}>{q}</h3>

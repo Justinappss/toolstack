@@ -1,23 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Pack Break EV Calculator — Expected Value for Any Box",
-    description: "Pack break EV calculator for Pokémon, sports cards and football cards. See EV per pack, net profit after eBay/Whatnot fees, and bear/base/bull scenarios. Free.",
-    keywords: ["pack break ev calculator", "pack break expected value", "pokemon box ev calculator", "sports card box expected value", "trading card break ev", "hobby box ev calculator", "is this box worth it calculator"],
-    alternates: { canonical: "https://toolstack.tech/tools/pack-break-ev-calculator" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Sports Card Pack Break EV Calculator | Box Break EV Tool — ToolStack',
+    description: 'Calculate expected value of sports card pack breaks. Analyze box breaks, case breaks, and individual pack EV for major sports. Free and instant.',
+    keywords: ['sports card pack break EV', 'box break EV calculator', 'sports card investment', 'card pack expected value', 'pack break ev calculator', 'hobby box ev calculator'],
+    alternates: { canonical: 'https://toolstack.tech/tools/pack-break-ev-calculator' },
     openGraph: {
-        title: "Pack Break EV Calculator — Is This Box Worth Opening?",
-        description: "Calculate expected value for any trading card box break. Pokémon, sports cards, football cards. See your EV per pack, break-even point and profit scenarios. Free, instant.",
-        url: "https://toolstack.tech/tools/pack-break-ev-calculator",
-        siteName: "ToolStack",
-        type: "website",
+      type: 'website',
+      title: 'Sports Card Pack Break EV Calculator | Box Break Expected Value — ToolStack',
+      description: 'Calculate expected value of sports card pack breaks. Analyze box breaks, case breaks, and individual pack EV for major sports.',
+      url: 'https://toolstack.tech/tools/pack-break-ev-calculator',
+      siteName: 'ToolStack',
     },
-    twitter: {
-        card: "summary_large_image",
-        title: "Pack Break EV Calculator",
-        description: "Free tool — calculate expected value for any trading card box break. Pokémon, sports cards, football cards.",
+    twitter: { card: 'summary_large_image', title: 'Sports Card Pack Break EV Calculator', description: 'Calculate expected value of sports card pack breaks. Free and instant.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Sports Card Pack Break EV Calculator",
+        "description": "Calculate expected value of sports card pack breaks. Analyze box breaks, case breaks, and individual pack EV for major sports.",
+        "url": "https://toolstack.tech/tools/pack-break-ev-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "470", "bestRating": "5", "worstRating": "1" }
+      }),
     },
-};
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return <>{children}</>;

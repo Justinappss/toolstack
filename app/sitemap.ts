@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    ...["ai", "writing", "seo", "marketing", "social", "business", "security", "utility", "finance", "math", "dev", "design", "video", "collectibles", "sports"].map(category => ({
+      url: `${base}/tools/category/${category}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
     {
       url: `${base}/tools/ai-prompt-generator`,
       lastModified: now,

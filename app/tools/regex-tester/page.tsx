@@ -406,6 +406,37 @@ export default function RegexTester() {
           </div>
         </section>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 56, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The Best Free Online Regex Tester in 2025</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Regular expressions (regex) are one of the most powerful tools in a developer's arsenal — and one of the most frustrating to debug. ToolStack's Regex Tester gives you a real-time, visual environment to write, test, and refine your patterns against any input string. Every match is highlighted instantly as you type, with full group capture details and match index positions shown inline.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Unlike other regex testers that require you to submit and wait, ToolStack evaluates your pattern on every keystroke. You see matches appear, disappear, and shift in real time — making it dramatically faster to iterate on complex patterns. The tool supports all standard JavaScript regex flags including global (g), case-insensitive (i), multiline (m), dotAll (s), and unicode (u).
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Whether you're validating email addresses, parsing log files, extracting data from HTML, or building input validation for a web form, this regex tester handles it all. The built-in cheatsheet covers character classes, quantifiers, anchors, lookaheads, lookbehinds, and named groups — everything you need without leaving the page.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Professional developers use regex daily for tasks like search-and-replace in code editors, data cleaning in ETL pipelines, log analysis in DevOps, and input sanitization in web applications. A reliable, fast regex tester is essential for productive development — and ToolStack's implementation is engineered to be the fastest and most intuitive option available.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              ToolStack's Regex Tester is completely free, requires no signup, and runs entirely in your browser — your patterns and test strings never leave your device. Built for developers, by developers, with a focus on speed, clarity, and zero friction.
+            </p>
+          </div>
+        </section>
+
+        {/* Related Tools */}
+        <section style={{ marginTop: 24, padding: "24px 28px", borderRadius: 16, background: "rgba(59,130,246,0.04)", border: "1px solid rgba(59,130,246,0.12)" }}>
+          <p style={{ fontSize: 12, fontWeight: 800, color: "rgba(96,165,250,0.8)", letterSpacing: "0.06em", textTransform: "uppercase" as const, margin: "0 0 8px" }}>Related Developer Tools</p>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
+            Format and validate JSON, check if a website is down, and more — all free, no signup.
+          </p>
+          <a href="/tools?category=developer" style={{ fontSize: 13, fontWeight: 700, color: "#60a5fa", textDecoration: "none" }}>View all developer tools →</a>
+        </section>
+
         <MoreTools currentSlug="regex-tester" />
         
       </div>

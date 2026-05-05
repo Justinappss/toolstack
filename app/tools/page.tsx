@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
-const ALL_TOOLS = [
+export const ALL_TOOLS = [
   {
     title: "AI Prompt Generator",
     desc: "Generate expert-level prompts for ChatGPT, Claude & Gemini using RISEN, STAR, and 5 other proven frameworks.",
@@ -576,9 +576,9 @@ const ALL_TOOLS = [
   },
 ];
 
-const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles", "Sports"];
+export const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles", "Sports"];
 
-const CATEGORY_MAP: Record<string, string> = {
+export const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",
   writing: "Writing",
   seo: "SEO",
@@ -640,7 +640,7 @@ function ToolsGrid() {
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 40 }}>
           {CATEGORIES.map(cat => {
             const isActive = cat === activeCategory;
-            const href = cat === "All" ? "/tools" : `/tools?category=${cat.toLowerCase()}`;
+            const href = cat === "All" ? "/tools" : `/tools/category/${cat.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`;
             return (
               <Link key={cat} href={href} style={{
                 padding: "8px 18px", borderRadius: 999,

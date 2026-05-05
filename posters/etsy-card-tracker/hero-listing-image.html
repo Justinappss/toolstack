@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Flipper's Pro Tracker — Hero Listing Image</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* ── CANVAS: 2700×2700px Etsy square ── */
+  body {
+    width: 2700px; height: 2700px;
+    background: #0A0D14;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ── BACKGROUND TEXTURE ── */
+  .bg-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(245,158,11,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,158,11,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .bg-glow-1 {
+    position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+    width: 1800px; height: 900px; border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(245,158,11,0.08) 0%, transparent 70%);
+    filter: blur(80px);
+  }
+  .bg-glow-2 {
+    position: absolute; bottom: 0; right: -200px;
+    width: 1000px; height: 1000px; border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(139,92,246,0.06) 0%, transparent 70%);
+    filter: blur(100px);
+  }
+
+  /* ── HEADER BAND ── */
+  .header-band {
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 120px;
+    background: linear-gradient(90deg, rgba(245,158,11,0.12), rgba(245,158,11,0.04), transparent);
+    border-bottom: 1px solid rgba(245,158,11,0.15);
+    display: flex; align-items: center;
+    padding: 0 80px;
+    gap: 24px;
+  }
+  .toolstack-badge {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(245,158,11,0.12);
+    border: 1px solid rgba(245,158,11,0.3);
+    border-radius: 40px;
+    padding: 10px 28px;
+  }
+  .toolstack-dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: #F59E0B;
+    box-shadow: 0 0 16px #F59E0B;
+  }
+  .toolstack-text {
+    font-size: 20px; font-weight: 700;
+    color: #F59E0B; letter-spacing: 0.12em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .header-right {
+    margin-left: auto;
+    font-size: 18px; font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.08em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── HERO CONTENT ── */
+  .hero {
+    position: absolute;
+    top: 160px; left: 80px; right: 80px;
+  }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 14px;
+    margin-bottom: 40px;
+  }
+  .eyebrow-tag {
+    font-size: 18px; font-weight: 700;
+    color: #10B981; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .eyebrow-line {
+    width: 60px; height: 2px;
+    background: linear-gradient(90deg, #10B981, transparent);
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 156px; font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .headline .accent { color: #F59E0B; font-style: italic; }
+  .headline .muted { color: rgba(255,255,255,0.35); }
+
+  .subhead {
+    font-size: 36px; font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    max-width: 1400px;
+    margin-bottom: 70px;
+    letter-spacing: -0.01em;
+  }
+  .subhead strong { color: rgba(255,255,255,0.85); font-weight: 700; }
+
+  /* ── KPI ROW ── */
+  .kpi-row {
+    display: flex; gap: 24px;
+    margin-bottom: 70px;
+  }
+  .kpi-card {
+    flex: 1;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 40px 44px;
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--accent);
+  }
+  .kpi-card.amber { --accent: linear-gradient(90deg, #F59E0B, #FCD34D); }
+  .kpi-card.green { --accent: linear-gradient(90deg, #10B981, #34D399); }
+  .kpi-card.purple { --accent: linear-gradient(90deg, #8B5CF6, #A78BFA); }
+  .kpi-card.blue { --accent: linear-gradient(90deg, #3B82F6, #60A5FA); }
+  .kpi-card.red { --accent: linear-gradient(90deg, #EF4444, #F87171); }
+
+  .kpi-label {
+    font-size: 18px; font-weight: 600;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.12em; text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .kpi-value {
+    font-size: 72px; font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .kpi-card.amber .kpi-value { color: #F59E0B; }
+  .kpi-card.green .kpi-value { color: #10B981; }
+  .kpi-card.purple .kpi-value { color: #A78BFA; }
+  .kpi-card.blue .kpi-value { color: #60A5FA; }
+  .kpi-card.red .kpi-value { color: #F87171; }
+  .kpi-sub {
+    font-size: 18px; color: rgba(255,255,255,0.25);
+    margin-top: 10px; font-weight: 500;
+  }
+
+  /* ── DASHBOARD PREVIEW STRIP ── */
+  .dashboard-preview {
+    display: flex; gap: 20px;
+    margin-bottom: 70px;
+  }
+  .tab-pill {
+    padding: 18px 36px;
+    border-radius: 12px;
+    font-size: 22px; font-weight: 700;
+    letter-spacing: 0.06em;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+  .tab-pill.active {
+    background: rgba(245,158,11,0.15);
+    border-color: rgba(245,158,11,0.4);
+    color: #F59E0B;
+  }
+  .tab-pill.inactive {
+    background: rgba(255,255,255,0.03);
+    border-color: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ── FEATURE GRID ── */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 70px;
+  }
+  .feature-card {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 20px;
+    padding: 44px;
+    position: relative;
+  }
+  .feature-icon {
+    font-size: 52px; margin-bottom: 20px;
+    display: block;
+  }
+  .feature-title {
+    font-size: 28px; font-weight: 800;
+    color: white; margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .feature-desc {
+    font-size: 20px; color: rgba(255,255,255,0.4);
+    line-height: 1.6; font-weight: 400;
+  }
+  .feature-tag {
+    position: absolute; top: 24px; right: 24px;
+    font-size: 14px; font-weight: 700;
+    padding: 6px 16px; border-radius: 99px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+  }
+  .feature-tag.new {
+    background: rgba(16,185,129,0.15);
+    border: 1px solid rgba(16,185,129,0.3);
+    color: #10B981;
+  }
+  .feature-tag.pro {
+    background: rgba(139,92,246,0.15);
+    border: 1px solid rgba(139,92,246,0.3);
+    color: #A78BFA;
+  }
+
+  /* ── TOOLSTACK STRIP ── */
+  .ts-strip {
+    background: rgba(245,158,11,0.05);
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 20px;
+    padding: 44px 60px;
+    display: flex; align-items: center; gap: 50px;
+    margin-bottom: 60px;
+  }
+  .ts-strip-label {
+    font-size: 20px; font-weight: 700;
+    color: #F59E0B; letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
+  }
+  .ts-divider {
+    width: 1px; height: 60px;
+    background: rgba(245,158,11,0.2);
+    flex-shrink: 0;
+  }
+  .ts-tools {
+    display: flex; flex-wrap: wrap; gap: 16px; flex: 1;
+  }
+  .ts-tool-pill {
+    padding: 12px 24px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 99px;
+    font-size: 18px; font-weight: 600;
+    color: rgba(255,255,255,0.6);
+  }
+  .ts-cta {
+    font-size: 20px; font-weight: 700;
+    color: #F59E0B;
+    white-space: nowrap;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── FOOTER BAND ── */
+  .footer-band {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 120px;
+    background: linear-gradient(0deg, rgba(245,158,11,0.08), transparent);
+    border-top: 1px solid rgba(245,158,11,0.12);
+    display: flex; align-items: center;
+    padding: 0 80px;
+    gap: 40px;
+  }
+  .footer-tag {
+    padding: 12px 28px;
+    border-radius: 99px;
+    font-size: 18px; font-weight: 700;
+    letter-spacing: 0.1em;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .tag-free {
+    background: rgba(16,185,129,0.15);
+    border: 1px solid rgba(16,185,129,0.3);
+    color: #10B981;
+  }
+  .tag-instant {
+    background: rgba(59,130,246,0.15);
+    border: 1px solid rgba(59,130,246,0.3);
+    color: #60A5FA;
+  }
+  .tag-google {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.5);
+  }
+  .footer-price {
+    margin-left: auto;
+    font-size: 28px; font-weight: 900;
+    color: #F59E0B;
+    letter-spacing: -0.01em;
+  }
+  .footer-price span {
+    font-size: 18px; font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    text-decoration: line-through;
+    margin-right: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-glow-1"></div>
+<div class="bg-glow-2"></div>
+
+<!-- HEADER -->
+<div class="header-band">
+  <div class="toolstack-badge">
+    <div class="toolstack-dot"></div>
+    <span class="toolstack-text">TOOLSTACK.TECH</span>
+  </div>
+  <span class="header-right">DIGITAL DOWNLOAD · INSTANT ACCESS · GOOGLE SHEETS</span>
+</div>
+
+<!-- HERO CONTENT -->
+<div class="hero">
+
+  <div class="eyebrow">
+    <span class="eyebrow-tag">🃏 Card Flipper's Pro Tracker</span>
+    <div class="eyebrow-line"></div>
+  </div>
+
+  <h1 class="headline">
+    Know exactly<br>
+    what you <span class="accent">made</span><br>
+    <span class="muted">on every card.</span>
+  </h1>
+
+  <p class="subhead">
+    The <strong>only card tracker</strong> built for serious flippers — not casual collectors.<br>
+    6 tabs. Auto profit formulas. Pack break tracking. Built-in ToolStack calculator links.
+  </p>
+
+  <!-- KPI ROW -->
+  <div class="kpi-row">
+    <div class="kpi-card amber">
+      <div class="kpi-label">Total Invested</div>
+      <div class="kpi-value">£1,847</div>
+      <div class="kpi-sub">across 34 cards</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Net Profit</div>
+      <div class="kpi-value">£612</div>
+      <div class="kpi-sub">this quarter</div>
+    </div>
+    <div class="kpi-card purple">
+      <div class="kpi-label">Overall ROI</div>
+      <div class="kpi-value">33.1%</div>
+      <div class="kpi-sub">on closed flips</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-label">At Grader</div>
+      <div class="kpi-value">7</div>
+      <div class="kpi-sub">PSA · BGS · CGC</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Cards Sold</div>
+      <div class="kpi-value">19</div>
+      <div class="kpi-sub">this year</div>
+    </div>
+  </div>
+
+  <!-- TAB PILLS -->
+  <div class="dashboard-preview">
+    <div class="tab-pill active">🏆 Dashboard</div>
+    <div class="tab-pill inactive">📋 Card Log</div>
+    <div class="tab-pill inactive">🎓 Grading Tracker</div>
+    <div class="tab-pill inactive">📦 Pack Breaks</div>
+    <div class="tab-pill inactive">📊 Monthly P&L</div>
+    <div class="tab-pill inactive">🔧 ToolStack Hub</div>
+  </div>
+
+  <!-- FEATURES GRID -->
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-tag new">NEW</span>
+      <span class="feature-icon">📦</span>
+      <div class="feature-title">Pack Break Tracker</div>
+      <div class="feature-desc">Log every box break. Auto-calculates cost, value pulled, net gain/loss and ROI. No competitor has this.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-tag pro">AUTO</span>
+      <span class="feature-icon">💹</span>
+      <div class="feature-title">Live Profit Formulas</div>
+      <div class="feature-desc">Enter buy price + sale price. Fees, grading costs, shipping — net profit and ROI calculate instantly.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-tag new">FREE</span>
+      <span class="feature-icon">🔗</span>
+      <div class="feature-title">ToolStack Hub Tab</div>
+      <div class="feature-desc">6 free card calculators linked inside the tracker — eBay fees, grading profit, pack EV and more.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🎓</span>
+      <div class="feature-title">Grading Tracker</div>
+      <div class="feature-desc">Track every submission to PSA, BGS, CGC, SGC — costs, service level, return dates, grades received.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📊</span>
+      <div class="feature-title">Monthly P&L</div>
+      <div class="feature-desc">Automated 12-month profit & loss summary. Year totals calculated. See your best and worst months.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📺</span>
+      <div class="feature-title">Whatnot + eBay + COMC</div>
+      <div class="feature-desc">Fee fields for every major platform. Sell on Whatnot? Log it. eBay? Facebook? All covered.</div>
+    </div>
+  </div>
+
+  <!-- TOOLSTACK STRIP -->
+  <div class="ts-strip">
+    <span class="ts-strip-label">🔧 Includes links to</span>
+    <div class="ts-divider"></div>
+    <div class="ts-tools">
+      <span class="ts-tool-pill">💹 Card Flip ROI Calc</span>
+      <span class="ts-tool-pill">💰 eBay Fee Calc</span>
+      <span class="ts-tool-pill">🎁 Pack Break EV</span>
+      <span class="ts-tool-pill">🏅 Grading Profit Calc</span>
+      <span class="ts-tool-pill">🔬 Grader Comparison</span>
+      <span class="ts-tool-pill">📺 Whatnot Fee Calc</span>
+    </div>
+    <span class="ts-cta">→ All FREE at toolstack.tech</span>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer-band">
+  <div class="footer-tag tag-free">✓ INSTANT DOWNLOAD</div>
+  <div class="footer-tag tag-instant">✓ GOOGLE SHEETS</div>
+  <div class="footer-tag tag-google">✓ NBA · NFL · MLB · Pokémon · One Piece</div>
+  <div class="footer-tag tag-google">✓ PSA · BGS · CGC · SGC</div>
+  <div class="footer-price"><span>£12.99</span> £7.99</div>
+</div>
+
+</body>
+</html>

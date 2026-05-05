@@ -448,6 +448,37 @@ export default function EbayBestOfferCalculatorPage() {
                     </div>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The Definitive eBay Best Offer Calculator for Resellers</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Every eBay reseller faces the same question when a Best Offer notification lands: should I accept, counter, or decline? The answer depends on your exact cost basis, eBay's fee structure, and your target profit margin — and getting that calculation wrong means either leaving money on the table or losing money on the sale entirely.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      ToolStack's eBay Best Offer Calculator eliminates the guesswork. Enter your purchase cost, any grading or restoration fees, eBay's final value fee percentage (pre-filled for common categories), and your target ROI — and instantly see your break-even offer price, your target offer price, and a clear Accept / Counter / Decline recommendation for any received offer.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      The calculator supports all major eBay selling categories with accurate fee rates for 2025, including the reduced rates for trading cards (13.25%), sneakers (12.35%), and standard categories (up to 15%). It also accounts for PayPal or Managed Payments processing fees, international selling fees, and optional promoted listing costs — so the profit figure you see is the real number that hits your account.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      For high-volume resellers, the profit-at-every-percentage table shows your net profit at 10% increments from 50% to 100% of asking price — giving you a complete view of your margin at every possible offer level. This is invaluable for setting intelligent auto-accept and auto-decline thresholds in eBay's Best Offer settings.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Multi-currency support (USD, GBP, EUR, AUD, CAD) makes this tool essential for international sellers. Whether you're flipping sports cards, vintage clothing, electronics, or collectibles — ToolStack's eBay Best Offer Calculator is the fastest way to make confident pricing decisions. Free, instant, no signup required.
+                    </p>
+                  </div>
+                </section>
+
+                {/* Related Tools */}
+                <section style={{ marginTop: 24, padding: "24px 28px", borderRadius: 16, background: "rgba(52,211,153,0.04)", border: "1px solid rgba(52,211,153,0.12)" }}>
+                  <p style={{ fontSize: 12, fontWeight: 800, color: "rgba(52,211,153,0.8)", letterSpacing: "0.06em", textTransform: "uppercase" as const, margin: "0 0 8px" }}>More Reselling Tools</p>
+                  <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
+                    Calculate Whatnot fees, pack break EV, grading ROI, and more — all free for resellers and collectors.
+                  </p>
+                  <a href="/tools?category=collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#34d399", textDecoration: "none" }}>View all collectibles tools →</a>
+                </section>
+
                 <MoreTools currentSlug="ebay-best-offer-calculator" />
             </div>
         </div>

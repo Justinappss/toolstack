@@ -1,0 +1,23 @@
+import { Metadata } from "next";
+import { CATEGORY_MAP } from "../../page";
+
+export function generateMetadata({ params }: { params: { category: string } }): Metadata {
+  const categoryParam = params.category.toLowerCase();
+  const activeCategory = CATEGORY_MAP[categoryParam] || "Professional";
+
+  return {
+    title: `Free ${activeCategory} Tools & Utilities | ToolStack`,
+    description: `A collection of free, high-performance ${activeCategory} tools. No signup, no ads, instant results. Built for modern professional workflows.`,
+    alternates: {
+      canonical: `https://toolstack.tech/tools/category/${categoryParam}`,
+    },
+  };
+}
+
+export default function CategoryLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

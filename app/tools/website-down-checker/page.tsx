@@ -376,6 +376,42 @@ export default function WebsiteDownChecker() {
                     </div>
                 </section>
 
+                {/* SEO Content Section */}
+                <section style={{ marginBottom: 56, padding: "32px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 20 }}>
+                    <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", margin: "0 0 20px", letterSpacing: "-0.02em" }}>Website Down Checker: Free Online Tool</h2>
+                    <div style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                        <p style={{ marginBottom: 16 }}>Whether you're a developer debugging a production issue, a marketer investigating a landing page outage, or a business owner who depends on your website staying online, discovering that your site is down can be panic-inducing. Our Website Down Checker tool eliminates that uncertainty — giving you instant, accurate confirmation about whether a site is truly offline or if the problem is isolated to your own connection.</p>
+                        
+                        <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", margin: "24px 0 12px" }}>How the Website Down Checker Tool Works</h3>
+                        <p style={{ marginBottom: 16 }}>Our tool works by querying your target URL from multiple global checkpoint locations simultaneously. Unlike a single-location test that might give you a false negative, this approach gives you a true picture of global availability. The tool sends standard HTTP requests and analyzes the response codes — whether it's a 200 OK or a 500 Internal Server Error — and reports back exactly what it finds. Results typically come back within seconds, complete with response time data, HTTP status codes, and a clear up/down verdict.</p>
+                        
+                        <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", margin: "24px 0 12px" }}>Common Use Cases</h3>
+                        <ul style={{ paddingLeft: 20, marginBottom: 16, display: "flex", flexDirection: "column", gap: 8 }}>
+                            <li>Monitoring uptime for your personal portfolio or business website after a deployment</li>
+                            <li>Confirming that a CDN or cloud provider is experiencing issues before panicking</li>
+                            <li>Checking whether a competitor's site is down (or if it's just you)</li>
+                            <li>Verifying that your marketing landing pages are accessible globally</li>
+                            <li>Investigating slow load times by first confirming the site is reachable</li>
+                            <li>Onboarding new projects and wanting a quick baseline availability check</li>
+                        </ul>
+                        
+                        <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", margin: "24px 0 12px" }}>Why Use Our Free Website Down Checker Tool</h3>
+                        <p style={{ marginBottom: 16 }}>Unlike paid monitoring services that charge monthly fees for similar uptime data, our Website Down Checker tool is completely free and requires no account creation. There's no waiting period, no credit card, and no artificial rate limiting — check as many URLs as you need, as often as you need. The tool runs entirely in your browser, meaning your requests go directly from your machine to the target server without intermediary logging.</p>
+                        
+                        <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", margin: "24px 0 12px" }}>Related Tools</h3>
+                        <p style={{ marginBottom: 8 }}>If you found this tool useful, you might also like:</p>
+                        <ul style={{ paddingLeft: 20, marginBottom: 24, display: "flex", flexDirection: "column", gap: 8 }}>
+                            <li><Link href="/tools/json-formatter" style={{ color: "#818cf8", textDecoration: "none" }}>JSON Formatter & Validator</Link> — format and validate JSON data</li>
+                            <li><Link href="/tools/regex-tester" style={{ color: "#818cf8", textDecoration: "none" }}>Regex Tester & Debugger</Link> — test regular expressions in real-time</li>
+                            <li><Link href="/tools/base64-encoder-decoder" style={{ color: "#818cf8", textDecoration: "none" }}>Base64 Encoder / Decoder</Link> — encode and decode data easily</li>
+                        </ul>
+                        
+                        <div style={{ padding: "20px", background: "rgba(99,102,241,0.1)", borderRadius: 12, border: "1px solid rgba(99,102,241,0.2)" }}>
+                            <strong style={{ color: "white" }}>Ready to check your website's status?</strong> Use the Website Down Checker above — it's free, requires no signup, and gives you instant results from multiple global locations.
+                        </div>
+                    </div>
+                </section>
+
                 <MoreTools currentSlug="website-down-checker" />
                 
             </div>

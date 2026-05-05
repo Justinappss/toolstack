@@ -379,6 +379,37 @@ export default function MortgageCalculator() {
           </div>
         </section>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 56, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The Complete Free Mortgage & House Hack Calculator</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Whether you're buying your first home, refinancing an existing mortgage, or analysing a house hack investment strategy, ToolStack's Mortgage Calculator gives you the complete picture in seconds. Enter your loan amount, interest rate, term length, and repayment type — and instantly see your monthly payment, total interest cost, and a full month-by-month amortisation schedule.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Unlike bank-branded calculators that exist to funnel you into an application, ToolStack's calculator is completely independent. It doesn't collect your personal data, doesn't require signup, and doesn't push products. You get pure, accurate calculations with a focus on helping you understand the true cost of borrowing — not selling you a mortgage.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              The overpayment calculator is where this tool really shines. Enter any monthly overpayment amount and see exactly how many years it shaves off your term and how much interest you save. Even a small monthly overpayment — £100 on a £250,000 mortgage — can save tens of thousands in interest over the life of the loan. The amortisation schedule updates in real time to show the impact.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Multi-country support covers 15 currencies with pre-filled typical interest rates for each market: UK (4.5%), US (7.0%), Australia (6.0%), Canada (5.5%), Germany (3.8%), Switzerland (1.8%), and more. Switch countries instantly to compare borrowing costs across markets — essential for expats, international property investors, and anyone considering buying abroad.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Both repayment and interest-only mortgage types are supported. Repayment mortgages show the declining balance curve as you pay down capital over time. Interest-only mortgages show the fixed monthly interest cost and highlight the capital repayment requirement at term end. For property investors evaluating buy-to-let yields, the interest-only view provides the monthly cost basis for rental ROI calculations.
+            </p>
+          </div>
+        </section>
+
+        {/* Related Tools */}
+        <section style={{ marginTop: 24, padding: "24px 28px", borderRadius: 16, background: "rgba(99,102,241,0.04)", border: "1px solid rgba(99,102,241,0.12)" }}>
+          <p style={{ fontSize: 12, fontWeight: 800, color: "rgba(129,140,248,0.8)", letterSpacing: "0.06em", textTransform: "uppercase" as const, margin: "0 0 8px" }}>More Finance Tools</p>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
+            Calculate eBay profit, Whatnot fees, card flip ROI, and more — all free, no signup.
+          </p>
+          <a href="/tools?category=finance" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>View all finance tools →</a>
+        </section>
+
         <div style={{ marginTop: 56 }}>
           <MoreTools currentSlug="mortgage-calculator" />
         </div>

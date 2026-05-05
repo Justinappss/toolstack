@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "what-is-base64-encoding",
+        title: "What Is Base64 Encoding and When Should You Use It?",
+        description: "Base64 turns binary data into plain text so it can travel safely over the web. Learn how it works, when to use it, and when not to — with a free encoder/decoder.",
+        date: "May 3, 2026",
+        readTime: "5 min read",
+        tag: "Engineering",
+        accent: "#f59e0b",
+        accentBg: "rgba(245,158,11,0.08)",
+        accentBorder: "rgba(245,158,11,0.2)",
+        featured: true,
+    },
+    {
         slug: "regex-cheat-sheet-beginners",
         title: "Regex Cheat Sheet for Beginners: The Patterns You Actually Use",
         description: "A practical regex reference covering the patterns developers reach for most — character classes, anchors, quantifiers, groups, and real-world examples with a free tester.",
@@ -25,7 +37,7 @@ const posts = [
         accent: "#10b981",
         accentBg: "rgba(16,185,129,0.08)",
         accentBorder: "rgba(16,185,129,0.2)",
-        featured: true,
+        featured: false,
     },
     {
         slug: "how-to-generate-qr-code-wifi",

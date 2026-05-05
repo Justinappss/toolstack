@@ -447,6 +447,37 @@ export default function WhatnotSellerFeeCalculator() {
                     </div>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The Most Accurate Whatnot Fee Calculator for Live Sellers</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Whatnot has become the dominant live-selling marketplace for trading cards, collectibles, sneakers, and streetwear — but understanding the exact fee structure is critical before you price your inventory. Unlike eBay's single final value fee, Whatnot uses a dual-layer system: a seller commission (varying by category) plus a separate payment processing fee on every transaction.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      ToolStack's Whatnot Seller Fee Calculator breaks this down to the penny. Enter your sale price, select your category, and instantly see the commission fee, payment processing charge, total fees, and your exact net payout. The tool covers all Whatnot categories including Trading Cards & Collectibles (8%), Coins & Currency (4%), Electronics (5%), and the critical high-value threshold at $1,500 where commission drops to 0%.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      What makes this calculator essential for Whatnot sellers is the built-in eBay comparison. Every sale shows a side-by-side view of your Whatnot net payout versus what you'd receive selling the same item on eBay — using eBay's current Trading Cards final value fee of 13.25% + $0.30. This lets you make informed platform decisions based on actual numbers, not guesswork.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      For sellers running live shows with multiple items, the bulk calculator multiplies your per-item breakdown across any quantity — giving you total commission fees, total processing fees, and total net payout for an entire show's worth of sales. Combined with multi-currency support (USD, GBP, EUR, AUD, CAD), this is the most comprehensive Whatnot fee tool available.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Whether you're a new Whatnot seller trying to understand the fee structure, or a seasoned live-seller optimising your pricing strategy across platforms, ToolStack's calculator gives you the clarity you need. Completely free, no signup, no data stored — just accurate fee calculations in seconds.
+                    </p>
+                  </div>
+                </section>
+
+                {/* Related Tools */}
+                <section style={{ marginTop: 24, padding: "24px 28px", borderRadius: 16, background: "rgba(249,115,22,0.04)", border: "1px solid rgba(249,115,22,0.12)" }}>
+                  <p style={{ fontSize: 12, fontWeight: 800, color: "rgba(249,115,22,0.8)", letterSpacing: "0.06em", textTransform: "uppercase" as const, margin: "0 0 8px" }}>More Marketplace Tools</p>
+                  <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
+                    Calculate eBay best offers, pack break EV, card flip ROI, and more — all free for sellers and collectors.
+                  </p>
+                  <a href="/tools?category=collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#f97316", textDecoration: "none" }}>View all collectibles tools →</a>
+                </section>
+
                 <MoreTools currentSlug="whatnot-seller-fee-calculator" />
             </div>
         </main>

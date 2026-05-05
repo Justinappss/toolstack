@@ -845,6 +845,7 @@ export default function WordCounter() {
                 { q: "How long does it take to read 1000 words?", a: "The average adult reads at 238 words per minute. 1,000 words takes approximately 4 minutes to read. Speaking takes about 7–8 minutes at an average speaking pace of 130 words per minute." },
                 { q: "What is a good reading level for a website?", a: "Most websites should target a Flesch Reading Ease score of 60–70 (8th-9th grade). This makes content accessible to the widest audience. Technical or professional content may naturally score lower — that's fine if it matches your audience." },
                 { q: "What is the best free word counter online?", a: "ToolStack's word counter is the most comprehensive free option — it combines word count, character count, readability scoring, reading time, speaking time, keyword density analysis and writing goal targets all in one tool, with no signup required." },
+                { q: "Is there a limit to how much text I can count?", a: "No, there is no strict limit. Since the word counter processes text entirely in your browser without sending data to a server, it can easily handle tens of thousands of words instantly. It's only limited by your device's memory." },
               ].map(faq => (
                 <div key={faq.q} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: 22 }}>
                   <h3 style={{ fontSize: 15, fontWeight: 700, color: "white", margin: "0 0 8px" }}>{faq.q}</h3>

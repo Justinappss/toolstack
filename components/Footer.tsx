@@ -183,6 +183,24 @@ export function Footer() {
                     </div>
                 </div>
 
+                {/* Trust / Address bar */}
+                <div style={{
+                    borderTop: "1px solid rgba(255,255,255,0.05)",
+                    padding: "24px 0",
+                    display: "flex", alignItems: "center", justifyContent: "space-between",
+                    flexWrap: "wrap", gap: 12,
+                }}>
+                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.6 }}>
+                        <p style={{ margin: "0 0 4px" }}><strong style={{ color: "rgba(255,255,255,0.6)" }}>ToolStack Tech Ltd.</strong></p>
+                        <p style={{ margin: "0 0 4px" }}>71-75 Shelton Street, Covent Garden</p>
+                        <p style={{ margin: "0 0 4px" }}>London, WC2H 9JQ, United Kingdom</p>
+                        <p style={{ margin: 0 }}>Email: contact@toolstack.tech</p>
+                    </div>
+                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", maxWidth: 360, textAlign: "right" }}>
+                        <p style={{ margin: 0, lineHeight: 1.6 }}>ToolStack is committed to data privacy. We do not store, process, or transmit your input data to any third-party servers. All utility processing occurs locally within your browser using modern Web APIs.</p>
+                    </div>
+                </div>
+
                 {/* Bottom bar */}
                 <div style={{
                     borderTop: "1px solid rgba(255,255,255,0.05)",
@@ -191,7 +209,7 @@ export function Footer() {
                     flexWrap: "wrap", gap: 12,
                 }}>
                     <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>
-                        © 2026 ToolStack — all tools are free to use. No account required.
+                        © {new Date().getFullYear()} ToolStack — all tools are free to use. No account required.
                     </p>
                     <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>
                         Built with GPT-4o · Powered by Vercel

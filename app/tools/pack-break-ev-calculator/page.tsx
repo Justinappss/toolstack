@@ -472,6 +472,28 @@ export default function PackBreakEvCalculator() {
                     </Link>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 16, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>The Most Comprehensive Pack Break EV Calculator Available</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Before you open any hobby box, you need to know the expected value — and most "EV calculators" out there only show gross value without accounting for the fees and shipping costs that destroy your real profit margin. ToolStack's Pack Break EV Calculator is the first free tool that gives you true net EV by deducting eBay (13.25% + $0.30), Whatnot (10.9% + $0.30), or local sale fees from every hit.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      The tool supports any trading card product — Pokémon TCG, sports cards (baseball, basketball, football), soccer/football cards, and custom TCG products. Simply select your card type to auto-label the hit type fields (Autograph, Relic/Patch, Short Print, Parallel for sports; Full Art/Alt Art, Rainbow/Gold Rare, Holo Rare, Reverse Holo for Pokémon), then enter your hit rates and average market values from recent sold listings.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      What separates ToolStack from every other EV calculator is the three-scenario analysis: Bear Case (70% of expected value), Base Case (100%), and Bull Case (130%). This accounts for the natural variance in any box opening — some boxes run hot and deliver premium hits, while others run cold. The scenarios give you a realistic range rather than a single misleading number.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      For professional breakers running pack breaks on Whatnot or YouTube, the EV per pack metric is essential for setting break spot prices. If a 24-pack hobby box has a net EV of $120, each pack is worth $5.00 in EV — so a $6.00 break spot gives you a $1.00 margin per pack, or $24.00 per box. Scale that across a case of 12 boxes and you're looking at $288 in break margin before your time and streaming costs.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Multi-currency support (GBP, USD, EUR, AUD, CAD) makes this tool useful for the global card market. Whether you're a UK collector evaluating Japanese Pokémon boxes, an Australian breaker pricing Panini football spots, or a US sports card investor comparing hobby vs retail EV — ToolStack's Pack Break EV Calculator delivers the numbers you need. Free, instant, no signup.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="pack-break-ev-calculator" />
             </div>
         </div>

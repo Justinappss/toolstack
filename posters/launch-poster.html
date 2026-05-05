@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ToolStack — Issue No. 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --paper: #f4eee0;
+  --paper-edge: #ebe2cf;
+  --ink: #14110d;
+  --ink-soft: #4a4338;
+  --ink-faint: #8a8170;
+  --rule: #14110d;
+  --accent: #b91c1c;
+  --accent-soft: #f4d8d8;
+  --tint: rgba(20, 17, 13, 0.04);
+  --serif: "Playfair Display", "Bodoni Moda", Georgia, serif;
+  --body: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2a2620;
+  font-family: var(--body);
+  color: var(--ink);
+}
+
+body {
+  padding: 36px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 1280px;
+  min-height: 1700px;
+  background:
+    radial-gradient(1200px 800px at 18% 12%, rgba(0,0,0,0.04), transparent 60%),
+    radial-gradient(800px 600px at 82% 86%, rgba(0,0,0,0.04), transparent 60%),
+    repeating-radial-gradient(circle at 50% 50%, rgba(20,17,13,0.025) 0 1px, transparent 1px 4px),
+    var(--paper);
+  border: 1px solid var(--paper-edge);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.45), inset 0 0 200px rgba(0,0,0,0.03);
+  padding: 56px 64px 56px;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--body);
+}
+
+/* Aged paper edge tint */
+.page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(120,90,40,0.06) 0%, transparent 8%, transparent 92%, rgba(120,90,40,0.08) 100%),
+    linear-gradient(90deg, rgba(120,90,40,0.05) 0%, transparent 5%, transparent 95%, rgba(120,90,40,0.06) 100%);
+}
+
+/* TOP RULE / DATELINE */
+.top-rule {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: baseline;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.top-rule .left { text-align: left; }
+.top-rule .center {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--ink);
+}
+.top-rule .right { text-align: right; }
+
+/* TOP EYEBROW */
+.eyebrow-top {
+  margin-top: 22px;
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 6px 11px;
+  font-weight: 700;
+}
+
+/* HEADLINE */
+.headline {
+  font-family: var(--serif);
+  font-weight: 900;
+  font-size: 156px;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin: 18px 0 0;
+  max-width: 100%;
+}
+
+.headline .strike {
+  position: relative;
+  display: inline-block;
+  text-decoration: line-through;
+  text-decoration-thickness: 6px;
+  text-decoration-color: var(--accent);
+  color: var(--ink-faint);
+  margin-right: 4px;
+}
+
+.headline .accent {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* DECK */
+.deck {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 24px;
+  margin-top: 26px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.deck-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.32;
+  color: var(--ink);
+  max-width: 880px;
+}
+
+.deck-text em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.deck-callout {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+.deck-callout::before {
+  content: "— ";
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ACCENT RULE */
+.accent-rule {
+  height: 5px;
+  width: 92px;
+  background: var(--accent);
+  margin: 22px 0 36px;
+}
+
+/* BODY GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.cell {
+  padding: 28px 28px 32px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+}
+
+.cell:nth-child(odd) {
+  border-right: 1px solid var(--rule);
+  padding-left: 0;
+}
+
+.cell:nth-child(even) {
+  padding-right: 0;
+}
+
+.cell:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.cell-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.cell-eyebrow .num {
+  color: var(--ink);
+}
+
+.cell-head {
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+.cell-body {
+  font-family: var(--body);
+  font-size: 15.5px;
+  line-height: 1.62;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+  font-weight: 400;
+}
+
+.cell-body strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.callout {
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  padding: 11px 14px 11px 16px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink);
+  font-weight: 500;
+  position: relative;
+}
+
+.callout::before {
+  content: "› use this prompt";
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* FOOTER */
+.footer-band {
+  margin-top: 38px;
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.pro-tip {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 12px 14px;
+}
+
+.pro-tip-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pro-tip-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.foot-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.foot-cell-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.foot-cell-value {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+
+.foot-cell-sub {
+  font-family: var(--body);
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 1px;
+  font-style: italic;
+}
+
+/* Bottom-bottom hairline */
+.colophon {
+  margin-top: 28px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<article class="page" data-od-id="poster">
+
+  <!-- TOP RULE / DATELINE -->
+  <header class="top-rule" data-od-id="dateline">
+    <span class="left">01 · A · TOOLSTACK LAB</span>
+    <span class="center">The Friction Issue</span>
+    <span class="right">03 · MAY · 2026</span>
+  </header>
+
+  <span class="eyebrow-top">POSTED TODAY</span>
+
+  <!-- HEADLINE -->
+  <h1 class="headline" data-od-id="headline">
+    Every tool you need.<br />
+    <span class="strike">Pay</span> for <span class="accent">nothing</span>.
+  </h1>
+
+  <!-- DECK -->
+  <div class="deck" data-od-id="deck">
+    <p class="deck-text">
+      57 free tools across <em>writing</em>, <em>dev</em>, <em>finance</em>, and the
+      <em>World Cup</em> — built solo in 90 days. No signup. No ads.
+      No paywalls. Ever.
+    </p>
+    <span class="deck-callout">what works</span>
+  </div>
+
+  <div class="accent-rule"></div>
+
+  <!-- BODY GRID -->
+  <section class="grid" data-od-id="grid">
+
+    <article class="cell" data-od-id="cell-01">
+      <span class="cell-eyebrow"><span class="num">01</span> · THE FRICTION TAX</span>
+      <h2 class="cell-head">The internet got greedy with simple things.</h2>
+      <p class="cell-body">
+        Every utility site now asks for an email, runs a 30-second ad,
+        or wants a credit card before it'll format a JSON file. We accepted
+        terrible UX as the norm. <strong>This issue is the reset.</strong>
+      </p>
+      <div class="callout">
+        "5 sites asked me to sign up before they'd format JSON. So I closed my laptop and started building."
+      </div>
+    </article>
+
+    <article class="cell" data-od-id="cell-02">
+      <span class="cell-eyebrow"><span class="num">02</span> · BUILT IN PUBLIC</span>
+      <h2 class="cell-head">57 tools, 90 days, one solo founder.</h2>
+      <p class="cell-body">
+        AI Prompt Generator. JSON Formatter. Mortgage Calculator.
+        Pack Break EV. World Cup Accumulator. Each one shipped in 2–4 hours
+        once the layout, SEO and structure were templated.
+      </p>
+      <div class="callout">
+        "Templating the boring 80% turns 57 tools into a 90-day project — not a 90-month one."
+      </div>
+    </article>
+
+    <article class="cell" data-od-id="cell-03">
+      <span class="cell-eyebrow"><span class="num">03</span> · NO SIGN-UP IS THE MARKETING</span>
+      <h2 class="cell-head">When the wall comes down, the URL travels.</h2>
+      <p class="cell-body">
+        People share what they don't have to pay for with their email.
+        "No signup" became the differentiator no competitor was using —
+        and the entire <strong>distribution loop</strong> follows from it.
+      </p>
+      <div class="callout">
+        "Friction kills referral. Make the tool work in one click and the link travels itself."
+      </div>
+    </article>
+
+    <article class="cell" data-od-id="cell-04">
+      <span class="cell-eyebrow"><span class="num">04</span> · DISTRIBUTION &gt; PRODUCT</span>
+      <h2 class="cell-head">One Reddit post beat three weeks of SEO.</h2>
+      <p class="cell-body">
+        ToolStack hit <strong>#1 on r/SideProject</strong> with 6,100 views in
+        24 hours. The lesson: pick the room before the script. The first hour
+        of engagement decides the next 60 days of reach.
+      </p>
+      <div class="callout">
+        "Engagement velocity in the first 60 minutes is the only metric the algorithm actually rewards."
+      </div>
+    </article>
+
+    <article class="cell" data-od-id="cell-05">
+      <span class="cell-eyebrow"><span class="num">05</span> · ADSENSE PAYS THE RENT</span>
+      <h2 class="cell-head">You don't need Stripe to validate an idea.</h2>
+      <p class="cell-body">
+        Light banner ads cover hosting, domain, and a small monthly profit.
+        The cheap channel keeps the product free, which keeps it shareable,
+        which keeps the channel cheap. <strong>The loop pays itself.</strong>
+      </p>
+      <div class="callout">
+        "AdSense is the rent. The tools are the home. Don't confuse the two."
+      </div>
+    </article>
+
+    <article class="cell" data-od-id="cell-06">
+      <span class="cell-eyebrow"><span class="num">06</span> · WHAT'S NEXT</span>
+      <h2 class="cell-head">Niche calculators outperform generic ones.</h2>
+      <p class="cell-body">
+        Coming up: more World Cup 2026 utilities, deeper card-flip math,
+        a Chrome extension once we hit 5K weekly users. Build for the audience
+        already searching — they're easier to find than the one you're inventing.
+      </p>
+      <div class="callout">
+        "Don't build a market. Build a tool for the market that already exists in someone's open tabs."
+      </div>
+    </article>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-band" data-od-id="footer">
+    <div class="pro-tip">
+      <span class="pro-tip-label">PRO TIP</span>
+      <span class="pro-tip-text">
+        The simplest moat is being the only tool in the category that doesn't try to take something from the user.
+      </span>
+    </div>
+    <div class="foot-cell">
+      <span class="foot-cell-label">Edited by</span>
+      <span class="foot-cell-value">Justin Pirrie</span>
+      <span class="foot-cell-sub">@chefjustin1990</span>
+    </div>
+    <div class="foot-cell">
+      <span class="foot-cell-label">Imprint</span>
+      <span class="foot-cell-value">ToolStack Lab</span>
+      <span class="foot-cell-sub">Solo · Built in public</span>
+    </div>
+    <div class="foot-cell">
+      <span class="foot-cell-label">Read at</span>
+      <span class="foot-cell-value">toolstack.tech</span>
+      <span class="foot-cell-sub">Issue №1 · May 2026</span>
+    </div>
+  </footer>
+
+  <div class="colophon">
+    <span>57 tools · 0 sign-ups · ∞ free</span>
+    <span>Set in Playfair, Source Serif &amp; JetBrains Mono</span>
+    <span>© 2026 ToolStack — print free, share free</span>
+  </div>
+
+</article>
+
+</body>
+</html>

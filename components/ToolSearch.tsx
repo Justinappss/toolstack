@@ -4,6 +4,123 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, X } from "lucide-react";
 import { ThumbnailAnimation } from "./ThumbnailAnimations";
+import { PasswordGeneratorThumbnail } from "./PasswordGeneratorThumbnail";
+import { JsonFormatterThumbnail } from "./JsonFormatterThumbnail";
+import { AiPromptGeneratorThumbnail } from "./AiPromptGeneratorThumbnail";
+import { MortgageCalculatorThumbnail } from "./MortgageCalculatorThumbnail";
+import { CssGradientThumbnail } from "./CssGradientThumbnail";
+import { QrCodeGeneratorThumbnail } from "./QrCodeGeneratorThumbnail";
+import { HashtagGeneratorThumbnail } from "./HashtagGeneratorThumbnail";
+import { WordCounterThumbnail } from "./WordCounterThumbnail";
+import { ColorPaletteThumbnail } from "./ColorPaletteThumbnail";
+import { VatCalculatorThumbnail } from "./VatCalculatorThumbnail";
+import { TipCalculatorThumbnail } from "./TipCalculatorThumbnail";
+import { EmailSubjectThumbnail } from "./EmailSubjectThumbnail";
+import { RegexTesterThumbnail } from "./RegexTesterThumbnail";
+import { SqlFormatterThumbnail } from "./SqlFormatterThumbnail";
+import { UuidGeneratorThumbnail } from "./UuidGeneratorThumbnail";
+import { StopwatchThumbnail } from "./StopwatchThumbnail";
+import { CompoundInterestThumbnail } from "./CompoundInterestThumbnail";
+import { SalaryCalculatorThumbnail } from "./SalaryCalculatorThumbnail";
+import { PercentageCalculatorThumbnail } from "./PercentageCalculatorThumbnail";
+import { MetaDescriptionThumbnail } from "./MetaDescriptionThumbnail";
+import { BlogTitleThumbnail } from "./BlogTitleThumbnail";
+import { ParaphrasingThumbnail } from "./ParaphrasingThumbnail";
+import { GrammarCheckerThumbnail } from "./GrammarCheckerThumbnail";
+import { CoverLetterThumbnail } from "./CoverLetterThumbnail";
+import { CodeDiffThumbnail } from "./CodeDiffThumbnail";
+import { TextSummarizerThumbnail } from "./TextSummarizerThumbnail";
+import { CaseConverterThumbnail } from "./CaseConverterThumbnail";
+import { MarkdownEditorThumbnail } from "./MarkdownEditorThumbnail";
+import { CharacterCounterThumbnail } from "./CharacterCounterThumbnail";
+import { BrandForgeThumbnail } from "./BrandForgeThumbnail";
+import { UtmBuilderThumbnail } from "./UtmBuilderThumbnail";
+import { JwtDecoderThumbnail } from "./JwtDecoderThumbnail";
+import { Base64ConverterThumbnail } from "./Base64ConverterThumbnail";
+import { SslCheckerThumbnail } from "./SslCheckerThumbnail";
+import { IpLookupThumbnail } from "./IpLookupThumbnail";
+import { PdfGeneratorThumbnail } from "./PdfGeneratorThumbnail";
+import { LoremIpsumThumbnail } from "./LoremIpsumThumbnail";
+import { YoutubeTagThumbnail } from "./YoutubeTagThumbnail";
+import { EmailSignatureThumbnail } from "./EmailSignatureThumbnail";
+import { ColorContrastThumbnail } from "./ColorContrastThumbnail";
+import { FaviconThumbnail } from "./FaviconThumbnail";
+import { EpochConverterThumbnail } from "./EpochConverterThumbnail";
+import { AgeCalculatorThumbnail } from "./AgeCalculatorThumbnail";
+import { WebsiteDownThumbnail } from "./WebsiteDownThumbnail";
+import { WhoisLookupThumbnail } from "./WhoisLookupThumbnail";
+import { YoutubeThumbnailDownloaderThumbnail } from "./YoutubeThumbnailDownloaderThumbnail";
+import { InvoiceGeneratorThumbnail } from "./InvoiceGeneratorThumbnail";
+import { CardGradingProfitThumbnail } from "./CardGradingProfitThumbnail";
+import { CardFlipRoiThumbnail } from "./CardFlipRoiThumbnail";
+import { PackBreakEvThumbnail } from "./PackBreakEvThumbnail";
+import { CardBoxBreakThumbnail } from "./CardBoxBreakThumbnail";
+import { PaniniStickerThumbnail } from "./PaniniStickerThumbnail";
+import { WhatnotFeeThumbnail } from "./WhatnotFeeThumbnail";
+import { GradingComparisonThumbnail } from "./GradingComparisonThumbnail";
+import { EbayBestOfferThumbnail } from "./EbayBestOfferThumbnail";
+import { WorldCupAccumulatorThumbnail } from "./WorldCupAccumulatorThumbnail";
+import { WorldCupTeamFinderThumbnail } from "./WorldCupTeamFinderThumbnail";
+
+const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
+    "Password Generator": PasswordGeneratorThumbnail,
+    "JSON Formatter": JsonFormatterThumbnail,
+    "AI Prompt Generator": AiPromptGeneratorThumbnail,
+    "Mortgage Calculator": MortgageCalculatorThumbnail,
+    "CSS Gradient Builder": CssGradientThumbnail,
+    "QR Code Generator": QrCodeGeneratorThumbnail,
+    "Hashtag Generator": HashtagGeneratorThumbnail,
+    "Word Counter & Readability": WordCounterThumbnail,
+    "AI Color Palette Generator": ColorPaletteThumbnail,
+    "VAT Calculator": VatCalculatorThumbnail,
+    "Tip Calculator": TipCalculatorThumbnail,
+    "Email Subject Tester": EmailSubjectThumbnail,
+    "Regex Tester": RegexTesterThumbnail,
+    "SQL Formatter": SqlFormatterThumbnail,
+    "UUID Generator": UuidGeneratorThumbnail,
+    "Online Stopwatch": StopwatchThumbnail,
+    "Compound Interest Calculator": CompoundInterestThumbnail,
+    "Salary Calculator": SalaryCalculatorThumbnail,
+    "Percentage Calculator": PercentageCalculatorThumbnail,
+    "Meta Description Generator": MetaDescriptionThumbnail,
+    "Blog Title Generator": BlogTitleThumbnail,
+    "Paraphrasing Tool": ParaphrasingThumbnail,
+    "Grammar Checker": GrammarCheckerThumbnail,
+    "Cover Letter Generator": CoverLetterThumbnail,
+    "Code Diff Checker": CodeDiffThumbnail,
+    "Text Summarizer": TextSummarizerThumbnail,
+    "Case Converter": CaseConverterThumbnail,
+    "Markdown Editor": MarkdownEditorThumbnail,
+    "Character Counter": CharacterCounterThumbnail,
+    "Brand Forge AI": BrandForgeThumbnail,
+    "UTM Builder": UtmBuilderThumbnail,
+    "JWT Decoder": JwtDecoderThumbnail,
+    "Base64 Converter": Base64ConverterThumbnail,
+    "SSL Certificate Checker": SslCheckerThumbnail,
+    "IP Address Lookup": IpLookupThumbnail,
+    "PDF Generator": PdfGeneratorThumbnail,
+    "Lorem Ipsum Generator": LoremIpsumThumbnail,
+    "VibeSEO YouTube Engine": YoutubeTagThumbnail,
+    "SignatureCraft Pro": EmailSignatureThumbnail,
+    "Colour Contrast": ColorContrastThumbnail,
+    "Favicon Generator": FaviconThumbnail,
+    "Epoch Converter": EpochConverterThumbnail,
+    "Age Calculator": AgeCalculatorThumbnail,
+    "Website Down Checker": WebsiteDownThumbnail,
+    "WHOIS Domain Lookup": WhoisLookupThumbnail,
+    "YouTube Thumbnail Downloader": YoutubeThumbnailDownloaderThumbnail,
+    "Invoice Generator": InvoiceGeneratorThumbnail,
+    "Card Grading Profit Calculator": CardGradingProfitThumbnail,
+    "Card Flip ROI Calculator": CardFlipRoiThumbnail,
+    "Pack Break EV Calculator": PackBreakEvThumbnail,
+    "Card Box Break Calculator": CardBoxBreakThumbnail,
+    "Panini Sticker Album Calculator": PaniniStickerThumbnail,
+    "Whatnot Seller Fee Calculator": WhatnotFeeThumbnail,
+    "Grading Company Comparison": GradingComparisonThumbnail,
+    "eBay Best Offer Calculator": EbayBestOfferThumbnail,
+    "WC 2026 Accumulator Calculator": WorldCupAccumulatorThumbnail,
+    "World Cup 2026 Team Finder": WorldCupTeamFinderThumbnail,
+};
 
 interface Tool {
     title: string;
@@ -221,22 +338,27 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                                         background: "linear-gradient(180deg, transparent 60%, rgba(6,6,12,0.85) 100%)",
                                         zIndex: 1, pointerEvents: "none",
                                     }} />
-                                    <img
-                                        src={tool.image}
-                                        alt={`${tool.title} interface preview`}
-                                        width={680}
-                                        height={400}
-                                        style={{
-                                            width: "100%",
-                                            height: 220,
-                                            objectFit: "cover",
-                                            objectPosition: "top center",
-                                            display: "block",
-                                            transition: "transform 0.4s ease",
-                                        }}
-                                        className="tool-card-img"
-                                        loading="lazy"
-                                    />
+                                    {LIVE_THUMBNAILS[tool.title] ? (() => {
+                                        const Live = LIVE_THUMBNAILS[tool.title];
+                                        return <Live />;
+                                    })() : (
+                                        <img
+                                            src={tool.image}
+                                            alt={`${tool.title} interface preview`}
+                                            width={680}
+                                            height={400}
+                                            style={{
+                                                width: "100%",
+                                                height: 220,
+                                                objectFit: "cover",
+                                                objectPosition: "top center",
+                                                display: "block",
+                                                transition: "transform 0.4s ease",
+                                            }}
+                                            className="tool-card-img"
+                                            loading="lazy"
+                                        />
+                                    )}
                                     <div style={{
                                         position: "absolute", top: 14, left: 14,
                                         display: "flex", gap: 6, zIndex: 2,
@@ -259,7 +381,9 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                                             }}>{tool.badge}</span>
                                         )}
                                     </div>
-                                    <ThumbnailAnimation href={tool.href} accent={tool.accent} accentRgb={tool.accentRgb} />
+                                    {!LIVE_THUMBNAILS[tool.title] && (
+                                        <ThumbnailAnimation href={tool.href} accent={tool.accent} accentRgb={tool.accentRgb} />
+                                    )}
                                 </div>
 
                                 {/* Content */}

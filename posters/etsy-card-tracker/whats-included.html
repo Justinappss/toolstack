@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Card Flipper Pro Tracker — What's Included</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 2700px; height: 2700px;
+    background: #0A0D14;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 100px;
+  }
+  .bg-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(245,158,11,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,158,11,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+  .top-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px; font-weight: 700;
+    color: #F59E0B; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    display: flex; align-items: center; gap: 20px;
+  }
+  .top-label::before, .top-label::after {
+    content: '';
+    display: block; height: 1px; width: 80px;
+    background: rgba(245,158,11,0.4);
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 120px; font-weight: 900;
+    color: white; text-align: center;
+    line-height: 1.05; letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  h2 em { color: #F59E0B; font-style: italic; }
+  .subtext {
+    font-size: 32px; color: rgba(255,255,255,0.4);
+    text-align: center; margin-bottom: 80px;
+    font-weight: 500;
+  }
+
+  .tabs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .tab-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    padding: 52px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .tab-card::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, var(--glow) 0%, transparent 60%);
+    opacity: 0.04;
+    pointer-events: none;
+  }
+  .tab-card.t1 { --glow: #F59E0B; border-color: rgba(245,158,11,0.2); }
+  .tab-card.t2 { --glow: #10B981; border-color: rgba(16,185,129,0.15); }
+  .tab-card.t3 { --glow: #8B5CF6; border-color: rgba(139,92,246,0.15); }
+  .tab-card.t4 { --glow: #F59E0B; border-color: rgba(245,158,11,0.15); }
+  .tab-card.t5 { --glow: #3B82F6; border-color: rgba(59,130,246,0.15); }
+  .tab-card.t6 { --glow: #F59E0B; border-color: rgba(245,158,11,0.3); }
+
+  .tab-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px; font-weight: 700;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.12em;
+    margin-bottom: 18px;
+  }
+  .tab-emoji { font-size: 56px; margin-bottom: 20px; display: block; }
+  .tab-name {
+    font-size: 36px; font-weight: 800;
+    color: white; margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .tab-desc {
+    font-size: 22px; color: rgba(255,255,255,0.4);
+    line-height: 1.6; font-weight: 400;
+  }
+  .tab-features {
+    margin-top: 24px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .tf {
+    font-size: 20px; color: rgba(255,255,255,0.55);
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .tf::before { content: '→'; color: #F59E0B; flex-shrink: 0; }
+  .tab-card.t6 .tab-name { color: #F59E0B; }
+
+  .new-badge {
+    position: absolute; top: 28px; right: 28px;
+    background: rgba(16,185,129,0.15);
+    border: 1px solid rgba(16,185,129,0.3);
+    color: #10B981;
+    font-size: 16px; font-weight: 700;
+    padding: 7px 18px; border-radius: 99px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+  }
+
+  .bottom-strip {
+    width: 100%;
+    background: rgba(245,158,11,0.06);
+    border: 1px solid rgba(245,158,11,0.15);
+    border-radius: 20px;
+    padding: 40px 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 40px;
+  }
+  .bs-item {
+    text-align: center;
+    flex: 1;
+  }
+  .bs-num {
+    font-size: 56px; font-weight: 900;
+    color: #F59E0B; letter-spacing: -0.02em;
+    display: block;
+  }
+  .bs-label {
+    font-size: 20px; color: rgba(255,255,255,0.35);
+    font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .bs-div {
+    width: 1px; height: 70px;
+    background: rgba(245,158,11,0.2);
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<div class="top-label">What's included</div>
+
+<h2>6 tabs. Everything<br>a <em>flipper</em> needs.</h2>
+<p class="subtext">One Google Sheets template — instant download — works on desktop, tablet & mobile</p>
+
+<div class="tabs-grid">
+  <div class="tab-card t1">
+    <div class="tab-num">TAB 01</div>
+    <span class="tab-emoji">🏆</span>
+    <div class="tab-name">Dashboard</div>
+    <div class="tab-desc">Live portfolio overview. Auto-updates every time you log a flip.</div>
+    <div class="tab-features">
+      <div class="tf">Total invested, revenue, net profit</div>
+      <div class="tf">Overall ROI % auto-calculated</div>
+      <div class="tf">Cards sold vs at grader counter</div>
+    </div>
+  </div>
+  <div class="tab-card t2">
+    <div class="tab-num">TAB 02</div>
+    <span class="tab-emoji">📋</span>
+    <div class="tab-name">Card Log</div>
+    <div class="tab-desc">22-column per-card ledger. The core of every flip, tracked.</div>
+    <div class="tab-features">
+      <div class="tf">Purchase price, grading cost, sale price</div>
+      <div class="tf">Platform fees auto-calculated</div>
+      <div class="tf">Net profit + ROI per card</div>
+      <div class="tf">eBay · Whatnot · COMC · Facebook</div>
+    </div>
+  </div>
+  <div class="tab-card t3">
+    <div class="tab-num">TAB 03</div>
+    <span class="tab-emoji">🎓</span>
+    <div class="tab-name">Grading Tracker</div>
+    <div class="tab-desc">Track every card at PSA, BGS, CGC, SGC — from submission to return.</div>
+    <div class="tab-features">
+      <div class="tf">Submission date, service level, cost</div>
+      <div class="tf">Expected return date</div>
+      <div class="tf">Grade received, post-grade value</div>
+    </div>
+  </div>
+  <div class="tab-card t4">
+    <div class="tab-num">TAB 04</div>
+    <span class="tab-emoji">📦</span>
+    <div class="tab-name">Pack Break Tracker</div>
+    <div class="tab-desc">No other card spreadsheet on Etsy has this.</div>
+    <div class="tab-features">
+      <div class="tf">Packs bought, cost, value pulled</div>
+      <div class="tf">Key hits logged</div>
+      <div class="tf">Net gain/loss + ROI auto-calculated</div>
+    </div>
+    <div class="new-badge">UNIQUE</div>
+  </div>
+  <div class="tab-card t5">
+    <div class="tab-num">TAB 05</div>
+    <span class="tab-emoji">📊</span>
+    <div class="tab-name">Monthly P&L</div>
+    <div class="tab-desc">12-month profit & loss summary. Year total auto-calculated.</div>
+    <div class="tab-features">
+      <div class="tf">Month-by-month revenue + profit</div>
+      <div class="tf">Year total row with formulas</div>
+      <div class="tf">Spot your best and worst months</div>
+    </div>
+  </div>
+  <div class="tab-card t6">
+    <div class="tab-num">TAB 06</div>
+    <span class="tab-emoji">🔧</span>
+    <div class="tab-name">ToolStack Hub</div>
+    <div class="tab-desc">6 free calculator links — every tool a card flipper needs, one click away.</div>
+    <div class="tab-features">
+      <div class="tf">Card Flip ROI · eBay Fees · Pack Break EV</div>
+      <div class="tf">Grading Profit · Grader Comparison</div>
+      <div class="tf">Whatnot Seller Fees — all FREE</div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-strip">
+  <div class="bs-item">
+    <span class="bs-num">6</span>
+    <span class="bs-label">Tracker Tabs</span>
+  </div>
+  <div class="bs-div"></div>
+  <div class="bs-item">
+    <span class="bs-num">22</span>
+    <span class="bs-label">Data Columns</span>
+  </div>
+  <div class="bs-div"></div>
+  <div class="bs-item">
+    <span class="bs-num">4</span>
+    <span class="bs-label">Sports + Games</span>
+  </div>
+  <div class="bs-div"></div>
+  <div class="bs-item">
+    <span class="bs-num">4</span>
+    <span class="bs-label">Grading Companies</span>
+  </div>
+  <div class="bs-div"></div>
+  <div class="bs-item">
+    <span class="bs-num">6</span>
+    <span class="bs-label">Free Tool Links</span>
+  </div>
+  <div class="bs-div"></div>
+  <div class="bs-item">
+    <span class="bs-num">£7.99</span>
+    <span class="bs-label">One-time price</span>
+  </div>
+</div>
+
+</body>
+</html>

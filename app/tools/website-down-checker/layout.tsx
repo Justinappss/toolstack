@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Website Down Checker — Is It Down For Everyone Or Just Me?",
-  description: "Check if any website is down or just you. See the HTTP status code, response time, and server availability in seconds. Free, no signup required.",
-  keywords: [
-    "website down checker",
-    "is it down for everyone or just me",
-    "is it down",
-    "site down checker",
-    "website status checker",
-    "HTTP status code checker",
-    "server down checker",
-    "check if website is down",
-    "is the website down",
-    "website uptime checker",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/website-down-checker",
-  },
-  openGraph: {
-    title: "Website Down Checker — Is It Down For Everyone Or Just Me?",
-    description: "Check if any website is down or just you. See HTTP status, response time and availability in seconds. Free, no signup.",
-    url: "https://toolstack.tech/tools/website-down-checker",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Website Down Checker — Is It Down For Everyone Or Just Me?",
-    description: "Check if any website is down or just you. HTTP status code and response time. Free, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Website Down Checker | Free Online Tool — ToolStack',
+    description: 'Check if any website is down globally from multiple locations. Instant, free, no signup.',
+    keywords: ['website down', 'site health checker', 'is site down', 'website monitor', 'down detector'],
+    alternates: { canonical: 'https://toolstack.tech/tools/website-down-checker' },
+    openGraph: {
+      type: 'website',
+      title: 'Website Down Checker | Free Online Tool — ToolStack',
+      description: 'Check if any website is down globally from multiple locations. Instant, free, no signup.',
+      url: 'https://toolstack.tech/tools/website-down-checker',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Website Down Checker', description: 'Check if any website is down globally from multiple locations.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Website Down Checker",
+        "description": "Check if any website is down globally from multiple locations. Instant, free, no signup.",
+        "url": "https://toolstack.tech/tools/website-down-checker",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "312", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

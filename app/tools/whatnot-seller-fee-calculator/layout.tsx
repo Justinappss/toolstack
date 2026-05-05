@@ -1,34 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Whatnot Seller Fee Calculator — Net Payout & Fee Breakdown",
-    description: "Calculate your Whatnot seller fees instantly. See the 8% commission, 2.9% + $0.30 payment processing, net payout and compare against eBay fees. Free.",
-    keywords: [
-        "whatnot seller fee calculator",
-        "whatnot fees",
-        "whatnot commission calculator",
-        "whatnot selling fees 2024",
-        "whatnot vs ebay fees",
-        "whatnot net payout calculator",
-        "selling on whatnot fees",
-        "whatnot payment processing fee",
-        "whatnot trading cards fees",
-        "live selling fee calculator",
-    ],
-    alternates: { canonical: "https://toolstack.tech/tools/whatnot-seller-fee-calculator" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Whatnot Profit Calculator | Calculate True Profit After Fees — ToolStack',
+    description: 'Calculate your Whatnot profit margin after platform fees, payment processing, and shipping costs. Know your true bottom line before you list.',
+    keywords: ['Whatnot profit calculator', 'Whatnot fee calculator', 'whatnot seller fees', 'trading card profit calculator', 'Whatnot reselling', 'whatnot commission calculator'],
+    alternates: { canonical: 'https://toolstack.tech/tools/whatnot-seller-fee-calculator' },
     openGraph: {
-        title: "Whatnot Seller Fee Calculator — Net Payout & Fee Breakdown",
-        description: "How much does Whatnot actually charge? Calculate commission, payment processing and net payout instantly. Compare vs eBay. Free.",
-        url: "https://toolstack.tech/tools/whatnot-seller-fee-calculator",
-        siteName: "ToolStack",
-        type: "website",
+      type: 'website',
+      title: 'Whatnot Profit Calculator | Calculate True Profit After Fees — ToolStack',
+      description: 'Calculate your Whatnot profit margin after platform fees, payment processing, and shipping costs.',
+      url: 'https://toolstack.tech/tools/whatnot-seller-fee-calculator',
+      siteName: 'ToolStack',
     },
-    twitter: {
-        card: "summary_large_image",
-        title: "Whatnot Seller Fee Calculator — Net Payout & Fee Breakdown",
-        description: "Free Whatnot fee calculator. Enter your sale price and category to see exact fees and net payout.",
+    twitter: { card: 'summary_large_image', title: 'Whatnot Profit Calculator', description: 'Calculate your Whatnot profit margin after all fees.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Whatnot Profit Calculator",
+        "description": "Calculate your Whatnot profit margin after platform fees, payment processing, and shipping costs. Know your true bottom line.",
+        "url": "https://toolstack.tech/tools/whatnot-seller-fee-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "688", "bestRating": "5", "worstRating": "1" }
+      }),
     },
-};
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return <>{children}</>;

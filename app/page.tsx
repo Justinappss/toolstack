@@ -5,11 +5,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
-    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
+    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
     alternates: { canonical: "https://toolstack.tech" },
     openGraph: {
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
+        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         url: "https://toolstack.tech",
         siteName: "ToolStack",
         type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     twitter: { 
         card: "summary_large_image",
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls, no forced sign-ups, and zero ads. Experience the frictionless arsenal.",
+        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         images: ["https://toolstack.tech/og-image.png"],
     },
 };
@@ -1324,6 +1324,57 @@ export default function Home() {
                             </div>
                         </Link>
                     ))}
+                </div>
+            </section>
+
+            {/* ─── THE TOOLSTACK PHILOSOPHY (E-E-A-T AUTHORITATIVE TEXT) ── */}
+            <section style={{ padding: "0 24px 110px", maxWidth: 1280, margin: "0 auto" }}>
+                <div style={{
+                    padding: "48px 56px",
+                    borderRadius: 32,
+                    background: "rgba(255,255,255,0.02)",
+                    border: "1px solid rgba(255,255,255,0.05)",
+                    position: "relative",
+                    overflow: "hidden"
+                }}>
+                    <div style={{ position: "absolute", top: -100, right: -100, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(99,102,241,0.05) 0%, transparent 70%)", filter: "blur(40px)", pointerEvents: "none" }} />
+                    <div style={{ position: "absolute", bottom: -100, left: -100, width: 300, height: 300, borderRadius: "50%", background: "radial-gradient(circle, rgba(236,72,153,0.03) 0%, transparent 70%)", filter: "blur(40px)", pointerEvents: "none" }} />
+                    
+                    <div style={{ display: "inline-flex", alignItems: "center", gap: 7, marginBottom: 24 }}>
+                        <div style={{ width: 28, height: 2, background: "linear-gradient(90deg, #10b981, #34d399)", borderRadius: 2 }} />
+                        <span style={{ fontSize: 12, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", color: "#34d399" }}>Our Philosophy</span>
+                    </div>
+                    
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 64 }}>
+                        <div>
+                            <h2 style={{ fontSize: "clamp(32px, 4vw, 42px)", fontWeight: 900, color: "white", letterSpacing: "-0.03em", lineHeight: 1.1, marginBottom: 24 }}>
+                                Building the definitive utility ecosystem for the <span style={{ color: "#34d399" }}>professional web.</span>
+                            </h2>
+                            <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 24 }}>
+                                The internet is saturated with bloated software, aggressive paywalls, and mandatory account creations for the simplest of tasks. ToolStack was built by an independent engineering team to solve a fundamental problem: professional workflows shouldn't be interrupted by friction.
+                            </p>
+                            <div style={{ display: "flex", gap: 16, marginTop: 32 }}>
+                                <Link href="/about" style={{ fontSize: 14, fontWeight: 700, color: "white", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: 2 }}>Read our full story →</Link>
+                                <Link href="/privacy" style={{ fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.5)", textDecoration: "none", borderBottom: "1px solid transparent" }}>Privacy Policy</Link>
+                            </div>
+                        </div>
+                        
+                        <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+                            <div>
+                                <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 12 }}>Uncompromising Technical Standards</h3>
+                                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, margin: 0 }}>
+                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 57+ live tools.
+                                </p>
+                            </div>
+                            <div style={{ width: 40, height: 1, background: "rgba(255,255,255,0.1)" }} />
+                            <div>
+                                <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 12 }}>Privacy-First Architecture</h3>
+                                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, margin: 0 }}>
+                                    Trust is our core currency. Because we do not require user accounts, we do not log, store, or sell personal data. Text entered into our local utilities (like our JSON Formatters or Word Counters) never leaves your browser.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

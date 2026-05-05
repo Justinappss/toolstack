@@ -203,7 +203,7 @@ export function ThumbnailAnimation({ href, accent, accentRgb }: { href: string; 
     const props = { accent, accentRgb };
 
     // SCRAMBLE
-    if (slug === "password-generator") return <ScrambleOverlay {...props} label="SECURE" />;
+    if (slug === "password-generator") return null;
     if (slug === "uuid-generator") return <ScrambleOverlay {...props} length={20} label="UUID" />;
     if (slug === "base64-encoder-decoder") return <ScrambleOverlay {...props} length={18} label="BASE64" />;
     if (slug === "jwt-decoder") return <ScrambleOverlay {...props} length={16} label="JWT" />;
