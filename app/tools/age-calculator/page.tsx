@@ -578,6 +578,25 @@ export default function AgeCalculator() {
                     </div>
                 </section>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Age Calculator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Whether you need your exact age for an official form, want to know how many days you've been alive, or just got curious about how old you'll be on your next birthday — our Age Calculator gives you the answer in seconds. Enter any date of birth, and it calculates your age down to the day, including the sometimes-tricky leap year math. No signup, no app to download, works on any device.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter your date of birth and the calculator instantly returns your exact age in years, months, and days — plus the total number of days you've been alive. It handles leap years automatically and can also calculate the exact age difference between any two people. Advanced mode lets you set a future or past date to see exactly how old someone will be (or was) on that specific date.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include filling out official government or medical forms that require exact age, calculating eligibility criteria for driving, voting, retirement or insurance, finding out how many days old a baby is for milestone photos, and running age difference calculations between partners, friends, or family members.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most age calculators online either round to the nearest year or give you a vague answer like "29 years old." Ours gives you the precision version: 29 years, 7 months, and 14 days — plus the total day count. It runs entirely in your browser, no data is sent anywhere, and there's no limit on how many calculations you can run.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="age-calculator" />
                 
             </div>

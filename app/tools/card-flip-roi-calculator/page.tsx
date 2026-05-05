@@ -445,6 +445,25 @@ export default function CardFlipROIPage() {
         </section>
 
         <div style={{ marginTop: 48 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Card Flip ROI Calculator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Card flipping can be incredibly profitable — but only if you know your real numbers. The difference between a card that looks like a great flip and one that actually nets you money comes down to accounting for grading fees, eBay final value fees, PayPal fees, shipping costs, and the market value of the slab you're selling into. Our Card Flip ROI Calculator lays out every cost line by line so you know your true net profit and ROI percentage before you commit.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Enter your purchase price, the PSA/BGS/SGC grade you're targeting, grading fees, your selling price on eBay, and shipping costs. The calculator runs a full breakdown: gross profit, grading investment, eBay fees, payment processing, shipping, and your net profit. It also calculates your actual ROI percentage and break-even selling price — the minimum price you'd need to hit to not lose money on the flip.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include deciding whether a raw card purchase is worth the grading investment, comparing two flip candidates to decide which one has better ROI, setting minimum accepted offers on eBay by calculating your true break-even, and running "what if" scenarios: what if the card grades higher or lower?
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most flippers track profits in spreadsheets that get stale or miss hidden costs. Our calculator is always current with the latest eBay fee structure and PSA/BGS/SGC pricing, and it's designed specifically for the card flipping workflow — from raw purchase to slabbed sale. Free, instant, no signup required, runs entirely in your browser.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="card-flip-roi-calculator" />
         </div>
       </div>

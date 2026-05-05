@@ -707,6 +707,25 @@ export default function ColorPaletteGenerator() {
                     </div>
                 </section>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Color Palette Generator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Building a coherent color palette from scratch is harder than it looks — you need colors that work together harmoniously, contrast appropriately for accessibility, and cover the full range of UI use cases from primary buttons to subtle backgrounds. Our Color Palette Generator takes any base color and generates complete, production-ready palettes across all major color harmony rules.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Pick a base color using the color picker or enter a hex code. The generator creates a full palette using your chosen harmony rule: complementary, analogous, triadic, split-complementary, tetradic, or monochromatic. Each palette includes primary, secondary, accent, background, surface, text, success, warning, and error shades across a 10-step scale.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include building a design system color palette for a new product or brand, finding accessible text-on-background combinations, generating dark mode color variants from an existing light mode palette, creating brand color guidelines for a client presentation, and finding accent colors that work with an existing brand color.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most color palette tools just give you 5 hex codes with no context about how to use them. Ours generates 10 shades per role — from the lightest background to the darkest text — so you have a complete, scalable system. Export in CSS variables, Tailwind config, or JSON so you can drop it straight into your project. Free, unlimited palettes, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="color-palette-generator" />
                 
             </div>

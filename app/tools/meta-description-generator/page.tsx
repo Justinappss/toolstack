@@ -788,6 +788,25 @@ export default function MetaDescriptionGenerator() {
                 </section>
 
                 {/* More Tools + Banner */}
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Meta Description Generator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      The meta description is the 155-character blurb that appears under your page title in Google search results. It won't directly affect your ranking — but it is literally the ad copy for your page. A great meta description gets clicks. Our Meta Description Generator uses GPT-4o to write compelling meta descriptions tuned for click-through rate, and shows you exactly how they'll look in a Google SERP.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter your page title, primary keyword, and a brief description of your page content. GPT-4o generates multiple meta description options, each optimized for a different angle: a hook, a benefit-focused version, a question-based version, and an urgency version. A live Google SERP simulator shows exactly how each one will appear on desktop and mobile.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include generating meta descriptions for new blog posts at scale, rewriting thin or missing meta descriptions on existing pages, A/B testing meta descriptions by generating multiple options, optimizing homepage descriptions for brand and category pages, and checking that descriptions stay within Google's truncation limit.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most SEO tools generate meta descriptions with templates that sound robotic. Ours uses GPT-4o to write descriptions that read like actual marketing copy — with hooks, CTAs, and emotional triggers. The live SERP preview means you're not guessing whether your description will get cut off. Free, unlimited generations, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="meta-description-generator" />
                 
 

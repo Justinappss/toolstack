@@ -474,6 +474,25 @@ export default function JwtDecoder() {
                     </div>
                 </section>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>JWT Decoder: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      JSON Web Tokens (JWTs) are everywhere in modern authentication — they power login sessions, API authorization, and microservices communication. When something goes wrong with authentication, being able to quickly inspect what's inside a JWT is invaluable. Our JWT Decoder decodes any JWT instantly in your browser, shows all three segments decoded, and verifies signatures.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Paste any JWT into the input field and it instantly decodes all three sections: the header (algorithm and token type), the payload (claims, user data, expiration), and the signature. If you have the signing secret or public key, enter it to verify the signature. Expiration times are shown in human-readable format with a clear expired or valid indicator.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include debugging authentication failures by inspecting token claims, checking token expiration without writing code, verifying that the correct user ID is in a token's payload during development, inspecting third-party JWTs, and auditing token contents before trusting them in a new integration.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most JWT decoder tools decode the token but don't verify the signature. Ours verifies HMAC signatures (HS256, HS384, HS512) when you provide the secret, and RSA signatures (RS256, RS384, RS512) when you provide the public key. Everything runs locally — your JWT is never sent to any server. Free, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="jwt-decoder" />
                 
             </div>

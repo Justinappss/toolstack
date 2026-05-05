@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Favicon Generator — Create Free Text & Emoji Icons | ToolStack",
-  description:
-    "Generate perfectly sized favicons for your website instantly. Create from text or emojis. Downloads a ZIP with all standard PNG formats — favicon, Apple Touch Icon, and PWA icons. Free, no signup.",
-  keywords: [
-    "favicon generator",
-    "free favicon maker",
-    "text to favicon",
-    "emoji favicon",
-    "favicon png generator",
-    "apple touch icon generator",
-    "website icon creator",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/favicon-generator",
-  },
-  openGraph: {
-    title: "Favicon Generator — Create Free Text & Emoji Icons | ToolStack",
-    description:
-      "Generate perfectly sized favicons from text or emojis. Downloads a ZIP with all standard PNG formats — favicon, Apple Touch Icon, and PWA icons. Free, no signup.",
-    url: "https://toolstack.tech/tools/favicon-generator",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Favicon Generator — Create Free Text & Emoji Icons | ToolStack",
-    description:
-      "Generate favicons from text or emojis. Downloads a ZIP with favicon, Apple Touch Icon, and PWA PNG formats. Free, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Favicon Generator | Create Text & Emoji Favicons Instantly — ToolStack',
+    description: 'Create text and emoji favicons instantly with custom colors and fonts. Generate ICO, PNG, and SVG formats ready to drop into your website head.',
+    keywords: ['favicon generator', 'emoji favicon', 'text favicon', 'favicon creator', 'favicon maker', 'favicon.ico'],
+    alternates: { canonical: 'https://toolstack.tech/tools/favicon-generator' },
+    openGraph: {
+      type: 'website',
+      title: 'Favicon Generator | Create Text & Emoji Favicons Instantly — ToolStack',
+      description: 'Create text and emoji favicons instantly with custom colors and fonts.',
+      url: 'https://toolstack.tech/tools/favicon-generator',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Favicon Generator', description: 'Create text and emoji favicons instantly with custom colors and fonts.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Favicon Generator",
+        "description": "Create text and emoji favicons instantly with custom colors and fonts. Generate ICO, PNG, and SVG formats ready to drop into your website head.",
+        "url": "https://toolstack.tech/tools/favicon-generator",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "623", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

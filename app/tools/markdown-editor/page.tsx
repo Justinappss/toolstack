@@ -390,6 +390,25 @@ export default function MarkdownEditor() {
             </div>
           </section>
 
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Markdown Editor: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Markdown is the most practical writing format for the web — it lets you write structured content like headings, lists, code blocks, and links without getting bogged down in HTML tags. But you need a preview to actually see what it renders to. Our Markdown Editor gives you a live side-by-side view: write Markdown on the left, see the rendered HTML on the right, updated in real-time as you type.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Write standard Markdown in the left panel — headings, bold, italic, links, images, code blocks, blockquotes, tables, and lists. The right panel renders the HTML output in real-time. Toggle between dark and light preview themes and copy the raw HTML with one click. The tool supports GFM (GitHub Flavored Markdown) including task lists, tables, strikethrough, and autolinks.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include writing README files for GitHub repositories, drafting blog posts for a CMS, creating documentation pages for open source projects, writing technical specifications, drafting newsletter content for email platforms, and preparing content for static site generators like Jekyll, Hugo, or Astro.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most Markdown editors either don't have a live preview or have a preview that lags behind your typing. Ours updates in real-time on every keystroke — no lag, no button to press. The split view makes it immediately clear what your Markdown will look like as HTML. Free, no signup, exports raw HTML ready to paste anywhere.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="markdown-editor" />
           
         </div>

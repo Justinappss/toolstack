@@ -513,6 +513,25 @@ export default function PaniniStickerCalculator() {
                     </Link>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Panini Sticker Calculator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Completing a Panini sticker album is a probability problem disguised as a hobby. The first 80% of stickers come quickly, but the last 20% require exponentially more packs because of duplicates. Our Panini Sticker Calculator uses the coupon collector's problem formula to tell you exactly how many packs you'll need on average and what it'll cost — before you spend a penny.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter the total stickers in the album, stickers per pack, price per pack, and how many stickers you already have. The calculator uses probability math to estimate total packs needed, total cost to complete, expected duplicates, and the diminishing returns curve as you approach completion. Factor in trading with friends to see how much swapping saves you.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include planning your World Cup or Euro album budget before buying packs, deciding whether to buy the last 50 stickers individually or keep buying packs, calculating how many friends you need to trade with to complete the album efficiently, and comparing the economics of buying packs vs. buying singles on eBay for the final stretch.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most people underestimate how many packs it takes to finish a Panini album — the math says a 638-sticker album typically requires 900+ packs without trading. Our calculator shows you the real numbers so you can budget accordingly or know when to switch to buying singles. Free, instant, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="panini-sticker-calculator" />
             </div>
         </div>

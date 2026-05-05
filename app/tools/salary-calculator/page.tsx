@@ -407,6 +407,25 @@ export default function SalaryCalculator() {
         </section>
 
         <div style={{ marginTop: 56 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Salary Calculator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Job offers come in different formats — one company quotes an annual salary, another quotes hourly, a freelance gig pays weekly. Our Salary Calculator converts between hourly, daily, weekly, bi-weekly, monthly, and annual salary instantly, and estimates your take-home pay after taxes so you can compare offers on an apples-to-apples basis.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Enter your salary in any format — hourly rate, weekly pay, monthly salary, or annual compensation. The calculator instantly converts to all other formats. Set your hours per week, weeks per year, and estimated tax rate to see your gross and net (take-home) pay in every period. Compare two salary offers side by side to see which is actually better after adjusting for hours and tax.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include converting an hourly rate to an annual salary for a job application, comparing a salaried position vs. a freelance hourly rate, estimating take-home pay before accepting a job offer, calculating the real hourly rate of a salaried position that requires overtime, and figuring out how much to charge hourly as a freelancer to match a target annual income.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most salary calculators only convert annual to hourly. Ours converts between all six pay periods, includes tax estimation for take-home pay, and lets you compare two offers side by side. It's the most complete free salary calculator available. No signup, instant results, works on any device.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="salary-calculator" />
         </div>
         <div style={{ marginTop: 24 }}>

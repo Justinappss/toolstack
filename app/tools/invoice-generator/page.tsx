@@ -674,6 +674,25 @@ export default function InvoiceGeneratorPage() {
         </div>
 
         <div style={{ marginTop: 64 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Invoice Generator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Every freelancer and small business needs to send invoices — but paying $10-30/month for invoicing software when you only send a few invoices a month doesn't make sense. Our Invoice Generator creates fully professional, customizable PDF invoices in your browser, with no watermarks, no signup, and no subscription. Add your logo, customize colors, add line items, tax, discounts, and payment terms.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Enter your business name, logo, address, and contact details. Add your client's details, line items with descriptions and prices, tax rate, any discounts, and payment terms. The preview updates in real-time. Download as a print-ready PDF or send directly via email link. Your details are saved in the browser so you don't have to re-enter them.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include creating invoices for freelance clients without paying for accounting software, generating pro forma invoices before work begins, sending refund receipts or credit memos, generating quotes that can be converted to invoices later, and producing receipts for one-time purchases without a POS system.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most free invoice generators either watermark the PDF, require account creation, or lock features behind a paywall. Ours is genuinely free and fully featured: no watermark, no signup, your branding on every invoice, tax calculations, discounts, multiple currencies, and payment terms. Free, unlimited invoices.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="invoice-generator" />
         </div>
         

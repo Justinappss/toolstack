@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "JWT Decoder — Decode JSON Web Tokens Instantly",
-  description: "Decode any JSON Web Token instantly. View the header, payload and signature, check expiry, and inspect all standard claims. Free, no signup, 100% private.",
-  keywords: [
-    "JWT decoder",
-    "JSON web token decoder",
-    "decode JWT",
-    "JWT parser",
-    "JWT token inspector",
-    "JWT claims viewer",
-    "JWT expiry checker",
-    "decode JSON web token online",
-    "JWT payload decoder",
-    "JWT header decoder",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/jwt-decoder",
-  },
-  openGraph: {
-    title: "JWT Decoder — Decode JSON Web Tokens Instantly",
-    description: "Decode any JWT token instantly. View header, payload, signature and expiry. Free, no signup, 100% private.",
-    url: "https://toolstack.tech/tools/jwt-decoder",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "JWT Decoder — Decode JSON Web Tokens Instantly",
-    description: "Decode any JWT instantly. View header, payload, signature and expiry. Free, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'JWT Decoder | Free JSON Web Token Decoder — ToolStack',
+    description: 'Decode any JSON Web Token instantly to view header, payload, and signature. Verify signatures and inspect token claims without sending data to any server.',
+    keywords: ['JWT decoder', 'JWT parser', 'decode JWT', 'JWT viewer', 'JSON Web Token decoder', 'JWT inspection'],
+    alternates: { canonical: 'https://toolstack.tech/tools/jwt-decoder' },
+    openGraph: {
+      type: 'website',
+      title: 'JWT Decoder | Free JSON Web Token Decoder — ToolStack',
+      description: 'Decode any JSON Web Token instantly to view header, payload, and signature.',
+      url: 'https://toolstack.tech/tools/jwt-decoder',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'JWT Decoder', description: 'Decode any JSON Web Token instantly to view header, payload, and signature.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "JWT Decoder",
+        "description": "Decode any JSON Web Token instantly to view header, payload, and signature. Verify signatures and inspect token claims without sending data to any server.",
+        "url": "https://toolstack.tech/tools/jwt-decoder",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "876", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

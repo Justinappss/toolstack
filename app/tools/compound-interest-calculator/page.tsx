@@ -365,6 +365,25 @@ export default function CompoundInterestCalculator() {
                     </div>
                 </section>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Compound Interest Calculator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Albert Einstein allegedly called compound interest the eighth wonder of the world — and anyone who's looked at a retirement account balance 30 years after starting has probably felt that. Compound interest is the mechanism: your returns generate their own returns, snowballing over time. Our Compound Interest Calculator shows you exactly how your money grows with contributions, different compounding frequencies, and realistic annual rates.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter your starting balance, monthly or annual contribution, expected annual return rate, time horizon in years, and compounding frequency. The calculator shows your final balance, total contributions, total interest earned, and a year-by-year breakdown showing how the balance grows each year. Toggle between nominal and inflation-adjusted figures to see your real purchasing power.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include calculating how much you need to save monthly to hit a retirement goal, seeing the real impact of starting to invest at 25 vs. 35 vs. 45, comparing the effect of different compounding frequencies on the same initial balance, and planning for large financial goals like a house down payment or college fund.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most compound interest calculators show you the final number without showing you how you got there. Ours gives you a full year-by-year breakdown so you can see exactly how much of your growth came from your contributions vs. compound returns — which is the insight that actually motivates people to keep saving. Free, unlimited calculations, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="compound-interest-calculator" />
                 
             </div>

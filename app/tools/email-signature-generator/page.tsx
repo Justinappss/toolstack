@@ -504,6 +504,25 @@ export default function EmailSignatureGenerator() {
         </section>
 
         {/* ── MoreTools + Banner ────────────────────────────────────── */}
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Email Signature Generator: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Your email signature is a small thing that gets seen hundreds of times a year by clients, colleagues, and prospects. A professional one reinforces your brand and makes you look credible. Our Email Signature Generator creates polished, HTML email-compatible signatures with your name, title, company, phone, website, and social icons — ready to paste into Gmail, Outlook, or Apple Mail.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Fill in your details in the form: name, job title, company, phone, email, website, and social profiles. Choose from a range of professional layout templates. The generator produces a properly formatted HTML email signature that's fully compatible with Gmail, Outlook, Apple Mail, and most other email clients. Copy with one click as HTML or rich text.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include creating a consistent professional signature for all new employees at a small business, updating an outdated email signature with a new company logo and social links, generating a signature for a freelancer that includes their portfolio and LinkedIn, and building a signature template for a team with variable contact details.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most email signature generators either produce plain-text signatures that look unprofessional, or they require HTML knowledge to clean up the output. Ours generates clean, table-based HTML that's compatible with every major email client — no technical knowledge required, no formatting artifacts, no giant spaces between elements. Free, unlimited signatures, no signup required.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="email-signature-generator" />
         
       </div>

@@ -481,6 +481,25 @@ export default function BlogTitleGeneratorPage() {
         </div>
 
         <div style={{ marginTop: 48 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Blog Title Generator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Your blog post title is the most important element of your article — it's what gets clicked in search results, shared on social media, and indexed by Google. A great title can 10x your traffic. A mediocre one wastes a perfectly good article. Our Blog Title Generator uses AI to generate dozens of click-worthy, SEO-optimised headlines for any topic or keyword, so you can pick the one that actually gets clicks.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Enter your blog post topic or target keyword, select your preferred tone (professional, casual, provocative, how-to, listicle, etc.), and set how many titles you want. The AI generates a batch of headlines, each using a different headline formula — numbered lists, question formats, power words, and emotional triggers. Preview each against a simulated Google SERP to see how it looks in real search results before you commit.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include breaking through writer's block when you can't think of a good headline, A/B testing multiple headline options for a newsletter subject line, generating headlines that target specific keywords for SEO without sounding robotic, creating social media post headlines that drive clicks from LinkedIn or X, and generating article ideas by running keyword clusters through the generator.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most headline generators either give you generic templates or require a paid subscription. Ours generates genuinely creative, varied headlines using AI — not just filling in blanks in a template. You can generate unlimited headlines, preview them in a SERP simulator, and pick the best one without creating an account or paying a dime.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="blog-title-generator" />
         </div>
 

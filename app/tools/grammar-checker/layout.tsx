@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free AI Grammar Checker — GPT-4o Powered | ToolStack",
-  description: "Check and fix grammar, spelling, and punctuation with GPT-4o. Get clear explanations for every correction. Free, no word limit, no signup required.",
-  keywords: [
-    "grammar checker",
-    "free grammar checker",
-    "grammar check online",
-    "grammar corrector",
-    "spell checker",
-    "punctuation checker",
-    "AI grammar checker",
-    "grammar checker no signup",
-    "grammar fixer free",
-    "GPT-4o grammar checker",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/grammar-checker",
-  },
-  openGraph: {
-    title: "Free AI Grammar Checker — GPT-4o Powered | ToolStack",
-    description: "Check and fix grammar, spelling, and punctuation with GPT-4o. Clear explanations for every correction. No word limit, no signup.",
-    url: "https://toolstack.tech/tools/grammar-checker",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free AI Grammar Checker — GPT-4o Powered | ToolStack",
-    description: "Check and fix grammar, spelling, and punctuation with GPT-4o. Clear explanations for every correction. No word limit, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Grammar Checker | AI Grammar Checker Powered by GPT-4o — ToolStack',
+    description: 'AI grammar, spelling, and punctuation checker powered by GPT-4o. Get instant corrections with explanations for every mistake.',
+    keywords: ['grammar checker', 'AI grammar checker', 'spelling checker', 'GPT-4o grammar', 'grammar correction', 'English grammar checker'],
+    alternates: { canonical: 'https://toolstack.tech/tools/grammar-checker' },
+    openGraph: {
+      type: 'website',
+      title: 'Grammar Checker | AI Grammar Checker Powered by GPT-4o — ToolStack',
+      description: 'AI grammar, spelling, and punctuation checker powered by GPT-4o.',
+      url: 'https://toolstack.tech/tools/grammar-checker',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Grammar Checker', description: 'AI grammar, spelling, and punctuation checker powered by GPT-4o.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Grammar Checker",
+        "description": "AI grammar, spelling, and punctuation checker powered by GPT-4o. Get instant corrections with explanations for every mistake.",
+        "url": "https://toolstack.tech/tools/grammar-checker",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "1423", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

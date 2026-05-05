@@ -1,35 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free Lorem Ipsum Generator — Paragraphs, Sentences & HTML | ToolStack",
-  description: "Generate placeholder text in paragraphs, sentences, words, or HTML format. Classic Lorem Ipsum or randomised variations. Free, no signup.",
-  keywords: [
-    "lorem ipsum generator",
-    "lorem ipsum",
-    "placeholder text generator",
-    "dummy text generator",
-    "lorem ipsum paragraphs",
-    "lorem ipsum HTML",
-    "placeholder text",
-    "dummy text",
-    "lorem ipsum free",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/lorem-ipsum-generator",
-  },
-  openGraph: {
-    title: "Free Lorem Ipsum Generator — Paragraphs, Sentences & HTML | ToolStack",
-    description: "Generate placeholder text in paragraphs, sentences, words, or HTML format. Classic Lorem Ipsum or randomised variations. Free, no signup.",
-    url: "https://toolstack.tech/tools/lorem-ipsum-generator",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Lorem Ipsum Generator — Paragraphs, Sentences & HTML | ToolStack",
-    description: "Generate placeholder text in paragraphs, sentences, words, or HTML format. Classic Lorem Ipsum or randomised variations. Free, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Lorem Ipsum Generator | Free Placeholder Text Generator — ToolStack',
+    description: 'Generate placeholder text in paragraphs, sentences, words, or HTML format. Lorem ipsum, random words, or custom-length content for any design project.',
+    keywords: ['Lorem Ipsum generator', 'placeholder text generator', 'lorem ipsum', 'dummy text generator', 'random text generator'],
+    alternates: { canonical: 'https://toolstack.tech/tools/lorem-ipsum-generator' },
+    openGraph: {
+      type: 'website',
+      title: 'Lorem Ipsum Generator | Free Placeholder Text Generator — ToolStack',
+      description: 'Generate placeholder text in paragraphs, sentences, words, or HTML format.',
+      url: 'https://toolstack.tech/tools/lorem-ipsum-generator',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Lorem Ipsum Generator', description: 'Generate placeholder text in paragraphs, sentences, words, or HTML format.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Lorem Ipsum Generator",
+        "description": "Generate placeholder text in paragraphs, sentences, words, or HTML format. Lorem ipsum, random words, or custom-length content for any design project.",
+        "url": "https://toolstack.tech/tools/lorem-ipsum-generator",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "1678", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

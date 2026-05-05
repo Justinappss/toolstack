@@ -571,6 +571,25 @@ export default function GradingComparisonPage() {
         </section>
 
         <div style={{ marginTop: 48 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Grading Company Comparison: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Choosing a grading company is one of the most consequential decisions in card investing — PSA, BGS, SGC, and CGC each have different fee structures, turnaround times, grading standards, and market reputations. A 9.5 in BGS doesn't mean the same thing as a 9.5 in PSA. Our Grading Company Comparison tool puts all four major graders side by side so you can make the most profitable decision.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Enter your card's estimated raw value and the grade you're targeting. Select all four grading companies and the service level you want. The tool compares submission fees, estimated turnaround time, the resale premium for the target grade vs. raw, and calculates your net profit and ROI for each company.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include deciding between PSA and BGS for a vintage sports card submission, comparing economy vs. regular vs. express submission economics, understanding the resale premium difference between PSA 10 and BGS 9.5 for a specific card, and planning bulk submissions across multiple cards of mixed value.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most graders' websites show their own fees in isolation. This tool shows them all together with your specific card's economics factored in — so you're comparing the actual ROI of each submission, not just the fee. Free, always current with latest fee schedules, no signup required.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="grading-company-comparison" />
         </div>
       </div>

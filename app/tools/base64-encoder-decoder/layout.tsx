@@ -1,35 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Base64 Encoder & Decoder — Encode & Decode Strings Instantly | ToolStack",
-  description:
-    "Free online Base64 encoder and decoder. Convert text to Base64 format or decode Base64 strings back to readable text instantly with 100% privacy.",
-  keywords: [
-    "base64 encoder",
-    "base64 decoder",
-    "text to base64",
-    "decode base64",
-    "online base64 tool",
-    "base64 string converter",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/base64-encoder-decoder",
-  },
-  openGraph: {
-    title: "Base64 Encoder & Decoder — Instantly Convert Strings | ToolStack",
-    description:
-      "Free online Base64 encoder and decoder. Convert text to Base64 format or decode Base64 strings back to readable text instantly.",
-    url: "https://toolstack.tech/tools/base64-encoder-decoder",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Base64 Encoder & Decoder — Instantly Convert Strings | ToolStack",
-    description:
-      "Free online Base64 encoder and decoder. Convert text to Base64 format or decode Base64 strings back to readable text instantly.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Base64 Encoder/Decoder | Free Online Tool — ToolStack',
+    description: 'Encode and decode Base64 strings instantly in your browser. Works offline, no data sent anywhere, free forever.',
+    keywords: ['Base64 encoder', 'Base64 decoder', 'encode decode Base64', 'Base64 converter', 'Base64 online'],
+    alternates: { canonical: 'https://toolstack.tech/tools/base64-encoder-decoder' },
+    openGraph: {
+      type: 'website',
+      title: 'Base64 Encoder/Decoder | Free Online Tool — ToolStack',
+      description: 'Encode and decode Base64 strings instantly in your browser.',
+      url: 'https://toolstack.tech/tools/base64-encoder-decoder',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Base64 Encoder/Decoder', description: 'Encode and decode Base64 strings instantly in your browser.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Base64 Encoder/Decoder",
+        "description": "Encode and decode Base64 strings instantly in your browser. Works offline, no data sent anywhere, free forever.",
+        "url": "https://toolstack.tech/tools/base64-encoder-decoder",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "954", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

@@ -440,6 +440,25 @@ export default function LoremIpsumPage() {
           </div>
         </div>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Lorem Ipsum Generator: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Every designer and developer needs placeholder text — whether you're mocking up a website layout, testing a typography system, filling a CMS template, or preparing a client presentation before real content exists. Most placeholder text generators give you a fixed amount of lorem ipsum and call it done. Ours gives you complete control: generate by paragraph count, word count, byte size, or HTML structure.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Choose your output format: classic lorem ipsum, random English words, realistic English sentences, or Hemingway-style readable prose. Set the quantity by paragraphs, words, characters, or HTML tags. Toggle between plain text and HTML with proper paragraph tags, headings, lists, and blockquote elements for more realistic layout testing.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include filling wireframe layouts in Figma or Sketch before real content exists, testing typography scale and line height in CSS, creating sample blog post content for CMS theme development, populating a design system documentation page, and generating placeholder content for client mockups and presentations.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most lorem ipsum generators give you lorem ipsum and only lorem ipsum. Ours has four different content modes plus full HTML mode with headings, lists, and blockquotes. Generate by count, copy all or in parts, and regenerate instantly. Free, unlimited, no signup required.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="lorem-ipsum-generator" />
         
       </div>

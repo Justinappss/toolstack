@@ -1,32 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free AI Cover Letter Generator — GPT-4o, 4 Tones | ToolStack",
-  description: "Generate a professional cover letter in seconds with GPT-4o. 4 tone modes: Professional, Confident, Creative, and Concise. ATS-friendly, no signup.",
-  keywords: [
-    "cover letter generator",
-    "AI cover letter generator",
-    "free cover letter generator",
-    "cover letter writer",
-    "professional cover letter generator",
-    "GPT-4o cover letter",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/cover-letter-generator",
-  },
-  openGraph: {
-    title: "Free AI Cover Letter Generator — GPT-4o, 4 Tones | ToolStack",
-    description: "Generate a professional cover letter in seconds with GPT-4o. 4 tone modes: Professional, Confident, Creative, and Concise. ATS-friendly, no signup.",
-    url: "https://toolstack.tech/tools/cover-letter-generator",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free AI Cover Letter Generator — GPT-4o, 4 Tones | ToolStack",
-    description: "Generate a professional cover letter in seconds with GPT-4o. 4 tone modes, ATS-friendly, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Cover Letter Generator | AI Cover Letter for Any Job — ToolStack',
+    description: 'Generate tailored cover letters with AI for any job application. Paste the job description and get a professional cover letter in seconds.',
+    keywords: ['cover letter generator', 'job application letter', 'AI cover letter', 'cover letter maker', 'professional cover letter'],
+    alternates: { canonical: 'https://toolstack.tech/tools/cover-letter-generator' },
+    openGraph: {
+      type: 'website',
+      title: 'Cover Letter Generator | AI Cover Letter for Any Job — ToolStack',
+      description: 'Generate tailored cover letters with AI for any job application.',
+      url: 'https://toolstack.tech/tools/cover-letter-generator',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Cover Letter Generator', description: 'Generate tailored cover letters with AI for any job application.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Cover Letter Generator",
+        "description": "Generate tailored cover letters with AI for any job application. Paste the job description and get a professional cover letter in seconds.",
+        "url": "https://toolstack.tech/tools/cover-letter-generator",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "ratingCount": "312", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

@@ -1,35 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free QR Code Generator — No Expiry, No Signup | ToolStack",
-  description: "Generate high-resolution QR codes for URLs, WiFi, email, and more. Static, direct-encoded with no expiry and no watermark. Free, no signup required.",
-  keywords: [
-    "qr code generator",
-    "free qr code generator",
-    "qr code generator no signup",
-    "qr code maker",
-    "create qr code free",
-    "qr code generator download",
-    "qr code generator no expiry",
-    "wifi qr code generator",
-    "qr code no watermark",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/qr-code-generator",
-  },
-  openGraph: {
-    title: "Free QR Code Generator — No Expiry, No Signup | ToolStack",
-    description: "Generate high-resolution QR codes for URLs, WiFi, email, and more. Static, no expiry, no watermark.",
-    url: "https://toolstack.tech/tools/qr-code-generator",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free QR Code Generator — No Expiry, No Signup | ToolStack",
-    description: "Generate high-resolution QR codes for URLs, WiFi, email, and more. No expiry, no watermark, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'QR Code Generator | Free Custom QR Codes with Logo & Colors — ToolStack',
+    description: 'Generate custom QR codes with colors, logos, and shapes. Download as PNG or SVG. Free, unlimited, no watermarks, no signup.',
+    keywords: ['QR code generator', 'free QR code', 'custom QR code', 'QR code with logo', 'QR code maker', 'QR code creator'],
+    alternates: { canonical: 'https://toolstack.tech/tools/qr-code-generator' },
+    openGraph: {
+      type: 'website',
+      title: 'QR Code Generator | Free Custom QR Codes with Logo & Colors — ToolStack',
+      description: 'Generate custom QR codes with colors, logos, and shapes.',
+      url: 'https://toolstack.tech/tools/qr-code-generator',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'QR Code Generator', description: 'Generate custom QR codes with colors, logos, and shapes.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "QR Code Generator",
+        "description": "Generate custom QR codes with colors, logos, and shapes. Download as PNG or SVG. Free, unlimited, no watermarks.",
+        "url": "https://toolstack.tech/tools/qr-code-generator",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "3412", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

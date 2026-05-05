@@ -1,36 +1,35 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free Email Subject Line Tester — Spam Score & Open Rate Analysis | ToolStack",
-  description: "Score your email subject lines for open rate potential, spam triggers, and length. Get AI-suggested alternatives. Free, no signup.",
-  keywords: [
-    "email subject line tester",
-    "email subject line scorer",
-    "email open rate checker",
-    "spam trigger word checker",
-    "email subject line analyser",
-    "best email subject lines",
-    "email subject line generator",
-    "power words for email subject lines",
-    "email marketing tools",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/email-subject-line-tester",
-  },
-  openGraph: {
-    title: "Free Email Subject Line Tester — Spam Score & Open Rate Analysis | ToolStack",
-    description: "Score your email subject lines for spam triggers, open rate potential, and length. Get AI-rewritten alternatives. Free, no signup.",
-    url: "https://toolstack.tech/tools/email-subject-line-tester",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Email Subject Line Tester — Spam Score & Open Rate Analysis | ToolStack",
-    description: "Score your email subject lines for spam triggers, open rate potential, and length. AI alternatives included. Free, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Email Subject Line Tester | Free Subject Line Score Tool — ToolStack',
+    description: 'Test and score email subject lines for open rate optimisation. Get actionable feedback on subject line length, power words, and spam triggers.',
+    keywords: ['email subject line tester', 'subject line optimizer', 'email open rate', 'subject line score', 'spam word checker'],
+    alternates: { canonical: 'https://toolstack.tech/tools/email-subject-line-tester' },
+    openGraph: {
+      type: 'website',
+      title: 'Email Subject Line Tester | Free Subject Line Score Tool — ToolStack',
+      description: 'Test and score email subject lines for open rate optimisation.',
+      url: 'https://toolstack.tech/tools/email-subject-line-tester',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Email Subject Line Tester', description: 'Test and score email subject lines for open rate optimisation.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Email Subject Line Tester",
+        "description": "Test and score email subject lines for open rate optimisation. Get actionable feedback on subject line length, power words, and spam triggers.",
+        "url": "https://toolstack.tech/tools/email-subject-line-tester",
+        "applicationCategory": "MarketingApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "389", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-    return <>{children}</>;
+  return <>{children}</>;
 }

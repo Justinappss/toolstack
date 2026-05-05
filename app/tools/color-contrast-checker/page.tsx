@@ -346,6 +346,25 @@ export default function ColorContrastChecker() {
           </div>
         </section>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Color Contrast Checker: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              WCAG accessibility compliance isn't optional — it's the law in many jurisdictions, and it's just good practice. One of the most common accessibility failures is insufficient color contrast between text and its background. Our Color Contrast Checker lets you pick any foreground and background color combination and instantly tells you whether it meets WCAG 2.1 AA and AAA standards.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Enter a foreground color and background color using the color picker, hex input, or RGB values. The tool instantly calculates the contrast ratio using the WCAG luminosity formula and shows you whether that combination passes AA (4.5:1 for normal text, 3:1 for large text) or AAA (7:1 and 4.5:1) thresholds. A live preview shows your colors side by side.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include checking button text contrast against button backgrounds before shipping UI, ensuring your website meets WCAG accessibility requirements for public sector clients, auditing an existing design for contrast issues, choosing accessible brand colors for a new website, and testing hover and focus states for accessibility compliance.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Many contrast checkers only show you the ratio number without explaining what it means. Ours gives you plain-English pass/fail results for AA and AAA on both normal and large text — so a designer, developer, or project manager can instantly understand whether a color combination is accessible. Free, unlimited, no signup required.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="color-contrast-checker" />
         
       </div>

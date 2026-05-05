@@ -595,6 +595,25 @@ export default function JSONFormatterPage() {
             </div>
         </section>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>JSON Formatter: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Every developer works with JSON daily — API responses, config files, database exports, package.json — and every developer knows the pain of opening a minified JSON blob and seeing nothing useful. Our JSON Formatter formats, validates, and minifies JSON instantly with full syntax highlighting, error pinpointing, and a tree view that makes navigating large JSON objects trivial.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Paste any JSON into the editor and it instantly formats with proper indentation, highlights syntax for readability, and validates the structure. If your JSON is invalid, it pinpoints the exact character position of the error. You can also minify JSON for production payloads, sort keys alphabetically for easier diffing, and switch between formatted text view and collapsible tree view.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include debugging API responses from REST or GraphQL endpoints, formatting and validating configuration files, prettifying minified JSON from production logs, validating that a data export is structurally correct before importing, minifying JSON for production payload optimization, and comparing two JSON files using sorted keys.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most online formatters either show ads, limit usage, or send your data to their servers. Ours is completely free with no usage limits, runs 100% in your browser, and offers error pinpointing, tree view, key sorting, and minification — features that usually require a paid tool. Fast, no signup, works offline once loaded.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="json-formatter" />
 
       </div>

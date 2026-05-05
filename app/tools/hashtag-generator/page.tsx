@@ -774,6 +774,25 @@ export default function HashtagGenerator() {
             </div>
           </section>
 
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Hashtag Generator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Hashtags are the indexing system for social media discovery — the right ones put your content in front of people who have never heard of you. The wrong ones waste reach or get your post flagged. Our AI Hashtag Generator creates optimized hashtag sets for any platform and topic in seconds, with explanations for why each hashtag was chosen.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Describe your post topic or paste your caption, select your platform (Instagram, TikTok, LinkedIn, X, or YouTube), and set how many hashtags you want. The AI generates a tailored set ranked by estimated reach and relevance, with platform-specific optimization — what works on LinkedIn is very different from TikTok.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include finding hashtags for Instagram posts about specific niche topics, generating TikTok hashtags that are trending in your content category, creating hashtag sets for YouTube videos, building a hashtag strategy for a new brand's first social media campaign, and generating seasonal or event hashtags for timely content.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most hashtag generators either give you random popular hashtags unrelated to your content or require a paid tool. Ours uses AI to match hashtags to your specific content and topic, not just the most popular tags. It also optimizes for platform-specific best practices. Free, unlimited generations, no signup required.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="hashtag-generator" />
           
         </div>

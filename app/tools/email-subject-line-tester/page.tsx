@@ -668,6 +668,25 @@ export default function EmailSubjectLineTesterPage() {
                     </div>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Email Subject Line Tester: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Your email subject line is the gatekeeper to everything else — it determines whether your email gets opened or ignored, reported as spam, or deleted before being read. Most people write subject lines by feel. Our Email Subject Line Tester gives you data: a score based on length, word choice, emotional triggers, personalization signals, and known spam triggers.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter your subject line and the tester instantly analyzes it across 8 dimensions: length, personalization signals, urgency and scarcity triggers, power words, emotional resonance, spam word detection, emoji usage, and number/stats usage. Each dimension gets a sub-score and the overall subject line gets a 0-100 score.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include testing A/B subject lines before sending a marketing campaign, checking whether a subject line triggers spam filters before a cold email blast, optimizing newsletter subject lines for maximum open rate, and validating that a subject line looks good in the mobile email preview.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most subject line testers are either too simplistic or require a paid subscription. Ours gives you multi-dimensional scoring — emotional triggers, spam word detection, mobile preview truncation — for free, without signup. Test unlimited subject lines and iterate until you hit your target score.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="email-subject-line-tester" />
                 
             </div>

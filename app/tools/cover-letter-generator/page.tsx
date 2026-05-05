@@ -482,6 +482,25 @@ export default function CoverLetterPage() {
           </div>
         </div>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Cover Letter Generator: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Cover letters are the most skipped part of any job application — but the ones that do read them are doing it because something in your resume caught their interest and they want to know more. A good cover letter turns curiosity into an interview. Our AI Cover Letter Generator takes your work history and the job description and produces a tailored, professional cover letter in under a minute.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Paste the job description, enter your name and role, and optionally paste your resume bullet points. The AI generates a cover letter that directly addresses the requirements in the job posting, uses your specific achievements, and matches the professional tone of the industry. You can regenerate with different tones, adjust length, and edit the output before downloading as PDF.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include applying to 10+ jobs quickly without sacrificing cover letter quality, tailoring a generic cover letter to a specific job posting's exact requirements, overcoming employment gaps by framing your experience positively, and applying to roles where you have less traditional experience but transferable skills.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Writing a good cover letter takes 30-60 minutes per job. Most people either skip them entirely or send the same generic letter to every posting. Ours generates genuinely tailored letters in seconds by matching your background to the specific job requirements. Free to use, no signup required, generates unlimited letters.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="cover-letter-generator" />
         
       </div>

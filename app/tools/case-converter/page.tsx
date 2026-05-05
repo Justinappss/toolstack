@@ -398,6 +398,25 @@ export default function CaseConverterPage() {
           </div>
         </div>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Case Converter: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Sometimes you just need to change "Hello World" into "hello world" or "HELLO WORLD" — and you don't want to retype the whole thing or manually fix it in a text editor. Our Case Converter handles every text case format you could need: lowercase, UPPERCASE, Title Case, Sentence case, camelCase, PascalCase, snake_case, kebab-case, and more. Paste in your text, click a case style, and copy the result.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Paste any text into the input field and choose your target case format from the toolbar. Instant conversion, no page reload. Supports all major case conventions including camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dot.case, and more. You can convert the entire text or selectively highlight and convert specific portions. Copy to clipboard with one click.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include converting code variable names between camelCase and snake_case conventions, formatting titles and headings for blog posts, documents, or slide decks, converting imported data from CSV or Excel into consistent case formats, creating URL-safe slugs from article titles (kebab-case), and standardizing data imports for databases or CMS platforms.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              This is one of those tools that's embarrassingly useful for how simple it is. Most online converters only offer 4-5 formats. Ours offers 15+ including some that developers specifically need like dot.case and path/case. It runs entirely in your browser, preserves all special characters, and doesn't limit how much text you can convert at once. Free, no ads, no signup, no usage limits.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="case-converter" />
         
       </div>

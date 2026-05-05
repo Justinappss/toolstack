@@ -465,6 +465,25 @@ export default function PasswordGeneratorPage() {
         </div>
 
         <div style={{ marginTop: 48 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Password Generator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Most people's passwords are terrible — pet names, birthdays, "password123" — because creating a truly random, strong password from memory is nearly impossible. Our Password Generator creates cryptographically random passwords using your browser's built-in crypto API. Nothing is sent to any server. The password exists only on your screen until you copy it.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Set your desired length (8-128 characters), toggle uppercase letters, lowercase letters, numbers, and special symbols on or off, and exclude ambiguous characters (0/O, 1/l/I) if needed. The generator creates a new password instantly. A strength meter shows the estimated crack time. Generate multiple passwords at once and copy any of them with one click.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include creating unique passwords for every new account signup, generating strong passwords for databases and server access, creating API keys and secrets for development environments, generating Wi-Fi passwords that are strong but still shareable, and bulk-generating temporary passwords for new employee onboarding.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most password generators either run on the server (your password touches their infrastructure) or use weak randomness (Math.random). Ours uses the Web Crypto API — the same cryptographic randomness used by password managers like 1Password and Bitwarden. Everything runs locally in your browser. Free, unlimited, no signup required.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="password-generator" />
         </div>
 

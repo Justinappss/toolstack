@@ -377,6 +377,25 @@ export default function CardBoxBreakCalculatorPage() {
                     </div>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Card Box Break Calculator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Running a trading card box break is one of the most popular ways to sell sealed hobby product — but pricing the individual spots fairly is genuinely difficult. Price too high and spots don't fill. Price too low and you're leaving money on the table. Our Card Box Break Calculator takes the box price, number of spots, and any bulk discount logic and gives you fair, market-priced spot values in seconds.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter the total box price, the number of spots in the break, and select your break format (random team draft, position draft, hit allocation, etc.). The calculator divides the box cost proportionally across all spots, with higher-value slots getting larger shares when applicable. You can also factor in shipping costs, Whatnot fees, and your organizer margin to set a fair final price.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include pricing spots before posting a break on Reddit, Whatnot, or Discord, running group breaks for high-value products like Topps Chrome or Prizm hobby boxes, comparing two break formats to see which distributes value more fairly, and calculating bulk discounts for buyers who take multiple spots.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most break hosts price spots by feel or by copying what they did last time. Our calculator uses actual math — proportional allocation based on the odds distribution of the specific product — to make sure every spot is priced fairly based on its expected value. That transparency builds trust with your buyer community. Free, unlimited calculations, no signup.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="card-box-break-calculator" />
             </div>
         </div>

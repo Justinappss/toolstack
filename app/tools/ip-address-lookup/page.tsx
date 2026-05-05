@@ -265,6 +265,25 @@ export default function IpLookupPage() {
                     ))}
                 </section>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>IP Address Lookup: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Your public IP address reveals more about you than most people realize: your approximate geographic location, your Internet Service Provider, your timezone, and in some cases even your organization. Whether you're debugging a network issue, checking what information a website can see about you, or configuring a geo-restricted service, knowing your public IP is genuinely useful.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Open the tool and it instantly displays your public IP address, ISP name, approximate city and region, country, latitude/longitude coordinates, timezone, and whether you're on a VPN or proxy. All information is retrieved locally by your browser — nothing is tracked or logged. Enter any IP address for the same full breakdown.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include checking what a website sees when you visit it, verifying that a VPN or proxy is working correctly, troubleshooting email deliverability issues, configuring geo-restriction rules in Cloudflare or nginx, and verifying that a new server's IP is correctly configured before DNS propagation.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most "what is my IP" sites show you the IP and nothing else. Ours shows you everything: ISP, location, coordinates, timezone, VPN detection, and ASN information. It also works for looking up any IP address, not just your own. Free, no tracking, no logs, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="ip-address-lookup" />
                 
             </div>

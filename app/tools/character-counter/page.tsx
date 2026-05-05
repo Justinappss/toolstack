@@ -407,6 +407,25 @@ export default function CharacterCounterPage() {
           </div>
         </div>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Character Counter: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Every social media platform has a character limit — Twitter at 280, Instagram at 2,200, LinkedIn at 3,000, TikTok at 150, and X (formerly Twitter) now at 25,000 for Premium users. The problem isn't knowing the limit exists, it's knowing exactly how many characters you've used and how many you have left while you're actually writing. Our Character Counter tracks your usage in real-time against every major platform's limits.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Type or paste your text into the input field and the counter updates instantly as you type. Select your target platform(s) from the dropdown and the counter shows you a visual progress bar against each platform's limit simultaneously — so you can see at a glance whether your caption works for Instagram, X, LinkedIn, and Facebook all at once.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include writing X/Twitter threads and knowing exactly when to cut for each tweet, crafting Instagram captions without guessing whether they'll get cut off, checking LinkedIn post length before publishing, writing meta descriptions to stay within SEO character limits, and composing SMS marketing messages with strict 160-character limits.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most character counters only show you one platform at a time. Ours shows you all of them simultaneously — so you can write one caption that's optimized for Instagram and X at the same time without having to switch tools or re-check. Free, unlimited, no signup, no ads, no rate limits.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="character-counter" />
         
       </div>

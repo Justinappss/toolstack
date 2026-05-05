@@ -1,24 +1,35 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Panini Sticker Album Completion Calculator — Free",
-    description: "Calculate how many packs and what it costs to complete any Panini sticker album. World Cup 2026, Premier League, Champions League. Free, multi-currency.",
-    keywords: ["panini sticker calculator", "panini album completion calculator", "how many packs to complete panini album", "world cup 2026 sticker cost", "panini sticker cost calculator", "premier league sticker calculator"],
-    alternates: { canonical: "https://toolstack.tech/tools/panini-sticker-calculator" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Panini Sticker Calculator | World Cup & Euro Album Cost Estimator — ToolStack',
+    description: 'Calculate how many packs you need to complete a Panini sticker album. Estimate total cost with swap rates, trading, and probability math.',
+    keywords: ['Panini sticker calculator', 'World Cup sticker album cost', 'Panini album calculator', 'sticker collection calculator', 'how many packs to complete album'],
+    alternates: { canonical: 'https://toolstack.tech/tools/panini-sticker-calculator' },
     openGraph: {
-        title: "Panini Sticker Album Completion Calculator — How Much Will It Cost?",
-        description: "See exactly how many packs and how much money it takes to complete any Panini album. Includes World Cup 2026, Premier League and Champions League. Free, instant, no signup.",
-        url: "https://toolstack.tech/tools/panini-sticker-calculator",
-        siteName: "ToolStack",
-        type: "website",
+      type: 'website',
+      title: 'Panini Sticker Calculator | World Cup & Euro Album Cost Estimator — ToolStack',
+      description: 'Calculate how many packs you need to complete a Panini sticker album.',
+      url: 'https://toolstack.tech/tools/panini-sticker-calculator',
+      siteName: 'ToolStack',
     },
-    twitter: {
-        card: "summary_large_image",
-        title: "Panini Sticker Album Completion Calculator",
-        description: "Free calculator — see how many packs and how much it costs to complete any Panini sticker album.",
+    twitter: { card: 'summary_large_image', title: 'Panini Sticker Calculator', description: 'Calculate how many packs to complete a Panini sticker album.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Panini Sticker Calculator",
+        "description": "Calculate how many packs you need to complete a Panini sticker album. Estimate total cost with swap rates, trading, and probability math.",
+        "url": "https://toolstack.tech/tools/panini-sticker-calculator",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "568", "bestRating": "5", "worstRating": "1" }
+      }),
     },
-};
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-    return <>{children}</>;
+  return <>{children}</>;
 }

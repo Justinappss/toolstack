@@ -381,6 +381,25 @@ export default function CSSGradientGenerator() {
           </div>
         </section>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>CSS Gradient Generator: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Building a CSS gradient by hand means memorizing the syntax, visualizing the output, and refreshing a browser preview repeatedly until it looks right. Our CSS Gradient Generator replaces that workflow with a visual editor: drag color stops on a gradient bar, pick gradient type (linear, radial, conic, or repeating), adjust angle and position, and copy the finished CSS.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Select a gradient type, add color stops by clicking the gradient bar, and drag them to set position. Each color stop has its own color picker. Adjust the global angle, position, and shape for radial/conic gradients. Toggle between CSS output, Tailwind CSS classes, and SCSS/LESS variables. Copy any format with one click. See a live preview against real UI elements like buttons and cards.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include designing gradient backgrounds for hero sections and landing pages, creating button hover states with smooth color transitions, building multi-color brand gradients for marketing materials, generating Tailwind CSS gradient classes for utility-first projects, and building repeating background patterns with minimal CSS.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most gradient tools show you a preview but give you incomplete CSS. Ours supports all four CSS gradient types, exports in three different formats, and shows the gradient applied to real UI components — not just a flat color swatch. Free, unlimited, no signup required, works entirely in your browser.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="css-gradient-generator" />
         
       </div>

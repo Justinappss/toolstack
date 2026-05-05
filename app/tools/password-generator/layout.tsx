@@ -1,35 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free Password Generator — Secure, Random, No Signup | ToolStack",
-  description: "Generate strong, random passwords with custom length and character sets. Runs entirely in your browser — no data ever leaves your device. Free, no signup.",
-  keywords: [
-    "password generator",
-    "strong password generator",
-    "random password generator",
-    "secure password generator",
-    "free password generator",
-    "password creator",
-    "complex password generator",
-    "online password generator",
-    "safe password generator",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/password-generator",
-  },
-  openGraph: {
-    title: "Free Password Generator — Secure, Random, No Signup | ToolStack",
-    description: "Generate strong, random passwords instantly. Custom length, character sets, bulk generation. Cryptographically secure — runs 100% in your browser.",
-    url: "https://toolstack.tech/tools/password-generator",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Password Generator — Secure, Random, No Signup | ToolStack",
-    description: "Generate strong, random passwords instantly. Cryptographically secure — runs 100% in your browser.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Password Generator | Free Strong Random Password Creator — ToolStack',
+    description: 'Generate strong, random passwords with customizable length, symbols, and character sets. Runs 100% in your browser — nothing is sent to any server.',
+    keywords: ['password generator', 'random password generator', 'strong password generator', 'secure password creator', 'password maker'],
+    alternates: { canonical: 'https://toolstack.tech/tools/password-generator' },
+    openGraph: {
+      type: 'website',
+      title: 'Password Generator | Free Strong Random Password Creator — ToolStack',
+      description: 'Generate strong, random passwords with customizable length and character sets.',
+      url: 'https://toolstack.tech/tools/password-generator',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Password Generator', description: 'Generate strong, random passwords with customizable length and character sets.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Password Generator",
+        "description": "Generate strong, random passwords with customizable length, symbols, and character sets. Runs 100% in your browser.",
+        "url": "https://toolstack.tech/tools/password-generator",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "1892", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

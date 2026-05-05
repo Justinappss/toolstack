@@ -458,6 +458,25 @@ export default function CardGradingProfitCalculator() {
                     </div>
                 </div>
 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Card Grading Profit Calculator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      Grading a card is a gamble — you pay $20-300 in grading fees upfront, and whether that investment pays off depends entirely on what grade the card comes back with. A 9.5 can command a massive premium over a raw card; a 9 can sometimes be barely worth the grading cost. Our Card Grading Profit Calculator runs the math across every realistic grade outcome so you can decide whether grading is actually worth it before you spend the money on submission.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Enter the card's current raw value, select your grading company (PSA, BGS, SGC, or CGC), choose the service level, and input the market premium you'd expect at each potential grade. The calculator shows your profit or loss at every grade level from 1 to 10, your break-even grade (the minimum grade that covers your grading costs), and your expected ROI assuming realistic grade distribution.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include deciding whether to grade a specific card vs. sell it raw, comparing the economics of PSA vs. BGS vs. SGC submission for your card, running break-even analysis before a bulk grading submission, evaluating whether economy vs. regular vs. express PSA submission is worth the cost difference, and planning a bulk grading strategy for a collection purchase.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most grading profit tools assume a single grade outcome. Ours runs a full scenario analysis across every realistic grade — so you're not just hoping for the best, you're making an informed decision based on the probability-weighted expected value of the submission. Free, always current with grading company pricing, no signup required.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="card-grading-profit-calculator" />
             </div>
         </main>

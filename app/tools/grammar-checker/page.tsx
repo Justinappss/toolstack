@@ -540,6 +540,25 @@ export default function GrammarCheckerPage() {
           </div>
         </div>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Grammar Checker: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Grammarly costs $12/month for the premium version — but most people only need a grammar checker a few times a week, not every day. Our AI Grammar Checker powered by GPT-4o gives you the same quality of corrections: grammar, spelling, punctuation, word choice, sentence structure, and tone — with plain-English explanations for every correction so you actually learn why something was wrong.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Paste your text into the input and click Check. GPT-4o analyzes it for grammar errors, spelling mistakes, punctuation issues, run-on sentences, passive voice overuse, and style suggestions. Each correction is highlighted with an explanation of what was wrong and why, so you're not just getting a correction — you're getting a mini lesson.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include checking job application emails before sending, proofreading cover letters and resumes before submission, reviewing client communications for professionalism, checking blog post drafts for grammar issues before publishing, and editing academic essays for grammar school applications.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most free grammar checkers are rule-based and miss nuance. Ours uses GPT-4o — the same model behind ChatGPT — which understands context, tone, and intent, not just rules. It catches things rule-based tools miss: awkward phrasing, wordy sentences, incorrect word usage, and inconsistent tense. Free, no character limits, no signup required.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="grammar-checker" />
         
       </div>

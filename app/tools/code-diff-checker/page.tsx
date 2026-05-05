@@ -265,6 +265,25 @@ export default function DiffCheckerPage() {
             </div>
           </section>
 
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Code Diff Checker: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Comparing two versions of code to find what changed is one of the most common developer tasks — code reviews, bug hunts, merge conflict resolution, and version rollbacks all require it. Doing it by eye is slow and error-prone. Our Code Diff Checker puts two code blocks side by side, highlights additions in green, deletions in red, and shows you exactly which lines changed.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Paste your original code in the left panel and the modified version in the right panel. The tool instantly highlights all differences: added lines, removed lines, and modified lines. You can toggle between side-by-side view and unified diff view. Line numbers are shown on both sides, and syntax highlighting works for over 50 programming languages.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include reviewing a pull request by comparing new code against the base branch, debugging by comparing a working version to a broken one, resolving git merge conflicts by seeing both versions clearly, and tracking down which change introduced a bug by comparing before and after.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most diff tools require you to upload files or use a CLI. Ours works directly in your browser — paste two blocks of code and get an instant visual diff with no accounts, no file uploads, and no data leaving your machine. Free, unlimited diffs, no signup required.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="code-diff-checker" />
           
         </div>

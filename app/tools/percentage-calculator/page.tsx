@@ -306,6 +306,25 @@ export default function PercentageCalculator() {
         </section>
 
         <div style={{ marginTop: 56 }}>
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Percentage Calculator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                Percentage math comes up everywhere — discounts, tips, tax, grades, growth rates, margin calculations — and most people reach for a calculator app that can't easily express "what is 15% of 340?" or "23 is what percent of 89?" Our Percentage Calculator bundles six different percentage tools into one page, each designed for a specific type of percentage question.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Choose the calculation you need: "What is X% of Y?", "X is what % of Y?", "Percentage change from X to Y", "Percentage increase", "Percentage decrease", or "Percentage difference between X and Y." Enter your numbers and get instant results with the formula shown so you understand the math, not just the answer.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include calculating sale prices and discounts while shopping, figuring out tip amounts at restaurants, determining grade percentages for school assignments, calculating profit margins and markup percentages for business, computing year-over-year growth rates, and finding what percentage a part is of a whole for data analysis.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most percentage calculators only do one thing — "what is X% of Y?" Ours handles all six common percentage questions in one tool, with the formula shown for each so you learn the math. Instant results, no ads blocking the answer, no signup required. Free and unlimited.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="percentage-calculator" />
         </div>
         <div style={{ marginTop: 24 }}>

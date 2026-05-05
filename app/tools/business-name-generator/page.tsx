@@ -428,6 +428,25 @@ export default function BusinessNameGenerator() {
           </div>
         </div>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Business Name Generator: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Naming a business is one of the hardest parts of starting a company — you need something memorable, available, brandable, and domain-compatible, all at the same time. Our AI-powered Business Name Generator solves the paralysis by generating hundreds of relevant, brandable business name ideas for any industry, and instantly checking whether the matching domain is available.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Enter your industry or niche and any words related to your business. The AI generates name ideas across different naming styles: invented words, compound words, portmanteaus, descriptive names, and acronyms. Each name is shown with its domain availability status across .com, .io, .co, and .net. Save your favorites to a shortlist, filter by availability, and export the list for trademark research.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include brainstorming startup names before doing a trademark or domain search, finding a domain that's short, memorable, and available, generating name ideas for a side project, freelance business, or Shopify store, checking domain availability for all major TLDs in one view, and finding a business name that works across social media handles.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Naming tools that don't check domains are nearly useless — what's the point of a great name if the .com is already owned? Our generator shows availability in real-time alongside every name suggestion, so you can immediately see which names are worth pursuing and which are non-starters. Free, unlimited generations, no signup required.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="business-name-generator" />
         
       </div>

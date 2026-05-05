@@ -332,6 +332,25 @@ export default function Base64Encoder() {
           </div>
         </section>
 
+        {/* SEO Description */}
+        <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Base64 Encoder/Decoder: Free Online Tool</h2>
+          <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+            <p style={{ marginBottom: 16 }}>
+              Base64 encoding is everywhere in software development — API authentication headers, JSON web tokens, image data URLs, email attachments, and configuration files all commonly use it. If you work with APIs, build web applications, or deal with data in any technical capacity, at some point you'll need to encode or decode a Base64 string fast. Our tool does it instantly in your browser, with zero server round-trips.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Paste your text or encoded string into the input field and the tool instantly detects whether it's plain text (and encodes it) or Base64 (and decodes it). Toggle manually between encode and decode modes if you need to do the reverse. The tool highlights your input/output side by side, preserves formatting and whitespace, and handles both UTF-8 text and binary data.
+            </p>
+            <p style={{ marginBottom: 16 }}>
+              Common uses include decoding JWT tokens to inspect the payload without sending them to a third-party decoder, encoding image files to base64 data URLs for embedding directly in HTML or CSS, decoding Basic Auth headers to check what credentials are being passed to an API, and converting text to Base64 for use in API test harnesses or curl commands.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              Most online Base64 tools send your data to a server. Ours doesn't — everything runs in your browser using JavaScript's native atob and btoa functions. That means your data never leaves your machine, which matters when you're working with sensitive content like JWTs, credentials, or proprietary data. Free, no signup, no rate limits.
+            </p>
+          </div>
+        </section>
+
         <MoreTools currentSlug="base64-encoder-decoder" />
         
       </div>

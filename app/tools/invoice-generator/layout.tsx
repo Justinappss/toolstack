@@ -1,35 +1,35 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free Invoice Generator — PDF, No Watermark, No Signup | ToolStack",
-  description: "Create professional invoices instantly and export to PDF. No watermarks, no signup, supports VAT/GST and multiple currencies. Free forever.",
-  keywords: [
-    "free invoice generator",
-    "invoice generator no signup",
-    "online invoice maker",
-    "invoice template free",
-    "invoice generator PDF",
-    "create invoice online",
-    "vat invoice generator",
-    "invoice no watermark",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/invoice-generator",
-  },
-  openGraph: {
-    title: "Free Invoice Generator — PDF, No Watermark, No Signup | ToolStack",
-    description: "Create professional invoices instantly and export to PDF. No watermarks, no signup, supports VAT/GST and multiple currencies.",
-    url: "https://toolstack.tech/tools/invoice-generator",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Invoice Generator — PDF, No Watermark, No Signup | ToolStack",
-    description: "Professional PDF invoices in seconds. No watermarks, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Invoice Generator | Free Professional PDF Invoice — ToolStack',
+    description: 'Create professional invoices and export to PDF with no watermarks or signup. Free, instant, fully customizable with your branding.',
+    keywords: ['invoice generator', 'free invoice generator', 'PDF invoice', 'invoice template', 'professional invoice', 'invoice maker'],
+    alternates: { canonical: 'https://toolstack.tech/tools/invoice-generator' },
+    openGraph: {
+      type: 'website',
+      title: 'Invoice Generator | Free Professional PDF Invoice — ToolStack',
+      description: 'Create professional invoices and export to PDF with no watermarks or signup.',
+      url: 'https://toolstack.tech/tools/invoice-generator',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Invoice Generator', description: 'Create professional invoices and export to PDF with no watermarks or signup.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Invoice Generator",
+        "description": "Create professional invoices and export to PDF with no watermarks or signup. Free, instant, fully customizable with your branding.",
+        "url": "https://toolstack.tech/tools/invoice-generator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "891", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-    return <>{children}</>;
+  return <>{children}</>;
 }

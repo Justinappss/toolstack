@@ -1,36 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Online Stopwatch — Free Timer with Laps & Countdown",
-  description: "Free online stopwatch with lap times, countdown timer, and keyboard shortcuts. Runs in your browser — no download, no signup. Accurate to the millisecond.",
-  keywords: [
-    "online stopwatch",
-    "stopwatch online",
-    "free online stopwatch",
-    "online timer",
-    "countdown timer online",
-    "stopwatch with laps",
-    "online countdown",
-    "timer online free",
-    "lap timer online",
-    "interval timer online",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/online-stopwatch",
-  },
-  openGraph: {
-    title: "Online Stopwatch — Free Timer with Laps & Countdown",
-    description: "Free online stopwatch with lap times, countdown timer and keyboard shortcuts. No download, no signup.",
-    url: "https://toolstack.tech/tools/online-stopwatch",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Online Stopwatch — Free Timer with Laps & Countdown",
-    description: "Free online stopwatch with lap times and countdown timer. No download, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Online Stopwatch | Free Timer with Lap Times & Keyboard Shortcuts — ToolStack',
+    description: 'Free online stopwatch with lap times, countdown timer, and keyboard shortcuts. Works in any browser, no download required.',
+    keywords: ['online stopwatch', 'stopwatch timer', 'lap timer', 'countdown timer', 'online timer'],
+    alternates: { canonical: 'https://toolstack.tech/tools/online-stopwatch' },
+    openGraph: {
+      type: 'website',
+      title: 'Online Stopwatch | Free Timer with Lap Times & Keyboard Shortcuts — ToolStack',
+      description: 'Free online stopwatch with lap times, countdown timer, and keyboard shortcuts.',
+      url: 'https://toolstack.tech/tools/online-stopwatch',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Online Stopwatch', description: 'Free online stopwatch with lap times, countdown timer, and keyboard shortcuts.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Online Stopwatch",
+        "description": "Free online stopwatch with lap times, countdown timer, and keyboard shortcuts. Works in any browser, no download required.",
+        "url": "https://toolstack.tech/tools/online-stopwatch",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "3421", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

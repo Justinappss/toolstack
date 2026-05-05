@@ -377,6 +377,25 @@ export default function PdfGeneratorPage() {
                 </div>
 
                 
+                {/* SEO Description */}
+                <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                  <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>PDF Generator: Free Online Tool</h2>
+                  <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+                    <p style={{ marginBottom: 16 }}>
+                      PDFs are the universal document format — they look the same on every device, can't be accidentally edited, and are the standard for professional document exchange. But creating a PDF usually means opening Word or paying for Adobe Acrobat. Our PDF Generator converts text, Markdown, or HTML to a clean, print-ready PDF directly in your browser — no software to install, no files uploaded anywhere.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Type or paste your content, choose your page size (A4, Letter, Legal), set margins and orientation, and click Generate. The tool renders your content with proper typography and layout, then produces a downloadable PDF. Supports headings, lists, code blocks, tables, and images. Preview the PDF before downloading.
+                    </p>
+                    <p style={{ marginBottom: 16 }}>
+                      Common uses include converting project documentation to PDF for client delivery, creating quick one-page reports without opening Word, turning meeting notes into shareable PDF summaries, generating printable checklists and SOPs, converting Markdown README files to PDF for offline distribution, and creating formatted documents from plain text notes.
+                    </p>
+                    <p style={{ marginBottom: 0 }}>
+                      Most online PDF generators either require signup, upload your files to their servers, or watermark the output. Ours generates PDFs entirely in your browser — your content never leaves your machine. No watermarks, no file size limits, no signup. Free, unlimited PDFs.
+                    </p>
+                  </div>
+                </section>
+
                 <MoreTools currentSlug="pdf-generator" />
             </div>
         </div>

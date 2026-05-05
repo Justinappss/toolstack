@@ -783,6 +783,25 @@ export default function AIPromptGenerator() {
           </div>
 
           {/* More Tools */}
+          {/* SEO Description */}
+          <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>AI Prompt Generator: Free Online Tool</h2>
+            <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 16 }}>
+                The quality of an AI's output is almost entirely determined by the quality of the prompt you give it. Vague prompts get vague answers. Generic prompts get generic answers. Our AI Prompt Generator helps you craft structured, specific, well-scoped prompts that get genuinely useful outputs from ChatGPT, Claude, Gemini, or any other LLM — whether you're using AI for writing, coding, research, analysis, or creative work.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Select your goal (write, code, explain, brainstorm, analyze, etc.), describe what you need in plain language, and the generator outputs a fully structured prompt with clear instructions, context, constraints, and format guidance. You can customize tone, audience, length, and format. The resulting prompt is ready to paste directly into any LLM interface.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Common uses include drafting effective cold emails and sales copy, generating structured code comments and documentation, creating detailed research briefs for AI-assisted literature reviews, writing social media caption variations with consistent brand voice, and breaking down complex tasks into AI-digestible step-by-step instructions.
+              </p>
+              <p style={{ marginBottom: 0 }}>
+                Most "prompt templates" you find online are generic one-liners that don't account for your specific context. Ours generates fully contextualized prompts tailored to what you actually need — not a generic "act as a professional copywriter" template, but a prompt that knows your audience, your goal, and your constraints. Completely free, no signup required, unlimited prompt generations.
+              </p>
+            </div>
+          </section>
+
           <MoreTools currentSlug="ai-prompt-generator" />
 
           {/* AdvertiseGPT CTA */}

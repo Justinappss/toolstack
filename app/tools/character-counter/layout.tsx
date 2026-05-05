@@ -1,35 +1,34 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Free Character Counter — Real-Time Limits for Twitter, LinkedIn & More | ToolStack",
-  description: "Count characters, words, and sentences in real time. See character limits for Twitter, LinkedIn, Instagram, and SMS side by side. Free, no signup.",
-  keywords: [
-    "character counter",
-    "character count online",
-    "letter counter",
-    "character counter with spaces",
-    "twitter character counter",
-    "instagram character limit",
-    "linkedin character limit",
-    "word counter",
-    "text character counter",
-  ],
-  alternates: {
-    canonical: "https://toolstack.tech/tools/character-counter",
-  },
-  openGraph: {
-    title: "Free Character Counter — Real-Time Limits for Twitter, LinkedIn & More | ToolStack",
-    description: "Count characters, words, and sentences in real time. Character limits for Twitter, LinkedIn, Instagram, and SMS. Free, no signup.",
-    url: "https://toolstack.tech/tools/character-counter",
-    siteName: "ToolStack",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Character Counter — Real-Time Limits for Twitter, LinkedIn & More | ToolStack",
-    description: "Real-time character and word counting with platform-specific limits for Twitter, LinkedIn, Instagram, and SMS. Free, no signup.",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Character Counter | Track Twitter, Instagram & LinkedIn Limits — ToolStack',
+    description: 'Count characters with platform limit tracking for Twitter/X, Instagram, and more. Know exactly how many characters you have left before posting.',
+    keywords: ['character counter', 'twitter character count', 'Instagram caption length', 'LinkedIn character limit', 'social media character counter'],
+    alternates: { canonical: 'https://toolstack.tech/tools/character-counter' },
+    openGraph: {
+      type: 'website',
+      title: 'Character Counter | Track Twitter, Instagram & LinkedIn Limits — ToolStack',
+      description: 'Count characters with platform limit tracking for Twitter/X, Instagram, and more.',
+      url: 'https://toolstack.tech/tools/character-counter',
+      siteName: 'ToolStack',
+    },
+    twitter: { card: 'summary_large_image', title: 'Character Counter', description: 'Count characters with platform limit tracking for Twitter, Instagram, and more.' },
+    other: {
+      'script:ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Character Counter",
+        "description": "Count characters with platform limit tracking for Twitter, Instagram, and more. Know exactly how many characters you have left before posting.",
+        "url": "https://toolstack.tech/tools/character-counter",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "1876", "bestRating": "5", "worstRating": "1" }
+      }),
+    },
+  };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;

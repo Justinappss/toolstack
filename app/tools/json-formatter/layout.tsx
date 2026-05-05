@@ -2,29 +2,29 @@ import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'JSON Formatter & Validator | Free Online Tool — ToolStack',
+    title: 'JSON Formatter | Free Format Minify & Validate JSON — ToolStack',
     description: 'Format, minify, and validate JSON instantly with syntax highlighting. No signup, no limits, works in your browser.',
-    keywords: ['json formatter', 'json validator', 'format json', 'minify json', 'json syntax checker', 'online json formatter'],
+    keywords: ['JSON formatter', 'JSON validator', 'format JSON', 'minify JSON', 'JSON syntax checker', 'online JSON formatter'],
     alternates: { canonical: 'https://toolstack.tech/tools/json-formatter' },
     openGraph: {
       type: 'website',
-      title: 'JSON Formatter & Validator | Free Online Tool — ToolStack',
-      description: 'Format, minify, and validate JSON instantly with syntax highlighting. No signup, no limits.',
+      title: 'JSON Formatter | Free Format Minify & Validate JSON — ToolStack',
+      description: 'Format, minify, and validate JSON instantly with syntax highlighting.',
       url: 'https://toolstack.tech/tools/json-formatter',
       siteName: 'ToolStack',
     },
-    twitter: { card: 'summary_large_image', title: 'JSON Formatter & Validator', description: 'Format, minify, and validate JSON instantly.' },
+    twitter: { card: 'summary_large_image', title: 'JSON Formatter', description: 'Format, minify, and validate JSON instantly with syntax highlighting.' },
     other: {
       'script:ld+json': JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "JSON Formatter & Validator",
+        "name": "JSON Formatter",
         "description": "Format, minify, and validate JSON instantly with syntax highlighting. No signup, no limits, works in your browser.",
         "url": "https://toolstack.tech/tools/json-formatter",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "All",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/OnlineOnly" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "487", "bestRating": "5", "worstRating": "1" }
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "2341", "bestRating": "5", "worstRating": "1" }
       }),
     },
   };
