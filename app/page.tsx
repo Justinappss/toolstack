@@ -482,6 +482,16 @@ const LIVE_TOOLS = [
         image: "/tools/uuid-generator-preview.png",
     },
     {
+        title: "YouTube Video Downloader",
+        desc: "Download YouTube videos and Shorts in high quality MP4 format for free. No ads, no watermarks.",
+        href: "/tools/youtube-video-downloader",
+        category: "Video",
+        accent: "#ff0000",
+        accentRgb: "255,0,0",
+        badge: "New",
+        image: "/tools/youtube-video-downloader-preview.png",
+    },
+    {
         title: "YouTube Thumbnail Downloader",
         desc: "Download any YouTube video thumbnail in all 5 resolutions. Max, SD, HQ, MQ and Default. Free, no signup.",
         href: "/tools/youtube-thumbnail-downloader",

@@ -312,6 +312,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${base}/tools/youtube-video-downloader`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
       url: `${base}/tools/youtube-thumbnail-downloader`,
       lastModified: now,
       changeFrequency: "monthly",

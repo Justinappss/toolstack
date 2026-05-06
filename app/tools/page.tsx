@@ -455,6 +455,16 @@ export const ALL_TOOLS = [
     icon: "⟨/⟩",
   },
   {
+    title: "YouTube Video Downloader",
+    desc: "Download YouTube videos and Shorts in high quality MP4 format for free. No ads, no watermarks, no software required.",
+    href: "/tools/youtube-video-downloader",
+    category: "Video",
+    accent: "#ff0000",
+    accentRgb: "255,0,0",
+    badge: "New",
+    icon: "▶",
+  },
+  {
     title: "YouTube Thumbnail Downloader",
     desc: "Download any YouTube video thumbnail in all available resolutions — HD, SD, and default. Paste a URL and get all sizes instantly.",
     href: "/tools/youtube-thumbnail-downloader",
