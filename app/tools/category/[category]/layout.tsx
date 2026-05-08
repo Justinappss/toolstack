@@ -12,6 +12,13 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     alternates: {
       canonical: `https://toolstack.tech/tools/category/${categoryParam}`,
     },
+    openGraph: {
+      title: `Free ${activeCategory} Tools | ToolStack`,
+      description: `A collection of free, high-performance ${activeCategory.toLowerCase()} tools. No signup, no ads, instant results.`,
+      url: `https://toolstack.tech/tools/category/${categoryParam}`,
+      siteName: "ToolStack",
+      type: "website",
+    },
   };
 }
 

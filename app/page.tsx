@@ -5,11 +5,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
-    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+    description: "Access 58+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
     alternates: { canonical: "https://toolstack.tech" },
     openGraph: {
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        description: "Access 58+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         url: "https://toolstack.tech",
         siteName: "ToolStack",
         type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     twitter: { 
         card: "summary_large_image",
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        description: "Access 58+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         images: ["https://toolstack.tech/og-image.png"],
     },
 };
@@ -1373,7 +1373,7 @@ export default function Home() {
                             <div>
                                 <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 12 }}>Uncompromising Technical Standards</h3>
                                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, margin: 0 }}>
-                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 57+ live tools.
+                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 58+ live tools.
                                 </p>
                             </div>
                             <div style={{ width: 40, height: 1, background: "rgba(255,255,255,0.1)" }} />

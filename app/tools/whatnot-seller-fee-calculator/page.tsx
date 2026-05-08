@@ -6,11 +6,11 @@ import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const FAQS = [
   { q: "How much does Whatnot charge sellers?", a: "Whatnot charges sellers an 8% commission fee plus 2.9% + $0.30 payment processing on most categories. So on a $100 sale, you pay $8 commission + $3.20 payment processing = $11.20 total fees, netting $88.80. Coins & Currency is discounted to 4% commission, and Electronics to 5%. Orders over $1,500 drop the commission to 0% (only payment processing applies)." },
-  { q: "Is selling on Whatnot cheaper than eBay?", a: "For most categories, Whatnot" },
+  { q: "Is selling on Whatnot cheaper than eBay?", a: "For most categories, Whatnot's total fees (10.9% + $0.30 at standard 8% commission) are slightly cheaper than eBay (12.9% + $0.30 for trading cards). However, eBay has a vastly larger buyer base, which can drive higher sale prices that more than offset the fee difference. Whatnot's live auction format suits buyers who enjoy the entertainment experience and often pay above market." },
   { q: "What is the Whatnot high-value order fee?", a: "For orders over $1,500 on Whatnot, the seller commission drops to 0%. You only pay the 2.9% + $0.30 payment processing fee. On a $2,000 sale this means fees of just $58.30 compared to $258.30 at the standard 8% + payment rate \u2014 a significant saving for high-value card and collectible sales." },
   { q: "Does Whatnot charge for shipping?", a: "Whatnot sellers are responsible for their own shipping costs. Whatnot provides prepaid shipping labels at negotiated rates, but the cost is deducted from your earnings. Shipping is separate from the commission and payment processing fees calculated here." },
-  { q: "What are the Whatnot seller fees for Pok\u00e9mon cards?", a: "Pok\u00e9mon cards and other trading card games fall under Whatnot" },
-  { q: "What is the best Whatnot seller fee calculator?", a: "ToolStack" }
+  { q: "What are the Whatnot seller fees for Pok\u00e9mon cards?", a: "Pok\u00e9mon cards and other trading card games fall under Whatnot's standard collectibles category at 8% commission + 2.9% + $0.30 payment processing. On a $50 Charizard sale, fees total $6.70 for a net payout of $43.30. Graded cards (PSA, BGS) sold for over $1,500 benefit from the 0% commission rate." },
+  { q: "What is the best Whatnot seller fee calculator?", a: "ToolStack's Whatnot Seller Fee Calculator shows your exact net payout, commission and payment processing fees by category, includes a side-by-side eBay comparison, supports bulk item calculations, and works for sellers in any currency — all free with no signup required." }
 ];
 
 
