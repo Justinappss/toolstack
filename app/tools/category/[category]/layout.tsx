@@ -27,13 +27,13 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
   const description = CATEGORY_DESCRIPTIONS[activeCategory] || `A collection of free, high-performance ${activeCategory} tools. No signup, no ads, instant results.`;
 
   return {
-    title: `Free ${activeCategory} Tools`,
+    title: `Free ${activeCategory} Tools | ToolStack`,
     description,
     alternates: {
       canonical: `https://toolstack.tech/tools/category/${categoryParam}`,
     },
     openGraph: {
-      title: `Free ${activeCategory} Tools`,
+      title: `Free ${activeCategory} Tools | ToolStack`,
       description,
       url: `https://toolstack.tech/tools/category/${categoryParam}`,
       siteName: "ToolStack",
