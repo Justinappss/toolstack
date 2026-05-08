@@ -115,6 +115,7 @@ export function Footer() {
                                 alt="ToolStack"
                                 width={28}
                                 height={28}
+                                loading="lazy"
                                 style={{ borderRadius: 7, flexShrink: 0 }}
                             />
                             <span style={{ fontSize: 15, fontWeight: 800, color: "white", letterSpacing: "-0.02em" }}>

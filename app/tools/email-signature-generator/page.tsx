@@ -5,6 +5,7 @@ import { Copy, Check, Eye, Palette } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 // ─── CONFIG ─────────────────────────────────────────────────────────────────
 
@@ -480,6 +481,7 @@ export default function EmailSignatureGenerator() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ───────────────────────────────────────────────────── */}
         <section style={{ marginBottom: 80 }}>
           <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

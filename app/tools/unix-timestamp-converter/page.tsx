@@ -5,6 +5,7 @@ import { Clock, Copy, Check, ArrowDown, ArrowUp } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const HOW_IT_WORKS = [
   { step: "01", title: "Epoch to Date", body: "Paste your raw Unix timestamp (either in 10-digit seconds or 13-digit milliseconds) into the top field to instantly calculate the exact human-readable date and time.", color: "#10b981", bg: "rgba(16,185,129,0.1)", border: "rgba(16,185,129,0.25)" },
@@ -338,6 +339,7 @@ export default function UnixConverter() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ───────────────────────────────────────────────── */}
         <section style={{ marginBottom: 80 }}>
           <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

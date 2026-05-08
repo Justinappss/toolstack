@@ -27,6 +27,7 @@ export function EbayBestOfferThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/ebay-best-offer-calculator-preview.png"
                 alt="eBay Best Offer preview"
                 style={{

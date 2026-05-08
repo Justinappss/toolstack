@@ -2,6 +2,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 // ── UK 2024/25 tax year ──────────────────────────────────────────────────────
 function calcUK(gross: number) {
@@ -393,6 +394,7 @@ export default function SalaryCalculator() {
           </div>
         </section>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* FAQ */}
         <section style={{ marginTop: 56 }}>
           <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

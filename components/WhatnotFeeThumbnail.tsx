@@ -27,6 +27,7 @@ export function WhatnotFeeThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/whatnot-seller-fee-calculator-preview.png"
                 alt="Whatnot Seller Fee preview"
                 style={{

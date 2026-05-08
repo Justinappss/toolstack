@@ -2,6 +2,17 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "How much does Whatnot charge sellers?", a: "Whatnot charges sellers an 8% commission fee plus 2.9% + $0.30 payment processing on most categories. So on a $100 sale, you pay $8 commission + $3.20 payment processing = $11.20 total fees, netting $88.80. Coins & Currency is discounted to 4% commission, and Electronics to 5%. Orders over $1,500 drop the commission to 0% (only payment processing applies)." },
+  { q: "Is selling on Whatnot cheaper than eBay?", a: "For most categories, Whatnot" },
+  { q: "What is the Whatnot high-value order fee?", a: "For orders over $1,500 on Whatnot, the seller commission drops to 0%. You only pay the 2.9% + $0.30 payment processing fee. On a $2,000 sale this means fees of just $58.30 compared to $258.30 at the standard 8% + payment rate \u2014 a significant saving for high-value card and collectible sales." },
+  { q: "Does Whatnot charge for shipping?", a: "Whatnot sellers are responsible for their own shipping costs. Whatnot provides prepaid shipping labels at negotiated rates, but the cost is deducted from your earnings. Shipping is separate from the commission and payment processing fees calculated here." },
+  { q: "What are the Whatnot seller fees for Pok\u00e9mon cards?", a: "Pok\u00e9mon cards and other trading card games fall under Whatnot" },
+  { q: "What is the best Whatnot seller fee calculator?", a: "ToolStack" }
+];
+
 
 const accent = "#f97316";
 const accentBg = "rgba(249,115,22,0.08)";
@@ -426,6 +437,9 @@ export default function WhatnotSellerFeeCalculator() {
                         ))}
                     </div>
                 </div>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <div style={{ marginBottom: 48 }}>

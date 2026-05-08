@@ -2,6 +2,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "How many packs does it take to complete the FIFA World Cup 2026 Panini album?", a: "Without trading, completing the World Cup 2026 album (980 stickers) typically requires around 490 packs due to duplicates \u2014 that&apos;s roughly &pound;735 in the UK. With active swapping at 70% efficiency, this drops to around 150 packs (&pound;225). Our calculator gives you a personalised estimate based on your current collection." },
+  { q: "How much does it cost to complete the Panini World Cup 2026 album?", a: "Without swapping, completing the World Cup 2026 album costs approximately &pound;735 in the UK or $980 in the US. With active sticker trading, costs drop to around &pound;225 (&pound;UK) or $300 (US). This calculator gives you a personalised breakdown based on stickers you already own." },
+  { q: "What is the best free Panini sticker calculator?", a: "ToolStack&apos;s Panini Sticker Calculator is the most complete free option available. It covers all major Panini albums (World Cup 2026, Premier League, Champions League, EURO 2024, LaLiga), accounts for your existing collection, calculates swap savings in your local currency (GBP, USD, EUR, AUD, CAD), and shows a weekly completion timeline. No signup or account required." },
+  { q: "How does sticker swapping save money on Panini albums?", a: "When completing an album by buying packs randomly, you inevitably collect duplicates of stickers you already have. By trading duplicates with other collectors through Facebook groups, Reddit, school playgrounds or Panini&apos;s official swap platform, each duplicate can replace a pack purchase. At 70% efficiency (the default), swapping typically cuts your completion cost by 50-70%." },
+  { q: "How many stickers are in the FIFA World Cup 2026 Panini album?", a: "The FIFA World Cup 2026 Panini sticker album contains 980 stickers, making it the largest World Cup collection in Panini history. The 2026 tournament expands to 48 teams from 32, which accounts for the significant increase from previous tournaments." },
+  { q: "How many stickers are in a standard Panini pack?", a: "Standard Panini sticker packs contain 5 stickers. This is the universal standard across all major Panini football collections including World Cup, Premier League and Champions League. Some supermarket multi-packs contain more, but 5 per individual pack is the baseline used in this calculator." }
+];
+
 
 const CURRENCIES = [
     { code: "GBP", symbol: "£" },
@@ -481,6 +492,9 @@ export default function PaniniStickerCalculator() {
                         Unlike most calculators, ToolStack&apos;s Panini Sticker Calculator accounts for your actual collection size and swap efficiency — giving you a personalised estimate, not a generic number. The &ldquo;swap efficiency&rdquo; field (default 70%) represents how many of your duplicate stickers you can successfully trade for new ones. Active traders in dedicated Facebook groups and subreddits consistently hit 75–85%.
                     </p>
                 </div>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <div style={{ ...card }}>

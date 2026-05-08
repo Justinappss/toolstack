@@ -2,6 +2,17 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "Is it worth grading trading cards?", a: "Grading is worth it when the increase in sale price from a graded card exceeds the combined costs of grading fees, shipping, and selling platform fees. A PSA 10 gem mint can sell for 5-10x the raw card price for modern star players and key vintage cards. For bulk low-value cards (under $20 raw), grading rarely makes financial sense \u2014 the fees eat all profit." },
+  { q: "What is the cheapest PSA grading service?", a: "PSA's Value Bulk service is the most affordable option at around $15-19 per card, but requires minimum submissions and longer turnaround (45-65 business days). Economy grading starts at $25/card. Check the grading company's current pricing on their website." },
+  { q: "How much does BGS grading cost?", a: "BGS (Beckett Grading Services) starts at $19 per card for Economy tier (90 days). Standard is $24.95 (45 days), Express $49.95 (15 days), and Premium $124.95 (5 days). BGS grades use sub-grades for corners, edges, surface and centering, making a BGS 10 Black Label one of the most coveted grades in the hobby." },
+  { q: "Which grading company is best \u2014 PSA, BGS, or SGC?", a: "PSA graded cards command the highest average sale prices on eBay and are the most widely recognised, making them the best choice for most cards. BGS is preferred for modern cards where the sub-grade system can unlock premium premiums for near-perfect copies. SGC is popular for vintage pre-war and early 20th century cards, offering competitive pricing at $15 economy. The best choice depends on the card era, type and target buyer." },
+  { q: "What are the eBay selling fees for graded cards?", a: "eBay charges 12.9% of the total sale amount plus $0.30 per order for trading cards. This means on a $100 graded card sale, you pay $13.20 in eBay fees, netting $86.80 before shipping costs. Some sellers use alternative platforms like PWCC, Whatnot or Goldin to reduce fees on high-value cards." },
+  { q: "What is the best card grading profit calculator?", a: "ToolStack's Card Grading Profit Calculator supports PSA, BGS, CGC, and SGC with their current fee schedules and shows net profit, ROI, and break-even sale price. Free and unlimited." }
+];
+
 
 const accent = "#f59e0b";
 const accentBg = "rgba(245,158,11,0.08)";
@@ -437,6 +448,9 @@ export default function CardGradingProfitCalculator() {
                         ))}
                     </div>
                 </div>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <div style={{ marginBottom: 48 }}>

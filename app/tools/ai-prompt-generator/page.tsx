@@ -4,6 +4,16 @@ import { useState, useEffect, useRef } from "react";
 import { Sparkles, Copy, Check, RefreshCw, Zap, Star, Download, ExternalLink, ChevronRight, Search, Code2, BarChart3, FileText, Briefcase, MessageSquare, GraduationCap, Megaphone, Lightbulb, FlaskConical } from "lucide-react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is a prompt framework?", a: "A prompt framework is a structured template that tells an AI model exactly what role to play, what to do, how to think, and what format to return. Frameworks like RISEN and Chain-of-Thought consistently produce higher quality outputs than plain requests because they eliminate ambiguity and give the model complete context." },
+  { q: "What is RISEN prompting?", a: "RISEN stands for Role, Instructions, Steps, End Goal, and Narrowing. It is one of the most effective prompt engineering frameworks because it gives the AI complete context: who it is, what to do, how to do it, what the goal is, and what constraints to follow. RISEN prompts consistently outperform generic requests." },
+  { q: "Is this AI prompt generator free?", a: "Yes \u2014 100% free, unlimited usage, no account required. All prompts are generated using GPT-4o, not a cheaper model. There is no paywall, no credit limit, and no email required." },
+  { q: "Do these prompts work in Claude, Gemini, or Perplexity?", a: "Yes. Our prompt generator supports ChatGPT, Claude, Gemini, Perplexity, Grok, and Microsoft Copilot. Each model has a dedicated optimisation mode \u2014 Claude prompts use XML tags, Perplexity prompts include citation instructions, and Grok prompts are tuned for real-time data." },
+  { q: "What does the prompt strength score mean?", a: "Each prompt is rated 1-100 based on specificity, role clarity, output format instructions, and constraint quality. Scores above 80 indicate prompts that will reliably produce expert-level AI output. Scores below 60 suggest the prompt may need more specificity or context." }
+];
+
 
 // ─── TYPES ─────────────────────────────────────────────────────────────────
 interface Prompt {
@@ -760,6 +770,9 @@ export default function AIPromptGenerator() {
                 ))}
               </div>
             </div>
+
+
+            <FaqPageSchema faqs={FAQS} />
 
             {/* FAQ */}
             <div style={{ ...card, padding: "36px 36px" }}>

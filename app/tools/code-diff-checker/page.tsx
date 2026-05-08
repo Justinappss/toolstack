@@ -6,6 +6,7 @@ import { MoreTools } from "@/components/MoreTools";
 import { DiffEditor } from "@monaco-editor/react";
 import { ArrowLeftRight, Trash2, Code2 } from "lucide-react";
 import { saveToHistory } from "@/components/HistorySidebar";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const FAQS = [
   {
@@ -242,6 +243,7 @@ export default function DiffCheckerPage() {
         {/* Main Content Area */}
         <div style={{ maxWidth: 1000, margin: "0 auto" }}>
           
+           <FaqPageSchema faqs={FAQS} />
            {/* FAQ */}
            <section style={{ marginBottom: 80 }}>
             <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

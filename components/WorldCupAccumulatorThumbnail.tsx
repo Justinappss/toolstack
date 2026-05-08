@@ -67,6 +67,7 @@ export function WorldCupAccumulatorThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/world-cup-accumulator-calculator-preview.png"
                 alt="World Cup Accumulator preview"
                 style={{

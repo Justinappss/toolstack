@@ -1,6 +1,17 @@
 "use client";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "How accurate is this online stopwatch?", a: "Accurate to the centisecond using the browser's high-resolution Performance API \u2014 sufficient for workouts, cooking, meetings and presentations." },
+  { q: "Does the stopwatch keep running if I switch tabs?", a: "Yes. Elapsed time is calculated from timestamps rather than tick counts, so switching tabs or minimising the browser does not affect accuracy." },
+  { q: "How do I record lap times?", a: "Press the left pusher on the watch, the Lap button, or press L. Fastest lap is highlighted green, slowest in red." },
+  { q: "Can I set a countdown timer for any duration?", a: "Yes. Switch to Countdown mode, enter any combination of hours, minutes and seconds up to 23:59:59, or pick a quick preset." },
+  { q: "What are the keyboard shortcuts?", a: "Space starts and pauses. R resets. L records a lap in stopwatch mode. M switches between stopwatch and countdown." },
+  { q: "What is the best online stopwatch?", a: "ToolStack's Online Stopwatch offers millisecond accuracy, lap recording with split times, a built-in countdown timer, and full keyboard control \u2014 free with no signup." }
+];
+
 
 type Mode = "stopwatch" | "countdown";
 interface Lap { t: number; split: number; }
@@ -582,6 +593,9 @@ export default function OnlineStopwatch() {
             ))}
           </div>
         </section>
+
+
+        <FaqPageSchema faqs={FAQS} />
 
         <section className="sw-section">
           <h2>Frequently Asked Questions</h2>

@@ -27,6 +27,7 @@ export function CardBoxBreakThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/card-box-break-calculator-preview.png"
                 alt="Card Box Break preview"
                 style={{

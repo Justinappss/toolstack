@@ -2,6 +2,18 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is the best free AI color palette generator?", a: "ToolStack" },
+  { q: "How do I generate a color palette from a description?", a: "Type a description of your brand, project, or mood into the input field \u2014 for example " },
+  { q: "What do the 5 color roles mean?", a: "Each palette contains 5 roles: Primary (your main brand color, used for CTAs and headings), Secondary (supporting elements and hover states), Accent (highlights, icons, and interactive elements), Background (page backgrounds and card surfaces), and Text (body copy and labels). This role-based system ensures the palette is immediately usable in any design system." },
+  { q: "How do I export the color palette for CSS or Tailwind?", a: "After generating a palette, scroll to the Export section below the swatches. Choose CSS Variables, Tailwind Config, or SCSS Variables and click Copy Code. The CSS variables export creates a :root block ready to paste into your stylesheet. The Tailwind export creates a colors object for tailwind.config.js. The SCSS export creates $variable declarations." },
+  { q: "Are the generated color palettes WCAG accessible?", a: "The AI is instructed to ensure the Background and Text color combination meets WCAG AA contrast requirements (minimum 4.5:1 contrast ratio for normal text). The Accent and Primary colors are optimised for use on both light and dark backgrounds. For critical accessibility decisions, always verify contrast ratios using a dedicated contrast checker." },
+  { q: "Can I generate multiple palettes for the same description?", a: "Yes. Click Generate Palette as many times as you like. Each generation uses the same description but produces a different palette \u2014 GPT-4o introduces variation so you can explore multiple directions. Switching between style presets (Brand, UI, Dark, etc.) will also produce significantly different results for the same description." },
+  { q: "What style presets are available?", a: "There are 6 style presets: Brand Identity (professional, versatile, logo-ready), UI/Web (clean, high-contrast, accessible), Dark Theme (rich darks with glowing accents), Minimal (restrained, near-monochromatic with one focal accent), Vibrant (bold, saturated, high-energy), and Natural (organic, earthy, grounded in nature-inspired tones)." }
+];
+
 
 interface ColorSwatch {
     hex: string;
@@ -664,6 +676,9 @@ export default function ColorPaletteGenerator() {
                         </p>
                     </div>
                 </section>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>

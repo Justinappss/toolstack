@@ -1,6 +1,17 @@
 "use client";
 import { useState } from "react";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is the best card grading company in 2026?", a: "PSA is the best for sports cards if maximising resale value is your priority \u2014 they hold 67% market share and command 10-30% higher prices. For Pok\u00e9mon and TCG cards, CGC is the specialist choice. For budget submissions or vintage cards, SGC at $15-$18 per card offers the best value." },
+  { q: "Is PSA or BGS better?", a: "PSA is better for resale liquidity and standard sports cards. BGS (Beckett) is better if you want subgrades \u2014 detailed scores for centering, corners, edges and surface. A BGS Black Label 10 (perfect subgrades) can be worth significantly more than a PSA 10 for the same card." },
+  { q: "How long does PSA grading take in 2026?", a: "PSA turnaround times in 2026 range from 5 days (Super Express at $299.99) to 95 days (Value Bulk at $24.99, Collectors Club members only). The standard Value tier costs $32.99 with a 45-day turnaround." },
+  { q: "Is SGC cheaper than PSA?", a: "Yes. SGC is significantly cheaper than PSA. SGC Economy starts at $15 per card vs PSA Value Bulk at $24.99. SGC is 47-52% cheaper per card on comparable tiers. However, PSA-graded cards typically sell for 10-30% more, so the extra cost may be worth it for valuable cards." },
+  { q: "Should I use CGC for Pok\u00e9mon cards?", a: "Yes. CGC is the leading grading service for Pok\u00e9mon and other TCG cards (Yu-Gi-Oh, Magic: The Gathering). The Pok\u00e9mon collecting community specifically seeks CGC-graded cards, and CGC" },
+  { q: "What does BGS Black Label mean?", a: "BGS Black Label is awarded to cards that receive a 10 on all four subgrades (centering, corners, edges and surface). It is the rarest and most desirable grade in the hobby, often commanding 200-500% more than a standard BGS 10 or PSA 10 for the same card." }
+];
+
 
 const ACCENT = "#f59e0b";
 const ACCENT_RGB = "245,158,11";
@@ -532,6 +543,9 @@ export default function GradingComparisonPage() {
             ))}
           </div>
         </section>
+
+
+        <FaqPageSchema faqs={FAQS} />
 
         {/* FAQ */}
         <section style={{ marginTop: 64 }}>

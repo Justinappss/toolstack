@@ -9,6 +9,7 @@ import { MoreTools } from "@/components/MoreTools";
 import { PipeDataButton } from "@/components/PipeDataButton";
 import { ShareSnippetButton } from "@/components/ShareSnippetButton";
 import { Editor } from "@monaco-editor/react";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const INITIAL_SQL = `SELECT e.id, e.first_name, e.last_name, d.name AS department_name, count(p.id) as total_projects FROM employees e LEFT JOIN departments d ON e.department_id = d.id LEFT JOIN projects p ON e.id = p.employee_id WHERE e.status = 'ACTIVE' AND d.name IN ('Engineering', 'Product') GROUP BY e.id, e.first_name, e.last_name, d.name HAVING count(p.id) > 5 ORDER BY total_projects DESC LIMIT 10;`;
 
@@ -363,6 +364,7 @@ export default function SqlFormatter({ params }: { params: { dialect?: string[] 
             </div>
           </div>
 
+          <FaqPageSchema faqs={FAQS} />
           {/* ── FAQ ───────────────────────────────────────────────── */}
           <section style={{ marginBottom: 80 }}>
             <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

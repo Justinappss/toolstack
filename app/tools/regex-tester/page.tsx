@@ -5,6 +5,7 @@ import { AlertCircle, Filter, BookOpen, ChevronRight, Copy, Check } from "lucide
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const HOW_IT_WORKS = [
   { step: "01", title: "Write your Pattern", body: "Type your raw regular expression pattern in the top field. You don't need to include the forward slashes (/) as they are automatically applied.", color: "#8b5cf6", bg: "rgba(139,92,246,0.1)", border: "rgba(139,92,246,0.25)" },
@@ -383,6 +384,7 @@ export default function RegexTester() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ───────────────────────────────────────────────── */}
         <section style={{ marginBottom: 80 }}>
           <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

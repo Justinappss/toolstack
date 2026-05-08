@@ -28,6 +28,7 @@ export function PackBreakEvThumbnail() {
         }}>
             {/* Original thumbnail image */}
             <img
+                loading="lazy"
                 src="/tools/pack-break-ev-calculator-preview.png"
                 alt="Pack Break EV preview"
                 style={{

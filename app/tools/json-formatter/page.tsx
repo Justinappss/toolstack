@@ -6,6 +6,7 @@ import { PipeDataButton } from "@/components/PipeDataButton";
 import { ShareSnippetButton } from "@/components/ShareSnippetButton";
 import { Editor } from "@monaco-editor/react";
 import { Plus, X } from "lucide-react";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const SAMPLE_JSONS = [
   {
@@ -538,6 +539,7 @@ export default function JSONFormatterPage() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ── */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 8 }}>FAQ</p>

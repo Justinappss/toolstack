@@ -2,6 +2,18 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "How much should I tip at a restaurant?", a: "In the US and Canada, 15\u201320% is standard for sit-down dining, with 20\u201325% for exceptional service. In the UK, 10\u201312.5% is typical. In Japan and parts of Asia, tipping is not customary and may even be considered impolite. Use the country selector to see local norms." },
+  { q: "What is the best free tip calculator?", a: "ToolStack" },
+  { q: "How do I split a bill evenly between friends?", a: "Enter the total bill, choose your tip percentage, then set the number of people splitting. The calculator instantly shows each person" },
+  { q: "Should I tip on the pre-tax or post-tax amount?", a: "Tipping on the pre-tax (subtotal) amount is technically correct and what most etiquette guides recommend. However, tipping on the post-tax amount is common and makes the maths easier \u2014 the difference on a $50 bill is only about $0.50." },
+  { q: "Do you tip in countries like Japan or Australia?", a: "In Japan, tipping is not expected and can be considered rude \u2014 service excellence is a professional standard. In Australia, tipping is optional as staff earn a minimum wage; 10% for great service is appreciated. In the UAE, 10\u201315% is expected at restaurants. Always check local customs before you travel." },
+  { q: "How much do you tip a taxi driver?", a: "For taxis and ride-shares in the US, rounding up to the nearest dollar or tipping 10\u201315% is standard. In the UK, simply rounding up or adding \u00a31\u20132 is typical. For ride-shares like Uber or Lyft, in-app tipping of $1\u20133 or 10\u201315% is appreciated but not mandatory." },
+  { q: "Is a 20% tip good for a restaurant?", a: "Yes \u2014 20% is considered an excellent tip in the US and Canada and is a widely accepted standard for good service. In the UK, 20% would be considered very generous (the norm is 10\u201312.5%). The right tip depends heavily on the country you are dining in." }
+];
+
 
 /* ─── Country tipping data ─────────────────────────────── */
 type CountryTip = {
@@ -577,6 +589,9 @@ export default function TipCalculatorPage() {
             Australia and New Zealand fall in the middle: tipping is optional because staff earn a strong minimum wage, but 10% for great service is welcomed. The UAE and other Gulf countries tend to expect 10–15% at international restaurants, particularly in Dubai and Abu Dhabi.
           </p>
         </section>
+
+
+        <FaqPageSchema faqs={FAQS} />
 
         {/* ── FAQ ──────────────────────────────────────────────── */}
         <section style={{ marginBottom: 64 }}>

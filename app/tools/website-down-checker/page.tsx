@@ -2,6 +2,17 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "How do I check if a website is down?", a: "Enter the website URL into the checker and click Check. The tool sends a request to the site" },
+  { q: "What does a 200 status code mean?", a: "A 200 status code means the website is up and responding normally. Other 2xx codes also indicate success. 5xx codes (500, 502, 503) indicate the server is having problems. If no status code is returned, the server couldn" },
+  { q: "Why might a site show as down for me but up for others?", a: "A site can be down in one region but up in another due to regional server outages, CDN issues, or DNS propagation problems. This tool checks from the server" },
+  { q: "What is a good response time for a website?", a: "Under 500ms is considered fast. 500ms to 1500ms is moderate. Over 1500ms is slow and may indicate server performance issues. Response time measures how long the server takes to respond to a request, not how long the full page takes to load." },
+  { q: "What does HTTP 503 mean?", a: "HTTP 503 means " },
+  { q: "What is the best website down checker?", a: "ToolStack" }
+];
+
 
 interface CheckResult {
     url: string;
@@ -355,6 +366,9 @@ export default function WebsiteDownChecker() {
                         ))}
                     </div>
                 </section>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>

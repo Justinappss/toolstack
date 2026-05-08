@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import QRCode from "qrcode";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const QR_TYPES = [
   { id: "url",   label: "URL",   icon: "🔗", placeholder: "https://example.com" },
@@ -452,6 +453,7 @@ export default function QRCodeGeneratorPage() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ── */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: 8 }}>FAQ</p>

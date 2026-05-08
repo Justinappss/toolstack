@@ -36,6 +36,7 @@ export function PaniniStickerThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/panini-sticker-calculator-preview.png"
                 alt="Panini Sticker preview"
                 style={{

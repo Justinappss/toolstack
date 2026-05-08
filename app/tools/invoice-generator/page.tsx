@@ -2,6 +2,7 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const CURRENCIES = [
   { code: "GBP", symbol: "£", label: "GBP — British Pound" },
@@ -654,6 +655,7 @@ export default function InvoiceGeneratorPage() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* FAQ */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 8 }}>FAQ</p>

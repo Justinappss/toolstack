@@ -1,6 +1,18 @@
 "use client";
 import { useState, useCallback, useEffect } from "react";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is a UUID?", a: "A UUID (Universally Unique Identifier) is a 128-bit label used to uniquely identify information in computer systems. It is formatted as 32 hexadecimal digits in groups of 8-4-4-4-12 separated by hyphens, e.g. 550e8400-e29b-41d4-a716-446655440000." },
+  { q: "What is the difference between UUID v1 and UUID v4?", a: "UUID v1 is time-based, embedding the current timestamp and making IDs sortable by creation time. UUID v4 is completely random, providing better privacy since it reveals nothing about when or where it was created. v4 is the most widely used format." },
+  { q: "What is a UUID v5 and when should I use it?", a: "UUID v5 is deterministic \u2014 it generates a UUID by hashing a namespace UUID and a name string using SHA-1. The same namespace and name always produce the same UUID. This is ideal for generating stable IDs for known entities like domain names or product SKUs." },
+  { q: "What is a ULID and how does it differ from a UUID?", a: "A ULID (Universally Unique Lexicographically Sortable Identifier) encodes a millisecond timestamp in its first 10 characters, making it naturally sortable as a string. Unlike UUIDs, ULIDs sort in creation order \u2014 useful for database primary keys where chronological ordering matters." },
+  { q: "Are the IDs generated client-side?", a: "Yes \u2014 all ID generation happens entirely in your browser using the Web Crypto API. No data is sent to any server, making this tool instantaneous and completely private." },
+  { q: "What is the best free UUID generator?", a: "ToolStack UUID Generator supports UUID v4, v1, v5, ULID, and NanoID \u2014 all free, no signup, 100% client-side. You can generate up to 100 IDs at once with formatting options including uppercase, no-hyphens, and braces. It is the most complete free UUID tool available." },
+  { q: "Are UUIDs truly unique?", a: "UUID v4 has 122 bits of randomness, giving 2^122 possible values. The probability of generating a duplicate is astronomically small \u2014 roughly 1 in 5 undecillion. For all practical purposes, UUIDs can be treated as globally unique." }
+];
+
 
 // --- Generators ---
 function genV4(): string {
@@ -427,6 +439,9 @@ export default function UUIDGeneratorPage() {
             ))}
           </div>
         </section>
+
+
+        <FaqPageSchema faqs={FAQS} />
 
         {/* FAQ */}
         <section style={{ marginTop: 64, marginBottom: 64 }}>

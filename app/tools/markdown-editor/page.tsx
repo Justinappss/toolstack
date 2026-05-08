@@ -7,6 +7,7 @@ import { marked } from "marked";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
 import { PipeDataButton } from "@/components/PipeDataButton";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const INITIAL_MD = `# Welcome to the Markdown Editor! 👋
 
@@ -367,6 +368,7 @@ export default function MarkdownEditor() {
             </div>
           </div>
 
+          <FaqPageSchema faqs={FAQS} />
           {/* ── FAQ ───────────────────────────────────────────────── */}
           <section style={{ marginBottom: 80 }}>
             <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

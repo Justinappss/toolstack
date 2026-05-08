@@ -2,6 +2,17 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "Is my text sent to any server?", a: "No. The PDF is generated entirely in your browser using JavaScript. Nothing is uploaded or stored on any server." },
+  { q: "Can I use this for professional documents?", a: "Yes. The output is a clean, properly formatted PDF with no watermarks or branding. Use it for reports, letters, notes, or any text document." },
+  { q: "How do I add multiple paragraphs?", a: "Leave a blank line between paragraphs \u2014 the same way you would in any word processor. The generator preserves paragraph spacing automatically." },
+  { q: "What fonts are available?", a: "Helvetica (clean, modern), Times (classic serif), and Courier (monospaced, great for code or scripts). These are standard PDF-embedded fonts." },
+  { q: "Can I generate a multi-page PDF?", a: "Yes. If your content exceeds one page, the generator automatically adds new pages and numbers each one." },
+  { q: "What is the best free PDF generator?", a: "ToolStack's PDF Generator lets you create PDFs from text with custom fonts, headers, footers, and page sizes. Supports A4, Letter, and multiple fonts. Completely free, no limits on pages or usage." }
+];
+
 
 const PAGE_SIZES = [
     { label: "A4", value: "a4", w: 210, h: 297 },
@@ -337,6 +348,9 @@ export default function PdfGeneratorPage() {
                         </div>
                     ))}
                 </div>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <div style={{ marginTop: 56 }}>

@@ -1,6 +1,18 @@
 "use client";
 import { useState, useCallback } from "react";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is the eBay fee for selling sports cards in 2026?", a: "eBay charges 13.25% of the total sale price (including shipping) plus $0.30 per order for trading cards in 2026. On a $100 card, that is $13.55 in fees, leaving you with $86.45 before shipping and your buy cost." },
+  { q: "How do I calculate my ROI on a card flip?", a: "ROI = (Net profit / Total cost) x 100. Net profit = sell price minus platform fees, shipping, buy price, grading costs and supplies. For example: buy $20, sell $50 on eBay ($6.93 fee + $3.50 BMWT shipping) = $39.57 net revenue, $19.57 profit on $20 cost = 97.8% ROI." },
+  { q: "What is the cheapest way to ship a sports card?", a: "A PWE (plain white envelope) with a stamp costs around $0.73 and works for low-value raw cards. For tracked shipments, a BMWT (bubble mailer with top loader) runs $3.50-$4.50. USPS padded flat rate envelopes at $8.95 are best for multiple cards or graded slabs." },
+  { q: "Is Whatnot cheaper than eBay for selling cards?", a: "Whatnot charges 8% commission + 2.9% payment processing + $0.30, totalling approximately 10.8% + $0.30. eBay charges 13.25% + $0.30. Whatnot is cheaper on percentage fees for cards under $1,500, but eBay has a larger buyer pool which can offset the fee difference with higher sale prices." },
+  { q: "What is a good ROI on a card flip?", a: "A good card flip ROI is 30% or more after all fees. Professional flippers target 50-100% ROI on quick flips. Anything under 20% ROI is generally not worth the effort once you factor in time. For graded cards, ROI is lower because grading costs are a fixed overhead." },
+  { q: "What does break-even mean for a card flip?", a: "Break-even is the minimum sell price where you make exactly $0 profit. It accounts for your buy price, platform fees, shipping and any grading or supply costs. Selling above break-even means profit; below means a loss. Always calculate your break-even before listing a card." },
+  { q: "What is the best free card flip ROI calculator?", a: "ToolStack's Card Flip ROI Calculator accounts for purchase price, sale price, platform fees (eBay, Whatnot, Mercari), shipping costs, and taxes to give you accurate net profit and ROI percentage. Free, unlimited." }
+];
+
 
 const ACCENT = "#10b981";
 const ACCENT_RGB = "16,185,129";
@@ -405,6 +417,9 @@ export default function CardFlipROIPage() {
             ))}
           </div>
         </section>
+
+
+        <FaqPageSchema faqs={FAQS} />
 
         {/* FAQ */}
         <section style={{ marginTop: 64 }}>

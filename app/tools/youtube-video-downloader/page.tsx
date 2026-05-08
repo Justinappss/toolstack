@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 // ─── TYPES ─────────────────────────────────────────────────────────────────
 interface VideoData {
@@ -280,6 +281,7 @@ export default function YouTubeVideoDownloader() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* FAQ Section */}
         <div style={{ marginTop: 80, marginBottom: 80 }}>
           <h2 style={{ fontSize: 28, fontWeight: 900, color: "white", textAlign: "center", marginBottom: 40 }}>Common Questions</h2>

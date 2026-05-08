@@ -2,6 +2,7 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const COUNTRIES = [
   { code: "GB", name: "United Kingdom", flag: "🇬🇧", currency: "GBP", symbol: "£", defaultRate: "4.5" },
@@ -366,6 +367,7 @@ export default function MortgageCalculator() {
           </div>
         </section>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* FAQ */}
         <section style={{ marginTop: 56 }}>
           <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

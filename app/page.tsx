@@ -734,7 +734,7 @@ export default function Home() {
                                 marginBottom: 28,
                                 color: "white",
                             }}>
-                                Every tool<br />
+                                Every free online tool<br />
                                 you need.<br />
                                 <span style={{
                                     background: "linear-gradient(135deg, #818cf8 0%, #c084fc 35%, #f472b6 65%, #fb923c 100%)",
@@ -790,7 +790,7 @@ export default function Home() {
                             {/* Product Hunt badge */}
                             <div className="fade-up-delay-4" style={{ marginTop: 4 }}>
                                 <a href="https://www.producthunt.com/products/toolstack-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-toolstack-2" target="_blank" rel="noopener noreferrer">
-                                    <img alt="ToolStack on Product Hunt" width="200" height="43" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1126961&theme=dark&t=1776719417942" style={{ display: "block" }} />
+                                    <img alt="ToolStack on Product Hunt" width="200" height="43" loading="lazy" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1126961&theme=dark&t=1776719417942" style={{ display: "block" }} />
                                 </a>
                             </div>
 

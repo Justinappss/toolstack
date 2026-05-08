@@ -2,6 +2,7 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const COUNTRIES = [
   { code: "GB", name: "United Kingdom", flag: "🇬🇧", standard: 20, reduced: 5, currency: "£", currencyCode: "GBP" },
@@ -478,6 +479,7 @@ export default function VATCalculatorPage() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ── */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: 8 }}>FAQ</p>

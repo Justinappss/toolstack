@@ -2,6 +2,18 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is the best email subject line tester?", a: "ToolStack" },
+  { q: "What is a good email subject line score?", a: "A score of 80+ (grade A) is excellent. 65\u201379 (grade B) is good. Aim for at least 65." },
+  { q: "What are email spam trigger words?", a: "Spam triggers are phrases flagged by filters, including " },
+  { q: "What is the ideal email subject line length?", a: "40\u201360 characters. This ensures full display in Gmail desktop and mobile without clipping." },
+  { q: "How do I use A/B compare mode?", a: "Click the A/B Compare button, enter two subject lines, and get instant side-by-side scores with a winner badge." },
+  { q: "What are email power words?", a: "Power words trigger emotional responses \u2014 urgency (now, expires), curiosity (secret, revealed), FOMO (exclusive, rare), value (save, results) and personalisation (you, your)." },
+  { q: "How do I improve my email open rate?", a: "Use 40\u201360 characters, include power words, remove spam triggers, add a number for specificity, keep punctuation to one mark, limit emojis to one." }
+];
+
 
 type PowerCategory = "urgency" | "curiosity" | "fomo" | "value" | "personalization";
 interface PowerWord { word: string; category: PowerCategory; }
@@ -646,6 +658,9 @@ export default function EmailSubjectLineTesterPage() {
                         ))}
                     </div>
                 </div>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <div style={{ marginBottom: 64 }}>

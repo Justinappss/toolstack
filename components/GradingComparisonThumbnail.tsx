@@ -28,6 +28,7 @@ export function GradingComparisonThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/grading-company-comparison-preview.png"
                 alt="Grading Company Comparison preview"
                 style={{

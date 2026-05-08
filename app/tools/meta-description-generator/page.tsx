@@ -2,6 +2,13 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is the best meta description generator?", a: "ToolStack's free meta description generator is the most complete free option available. It generates 5 click-optimised variants covering benefit-led, feature-focused, urgency, question-led, and CTA-first angles, with a live Google SERP preview, CTR score, character counter, and one-click HTML copy. No signup required." },
+  { q: "How long should a meta description be?", a: "The ideal length is 150\u2013160 characters. Mobile devices often truncate at 120, so front-load your primary keyword and value hook." }
+];
+
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -747,6 +754,9 @@ export default function MetaDescriptionGenerator() {
                         ))}
                     </div>
                 </section>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* ─── FAQ ─── */}
                 <section style={{ marginTop: 72 }}>

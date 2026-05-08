@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 // ─── SVG Brand Icons ──────────────────────────────────────────────────────────
 
@@ -759,6 +760,7 @@ export default function HashtagGenerator() {
             </div>
           </section>
 
+          <FaqPageSchema faqs={FAQS} />
           {/* ── FAQ ── */}
           <section style={{ marginBottom: 64 }}>
             <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 24 }}>

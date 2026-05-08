@@ -2,6 +2,16 @@
 import { useState } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is an SSL certificate?", a: "An SSL certificate is a digital certificate that authenticates a website" },
+  { q: "How long do SSL certificates last?", a: "Modern SSL certificates are valid for a maximum of 397 days (about 13 months). After that, they must be renewed. Let" },
+  { q: "What does it mean if an SSL certificate has expired?", a: "An expired SSL certificate means the website" },
+  { q: "Who issues SSL certificates?", a: "SSL certificates are issued by Certificate Authorities (CAs). Major CAs include Let" },
+  { q: "What is the best SSL certificate checker?", a: "ToolStack" }
+];
+
 
 interface SslResult {
     domain: string;
@@ -301,6 +311,9 @@ export default function SslCheckerPage() {
                         </div>
                     ))}
                 </div>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>

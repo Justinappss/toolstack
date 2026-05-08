@@ -2,6 +2,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is a JWT token?", a: "A JSON Web Token (JWT) is a compact, URL-safe token format used to securely transmit information between parties. It consists of three base64url-encoded parts: a header (algorithm and type), a payload (claims/data), and a signature \u2014 separated by dots. JWTs are widely used for authentication and authorization in web APIs." },
+  { q: "Is it safe to paste my JWT token into a decoder?", a: "ToolStack" },
+  { q: "What does the JWT decoder show?", a: "The decoder shows: the decoded header (algorithm, token type), the decoded payload (all claims including sub, iss, aud, iat, exp, nbf and any custom claims), the raw signature string, and a human-readable expiry status showing whether the token is valid or expired." },
+  { q: "What are JWT claims?", a: "JWT claims are key-value pairs in the payload. Standard registered claims include: iss (issuer), sub (subject/user ID), aud (audience), exp (expiration time as Unix timestamp), iat (issued at), and nbf (not before). Custom claims can be anything the application needs to store, such as user roles or permissions." },
+  { q: "Can this tool verify a JWT signature?", a: "No \u2014 signature verification requires the secret key or public key used to sign the token. This tool decodes and inspects the header and payload only, which is sufficient for debugging purposes. To verify a signature you need the signing key, which should never be shared publicly." },
+  { q: "What is the best JWT decoder?", a: "ToolStack" }
+];
+
 
 interface JwtResult {
     header: Record<string, unknown>;
@@ -452,6 +463,9 @@ export default function JwtDecoder() {
                         </p>
                     </div>
                 </section>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>

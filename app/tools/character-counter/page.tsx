@@ -2,6 +2,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 // ─── Platform limits ─────────────────────────────────────────────────────────
 const PLATFORMS = [
@@ -383,6 +384,7 @@ export default function CharacterCounterPage() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* FAQ */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.55)", marginBottom: 8 }}>FAQ</p>

@@ -5,6 +5,7 @@ import { Link as LinkIcon, Copy, Check, Info, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const HOW_IT_WORKS = [
   { step: "01", title: "Target URL", body: "Paste the exact URL of the website or landing page you want to drive traffic to. This must be a valid HTTP or HTTPS address.", color: "#3b82f6", bg: "rgba(59,130,246,0.1)", border: "rgba(59,130,246,0.25)" },
@@ -346,6 +347,7 @@ export default function UTMBuilder() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ───────────────────────────────────────────────── */}
         <section style={{ marginBottom: 80 }}>
           <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

@@ -2,6 +2,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+
+const FAQS = [
+  { q: "What is my IP address?", a: "Your IP address is a unique number assigned to your device by your Internet Service Provider (ISP). It identifies your device on the internet and is used to route data to and from your connection. Use this tool to see your current public IP address instantly." },
+  { q: "Can websites see my IP address?", a: "Yes. Every website you visit can see your public IP address. It is required for the site to send data back to your browser." },
+  { q: "What does my IP address reveal?", a: "Your IP reveals your approximate location (city and region), your ISP, and your timezone. It does not reveal your exact home address, name, or personal details. The location shown is typically the location of your ISP." },
+  { q: "How do I hide my IP address?", a: "The most common ways to hide your IP are: (1) Use a VPN \u2014 it routes your traffic through a server in another location, replacing your IP. (2) Use Tor browser \u2014 routes through multiple nodes. (3) Use a proxy server. A VPN is the most practical option for most users." },
+  { q: "What is the best IP address lookup tool?", a: "ToolStack's IP Address Lookup shows your public IP instantly on page load and supports lookup for any IP address worldwide. It displays ISP, city, region, country, coordinates, and detects proxies/VPNs. Completely free with unlimited lookups." }
+];
+
 
 interface IpData {
     ip: string;
@@ -245,6 +255,9 @@ export default function IpLookupPage() {
                         </p>
                     </div>
                 </section>
+
+
+                <FaqPageSchema faqs={FAQS} />
 
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>

@@ -67,6 +67,7 @@ export function WorldCupTeamFinderThumbnail() {
             background: "#06070d",
         }}>
             <img
+                loading="lazy"
                 src="/tools/world-cup-team-finder-preview.png"
                 alt="World Cup Team Finder preview"
                 style={{

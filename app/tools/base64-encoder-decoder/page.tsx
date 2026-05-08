@@ -6,6 +6,7 @@ import Link from "next/link";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
 import { PipeDataButton } from "@/components/PipeDataButton";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const HOW_IT_WORKS = [
   { step: "01", title: "Select Mode", body: "Choose whether you want to Encode standard text into Base64, or Decode a Base64 string back into readable text.", color: "#6366f1", bg: "rgba(99,102,241,0.1)", border: "rgba(99,102,241,0.25)" },
@@ -309,6 +310,7 @@ export default function Base64Encoder() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ───────────────────────────────────────────────── */}
         <section style={{ marginBottom: 80 }}>
           <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", marginBottom: 28 }}>Frequently Asked Questions</h2>

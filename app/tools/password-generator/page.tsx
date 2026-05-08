@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { MoreTools } from "@/components/MoreTools";
+import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const CHARS = {
   upper:   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -431,6 +432,7 @@ export default function PasswordGeneratorPage() {
           </div>
         </div>
 
+        <FaqPageSchema faqs={FAQS} />
         {/* ── FAQ ── */}
         <div style={{ marginBottom: 80 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 7, marginBottom: 14 }}>
