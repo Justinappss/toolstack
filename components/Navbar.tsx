@@ -22,10 +22,10 @@ function buildSearchTools() {
 const NAV_LINKS = [
     ["All Tools", "/tools"],
     ["Blog", "/blog"],
-    ["AI Tools", "/tools?category=ai"],
-    ["SEO", "/tools?category=seo"],
-    ["Writing", "/tools?category=writing"],
-    ["Dev", "/tools?category=dev"],
+    ["AI Tools", "/tools/category/ai"],
+    ["SEO", "/tools/category/seo"],
+    ["Writing", "/tools/category/writing"],
+    ["Dev", "/tools/category/dev"],
 ];
 
 export function Navbar() {
