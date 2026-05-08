@@ -140,7 +140,7 @@ export default function GrammarCheckerPage() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools?category=writing" },
+            { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools/category/writing" },
             { "@type": "ListItem", "position": 3, "name": "Grammar Checker", "item": "https://toolstack.tech/tools/grammar-checker" },
           ],
         },

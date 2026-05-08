@@ -279,7 +279,7 @@ export default function ColorPaletteGenerator() {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                    { "@type": "ListItem", "position": 2, "name": "Design", "item": "https://toolstack.tech/tools?category=design" },
+                    { "@type": "ListItem", "position": 2, "name": "Design", "item": "https://toolstack.tech/tools/category/design" },
                     { "@type": "ListItem", "position": 3, "name": "AI Color Palette Generator", "item": "https://toolstack.tech/tools/color-palette-generator" },
                 ],
             },
@@ -343,7 +343,7 @@ export default function ColorPaletteGenerator() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=design" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Design</Link>
+                    <Link href="/tools/category/design" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Design</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>AI Color Palette Generator</span>
                 </nav>

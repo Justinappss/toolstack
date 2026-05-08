@@ -85,7 +85,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Finance", "item": "https://toolstack.tech/tools?category=finance" },
+                { "@type": "ListItem", "position": 2, "name": "Finance", "item": "https://toolstack.tech/tools/category/finance" },
                 { "@type": "ListItem", "position": 3, "name": "Compound Interest Calculator", "item": "https://toolstack.tech/tools/compound-interest-calculator" },
             ],
         },
@@ -159,7 +159,7 @@ export default function CompoundInterestCalculator() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28, flexWrap: "wrap" }}>
                         <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/tools?category=finance" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Finance</Link>
+                        <Link href="/tools/category/finance" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Finance</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Compound Interest Calculator</span>
                     </nav>

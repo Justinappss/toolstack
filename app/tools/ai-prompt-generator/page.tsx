@@ -398,7 +398,7 @@ export default function AIPromptGenerator() {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "AI Tools", "item": "https://toolstack.tech/tools?category=ai" },
+            { "@type": "ListItem", "position": 2, "name": "AI Tools", "item": "https://toolstack.tech/tools/category/ai" },
             { "@type": "ListItem", "position": 3, "name": "AI Prompt Generator", "item": "https://toolstack.tech/tools/ai-prompt-generator" },
           ],
         },
@@ -450,7 +450,7 @@ export default function AIPromptGenerator() {
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 40, paddingTop: 20 }}>
             <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
             <ChevronRight size={13} color="rgba(255,255,255,0.2)" />
-            <Link href="/tools?category=ai" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>AI Tools</Link>
+            <Link href="/tools/category/ai" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>AI Tools</Link>
             <ChevronRight size={13} color="rgba(255,255,255,0.2)" />
             <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>AI Prompt Generator</span>
           </div>

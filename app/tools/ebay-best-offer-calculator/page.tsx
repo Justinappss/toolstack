@@ -55,7 +55,7 @@ const jsonLd = JSON.stringify([
         "@type": "BreadcrumbList",
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools?category=collectibles" },
+            { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools/category/collectibles" },
             { "@type": "ListItem", "position": 3, "name": "eBay Best Offer Calculator", "item": "https://toolstack.tech/tools/ebay-best-offer-calculator" }
         ]
     },
@@ -178,7 +178,7 @@ export default function EbayBestOfferCalculatorPage() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
+                    <Link href="/tools/category/collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>eBay Best Offer Calculator</span>
                 </nav>
@@ -490,7 +490,7 @@ export default function EbayBestOfferCalculatorPage() {
                   <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
                     Calculate Whatnot fees, pack break EV, grading ROI, and more — all free for resellers and collectors.
                   </p>
-                  <a href="/tools?category=collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#34d399", textDecoration: "none" }}>View all collectibles tools →</a>
+                  <a href="/tools/category/collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#34d399", textDecoration: "none" }}>View all collectibles tools →</a>
                 </section>
 
                 <MoreTools currentSlug="ebay-best-offer-calculator" />

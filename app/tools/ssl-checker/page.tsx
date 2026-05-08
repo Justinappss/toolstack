@@ -63,7 +63,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Security", "item": "https://toolstack.tech/tools?category=security" },
+                { "@type": "ListItem", "position": 2, "name": "Security", "item": "https://toolstack.tech/tools/category/security" },
                 { "@type": "ListItem", "position": 3, "name": "SSL Certificate Checker", "item": "https://toolstack.tech/tools/ssl-checker" },
             ],
         },
@@ -122,7 +122,7 @@ export default function SslCheckerPage() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                         <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                         <span>›</span>
-                        <Link href="/tools?category=security" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Security</Link>
+                        <Link href="/tools/category/security" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Security</Link>
                         <span>›</span>
                         <span style={{ color: "rgba(255,255,255,0.7)" }}>SSL Certificate Checker</span>
                     </nav>

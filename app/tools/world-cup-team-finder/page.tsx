@@ -415,7 +415,7 @@ export default function WorldCupTeamFinderPage() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 36, flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=sports" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Sports</Link>
+                    <Link href="/tools/category/sports" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Sports</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>WC 2026 Team Finder</span>
                 </nav>

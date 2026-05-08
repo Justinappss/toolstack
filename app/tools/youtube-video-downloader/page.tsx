@@ -131,7 +131,7 @@ export default function YouTubeVideoDownloader() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://toolstack.tech/tools?category=seo" },
+            { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://toolstack.tech/tools/category/seo" },
             { "@type": "ListItem", "position": 3, "name": "YouTube Video Downloader", "item": "https://toolstack.tech/tools/youtube-video-downloader" },
           ],
         },
@@ -146,7 +146,7 @@ export default function YouTubeVideoDownloader() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools?category=seo" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>SEO Tools</Link>
+          <Link href="/tools/category/seo" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>SEO Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>YouTube Video Downloader</span>
         </nav>

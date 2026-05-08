@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { CATEGORY_MAP } from "../../page";
+import { CATEGORY_MAP } from "../../tool-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
   const { category } = await params;

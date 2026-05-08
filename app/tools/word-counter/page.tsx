@@ -430,7 +430,7 @@ export default function WordCounter() {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools?category=writing" },
+            { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools/category/writing" },
             { "@type": "ListItem", "position": 3, "name": "Word Counter", "item": "https://toolstack.tech/tools/word-counter" },
           ],
         },
@@ -462,7 +462,7 @@ export default function WordCounter() {
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 40, paddingTop: 20 }}>
             <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
             <ChevronRight size={13} color="rgba(255,255,255,0.2)" />
-            <Link href="/tools?category=writing" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Writing Tools</Link>
+            <Link href="/tools/category/writing" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Writing Tools</Link>
             <ChevronRight size={13} color="rgba(255,255,255,0.2)" />
             <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>Word Counter</span>
           </div>

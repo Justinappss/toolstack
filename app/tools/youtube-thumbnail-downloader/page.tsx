@@ -107,7 +107,7 @@ export default function YoutubeThumbnailDownloader() {
         <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.45)" }}>
           <a href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</a>
           <span>/</span>
-          <a href="/tools?category=video" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Video</a>
+          <a href="/tools/category/video" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Video</a>
           <span>/</span>
           <span style={{ color: accent }}>YouTube Thumbnail Downloader</span>
         </nav>
@@ -341,7 +341,7 @@ export default function YoutubeThumbnailDownloader() {
               "@type": "BreadcrumbList",
               "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Video", "item": "https://toolstack.tech/tools?category=video" },
+                { "@type": "ListItem", "position": 2, "name": "Video", "item": "https://toolstack.tech/tools/category/video" },
                 { "@type": "ListItem", "position": 3, "name": "YouTube Thumbnail Downloader", "item": "https://toolstack.tech/tools/youtube-thumbnail-downloader" },
               ],
             },

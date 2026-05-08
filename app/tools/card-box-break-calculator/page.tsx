@@ -60,7 +60,7 @@ const jsonLd = JSON.stringify([
         "@type": "BreadcrumbList",
         "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools?category=collectibles" },
+            { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools/category/collectibles" },
             { "@type": "ListItem", "position": 3, "name": "Card Box Break Calculator", "item": "https://toolstack.tech/tools/card-box-break-calculator" }
         ]
     },
@@ -157,7 +157,7 @@ export default function CardBoxBreakCalculatorPage() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
+                    <Link href="/tools/category/collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>Card Box Break Calculator</span>
                 </nav>

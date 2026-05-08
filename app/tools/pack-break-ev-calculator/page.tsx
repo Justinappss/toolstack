@@ -221,7 +221,7 @@ export default function PackBreakEvCalculator() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
+                    <Link href="/tools/category/collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.8)" }}>Pack Break EV Calculator</span>
                 </nav>
@@ -482,7 +482,7 @@ export default function PackBreakEvCalculator() {
                     <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", margin: "0 0 12px", lineHeight: 1.6 }}>
                         Calculate break spot pricing, eBay best offers, card grading profit and more — all free, no signup.
                     </p>
-                    <Link href="/tools?category=collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>
+                    <Link href="/tools/category/collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>
                         View all collectibles tools →
                     </Link>
                 </div>

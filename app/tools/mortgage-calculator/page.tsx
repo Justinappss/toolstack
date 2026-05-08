@@ -135,7 +135,7 @@ export default function MortgageCalculator() {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Finance Tools", "item": "https://toolstack.tech/tools?category=finance" },
+          { "@type": "ListItem", "position": 2, "name": "Finance Tools", "item": "https://toolstack.tech/tools/category/finance" },
           { "@type": "ListItem", "position": 3, "name": "Mortgage Calculator", "item": "https://toolstack.tech/tools/mortgage-calculator" },
         ]
       },
@@ -167,7 +167,7 @@ export default function MortgageCalculator() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, color: "rgba(255,255,255,0.35)", marginBottom: 32, flexWrap: "wrap" as const }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>ToolStack</Link>
           <span>/</span>
-          <Link href="/tools?category=finance" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Finance Tools</Link>
+          <Link href="/tools/category/finance" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Finance Tools</Link>
           <span>/</span>
           <span style={{ color: "rgba(255,255,255,0.65)" }}>Mortgage Calculator</span>
         </nav>
@@ -409,7 +409,7 @@ export default function MortgageCalculator() {
           <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
             Calculate eBay profit, Whatnot fees, card flip ROI, and more — all free, no signup.
           </p>
-          <a href="/tools?category=finance" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>View all finance tools →</a>
+          <a href="/tools/category/finance" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>View all finance tools →</a>
         </section>
 
         <div style={{ marginTop: 56 }}>

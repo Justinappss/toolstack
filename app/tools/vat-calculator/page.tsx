@@ -525,7 +525,7 @@ export default function VATCalculatorPage() {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Financial Tools", "item": "https://toolstack.tech/tools?category=finance" },
+          { "@type": "ListItem", "position": 2, "name": "Financial Tools", "item": "https://toolstack.tech/tools/category/finance" },
           { "@type": "ListItem", "position": 3, "name": "VAT Calculator", "item": "https://toolstack.tech/tools/vat-calculator" },
         ],
       })}} />

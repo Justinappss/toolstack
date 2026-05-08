@@ -175,7 +175,7 @@ export default function MarkdownEditor() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools?category=writing" },
+            { "@type": "ListItem", "position": 2, "name": "Writing Tools", "item": "https://toolstack.tech/tools/category/writing" },
             { "@type": "ListItem", "position": 3, "name": "Markdown Editor", "item": "https://toolstack.tech/tools/markdown-editor" },
           ],
         },
@@ -191,7 +191,7 @@ export default function MarkdownEditor() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", maxWidth: 1000, margin: "0 auto 32px" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools?category=writing" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Writing Tools</Link>
+          <Link href="/tools/category/writing" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Writing Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Markdown Editor</span>
         </nav>

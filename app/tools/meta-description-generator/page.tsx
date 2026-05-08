@@ -357,7 +357,7 @@ export default function MetaDescriptionGenerator() {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                    { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://toolstack.tech/tools?category=seo" },
+                    { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://toolstack.tech/tools/category/seo" },
                     { "@type": "ListItem", "position": 3, "name": "Meta Description Generator", "item": "https://toolstack.tech/tools/meta-description-generator" }
                 ]
             },
@@ -395,7 +395,7 @@ export default function MetaDescriptionGenerator() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 36, fontSize: 13, color: "rgba(255,255,255,0.3)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                     <span>/</span>
-                    <Link href="/tools?category=seo" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>All Tools</Link>
+                    <Link href="/tools/category/seo" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>All Tools</Link>
                     <span>/</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>Meta Description Generator</span>
                 </nav>

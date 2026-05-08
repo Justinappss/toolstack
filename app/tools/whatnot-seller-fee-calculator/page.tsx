@@ -95,7 +95,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools?category=collectibles" },
+                { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools/category/collectibles" },
                 { "@type": "ListItem", "position": 3, "name": "Whatnot Seller Fee Calculator", "item": "https://toolstack.tech/tools/whatnot-seller-fee-calculator" },
             ],
         },
@@ -203,7 +203,7 @@ export default function WhatnotSellerFeeCalculator() {
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28 }}>
                         <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/tools?category=collectibles" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Collectibles</Link>
+                        <Link href="/tools/category/collectibles" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Collectibles</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Whatnot Seller Fee Calculator</span>
                     </div>
@@ -489,7 +489,7 @@ export default function WhatnotSellerFeeCalculator() {
                   <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
                     Calculate eBay best offers, pack break EV, card flip ROI, and more — all free for sellers and collectors.
                   </p>
-                  <a href="/tools?category=collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#f97316", textDecoration: "none" }}>View all collectibles tools →</a>
+                  <a href="/tools/category/collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#f97316", textDecoration: "none" }}>View all collectibles tools →</a>
                 </section>
 
                 <MoreTools currentSlug="whatnot-seller-fee-calculator" />

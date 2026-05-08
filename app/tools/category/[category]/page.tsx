@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ALL_TOOLS, CATEGORIES, CATEGORY_MAP } from "../../page";
+import { ALL_TOOLS, CATEGORIES, CATEGORY_MAP } from "../../tool-data";
 import { CATEGORY_SEO_CONTENT } from "./category-content";
 import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { notFound } from "next/navigation";

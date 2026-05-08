@@ -174,7 +174,7 @@ export default function SalaryCalculator() {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Finance Tools", "item": "https://toolstack.tech/tools?category=finance" },
+          { "@type": "ListItem", "position": 2, "name": "Finance Tools", "item": "https://toolstack.tech/tools/category/finance" },
           { "@type": "ListItem", "position": 3, "name": "Salary Calculator", "item": "https://toolstack.tech/tools/salary-calculator" },
         ]
       },
@@ -206,7 +206,7 @@ export default function SalaryCalculator() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, color: "rgba(255,255,255,0.35)", marginBottom: 32, flexWrap: "wrap" as const }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>ToolStack</Link>
           <span>/</span>
-          <Link href="/tools?category=finance" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Finance Tools</Link>
+          <Link href="/tools/category/finance" style={{ color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Finance Tools</Link>
           <span>/</span>
           <span style={{ color: "rgba(255,255,255,0.65)" }}>Salary Calculator</span>
         </nav>

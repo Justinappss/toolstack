@@ -54,7 +54,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools/category/utility" },
                 { "@type": "ListItem", "position": 3, "name": "IP Address Lookup", "item": "https://toolstack.tech/tools/ip-address-lookup" },
             ],
         },
@@ -127,7 +127,7 @@ export default function IpLookupPage() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 20, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                         <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                         <span>›</span>
-                        <Link href="/tools?category=utility" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Utility</Link>
+                        <Link href="/tools/category/utility" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Utility</Link>
                         <span>›</span>
                         <span style={{ color: "rgba(255,255,255,0.7)" }}>IP Address Lookup</span>
                     </nav>

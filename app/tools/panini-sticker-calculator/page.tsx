@@ -231,7 +231,7 @@ export default function PaniniStickerCalculator() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
+                    <Link href="/tools/category/collectibles" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Collectibles</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.8)" }}>Panini Sticker Calculator</span>
                 </nav>
@@ -522,7 +522,7 @@ export default function PaniniStickerCalculator() {
                     <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", margin: "0 0 12px", lineHeight: 1.6 }}>
                         Collecting is part of the fun — but so is being smart about costs. Explore our card hobby tools including the Card Flip ROI Calculator, eBay Best Offer Calculator, and Card Grading Profit Calculator.
                     </p>
-                    <Link href="/tools?category=collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>
+                    <Link href="/tools/category/collectibles" style={{ fontSize: 13, fontWeight: 700, color: "#818cf8", textDecoration: "none" }}>
                         View all collectibles tools →
                     </Link>
                 </div>

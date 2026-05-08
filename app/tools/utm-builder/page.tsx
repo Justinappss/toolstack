@@ -144,7 +144,7 @@ export default function UTMBuilder() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Marketing Tools", "item": "https://toolstack.tech/tools?category=marketing" },
+            { "@type": "ListItem", "position": 2, "name": "Marketing Tools", "item": "https://toolstack.tech/tools/category/marketing" },
             { "@type": "ListItem", "position": 3, "name": "UTM Builder", "item": "https://toolstack.tech/tools/utm-builder" },
           ],
         },
@@ -160,7 +160,7 @@ export default function UTMBuilder() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools?category=marketing" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Marketing Tools</Link>
+          <Link href="/tools/category/marketing" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Marketing Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>UTM Builder</span>
         </nav>

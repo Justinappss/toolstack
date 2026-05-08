@@ -181,7 +181,7 @@ export default function JwtDecoder() {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                    { "@type": "ListItem", "position": 2, "name": "Dev", "item": "https://toolstack.tech/tools?category=dev" },
+                    { "@type": "ListItem", "position": 2, "name": "Dev", "item": "https://toolstack.tech/tools/category/dev" },
                     { "@type": "ListItem", "position": 3, "name": "JWT Decoder", "item": "https://toolstack.tech/tools/jwt-decoder" },
                 ],
             },
@@ -239,7 +239,7 @@ export default function JwtDecoder() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Dev</Link>
+                    <Link href="/tools/category/dev" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Dev</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>JWT Decoder</span>
                 </nav>

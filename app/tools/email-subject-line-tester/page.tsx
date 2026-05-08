@@ -278,7 +278,7 @@ export default function EmailSubjectLineTesterPage() {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                  { "@type": "ListItem", "position": 2, "name": "Marketing", "item": "https://toolstack.tech/tools?category=marketing" },
+                  { "@type": "ListItem", "position": 2, "name": "Marketing", "item": "https://toolstack.tech/tools/category/marketing" },
                   { "@type": "ListItem", "position": 3, "name": "Email Subject Line Tester", "item": "https://toolstack.tech/tools/email-subject-line-tester" },
                 ],
               },

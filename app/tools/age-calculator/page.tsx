@@ -210,7 +210,7 @@ export default function AgeCalculator() {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                    { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+                    { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools/category/utility" },
                     { "@type": "ListItem", "position": 3, "name": "Age Calculator", "item": "https://toolstack.tech/tools/age-calculator" },
                 ],
             },
@@ -273,7 +273,7 @@ export default function AgeCalculator() {
                 <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                     <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>ToolStack</Link>
                     <span>›</span>
-                    <Link href="/tools?category=utility" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Utility</Link>
+                    <Link href="/tools/category/utility" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Utility</Link>
                     <span>›</span>
                     <span style={{ color: "rgba(255,255,255,0.7)" }}>Age Calculator</span>
                 </nav>

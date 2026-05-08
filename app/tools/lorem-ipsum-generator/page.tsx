@@ -203,7 +203,7 @@ export default function LoremIpsumPage() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+            { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools/category/utility" },
             { "@type": "ListItem", "position": 3, "name": "Lorem Ipsum Generator", "item": "https://toolstack.tech/tools/lorem-ipsum-generator" },
           ],
         },

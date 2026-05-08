@@ -638,7 +638,7 @@ export default function JSONFormatterPage() {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools?category=dev" },
+            { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools/category/dev" },
             { "@type": "ListItem", "position": 3, "name": "JSON Formatter", "item": "https://toolstack.tech/tools/json-formatter" },
           ],
         },

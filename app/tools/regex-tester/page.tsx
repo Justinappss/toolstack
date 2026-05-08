@@ -177,7 +177,7 @@ export default function RegexTester() {
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools?category=dev" },
+            { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools/category/dev" },
             { "@type": "ListItem", "position": 3, "name": "Regex Tester", "item": "https://toolstack.tech/tools/regex-tester" },
           ],
         },
@@ -193,7 +193,7 @@ export default function RegexTester() {
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>ToolStack</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-          <Link href="/tools?category=dev" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
+          <Link href="/tools/category/dev" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Dev Tools</Link>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
           <span style={{ color: "rgba(255,255,255,0.7)" }}>Regex Tester</span>
         </nav>
@@ -436,7 +436,7 @@ export default function RegexTester() {
           <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 12px", lineHeight: 1.6 }}>
             Format and validate JSON, check if a website is down, and more — all free, no signup.
           </p>
-          <a href="/tools?category=developer" style={{ fontSize: 13, fontWeight: 700, color: "#60a5fa", textDecoration: "none" }}>View all developer tools →</a>
+          <a href="/tools/category/developer" style={{ fontSize: 13, fontWeight: 700, color: "#60a5fa", textDecoration: "none" }}>View all developer tools →</a>
         </section>
 
         <MoreTools currentSlug="regex-tester" />

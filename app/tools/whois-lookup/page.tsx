@@ -63,7 +63,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools/category/utility" },
                 { "@type": "ListItem", "position": 3, "name": "WHOIS Domain Lookup", "item": "https://toolstack.tech/tools/whois-lookup" },
             ],
         },
@@ -134,7 +134,7 @@ export default function WhoisLookupPage() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28, flexWrap: "wrap" }}>
                         <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/tools?category=utility" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Utility</Link>
+                        <Link href="/tools/category/utility" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Utility</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>WHOIS Lookup</span>
                     </nav>

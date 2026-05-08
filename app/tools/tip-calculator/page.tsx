@@ -95,7 +95,7 @@ const jsonLd = {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-        { "@type": "ListItem", "position": 2, "name": "Finance", "item": "https://toolstack.tech/tools?category=finance" },
+        { "@type": "ListItem", "position": 2, "name": "Finance", "item": "https://toolstack.tech/tools/category/finance" },
         { "@type": "ListItem", "position": 3, "name": "Tip Calculator", "item": "https://toolstack.tech/tools/tip-calculator" },
       ],
     },
@@ -229,7 +229,7 @@ export default function TipCalculatorPage() {
         <nav aria-label="Breadcrumb" style={{ marginBottom: 32, display: "flex", alignItems: "center", gap: 6, fontSize: 13, color: "rgba(255,255,255,0.55)" }}>
           <Link href="/" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>ToolStack</Link>
           <span>/</span>
-          <Link href="/tools?category=finance" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Finance</Link>
+          <Link href="/tools/category/finance" style={{ color: "rgba(255,255,255,0.55)", textDecoration: "none" }}>Finance</Link>
           <span>/</span>
           <span style={{ color: "#34d399" }}>Tip Calculator</span>
         </nav>

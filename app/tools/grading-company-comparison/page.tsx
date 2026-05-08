@@ -279,7 +279,7 @@ export default function GradingComparisonPage() {
         <nav style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,.38)", marginBottom: 20 }}>
           <a href="/" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>ToolStack</a>
           <span>/</span>
-          <a href="/tools?category=collectibles" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>Collectibles</a>
+          <a href="/tools/category/collectibles" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>Collectibles</a>
           <span>/</span>
           <span style={{ color: ACCENT }}>Grading Company Comparison</span>
         </nav>

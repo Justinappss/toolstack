@@ -521,7 +521,7 @@ export default function QRCodeGeneratorPage() {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+            { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools/category/utility" },
             { "@type": "ListItem", "position": 3, "name": "QR Code Generator", "item": "https://toolstack.tech/tools/qr-code-generator" },
           ],
         },

@@ -526,7 +526,7 @@ export default function BlogTitleGeneratorPage() {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools?category=writing" },
+            { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://toolstack.tech/tools/category/writing" },
             { "@type": "ListItem", "position": 3, "name": "Blog Title Generator", "item": "https://toolstack.tech/tools/blog-title-generator" },
           ],
         },

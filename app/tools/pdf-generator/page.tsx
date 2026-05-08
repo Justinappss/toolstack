@@ -46,7 +46,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools?category=utility" },
+                { "@type": "ListItem", "position": 2, "name": "Utility", "item": "https://toolstack.tech/tools/category/utility" },
                 { "@type": "ListItem", "position": 3, "name": "PDF Generator", "item": "https://toolstack.tech/tools/pdf-generator" },
             ],
         },
@@ -160,7 +160,7 @@ export default function PdfGeneratorPage() {
                     <nav style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16, fontSize: 13, color: "rgba(255,255,255,0.35)", flexWrap: "wrap" }}>
                         <Link href="/" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
-                        <Link href="/tools?category=utility" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Utility</Link>
+                        <Link href="/tools/category/utility" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Utility</Link>
                         <span style={{ color: "rgba(255,255,255,0.2)" }}>›</span>
                         <span style={{ color: "rgba(255,255,255,0.6)" }}>PDF Generator</span>
                     </nav>

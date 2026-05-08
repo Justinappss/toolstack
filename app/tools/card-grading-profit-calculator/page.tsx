@@ -92,7 +92,7 @@ const jsonLd = {
             "@type": "BreadcrumbList",
             "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-                { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools?category=collectibles" },
+                { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools/category/collectibles" },
                 { "@type": "ListItem", "position": 3, "name": "Card Grading Profit Calculator", "item": "https://toolstack.tech/tools/card-grading-profit-calculator" },
             ],
         },
@@ -207,7 +207,7 @@ export default function CardGradingProfitCalculator() {
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 28 }}>
                         <Link href="/" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>ToolStack</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/tools?category=collectibles" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Collectibles</Link>
+                        <Link href="/tools/category/collectibles" style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Collectibles</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Card Grading Profit Calculator</span>
                     </div>

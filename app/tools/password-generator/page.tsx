@@ -516,7 +516,7 @@ export default function PasswordGeneratorPage() {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" },
-            { "@type": "ListItem", "position": 2, "name": "Security", "item": "https://toolstack.tech/tools?category=security" },
+            { "@type": "ListItem", "position": 2, "name": "Security", "item": "https://toolstack.tech/tools/category/security" },
             { "@type": "ListItem", "position": 3, "name": "Password Generator", "item": "https://toolstack.tech/tools/password-generator" },
           ],
         },
