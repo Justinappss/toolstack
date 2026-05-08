@@ -11,7 +11,8 @@ const FAQS = [
   { q: "What is a Flesch Readability Score?", a: "The Flesch Reading Ease score rates text on a scale of 0\u2013100. Scores of 60\u201370 are considered standard (8th-9th grade). Higher scores mean easier reading. Most web content should target 60\u201380. Academic and legal writing typically scores below 30." },
   { q: "How many words should a blog post be?", a: "For SEO purposes, the sweet spot is 1,500\u20132,500 words for most topics. Long-form content (3,000+ words) tends to rank better for competitive keywords. Short posts (500\u2013800 words) work well for news and simple how-to content." },
   { q: "How long does it take to read 1000 words?", a: "The average adult reads at 238 words per minute. 1,000 words takes approximately 4 minutes to read. Speaking the same content takes about 7-8 minutes at an average speaking pace of 130 words per minute." },
-  { q: "What is a good reading level for a website?", a: "Most websites should target a Flesch Reading Ease score of 60\u201370, which corresponds to 8th-9th grade reading level. This makes content accessible to the widest audience. Technical or professional content may naturally score lower." }
+  { q: "What is a good reading level for a website?", a: "Most websites should target a Flesch Reading Ease score of 60\u201370, which corresponds to 8th-9th grade reading level. This makes content accessible to the widest audience. Technical or professional content may naturally score lower." },
+  { q: "What are productivity tools?", a: "Productivity tools are software applications that help you work more efficiently by automating repetitive tasks, organising information, or providing quick utilities. Examples include word counters, password generators, markdown editors, and online stopwatches. ToolStack offers a complete suite of free productivity tools that run in your browser with no signup required." },
 ];
 
 

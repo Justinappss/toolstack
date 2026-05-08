@@ -16,6 +16,30 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "what-are-productivity-tools",
+        title: "What Are Productivity Tools? A Complete Guide for 2026",
+        description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser with no signup.",
+        date: "May 8, 2026",
+        readTime: "9 min read",
+        tag: "Productivity",
+        accent: "#60a5fa",
+        accentBg: "rgba(96,165,250,0.08)",
+        accentBorder: "rgba(96,165,250,0.2)",
+        featured: false,
+    },
+    {
+        slug: "best-ai-tools-for-optimizing-product-visibility",
+        title: "Best AI Tools for Optimizing Product Visibility in 2026",
+        description: "Discover the best AI tools for optimising product visibility in 2026. Eleven free tools covering SEO copy, meta optimisation, content generation, and social media tagging — all browser-based with no signup.",
+        date: "May 8, 2026",
+        readTime: "12 min read",
+        tag: "AI",
+        accent: "#a78bfa",
+        accentBg: "rgba(167,139,250,0.08)",
+        accentBorder: "rgba(167,139,250,0.2)",
+        featured: false,
+    },
+    {
         slug: "essential-free-developer-tools",
         title: "Essential Free Developer Tools: The Complete Developer Toolbox for 2026",
         description: "Fifteen free browser-based developer tools covering JSON formatting, regex testing, SQL formatting, JWT decoding, colour palettes, password generation, QR codes, and more.",
