@@ -368,7 +368,7 @@ export const ALL_TOOLS = [
     title: "Website Down Checker",
     desc: "Check if any website is down or just you. See HTTP status code, response time, and server availability instantly.",
     href: "/tools/website-down-checker",
-    category: "Dev",
+    category: "Domain",
     accent: "#34d399",
     accentRgb: "52,211,153",
     badge: "New",
@@ -408,7 +408,7 @@ export const ALL_TOOLS = [
     title: "IP Address Lookup",
     desc: "Find your public IP address, location, ISP, timezone and hostname instantly. Also look up any IP address for geolocation data.",
     href: "/tools/ip-address-lookup",
-    category: "Utility",
+    category: "Domain",
     accent: "#818cf8",
     accentRgb: "129,140,248",
     badge: "New",
@@ -418,7 +418,7 @@ export const ALL_TOOLS = [
     title: "SSL Certificate Checker",
     desc: "Check any website's SSL certificate. See validity, days until expiry, issuer and covered domains. Free, instant, no signup.",
     href: "/tools/ssl-checker",
-    category: "Security",
+    category: "Domain",
     accent: "#34d399",
     accentRgb: "52,211,153",
     badge: null,
@@ -428,7 +428,7 @@ export const ALL_TOOLS = [
     title: "WHOIS Domain Lookup",
     desc: "Check domain registration date, expiry, registrar and nameservers. See who owns any domain — free, instant.",
     href: "/tools/whois-lookup",
-    category: "Utility",
+    category: "Domain",
     accent: "#f97316",
     accentRgb: "249,115,22",
     badge: "New",
@@ -586,7 +586,7 @@ export const ALL_TOOLS = [
   },
 ];
 
-export const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Video", "Collectibles", "Sports"];
+export const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Domain", "Video", "Collectibles", "Sports"];
 
 export const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",
@@ -601,6 +601,7 @@ export const CATEGORY_MAP: Record<string, string> = {
   business: "Business",
   math: "Math",
   design: "Design",
+  domain: "Domain",
   video: "Video",
   collectibles: "Collectibles",
   sports: "Sports",

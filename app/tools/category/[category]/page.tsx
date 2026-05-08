@@ -10,8 +10,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const categoryParam = params.category.toLowerCase();
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
+  const categoryParam = category.toLowerCase();
   
   if (!CATEGORY_MAP[categoryParam]) {
     notFound();

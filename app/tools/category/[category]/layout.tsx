@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import { CATEGORY_MAP } from "../../page";
 
-export function generateMetadata({ params }: { params: { category: string } }): Metadata {
-  const categoryParam = params.category.toLowerCase();
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  const { category } = await params;
+  const categoryParam = category.toLowerCase();
   const activeCategory = CATEGORY_MAP[categoryParam] || "Professional";
 
   return {
