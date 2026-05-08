@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "Regex Cheat Sheet for Beginners: The Patterns You Actually Use | ToolStack",
-    description: "A practical regex reference covering the patterns developers reach for most. Character classes, anchors, quantifiers, groups, and real-world examples — with a free tester.",
+    title: "Regex Cheat Sheet for Beginners: The Patterns You Actually Use",
+    description: "A practical regex reference covering the patterns developers reach for most. Character classes, anchors, quantifiers, groups, and real-world examples — with.",
     alternates: { canonical: "https://toolstack.tech/blog/regex-cheat-sheet-beginners" },
     openGraph: {
         title: "Regex Cheat Sheet for Beginners: The Patterns You Actually Use",

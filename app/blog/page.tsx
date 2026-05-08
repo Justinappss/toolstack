@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Blog | ToolStack — Guides for Developers, Marketers & Creators",
+    title: "Blog — Guides for Developers, Marketers & Creators",
     description: "Practical guides on email marketing, analytics, development, and productivity — with free tools embedded so you can act on what you learn immediately.",
     alternates: { canonical: "https://toolstack.tech/blog" },
     openGraph: {
-        title: "Blog | ToolStack — Guides for Developers, Marketers & Creators",
+        title: "Blog — Guides for Developers, Marketers & Creators",
         description: "Practical guides on email marketing, analytics, development, and productivity — with free tools embedded.",
         url: "https://toolstack.tech/blog",
         siteName: "ToolStack",

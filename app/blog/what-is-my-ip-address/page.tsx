@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "What Is My IP Address and What Can It Reveal? | ToolStack",
-    description: "Your IP address is visible to every website you visit. Learn what it is, what it reveals about you, the difference between IPv4 and IPv6, and how to hide it with a VPN.",
+    title: "What Is My IP Address and What Can It Reveal?",
+    description: "Your IP address is visible to every website you visit. Learn what it is, what it reveals about you, the difference between IPv4 and IPv6, and how to hide it.",
     alternates: { canonical: "https://toolstack.tech/blog/what-is-my-ip-address" },
     openGraph: {
         title: "What Is My IP Address and What Can It Reveal?",

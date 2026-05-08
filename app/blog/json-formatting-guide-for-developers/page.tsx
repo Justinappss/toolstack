@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "JSON Formatting Guide for Developers: Syntax, Validation & Common Errors | ToolStack",
-    description: "JSON is everywhere — APIs, config files, databases. This guide covers syntax rules, common errors, and how to validate and format JSON without installing anything.",
+    title: "JSON Formatting Guide for Developers: Syntax, Validation & Common Errors",
+    description: "JSON is everywhere — APIs, config files, databases. This guide covers syntax rules, common errors, and how to validate and format JSON without installing.",
     alternates: { canonical: "https://toolstack.tech/blog/json-formatting-guide-for-developers" },
     openGraph: {
         title: "JSON Formatting Guide for Developers: Syntax, Validation & Common Errors",

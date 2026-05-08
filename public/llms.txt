@@ -1,0 +1,99 @@
+# ToolStack
+
+> ToolStack is a free collection of 60+ online tools for developers, marketers, writers, and creators. No signup, no ads, instant results. Built by Justin Pirrie.
+
+ToolStack URL: https://toolstack.tech
+
+## Tools
+
+All tools are free, browser-based, and require no account.
+
+### AI Tools
+- [AI Prompt Generator](https://toolstack.tech/tools/ai-prompt-generator): Generate expert-level prompts for ChatGPT, Claude & Gemini using RISEN, STAR, and 5 other proven frameworks.
+
+### Writing Tools
+- [Word Counter](https://toolstack.tech/tools/word-counter): Count words, characters, and sentences. Includes Flesch readability score and estimated reading time.
+- [Blog Title Generator](https://toolstack.tech/tools/blog-title-generator): Generate 10 click-worthy blog title variations. SEO, curiosity, and contrarian frameworks.
+- [Grammar Checker](https://toolstack.tech/tools/grammar-checker): Check and fix grammar, spelling, and punctuation with GPT-4o.
+- [Paraphrasing Tool](https://toolstack.tech/tools/paraphrasing-tool): Rewrite text in 6 modes — Standard, Fluency, Formal, Academic, Creative, and Shorten.
+- [Text Summarizer](https://toolstack.tech/tools/text-summarizer): Summarise any text. Four modes: Paragraph, Bullets, Key Takeaways, and Executive Brief.
+- [Cover Letter Generator](https://toolstack.tech/tools/cover-letter-generator): Generate ATS-friendly cover letters in four tone modes.
+- [Character Counter](https://toolstack.tech/tools/character-counter): Count characters in real time with platform-specific limits for Twitter, LinkedIn, Instagram, and SMS.
+- [Case Converter](https://toolstack.tech/tools/case-converter): Convert text between UPPERCASE, lowercase, camelCase, snake_case, kebab-case, PascalCase, and more.
+- [Lorem Ipsum Generator](https://toolstack.tech/tools/lorem-ipsum-generator): Generate placeholder text in paragraphs, sentences, words, or HTML format.
+- [Markdown Editor](https://toolstack.tech/tools/markdown-editor): Write Markdown with real-time visual previews and export to HTML.
+
+### SEO Tools
+- [Meta Description Generator](https://toolstack.tech/tools/meta-description-generator): Generate high-CTR meta descriptions with live Google SERP preview.
+- [YouTube Tag Generator](https://toolstack.tech/tools/youtube-tag-generator): Generate relevant YouTube tags and description hooks.
+
+### Marketing Tools
+- [Email Subject Line Tester](https://toolstack.tech/tools/email-subject-line-tester): Score email subject lines for open rate potential, spam triggers, and length.
+- [Hashtag Generator](https://toolstack.tech/tools/hashtag-generator): AI-powered hashtag sets for Instagram, TikTok, and LinkedIn.
+- [UTM Campaign Builder](https://toolstack.tech/tools/utm-builder): Generate UTM parameter links for Google Analytics attribution.
+
+### Developer Tools
+- [JSON Formatter](https://toolstack.tech/tools/json-formatter): Format, validate, and minify JSON online. Syntax error highlighting.
+- [JWT Decoder](https://toolstack.tech/tools/jwt-decoder): Decode any JSON Web Token. View header, payload, claims, and expiry.
+- [Regex Tester](https://toolstack.tech/tools/regex-tester): Visually debug Regular Expressions with live syntax highlighting.
+- [SQL Formatter](https://toolstack.tech/tools/sql-formatter): Beautify SQL queries into perfectly indented, readable syntax.
+- [Base64 Encoder & Decoder](https://toolstack.tech/tools/base64-encoder-decoder): Encode or decode Base64 strings. Runs client-side.
+- [UUID Generator](https://toolstack.tech/tools/uuid-generator): Generate UUID v4, v1, v5, ULID and NanoID in bulk.
+- [Epoch Converter](https://toolstack.tech/tools/unix-timestamp-converter): Translate Unix epoch integers into formatted dates across timezones.
+- [Code Diff Checker](https://toolstack.tech/tools/code-diff-checker): Compare two code blocks side-by-side with visual diff highlighting.
+- [CSS Gradient Generator](https://toolstack.tech/tools/css-gradient-generator): Visual CSS gradient editor with multi-stop colour control and real-time output.
+- [Favicon Generator](https://toolstack.tech/tools/favicon-generator): Generate perfectly sized favicons from text or emoji.
+
+### Finance Tools
+- [VAT Calculator](https://toolstack.tech/tools/vat-calculator): Calculate VAT and GST for 40+ countries. Reverse VAT extraction included.
+- [Invoice Generator](https://toolstack.tech/tools/invoice-generator): Create professional PDF invoices instantly. No watermarks, no signup.
+- [Mortgage Calculator](https://toolstack.tech/tools/mortgage-calculator): Monthly payments, total interest, and full amortisation schedule. 15 currencies.
+- [Salary Calculator](https://toolstack.tech/tools/salary-calculator): Calculate take-home pay after tax. UK PAYE 2024/25 and US Federal 2024.
+- [Tip Calculator](https://toolstack.tech/tools/tip-calculator): Calculate tips and split bills. Tipping customs for 20+ countries.
+- [Compound Interest Calculator](https://toolstack.tech/tools/compound-interest-calculator): Calculate investment growth with compounding and monthly contributions.
+
+### Utility Tools
+- [Password Generator](https://toolstack.tech/tools/password-generator): Generate strong, random passwords. Runs 100% in your browser.
+- [QR Code Generator](https://toolstack.tech/tools/qr-code-generator): Generate QR codes for URLs, WiFi, email, and more. No expiry, no watermark.
+- [PDF Generator](https://toolstack.tech/tools/pdf-generator): Convert text to PDF instantly. No watermarks, no signup.
+- [Age Calculator](https://toolstack.tech/tools/age-calculator): Calculate your exact age, zodiac sign, generation, and days until next birthday.
+- [Email Signature Generator](https://toolstack.tech/tools/email-signature-generator): Create HTML email signatures for Gmail, Outlook & Apple Mail.
+- [Online Stopwatch](https://toolstack.tech/tools/online-stopwatch): Stopwatch with lap times and countdown timer. Accurate to the millisecond.
+- [Percentage Calculator](https://toolstack.tech/tools/percentage-calculator): Six calculators: find a percentage, increase/decrease, change, and difference.
+
+### Design Tools
+- [AI Color Palette Generator](https://toolstack.tech/tools/color-palette-generator): Describe your brand and get a 5-color palette with hex codes and CSS variables.
+- [Colour Contrast Checker](https://toolstack.tech/tools/color-contrast-checker): Check colour combinations against WCAG 2.1 AA and AAA accessibility guidelines.
+
+### Domain Tools
+- [Website Down Checker](https://toolstack.tech/tools/website-down-checker): Check if any website is down or just you.
+- [IP Address Lookup](https://toolstack.tech/tools/ip-address-lookup): Find your public IP address, location, ISP, and timezone.
+- [SSL Certificate Checker](https://toolstack.tech/tools/ssl-checker): Check any website's SSL certificate validity and expiry.
+- [WHOIS Domain Lookup](https://toolstack.tech/tools/whois-lookup): Check domain registration, expiry, registrar, and nameservers.
+
+### Collectibles Tools
+- [Card Grading Profit Calculator](https://toolstack.tech/tools/card-grading-profit-calculator): Calculate grading profit and ROI across PSA, BGS, SGC and CSG.
+- [Card Flip ROI Calculator](https://toolstack.tech/tools/card-flip-roi-calculator): Calculate exact profit after eBay fees, shipping and costs on card flips.
+- [eBay Best Offer Calculator](https://toolstack.tech/tools/ebay-best-offer-calculator): Get Accept, Counter or Decline recommendations for eBay Best Offers.
+- [Whatnot Seller Fee Calculator](https://toolstack.tech/tools/whatnot-seller-fee-calculator): Calculate Whatnot commission and net payout by category.
+- [Grading Company Comparison](https://toolstack.tech/tools/grading-company-comparison): PSA vs BGS vs SGC vs CGC — fees, turnaround and resale value side-by-side.
+- [Card Box Break Calculator](https://toolstack.tech/tools/card-box-break-calculator): Price break spots to cover box cost, platform fees and shipping.
+- [Pack Break EV Calculator](https://toolstack.tech/tools/pack-break-ev-calculator): Calculate expected value for any trading card box break.
+- [Panini Sticker Album Calculator](https://toolstack.tech/tools/panini-sticker-calculator): Calculate how many packs to complete any Panini album.
+
+### Sports Tools
+- [WC 2026 Accumulator Calculator](https://toolstack.tech/tools/world-cup-accumulator-calculator): Build World Cup 2026 accumulator bets with decimal, fractional or American odds.
+- [World Cup 2026 Team Finder](https://toolstack.tech/tools/world-cup-team-finder): Match to a World Cup 2026 team through 5 personality questions.
+
+### Video Tools
+- [YouTube Video Downloader](https://toolstack.tech/tools/youtube-video-downloader): Download YouTube videos in MP4 format. No ads, no watermarks.
+- [YouTube Thumbnail Downloader](https://toolstack.tech/tools/youtube-thumbnail-downloader): Download YouTube thumbnails in all available resolutions.
+
+### Business Tools
+- [Business Name Generator](https://toolstack.tech/tools/business-name-generator): Generate creative business name ideas filtered by style.
+
+## Blog
+- [ToolStack Blog](https://toolstack.tech/blog): Guides for developers, marketers, and creators.
+
+## About
+ToolStack was built as a direct response to the modern web's over-monetisation of simple utilities. Every tool is free, no signup required, and loads instantly.

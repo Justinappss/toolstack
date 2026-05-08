@@ -5,12 +5,12 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "Essential Free Developer Tools: The Complete Developer Toolbox for 2026 | ToolStack",
+    title: "Essential Free Developer Tools: The Complete Developer Toolbox for 2026",
     description: "A developer's workbench of fifteen free browser-based tools covering JSON, regex, SQL, JWT, Base64, colour, UUIDs, passwords, QR codes, and more. No installs, no signups.",
     alternates: { canonical: "https://toolstack.tech/blog/essential-free-developer-tools" },
     openGraph: {
         title: "Essential Free Developer Tools: The Complete Developer Toolbox for 2026",
-        description: "Fifteen free developer tools — JSON formatting, regex testing, SQL formatting, JWT decoding, colour palettes, password generation, and more. All in your browser, no signup.",
+        description: "Fifteen free developer tools — JSON formatting, regex testing, SQL formatting, JWT decoding, colour palettes, password generation, and more. All in your.",
         url: "https://toolstack.tech/blog/essential-free-developer-tools",
         siteName: "ToolStack",
         type: "article",

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { ToolSchemaInjector } from "@/components/ui/ToolSchemaInjector";
 
 export const metadata: Metadata = {
-    title: "All Free Tools — Writers, Marketers & Developers | ToolStack",
+    title: "All Free Tools — Writers, Marketers & Developers",
     description: "Browse 60+ free online tools for writers, marketers and developers. AI prompts, SEO, word counter, JSON formatter, password generator and more. No signup required.",
     alternates: { canonical: "https://toolstack.tech/tools" },
     openGraph: {
-        title: "All Free Tools | ToolStack",
+        title: "All Free Tools",
         description: "60+ free tools for writers, marketers and developers. No signup. Instant results.",
         url: "https://toolstack.tech/tools",
         siteName: "ToolStack",
@@ -14,5 +15,10 @@ export const metadata: Metadata = {
 };
 
 export default function ToolsLayout({ children }: { children: React.ReactNode }) {
-    return children;
+    return (
+        <>
+            <ToolSchemaInjector />
+            {children}
+        </>
+    );
 }

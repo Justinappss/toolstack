@@ -5,12 +5,12 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "Best AI Tools for Optimizing Product Visibility in 2026 | ToolStack",
-    description: "Discover the best AI tools for optimising product visibility in 2026. From SEO copy and meta optimisation to social media tagging — eleven free tools to help your product get found by the right audience.",
+    title: "Best AI Tools for Optimizing Product Visibility in 2026",
+    description: "Discover the best AI tools for optimising product visibility in 2026. From SEO copy and meta optimisation to social media tagging — eleven free tools to.",
     alternates: { canonical: "https://toolstack.tech/blog/best-ai-tools-for-optimizing-product-visibility" },
     openGraph: {
         title: "Best AI Tools for Optimizing Product Visibility in 2026",
-        description: "Discover the best AI tools for optimising product visibility in 2026. Eleven free tools covering SEO copy, meta optimisation, content generation, and social media tagging — all browser-based with no signup.",
+        description: "Discover the best AI tools for optimising product visibility in 2026. Eleven free tools covering SEO copy, meta optimisation, content generation, and social.",
         url: "https://toolstack.tech/blog/best-ai-tools-for-optimizing-product-visibility",
         siteName: "ToolStack",
         type: "article",

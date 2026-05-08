@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "What Are UTM Parameters? A Plain-English Guide with Examples | ToolStack",
-    description: "UTM parameters tell you exactly where your traffic comes from. This plain-English guide explains all five UTM tags, when to use each, and how to build UTM links without breaking them.",
+    title: "What Are UTM Parameters? A Plain-English Guide with Examples",
+    description: "UTM parameters tell you exactly where your traffic comes from. This plain-English guide explains all five UTM tags, when to use each, and how to build UTM.",
     alternates: { canonical: "https://toolstack.tech/blog/what-are-utm-parameters" },
     openGraph: {
         title: "What Are UTM Parameters? A Plain-English Guide with Examples",

@@ -5,12 +5,12 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "What Are Productivity Tools? A Complete Guide for 2026 | ToolStack",
-    description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser with no signup.",
+    title: "What Are Productivity Tools? A Complete Guide for 2026",
+    description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser.",
     alternates: { canonical: "https://toolstack.tech/blog/what-are-productivity-tools" },
     openGraph: {
         title: "What Are Productivity Tools? A Complete Guide for 2026",
-        description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser with no signup.",
+        description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser.",
         url: "https://toolstack.tech/blog/what-are-productivity-tools",
         siteName: "ToolStack",
         type: "article",

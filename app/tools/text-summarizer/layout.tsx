@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes | ToolStack",
+  title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes",
   description: "Summarise any text instantly with GPT-4o. Four modes: Paragraph, Bullet Points, Key Takeaways, and Executive Brief. Free, no signup, no length limit.",
   keywords: [
     "text summarizer",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "https://toolstack.tech/tools/text-summarizer",
   },
   openGraph: {
-    title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes | ToolStack",
+    title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes",
     description: "Summarise any text instantly with GPT-4o. Four modes: Paragraph, Bullet Points, Key Takeaways, and Executive Brief. Free, no signup, no length limit.",
     url: "https://toolstack.tech/tools/text-summarizer",
     siteName: "ToolStack",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes | ToolStack",
+    title: "Free AI Text Summarizer — GPT-4o, 4 Summary Modes",
     description: "Summarise any text instantly with GPT-4o. Four modes: Paragraph, Bullet Points, Key Takeaways, and Executive Brief. Free, no signup, no length limit.",
   },
 };

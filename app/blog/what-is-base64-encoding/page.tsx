@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "What Is Base64 Encoding and When Should You Use It? | ToolStack",
-    description: "Base64 turns binary data into plain text so it can travel safely over the web. Learn how it works, when to use it, and when not to — with a free encoder/decoder.",
+    title: "What Is Base64 Encoding and When Should You Use It?",
+    description: "Base64 turns binary data into plain text so it can travel safely over the web. Learn how it works, when to use it, and when not to — with a free.",
     alternates: { canonical: "https://toolstack.tech/blog/what-is-base64-encoding" },
     openGraph: {
         title: "What Is Base64 Encoding and When Should You Use It?",

@@ -1,81 +1,588 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
   <url>
     <loc>https://toolstack.tech</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/categories/devtools</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Category pages -->
+  <url>
+    <loc>https://toolstack.tech/tools/category/ai</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/categories/finance</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/category/writing</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/categories/marketing</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/category/seo</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/categories/realestate</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/category/marketing</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/website-down-checker</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/category/social</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/security</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/utility</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/finance</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/dev</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/business</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/math</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/design</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/domain</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/video</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/collectibles</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/category/sports</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tool pages -->
+  <url>
+    <loc>https://toolstack.tech/tools/ai-prompt-generator</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/aeo-grader</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/word-counter</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/ebay-fee-calculator</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/meta-description-generator</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/whatnot-profit-calculator</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/email-subject-line-tester</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/house-hack-roi-calculator</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/hashtag-generator</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/sports-card-ev-calculator</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/blog-title-generator</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://toolstack.tech/tools/json-formatter-validator</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://toolstack.tech/tools/password-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/qr-code-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/vat-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/json-formatter</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/invoice-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/paraphrasing-tool</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/grammar-checker</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/text-summarizer</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/case-converter</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/lorem-ipsum-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/cover-letter-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/character-counter</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/business-name-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/youtube-tag-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/email-signature-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/css-gradient-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/color-contrast-checker</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/favicon-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/base64-encoder-decoder</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/utm-builder</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/markdown-editor</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://toolstack.tech/tools/regex-tester</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://toolstack.tech/tools/sql-formatter</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/unix-timestamp-converter</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/tip-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/mortgage-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/percentage-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/salary-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/code-diff-checker</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/jwt-decoder</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/website-down-checker</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/color-palette-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/age-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/pdf-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/ip-address-lookup</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/ssl-checker</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/whois-lookup</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/compound-interest-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/uuid-generator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/youtube-video-downloader</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/youtube-thumbnail-downloader</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/online-stopwatch</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/card-grading-profit-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/whatnot-seller-fee-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/grading-company-comparison</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/card-flip-roi-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/card-box-break-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/ebay-best-offer-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/panini-sticker-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/pack-break-ev-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/world-cup-accumulator-calculator</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/tools/world-cup-team-finder</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
+    <loc>https://toolstack.tech/blog/ai-writing-tools-ultimate-guide</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/best-ai-tools-for-optimizing-product-visibility</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/complete-guide-to-free-seo-tools</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/essential-free-developer-tools</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/how-to-create-pdf-free</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/how-to-generate-qr-code-wifi</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/how-to-write-cold-email-subject-lines</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/is-it-down-or-just-me</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/json-formatting-guide-for-developers</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/mastering-json-visual-guide</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/perfect-meta-description-anatomy</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/regex-cheat-sheet-beginners</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/ssl-certificate-checker-guide</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/understanding-case-sensitivity</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/what-are-productivity-tools</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/what-are-utm-parameters</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/what-is-a-jwt-token</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/what-is-base64-encoding</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://toolstack.tech/blog/what-is-my-ip-address</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

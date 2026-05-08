@@ -5,8 +5,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "What Is an SEO Tool? DIY SEO Tools Guide: Boost Your Rankings in 2026 | ToolStack",
-    description: "Learn what an SEO tool is and how to use free DIY SEO tools to research keywords, optimise content, monitor uptime, and track campaigns — without spending a penny in 2026.",
+    title: "What Is an SEO Tool? DIY SEO Tools Guide: Boost Your Rankings in 2026",
+    description: "Learn what an SEO tool is and how to use free DIY SEO tools to research keywords, optimise content, monitor uptime, and track campaigns — without spending a.",
     alternates: { canonical: "https://toolstack.tech/blog/complete-guide-to-free-seo-tools" },
     openGraph: {
         title: "What Is an SEO Tool? DIY SEO Tools Guide: Boost Your Rankings in 2026",

@@ -1,62 +1,12 @@
 # ToolStack robots.txt
-# Generated: 2026-05-05T14:55:50.294Z
 # https://toolstack.tech
-
-# ============================================
-# GENERAL RULES (All crawlers)
-# ============================================
 
 User-agent: *
 Allow: /tools/
-Allow: /categories/
+Allow: /blog/
 Allow: /
-Allow: /feedback/
-
-# Blocked paths (no SEO value or internal only)
 Disallow: /api/
 Disallow: /_next/
-Disallow: /build/
-Disallow: /auth/
-Disallow: /admin/
-Disallow: /dashboard/
-Disallow: /account/
-Disallow: /dashboard/*
 Disallow: /api/*
-
-# Blog (if enabled)
-Allow: /blog/
-
-# ============================================
-# AI / LLM CRAWLER BLOCKING
-# Prevent training on your content without compensation
-# ============================================
-
-User-agent: GPTBot
-Disallow: /
-
-User-agent: GPTBot-Image
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: OAI-SearchBot
-Disallow: /
-
-# ============================================
-# SITEMAP
-# ============================================
 
 Sitemap: https://toolstack.tech/sitemap.xml

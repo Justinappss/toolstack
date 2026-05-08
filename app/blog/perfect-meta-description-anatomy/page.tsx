@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "The Anatomy of a Perfect Meta Description (With Examples) | ToolStack",
-    description: "A meta description is the single most controllable factor in your click-through rate. Learn the exact formula: length, keywords, CTA, and the 7 mistakes killing your CTR.",
+    title: "The Anatomy of a Perfect Meta Description (With Examples)",
+    description: "A meta description is the single most controllable factor in your click-through rate. Learn the exact formula: length, keywords, CTA, and the 7 mistakes.",
     alternates: { canonical: "https://toolstack.tech/blog/perfect-meta-description-anatomy" },
     openGraph: {
         title: "The Anatomy of a Perfect Meta Description (With Examples)",

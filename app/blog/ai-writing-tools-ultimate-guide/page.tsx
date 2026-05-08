@@ -5,12 +5,12 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "AI Writing Tools Ultimate Guide: How to Write Better, Faster in 2026 | ToolStack",
-    description: "AI writing tools can transform your writing workflow — from generating prompts and proofreading to summarising and naming. This guide covers eight free tools that help you write better content in less time.",
+    title: "AI Writing Tools Ultimate Guide: How to Write Better, Faster in 2026",
+    description: "AI writing tools can transform your writing workflow — from generating prompts and proofreading to summarising and naming. This guide covers eight free.",
     alternates: { canonical: "https://toolstack.tech/blog/ai-writing-tools-ultimate-guide" },
     openGraph: {
         title: "AI Writing Tools Ultimate Guide: How to Write Better, Faster in 2026",
-        description: "Eight free AI writing tools that help you generate prompts, proofread, paraphrase, summarise, name projects, and convert case — all in your browser with no signup.",
+        description: "Eight free AI writing tools that help you generate prompts, proofread, paraphrase, summarise, name projects, and convert case — all in your browser with no.",
         url: "https://toolstack.tech/blog/ai-writing-tools-ultimate-guide",
         siteName: "ToolStack",
         type: "article",

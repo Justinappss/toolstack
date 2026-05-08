@@ -4,7 +4,7 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "Is It Down or Just Me? How to Check if a Website Is Down | ToolStack",
+    title: "Is It Down or Just Me? How to Check if a Website Is Down",
     description: "Can't access a website? Learn how to tell if it's down for everyone or just you, what HTTP status codes mean, and how to diagnose connection problems in under a minute.",
     alternates: { canonical: "https://toolstack.tech/blog/is-it-down-or-just-me" },
     openGraph: {

@@ -4,7 +4,7 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "How to Generate a QR Code for Your WiFi (No App Needed) | ToolStack",
+    title: "How to Generate a QR Code for Your WiFi (No App Needed)",
     description: "Let guests connect to your WiFi instantly by scanning a QR code — no typing passwords. Learn how to create one free in seconds, and what format it uses.",
     alternates: { canonical: "https://toolstack.tech/blog/how-to-generate-qr-code-wifi" },
     openGraph: {

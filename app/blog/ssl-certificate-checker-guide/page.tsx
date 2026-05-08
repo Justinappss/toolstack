@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "SSL Certificate Explained: What It Is, How to Check It & When It Expires | ToolStack",
-    description: "SSL certificates encrypt your website connection and build visitor trust. Learn what they are, how to check if yours is valid, when it expires, and what happens when it does.",
+    title: "SSL Certificate Explained: What It Is, How to Check It & When It Expires",
+    description: "SSL certificates encrypt your website connection and build visitor trust. Learn what they are, how to check if yours is valid, when it expires, and what.",
     alternates: { canonical: "https://toolstack.tech/blog/ssl-certificate-checker-guide" },
     openGraph: {
         title: "SSL Certificate Explained: What It Is, How to Check It & When It Expires",

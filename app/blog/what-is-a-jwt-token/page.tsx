@@ -4,7 +4,7 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "What Is a JWT Token? Structure, Claims & How to Decode One | ToolStack",
+    title: "What Is a JWT Token? Structure, Claims & How to Decode One",
     description: "JWT tokens are used in almost every modern API for authentication. Learn how they're structured, what the three parts mean, common claims to know, and how to decode one instantly.",
     alternates: { canonical: "https://toolstack.tech/blog/what-is-a-jwt-token" },
     openGraph: {

@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "JSON for Beginners: A Visual Guide to Formatting & Validation | ToolStack",
-    description: "JSON is the language of APIs and config files. This visual guide covers syntax rules, common errors, nested structures, and how to validate JSON instantly in your browser.",
+    title: "JSON for Beginners: A Visual Guide to Formatting & Validation",
+    description: "JSON is the language of APIs and config files. This visual guide covers syntax rules, common errors, nested structures, and how to validate JSON instantly.",
     alternates: { canonical: "https://toolstack.tech/blog/mastering-json-visual-guide" },
     openGraph: {
         title: "JSON for Beginners: A Visual Guide to Formatting & Validation",

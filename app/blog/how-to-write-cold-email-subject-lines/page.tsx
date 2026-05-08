@@ -4,7 +4,7 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "How to Write Cold Email Subject Lines That Actually Get Opened | ToolStack",
+    title: "How to Write Cold Email Subject Lines That Actually Get Opened",
     description: "Most cold emails die in the inbox — not because the body is bad, but because the subject line failed. Here are the proven frameworks that drive open rates.",
     alternates: { canonical: "https://toolstack.tech/blog/how-to-write-cold-email-subject-lines" },
     openGraph: {

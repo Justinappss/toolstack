@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "camelCase vs snake_case vs PascalCase: When to Use Each | ToolStack",
-    description: "The wrong naming convention in a codebase creates friction and bugs. This guide covers camelCase, snake_case, PascalCase, kebab-case, and SCREAMING_SNAKE_CASE — with rules for every language and context.",
+    title: "camelCase vs snake_case vs PascalCase: When to Use Each",
+    description: "The wrong naming convention in a codebase creates friction and bugs. This guide covers camelCase, snake_case, PascalCase, kebab-case, and.",
     alternates: { canonical: "https://toolstack.tech/blog/understanding-case-sensitivity" },
     openGraph: {
         title: "camelCase vs snake_case vs PascalCase: When to Use Each",

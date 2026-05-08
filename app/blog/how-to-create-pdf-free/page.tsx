@@ -4,8 +4,8 @@ import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
 export const metadata: Metadata = {
-    title: "How to Create a PDF for Free — No Word, No Adobe Required | ToolStack",
-    description: "Need to create a PDF without Microsoft Word or Adobe Acrobat? Learn five free methods that work in any browser, including a completely free online PDF generator with no watermarks.",
+    title: "How to Create a PDF for Free — No Word, No Adobe Required",
+    description: "Need to create a PDF without Microsoft Word or Adobe Acrobat? Learn five free methods that work in any browser, including a completely free online PDF.",
     alternates: { canonical: "https://toolstack.tech/blog/how-to-create-pdf-free" },
     openGraph: {
         title: "How to Create a PDF for Free — No Word, No Adobe Required",
