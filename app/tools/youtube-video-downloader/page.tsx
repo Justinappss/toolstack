@@ -35,8 +35,8 @@ function YouTube3DDevice() {
       {/* Device body */}
       <div style={{
         position: "relative",
-        width: "min(440px, 100%)",
-        aspectRatio: "16/10",
+        width: "min(640px, 100%)",
+        aspectRatio: "16/9",
         borderRadius: 28,
         background: "linear-gradient(175deg, #1c1c2e 0%, #12121e 50%, #0a0a14 100%)",
         boxShadow: [
@@ -88,16 +88,17 @@ function YouTube3DDevice() {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: 72,
-            height: 72,
-            borderRadius: 22,
+            width: 96,
+            height: 96,
+            borderRadius: 28,
             background: "linear-gradient(170deg, #ff3030 0%, #cc0000 50%, #8c0000 100%)",
             boxShadow: [
-              "0 0 50px rgba(255,0,0,0.55)",
-              "0 10px 0 rgba(0,0,0,0.5)",
-              "0 12px 30px rgba(0,0,0,0.6)",
-              "inset 0 1px 0 rgba(255,160,160,0.5)",
-              "inset 0 -2px 0 rgba(0,0,0,0.35)",
+              "0 0 70px rgba(255,0,0,0.65)",
+              "0 0 120px rgba(255,0,0,0.25)",
+              "0 14px 0 rgba(0,0,0,0.55)",
+              "0 16px 40px rgba(0,0,0,0.7)",
+              "inset 0 2px 0 rgba(255,180,180,0.55)",
+              "inset 0 -3px 0 rgba(0,0,0,0.4)",
             ].join(", "),
             display: "flex",
             alignItems: "center",
@@ -108,10 +109,10 @@ function YouTube3DDevice() {
               width: 0,
               height: 0,
               borderStyle: "solid",
-              borderWidth: "14px 0 14px 24px",
+              borderWidth: "18px 0 18px 32px",
               borderColor: "transparent transparent transparent white",
-              marginLeft: 5,
-              filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.5))",
+              marginLeft: 7,
+              filter: "drop-shadow(0 3px 6px rgba(0,0,0,0.6))",
             }} />
           </div>
 
@@ -253,15 +254,13 @@ export default function YouTubeVideoDownloader() {
           </p>
         </div>
 
-        {/* 3D Device + Tool layout */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: 28, alignItems: "center", marginBottom: 28 }}>
+        {/* 3D Device — full-width centrepiece */}
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 36 }}>
+          <YouTube3DDevice />
+        </div>
 
-          {/* 3D Device */}
-          <div style={{ display: "flex", justifyContent: "center", padding: "16px 0" }}>
-            <YouTube3DDevice />
-          </div>
-
-          {/* Input Panel */}
+        {/* Input Panel */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 20, marginBottom: 28, maxWidth: 720, margin: "0 auto 28px" }}>
           <div style={{
             background: "linear-gradient(180deg, rgba(20,10,10,0.7) 0%, rgba(10,5,5,0.8) 100%)",
             border: "1px solid rgba(255,64,64,0.18)",
@@ -367,7 +366,8 @@ export default function YouTubeVideoDownloader() {
                 border: "1px solid rgba(52,211,153,0.2)",
                 borderRadius: 24,
                 padding: "28px",
-                marginBottom: 28,
+                maxWidth: 720,
+                margin: "0 auto 28px",
                 boxShadow: "0 30px 80px rgba(0,0,0,0.5), 0 0 60px rgba(52,211,153,0.06), inset 0 1px 0 rgba(255,255,255,0.07)",
                 backdropFilter: "blur(16px)",
                 WebkitBackdropFilter: "blur(16px)",
@@ -433,7 +433,8 @@ export default function YouTubeVideoDownloader() {
             border: "1px dashed rgba(255,255,255,0.08)",
             borderRadius: 24,
             padding: "36px",
-            marginBottom: 28,
+            maxWidth: 720,
+            margin: "0 auto 28px",
             textAlign: "center",
           }}>
             <div style={{ width: 56, height: 56, borderRadius: 18, background: "rgba(255,64,64,0.08)", border: "1px solid rgba(255,64,64,0.15)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 16px" }}>
