@@ -342,27 +342,28 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                                         background: "linear-gradient(180deg, transparent 60%, rgba(6,6,12,0.85) 100%)",
                                         zIndex: 1, pointerEvents: "none",
                                     }} />
-                                    {LIVE_THUMBNAILS[tool.title] ? (() => {
+                                    {(() => {
                                         const Live = LIVE_THUMBNAILS[tool.title];
-                                        return <Live />;
-                                    })() : (
-                                        <img
-                                            src={tool.image}
-                                            alt={`${tool.title} interface preview`}
-                                            width={680}
-                                            height={400}
-                                            style={{
-                                                width: "100%",
-                                                height: 220,
-                                                objectFit: "cover",
-                                                objectPosition: "top center",
-                                                display: "block",
-                                                transition: "transform 0.4s ease",
-                                            }}
-                                            className="tool-card-img"
-                                            loading="lazy"
-                                        />
-                                    )}
+                                        if (Live) return <Live />;
+                                        return (
+                                            <img
+                                                src={tool.image}
+                                                alt={`${tool.title} interface preview`}
+                                                width={680}
+                                                height={400}
+                                                style={{
+                                                    width: "100%",
+                                                    height: 220,
+                                                    objectFit: "cover",
+                                                    objectPosition: "top center",
+                                                    display: "block",
+                                                    transition: "transform 0.4s ease",
+                                                }}
+                                                className="tool-card-img"
+                                                loading="lazy"
+                                            />
+                                        );
+                                    })()}
                                     <div style={{
                                         position: "absolute", top: 14, left: 14,
                                         display: "flex", gap: 6, zIndex: 2,
@@ -388,6 +389,7 @@ export function ToolSearch({ tools = [], isOpen, onClose }: { tools?: Tool[]; is
                                     {!LIVE_THUMBNAILS[tool.title] && (
                                         <ThumbnailAnimation href={tool.href} accent={tool.accent} accentRgb={tool.accentRgb} />
                                     )}
+                                    {/* YoutubeTranscriptThumbnail v2 — force fresh build */}
                                 </div>
 
                                 {/* Content */}
