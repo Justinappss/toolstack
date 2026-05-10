@@ -16,6 +16,30 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "ai-prompt-generator-guide",
+        title: "Prompt Engineering: A Complete Guide to Writing Better AI Prompts",
+        description: "Learn prompt engineering from scratch. The RISEN framework, 5 techniques that work in 2026, privacy tips, and a free AI prompt generator — no signup required.",
+        date: "May 11, 2026",
+        readTime: "7 min read",
+        tag: "AI",
+        accent: "#6366f1",
+        accentBg: "rgba(99,102,241,0.08)",
+        accentBorder: "rgba(99,102,241,0.2)",
+        featured: false,
+    },
+    {
+        slug: "why-every-ai-tool-has-a-paywall-problem",
+        title: "Why Every AI Tool Has a Paywall Problem (And What We Did About It)",
+        description: "The modern internet got too greedy with simple utilities. AI tools that should take seconds now demand sign-ups, trials, and credit cards. Here's why that's broken — and how ToolStack fixes it.",
+        date: "May 9, 2026",
+        readTime: "7 min read",
+        tag: "AI",
+        accent: "#6366f1",
+        accentBg: "rgba(99,102,241,0.08)",
+        accentBorder: "rgba(99,102,241,0.2)",
+        featured: true,
+    },
+    {
         slug: "what-are-productivity-tools",
         title: "What Are Productivity Tools? A Complete Guide for 2026",
         description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser with no signup.",
