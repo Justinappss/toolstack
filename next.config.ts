@@ -1,3 +1,4 @@
+// cache-bust: 2026-05-10
 import type { NextConfig } from "next";
 import withPWAInit from "@ducanh2912/next-pwa";
 
@@ -22,6 +23,14 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        source: "/:path*.md",
+        headers: [
+          { key: "Content-Type", value: "text/plain; charset=utf-8" },
+          { key: "Cache-Control", value: "public, max-age=3600" },
+          { key: "X-Robots-Tag", value: "index, follow" },
+        ],
       },
     ];
   },
