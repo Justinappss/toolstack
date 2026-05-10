@@ -2,6 +2,11 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 

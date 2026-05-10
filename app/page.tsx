@@ -2,14 +2,15 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ToolSearch } from "@/components/ToolSearch";
 import type { Metadata } from "next";
+import AnimatedShaderBackground from "@/components/ui/animated-shader-background";
 
 export const metadata: Metadata = {
     title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
-    description: "Access 58+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+    description: "Access 60+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
     alternates: { canonical: "https://toolstack.tech" },
     openGraph: {
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 58+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        description: "Access 60+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         url: "https://toolstack.tech",
         siteName: "ToolStack",
         type: "website",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     twitter: { 
         card: "summary_large_image",
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 58+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        description: "Access 60+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         images: ["https://toolstack.tech/og-image.png"],
     },
 };
@@ -608,8 +609,18 @@ const LIVE_TOOLS = [
         category: "Sports",
         accent: "#f59e0b",
         accentRgb: "245,158,11",
-        badge: "New",
+        badge: null,
         image: "/tools/world-cup-team-finder-preview.png",
+    },
+    {
+        title: "YouTube Transcript Extractor",
+        desc: "Extract any YouTube video transcript instantly as clean Markdown. Toggle timestamps on or off. Download as .md. No login, no limits.",
+        href: "/tools/youtube-transcript",
+        category: "Utility",
+        accent: "#f87171",
+        accentRgb: "248,113,113",
+        badge: "New",
+        image: "/tools/youtube-transcript-preview.png",
     },
 ];
 
@@ -633,26 +644,46 @@ const COMING_SOON = [
 
 const RECENT_POSTS = [
     {
-        slug: "2026-seo-checklist",
-        title: "The 2026 SEO Checklist for Content Marketers",
-        desc: "Search has changed. This is the definitive 10-point checklist for ranking in the age of Generative Engine Optimization.",
+        slug: "why-every-ai-tool-has-a-paywall-problem",
+        title: "Why Every AI Tool Has a Paywall Problem",
+        desc: "The free internet promised open access. Instead we got freemium traps. Here's why ToolStack exists and how we plan to keep it free.",
+        tag: "Opinion",
+        color: "#f472b6",
+    },
+    {
+        slug: "complete-guide-to-free-seo-tools",
+        title: "Complete Guide to Free SEO Tools",
+        desc: "Every free SEO tool you actually need — meta description generators, UTM builders, and more. No paid plans required.",
         tag: "SEO Strategy",
         color: "#38bdf8",
     },
     {
-        slug: "how-to-beat-ats-with-ai",
-        title: "How to Beat the ATS Algorithms with AI",
-        desc: "Job hunting in 2026 requires more than a simple PDF. Learn how to optimize your cover letter for AI hiring systems.",
-        tag: "Career",
-        color: "#f472b6",
-    },
-    {
-        slug: "utility-keywords-passive-income",
-        title: "Utility Keywords: The Secret to Passive Income",
-        desc: "Informational content is hard to monetize. Utility content is a goldmine. Learn why building free tools is the ultimate SEO pivot.",
-        tag: "Marketing",
+        slug: "essential-free-developer-tools",
+        title: "Essential Free Developer Tools",
+        desc: "The definitive list of free browser-based dev tools: JSON formatters, JWT decoders, regex testers, SQL formatters, and more.",
+        tag: "Developer",
         color: "#34d399",
     },
+];
+
+const ALL_BLOG_POSTS = [
+    { slug: "ai-writing-tools-ultimate-guide",                title: "AI Writing Tools: The Ultimate Guide",                    tag: "AI" },
+    { slug: "best-ai-tools-for-optimizing-product-visibility", title: "Best AI Tools for Optimizing Product Visibility",          tag: "AI" },
+    { slug: "what-are-productivity-tools",                    title: "What Are Productivity Tools?",                            tag: "Productivity" },
+    { slug: "what-is-base64-encoding",                        title: "What Is Base64 Encoding?",                               tag: "Developer" },
+    { slug: "regex-cheat-sheet-beginners",                    title: "Regex Cheat Sheet for Beginners",                        tag: "Developer" },
+    { slug: "what-is-my-ip-address",                         title: "What Is My IP Address?",                                 tag: "Utility" },
+    { slug: "ssl-certificate-checker-guide",                  title: "SSL Certificate Checker Guide",                          tag: "Security" },
+    { slug: "is-it-down-or-just-me",                         title: "Is It Down or Just Me?",                                 tag: "Utility" },
+    { slug: "how-to-create-pdf-free",                        title: "How to Create a PDF for Free",                           tag: "Utility" },
+    { slug: "what-is-a-jwt-token",                           title: "What Is a JWT Token?",                                   tag: "Developer" },
+    { slug: "how-to-generate-qr-code-wifi",                  title: "How to Generate a QR Code for Wi-Fi",                    tag: "Utility" },
+    { slug: "what-are-utm-parameters",                       title: "What Are UTM Parameters?",                               tag: "Marketing" },
+    { slug: "json-formatting-guide-for-developers",          title: "JSON Formatting Guide for Developers",                    tag: "Developer" },
+    { slug: "how-to-write-cold-email-subject-lines",         title: "How to Write Cold Email Subject Lines",                   tag: "Marketing" },
+    { slug: "perfect-meta-description-anatomy",              title: "The Anatomy of a Perfect Meta Description",               tag: "SEO" },
+    { slug: "mastering-json-visual-guide",                   title: "Mastering JSON: A Visual Guide",                         tag: "Developer" },
+    { slug: "understanding-case-sensitivity",                title: "Understanding Case Sensitivity",                          tag: "Developer" },
 ];
 
 export default function Home() {
@@ -668,8 +699,11 @@ export default function Home() {
                 overflow: "hidden",
                 padding: "140px 24px 80px",
             }}>
+                {/* Animated shader background */}
+                <AnimatedShaderBackground />
+
                 {/* Background glows */}
-                <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
+                <div style={{ position: "absolute", inset: 0, pointerEvents: "none", mixBlendMode: "screen" }}>
                     <div style={{
                         position: "absolute", top: "0%", left: "-10%",
                         width: 900, height: 900, borderRadius: "50%",
@@ -721,7 +755,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    57 top-tier tools live · Free forever · No account
+                                    58 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -797,7 +831,7 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "57", label: "Live tools" },
+                                    { value: "58", label: "Live tools" },
                                     { value: "5+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
@@ -1033,7 +1067,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 57 tools <ArrowRight size={14} />
+                        View all 58 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 
@@ -1335,6 +1369,25 @@ export default function Home() {
                         </Link>
                     ))}
                 </div>
+
+                {/* All articles compact list */}
+                <div style={{ marginTop: 48, borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: 40 }}>
+                    <p style={{ fontSize: 12, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: 24 }}>All Articles</p>
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "8px 24px" }}>
+                        {ALL_BLOG_POSTS.map((post) => (
+                            <Link key={post.slug} href={`/blog/${post.slug}`} style={{
+                                display: "flex", alignItems: "center", gap: 10,
+                                padding: "10px 0", textDecoration: "none",
+                                borderBottom: "1px solid rgba(255,255,255,0.04)",
+                                color: "rgba(255,255,255,0.6)", fontSize: 14, fontWeight: 500,
+                            }}>
+                                <span style={{ fontSize: 10, fontWeight: 700, color: "#818cf8", whiteSpace: "nowrap" }}>{post.tag}</span>
+                                <span style={{ flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{post.title}</span>
+                                <ArrowRight size={12} style={{ flex: "none", opacity: 0.4 }} />
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </section>
 
             {/* ─── THE TOOLSTACK PHILOSOPHY (E-E-A-T AUTHORITATIVE TEXT) ── */}
@@ -1373,7 +1426,7 @@ export default function Home() {
                             <div>
                                 <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 12 }}>Uncompromising Technical Standards</h3>
                                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, margin: 0 }}>
-                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 58+ live tools.
+                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 60+ live tools.
                                 </p>
                             </div>
                             <div style={{ width: 40, height: 1, background: "rgba(255,255,255,0.1)" }} />

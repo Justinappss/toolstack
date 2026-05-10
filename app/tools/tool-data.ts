@@ -576,8 +576,18 @@ export const ALL_TOOLS = [
     category: "Sports",
     accent: "#f59e0b",
     accentRgb: "245,158,11",
-    badge: "New",
+    badge: null,
     icon: "🏆",
+  },
+  {
+    title: "YouTube Transcript Extractor",
+    desc: "Extract any YouTube video transcript instantly as clean Markdown. Toggle timestamps on or off. Download as .md. No login, no limits.",
+    href: "/tools/youtube-transcript",
+    category: "Utility",
+    accent: "#f87171",
+    accentRgb: "248,113,113",
+    badge: "New",
+    icon: "🎬",
   },
 ];
 
