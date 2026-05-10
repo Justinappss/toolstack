@@ -125,6 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "pack-break-ev-calculator",
       "world-cup-accumulator-calculator",
       "world-cup-team-finder",
+      "youtube-transcript",
     ].map(slug => ({
       url: `${base}/tools/${slug}`,
       lastModified: DATES.niche_tools,
@@ -159,6 +160,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "what-is-a-jwt-token",
       "how-to-generate-qr-code-wifi",
       "regex-cheat-sheet-beginners",
+      "best-ai-tools-for-optimizing-product-visibility",
+      "what-are-productivity-tools",
+      "what-is-base64-encoding",
     ].map(slug => ({
       url: `${base}/blog/${slug}`,
       lastModified: DATES.blog_recent,
@@ -173,6 +177,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ].map(slug => ({
       url: `${base}/blog/${slug}`,
       lastModified: "2026-05-08",
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    {
+      url: `${base}/blog/why-every-ai-tool-has-a-paywall-problem`,
+      lastModified: "2026-05-09",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    // === New posts (May 2026 — ATP research) ===
+    ...[
+      "how-to-improve-developer-productivity",
+      "what-is-a-uuid",
+    ].map(slug => ({
+      url: `${base}/blog/${slug}`,
+      lastModified: "2026-05-10",
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

@@ -13,7 +13,7 @@ function buildSearchTools() {
         href: `/tools/${t.slug}`,
         accent: t.color,
         accentRgb: t.bg.match(/rgba?\(([^)]+)\)/)?.[1]?.split(",").slice(0, 3).join(",") ?? "129,140,248",
-        category: t.badge,
+        category: t.badge ?? "",
         badge: null as null,
         image: `/tools/${t.slug}-preview.png`,
     }));
