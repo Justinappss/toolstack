@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ToolSearch } from "@/components/ToolSearch";
 import type { Metadata } from "next";
-import ShaderBanner from "@/components/ui/ShaderBanner";
 
 export const metadata: Metadata = {
     title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
@@ -699,8 +698,6 @@ export default function Home() {
                 overflow: "hidden",
                 padding: "140px 24px 80px",
             }}>
-                {/* Animated shader background */}
-                <ShaderBanner />
 
                 {/* Background glows */}
                 <div style={{ position: "absolute", inset: 0, pointerEvents: "none", mixBlendMode: "screen" }}>

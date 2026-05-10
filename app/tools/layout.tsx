@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ToolSchemaInjector } from "@/components/ui/ToolSchemaInjector";
-import ShaderBanner from "@/components/ui/ShaderBanner";
 
 export const metadata: Metadata = {
     title: "All Free Tools — Writers, Marketers & Developers",
@@ -19,10 +18,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
     return (
         <>
             <ToolSchemaInjector />
-            <ShaderBanner />
-            <div style={{ position: "relative", zIndex: 1 }}>
-                {children}
-            </div>
+            {children}
         </>
     );
 }
