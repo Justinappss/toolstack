@@ -62,7 +62,51 @@ import { GradingComparisonThumbnail } from "./GradingComparisonThumbnail";
 import { EbayBestOfferThumbnail } from "./EbayBestOfferThumbnail";
 import { WorldCupAccumulatorThumbnail } from "./WorldCupAccumulatorThumbnail";
 import { WorldCupTeamFinderThumbnail } from "./WorldCupTeamFinderThumbnail";
-import { YoutubeTranscriptThumbnail } from "./YoutubeTranscriptThumbnail";
+// Inlined to avoid chunk-splitting import issues
+function YoutubeTranscriptThumbnail() {
+    const [vidIdx, setVidIdx] = useState(0);
+    const [shown, setShown] = useState(0);
+    const VIDS = [
+        { url: "youtube.com/watch?v=dQw4w9WgXcQ", lines: [{ t: "0:00", text: "We're no strangers to love" }, { t: "0:04", text: "You know the rules and so do I" }, { t: "0:08", text: "A full commitment's what I'm thinking of" }] },
+        { url: "youtube.com/watch?v=jNQXAC9IVRw", lines: [{ t: "0:00", text: "Alright so here we are in front of the elephants" }, { t: "0:07", text: "They have really, really, really long trunks" }, { t: "0:11", text: "And that's, that's cool" }] },
+        { url: "youtube.com/watch?v=9bZkp7q19f0", lines: [{ t: "0:00", text: "오빤 강남스타일" }, { t: "0:04", text: "강남스타일" }, { t: "0:07", text: "오빤 강남스타일" }] },
+    ];
+    const v = VIDS[vidIdx];
+    useEffect(() => {
+        if (shown < v.lines.length) {
+            const id = setTimeout(() => setShown(s => s + 1), 380);
+            return () => clearTimeout(id);
+        }
+        const id = setTimeout(() => { setShown(0); setVidIdx(i => (i + 1) % VIDS.length); }, 1800);
+        return () => clearTimeout(id);
+    }, [shown, vidIdx]);
+    const A = "#f87171";
+    return (
+        <div style={{ width: "100%", height: 220, background: "linear-gradient(135deg,#1a0000,#200808)", padding: "12px 14px", display: "flex", flexDirection: "column", gap: 8, overflow: "hidden", fontFamily: "Inter,system-ui,sans-serif", position: "relative" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                <div style={{ background: A, borderRadius: 4, padding: "2px 6px", fontSize: 9, fontWeight: 900, color: "white" }}>▶</div>
+                <span style={{ fontSize: 9, color: A, fontWeight: 900, letterSpacing: "0.16em" }}>TRANSCRIPT</span>
+            </div>
+            <div style={{ background: "rgba(0,0,0,0.5)", border: `1px solid rgba(248,113,113,0.3)`, borderRadius: 7, padding: "5px 10px", display: "flex", alignItems: "center", gap: 6 }}>
+                <span style={{ fontSize: 8, color: A, fontWeight: 900 }}>▶</span>
+                <span style={{ fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.6)", fontFamily: "monospace", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", flex: 1 }}>{v.url}</span>
+            </div>
+            <div style={{ flex: 1, background: "rgba(0,0,0,0.4)", border: "1px solid rgba(248,113,113,0.15)", borderRadius: 7, padding: "7px 9px", display: "flex", flexDirection: "column", gap: 5, overflow: "hidden" }}>
+                {v.lines.slice(0, shown).map((line, i) => (
+                    <div key={`${vidIdx}-${i}`} style={{ display: "flex", gap: 7, opacity: i < shown - 1 ? 0.6 : 1, transition: "opacity 0.3s" }}>
+                        <span style={{ fontSize: 8, fontWeight: 800, color: A, fontFamily: "monospace", flexShrink: 0 }}>{line.t}</span>
+                        <span style={{ fontSize: 9, color: "rgba(255,255,255,0.85)", lineHeight: 1.3 }}>{line.text}</span>
+                    </div>
+                ))}
+                {shown < v.lines.length && <span style={{ fontSize: 11, color: A, paddingLeft: 28 }}>●</span>}
+            </div>
+            <div style={{ display: "flex", gap: 5 }}>
+                <div style={{ flex: 1, background: "rgba(248,113,113,0.12)", border: "1px solid rgba(248,113,113,0.4)", borderRadius: 5, padding: "5px 0", fontSize: 9, fontWeight: 900, color: A, textAlign: "center" }}>⎘ COPY MD</div>
+                <div style={{ background: "rgba(0,0,0,0.4)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 5, padding: "5px 10px", fontSize: 9, fontWeight: 800, color: "rgba(255,255,255,0.55)" }}>↓ .md</div>
+            </div>
+        </div>
+    );
+}
 
 const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
     "Password Generator": PasswordGeneratorThumbnail,
