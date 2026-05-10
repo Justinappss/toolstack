@@ -50,6 +50,7 @@ import { AgeCalculatorThumbnail } from "./AgeCalculatorThumbnail";
 import { WebsiteDownThumbnail } from "./WebsiteDownThumbnail";
 import { WhoisLookupThumbnail } from "./WhoisLookupThumbnail";
 import { YoutubeThumbnailDownloaderThumbnail } from "./YoutubeThumbnailDownloaderThumbnail";
+import { YoutubeVideoDownloaderThumbnail } from "./YoutubeVideoDownloaderThumbnail";
 import { InvoiceGeneratorThumbnail } from "./InvoiceGeneratorThumbnail";
 import { CardGradingProfitThumbnail } from "./CardGradingProfitThumbnail";
 import { CardFlipRoiThumbnail } from "./CardFlipRoiThumbnail";
@@ -61,6 +62,7 @@ import { GradingComparisonThumbnail } from "./GradingComparisonThumbnail";
 import { EbayBestOfferThumbnail } from "./EbayBestOfferThumbnail";
 import { WorldCupAccumulatorThumbnail } from "./WorldCupAccumulatorThumbnail";
 import { WorldCupTeamFinderThumbnail } from "./WorldCupTeamFinderThumbnail";
+import { YoutubeTranscriptThumbnail } from "./YoutubeTranscriptThumbnail";
 
 const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
     "Password Generator": PasswordGeneratorThumbnail,
@@ -109,6 +111,7 @@ const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
     "Website Down Checker": WebsiteDownThumbnail,
     "WHOIS Domain Lookup": WhoisLookupThumbnail,
     "YouTube Thumbnail Downloader": YoutubeThumbnailDownloaderThumbnail,
+    "YouTube Video Downloader": YoutubeVideoDownloaderThumbnail,
     "Invoice Generator": InvoiceGeneratorThumbnail,
     "Card Grading Profit Calculator": CardGradingProfitThumbnail,
     "Card Flip ROI Calculator": CardFlipRoiThumbnail,
@@ -120,6 +123,7 @@ const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
     "eBay Best Offer Calculator": EbayBestOfferThumbnail,
     "WC 2026 Accumulator Calculator": WorldCupAccumulatorThumbnail,
     "World Cup 2026 Team Finder": WorldCupTeamFinderThumbnail,
+    "YouTube Transcript Extractor": YoutubeTranscriptThumbnail,
 };
 
 interface Tool {
