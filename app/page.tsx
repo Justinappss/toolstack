@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ToolSearch } from "@/components/ToolSearch";
+import ShaderBanner from "@/components/ui/ShaderBanner";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -688,6 +689,7 @@ const ALL_BLOG_POSTS = [
 export default function Home() {
     return (
         <div style={{ minHeight: "100vh", background: "#06060c" }}>
+            <ShaderBanner />
 
             {/* ─── HERO ─────────────────────────────────────────────────── */}
             <section style={{

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { ALL_TOOLS, CATEGORIES, CATEGORY_MAP } from "./tool-data";
+import ShaderBanner from "@/components/ui/ShaderBanner";
 function ToolsGrid() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
@@ -14,6 +15,7 @@ function ToolsGrid() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#06060c" }}>
+      <ShaderBanner />
       {/* Glow bg */}
       <div style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 0 }}>
         <div style={{
