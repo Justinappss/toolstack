@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ALL_TOOLS, CATEGORIES, CATEGORY_MAP } from "../../tool-data";
 import { CATEGORY_SEO_CONTENT } from "./category-content";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
@@ -149,9 +148,6 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
             {seoContent.content}
           </div>
         </section>
-
-        {/* ─── ADVERTSGPT BANNER ────────────────────────────────────── */}
-        <AdvertiseGPTBanner />
 
       </div>
     </div>

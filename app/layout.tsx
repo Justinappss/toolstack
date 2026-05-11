@@ -91,6 +91,65 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is ToolStack really free?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Every tool on ToolStack is 100% free with no signup, no subscription, and no hidden paywalls. ToolStack was built as a direct response to the modern web over-monetising simple utilities — the anti-friction philosophy means instant access to every tool."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What kinds of tools does ToolStack offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ToolStack offers 60+ tools across 10 categories: AI & writing tools (prompt generator, grammar checker, paraphrasing tool), developer tools (JSON formatter, JWT decoder, regex tester, SQL formatter), finance calculators (VAT, mortgage, salary), SEO tools (meta description generator, YouTube tag generator), card collecting tools (grading profit calculator, card flip ROI, eBay offer calculator), and more."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do I need to create an account to use ToolStack?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. ToolStack requires no account, no signup, and no email. Every tool works instantly in your browser. Most tools run entirely client-side, meaning your data never leaves your device."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Who built ToolStack?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ToolStack was built by Justin Pirrie, a solo developer, over three months. It launched in 2026 and reached #1 on r/SideProject with 6,100 views in 24 hours. The mission is to give everyone frictionless access to premium-quality utilities without paywalls or forced signups."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Which AI tools are available on ToolStack?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ToolStack's AI tools include an AI Prompt Generator (using RISEN, STAR, and 5 other frameworks for ChatGPT, Claude & Gemini), a Grammar Checker powered by GPT-4o, a Paraphrasing Tool with 6 rewrite modes, a Text Summarizer with 4 output formats, a Blog Title Generator, an AI Color Palette Generator, and a Hashtag Generator for Instagram, TikTok, and LinkedIn."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What developer tools does ToolStack have?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ToolStack's developer tools include a JSON Formatter and validator, JWT Decoder, Regex Tester with live highlighting, SQL Formatter, Base64 Encoder/Decoder, UUID Generator (v4, v1, v5, ULID, NanoID), Unix Timestamp Converter, Code Diff Checker, CSS Gradient Generator, and a Favicon Generator. All run in the browser with no backend required."
+                  }
+                }
+              ]
+            }),
+          }}
+        />
         <Navbar />
         <CommandPalette />
         <SmartPasteListener />

@@ -2,7 +2,6 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const FAQS = [
@@ -522,7 +521,6 @@ export default function WorldCupAccumulatorPage() {
                 </div>
 
                 <MoreTools currentSlug="world-cup-accumulator-calculator" />
-                <AdvertiseGPTBanner />
             </div>
         </div>
     );

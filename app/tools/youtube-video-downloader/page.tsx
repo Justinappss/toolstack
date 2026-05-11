@@ -482,7 +482,7 @@ export default function YouTubeVideoDownloader() {
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 20 }}>
             {[
-              { t: "Video Ads", d: "High-quality raw clips for scroll-stopping ad creatives. Pair with AdvertiseGPT for maximum ROI." },
+              { t: "Video Ads", d: "High-quality raw clips for scroll-stopping ad creatives. No re-encoding means your footage stays sharp at any resolution." },
               { t: "Fair Use & Analysis", d: "Create educational breakdowns or critiques with uncompressed footage for deep zooms without pixelation." },
               { t: "Cross-Platform", d: "Download Shorts to repurpose across TikTok and Instagram Reels with perfect clarity." },
             ].map(x => (

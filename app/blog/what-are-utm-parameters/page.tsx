@@ -219,6 +219,41 @@ export default function BlogPost() {
                     </div>
                 </div>
 
+
+                {/* ─── Related Articles ── */}
+                <div style={{ marginTop: 40, paddingTop: 40, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                    <h2 style={{ fontSize: 18, fontWeight: 800, color: "white", letterSpacing: "-0.02em", marginBottom: 20 }}>
+                        Related Articles
+                    </h2>
+                    <div style={{ display: "flex", flexDirection: "column" as const, gap: 10 }}>
+                                                <Link href="utm-builder" style={{
+                            display: "flex", alignItems: "center", gap: 8,
+                            padding: "14px 18px", borderRadius: 12,
+                            background: "rgba(255,255,255,0.025)",
+                            border: "1px solid rgba(255,255,255,0.06)",
+                            textDecoration: "none", color: "rgba(255,255,255,0.7)",
+                            fontSize: 14, fontWeight: 600,
+                            transition: "background 0.15s, border-color 0.15s",
+                        }}
+                        >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                            UTM Builder
+                        </Link>
+                        <Link href="/blog/perfect-meta-description-anatomy" style={{
+                            display: "flex", alignItems: "center", gap: 8,
+                            padding: "14px 18px", borderRadius: 12,
+                            background: "rgba(255,255,255,0.025)",
+                            border: "1px solid rgba(255,255,255,0.06)",
+                            textDecoration: "none", color: "rgba(255,255,255,0.7)",
+                            fontSize: 14, fontWeight: 600,
+                            transition: "background 0.15s, border-color 0.15s",
+                        }}
+                        >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                            Perfect Meta Description
+                        </Link>
+                    </div>
+                </div>
                 {/* Back to blog */}
                 <div style={{ marginTop: 56, paddingTop: 40, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
                     <Link href="/blog" style={{ color: "#818cf8", fontSize: 14, fontWeight: 600, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6 }}>

@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "word-count-checker-guide",
+        title: "Word Count Checker: How to Check and Improve Your Writing Score for Free",
+        description: "Your Flesch Reading Ease score tells you how easy your writing is to understand. Check yours instantly — and learn the three changes that move your score fast.",
+        date: "May 11, 2026",
+        readTime: "6 min read",
+        tag: "Writing",
+        accent: "#34d399",
+        accentBg: "rgba(52,211,153,0.08)",
+        accentBorder: "rgba(52,211,153,0.2)",
+        featured: false,
+    },
+    {
         slug: "ai-prompt-generator-guide",
         title: "Prompt Engineering: A Complete Guide to Writing Better AI Prompts",
         description: "Learn prompt engineering from scratch. The RISEN framework, 5 techniques that work in 2026, privacy tips, and a free AI prompt generator — no signup required.",

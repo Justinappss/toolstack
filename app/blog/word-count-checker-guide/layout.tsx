@@ -1,0 +1,41 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Word Count Checker: Improve Your Writing Score Free | ToolStack",
+    description: "Check your word count and Flesch readability score instantly. Learn what your score means, how to improve it, and why readable writing ranks higher — free tool, no signup.",
+    alternates: { canonical: "https://toolstack.tech/blog/word-count-checker-guide" },
+    openGraph: {
+        title: "Word Count Checker: Improve Your Writing Score Free | ToolStack",
+        description: "Check your word count and Flesch readability score instantly. Free tool, no signup. Learn what makes writing rank and convert.",
+        url: "https://toolstack.tech/blog/word-count-checker-guide",
+        siteName: "ToolStack",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Word Count Checker: Improve Your Writing Score Free",
+        description: "Check your word count and Flesch readability score instantly — free tool, no signup.",
+    },
+};
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://toolstack.tech" },
+                            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://toolstack.tech/blog" },
+                            { "@type": "ListItem", "position": 3, "name": "Word Count Checker: Improve Your Writing Score", "item": "https://toolstack.tech/blog/word-count-checker-guide" },
+                        ],
+                    }),
+                }}
+            />
+            {children}
+        </>
+    );
+}

@@ -818,10 +818,7 @@ export default function AIPromptGenerator() {
 
           <MoreTools currentSlug="ai-prompt-generator" />
 
-          {/* AdvertiseGPT CTA */}
-          <div style={{ padding: "0 0 80px" }}>
-            
-          </div>
+          <div style={{ padding: "0 0 80px" }} />
 
         </div>
       </div>
