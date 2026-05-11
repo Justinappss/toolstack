@@ -186,6 +186,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${base}/blog/ai-prompt-generator-guide`,
+      lastModified: "2026-05-11",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/blog/word-count-checker-guide`,
+      lastModified: "2026-05-11",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // === New posts (May 2026 — ATP research) ===
     ...[
       "how-to-improve-developer-productivity",
