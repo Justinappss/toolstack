@@ -1,6 +1,7 @@
-// cache-bust: 2026-05-10
+// cache-bust: 2026-05-11
 import type { NextConfig } from "next";
 import withPWAInit from "@ducanh2912/next-pwa";
+import path from "path";
 
 const withPWA = withPWAInit({
   dest: "public",
@@ -17,7 +18,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  turbopack: {},
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
   async headers() {
     return [
       {
