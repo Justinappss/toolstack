@@ -157,6 +157,15 @@ export default function BlogPost() {
                     The <Link href="/tools/word-counter" style={toolsLink}>ToolStack Word Counter</Link> gives you both in one free tool — word count, character count, sentence count, and your Flesch Reading Ease score — instantly, with no account required.
                 </p>
 
+                {/* Infographic */}
+                <div style={{ marginBottom: 40, borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
+                    <img
+                        src="/blog/word-count-checker-guide/infographic.png"
+                        alt="The Writer's Guide to Readability and Word Count — Flesch score gauge, SEO word count benchmarks, and content type breakdowns"
+                        style={{ width: "100%", height: "auto", display: "block" }}
+                    />
+                </div>
+
                 {/* Flesch Score Table */}
                 <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>What Your Flesch Score Actually Means</h2>
                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 20 }}>
