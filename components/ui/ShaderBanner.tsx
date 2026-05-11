@@ -12,12 +12,12 @@ export default function ShaderBanner() {
         <div style={{
             position: "fixed",
             top: 0, left: 0, right: 0,
-            height: 360,
-            zIndex: 0,
-            opacity: 0.5,
+            height: 520,
+            zIndex: 1,
+            opacity: 0.9,
             pointerEvents: "none",
-            WebkitMaskImage: "linear-gradient(to bottom, black 40%, transparent 100%)",
-            maskImage: "linear-gradient(to bottom, black 40%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, black 50%, transparent 100%)",
+            maskImage: "linear-gradient(to bottom, black 50%, transparent 100%)",
         }}>
             <AnimatedShaderBackground />
         </div>
