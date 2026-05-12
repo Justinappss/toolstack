@@ -1,21 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
-
-export const metadata: Metadata = {
-    title: "Word Count Checker: Improve Your Writing Score Free | ToolStack",
-    description: "Check your word count and Flesch readability score instantly. Learn what your score means, how to improve it, and why readable writing ranks higher — free tool, no signup.",
-    alternates: { canonical: "https://toolstack.tech/blog/word-count-checker-guide" },
-    openGraph: {
-        title: "Word Count Checker: Improve Your Writing Score Free | ToolStack",
-        description: "Check your word count and Flesch readability score instantly. Free tool, no signup.",
-        url: "https://toolstack.tech/blog/word-count-checker-guide",
-        siteName: "ToolStack",
-        type: "article",
-    },
-};
 
 const FAQS = [
     {

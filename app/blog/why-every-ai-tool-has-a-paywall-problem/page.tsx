@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/why-every-ai-tool-has-a-paywall-problem",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-09",
+        modifiedTime: "2026-05-09",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Why Every AI Tool Has a Paywall Problem (And How to Fix It)",
+        description: "Sign-ups, credit cards, paywalls — why does every AI tool do this? We break down the friction deficit and show you 60+ free tools with no account required.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

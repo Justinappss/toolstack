@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Word Counter Thumbnail 4 — MrBeast Angry</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 720px; overflow: hidden;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    background: #000;
+  }
+  .bg-base {
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at center, #ff0055 0%, #3a0000 100%);
+  }
+  .sunburst {
+    position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+    background: repeating-conic-gradient(from 0deg, rgba(0,0,0,0.15) 0deg 10deg, transparent 10deg 20deg);
+    animation: rotate 80s linear infinite reverse;
+  }
+  @keyframes rotate { 100% { transform: rotate(360deg); } }
+  
+  .photo {
+    position: absolute; left: -100px; bottom: -50px;
+    height: 120%; width: auto; z-index: 10;
+    filter: drop-shadow(15px 0px 40px rgba(0,0,0,0.9)) contrast(1.2) saturate(1.3);
+  }
+
+  .text-container {
+    position: absolute; top: 120px; right: 50px; z-index: 20;
+    display: flex; flex-direction: column; transform: rotate(-4deg);
+    align-items: center;
+  }
+
+  .text-line-1 {
+    font-size: 190px; color: #ffe600; line-height: 0.9;
+    text-transform: uppercase;
+    -webkit-text-stroke: 6px #000;
+    text-shadow: 12px 12px 0 #000, 0 0 50px #ff0000;
+  }
+  .text-line-2 {
+    font-size: 190px; color: #fff; line-height: 0.9;
+    text-transform: uppercase;
+    -webkit-text-stroke: 6px #000;
+    text-shadow: 12px 12px 0 #000;
+    margin-top: 10px;
+  }
+
+  .text-line-3 {
+    font-size: 190px; color: #00ffff; line-height: 0.85;
+    text-transform: uppercase;
+    -webkit-text-stroke: 6px #000;
+    text-shadow: 12px 12px 0 #000, 0 0 60px #00ffff;
+    margin-top: 10px;
+  }
+
+  /* Red X Mark behind text */
+  .red-x {
+    position: absolute; top: -50px; right: 0; z-index: 15;
+    font-size: 500px; color: rgba(255,0,0,0.8);
+    font-family: sans-serif; font-weight: bold;
+    line-height: 1; transform: rotate(10deg);
+    text-shadow: 0 0 50px red;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-base"></div>
+  <div class="sunburst"></div>
+  
+  <img src="assets/pereira_angry.png" class="photo" alt="Alex Pereira Angry">
+
+  <div class="red-x">✗</div>
+
+  <div class="text-container">
+    <div class="text-line-1">STOP</div>
+    <div class="text-line-2">WRITING</div>
+    <div class="text-line-3">LIKE THIS</div>
+  </div>
+</body>
+</html>

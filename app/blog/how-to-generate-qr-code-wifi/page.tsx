@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/how-to-generate-qr-code-wifi",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-23",
+        modifiedTime: "2026-04-23",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Generate a QR Code for Your WiFi (No App Needed)",
+        description: "Create a free WiFi QR code in seconds. Guests scan it and connect automatically — no password typing required.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

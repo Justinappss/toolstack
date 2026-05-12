@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/how-to-create-pdf-free",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-22",
+        modifiedTime: "2026-04-22",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Create a PDF for Free — No Word, No Adobe Required",
+        description: "Five free methods to create a PDF online without paying for software. No watermarks, no signup.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

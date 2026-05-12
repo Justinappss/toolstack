@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/what-is-base64-encoding",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-03",
+        modifiedTime: "2026-05-03",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Is Base64 Encoding and When Should You Use It?",
+        description: "Base64 turns binary data into plain text so it can travel safely over the web. Learn how it works, when to use it, and when not to.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

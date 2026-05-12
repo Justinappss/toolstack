@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/what-are-utm-parameters",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-18",
+        modifiedTime: "2026-04-18",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Are UTM Parameters? A Plain-English Guide with Examples",
+        description: "UTM parameters tell you exactly where your traffic comes from. This guide explains all five UTM tags, when to use each, and how to build clean links fast.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

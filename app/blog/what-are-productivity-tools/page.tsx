@@ -14,6 +14,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/what-are-productivity-tools",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-08",
+        modifiedTime: "2026-05-08",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Are Productivity Tools? A Complete Guide for 2026",
+        description: "Productivity tools help you work smarter, not harder. This guide covers what they are, the key categories, and the best free options — all in your browser.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

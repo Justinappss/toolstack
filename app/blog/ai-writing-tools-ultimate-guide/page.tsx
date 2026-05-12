@@ -14,6 +14,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/ai-writing-tools-ultimate-guide",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-08",
+        modifiedTime: "2026-05-08",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "AI Writing Tools Ultimate Guide: How to Write Better, Faster in 2026",
+        description: "Eight free AI writing tools that help you generate prompts, proofread, paraphrase, summarise, name projects, and convert case — all in your browser with no.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

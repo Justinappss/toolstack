@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/is-it-down-or-just-me",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-22",
+        modifiedTime: "2026-04-22",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Is It Down or Just Me? How to Check if a Website Is Down",
+        description: "Learn how to tell if a website is down for everyone or just you, and what to do about it.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

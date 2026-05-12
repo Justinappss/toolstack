@@ -14,6 +14,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/essential-free-developer-tools",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-08",
+        modifiedTime: "2026-05-08",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Essential Free Developer Tools: The Complete Developer Toolbox for 2026",
+        description: "Fifteen free developer tools — JSON formatting, regex testing, SQL formatting, JWT decoding, colour palettes, password generation, and more. All in your.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

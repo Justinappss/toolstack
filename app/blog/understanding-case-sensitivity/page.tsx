@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/understanding-case-sensitivity",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-13",
+        modifiedTime: "2026-04-13",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "camelCase vs snake_case vs PascalCase: When to Use Each",
+        description: "Covers camelCase, snake_case, PascalCase, kebab-case and SCREAMING_SNAKE_CASE — with rules for every language and context. Free case converter included.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

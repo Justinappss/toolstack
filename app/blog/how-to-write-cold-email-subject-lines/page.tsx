@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/how-to-write-cold-email-subject-lines",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-14",
+        modifiedTime: "2026-04-14",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Write Cold Email Subject Lines That Actually Get Opened",
+        description: "Proven subject line frameworks that drive open rates — with real examples for sales, outreach, and marketing emails.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

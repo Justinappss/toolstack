@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/what-is-my-ip-address",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-18",
+        modifiedTime: "2026-04-18",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Is My IP Address and What Can It Reveal?",
+        description: "Learn what your IP address is, what it reveals about your location and ISP, and how to hide it.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

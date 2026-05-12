@@ -14,6 +14,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/best-ai-tools-for-optimizing-product-visibility",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-08",
+        modifiedTime: "2026-05-08",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Best AI Tools for Optimizing Product Visibility in 2026",
+        description: "Discover the best AI tools for optimising product visibility in 2026. Eleven free tools covering SEO copy, meta optimisation, content generation, and social.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

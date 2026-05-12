@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Word Counter Thumbnail 2 — Challenge</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    background: #07080f;
+  }
+
+  .canvas {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+  }
+
+  /* ── BACKGROUND ── */
+  .bg-base {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #060612 0%, #0a0820 40%, #07060e 100%);
+  }
+
+  /* Strong amber/gold spotlight from upper-right */
+  .spotlight {
+    position: absolute;
+    top: -200px;
+    right: -100px;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.22) 0%, rgba(234, 88, 12, 0.12) 35%, transparent 65%);
+    filter: blur(40px);
+  }
+
+  /* Deep blue/indigo glow on photo side */
+  .bg-indigo {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79, 70, 229, 0.4) 0%, transparent 65%);
+    filter: blur(70px);
+  }
+
+  /* Horizontal speed lines */
+  .speed-lines {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0.04;
+  }
+  .speed-lines::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    right: -10%;
+    height: 2px;
+    background: white;
+    box-shadow:
+      0 -80px 0 1px white, 0 -160px 0 1px white, 0 -240px 0 0.5px white,
+      0 80px 0 1px white, 0 160px 0 1px white, 0 240px 0 0.5px white,
+      0 -40px 0 1px white, 0 40px 0 1px white,
+      0 -120px 0 0.5px white, 0 120px 0 0.5px white;
+  }
+
+  /* ── LAYOUT: 60/40 photo-right, text-left ── */
+
+  /* TEXT ZONE — left 60% */
+  .text-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 760px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 52px 40px 52px 64px;
+  }
+
+  /* Eye-catching eyebrow */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .eyebrow-dot {
+    width: 10px;
+    height: 10px;
+    background: #fbbf24;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #fbbf24;
+    flex-shrink: 0;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.3); }
+  }
+
+  .eyebrow-text {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    color: #fbbf24;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Big headline */
+  .headline {
+    font-size: 94px;
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.04em;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    text-shadow: 0 8px 40px rgba(0,0,0,0.9), 0 2px 0 rgba(0,0,0,0.5);
+  }
+
+  .headline .line2 {
+    color: #fbbf24;
+    display: block;
+    font-style: italic;
+    -webkit-text-stroke: 2px #d97706;
+    text-shadow: 0 0 40px rgba(251,191,36,0.4), 0 8px 40px rgba(0,0,0,0.9);
+  }
+
+  .headline .line3 {
+    font-size: 70px;
+    color: rgba(255,255,255,0.85);
+    display: block;
+  }
+
+  /* Score meter row */
+  .meter-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 28px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .meter-score-box {
+    background: linear-gradient(135deg, #4338ca, #6366f1);
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+  }
+
+  .meter-score-num {
+    font-size: 56px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  .meter-score-sub {
+    font-size: 9px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .meter-grades {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-left: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .meter-grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 8px;
+    border-right: 1px solid rgba(255,255,255,0.06);
+    gap: 4px;
+  }
+
+  .meter-grade:last-child { border-right: none; }
+
+  .meter-grade.active {
+    background: rgba(99,102,241,0.2);
+    border-right: 1px solid rgba(99,102,241,0.3);
+  }
+
+  .grade-range {
+    font-size: 11px;
+    font-weight: 800;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Arial', sans-serif;
+  }
+
+  .grade-label {
+    font-size: 9px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+
+  .meter-grade.active .grade-range {
+    color: #a5b4fc;
+  }
+
+  .meter-grade.active .grade-label {
+    color: rgba(165,180,252,0.7);
+  }
+
+  /* CTA button style */
+  .cta-strip {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .cta-btn {
+    background: #fbbf24;
+    color: #1a0d00;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-family: 'Arial Black', sans-serif;
+    box-shadow: 0 4px 20px rgba(251,191,36,0.4);
+    white-space: nowrap;
+  }
+
+  .cta-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+  }
+
+  /* ── PHOTO ZONE — right 40% ── */
+  .photo-zone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 540px;
+    height: 720px;
+    overflow: hidden;
+  }
+
+  /* Photo fade on left edge */
+  .photo-zone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right, #07080f, transparent);
+    z-index: 10;
+  }
+
+  .photo-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  /* Silhouette shape — standing figure pointing left */
+  .figure-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 420px;
+    height: 680px;
+  }
+
+  .figure-body {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 540px;
+    background: linear-gradient(to top, #2a1560 0%, #1a0d40 60%, #0f0820 100%);
+    border-radius: 140px 140px 0 0;
+    box-shadow:
+      0 0 100px rgba(79,70,229,0.4),
+      inset 0 0 80px rgba(0,0,0,0.5);
+  }
+
+  /* Head */
+  .figure-head {
+    position: absolute;
+    bottom: 490px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    height: 210px;
+    background: linear-gradient(160deg, #3a2068 0%, #1e1040 100%);
+    border-radius: 50%;
+    box-shadow:
+      0 0 60px rgba(79,70,229,0.35),
+      inset 0 0 40px rgba(0,0,0,0.4);
+  }
+
+  /* Pointing arm */
+  .figure-arm {
+    position: absolute;
+    bottom: 360px;
+    left: 0;
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(to left, #3a2068, #1a0d40);
+    border-radius: 20px;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 20px rgba(79,70,229,0.3);
+  }
+
+  .photo-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(165,180,252,0.8);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    background: rgba(99,102,241,0.15);
+    border: 1px dashed rgba(99,102,241,0.4);
+    padding: 6px 16px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    z-index: 20;
+  }
+
+  /* Pointing finger glow toward text */
+  .point-glow {
+    position: absolute;
+    bottom: 340px;
+    left: -10px;
+    width: 200px;
+    height: 80px;
+    background: radial-gradient(ellipse, rgba(251,191,36,0.25) 0%, transparent 70%);
+    filter: blur(15px);
+    z-index: 5;
+  }
+
+  /* ── FLOATING ACCENTS ── */
+  .word-count-pill {
+    position: absolute;
+    top: 38px;
+    left: 64px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .bottom-brand {
+    position: absolute;
+    bottom: 28px;
+    left: 64px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.08em;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Top accent bar */
+  .top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(to right, #4338ca, #fbbf24, #4338ca);
+  }
+
+  /* Grain */
+  .grain {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <!-- Background layers -->
+  <div class="bg-base"></div>
+  <div class="spotlight"></div>
+  <div class="bg-indigo"></div>
+  <div class="speed-lines"></div>
+
+  <!-- Top accent bar -->
+  <div class="top-bar"></div>
+
+  <!-- Text zone -->
+  <div class="text-zone">
+    <div class="eyebrow">
+      <div class="eyebrow-dot"></div>
+      <span class="eyebrow-text">Are you writing clearly?</span>
+    </div>
+
+    <div class="headline" style="font-size: 84px;">
+      WHAT'S<br>
+      <span class="line2" style="font-size: 96px; line-height: 0.9;">YOUR</span>
+      <span class="line3" style="font-size: 80px; font-weight: 800;">SCORE?</span>
+    </div>
+
+    <div class="meter-row">
+      <div class="meter-score-box">
+        <div class="meter-score-num">73</div>
+        <div class="meter-score-sub">/100</div>
+      </div>
+      <div class="meter-grades">
+        <div class="meter-grade">
+          <span class="grade-range">0–30</span>
+          <span class="grade-label">Very<br>Hard</span>
+        </div>
+        <div class="meter-grade">
+          <span class="grade-range">30–50</span>
+          <span class="grade-label">Difficult</span>
+        </div>
+        <div class="meter-grade active">
+          <span class="grade-range">60–70</span>
+          <span class="grade-label">Standard</span>
+        </div>
+        <div class="meter-grade">
+          <span class="grade-range">70–80</span>
+          <span class="grade-label">Fairly<br>Easy</span>
+        </div>
+        <div class="meter-grade">
+          <span class="grade-range">90–100</span>
+          <span class="grade-label">Very<br>Easy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-strip">
+      <div class="cta-btn">Check Now — Free</div>
+      <div class="cta-sub">No signup.<br>Instant results.</div>
+    </div>
+  </div>
+
+  <!-- Photo zone: Alex Pereira pointing left at text -->
+  <div class="photo-zone">
+    <div class="photo-placeholder">
+      <div style="position: absolute; inset: 0; display: flex; justify-content: center; align-items: flex-end;">
+        <img src="assets/alex_pereira.png" alt="Alex Pereira" style="width: 130%; max-width: none; height: auto; object-fit: cover; object-position: center bottom; margin-bottom: -50px; margin-left: 100px; -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%), linear-gradient(to left, black 70%, transparent 100%); mask-image: linear-gradient(to top, black 80%, transparent 100%), linear-gradient(to left, black 70%, transparent 100%); mask-composite: intersect; -webkit-mask-composite: source-in;" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating accents -->
+  <span class="word-count-pill">Word Counter Tool</span>
+  <span class="bottom-brand">toolstack.tech</span>
+
+  <!-- Grain texture -->
+  <div class="grain"></div>
+</div>
+</body>
+</html>

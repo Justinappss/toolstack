@@ -14,6 +14,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/complete-guide-to-free-seo-tools",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-08",
+        modifiedTime: "2026-05-08",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Is an SEO Tool? DIY SEO Tools Guide: Boost Your Rankings in 2026",
+        description: "Learn what an SEO tool is and how to use free DIY SEO tools without spending a penny in 2026.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

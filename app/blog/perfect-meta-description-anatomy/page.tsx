@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/perfect-meta-description-anatomy",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-17",
+        modifiedTime: "2026-04-17",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "The Anatomy of a Perfect Meta Description (With Examples)",
+        description: "Learn the exact formula for writing meta descriptions that rank and get clicked. Length, keywords, CTA, and the 7 mistakes killing your CTR.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

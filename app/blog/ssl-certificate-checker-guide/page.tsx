@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/ssl-certificate-checker-guide",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-22",
+        modifiedTime: "2026-04-22",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "SSL Certificate Explained: What It Is, How to Check It & When It Expires",
+        description: "Learn what SSL certificates are, how to check validity and expiry, and what to do when one expires.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/what-is-a-uuid",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-11",
+        modifiedTime: "2026-05-11",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Is a UUID? Format, Versions & When to Use One",
+        description: "Understand UUID format, versions (v1 through v5), uniqueness guarantees, and when UUID beats auto-increment for database IDs.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

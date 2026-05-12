@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Practical guides on email marketing, analytics, development, and productivity — with free tools embedded so you can act on what you learn immediately.",
     alternates: { canonical: "https://toolstack.tech/blog" },
     openGraph: {
-        title: "Blog — Guides for Developers, Marketers & Creators",
+        title: "Blog — Guides for Developers, Marketers & Creators | ToolStack",
         description: "Practical guides on email marketing, analytics, development, and productivity — with free tools embedded.",
         url: "https://toolstack.tech/blog",
         siteName: "ToolStack",
@@ -15,6 +15,18 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+    {
+        slug: "free-meta-description-generator",
+        title: "Free Meta Description Generator: Stop Google Rewriting Your Snippets (2026)",
+        description: "Google rewrites 70% of meta descriptions. This free generator produces optimised snippets Google keeps — no login, no credits, multiple framing angles, instant results.",
+        date: "May 12, 2026",
+        readTime: "7 min read",
+        tag: "SEO Tools",
+        accent: "#60a5fa",
+        accentBg: "rgba(96,165,250,0.08)",
+        accentBorder: "rgba(96,165,250,0.2)",
+        featured: true,
+    },
     {
         slug: "word-count-checker-guide",
         title: "Word Count Checker: How to Check and Improve Your Writing Score for Free",

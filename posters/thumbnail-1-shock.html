@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Word Counter Thumbnail 1 — Shock Face</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    background: #0a0a14;
+  }
+
+  .canvas {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+  }
+
+  /* ── Deep dark background with dramatic light sweep ── */
+  .bg-base {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 120% 80% at 30% 50%, #1a0a2e 0%, #06060c 60%);
+  }
+
+  /* Purple glow on left (behind face) */
+  .glow-left {
+    position: absolute;
+    top: -100px;
+    left: -80px;
+    width: 700px;
+    height: 900px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(120, 60, 200, 0.55) 0%, transparent 65%);
+    filter: blur(60px);
+  }
+
+  /* Warm amber glow on right (behind text) */
+  .glow-right {
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 160, 0, 0.22) 0%, transparent 65%);
+    filter: blur(80px);
+  }
+
+  /* Diagonal slash divider */
+  .slash {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(99,102,241,0.08), transparent);
+    transform: skewX(-8deg);
+  }
+
+  /* ── PHOTO ZONE — left 50% ── */
+  .photo-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 720px;
+    overflow: hidden;
+  }
+
+  /* Placeholder rendered as a bold silhouette frame */
+  .photo-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .silhouette {
+    width: 320px;
+    height: 480px;
+    background: linear-gradient(to bottom, #2d1b4e 0%, #1a0d30 100%);
+    border-radius: 0 0 160px 160px;
+    border-top: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 80px rgba(120, 60, 200, 0.4), inset 0 0 60px rgba(0,0,0,0.6);
+  }
+
+  /* Head */
+  .silhouette::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 220px;
+    background: linear-gradient(160deg, #3d2460 0%, #1e0f38 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(120,60,200,0.3);
+  }
+
+  .photo-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(165,180,252,0.8);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    background: rgba(99,102,241,0.15);
+    border: 1px dashed rgba(99,102,241,0.4);
+    padding: 6px 16px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+  }
+
+  /* Bottom light on face */
+  .face-glow {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(ellipse, rgba(99,102,241,0.35) 0%, transparent 70%);
+    filter: blur(30px);
+  }
+
+  /* ── TEXT ZONE — right 55% ── */
+  .text-zone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 56px 48px 40px;
+  }
+
+  /* Top badge */
+  .badge-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .badge-new {
+    background: #ef4444;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    padding: 5px 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  .badge-tool {
+    color: rgba(165,180,252,0.8);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Main headline */
+  .headline {
+    font-size: 86px;
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.8);
+  }
+
+  .headline .highlight {
+    color: #fbbf24;
+    display: inline;
+    position: relative;
+  }
+
+  .headline .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #fbbf24;
+    border-radius: 2px;
+    opacity: 0.5;
+  }
+
+  /* Score reveal panel */
+  .score-panel {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 24px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .score-panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99,102,241,0.12) 0%, transparent 60%);
+  }
+
+  .score-number {
+    font-size: 80px;
+    font-weight: 900;
+    color: #a5b4fc;
+    line-height: 1;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 0 0 30px rgba(165,180,252,0.5);
+  }
+
+  .score-label-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .score-label-top {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .score-label-main {
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+
+  .score-bar-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .score-bar-track {
+    height: 12px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .score-bar-fill {
+    height: 100%;
+    width: 73%;
+    background: linear-gradient(to right, #6366f1, #a5b4fc);
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(99,102,241,0.6);
+  }
+
+  .score-bar-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: rgba(255,255,255,0.35);
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  /* CTA text */
+  .cta-line {
+    font-size: 26px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  .cta-line .arrow {
+    color: #fbbf24;
+  }
+
+  /* Floating elements */
+  .float-tag {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .float-tag.top-right {
+    top: 28px;
+    right: 56px;
+  }
+
+  .float-tag.bottom-right {
+    bottom: 28px;
+    right: 56px;
+    color: rgba(165,180,252,0.4);
+  }
+
+  /* Decorative lines */
+  .deco-lines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    opacity: 0.06;
+  }
+
+  .deco-lines svg {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+  }
+
+  /* Bottom stripe */
+  .bottom-stripe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #6366f1, #a5b4fc, #6366f1);
+  }
+
+  /* Grain overlay */
+  .grain {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <!-- Background layers -->
+  <div class="bg-base"></div>
+  <div class="glow-left"></div>
+  <div class="glow-right"></div>
+  <div class="slash"></div>
+  <div class="face-glow"></div>
+
+  <!-- Decorative corner lines -->
+  <div class="deco-lines">
+    <svg width="400" height="400" viewBox="0 0 400 400">
+      <line x1="400" y1="0" x2="0" y2="400" stroke="white" stroke-width="1"/>
+      <line x1="400" y1="40" x2="40" y2="400" stroke="white" stroke-width="1"/>
+      <line x1="400" y1="80" x2="80" y2="400" stroke="white" stroke-width="1"/>
+      <line x1="400" y1="120" x2="120" y2="400" stroke="white" stroke-width="1"/>
+      <line x1="400" y1="160" x2="160" y2="400" stroke="white" stroke-width="1"/>
+      <line x1="400" y1="200" x2="200" y2="400" stroke="white" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <!-- Photo zone: drop Alex Pereira photo here -->
+  <div class="photo-zone">
+    <div class="photo-placeholder">
+      <div class="silhouette"></div>
+      <div class="photo-label">↑ Drop Alex Pereira photo here<br>Shocked / wide-eyed expression</div>
+    </div>
+  </div>
+
+  <!-- Text content -->
+  <div class="text-zone">
+    <div class="badge-row">
+      <span class="badge-new">Free Tool</span>
+      <span class="badge-tool">toolstack.tech</span>
+    </div>
+
+    <div class="headline">
+      WHAT'S<br>
+      YOUR <span class="highlight">WRITING</span><br>
+      SCORE?
+    </div>
+
+    <div class="score-panel">
+      <div class="score-number">73</div>
+      <div class="score-label-col">
+        <span class="score-label-top">Flesch Reading Ease</span>
+        <span class="score-label-main">Standard</span>
+      </div>
+      <div class="score-bar-wrap">
+        <div class="score-bar-track">
+          <div class="score-bar-fill"></div>
+        </div>
+        <div class="score-bar-labels">
+          <span>Hard</span>
+          <span>Easy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-line">Check yours FREE <span class="arrow">→</span></div>
+  </div>
+
+  <!-- Floating micro-tags -->
+  <div class="float-tag top-right">Word Count · Readability</div>
+  <div class="float-tag bottom-right">toolstack.tech</div>
+
+  <!-- Bottom stripe -->
+  <div class="bottom-stripe"></div>
+
+  <!-- Grain texture -->
+  <div class="grain"></div>
+</div>
+</body>
+</html>

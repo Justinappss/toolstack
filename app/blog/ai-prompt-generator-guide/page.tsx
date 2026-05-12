@@ -14,6 +14,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/ai-prompt-generator-guide",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-11",
+        modifiedTime: "2026-05-11",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Prompt Engineering: A Complete Guide to Writing Better AI Prompts",
+        description: "Master prompt engineering with the RISEN framework. Free AI prompt generator included — no signup, no paywall, runs in your browser.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

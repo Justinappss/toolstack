@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/json-formatting-guide-for-developers",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-16",
+        modifiedTime: "2026-04-16",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "JSON Formatting Guide for Developers: Syntax, Validation & Common Errors",
+        description: "JSON syntax rules, common errors explained, and how to validate and format JSON instantly in your browser.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

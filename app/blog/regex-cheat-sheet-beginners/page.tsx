@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/regex-cheat-sheet-beginners",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-25",
+        modifiedTime: "2026-04-25",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Regex Cheat Sheet for Beginners: The Patterns You Actually Use",
+        description: "The regex patterns developers use most often — explained clearly with real examples. Test them instantly in your browser.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

@@ -1,20 +1,24 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Word Count Checker: Improve Your Writing Score Free | ToolStack",
+    title: "Word Count Checker: Improve Your Writing Score Free",
     description: "Check your word count and Flesch readability score instantly. Learn what your score means, how to improve it, and why readable writing ranks higher — free tool, no signup.",
     alternates: { canonical: "https://toolstack.tech/blog/word-count-checker-guide" },
     openGraph: {
-        title: "Word Count Checker: Improve Your Writing Score Free | ToolStack",
+        title: "Word Count Checker: Improve Your Writing Score Free",
         description: "Check your word count and Flesch readability score instantly. Free tool, no signup. Learn what makes writing rank and convert.",
         url: "https://toolstack.tech/blog/word-count-checker-guide",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-11",
+        modifiedTime: "2026-05-11",
+        images: [{ url: "https://toolstack.tech/blog/word-count-checker-guide/infographic.png", width: 1200, height: 630, alt: "Word Count Checker Guide Infographic" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Word Count Checker: Improve Your Writing Score Free",
         description: "Check your word count and Flesch readability score instantly — free tool, no signup.",
+        images: ["https://toolstack.tech/blog/word-count-checker-guide/infographic.png"],
     },
 };
 

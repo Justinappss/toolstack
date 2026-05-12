@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280">
+<title>Word Counter Thumbnail 6 — MrBeast Excited</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 720px; overflow: hidden;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    background: #000;
+  }
+  .bg-base {
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at center, #001f3f 0%, #000000 100%);
+  }
+  .sunburst {
+    position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+    background: repeating-conic-gradient(from 0deg, rgba(0, 255, 255, 0.15) 0deg 10deg, transparent 10deg 20deg);
+    animation: rotate 80s linear infinite reverse;
+  }
+  @keyframes rotate { 100% { transform: rotate(360deg); } }
+  
+  .photo {
+    position: absolute; right: -50px; bottom: -50px;
+    height: 120%; width: auto; z-index: 10;
+    filter: drop-shadow(-20px 0px 40px rgba(0,0,0,0.9)) contrast(1.2) saturate(1.3);
+  }
+
+  .text-container {
+    position: absolute; top: 120px; left: 40px; z-index: 20;
+    display: flex; flex-direction: column; transform: rotate(-5deg);
+    align-items: center;
+  }
+
+  .text-line-1 {
+    font-size: 210px; color: #00ffff; line-height: 0.9;
+    text-transform: uppercase;
+    -webkit-text-stroke: 8px #000;
+    text-shadow: 15px 15px 0 #000, 0 0 50px #00ffff;
+  }
+  .text-line-2 {
+    font-size: 190px; color: #fff; line-height: 0.9;
+    text-transform: uppercase;
+    -webkit-text-stroke: 8px #000;
+    text-shadow: 15px 15px 0 #000;
+    margin-top: 10px;
+  }
+
+  .green-check {
+    position: absolute; bottom: 60px; left: 160px; z-index: 25;
+    font-size: 250px; color: #00ff00; line-height: 1;
+    -webkit-text-stroke: 10px #000; text-shadow: 15px 15px 0 #000, 0 0 100px #00ff00;
+    transform: rotate(10deg);
+  }
+
+</style>
+</head>
+<body>
+  <div class="bg-base"></div>
+  <div class="sunburst"></div>
+  
+  <img src="assets/pereira_excited.png" class="photo" alt="Alex Pereira Excited">
+
+  <div class="text-container">
+    <div class="text-line-1">PERFECT</div>
+    <div class="text-line-2">SCORE!</div>
+  </div>
+
+  <div class="green-check">✓</div>
+</body>
+</html>

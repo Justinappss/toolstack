@@ -13,6 +13,21 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/mastering-json-visual-guide",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-04-15",
+        modifiedTime: "2026-04-15",
+        images: [
+            {
+                url: "https://toolstack.tech/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "JSON for Beginners: A Visual Guide to Formatting & Validation",
+        description: "Covers JSON syntax rules, common errors, nested structures, and how to validate JSON instantly in your browser. Free JSON formatter included.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 

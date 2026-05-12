@@ -13,6 +13,15 @@ export const metadata: Metadata = {
         url: "https://toolstack.tech/blog/how-to-improve-developer-productivity",
         siteName: "ToolStack",
         type: "article",
+        publishedTime: "2026-05-10",
+        modifiedTime: "2026-05-10",
+        images: [{ url: "https://toolstack.tech/og-image.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Improve Developer Productivity: 9 Free Browser Tools",
+        description: "Free browser-based tools for JSON formatting, JWT decoding, regex testing, SQL formatting, UUID generation, and more. No installs, no signup.",
+        images: ["https://toolstack.tech/og-image.png"],
     },
 };
 
