@@ -24,6 +24,26 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
 
   return (
     <div style={{ minHeight: "100vh", background: "#06060c" }}>
+      {/* CollectionPage Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": `Free ${activeCategory} Tools`,
+        "description": seoContent?.title || `${activeCategory} tools collection`,
+        "url": `https://toolstack.tech/tools/category/${categoryParam}`,
+        "hasPart": filtered.map(t => ({
+          "@type": "SoftwareApplication",
+          "name": t.title,
+          "url": `https://toolstack.tech${t.href}`,
+          "applicationCategory": activeCategory,
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }))
+      }) }} />
+      
       {/* Glow bg */}
       <div style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 0 }}>
         <div style={{

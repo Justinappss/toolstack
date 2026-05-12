@@ -767,8 +767,8 @@ export default function Home() {
                                 marginBottom: 28,
                                 color: "white",
                             }}>
-                                Every free online tool<br />
-                                you need.<br />
+                                Every free online tool <br />
+                                you need. <br />
                                 <span style={{
                                     background: "linear-gradient(135deg, #818cf8 0%, #c084fc 35%, #f472b6 65%, #fb923c 100%)",
                                     WebkitBackgroundClip: "text",
@@ -1264,7 +1264,7 @@ export default function Home() {
                         },
                         {
                             title: "New tools weekly",
-                            desc: "60 tools in the pipeline. One or two drop every week. Bookmark ToolStack and come back — it keeps getting better.",
+                            desc: "58 tools and counting. One or two drop every week. Bookmark ToolStack and come back — it keeps getting better.",
                             color: "#f472b6", rgb: "244,114,182",
                             icon: (
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
@@ -1425,7 +1425,7 @@ export default function Home() {
                             <div>
                                 <h3 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 12 }}>Uncompromising Technical Standards</h3>
                                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, margin: 0 }}>
-                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 60+ live tools.
+                                    We do not cut corners. Every AI tool on our platform is powered strictly by the flagship GPT-4o model—never cheaper alternatives. Our logic executes client-side where possible to ensure zero latency, and we strictly enforce 100/100 Lighthouse performance metrics across all 58 live tools.
                                 </p>
                             </div>
                             <div style={{ width: 40, height: 1, background: "rgba(255,255,255,0.1)" }} />

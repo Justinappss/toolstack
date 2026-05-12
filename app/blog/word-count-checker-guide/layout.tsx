@@ -39,6 +39,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     }),
                 }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "VideoObject",
+                        "name": "Word Count Checker — How to Check and Improve Your Readability Score",
+                        "description": "Check your word count and Flesch readability score free",
+                        "thumbnailUrl": "https://img.youtube.com/vi/7ePaydWAWM8/maxresdefault.jpg",
+                        "embedUrl": "https://www.youtube.com/embed/7ePaydWAWM8",
+                        "uploadDate": "2026-05-11",
+                        "duration": "PT7M"
+                    }),
+                }}
+            />
             {children}
         </>
     );
