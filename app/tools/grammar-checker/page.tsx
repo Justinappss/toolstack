@@ -3,6 +3,7 @@ import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 type Correction = {
   original: string;
@@ -149,6 +150,16 @@ export default function GrammarCheckerPage() {
           "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
         },
       ]) }} />
+
+      <HowToSchema
+        name="Grammar Checker"
+        description="Fix grammar, spelling, punctuation, clarity and style with GPT-4o in 3 simple steps."
+        steps={[
+          { name: "Paste your text into the editor", text: "Paste any text — an email, essay, blog post, cover letter or report — up to 5,000 characters. No signup required." },
+          { name: "Review highlighted grammar and style suggestions", text: "GPT-4o analyses your text for grammar, spelling, punctuation, clarity and style errors. See every issue highlighted with an explanation." },
+          { name: "Apply fixes with one click", text: "Copy the corrected version of your text. Each fix includes the grammar rule explained — so you learn why it was wrong, not just what to change." },
+        ]}
+      />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 900, margin: "0 auto", padding: "120px 20px 80px" }}>
 

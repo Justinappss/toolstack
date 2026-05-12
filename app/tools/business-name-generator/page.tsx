@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { saveToHistory } from "@/components/HistorySidebar";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 // ─── SVG ICONS ─────────────────────────────────────────────────────────────
 const InstagramIcon = ({ size = 22 }: { size?: number }) => (
@@ -405,6 +406,15 @@ export default function BusinessNameGenerator() {
         </div>
 
         <FaqPageSchema faqs={FAQS} />
+        <HowToSchema
+          name="Business Name Generator"
+          description="Generate creative, brandable business names using AI. Choose your industry and brand vibe to get unique name ideas instantly."
+          steps={[
+            { name: "Describe your business or industry", text: "Enter a few words describing your business idea, industry, or the type of name you're looking for." },
+            { name: "Select your brand vibe/style", text: "Choose your preferred brand personality — modern, classic, playful, professional, luxury, or techy — to narrow the style." },
+            { name: "Browse and pick your favourite business name", text: "Review generated name suggestions with their brand meanings, check domain availability, and save your favourites." },
+          ]}
+        />
         {/* FAQ Section */}
         <div style={{ marginBottom: 80 }}>
           <h2 style={{ fontSize: 28, fontWeight: 900, color: "white", margin: "0 0 32px" }}>Branding Deep-Dive</h2>

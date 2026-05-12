@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronRight, Copy, Check, Trash2, FileText, Clock, BarChart2, Hash, AlignLeft, Zap, Eye, Wand2, RotateCcw, Download } from "lucide-react";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const FAQS = [
   { q: "How accurate is this word counter?", a: "Our word counter is 100% accurate. It splits text by whitespace the same way word processors like Microsoft Word and Google Docs do. Characters, sentences, and paragraphs are all counted using industry-standard rules." },
@@ -847,6 +848,16 @@ export default function WordCounter() {
 
 
           <FaqPageSchema faqs={FAQS} />
+
+          <HowToSchema
+            name="Word Counter"
+            description="Count words, characters, sentences, and paragraphs in real time with Flesch readability scoring."
+            steps={[
+              { name: "Paste or type your text", text: "Enter any text into the editor — stats update instantly as you type." },
+              { name: "Review word count and readability score", text: "Check word count, characters, reading time, and Flesch Reading Ease score." },
+              { name: "Improve based on the Flesch score analysis", text: "Use the writing tips and keyword density analysis to refine your text for clarity and SEO." },
+            ]}
+          />
 
           {/* ── FAQ ── */}
           <div style={{ ...card, padding: "28px 28px", marginBottom: 16 }}>

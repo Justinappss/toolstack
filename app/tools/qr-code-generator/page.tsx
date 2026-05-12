@@ -4,6 +4,7 @@ import Link from "next/link";
 import QRCode from "qrcode";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const QR_TYPES = [
   { id: "url",   label: "URL",   icon: "🔗", placeholder: "https://example.com" },
@@ -454,6 +455,15 @@ export default function QRCodeGeneratorPage() {
         </div>
 
         <FaqPageSchema faqs={FAQS} />
+        <HowToSchema
+          name="QR Code Generator"
+          description="Generate custom QR codes for URLs, text, WiFi, email, and more — free, no signup, runs in your browser."
+          steps={[
+            { name: "Enter your URL or text", text: "Type or paste the URL, text, or other data you want to encode in your QR code." },
+            { name: "Customize colors and size (optional)", text: "Choose custom foreground and background colors, adjust the size, and add a logo or frame if desired." },
+            { name: "Download or copy your QR code", text: "Download your QR code as a high-resolution PNG image, or copy it directly to your clipboard." },
+          ]}
+        />
         {/* ── FAQ ── */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: 8 }}>FAQ</p>

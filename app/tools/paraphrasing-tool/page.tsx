@@ -3,6 +3,7 @@ import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const MODES = [
   { id: "standard", label: "Standard", icon: "↔", desc: "Same meaning, different words" },
@@ -136,6 +137,16 @@ export default function ParaphrasingToolPage() {
           "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
         },
       ]) }} />
+
+      <HowToSchema
+        name="Paraphrasing Tool"
+        description="Rewrite any text in 6 different modes — Standard, Fluency, Formal, Academic, Creative, Shorten — powered by GPT-4o."
+        steps={[
+          { name: "Paste the text you want to rewrite", text: "Paste or type any text into the input panel — essays, emails, reports, blog posts. Up to 5,000 characters, no signup required." },
+          { name: "Choose your tone (formal, casual, creative)", text: "Pick one of 6 rewrite modes depending on your goal: Standard, Fluency, Formal, Academic, Creative, or Shorten. Each mode uses a distinct GPT-4o prompt." },
+          { name: "Copy the paraphrased version", text: "Click Paraphrase Now. GPT-4o rewrites your text preserving the original meaning. Copy the result with one click or use it as new input for another pass." },
+        ]}
+      />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1100, margin: "0 auto", padding: "120px 20px 80px" }}>
 

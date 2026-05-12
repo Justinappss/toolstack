@@ -3,6 +3,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 // ─── Case conversion functions ───────────────────────────────────────────────
 const MINOR_WORDS = new Set([
@@ -376,6 +377,15 @@ export default function CaseConverterPage() {
         </div>
 
         <FaqPageSchema faqs={FAQS} />
+        <HowToSchema
+          name="Case Converter"
+          description="Convert text between upper case, lower case, title case, sentence case, camelCase, snake_case, and more — instantly."
+          steps={[
+            { name: "Paste your text", text: "Paste or type the text you want to convert. The tool supports unlimited text length and works entirely in your browser." },
+            { name: "Choose the case format", text: "Select your target case format — UPPER, lower, Title Case, Sentence case, camelCase, PascalCase, snake_case, kebab-case, or alternating case." },
+            { name: "Copy the converted text", text: "Your converted text appears instantly. Click copy to paste it into your document, email, or code editor." },
+          ]}
+        />
         {/* FAQ */}
         <div style={{ marginTop: 64 }}>
           <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 8 }}>FAQ</p>

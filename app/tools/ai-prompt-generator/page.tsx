@@ -5,6 +5,7 @@ import { Sparkles, Copy, Check, RefreshCw, Zap, Star, Download, ExternalLink, Ch
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const FAQS = [
   { q: "What is a prompt framework?", a: "A prompt framework is a structured template that tells an AI model exactly what role to play, what to do, how to think, and what format to return. Frameworks like RISEN and Chain-of-Thought consistently produce higher quality outputs than plain requests because they eliminate ambiguity and give the model complete context." },
@@ -774,6 +775,16 @@ export default function AIPromptGenerator() {
 
 
             <FaqPageSchema faqs={FAQS} />
+
+            <HowToSchema
+              name="AI Prompt Generator"
+              description="Generate expert-level prompts for any AI model using structured frameworks — RISEN, Chain-of-Thought, and STAR."
+              steps={[
+                { name: "Enter your topic", text: "Describe what you need prompts for — email marketing, code, sales copy, or anything else." },
+                { name: "Choose a framework and tone", text: "Select a prompt framework (RISEN, Chain-of-Thought, etc.) and tone that matches your goal." },
+                { name: "Generate expert prompts", text: "Get multiple crafted prompts with strength scores, ready to copy or open directly in ChatGPT, Claude, or Gemini." },
+              ]}
+            />
 
             {/* FAQ */}
             <div style={{ ...card, padding: "36px 36px" }}>

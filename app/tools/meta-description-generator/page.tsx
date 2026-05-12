@@ -3,6 +3,7 @@ import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const FAQS = [
   { q: "What is the best meta description generator?", a: "ToolStack's free meta description generator is the most complete free option available. It generates 5 click-optimised variants covering benefit-led, feature-focused, urgency, question-led, and CTA-first angles, with a live Google SERP preview, CTR score, character counter, and one-click HTML copy. No signup required." },
@@ -757,6 +758,16 @@ export default function MetaDescriptionGenerator() {
 
 
                 <FaqPageSchema faqs={FAQS} />
+
+                <HowToSchema
+                  name="Meta Description Generator"
+                  description="Generate 5 click-optimised meta description variants with live Google SERP preview, CTR scoring, and character counters."
+                  steps={[
+                    { name: "Paste your page topic", text: "Describe your page content in detail — the more you provide, the better the descriptions." },
+                    { name: "Select a framing angle", text: "Choose from benefit-led, CTA-first, urgency, question-led, and more angles." },
+                    { name: "Copy your optimised meta description", text: "Preview each variant in a live Google SERP view, then copy text or HTML with one click." },
+                  ]}
+                />
 
                 {/* ─── FAQ ─── */}
                 <section style={{ marginTop: 72 }}>

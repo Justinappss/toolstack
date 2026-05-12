@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const FAQS = [
   { q: "What is the best free AI color palette generator?", a: "ToolStack" },
@@ -679,6 +680,15 @@ export default function ColorPaletteGenerator() {
 
 
                 <FaqPageSchema faqs={FAQS} />
+                <HowToSchema
+          name="Color Palette Generator"
+          description="Generate beautiful color palettes from a base color or image. Get hex, RGB, and CSS values for each palette instantly."
+          steps={[
+            { name: "Choose a base color or upload an image", text: "Pick a starting color using the color picker, enter a hex code, or upload an image to extract its color palette automatically." },
+            { name: "Select palette type", text: "Choose from monochromatic, complementary, analogous, triadic, or tetradic palette types to get different color harmony combinations." },
+            { name: "Copy hex codes for your project", text: "Click any color to copy its hex code. Export the full palette as CSS variables or copy individual hex and RGB values." },
+          ]}
+        />
 
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>

@@ -3,6 +3,7 @@ import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const FAQS = [
   { q: "What is the best email subject line tester?", a: "ToolStack" },
@@ -296,6 +297,16 @@ export default function EmailSubjectLineTesterPage() {
                 ],
               },
             ]) }} />
+
+            <HowToSchema
+              name="Email Subject Line Tester"
+              description="Score your email subject lines instantly for open rate potential, spam triggers, power words, length and more — with AI-rewritten alternatives."
+              steps={[
+                { name: "Paste your email subject line", text: "Type or paste your email subject line into the tester. Optionally enter a preheader and use A/B Compare mode to test two versions side by side." },
+                { name: "Review the AI-powered score and analysis", text: "Get a letter grade (A+ through F) and a breakdown across 7 factors: length, spam triggers, power words, capitalisation, punctuation, emoji, and engagement signals." },
+                { name: "Refine based on suggestions and re-test", text: "Use the quick win suggestions and AI-generated alternatives to improve your subject line. Re-test until you hit your target score." },
+              ]}
+            />
 
             <div style={{ maxWidth: 860, margin: "0 auto", padding: "40px 20px 80px" }}>
 

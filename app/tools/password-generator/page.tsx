@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
+import { HowToSchema } from "@/components/ui/HowToSchema";
 
 const CHARS = {
   upper:   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -433,6 +434,17 @@ export default function PasswordGeneratorPage() {
         </div>
 
         <FaqPageSchema faqs={FAQS} />
+
+        <HowToSchema
+          name="Password Generator"
+          description="Generate strong, cryptographically secure passwords instantly using the Web Crypto API."
+          steps={[
+            { name: "Choose password length", text: "Set your desired password length from 6 to 64 characters using the slider." },
+            { name: "Select character types", text: "Toggle uppercase, lowercase, numbers, and symbols to customise your password's complexity." },
+            { name: "Copy your secure password", text: "Click any generated password to copy it — store it safely in a password manager." },
+          ]}
+        />
+
         {/* ── FAQ ── */}
         <div style={{ marginBottom: 80 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 7, marginBottom: 14 }}>
