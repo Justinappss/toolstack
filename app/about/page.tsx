@@ -99,9 +99,13 @@ export default function AboutPage() {
                 {/* Story */}
                 <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 24, padding: 40, marginBottom: 56 }}>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 32, alignItems: "center", marginBottom: 32 }}>
-                        <div style={{ width: 80, height: 80, borderRadius: "50%", background: "linear-gradient(135deg, #6366f1, #8b5cf6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, fontWeight: 900, color: "white", flexShrink: 0 }}>
-                            JP
-                        </div>
+                        <img
+                            src="/images/justin-pirrie-headshot.png"
+                            alt="Justin Pirrie — Founder of ToolStack"
+                            width={80}
+                            height={80}
+                            style={{ width: 80, height: 80, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: "2px solid rgba(99,102,241,0.4)" }}
+                        />
                         <div style={{ flex: 1 }}>
                             <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", marginBottom: 4 }}>The Story Behind ToolStack</h2>
                             <p style={{ fontSize: 14, color: "#818cf8", fontWeight: 700, margin: 0 }}>Founded by Justin Pirrie</p>
@@ -131,7 +135,7 @@ export default function AboutPage() {
                     <h2 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Global Authority</h2>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", lineHeight: 1.7, margin: 0 }}>
                         ToolStack is part of a global network of AI utilities. For business inquiries, tool requests, or partnership opportunities, reach us at{" "}
-                        <a href="mailto:contact@toolstack.tech" style={{ color: "#818cf8", textDecoration: "none", fontWeight: 600 }}>contact@toolstack.tech</a>.
+                        <a href="mailto:justinmakemoneyonline@gmail.com" style={{ color: "#818cf8", textDecoration: "none", fontWeight: 600 }}>justinmakemoneyonline@gmail.com</a>.
                     </p>
                 </div>
             </div>

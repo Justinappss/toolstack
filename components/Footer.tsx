@@ -196,7 +196,7 @@ export function Footer() {
                         <p style={{ margin: "0 0 4px" }}><strong style={{ color: "rgba(255,255,255,0.6)" }}>ToolStack Tech Ltd.</strong></p>
                         <p style={{ margin: "0 0 4px" }}>71-75 Shelton Street, Covent Garden</p>
                         <p style={{ margin: "0 0 4px" }}>London, WC2H 9JQ, United Kingdom</p>
-                        <p style={{ margin: 0 }}>Email: contact@toolstack.tech</p>
+                        <p style={{ margin: 0 }}>Email: justinmakemoneyonline@gmail.com</p>
                     </div>
                     <div style={{ fontSize: 12, color: "rgba(255,255,255,0.52)", maxWidth: 360, textAlign: "right" }}>
                         <p style={{ margin: 0, lineHeight: 1.6 }}>ToolStack is committed to data privacy. We do not store, process, or transmit your input data to any third-party servers. All utility processing occurs locally within your browser using modern Web APIs.</p>

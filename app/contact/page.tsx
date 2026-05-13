@@ -74,8 +74,8 @@ export default function ContactPage() {
                     <span style={{ fontSize: 20 }}>✉</span>
                     <div>
                         <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.4)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: 4 }}>Email us directly</p>
-                        <a href="mailto:juzzy@daijavu.uk" style={{ fontSize: 15, color: "#a5b4fc", textDecoration: "none", fontWeight: 600 }}>
-                            juzzy@daijavu.uk
+                        <a href="mailto:justinmakemoneyonline@gmail.com" style={{ fontSize: 15, color: "#a5b4fc", textDecoration: "none", fontWeight: 600 }}>
+                            justinmakemoneyonline@gmail.com
                         </a>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                     }}>
                         <p style={{ fontSize: 32, margin: "0 0 12px" }}>✓</p>
                         <h2 style={{ fontSize: 20, fontWeight: 800, color: "white", margin: "0 0 8px" }}>Message ready to send</h2>
-                        <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", margin: 0 }}>Your email client should have opened. If not, email us directly at juzzy@daijavu.uk</p>
+                        <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", margin: 0 }}>Your email client should have opened. If not, email us directly at justinmakemoneyonline@gmail.com</p>
                     </div>
                 )}
 
