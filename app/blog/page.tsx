@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "email-subject-line-tester-guide",
+        title: "Email Subject Line Tester: Score Your Subject Lines Before You Send",
+        description: "Test your email subject lines for open rate potential, spam triggers, and power words. Get a letter grade, A/B compare mode, and AI rewrite suggestions. Free, no signup.",
+        date: "May 13, 2026",
+        readTime: "8 min read",
+        tag: "Email Marketing",
+        accent: "#f472b6",
+        accentBg: "rgba(244,114,182,0.08)",
+        accentBorder: "rgba(244,114,182,0.2)",
+        featured: true,
+    },
+    {
         slug: "free-meta-description-generator",
         title: "Free Meta Description Generator: Stop Google Rewriting Your Snippets (2026)",
         description: "Google rewrites 70% of meta descriptions. This free generator produces optimised snippets Google keeps — no login, no credits, multiple framing angles, instant results.",
