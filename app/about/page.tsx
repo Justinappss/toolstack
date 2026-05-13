@@ -59,7 +59,7 @@ export default function AboutPage() {
                         </span>
                     </h1>
                     <p style={{ fontSize: 18, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, maxWidth: 620 }}>
-                        ToolStack is a professional ecosystem of 36+ free online tools engineered for writers, marketers, and developers who demand speed over friction.
+                        ToolStack is a professional ecosystem of 58+ free online AI and utility tools engineered for writers, marketers, and developers who demand speed over friction.
                     </p>
                 </div>
 
@@ -85,7 +85,7 @@ export default function AboutPage() {
                     <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 20, padding: 32 }}>
                         <h2 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 12 }}>Our Mission</h2>
                         <p style={{ fontSize: 14, color: "rgba(255,255,255,0.45)", lineHeight: 1.7 }}>
-                            To unbundle the complexity of modern AI into simple, accessible, and high-utility tools that anyone can use to work faster. 
+                            To unbundle the complexity of modern AI and software tools into simple, accessible micro-utilities that any professional can use to work faster. We believe small, focused tools solve real problems better than bloated suites with hundreds of features you never use. Every tool on ToolStack is designed to do one thing exceptionally well — and do it without asking for a credit card or email address. 
                         </p>
                     </div>
                     <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 20, padding: 32 }}>
@@ -118,7 +118,10 @@ export default function AboutPage() {
                             I decided to build the antidote. ToolStack is engineered on a single principle: <strong style={{ color: "white" }}>Utility shouldn't have friction.</strong> Every tool we build is optimized for speed, utilizes the latest GPT-4o models, and is maintained with a standard of design that aligns with the premium **AdvertiseGPT** ecosystem.
                         </p>
                         <p>
-                            Today, ToolStack serves thousands of professionals daily. We are an independent team committed to keeping high-utility software free and high-quality for everyone.
+                            Today, ToolStack serves thousands of professionals across the UK, US, and Europe daily. Every tool is hand-built and tested to ensure it delivers real value — not just another AI wrapper. I personally review every bug report and feature request to make sure ToolStack stays responsive to what users actually need.
+                        </p>
+                        <p>
+                            <strong style={{ color: "white" }}>What sets ToolStack apart:</strong> Every AI-powered tool runs on GPT-4o — not a watered-down model. All processing stays client-side where possible, meaning your data never touches our servers. And most importantly, everything remains free. No trials, no credits, no subscriptions. Just tools that work.
                         </p>
                     </div>
                 </div>
@@ -128,7 +131,7 @@ export default function AboutPage() {
                     <h2 style={{ fontSize: 18, fontWeight: 800, color: "white", marginBottom: 10 }}>Global Authority</h2>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", lineHeight: 1.7, margin: 0 }}>
                         ToolStack is part of a global network of AI utilities. For business inquiries, tool requests, or partnership opportunities, reach us at{" "}
-                        <a href="mailto:justinmakemoneyonline@gmail.com" style={{ color: "#818cf8", textDecoration: "none", fontWeight: 600 }}>justinmakemoneyonline@gmail.com</a>.
+                        <a href="mailto:contact@toolstack.tech" style={{ color: "#818cf8", textDecoration: "none", fontWeight: 600 }}>contact@toolstack.tech</a>.
                     </p>
                 </div>
             </div>
