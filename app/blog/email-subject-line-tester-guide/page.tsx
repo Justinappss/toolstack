@@ -171,6 +171,25 @@ Email Subject Line Tester: Score Your{" "}
 
                 <AdBlock type="horizontal" />
 
+                {/* Animated overview video */}
+                <div style={{ marginBottom: 48, borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", background: "rgba(0,0,0,0.4)" }}>
+                  <video width="100%" controls style={{ display: "block" }}>
+                    <source src="/blog/email-subject-line-tester/animated-overview.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div style={{ padding: "14px 20px", background: "rgba(255,255,255,0.02)" }}>
+                    <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Watch: Animated overview of the Email Subject Line Tester — 7 factors that control your open rate</p>
+                  </div>
+                </div>
+
+                {/* Animated infographic */}
+                <div style={{ marginBottom: 48 }}>
+                  <video width="100%" controls style={{ display: "block", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
+                    <source src="/blog/email-subject-line-tester/animated-infographic.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
                 {/* Section 1 — Why Subject Lines Fail */}
                 <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", margin: "40px 0 16px", letterSpacing: "-0.02em" }}>Why Most Email Subject Lines Fail</h2>
                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 16 }}>
