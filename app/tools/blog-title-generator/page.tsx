@@ -530,15 +530,6 @@ export default function BlogTitleGeneratorPage() {
             { "@type": "ListItem", "position": 3, "name": "Blog Title Generator", "item": "https://toolstack.tech/tools/blog-title-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({
-            "@type": "Question",
-            "name": f.q,
-            "acceptedAnswer": { "@type": "Answer", "text": f.a },
-          })),
-        },
       ])}} />
     </div>
   );

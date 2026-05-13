@@ -210,7 +210,6 @@ export default function YouTubeVideoDownloader() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([
         { "@context": "https://schema.org", "@type": "WebApplication", "name": "Free YouTube Video Downloader", "description": "Download YouTube videos and Shorts in high quality MP4 format for free. No ads, no watermarks, no software required.", "url": "https://toolstack.tech/tools/youtube-video-downloader", "applicationCategory": "MultimediaApplication", "operatingSystem": "Web", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "featureList": ["High Quality MP4 Download", "YouTube Shorts Support", "No Watermarks", "Ad-Free Interface"] },
         { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "ToolStack", "item": "https://toolstack.tech" }, { "@type": "ListItem", "position": 2, "name": "Video Tools", "item": "https://toolstack.tech/tools/category/video" }, { "@type": "ListItem", "position": 3, "name": "YouTube Video Downloader", "item": "https://toolstack.tech/tools/youtube-video-downloader" }] },
-        { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) },
       ]) }} />
 
       {/* Background */}

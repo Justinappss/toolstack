@@ -63,42 +63,6 @@ const jsonLd = JSON.stringify([
             { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools/category/collectibles" },
             { "@type": "ListItem", "position": 3, "name": "Card Box Break Calculator", "item": "https://toolstack.tech/tools/card-box-break-calculator" }
         ]
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is a box break in card collecting?",
-                "acceptedAnswer": { "@type": "Answer", "text": "A box break is when a host purchases one or more sealed card boxes and sells spots to participants. Each spot represents one or more teams, players or random allocations. The host opens the box live on stream (usually on Whatnot or eBay Live) and participants receive any cards pulled for their assigned spots." }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you calculate the break-even price per spot for a box break?",
-                "acceptedAnswer": { "@type": "Answer", "text": "To break even, your spot price must cover the box cost, platform fees, and shipping per winner. The formula is: Spot Price = (Box Cost ÷ Total Spots + Fixed Fee + Shipping per Winner) ÷ (1 − Platform Fee Rate). For example, a $200 box with 20 spots on Whatnot (10.9% + $0.30) and $4 shipping needs: ($200/20 + $0.30 + $4) ÷ (1 − 0.109) = $16.07 per spot to break even." }
-            },
-            {
-                "@type": "Question",
-                "name": "What fees does Whatnot charge for hosting box breaks?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Whatnot charges sellers an 8% commission on each sale plus a 2.9% payment processing fee and a $0.30 per-transaction fee. Combined, this is approximately 10.9% + $0.30 per spot sold. These fees apply to all Whatnot sellers globally, regardless of where the break is hosted from." }
-            },
-            {
-                "@type": "Question",
-                "name": "What fill rate should I plan for when hosting a box break?",
-                "acceptedAnswer": { "@type": "Answer", "text": "New break hosts typically achieve 50–70% fill rates on their first few breaks. Established hosts with regular audiences consistently hit 75–100%. It is wise to price your spots so that you at least break even at a 75% fill rate. The calculator shows your profit at 50%, 75%, and 100% fill so you can choose a safe price point." }
-            },
-            {
-                "@type": "Question",
-                "name": "Can I use this calculator for UK and international box breaks?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. The calculator supports USD, GBP, EUR, AUD and CAD. Simply select your currency using the selector at the top of the calculator. Whatnot is available in the US, UK, Canada, Australia, and other markets. Platform fee rates remain the same globally, though your local shipping costs will differ from US estimates." }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the best card box break calculator?",
-                "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's Card Box Break Calculator is one of the most comprehensive free break pricing tools available. It covers Whatnot, eBay and local breaks, applies accurate platform fees, accounts for per-winner shipping costs, shows profit at multiple fill rates, and supports multiple currencies including GBP for UK-based break hosts. No signup required." }
-            }
-        ]
     }
 ]);
 

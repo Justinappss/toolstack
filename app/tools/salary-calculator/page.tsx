@@ -177,14 +177,6 @@ export default function SalaryCalculator() {
           { "@type": "ListItem", "position": 2, "name": "Finance Tools", "item": "https://toolstack.tech/tools/category/finance" },
           { "@type": "ListItem", "position": 3, "name": "Salary Calculator", "item": "https://toolstack.tech/tools/salary-calculator" },
         ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": FAQS.map(f => ({
-          "@type": "Question",
-          "name": f.q,
-          "acceptedAnswer": { "@type": "Answer", "text": f.a }
-        }))
       }
     ]
   };

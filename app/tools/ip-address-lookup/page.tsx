@@ -58,16 +58,6 @@ const jsonLd = {
                 { "@type": "ListItem", "position": 3, "name": "IP Address Lookup", "item": "https://toolstack.tech/tools/ip-address-lookup" },
             ],
         },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                { "@type": "Question", "name": "What is my IP address?", "acceptedAnswer": { "@type": "Answer", "text": "Your IP address is a unique number assigned to your device by your Internet Service Provider (ISP). It identifies your device on the internet and is used to route data to and from your connection. Use this tool to see your current public IP address instantly." } },
-                { "@type": "Question", "name": "Can websites see my IP address?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every website you visit can see your public IP address. It's visible in every request your browser makes. To hide your IP, you need a VPN or proxy service, which replaces your real IP with one from the VPN server." } },
-                { "@type": "Question", "name": "What does my IP address reveal?", "acceptedAnswer": { "@type": "Answer", "text": "Your IP reveals your approximate location (city and region), your ISP, and your timezone. It does not reveal your exact home address, name, or personal details. The location shown is typically the location of your ISP's nearest server, not your exact address." } },
-                { "@type": "Question", "name": "How do I hide my IP address?", "acceptedAnswer": { "@type": "Answer", "text": "The most common ways to hide your IP are: (1) Use a VPN — it routes your traffic through a server in another location, replacing your IP. (2) Use Tor browser — routes through multiple nodes. (3) Use a proxy server. A VPN is the most practical option for most users." } },
-                { "@type": "Question", "name": "What is the best IP address lookup tool?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's IP Address Lookup is one of the best free options — it automatically detects your public IP on page load and shows your city, region, country, ISP, timezone, coordinates, and hostname. You can also look up any IP address. It's free, instant, and requires no signup." } },
-            ],
-        },
     ],
 };
 

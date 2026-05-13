@@ -151,10 +151,7 @@ export default function Base64Encoder() {
             { "@type": "ListItem", "position": 3, "name": "Base64 Encoder/Decoder", "item": "https://toolstack.tech/tools/base64-encoder-decoder" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1040, margin: "0 auto" }}>

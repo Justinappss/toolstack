@@ -167,10 +167,6 @@ export default function UnixConverter() {
             { "@type": "ListItem", "position": 3, "name": "Unix Timestamp Converter", "item": "https://toolstack.tech/tools/unix-timestamp-converter" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1000, margin: "0 auto" }}>

@@ -286,19 +286,6 @@ export default function EmailSubjectLineTesterPage() {
               },
               {
                 "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": [
-                  { "@type": "Question", "name": "What is the best email subject line tester?", "acceptedAnswer": { "@type": "Answer", text: "ToolStack's free email subject line tester is the most complete option available. It scores your subject line across seven factors — length, spam triggers, power words, capitalisation, punctuation, emoji, and engagement signals — gives you a letter grade with a score breakdown, shows inbox previews for Gmail and Outlook, and generates five AI-rewritten alternatives. No signup required." } },
-                  { "@type": "Question", "name": "What is a good email subject line score?", "acceptedAnswer": { "@type": "Answer", text: "A score of 80+ (grade A) is excellent. 65–79 (grade B) is good. Aim for at least 65." } },
-                  { "@type": "Question", "name": "What are email spam trigger words?", "acceptedAnswer": { "@type": "Answer", text: "Spam triggers are phrases flagged by filters, including 'guaranteed', 'act now', 'click here' and 'earn money'." } },
-                  { "@type": "Question", "name": "What is the ideal email subject line length?", "acceptedAnswer": { "@type": "Answer", text: "40–60 characters. This ensures full display in Gmail desktop and mobile without clipping." } },
-                  { "@type": "Question", "name": "How do I use A/B compare mode?", "acceptedAnswer": { "@type": "Answer", text: "Click the A/B Compare button, enter two subject lines, and get instant side-by-side scores with a winner badge." } },
-                  { "@type": "Question", "name": "What are email power words?", "acceptedAnswer": { "@type": "Answer", text: "Power words trigger emotional responses — urgency (now, expires), curiosity (secret, revealed), FOMO (exclusive, rare), value (save, results) and personalisation (you, your)." } },
-                  { "@type": "Question", "name": "How do I improve my email open rate?", "acceptedAnswer": { "@type": "Answer", text: "Use 40–60 characters, include power words, remove spam triggers, add a number for specificity, keep punctuation to one mark, limit emojis to one." } },
-                ],
-              },
-              {
-                "@context": "https://schema.org",
                 "@type": "VideoObject",
                 "name": "Email Subject Line Tester — Free Tool That Scores Your Subject Lines",
                 "description": "Score your email subject lines for open rate potential, spam triggers, power words, length and more with this free tool. No signup required.",

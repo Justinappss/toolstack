@@ -212,17 +212,7 @@ export default function GradingComparisonPage() {
           { "@type": "ListItem", position: 3, name: "Grading Company Comparison", item: "https://toolstack.tech/tools/grading-company-comparison" },
         ],
       },
-      {
-        "@type": "FAQPage",
-        mainEntity: [
-          { "@type": "Question", name: "What is the best card grading company in 2026?", acceptedAnswer: { "@type": "Answer", text: "PSA is the best for sports cards if maximising resale value is your priority — they hold 67% market share and command 10-30% higher prices. For Pokémon and TCG cards, CGC is the specialist choice. For budget submissions or vintage cards, SGC at $15-$18 per card offers the best value." } },
-          { "@type": "Question", name: "Is PSA or BGS better?", acceptedAnswer: { "@type": "Answer", text: "PSA is better for resale liquidity and standard sports cards. BGS (Beckett) is better if you want subgrades — detailed scores for centering, corners, edges and surface. A BGS Black Label 10 (perfect subgrades) can be worth significantly more than a PSA 10 for the same card." } },
-          { "@type": "Question", name: "How long does PSA grading take in 2026?", acceptedAnswer: { "@type": "Answer", text: "PSA turnaround times in 2026 range from 5 days (Super Express at $299.99) to 95 days (Value Bulk at $24.99, Collectors Club members only). The standard Value tier costs $32.99 with a 45-day turnaround." } },
-          { "@type": "Question", name: "Is SGC cheaper than PSA?", acceptedAnswer: { "@type": "Answer", text: "Yes. SGC is significantly cheaper than PSA. SGC Economy starts at $15 per card vs PSA Value Bulk at $24.99. SGC is 47-52% cheaper per card on comparable tiers. However, PSA-graded cards typically sell for 10-30% more, so the extra cost may be worth it for valuable cards." } },
-          { "@type": "Question", name: "Should I use CGC for Pokémon cards?", acceptedAnswer: { "@type": "Answer", text: "Yes. CGC is the leading grading service for Pokémon and other TCG cards (Yu-Gi-Oh, Magic: The Gathering). The Pokémon collecting community specifically seeks CGC-graded cards, and CGC's half-point scale (e.g. 9.5) adds nuance that Pokémon collectors value." } },
-          { "@type": "Question", name: "What does BGS Black Label mean?", acceptedAnswer: { "@type": "Answer", text: "BGS Black Label is awarded to cards that receive a 10 on all four subgrades (centering, corners, edges and surface). It is the rarest and most desirable grade in the hobby, often commanding 200-500% more than a standard BGS 10 or PSA 10 for the same card." } },
-        ],
-      },
+
     ],
   };
 

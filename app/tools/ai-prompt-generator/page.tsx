@@ -403,37 +403,6 @@ export default function AIPromptGenerator() {
             { "@type": "ListItem", "position": 3, "name": "AI Prompt Generator", "item": "https://toolstack.tech/tools/ai-prompt-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is a prompt framework?",
-              "acceptedAnswer": { "@type": "Answer", "text": "A prompt framework is a structured template that tells an AI model exactly what role to play, what to do, how to think, and what format to return. Frameworks like RISEN and Chain-of-Thought consistently produce higher quality outputs than plain requests because they eliminate ambiguity and give the model complete context." }
-            },
-            {
-              "@type": "Question",
-              "name": "What is RISEN prompting?",
-              "acceptedAnswer": { "@type": "Answer", "text": "RISEN stands for Role, Instructions, Steps, End Goal, and Narrowing. It is one of the most effective prompt engineering frameworks because it gives the AI complete context: who it is, what to do, how to do it, what the goal is, and what constraints to follow. RISEN prompts consistently outperform generic requests." }
-            },
-            {
-              "@type": "Question",
-              "name": "Is this AI prompt generator free?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes — 100% free, unlimited usage, no account required. All prompts are generated using GPT-4o, not a cheaper model. There is no paywall, no credit limit, and no email required." }
-            },
-            {
-              "@type": "Question",
-              "name": "Do these prompts work in Claude, Gemini, or Perplexity?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our prompt generator supports ChatGPT, Claude, Gemini, Perplexity, Grok, and Microsoft Copilot. Each model has a dedicated optimisation mode — Claude prompts use XML tags, Perplexity prompts include citation instructions, and Grok prompts are tuned for real-time data." }
-            },
-            {
-              "@type": "Question",
-              "name": "What does the prompt strength score mean?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Each prompt is rated 1-100 based on specificity, role clarity, output format instructions, and constraint quality. Scores above 80 indicate prompts that will reliably produce expert-level AI output. Scores below 60 suggest the prompt may need more specificity or context." }
-            },
-          ],
-        },
       ]) }} />
 
       <div style={{ minHeight: "100vh", background: "#080810", paddingTop: 80 }}>

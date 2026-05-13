@@ -103,14 +103,7 @@ export default function DiffCheckerPage() {
             { "@type": "ListItem", "position": 3, "name": "Code Diff Checker", "item": "https://toolstack.tech/tools/code-diff-checker" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({
-            "@type": "Question",
-            "name": f.q,
-            "acceptedAnswer": { "@type": "Answer", "text": f.a },
-          })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1400, margin: "0 auto" }}>

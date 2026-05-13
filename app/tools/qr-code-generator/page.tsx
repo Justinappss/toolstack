@@ -535,15 +535,6 @@ export default function QRCodeGeneratorPage() {
             { "@type": "ListItem", "position": 3, "name": "QR Code Generator", "item": "https://toolstack.tech/tools/qr-code-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({
-            "@type": "Question",
-            "name": f.q,
-            "acceptedAnswer": { "@type": "Answer", "text": f.a },
-          })),
-        },
       ])}} />
 
       <style>{`

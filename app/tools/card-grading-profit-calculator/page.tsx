@@ -96,59 +96,7 @@ const jsonLd = {
                 { "@type": "ListItem", "position": 3, "name": "Card Grading Profit Calculator", "item": "https://toolstack.tech/tools/card-grading-profit-calculator" },
             ],
         },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Is it worth grading trading cards?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Grading is worth it when the increase in sale price from a graded card exceeds the combined costs of grading fees, shipping, and selling platform fees. A PSA 10 gem mint can sell for 5-10x the raw card price for modern star players and key vintage cards. For bulk low-value cards (under $20 raw), grading rarely makes financial sense — the fees eat all profit."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What is the cheapest PSA grading service?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "PSA's cheapest tier is Value Bulk at $24.99 per card with a 95-day turnaround. Cards must be worth under $499 to qualify. The Value tier is $32.99 with a 45-day turnaround. PSA regularly changes its pricing and turnaround times, so check PSA's website for the latest figures."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "How much does BGS grading cost?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "BGS (Beckett Grading Services) starts at $19 per card for Economy tier (90 days). Standard is $24.95 (45 days), Express $49.95 (15 days), and Premium $124.95 (5 days). BGS grades use sub-grades for corners, edges, surface and centering, making a BGS 10 Black Label one of the most coveted grades in the hobby."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Which grading company is best — PSA, BGS, or SGC?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "PSA graded cards command the highest average sale prices on eBay and are the most widely recognised, making them the best choice for most cards. BGS is preferred for modern cards where the sub-grade system can unlock premium premiums for near-perfect copies. SGC is popular for vintage pre-war and early 20th century cards, offering competitive pricing at $15 economy. The best choice depends on the card era, type and target buyer."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What are the eBay selling fees for graded cards?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "eBay charges 12.9% of the total sale amount plus $0.30 per order for trading cards. This means on a $100 graded card sale, you pay $13.20 in eBay fees, netting $86.80 before shipping costs. Some sellers use alternative platforms like PWCC, Whatnot or Goldin to reduce fees on high-value cards."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What is the best card grading profit calculator?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "ToolStack's Card Grading Profit Calculator lets you compare PSA, BGS, SGC and CSG fees side by side, includes eBay selling fees, and instantly shows net profit and ROI — all free with no signup required."
-                    }
-                },
-            ],
-        },
+
     ],
 };
 

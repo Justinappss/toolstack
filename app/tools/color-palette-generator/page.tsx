@@ -284,46 +284,7 @@ export default function ColorPaletteGenerator() {
                     { "@type": "ListItem", "position": 3, "name": "AI Color Palette Generator", "item": "https://toolstack.tech/tools/color-palette-generator" },
                 ],
             },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is the best free AI color palette generator?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's AI Color Palette Generator is one of the best free options available. Unlike Coolors or Adobe Color, it lets you describe your brand or project in plain text — 'modern fintech startup' or 'luxury skincare brand' — and instantly generates a professional 5-color palette with hex codes, CSS variables, and Tailwind config. No signup required." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How do I generate a color palette from a description?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Type a description of your brand, project, or mood into the input field — for example 'dark cyberpunk game' or 'organic coffee shop'. Select a style preset (Brand, UI, Dark, Minimal, Vibrant, or Natural) and click Generate Palette. GPT-4o will create a harmonious 5-color palette tailored to your description in seconds." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What do the 5 color roles mean?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Each palette contains 5 roles: Primary (your main brand color, used for CTAs and headings), Secondary (supporting elements and hover states), Accent (highlights, icons, and interactive elements), Background (page backgrounds and card surfaces), and Text (body copy and labels). This role-based system ensures the palette is immediately usable in any design system." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How do I export the color palette for CSS or Tailwind?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "After generating a palette, scroll to the Export section below the swatches. Choose CSS Variables, Tailwind Config, or SCSS Variables and click Copy Code. The CSS variables export creates a :root block ready to paste into your stylesheet. The Tailwind export creates a colors object for tailwind.config.js. The SCSS export creates $variable declarations." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are the generated color palettes WCAG accessible?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "The AI is instructed to ensure the Background and Text color combination meets WCAG AA contrast requirements (minimum 4.5:1 contrast ratio for normal text). The Accent and Primary colors are optimised for use on both light and dark backgrounds. For critical accessibility decisions, always verify contrast ratios using a dedicated contrast checker." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can I generate multiple palettes for the same description?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Click Generate Palette as many times as you like. Each generation uses the same description but produces a different palette — GPT-4o introduces variation so you can explore multiple directions. Switching between style presets (Brand, UI, Dark, etc.) will also produce significantly different results for the same description." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What style presets are available?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "There are 6 style presets: Brand Identity (professional, versatile, logo-ready), UI/Web (clean, high-contrast, accessible), Dark Theme (rich darks with glowing accents), Minimal (restrained, near-monochromatic with one focal accent), Vibrant (bold, saturated, high-energy), and Natural (organic, earthy, grounded in nature-inspired tones)." },
-                    },
-                ],
-            },
+
         ],
     };
 

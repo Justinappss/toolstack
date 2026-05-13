@@ -164,10 +164,7 @@ export default function ColorContrastChecker() {
             { "@type": "ListItem", "position": 3, "name": "Colour Contrast Checker", "item": "https://toolstack.tech/tools/color-contrast-checker" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1040, margin: "0 auto" }}>

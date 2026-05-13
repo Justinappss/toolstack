@@ -214,46 +214,7 @@ export default function AgeCalculator() {
                     { "@type": "ListItem", "position": 3, "name": "Age Calculator", "item": "https://toolstack.tech/tools/age-calculator" },
                 ],
             },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How do I calculate my exact age?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Enter your date of birth in the Date of Birth field. The calculator instantly shows your exact age in years, months, and days, along with your total age in days, weeks, hours, and minutes. The calculation accounts for leap years and varying month lengths automatically." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is the best free age calculator?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's Age Calculator is one of the most feature-rich free options available. Unlike basic age calculators on sites like calculatorsoup.com or timeanddate.com, it shows your exact age breakdown, total days and hours lived, days until your next birthday, zodiac sign, generation label, and a life percentage — all in a clean, ad-free interface with no signup required." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How many days until my next birthday?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Enter your date of birth and the calculator automatically calculates how many days remain until your next birthday, including the exact date and day of the week. The count updates each day you use it." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can I calculate my age on a past or future date?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Calculate As Of field defaults to today but you can change it to any past or future date. This lets you calculate how old you were on a specific date in history, or how old you will be on a future date like a retirement date or anniversary." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What generation am I?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "The generation is determined by your birth year: Greatest Generation (before 1928), Silent Generation (1928–1945), Baby Boomer (1946–1964), Generation X (1965–1980), Millennial (1981–1996), Generation Z (1997–2012), Generation Alpha (2013–present)." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How is my zodiac sign calculated?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "Your zodiac sign is determined by your birth month and day, based on the Western tropical zodiac system. For example, born March 21 to April 19 is Aries, April 20 to May 20 is Taurus, and so on. The exact cutoff dates used follow the standard Western astrological calendar." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is my date of birth stored or sent anywhere?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "No. The Age Calculator runs entirely in your browser. Your date of birth is never sent to any server, stored in a database, or shared with any third party. All calculations happen locally on your device." },
-                    },
-                ],
-            },
+
         ],
     };
 

@@ -132,11 +132,7 @@ export default function ParaphrasingToolPage() {
             { "@type": "ListItem", "position": 3, "name": "Paraphrasing Tool", "item": "https://toolstack.tech/tools/paraphrasing-tool" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
-      ]) }} />
+        ]) }} />
 
       <HowToSchema
         name="Paraphrasing Tool"

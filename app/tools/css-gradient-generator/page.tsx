@@ -164,10 +164,7 @@ export default function CSSGradientGenerator() {
             { "@type": "ListItem", "position": 3, "name": "CSS Gradient Generator", "item": "https://toolstack.tech/tools/css-gradient-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1040, margin: "0 auto" }}>

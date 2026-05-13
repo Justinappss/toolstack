@@ -185,41 +185,6 @@ export default function JwtDecoder() {
                     { "@type": "ListItem", "position": 3, "name": "JWT Decoder", "item": "https://toolstack.tech/tools/jwt-decoder" },
                 ],
             },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is a JWT token?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "A JSON Web Token (JWT) is a compact, URL-safe token format used to securely transmit information between parties. It consists of three base64url-encoded parts: a header (algorithm and type), a payload (claims/data), and a signature — separated by dots. JWTs are widely used for authentication and authorization in web APIs." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is it safe to paste my JWT token into a decoder?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's JWT Decoder runs entirely in your browser. Your token is never sent to any server, logged, or stored. The decoding happens locally using JavaScript. That said, avoid pasting production tokens with sensitive payloads into any online tool as a general security practice — use this tool for debugging and development tokens." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What does the JWT decoder show?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "The decoder shows: the decoded header (algorithm, token type), the decoded payload (all claims including sub, iss, aud, iat, exp, nbf and any custom claims), the raw signature string, and a human-readable expiry status showing whether the token is valid or expired." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What are JWT claims?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "JWT claims are key-value pairs in the payload. Standard registered claims include: iss (issuer), sub (subject/user ID), aud (audience), exp (expiration time as Unix timestamp), iat (issued at), and nbf (not before). Custom claims can be anything the application needs to store, such as user roles or permissions." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can this tool verify a JWT signature?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "No — signature verification requires the secret key or public key used to sign the token. This tool decodes and inspects the header and payload only, which is sufficient for debugging purposes. To verify a signature you need the signing key, which should never be shared publicly." },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is the best JWT decoder?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's JWT Decoder is one of the best free options because it decodes entirely in your browser — your token is never sent to any server. It displays the header, payload, and signature with syntax highlighting, shows human-readable expiry times, and flags whether the token is currently valid or expired. No signup required." },
-                    },
-                ],
-            },
         ],
     };
 

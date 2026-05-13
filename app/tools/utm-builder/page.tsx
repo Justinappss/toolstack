@@ -148,13 +148,8 @@ export default function UTMBuilder() {
             { "@type": "ListItem", "position": 3, "name": "UTM Builder", "item": "https://toolstack.tech/tools/utm-builder" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
       ]) }} />
-
-      <div style={{ position: "relative", zIndex: 1, maxWidth: 1000, margin: "0 auto" }}>
+        <div style={{ position: "relative", zIndex: 1, maxWidth: 1000, margin: "0 auto" }}>
         
         {/* Breadcrumb */}
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>

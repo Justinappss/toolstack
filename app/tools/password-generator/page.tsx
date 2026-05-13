@@ -532,15 +532,6 @@ export default function PasswordGeneratorPage() {
             { "@type": "ListItem", "position": 3, "name": "Password Generator", "item": "https://toolstack.tech/tools/password-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({
-            "@type": "Question",
-            "name": f.q,
-            "acceptedAnswer": { "@type": "Answer", "text": f.a },
-          })),
-        },
       ])}} />
     </div>
   );

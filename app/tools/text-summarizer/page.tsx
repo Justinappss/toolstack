@@ -146,10 +146,6 @@ export default function TextSummarizerPage() {
             { "@type": "ListItem", "position": 3, "name": "Text Summarizer", "item": "https://toolstack.tech/tools/text-summarizer" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1100, margin: "0 auto", padding: "120px 20px 80px" }}>

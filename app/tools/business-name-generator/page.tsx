@@ -248,10 +248,7 @@ export default function BusinessNameGenerator() {
             { "@type": "ListItem", "position": 3, "name": "AI Business Name Generator", "item": "https://toolstack.tech/tools/business-name-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 920, margin: "0 auto" }}>

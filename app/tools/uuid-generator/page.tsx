@@ -193,19 +193,6 @@ export default function UUIDGeneratorPage() {
         { "@type": "ListItem", "position": 2, "name": "Dev Tools", "item": "https://toolstack.tech/tools/category/dev" },
         { "@type": "ListItem", "position": 3, "name": "UUID Generator", "item": "https://toolstack.tech/tools/uuid-generator" }
       ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "What is a UUID?", "acceptedAnswer": { "@type": "Answer", "text": "A UUID (Universally Unique Identifier) is a 128-bit label used to uniquely identify information in computer systems. It is formatted as 32 hexadecimal digits in groups of 8-4-4-4-12 separated by hyphens, e.g. 550e8400-e29b-41d4-a716-446655440000." } },
-        { "@type": "Question", "name": "What is the difference between UUID v1 and UUID v4?", "acceptedAnswer": { "@type": "Answer", "text": "UUID v1 is time-based, embedding the current timestamp and making IDs sortable by creation time. UUID v4 is completely random, providing better privacy since it reveals nothing about when or where it was created. v4 is the most widely used format." } },
-        { "@type": "Question", "name": "What is a UUID v5 and when should I use it?", "acceptedAnswer": { "@type": "Answer", "text": "UUID v5 is deterministic — it generates a UUID by hashing a namespace UUID and a name string using SHA-1. The same namespace and name always produce the same UUID. This is ideal for generating stable IDs for known entities like domain names or product SKUs." } },
-        { "@type": "Question", "name": "What is a ULID and how does it differ from a UUID?", "acceptedAnswer": { "@type": "Answer", "text": "A ULID (Universally Unique Lexicographically Sortable Identifier) encodes a millisecond timestamp in its first 10 characters, making it naturally sortable as a string. Unlike UUIDs, ULIDs sort in creation order — useful for database primary keys where chronological ordering matters." } },
-        { "@type": "Question", "name": "Are the IDs generated client-side?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — all ID generation happens entirely in your browser using the Web Crypto API. No data is sent to any server, making this tool instantaneous and completely private." } },
-        { "@type": "Question", "name": "What is the best free UUID generator?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack UUID Generator supports UUID v4, v1, v5, ULID, and NanoID — all free, no signup, 100% client-side. You can generate up to 100 IDs at once with formatting options including uppercase, no-hyphens, and braces. It is the most complete free UUID tool available." } },
-        { "@type": "Question", "name": "Are UUIDs truly unique?", "acceptedAnswer": { "@type": "Answer", "text": "UUID v4 has 122 bits of randomness, giving 2^122 possible values. The probability of generating a duplicate is astronomically small — roughly 1 in 5 undecillion. For all practical purposes, UUIDs can be treated as globally unique." } }
-      ]
     }
   ];
 

@@ -130,10 +130,7 @@ export default function CharacterCounterPage() {
             { "@type": "ListItem", "position": 3, "name": "Character Counter", "item": "https://toolstack.tech/tools/character-counter" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 880, margin: "0 auto", padding: "120px 20px 80px" }}>

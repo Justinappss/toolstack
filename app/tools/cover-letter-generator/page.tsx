@@ -131,10 +131,7 @@ export default function CoverLetterPage() {
             { "@type": "ListItem", "position": 3, "name": "Cover Letter Generator", "item": "https://toolstack.tech/tools/cover-letter-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
+        
       ]) }} />
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 920, margin: "0 auto", padding: "120px 20px 80px" }}>

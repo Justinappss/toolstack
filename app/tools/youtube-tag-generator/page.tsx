@@ -174,12 +174,7 @@ export default function YouTubeTagGenerator() {
             { "@type": "ListItem", "position": 3, "name": "YouTube Tag Generator", "item": "https://toolstack.tech/tools/youtube-tag-generator" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
       ]) }} />
-
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1040, margin: "0 auto" }}>
         {/* Header Breadcrumb */}
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>

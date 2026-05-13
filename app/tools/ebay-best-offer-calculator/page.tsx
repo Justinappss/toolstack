@@ -58,42 +58,6 @@ const jsonLd = JSON.stringify([
             { "@type": "ListItem", "position": 2, "name": "Collectibles", "item": "https://toolstack.tech/tools/category/collectibles" },
             { "@type": "ListItem", "position": 3, "name": "eBay Best Offer Calculator", "item": "https://toolstack.tech/tools/ebay-best-offer-calculator" }
         ]
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How does eBay Best Offer work for sellers?",
-                "acceptedAnswer": { "@type": "Answer", "text": "eBay Best Offer lets buyers submit a price below your listed price. As a seller you can Accept, Counter, or Decline within 48 hours. If you don't respond in 48 hours, the offer automatically expires. You can also set auto-accept and auto-decline thresholds in your listing settings so eBay handles offers automatically." }
-            },
-            {
-                "@type": "Question",
-                "name": "What eBay fees apply when I accept a Best Offer?",
-                "acceptedAnswer": { "@type": "Answer", "text": "When you accept a Best Offer, eBay charges the same Final Value Fee as a regular sale — typically 13.25% of the accepted offer price (for most collectibles categories) plus a $0.30 per-order fee. The fee is calculated on the offer price, not the original listed price, so accepting a lower offer also reduces your fee in absolute terms." }
-            },
-            {
-                "@type": "Question",
-                "name": "How do I calculate the minimum Best Offer I should accept?",
-                "acceptedAnswer": { "@type": "Answer", "text": "To calculate your break-even offer: Minimum Offer = (Total Cost + $0.30) ÷ (1 − eBay Fee Rate). For example, if you paid $50 for a card with 13.25% eBay fees: ($50 + $0.30) ÷ (1 − 0.1325) = $58.01. Any offer below this means you sell at a loss. This calculator shows your break-even and target offer automatically." }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a good profit margin when selling trading cards on eBay?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most experienced card sellers on eBay target a 20–30% ROI on raw cards and 30–50% ROI on graded cards to account for the risk, time, and costs involved. For high-value cards (over $500), even 15–20% ROI can be worthwhile given the capital involved. Set your target ROI in this calculator to see exactly which offers you should accept." }
-            },
-            {
-                "@type": "Question",
-                "name": "Should I counter-offer or decline a low eBay Best Offer?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Counter if the offer covers your costs (above break-even) but doesn't hit your target ROI — it keeps the buyer engaged and often results in a deal. Decline if the offer is below your break-even (you would lose money accepting it). Accept if the offer meets or exceeds your target ROI. This calculator gives you a specific recommendation based on your numbers." }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the best eBay Best Offer calculator?",
-                "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's eBay Best Offer Calculator is the most comprehensive free tool for eBay card sellers. It calculates your exact break-even offer, your target offer at custom ROI, gives Accept/Counter/Decline recommendations for any received offer, shows profit at every price percentage, and supports multiple currencies including GBP for UK eBay sellers. No signup required." }
-            }
-        ]
     }
 ]);
 

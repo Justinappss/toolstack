@@ -145,11 +145,7 @@ export default function GrammarCheckerPage() {
             { "@type": "ListItem", "position": 3, "name": "Grammar Checker", "item": "https://toolstack.tech/tools/grammar-checker" },
           ],
         },
-        {
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-        },
-      ]) }} />
+        ]) }} />
 
       <HowToSchema
         name="Grammar Checker"

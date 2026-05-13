@@ -318,11 +318,7 @@ export default function InvoiceGeneratorPage() {
               { "@type": "ListItem", "position": 3, "name": "Invoice Generator", "item": "https://toolstack.tech/tools/invoice-generator" },
             ],
           },
-          {
-            "@context": "https://schema.org", "@type": "FAQPage",
-            "mainEntity": FAQS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })),
-          },
-        ]) }} />
+          ]) }} />
 
         {/* Breadcrumb */}
         <nav style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
