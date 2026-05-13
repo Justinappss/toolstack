@@ -198,6 +198,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${base}/blog/email-subject-line-tester-guide`,
+      lastModified: "2026-05-13",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
     // === New posts (May 2026 — ATP research) ===
     ...[
       "how-to-improve-developer-productivity",
