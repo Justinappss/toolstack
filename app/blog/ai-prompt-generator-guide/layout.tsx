@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 "description": "Learn prompt engineering with the RISEN framework and other techniques. Free AI prompt generator included.",
                 "thumbnailUrl": "https://img.youtube.com/vi/91vbYjjgBKQ/maxresdefault.jpg",
                 "embedUrl": "https://www.youtube.com/embed/91vbYjjgBKQ",
-                "uploadDate": "2026-05-11",
+                "uploadDate": "2026-05-11T00:00:00+00:00",
                 "duration": "PT5M",
                 "contentUrl": "https://www.youtube.com/watch?v=91vbYjjgBKQ",
             }) }} />

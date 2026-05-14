@@ -49,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         "description": "Score your email subject lines for open rate potential, spam triggers, power words, length and more with this free tool.",
                         "thumbnailUrl": "https://img.youtube.com/vi/iVmk92yIzHw/maxresdefault.jpg",
                         "embedUrl": "https://www.youtube.com/embed/iVmk92yIzHw",
-                        "uploadDate": "2026-05-13",
+                        "uploadDate": "2026-05-13T00:00:00+00:00",
                         "contentUrl": "https://www.youtube.com/watch?v=iVmk92yIzHw"
                     }),
                 }}

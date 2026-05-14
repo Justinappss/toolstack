@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 "description": "Most AI tools hide behind paywalls. ToolStack offers 58+ free AI tools with no signup. Here's why that matters.",
                 "thumbnailUrl": "https://img.youtube.com/vi/r_icDDPLJ4U/maxresdefault.jpg",
                 "embedUrl": "https://www.youtube.com/embed/r_icDDPLJ4U",
-                "uploadDate": "2026-05-09",
+                "uploadDate": "2026-05-09T00:00:00+00:00",
                 "duration": "PT5M",
                 "contentUrl": "https://www.youtube.com/watch?v=r_icDDPLJ4U",
             }) }} />

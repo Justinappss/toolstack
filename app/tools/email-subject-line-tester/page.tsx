@@ -291,7 +291,7 @@ export default function EmailSubjectLineTesterPage() {
                 "description": "Score your email subject lines for open rate potential, spam triggers, power words, length and more with this free tool. No signup required.",
                 "thumbnailUrl": `https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`,
                 "embedUrl": `https://www.youtube.com/embed/${VIDEO_ID}`,
-                "uploadDate": "2026-05-13",
+                "uploadDate": "2026-05-13T00:00:00+00:00",
                 "duration": "PT4M30S",
                 "contentUrl": `https://www.youtube.com/watch?v=${VIDEO_ID}`,
               },

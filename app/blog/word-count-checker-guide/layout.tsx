@@ -49,7 +49,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         "description": "Check your word count and Flesch readability score free",
                         "thumbnailUrl": "https://img.youtube.com/vi/7ePaydWAWM8/maxresdefault.jpg",
                         "embedUrl": "https://www.youtube.com/embed/7ePaydWAWM8",
-                        "uploadDate": "2026-05-11",
+                        "uploadDate": "2026-05-11T00:00:00+00:00",
                         "duration": "PT7M"
                     }),
                 }}

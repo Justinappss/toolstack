@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         "description": "Generate SEO-optimised meta descriptions free",
         "thumbnailUrl": "https://img.youtube.com/vi/tgoaNpOkV7c/maxresdefault.jpg",
         "embedUrl": "https://www.youtube.com/embed/tgoaNpOkV7c",
-        "uploadDate": "2026-05-12",
+        "uploadDate": "2026-05-12T00:00:00+00:00",
         "duration": "PT7M"
       }) }} />
       {children}
