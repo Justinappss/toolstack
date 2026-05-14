@@ -16,18 +16,6 @@ export const metadata: Metadata = {
 
 const posts = [
     {
-        slug: "email-subject-line-tester-guide",
-        title: "Email Subject Line Tester: Score Your Subject Lines Before You Send",
-        description: "Test your email subject lines for open rate potential, spam triggers, and power words. Get a letter grade, A/B compare mode, and AI rewrite suggestions. Free, no signup.",
-        date: "May 13, 2026",
-        readTime: "8 min read",
-        tag: "Email Marketing",
-        accent: "#f472b6",
-        accentBg: "rgba(244,114,182,0.08)",
-        accentBorder: "rgba(244,114,182,0.2)",
-        featured: true,
-    },
-    {
         slug: "hashtag-generator-guide",
         title: "Hashtag Generator: The 3-Tier Strategy to Grow Your Social Reach (Free AI Tool)",
         description: "Stop using #love #photo #fun on every post. Learn the 3-tier hashtag strategy and generate your perfect set free with the ToolStack Hashtag Generator.",
@@ -37,6 +25,18 @@ const posts = [
         accent: "#E1306C",
         accentBg: "rgba(225,48,108,0.08)",
         accentBorder: "rgba(225,48,108,0.2)",
+        featured: true,
+    },
+    {
+        slug: "email-subject-line-tester-guide",
+        title: "Email Subject Line Tester: Score Your Subject Lines Before You Send",
+        description: "Test your email subject lines for open rate potential, spam triggers, and power words. Get a letter grade, A/B compare mode, and AI rewrite suggestions. Free, no signup.",
+        date: "May 13, 2026",
+        readTime: "8 min read",
+        tag: "Email Marketing",
+        accent: "#f472b6",
+        accentBg: "rgba(244,114,182,0.08)",
+        accentBorder: "rgba(244,114,182,0.2)",
         featured: true,
     },
     {
@@ -333,7 +333,7 @@ export default function BlogIndex() {
     };
 
     const featured = posts.find(p => p.featured)!;
-    const rest = posts.filter(p => !p.featured);
+    const rest = posts.filter(p => p.slug !== featured.slug);
 
     return (
         <main style={{ minHeight: "100vh", background: "#050505", color: "white" }}>

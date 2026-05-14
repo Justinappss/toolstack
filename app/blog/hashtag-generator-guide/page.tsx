@@ -171,22 +171,6 @@ export default function BlogPost() {
                   </div>
                 </div>
 
-                {/* Animated infographic 1 */}
-                <div style={{ marginBottom: 48 }}>
-                  <video width="100%" controls style={{ display: "block", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
-                    <source src="/blog/hashtag-generator-guide/animated-infographic-1.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-
-                {/* Animated infographic 2 */}
-                <div style={{ marginBottom: 48 }}>
-                  <video width="100%" controls style={{ display: "block", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
-                    <source src="/blog/hashtag-generator-guide/animated-infographic-2.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-
                 {/* Section 1 — Why Hashtags Fail */}
                 <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", margin: "40px 0 16px", letterSpacing: "-0.02em" }}>Why Most Hashtag Strategies Fail</h2>
                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 16 }}>
@@ -276,6 +260,14 @@ export default function BlogPost() {
                     — type "beach wedding in Bali, Sarah and Tom" and it generates personalised high-reach, growing, and niche tags for sharing your wedding content.
                 </p>
 
+                {/* Animated infographic 1 — 3-tier strategy visual */}
+                <div style={{ marginBottom: 48 }}>
+                  <video width="100%" controls style={{ display: "block", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
+                    <source src="/blog/hashtag-generator-guide/animated-infographic-1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
                 {/* Section 3 — Platform-Specific Limits */}
                 <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", margin: "0 0 16px", letterSpacing: "-0.02em" }}>Optimal Hashtag Counts Per Platform</h2>
                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 20 }}>
@@ -298,6 +290,14 @@ export default function BlogPost() {
                             <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.6, margin: 0 }}>{strategy}</p>
                         </div>
                     ))}
+                </div>
+
+                {/* Animated infographic 2 — platform limits visual */}
+                <div style={{ marginBottom: 48 }}>
+                  <video width="100%" controls style={{ display: "block", borderRadius: 16, border: "1px solid rgba(255,255,255,0.08)" }}>
+                    <source src="/blog/hashtag-generator-guide/animated-infographic-2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
 
                 {/* Section 4 — How to Use the Generator */}
