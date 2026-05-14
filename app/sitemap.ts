@@ -204,6 +204,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${base}/blog/hashtag-generator-guide`,
+      lastModified: "2026-05-14",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
     // === New posts (May 2026 — ATP research) ===
     ...[
       "how-to-improve-developer-productivity",

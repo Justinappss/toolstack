@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: Hashtag Generator 2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,700;0,900;1,900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      border: 4px solid #333;
+      display: flex;
+    }
+
+    /* Background Layer */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('file:///Users/justinpirrie/.gemini/antigravity/brain/26382741-1e59-498f-acde-3b4f063df801/beckham_expressive_1778756208854.png');
+      background-size: cover;
+      background-position: center left;
+      filter: brightness(0.8) contrast(1.15) saturate(1.2);
+      z-index: 1;
+    }
+
+    /* Gradient Overlay */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.95) 100%);
+      z-index: 2;
+    }
+
+    /* Content Layout */
+    .content-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: 3;
+      padding: 50px;
+    }
+
+    .left-section {
+      flex: 1.1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    }
+
+    .right-section {
+      flex: 0.9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    /* Typography */
+    .headline {
+      font-size: 110px;
+      line-height: 1.05;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: 900;
+      text-shadow: 
+        4px 4px 0px #000, 
+        8px 8px 0px rgba(0,0,0,0.8);
+      transform: rotate(-3deg);
+      margin-bottom: 10px;
+    }
+
+    .headline .highlight-green {
+      color: #00E676;
+      text-shadow: 
+        4px 4px 0px #000, 
+        8px 8px 0px rgba(0,0,0,0.8),
+        0 0 40px rgba(0, 230, 118, 0.4);
+      font-size: 130px;
+      display: block;
+      margin-top: -10px;
+    }
+
+    /* Hashtag Blocks */
+    .hashtag-block {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+      border: 5px solid transparent;
+      width: 450px;
+      position: relative;
+      font-family: 'Helvetica', sans-serif;
+      font-weight: bold;
+      color: #1DA1F2; /* Twitter/Hashtag blue */
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+
+    .hashtag-block.bad {
+      border-color: #FF0055;
+      transform: rotate(-4deg) scale(0.9);
+      opacity: 0.7;
+      font-size: 18px;
+    }
+
+    .hashtag-block.good {
+      border-color: #00E676;
+      transform: rotate(3deg) scale(1.1);
+      z-index: 5;
+      font-size: 32px;
+    }
+
+    /* Big Icons overlay */
+    .big-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Oswald', sans-serif;
+      font-size: 180px;
+      font-weight: 900;
+      line-height: 1;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .bad .big-icon {
+      color: #FF0055;
+      filter: drop-shadow(0 0 20px rgba(255, 0, 85, 0.8));
+    }
+
+    .good .big-icon {
+      color: #00E676;
+      filter: drop-shadow(0 0 20px rgba(0, 230, 118, 0.8));
+    }
+
+    /* Tool Badge */
+    .tool-badge {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      background: #FFB100;
+      color: #000;
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      padding: 10px 24px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      transform: rotate(-2deg);
+      box-shadow: 0 8px 20px rgba(255, 177, 0, 0.4);
+      z-index: 4;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    <div class="bg-image"></div>
+    <div class="overlay"></div>
+    
+    <div class="tool-badge">HASHTAG GENERATOR</div>
+
+    <div class="content-wrapper">
+      <div class="left-section">
+        <h1 class="headline">
+          HOW MANY HA$HTAGS
+          <span class="highlight-green">PER PLATFORM?</span>
+        </h1>
+      </div>
+      
+      <div class="right-section">
+        
+        <!-- Bad Example (30 hashtags) -->
+        <div class="hashtag-block bad">
+          #viral #trending #fyp #foryou #foryoupage #explore #explorepage #tiktok #instagram #love #instagood #like #follow #photography #art #beautiful #fashion #happy #cute #tbt #like4like #followme #picoftheday #follow4follow #me #selfie #summer #instadaily #friends #girl
+          <div class="big-icon">X</div>
+        </div>
+
+        <!-- Good Example (3-5 hashtags) -->
+        <div class="hashtag-block good">
+          #MarketingTips #SEO #GrowthHacks
+          <div class="big-icon">✓</div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>

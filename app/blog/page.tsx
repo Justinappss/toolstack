@@ -28,6 +28,18 @@ const posts = [
         featured: true,
     },
     {
+        slug: "hashtag-generator-guide",
+        title: "Hashtag Generator: The 3-Tier Strategy to Grow Your Social Reach (Free AI Tool)",
+        description: "Stop using #love #photo #fun on every post. Learn the 3-tier hashtag strategy and generate your perfect set free with the ToolStack Hashtag Generator.",
+        date: "May 14, 2026",
+        readTime: "8 min read",
+        tag: "Social Media",
+        accent: "#E1306C",
+        accentBg: "rgba(225,48,108,0.08)",
+        accentBorder: "rgba(225,48,108,0.2)",
+        featured: true,
+    },
+    {
         slug: "free-meta-description-generator",
         title: "Free Meta Description Generator: Stop Google Rewriting Your Snippets (2026)",
         description: "Google rewrites 70% of meta descriptions. This free generator produces optimised snippets Google keeps — no login, no credits, multiple framing angles, instant results.",
