@@ -205,6 +205,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${base}/blog/best-free-online-tools-2026`,
+      lastModified: "2026-05-14",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/blog/hashtag-generator-guide`,
       lastModified: "2026-05-14",
       changeFrequency: "monthly",
