@@ -249,7 +249,8 @@ export default function BlogPost() {
                         The Ahrefs meta description generator is the most-searched alternative. It&apos;s a solid tool — but it lives inside a platform starting at $129/month. If you need a full SEO suite, Ahrefs makes sense. If you just need meta descriptions, paying $129/month for a snippet generator is overkill.
                     </p>
 
-                    <div style={{ margin: "0 0 32px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                    <div className="table-scroll" style={{ margin: "0 0 32px", border: "1px solid rgba(255,255,255,0.07)" }}>
+                        <div style={{ minWidth: 420 }}>
                         {[
                             { label: "Price", toolstack: "Free forever", ahrefs: "$129/month minimum" },
                             { label: "Login required", toolstack: "No", ahrefs: "Yes" },
@@ -262,6 +263,7 @@ export default function BlogPost() {
                                 <div style={{ padding: "14px 18px", color: "rgba(255,255,255,0.45)" }}>{row.ahrefs}</div>
                             </div>
                         ))}
+                        </div>
                     </div>
 
                     <h2 style={{ fontSize: 24, fontWeight: 800, color: "white", letterSpacing: "-0.02em", margin: "52px 0 16px", lineHeight: 1.2 }}>Pair It With Email to Own Your Traffic</h2>

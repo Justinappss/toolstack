@@ -106,7 +106,7 @@ export function Navbar() {
                         onClick={() => setOpen(!open)}
                         aria-label={open ? "Close menu" : "Open menu"}
                         style={{
-                            width: 36, height: 36, borderRadius: 10, border: "1px solid rgba(255,255,255,0.1)",
+                            width: 44, height: 44, borderRadius: 10, border: "1px solid rgba(255,255,255,0.1)",
                             background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center",
                             justifyContent: "center", cursor: "pointer", color: "white",
                         }}
@@ -122,31 +122,57 @@ export function Navbar() {
             </div>
 
             {open && (
-                <div className="mobile-nav" style={{
-                    background: "#0d0d14", borderTop: "1px solid rgba(255,255,255,0.06)",
-                    padding: "16px 24px 20px",
-                }}>
-                    {NAV_LINKS.map(([label, href]) => (
-                        <Link key={label} href={href} onClick={() => setOpen(false)} style={{
-                            display: "block", padding: "12px 16px", borderRadius: 12,
-                            fontSize: 15, fontWeight: 600, color: "white",
-                            textDecoration: "none", transition: "background 0.15s",
+                <>
+                    {/* Backdrop — tap outside to close */}
+                    <div
+                        onClick={() => setOpen(false)}
+                        style={{
+                            position: "fixed", inset: 0, zIndex: -1,
+                            background: "rgba(0,0,0,0.5)",
+                            backdropFilter: "blur(2px)",
                         }}
-                            onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; }}
-                            onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
-                        >
-                            {label}
-                        </Link>
-                    ))}
-                    <Link href="/tools" onClick={() => setOpen(false)} style={{
-                        display: "block", marginTop: 12, padding: "12px 16px", borderRadius: 12,
-                        background: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
-                        fontSize: 15, fontWeight: 700, color: "white", textDecoration: "none",
-                        textAlign: "center",
+                    />
+                    <div className="mobile-nav" style={{
+                        background: "#0d0d14", borderTop: "1px solid rgba(255,255,255,0.06)",
+                        padding: "16px 24px 24px",
                     }}>
-                        Browse All Tools →
-                    </Link>
-                </div>
+                        {/* Mobile search */}
+                        <button
+                            onClick={() => { setSearchOpen(true); setOpen(false); }}
+                            style={{
+                                width: "100%", marginBottom: 12,
+                                background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)",
+                                color: "rgba(255,255,255,0.6)", padding: "13px 16px", borderRadius: 12,
+                                cursor: "pointer", display: "flex", alignItems: "center", gap: 10,
+                                fontSize: 14, fontWeight: 500, textAlign: "left",
+                            }}
+                        >
+                            <Search size={16} />
+                            Search tools…
+                        </button>
+
+                        {NAV_LINKS.map(([label, href]) => (
+                            <Link key={label} href={href} onClick={() => setOpen(false)} style={{
+                                display: "block", padding: "13px 16px", borderRadius: 12,
+                                fontSize: 15, fontWeight: 600, color: "white",
+                                textDecoration: "none", transition: "background 0.15s",
+                            }}
+                                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; }}
+                                onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
+                            >
+                                {label}
+                            </Link>
+                        ))}
+                        <Link href="/tools" onClick={() => setOpen(false)} style={{
+                            display: "block", marginTop: 12, padding: "14px 16px", borderRadius: 12,
+                            background: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+                            fontSize: 15, fontWeight: 700, color: "white", textDecoration: "none",
+                            textAlign: "center",
+                        }}>
+                            Browse All Tools →
+                        </Link>
+                    </div>
+                </>
             )}
             <ToolSearch tools={searchTools} isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
         </header>

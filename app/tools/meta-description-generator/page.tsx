@@ -361,22 +361,7 @@ export default function MetaDescriptionGenerator() {
                     { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://toolstack.tech/tools/category/seo" },
                     { "@type": "ListItem", "position": 3, "name": "Meta Description Generator", "item": "https://toolstack.tech/tools/meta-description-generator" }
                 ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is the best meta description generator?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's free meta description generator is the most complete free option available. It generates 5 click-optimised variants covering benefit-led, feature-focused, urgency, question-led, and CTA-first angles, with a live Google SERP preview, CTR score, character counter, and one-click HTML copy. No signup required." }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How long should a meta description be?",
-                        "acceptedAnswer": { "@type": "Answer", "text": "The ideal length is 150–160 characters. Mobile devices often truncate at 120, so front-load your primary keyword and value hook." }
-                    }
-                ]
-            }
+        }
         ]
     };
 

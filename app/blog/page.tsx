@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "blog-title-generator",
+        title: "SEO Blog Title Generator: Write Titles That Rank and Get Clicked (2026)",
+        description: "Most blog titles fail before anyone reads the post. This free SEO blog title generator writes 10 optimised titles across 10 types in 10 seconds — no login, no limits.",
+        date: "May 15, 2026",
+        readTime: "8 min read",
+        tag: "Content Tools",
+        accent: "#34d399",
+        accentBg: "rgba(52,211,153,0.08)",
+        accentBorder: "rgba(52,211,153,0.2)",
+        featured: true,
+    },
+    {
         slug: "best-free-online-tools-2026",
         title: "58 Best Free Online Tools in 2026 (No Signup, No Paywall)",
         description: "The complete list of the best free online tools in 2026 across AI, SEO, writing, development, marketing, and more. All free, no signup, no paywall.",

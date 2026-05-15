@@ -220,15 +220,6 @@ const JSON_LD = JSON.stringify([
       { "@type": "ListItem", position: 3, name: "Hashtag Generator", item: "https://toolstack.tech/tools/hashtag-generator" },
     ],
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQS.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  },
 ]);
 
 // ─── Main Component ───────────────────────────────────────────────────────────

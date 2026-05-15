@@ -178,6 +178,30 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* ─── Mobile responsive utilities ───────────────────────────── */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 16px;
+}
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 580px) {
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom-text {
+    text-align: left !important;
+  }
+  .blog-hero-title {
+    font-size: 26px !important;
+  }
+}
+
 /* ─── Banner v2 (radar + subscriber feed) ────────────────────── */
 @keyframes pulseDot {
   0%, 100% { opacity: 0.55; transform: scale(1); }

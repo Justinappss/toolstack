@@ -198,7 +198,7 @@ export function Footer() {
                         <p style={{ margin: "0 0 4px" }}>London, WC2H 9JQ, United Kingdom</p>
                         <p style={{ margin: 0 }}>Email: justinmakemoneyonline@gmail.com</p>
                     </div>
-                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.52)", maxWidth: 360, textAlign: "right" }}>
+                    <div className="footer-bottom-text" style={{ fontSize: 12, color: "rgba(255,255,255,0.52)", maxWidth: 360, textAlign: "right" }}>
                         <p style={{ margin: 0, lineHeight: 1.6 }}>ToolStack is committed to data privacy. We do not store, process, or transmit your input data to any third-party servers. All utility processing occurs locally within your browser using modern Web APIs.</p>
                     </div>
                 </div>

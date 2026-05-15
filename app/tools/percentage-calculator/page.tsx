@@ -140,14 +140,6 @@ export default function PercentageCalculator() {
           { "@type": "ListItem", "position": 3, "name": "Percentage Calculator", "item": "https://toolstack.tech/tools/percentage-calculator" },
         ]
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": FAQS.map(f => ({
-          "@type": "Question",
-          "name": f.q,
-          "acceptedAnswer": { "@type": "Answer", "text": f.a }
-        }))
-      }
     ]
   };
 

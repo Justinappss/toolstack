@@ -50,17 +50,6 @@ const jsonLd = {
                 { "@type": "ListItem", "position": 3, "name": "PDF Generator", "item": "https://toolstack.tech/tools/pdf-generator" },
             ],
         },
-        {
-            "@type": "FAQPage",
-            "mainEntity": [
-                { "@type": "Question", "name": "Is my text sent to any server?", "acceptedAnswer": { "@type": "Answer", "text": "No. The PDF is generated entirely in your browser using JavaScript. Nothing is uploaded or stored on any server." } },
-                { "@type": "Question", "name": "Can I use this for professional documents?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The output is a clean, properly formatted PDF with no watermarks or branding. Use it for reports, letters, notes, or any text document." } },
-                { "@type": "Question", "name": "How do I add multiple paragraphs?", "acceptedAnswer": { "@type": "Answer", "text": "Leave a blank line between paragraphs — the same way you would in any word processor. The generator preserves paragraph spacing automatically." } },
-                { "@type": "Question", "name": "What fonts are available?", "acceptedAnswer": { "@type": "Answer", "text": "Helvetica (clean, modern), Times (classic serif), and Courier (monospaced, great for code or scripts). These are standard PDF-embedded fonts." } },
-                { "@type": "Question", "name": "Can I generate a multi-page PDF?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your content exceeds one page, the generator automatically adds new pages and numbers each one." } },
-                { "@type": "Question", "name": "What is the best free PDF generator?", "acceptedAnswer": { "@type": "Answer", "text": "ToolStack's PDF Generator is one of the best free options — it runs entirely in your browser so your text never leaves your device, produces clean PDFs with no watermarks or branding, supports A4, Letter, Legal and A3 page sizes in portrait or landscape, and requires no signup or installation." } },
-            ],
-        },
     ],
 };
 

@@ -139,14 +139,6 @@ export default function MortgageCalculator() {
           { "@type": "ListItem", "position": 3, "name": "Mortgage Calculator", "item": "https://toolstack.tech/tools/mortgage-calculator" },
         ]
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": FAQS.map(f => ({
-          "@type": "Question",
-          "name": f.q,
-          "acceptedAnswer": { "@type": "Answer", "text": f.a }
-        }))
-      }
     ]
   };
 
