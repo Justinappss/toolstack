@@ -18,13 +18,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-05-16",
         modifiedTime: "2026-05-16",
-        images: [{ url: "https://toolstack.tech/blog/genspark-for-word-review/infographic-features.png", width: 2752, height: 1536 }],
+        images: [{ url: "https://toolstack.tech/blog/genspark-for-word-review/hero-banner.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Genspark for Word Review 2026: Honest AI Word Add-in Test",
         description: "Free AI add-in for Microsoft Word. Beats Copilot on price. Full review after two weeks of real use.",
-        images: ["https://toolstack.tech/blog/genspark-for-word-review/infographic-features.png"],
+        images: ["https://toolstack.tech/blog/genspark-for-word-review/hero-banner.png"],
     },
 };
 
@@ -82,6 +82,18 @@ export default function BlogPost() {
             <div style={{ position: "relative", overflow: "hidden", paddingTop: 140, paddingBottom: 64, borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
                 <div style={{ position: "absolute", top: "10%", left: "50%", transform: "translateX(-50%)", width: 700, height: 500, borderRadius: "50%", background: `radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%)`, filter: "blur(80px)", pointerEvents: "none" }} />
                 <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px", position: "relative" }}>
+
+                    {/* Hero Image */}
+                    <div style={{ marginBottom: 40, borderRadius: 24, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 30px 60px rgba(0,0,0,0.6)" }}>
+                        <Image
+                            src="/blog/genspark-for-word-review/hero-banner.png"
+                            alt="Genspark for Word Review Hero Banner"
+                            width={1200}
+                            height={630}
+                            style={{ width: "100%", height: "auto", display: "block" }}
+                            priority
+                        />
+                    </div>
 
                     {/* Breadcrumb */}
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.45)" }}>
