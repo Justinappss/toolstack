@@ -103,17 +103,24 @@ export default function BlogPost() {
                 </div>
             </div>
 
-            {/* Hero Banner Image */}
+            {/* Hero Banner Image with text overlay */}
             <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 24px" }}>
-                <div style={{ margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                <div style={{ position: "relative", margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
                     <Image
                         src="/blog/postiz-review/hero-banner.png"
-                        alt="Postiz Review 2026 — open-source social media scheduler with agentic AI scheduling. Hero banner showing Postiz dashboard and supported social platforms."
+                        alt="Postiz Review 2026 — open-source social media scheduler with agentic AI scheduling"
                         width={1200}
                         height={630}
                         style={{ width: "100%", height: "auto", display: "block" }}
                         priority
                     />
+                    {/* Gradient overlay for text readability */}
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 50%, transparent 100%)" }} />
+                    {/* Text overlay */}
+                    <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, display: "flex", flexDirection: "column", justifyContent: "center", padding: "40px" }}>
+                        <h2 style={{ fontSize: "clamp(24px, 5vw, 44px)", fontWeight: 900, color: "white", margin: "0 0 8px", lineHeight: 1.1, letterSpacing: "-0.025em" }}>Postiz Review</h2>
+                        <p style={{ fontSize: "clamp(14px, 2vw, 18px)", color: "rgba(255,255,255,0.85)", margin: 0, fontWeight: 500 }}>Open-Source Social Media Scheduler</p>
+                    </div>
                 </div>
             </div>
 
