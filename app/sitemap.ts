@@ -3,20 +3,15 @@ import { MetadataRoute } from "next";
 // Real last-modified dates per content group.
 // Update these when you actually modify the pages.
 const DATES = {
-  home: "2026-05-07",       // homepage last updated
-  tools_index: "2026-05-07",
-  categories: "2026-05-01",
-  // Core tools (launched earliest)
-  core_tools: "2026-04-15",
-  // Newer tools
-  new_tools: "2026-05-01",
-  // Collectibles/sports niche
-  niche_tools: "2026-04-20",
-  // Blog
-  blog_index: "2026-05-05",
+  home: "2026-05-17",
+  tools_index: "2026-05-17",
+  categories: "2026-05-17",
+  core_tools: "2026-05-17",
+  new_tools: "2026-05-17",
+  niche_tools: "2026-05-17",
+  blog_index: "2026-05-17",
   blog_older: "2026-03-15",
   blog_recent: "2026-04-28",
-  // Static pages
   static: "2026-01-15",
 };
 
@@ -226,6 +221,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
+    // === Review blogs (May 2026 — affiliate) ===
+    {
+      url: `${base}/blog/postiz-review`,
+      lastModified: "2026-05-16",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/blog/genspark-for-word-review`,
+      lastModified: "2026-05-16",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/blog/rankspot-review`,
+      lastModified: "2026-05-16",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/blog/aweber-review`,
+      lastModified: "2026-05-17",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // === Static pages ===
     {
       url: `${base}/about`,
