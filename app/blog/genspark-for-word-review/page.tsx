@@ -83,18 +83,6 @@ export default function BlogPost() {
                 <div style={{ position: "absolute", top: "10%", left: "50%", transform: "translateX(-50%)", width: 700, height: 500, borderRadius: "50%", background: `radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%)`, filter: "blur(80px)", pointerEvents: "none" }} />
                 <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px", position: "relative" }}>
 
-                    {/* Hero Image */}
-                    <div style={{ marginBottom: 40, borderRadius: 24, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 30px 60px rgba(0,0,0,0.6)" }}>
-                        <Image
-                            src="/blog/genspark-for-word-review/hero-banner.png"
-                            alt="Genspark for Word Review Hero Banner"
-                            width={1200}
-                            height={630}
-                            style={{ width: "100%", height: "auto", display: "block" }}
-                            priority
-                        />
-                    </div>
-
                     {/* Breadcrumb */}
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.45)" }}>
                         <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>Home</Link>
@@ -113,9 +101,21 @@ export default function BlogPost() {
                     </div>
 
                     {/* Title */}
-                    <h1 style={{ fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 800, lineHeight: 1.15, marginBottom: 20, letterSpacing: "-0.02em" }}>
+                    <h1 style={{ fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 800, lineHeight: 1.15, marginBottom: 28, letterSpacing: "-0.02em" }}>
                         Genspark for Word Review 2026: Can This AI Add-in Beat Microsoft Copilot?
                     </h1>
+
+                    {/* Hero Banner Image */}
+                    <div style={{ margin: "0 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                        <Image
+                            src="/blog/genspark-for-word-review/hero-banner.png"
+                            alt="Genspark for Word Review Hero Banner"
+                            width={1200}
+                            height={630}
+                            style={{ width: "100%", height: "auto", display: "block" }}
+                            priority
+                        />
+                    </div>
 
                     {/* Opening — direct answer within first 50 words */}
                     <p style={{ fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginBottom: 36 }}>
