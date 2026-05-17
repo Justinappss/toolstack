@@ -240,7 +240,7 @@ export default function BlogPost() {
                         What Is Genspark for Word? (The 30-Second Answer)
                     </h2>
                     <p style={{ fontSize: 16, color: "rgba(255,255,255,0.75)", lineHeight: 1.8, marginBottom: 20 }}>
-                        Genspark for Word is a Microsoft Word add-in that installs from Microsoft AppSource and adds an AI panel directly into your Word ribbon. It launched on April 29, 2026 as part of Genspark's AI Workspace 4.0 update — a broader product suite that also covers Excel and PowerPoint.
+                        Genspark for Word is a Microsoft Word add-in that installs from Microsoft AppSource and adds an AI panel directly into your Word ribbon. It launched on April 29, 2026 as part of Genspark&apos;s AI Workspace 4.0 update — a broader product suite that also covers Excel and PowerPoint.
                     </p>
                     <p style={{ fontSize: 16, color: "rgba(255,255,255,0.75)", lineHeight: 1.8, marginBottom: 20 }}>
                         Unlike browser-based AI tools that require copying and pasting between windows, Genspark for Word operates entirely within Microsoft Word. You highlight text, open the Genspark panel, and issue instructions in plain English. The AI reads your existing document context — headers, paragraphs, formatting — and responds accordingly.
@@ -303,9 +303,9 @@ export default function BlogPost() {
 
                     {/* Expert quote */}
                     <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "24px 28px", marginBottom: 32, position: "relative" }}>
-                        <div style={{ fontSize: 48, color: accent, lineHeight: 0.5, marginBottom: 16, fontFamily: "Georgia, serif" }}>"</div>
+                        <div style={{ fontSize: 48, color: accent, lineHeight: 0.5, marginBottom: 16, fontFamily: "Georgia, serif" }}>&quot;</div>
                         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.8)", lineHeight: 1.7, fontStyle: "italic", margin: "0 0 16px" }}>
-                            Genspark delivers Office-level AI productivity at $24.99/month with no M365 subscription required — compared to Microsoft Copilot's minimum cost of $33–66 per user per month with base licensing. The multi-model access alone justifies the price difference for power users.
+                            Genspark delivers Office-level AI productivity at $24.99/month with no M365 subscription required — compared to Microsoft Copilot&apos;s minimum cost of $33–66 per user per month with base licensing. The multi-model access alone justifies the price difference for power users.
                         </p>
                         <div style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}>
                             — Analysis from <a href="https://scribehow.com/page/Genspark_AI_vs_Microsoft_Copilot_2026_I_Switched_and_Never_Looked_Back__bMJ_OicxQHKlsjKH7YinDA" target="_blank" rel="noopener noreferrer" style={{ color: accent }}>Genspark vs Copilot: I Switched and Never Looked Back</a>, Scribehow, 2026
@@ -346,7 +346,7 @@ export default function BlogPost() {
                     </div>
 
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>
-                        The clearest advantage Genspark holds is model diversity. Microsoft Copilot routes all requests through Microsoft's own AI infrastructure. Genspark lets you choose between GPT-5.1, Claude Opus 4.5, Gemini 3 Pro, and Grok4 depending on the task — meaning you can use the model that performs best for your specific document type.
+                        The clearest advantage Genspark holds is model diversity. Microsoft Copilot routes all requests through Microsoft&apos;s own AI infrastructure. Genspark lets you choose between GPT-5.1, Claude Opus 4.5, Gemini 3 Pro, and Grok4 depending on the task — meaning you can use the model that performs best for your specific document type.
                     </p>
                 </section>
 
@@ -646,7 +646,7 @@ export default function BlogPost() {
                                         <span key={si} style={{ fontSize: 14, color: si < rating ? "#f59e0b" : "rgba(255,255,255,0.15)" }}>★</span>
                                     ))}
                                 </div>
-                                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.8)", lineHeight: 1.7, margin: "0 0 16px", fontStyle: "italic" }}>"{quote}"</p>
+                                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.8)", lineHeight: 1.7, margin: "0 0 16px", fontStyle: "italic" }}>&quot;{quote}&quot;</p>
                                 <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
                                     <div>
                                         <div style={{ fontSize: 13, fontWeight: 600 }}>{name}</div>
@@ -660,7 +660,7 @@ export default function BlogPost() {
 
                     {/* Expert quote */}
                     <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "24px 28px" }}>
-                        <div style={{ fontSize: 48, color: accent, lineHeight: 0.5, marginBottom: 16, fontFamily: "Georgia, serif" }}>"</div>
+                        <div style={{ fontSize: 48, color: accent, lineHeight: 0.5, marginBottom: 16, fontFamily: "Georgia, serif" }}>&quot;</div>
                         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.8)", lineHeight: 1.7, fontStyle: "italic", margin: "0 0 16px" }}>
                             Genspark Claw and the Microsoft Office integrations represent a new chapter in how we think about AI in the workplace. The goal was never to build another chat interface — it was to bring AI agents to where people actually do their work, without requiring them to change their habits.
                         </p>
