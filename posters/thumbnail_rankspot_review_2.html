@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: RankSpot Review v2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&family=Roboto:wght@500;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #050505;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      display: flex;
+    }
+
+    /* Panels */
+    .panel {
+      width: 55%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Left Panel - Google Results */
+    .left-panel {
+      left: 0;
+      background: #1a1a1a;
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+      padding: 120px 80px 100px 50px;
+      z-index: 1;
+    }
+
+    /* Right Panel - Rocket */
+    .right-panel {
+      right: 0;
+      width: 60%;
+      background: radial-gradient(circle at 70% 60%, rgba(249, 115, 22, 0.4) 0%, #050505 70%);
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 100px;
+    }
+
+    /* Central Glowing Divider */
+    .divider {
+      position: absolute;
+      top: 0;
+      left: 45%;
+      transform: translateX(-50%) skewX(-14.5deg);
+      width: 15px;
+      height: 100%;
+      background: #f97316;
+      box-shadow: 0 0 40px 15px rgba(249, 115, 22, 0.8), 0 0 80px 30px rgba(249, 115, 22, 0.3);
+      z-index: 10;
+    }
+
+    /* Top Overlay */
+    .top-title {
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 85px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-style: italic;
+      text-shadow: 
+        4px 4px 0 #f97316,
+        8px 8px 0 #b45309,
+        12px 12px 20px rgba(0,0,0,0.9);
+      z-index: 20;
+      width: 100%;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    /* Left Side Fake UI */
+    .fake-browser {
+      background: #222;
+      border-radius: 8px;
+      padding: 15px;
+      border: 1px solid #333;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+      opacity: 0.6;
+      filter: grayscale(1);
+    }
+    
+    .fb-header {
+      width: 60%;
+      height: 12px;
+      background: #444;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    .fb-title {
+      width: 80%;
+      height: 24px;
+      background: #3b82f6;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .fb-text {
+      width: 95%;
+      height: 10px;
+      background: #666;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+    .fb-text.short { width: 70%; }
+
+    .giant-x {
+      position: absolute;
+      top: 55%;
+      left: 20%;
+      transform: translate(-50%, -50%) rotate(-10deg);
+      font-size: 400px;
+      color: #ef4444;
+      font-weight: 900;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 0 20px 50px rgba(239, 68, 68, 0.6);
+      z-index: 5;
+    }
+
+    /* Right Side Rocket */
+    .rocket-group {
+      position: relative;
+      z-index: 5;
+    }
+
+    .rocket-icon {
+      font-size: 280px;
+      transform: rotate(20deg);
+      filter: drop-shadow(0 20px 50px rgba(0,0,0,0.8));
+    }
+
+    .checkmark {
+      position: absolute;
+      bottom: 20px;
+      right: -40px;
+      font-size: 140px;
+      color: #22c55e;
+      font-weight: 900;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 0 15px 40px rgba(34, 197, 94, 0.6);
+      transform: rotate(-10deg);
+    }
+
+    /* Bottom Overlay */
+    .bottom-pill {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 45px;
+      font-weight: 900;
+      padding: 15px 50px;
+      border-radius: 50px;
+      box-shadow: 0 15px 30px rgba(249, 115, 22, 0.4), inset 0 2px 5px rgba(255,255,255,0.4);
+      z-index: 20;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .bottom-pill .arrow {
+      color: #fff;
+      margin: 0 15px;
+      opacity: 0.8;
+    }
+
+    .toolstack-logo {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      color: #666;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      z-index: 10;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    
+    <div class="top-title">RankSpot Review 2026</div>
+    
+    <!-- LEFT PANEL -->
+    <div class="panel left-panel">
+      
+      <div class="fake-browser">
+        <div class="fb-header"></div>
+        <div class="fb-title"></div>
+        <div class="fb-text"></div>
+        <div class="fb-text short"></div>
+      </div>
+      <div class="fake-browser">
+        <div class="fb-header" style="width: 40%"></div>
+        <div class="fb-title" style="width: 90%"></div>
+        <div class="fb-text"></div>
+        <div class="fb-text short"></div>
+      </div>
+      <div class="fake-browser">
+        <div class="fb-header" style="width: 50%"></div>
+        <div class="fb-title" style="width: 70%"></div>
+        <div class="fb-text"></div>
+        <div class="fb-text short"></div>
+      </div>
+
+      <div class="giant-x">X</div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel right-panel">
+      <div class="rocket-group">
+        <div class="rocket-icon">🚀</div>
+        <div class="checkmark">✓</div>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+
+    <div class="bottom-pill">Keyword Gap <span class="arrow">→</span> Live Post <span style="color:#000;">In 5 Min</span></div>
+    
+    <div class="toolstack-logo">toolstack.tech</div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: Beats Copilot PRO 2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio Container */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #050505;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Background Setup */
+    .bg-split {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(105deg, #050505 50%, #150525 50%);
+      z-index: 1;
+    }
+
+    .glowing-line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 6px;
+      height: 100%;
+      background: #7c3aed;
+      transform: skewX(-15deg);
+      box-shadow: 0 0 30px 10px rgba(124, 58, 237, 0.6);
+      z-index: 2;
+    }
+
+    /* Top Headline */
+    .headline {
+      position: absolute;
+      top: 40px;
+      font-size: 100px;
+      color: #fff;
+      text-transform: uppercase;
+      z-index: 10;
+      text-shadow: 0 10px 20px rgba(0,0,0,0.8);
+      letter-spacing: 2px;
+    }
+
+    /* Main Visual Area */
+    .visual-area {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 5;
+      margin-top: 60px;
+    }
+
+    /* Left Icon (Word) */
+    .word-icon {
+      position: absolute;
+      left: 200px;
+      font-size: 180px;
+      color: #3b82f6;
+      text-shadow: 0 15px 30px rgba(0,0,0,0.8);
+      filter: drop-shadow(0 0 40px rgba(59, 130, 246, 0.3));
+    }
+
+    /* Right Icon (Genspark) */
+    .genspark-icon {
+      position: absolute;
+      right: 200px;
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 60px rgba(139, 92, 246, 0.5);
+    }
+    
+    .genspark-icon svg {
+      width: 110px;
+      height: 110px;
+      fill: white;
+    }
+
+    /* Giant VS */
+    .vs-text {
+      font-size: 200px;
+      color: #f97316;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 
+        0 20px 40px rgba(0,0,0,0.9),
+        0 0 50px rgba(249, 115, 22, 0.5);
+      z-index: 10;
+    }
+
+    /* Bottom Text */
+    .bottom-bar {
+      position: absolute;
+      bottom: 50px;
+      background: #7c3aed;
+      padding: 10px 40px;
+      border-radius: 10px;
+      font-size: 50px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      z-index: 10;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    
+    <div class="bg-split"></div>
+    <div class="glowing-line"></div>
+
+    <div class="headline">BEATS COPILOT?</div>
+
+    <div class="visual-area">
+      <!-- Word Document SVG Icon -->
+      <div class="word-icon">
+        <svg width="180" height="180" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4C4 2.89543 4.89543 2 6 2H14L20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4Z" fill="#1a365d"/>
+          <path d="M14 2L20 8H14V2Z" fill="#3b82f6"/>
+          <path d="M7 16L8.5 10H10L11 14L12 10H13.5L15 16H13.5L12.5 12L11.5 16H10.5L9.5 12L8.5 16H7Z" fill="#ffffff"/>
+        </svg>
+      </div>
+
+      <div class="vs-text">VS</div>
+
+      <!-- Genspark AI Icon -->
+      <div class="genspark-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bottom-bar">GENSPARK TAKEOVER</div>
+
+  </div>
+
+</body>
+</html>

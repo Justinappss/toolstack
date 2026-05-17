@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWeber Editorial Blog Header</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Inter:wght@400;600;800&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #e5e5e5; /* Outside canvas */
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* 1200x630 Standard Blog Hero Size */
+    .banner-canvas {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background-color: #FDFCF7; /* Warm editorial cream */
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      display: flex;
+      border: 1px solid #eaeaea;
+    }
+
+    /* Decorative Dot Patterns */
+    .dot-grid {
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      background-image: radial-gradient(#d6d1c4 2px, transparent 2px);
+      background-size: 16px 16px;
+      z-index: 1;
+    }
+
+    .dot-grid.top-right {
+      top: 40px;
+      right: 40px;
+    }
+
+    .dot-grid.bottom-left {
+      bottom: -40px;
+      left: 450px;
+    }
+
+    /* Left Side: Typography */
+    .text-content {
+      position: relative;
+      flex: 0 0 50%;
+      padding: 100px 0 0 80px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 110px;
+      font-weight: 800;
+      color: #0B192C;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      background-color: #F05C42; /* Coral Orange */
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(240, 92, 66, 0.3);
+    }
+
+    .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #4b5563;
+      line-height: 1.5;
+      max-width: 460px;
+    }
+
+    /* Right Side: Abstract Graphics */
+    .graphics-container {
+      position: absolute;
+      right: -20px;
+      top: 0;
+      width: 55%;
+      height: 100%;
+      z-index: 5;
+    }
+
+    /* Background Shapes */
+    .shape-circle {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      width: 280px;
+      height: 280px;
+      background-color: #F05C42;
+      border-radius: 50%;
+    }
+
+    .shape-rect {
+      position: absolute;
+      bottom: 80px;
+      right: 150px;
+      width: 250px;
+      height: 250px;
+      background-color: #F4A236;
+      border-radius: 30px;
+      transform: rotate(15deg);
+    }
+
+    /* The Stacked Cards */
+    .cards-stack {
+      position: absolute;
+      top: 60px;
+      right: 80px;
+      transform: rotate(12deg);
+      display: flex;
+      flex-direction: column;
+      gap: -40px; /* Negative gap for overlap */
+    }
+
+    .ui-card {
+      position: relative;
+      width: 380px;
+      height: 200px;
+      border-radius: 16px;
+      border: 5px solid #fff;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+      padding: 25px;
+      display: flex;
+      gap: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card-coral { background-color: #F05C42; z-index: 3; margin-left: 40px; }
+    .card-yellow { background-color: #F4A236; z-index: 2; margin-top: -30px; margin-left: 0px; }
+    .card-peach { background-color: #FCE6D3; z-index: 1; margin-top: -30px; margin-left: -40px; }
+
+    /* Card Internal UI Elements */
+    .ui-img {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card-peach .ui-img { background-color: rgba(255, 255, 255, 0.6); }
+
+    .ui-img svg {
+      width: 40px;
+      height: 40px;
+      fill: #fff;
+      opacity: 0.8;
+    }
+
+    .card-peach .ui-img svg { fill: #d97706; opacity: 0.5; }
+
+    .ui-lines {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .line {
+      height: 14px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+    }
+
+    .card-peach .line { background-color: rgba(255, 255, 255, 0.8); }
+
+    .line-long { width: 100%; }
+    .line-med { width: 80%; }
+    .line-short { width: 50%; }
+
+    .ui-button {
+      margin-top: 5px;
+      width: 70px;
+      height: 18px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      align-self: flex-end;
+    }
+
+    .card-peach .ui-button { background-color: #fff; }
+
+  </style>
+</head>
+<body>
+
+  <div class="banner-canvas">
+    
+    <!-- Background Accents -->
+    <div class="dot-grid top-right"></div>
+    <div class="dot-grid bottom-left"></div>
+
+    <!-- Left Content -->
+    <div class="text-content">
+      <h1 class="title">AWeber<br>Review</h1>
+      <div class="badge">2026 HANDS-ON TEST</div>
+      <p class="subtitle">Email marketing automation — does it really deliver higher open rates in 2026?</p>
+    </div>
+
+    <!-- Right Content (Graphics) -->
+    <div class="graphics-container">
+      
+      <!-- Abstract Shapes -->
+      <div class="shape-circle"></div>
+      <div class="shape-rect"></div>
+
+      <!-- Overlapping Floating Cards -->
+      <div class="cards-stack">
+        
+        <!-- Top Card -->
+        <div class="ui-card card-coral">
+          <div class="ui-img">
+            <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+          </div>
+          <div class="ui-lines">
+            <div class="line line-long"></div>
+            <div class="line line-med"></div>
+            <div class="line line-short"></div>
+            <div class="ui-button"></div>
+          </div>
+        </div>
+
+        <!-- Middle Card -->
+        <div class="ui-card card-yellow">
+          <div class="ui-img">
+            <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+          </div>
+          <div class="ui-lines">
+            <div class="line line-long"></div>
+            <div class="line line-med"></div>
+            <div class="line line-short"></div>
+            <div class="ui-button"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Card -->
+        <div class="ui-card card-peach">
+          <div class="ui-img">
+            <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+          </div>
+          <div class="ui-lines">
+            <div class="line line-long"></div>
+            <div class="line line-med"></div>
+            <div class="line line-short"></div>
+            <div class="ui-button"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

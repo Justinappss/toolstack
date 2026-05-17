@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: Beats Copilot?</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&family=Inter:wght@700;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio Container */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #050505;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      background: radial-gradient(circle at 50% 50%, #111 0%, #050505 100%);
+    }
+
+    /* LEFT SIDE: Bold Text */
+    .text-container {
+      flex: 0 0 35%;
+      z-index: 10;
+    }
+
+    .text-hook {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 130px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .text-hook .beats {
+      color: #fff;
+    }
+
+    .text-hook .copilot {
+      color: #e2e8f0;
+      font-style: italic;
+      text-shadow: 0 0 40px rgba(255,255,255,0.2);
+    }
+
+    /* CENTER: Word Icon & VS Badge */
+    .center-visual {
+      flex: 0 0 30%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      z-index: 5;
+    }
+
+    /* Purple Glowing Aura */
+    .purple-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      background: #7c3aed;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    /* Word Document Icon Mockup */
+    .word-icon {
+      position: relative;
+      width: 200px;
+      height: 250px;
+      background: linear-gradient(135deg, #2b579a 0%, #1a365d 100%);
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 50px rgba(124, 58, 237, 0.4);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: perspective(1000px) rotateY(-15deg) rotateX(10deg);
+      border: 2px solid #3b82f6;
+    }
+
+    .word-icon::before {
+      content: "W";
+      font-family: 'Montserrat', sans-serif;
+      font-size: 120px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+
+    .word-icon::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40%;
+      height: 40px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+    }
+
+    /* Orange VS Badge */
+    .vs-badge {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 140px;
+      height: 140px;
+      background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 60px;
+      font-weight: 900;
+      font-style: italic;
+      color: #fff;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.7), inset 0 4px 10px rgba(255,255,255,0.3);
+      z-index: 10;
+      border: 4px solid #050505;
+    }
+
+    /* RIGHT SIDE: Genspark Logo Area */
+    .right-visual {
+      flex: 0 0 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    /* Genspark Placeholder Logo */
+    .genspark-logo {
+      width: 220px;
+      height: 220px;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%);
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      transform: perspective(1000px) rotateY(15deg) rotateX(5deg);
+      margin-bottom: 20px;
+    }
+
+    .genspark-logo::before {
+      content: "G";
+      font-family: 'Montserrat', sans-serif;
+      font-size: 150px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    .genspark-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 55px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    
+    <!-- LEFT: Bold Text -->
+    <div class="text-container">
+      <div class="text-hook">
+        <span class="beats">BEATS</span><br>
+        <span class="copilot">COPILOT?</span>
+      </div>
+    </div>
+
+    <!-- CENTER: Word Icon & VS Badge -->
+    <div class="center-visual">
+      <div class="purple-glow"></div>
+      <div class="word-icon"></div>
+      <div class="vs-badge">VS</div>
+    </div>
+
+    <!-- RIGHT: Genspark Logo -->
+    <div class="right-visual">
+      <div class="genspark-logo"></div>
+      <div class="genspark-text">GENSPARK</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

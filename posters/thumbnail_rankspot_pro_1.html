@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: RankSpot Pro 1</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      background-image: url('file:///Users/justinpirrie/.gemini/antigravity/brain/26382741-1e59-498f-acde-3b4f063df801/rankspot_bg_1_1778954656508.png');
+      background-size: cover;
+      background-position: center 20%;
+    }
+
+    /* Gradient overlay to make left side darker for text */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+      z-index: 1;
+    }
+
+    /* Floating Google #1 Badge */
+    .ranking-badge {
+      position: absolute;
+      top: 150px;
+      left: 80px;
+      background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+      padding: 20px 40px;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 60px rgba(255,255,255,0.2);
+      transform: rotate(-5deg);
+      z-index: 5;
+      border: 4px solid #fff;
+    }
+
+    .google-g {
+      font-family: 'Arial', sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      background: conic-gradient(from 180deg at 50% 50%, #4285f4 0deg, #34a853 90deg, #fbbc05 180deg, #ea4335 270deg, #4285f4 360deg);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .rank-text {
+      color: #000;
+      font-size: 70px;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    /* Massive Text Hook */
+    .text-hook {
+      position: absolute;
+      bottom: 50px;
+      left: 60px;
+      font-size: 140px;
+      color: #fff;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: -4px;
+      z-index: 10;
+      text-shadow: 
+        5px 5px 0 #ea580c,
+        10px 10px 0 #9a3412,
+        15px 15px 30px rgba(0,0,0,0.9),
+        0 0 50px rgba(234, 88, 12, 0.8);
+      transform: scaleY(1.1);
+    }
+
+    .text-hook span {
+      color: #f97316;
+      text-shadow: 
+        5px 5px 0 #fff,
+        10px 10px 0 #ccc,
+        15px 15px 30px rgba(0,0,0,0.9);
+    }
+
+    /* Subtle branding */
+    .branding {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      color: rgba(255,255,255,0.5);
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      z-index: 10;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    <div class="overlay"></div>
+    
+    <div class="branding">TOOLSTACK</div>
+
+    <div class="ranking-badge">
+      <div class="google-g">G</div>
+      <div class="rank-text">#1</div>
+    </div>
+
+    <div class="text-hook">
+      AUTO-<br><span>RANK.</span>
+    </div>
+
+  </div>
+
+</body>
+</html>

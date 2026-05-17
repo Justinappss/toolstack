@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: RankSpot Pro 2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      background-image: url('file:///Users/justinpirrie/.gemini/antigravity/brain/26382741-1e59-498f-acde-3b4f063df801/rankspot_bg_2_1778954671930.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Strong vignette to make the glowing graph pop harder and darken edges for text */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 60% 50%, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.95) 100%);
+      z-index: 1;
+    }
+
+    /* Massive Text Hook */
+    .text-hook {
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      transform: translateY(-50%);
+      font-size: 160px;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      z-index: 10;
+      text-shadow: 
+        0 10px 20px rgba(0,0,0,0.9),
+        0 20px 40px rgba(0,0,0,0.9);
+    }
+
+    .text-hook span {
+      color: #22c55e;
+      text-shadow: 
+        0 0 40px rgba(34, 197, 94, 0.6),
+        0 10px 20px rgba(0,0,0,0.9);
+    }
+
+    .text-hook .fast {
+      color: #f97316;
+      text-shadow: 
+        0 0 40px rgba(249, 115, 22, 0.6),
+        0 10px 20px rgba(0,0,0,0.9);
+    }
+
+    /* Subtle branding */
+    .branding {
+      position: absolute;
+      bottom: 30px;
+      left: 60px;
+      color: rgba(255,255,255,0.4);
+      font-family: 'Arial', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      z-index: 10;
+      text-transform: uppercase;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    <div class="overlay"></div>
+    
+    <div class="branding">TOOLSTACK.TECH</div>
+
+    <div class="text-hook">
+      0 TO <span>#1</span><br><div class="fast">FAST.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

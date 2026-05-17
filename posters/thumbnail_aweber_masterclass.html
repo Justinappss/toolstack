@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: AWeber Masterclass</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #000;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* 1280x720 Canvas */
+    .canvas {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background: #020202;
+      overflow: hidden;
+      box-shadow: 0 0 100px rgba(0,0,0,1);
+      z-index: 1;
+    }
+
+    /* Cinematic Lighting & Textures */
+    .bg-mesh {
+      position: absolute;
+      inset: -50%;
+      background: 
+        radial-gradient(circle at 70% 30%, rgba(249, 115, 22, 0.4) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(14, 165, 233, 0.4) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.2) 0%, transparent 50%);
+      filter: blur(60px);
+      z-index: 2;
+    }
+
+    .bg-texture {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 30px 30px;
+      opacity: 0.5;
+      z-index: 3;
+    }
+
+    .vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.9) 120%);
+      z-index: 4;
+    }
+
+    /* Massive Bruno Integration */
+    .bruno-layer {
+      position: absolute;
+      bottom: -40px;
+      right: -80px;
+      width: 850px;
+      height: 850px;
+      background-image: url('file:///Users/justinpirrie/.gemini/antigravity/brain/26382741-1e59-498f-acde-3b4f063df801/bruno_shocked_1779022915857.png');
+      background-size: cover;
+      background-position: center top;
+      z-index: 15;
+      mix-blend-mode: lighten;
+      filter: 
+        contrast(1.2) 
+        brightness(1.1) 
+        drop-shadow(-30px 0 50px rgba(249, 115, 22, 0.6)) /* Orange rim light */
+        drop-shadow(20px 0 50px rgba(14, 165, 233, 0.4)); /* Blue rim light */
+    }
+
+    /* Dynamic Glassmorphic Shard */
+    .glass-shard {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 65%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.01) 100%);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+      border-right: 2px solid rgba(255,255,255,0.2);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      padding: 60px;
+      box-shadow: 20px 0 60px rgba(0,0,0,0.8);
+    }
+
+    /* 3D Typography - AWeber */
+    .title-group {
+      margin-top: 20px;
+      transform: perspective(1000px) rotateY(10deg) rotateZ(-3deg);
+      transform-style: preserve-3d;
+    }
+
+    .brand-text {
+      font-family: 'Anton', sans-serif;
+      font-size: 160px;
+      line-height: 0.85;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      /* Massive 3D Extrusion Effect */
+      text-shadow: 
+        2px 2px 0px #ccc,
+        4px 4px 0px #aaa,
+        6px 6px 0px #888,
+        8px 8px 0px #666,
+        10px 10px 0px #444,
+        15px 15px 30px rgba(0,0,0,0.9),
+        0 0 50px rgba(14, 165, 233, 0.5);
+    }
+
+    /* Glowing Neon Badge */
+    .neon-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 15px;
+      padding: 10px 30px;
+      background: #000;
+      border: 4px solid #f97316;
+      border-radius: 12px;
+      transform: translateZ(50px);
+      box-shadow: 
+        0 0 20px rgba(249, 115, 22, 0.6),
+        inset 0 0 15px rgba(249, 115, 22, 0.4),
+        20px 20px 40px rgba(0,0,0,0.8);
+    }
+
+    .neon-badge span {
+      font-family: 'Outfit', sans-serif;
+      font-size: 55px;
+      font-weight: 900;
+      color: #f97316;
+      text-shadow: 0 0 10px rgba(249, 115, 22, 0.8);
+      letter-spacing: 2px;
+    }
+
+    /* The "VS" Split HUD interface */
+    .hud-container {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transform: perspective(1000px) rotateY(10deg);
+    }
+
+    .hud-row {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+      padding: 15px 25px;
+      border-left: 6px solid;
+      border-radius: 8px;
+    }
+
+    .hud-row.green {
+      border-color: #22c55e;
+      box-shadow: -10px 0 30px rgba(34, 197, 94, 0.3);
+    }
+
+    .hud-row.orange {
+      border-color: #f43f5e;
+      box-shadow: -10px 0 30px rgba(244, 63, 94, 0.3);
+    }
+
+    .hud-icon {
+      font-family: 'Anton', sans-serif;
+      font-size: 80px;
+      line-height: 1;
+    }
+
+    .hud-row.green .hud-icon {
+      color: #22c55e;
+      text-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
+    }
+
+    .hud-row.orange .hud-icon {
+      color: #f43f5e;
+      text-shadow: 0 0 20px rgba(244, 63, 94, 0.8);
+    }
+
+    .hud-text {
+      font-size: 50px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Glossy 3D Star Pill */
+    .star-3d {
+      position: absolute;
+      top: 40px;
+      right: 50px;
+      z-index: 30;
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+      padding: 15px 40px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border: 3px solid #fef3c7;
+      box-shadow: 
+        0 20px 40px rgba(0,0,0,0.9),
+        0 0 50px rgba(245, 158, 11, 0.5),
+        inset 0 10px 20px rgba(255,255,255,0.6),
+        inset 0 -10px 20px rgba(0,0,0,0.3);
+      transform: perspective(800px) rotateY(-15deg) rotateX(10deg);
+    }
+
+    .star-3d-icon {
+      font-size: 55px;
+      color: #fff;
+      line-height: 1;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+    }
+
+    .star-3d-text {
+      font-family: 'Anton', sans-serif;
+      font-size: 55px;
+      color: #fff;
+      letter-spacing: 1px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Light Flares / Optical Effects */
+    .flare-1 {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      width: 200px;
+      height: 4px;
+      background: #fff;
+      box-shadow: 0 0 20px 10px rgba(14, 165, 233, 0.8);
+      transform: rotate(-3deg);
+      z-index: 20;
+      mix-blend-mode: overlay;
+    }
+    
+    .flare-2 {
+      position: absolute;
+      top: 50%;
+      right: 40%;
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 50px 20px rgba(249, 115, 22, 1);
+      z-index: 20;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="canvas">
+    
+    <!-- Atmospheric Lighting -->
+    <div class="bg-mesh"></div>
+    <div class="bg-texture"></div>
+    <div class="vignette"></div>
+
+    <!-- Light Flares -->
+    <div class="flare-1"></div>
+    <div class="flare-2"></div>
+
+    <!-- Massive Bruno Image (with dual rim lighting via CSS drop-shadows) -->
+    <div class="bruno-layer"></div>
+
+    <!-- Floating 3D Star Rating -->
+    <div class="star-3d">
+      <div class="star-3d-icon">★</div>
+      <div class="star-3d-text">8.2/10</div>
+    </div>
+
+    <!-- Glassmorphic Angular Shard -->
+    <div class="glass-shard">
+      
+      <!-- Typography Group -->
+      <div class="title-group">
+        <div class="brand-text">AWEBER</div>
+        <div class="neon-badge">
+          <span>REVIEW 2026</span>
+        </div>
+      </div>
+
+      <!-- HUD Style Split Features -->
+      <div class="hud-container">
+        
+        <div class="hud-row green">
+          <div class="hud-icon">✓</div>
+          <div class="hud-text">FREE PLAN</div>
+        </div>
+
+        <div class="hud-row orange">
+          <div class="hud-icon">?</div>
+          <div class="hud-text">WORTH IT?</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

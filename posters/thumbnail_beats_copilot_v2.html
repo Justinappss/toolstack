@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: Beats Copilot? v2</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* 16:9 Aspect Ratio Container */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #020202;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 60px;
+      background: radial-gradient(circle at 50% 60%, #1a1a1a 0%, #050505 80%);
+    }
+
+    /* LEFT SIDE: Bold Text */
+    .text-container {
+      flex: 0 0 35%;
+      z-index: 20;
+    }
+
+    .text-hook {
+      font-family: 'Oswald', sans-serif;
+      font-size: 140px;
+      font-weight: 700;
+      line-height: 0.9;
+      text-transform: uppercase;
+      text-shadow: 0 15px 30px rgba(0,0,0,0.9);
+      transform: rotate(-3deg);
+    }
+
+    .text-hook .beats {
+      color: #fff;
+      font-size: 120px;
+    }
+
+    .text-hook .copilot {
+      color: #f97316;
+      text-shadow: 
+        3px 3px 0 #fff,
+        0 15px 30px rgba(0,0,0,0.9),
+        0 0 40px rgba(249, 115, 22, 0.4);
+    }
+
+    /* CENTER: Word Icon & Purple Glow */
+    .center-visual {
+      flex: 0 0 30%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      z-index: 5;
+    }
+
+    /* Aggressive Purple Glow */
+    .purple-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, #7c3aed 0%, rgba(124, 58, 237, 0.4) 40%, rgba(0,0,0,0) 70%);
+      filter: blur(40px);
+      z-index: 1;
+      opacity: 0.8;
+      mix-blend-mode: screen;
+    }
+
+    /* Word Document Icon Mockup */
+    .word-icon {
+      position: relative;
+      width: 180px;
+      height: 240px;
+      background: linear-gradient(135deg, #185abd 0%, #0a2756 100%);
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 0 0 2px rgba(255,255,255,0.2);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: perspective(800px) rotateY(20deg) rotateZ(-5deg);
+    }
+
+    .word-icon::before {
+      content: "W";
+      font-family: 'Poppins', sans-serif;
+      font-size: 130px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 0 10px 20px rgba(0,0,0,0.6);
+    }
+
+    /* Orange VS Badge */
+    .vs-badge {
+      position: absolute;
+      bottom: 25%;
+      left: 50%;
+      transform: translateX(-50%) rotate(10deg);
+      width: 160px;
+      height: 120px;
+      background: #f97316;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 80px;
+      color: #fff;
+      box-shadow: 
+        0 15px 35px rgba(0,0,0,0.9), 
+        0 0 30px rgba(249, 115, 22, 0.5),
+        inset -5px -5px 15px rgba(0,0,0,0.3);
+      z-index: 10;
+      border: 4px solid #fff;
+    }
+
+    /* RIGHT SIDE: Genspark Logo Area */
+    .right-visual {
+      flex: 0 0 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transform: perspective(800px) rotateY(-15deg) rotateZ(5deg);
+    }
+
+    /* Genspark Placeholder Logo */
+    .genspark-logo {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      background: linear-gradient(135deg, #111 0%, #222 100%);
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 
+        0 20px 40px rgba(0,0,0,0.8),
+        0 0 40px rgba(139, 92, 246, 0.4),
+        inset 0 0 0 4px #8b5cf6;
+      margin-bottom: 15px;
+    }
+
+    .genspark-logo::before {
+      content: "G";
+      font-family: 'Poppins', sans-serif;
+      font-size: 160px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+    }
+
+    .genspark-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    
+    <!-- LEFT: Bold Text -->
+    <div class="text-container">
+      <div class="text-hook">
+        <span class="beats">beats</span><br>
+        <span class="copilot">COPILOT?</span>
+      </div>
+    </div>
+
+    <!-- CENTER: Word Icon & VS Badge -->
+    <div class="center-visual">
+      <div class="purple-glow"></div>
+      <div class="word-icon"></div>
+      <div class="vs-badge">VS</div>
+    </div>
+
+    <!-- RIGHT: Genspark Logo -->
+    <div class="right-visual">
+      <div class="genspark-logo"></div>
+      <div class="genspark-text">Genspark</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
