@@ -16,13 +16,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-05-16",
         modifiedTime: "2026-05-16",
-        images: [{ url: "https://toolstack.tech/blog/postiz-review/infographic.png", width: 2752, height: 1536 }],
+        images: [{ url: "https://toolstack.tech/blog/postiz-review/hero-banner.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Postiz Review (2026): The Open-Source Agentic Social Media Scheduler",
         description: "Open-source, self-hostable, agentic AI scheduling. Full review vs Buffer and Hootsuite.",
-        images: ["https://toolstack.tech/blog/postiz-review/infographic.png"],
+        images: ["https://toolstack.tech/blog/postiz-review/hero-banner.png"],
     },
 };
 
@@ -103,8 +103,22 @@ export default function BlogPost() {
                 </div>
             </div>
 
+            {/* Hero Banner Image */}
+            <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 24px" }}>
+                <div style={{ margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                    <Image
+                        src="/blog/postiz-review/hero-banner.png"
+                        alt="Postiz Review 2026 — open-source social media scheduler with agentic AI scheduling. Hero banner showing Postiz dashboard and supported social platforms."
+                        width={1200}
+                        height={630}
+                        style={{ width: "100%", height: "auto", display: "block" }}
+                        priority
+                    />
+                </div>
+            </div>
+
             {/* Body */}
-            <div style={{ maxWidth: 720, margin: "0 auto", padding: "48px 24px 120px" }}>
+            <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 24px 120px" }}>
 
                 {/* TL;DR */}
                 <div style={{ padding: "24px 28px", borderRadius: 20, border: `1px solid ${accentBorder}`, background: accentBg, marginBottom: 40 }}>

@@ -833,6 +833,17 @@ export default function BlogPost() {
                         </ul>
                     </div>
                 </div>
+
+                {/* Related reviews — internal links */}
+                <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "24px 28px", marginBottom: 48 }}>
+                    <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.35)", marginBottom: 14 }}>RELATED REVIEWS & TOOLS</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+                        <Link href="/blog/genspark-for-word-review" style={{ fontSize: 14, fontWeight: 600, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}` }}>Genspark for Word Review →</Link>
+                        <Link href="/blog/postiz-review" style={{ fontSize: 14, fontWeight: 600, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}` }}>Postiz Review →</Link>
+                        <Link href="/tools/email-subject-line-tester" style={{ fontSize: 14, fontWeight: 600, color: "#22c55e", textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: "rgba(34,197,94,0.07)", border: `1px solid rgba(34,197,94,0.2)` }}>Free Email Subject Line Tester →</Link>
+                    </div>
+                </div>
+
             </div>
         </main>
     );

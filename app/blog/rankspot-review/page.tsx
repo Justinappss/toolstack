@@ -62,7 +62,7 @@ const FAQS = [
 const accent = "#f97316";
 const accentBg = "rgba(249,115,22,0.06)";
 const accentBorder = "rgba(249,115,22,0.18)";
-const AFFILIATE_LINK = "https://www.rankspot.ai/";
+const AFFILIATE_LINK = "RANKSPOT_AFFILIATE_LINK_HERE";
 
 export default function BlogPost() {
     return (
