@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RankSpot Blog Header - Dark Wealth</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Outfit:wght@400;700;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .banner-canvas {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background-color: #050505;
+      overflow: hidden;
+      display: flex;
+      color: #fff;
+    }
+
+    /* Cinematic Lighting & Background */
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 1;
+      opacity: 0.8;
+      transform: perspective(1000px) rotateX(60deg) scale(2.5) translateY(-20%);
+    }
+
+    .glow-sphere-1 {
+      position: absolute;
+      top: -20%;
+      right: 0%;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(249,115,22,0.15) 0%, transparent 60%);
+      filter: blur(80px);
+      z-index: 2;
+    }
+
+    .glow-sphere-2 {
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 1000px;
+      height: 1000px;
+      background: radial-gradient(circle, rgba(234,88,12,0.12) 0%, transparent 70%);
+      filter: blur(100px);
+      z-index: 2;
+    }
+
+    /* Content Layout */
+    .content-wrapper {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 80px;
+    }
+
+    .left-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 600px;
+    }
+
+    .right-column {
+      flex: 1;
+      position: relative;
+      perspective: 1500px;
+    }
+
+    /* Typography & Badges */
+    .pill-container {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .pill {
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.3);
+      color: #fb923c;
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pill.accent {
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.3);
+      color: #4ade80;
+    }
+
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+      background: linear-gradient(to right, #ffffff, #fdba74);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: #a1a1aa;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    /* Rating Component */
+    .rating-box {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 20px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      width: fit-content;
+    }
+
+    .rating-score {
+      font-family: 'Outfit', sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      color: #f97316;
+      line-height: 1;
+      text-shadow: 0 0 30px rgba(249,115,22,0.5);
+    }
+
+    .rating-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .rating-label {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .rating-sub {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 4px;
+    }
+
+    .star {
+      width: 16px;
+      height: 16px;
+      background: #f97316;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    /* Abstract 3D Hero Elements */
+    .hero-art {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-30%, -50%) rotateY(-25deg) rotateX(15deg);
+      width: 500px;
+      height: 500px;
+      transform-style: preserve-3d;
+    }
+
+    /* Glass Card - Dashboard UI */
+    .glass-card {
+      position: absolute;
+      width: 440px;
+      height: 500px;
+      background: rgba(15,23,42,0.7);
+      border: 1px solid rgba(249,115,22,0.4);
+      border-radius: 16px;
+      backdrop-filter: blur(20px);
+      box-shadow: 
+        -40px 40px 80px rgba(0,0,0,0.9),
+        inset 0 0 0 1px rgba(255,255,255,0.05),
+        inset 0 30px 60px rgba(249,115,22,0.15);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      transform: translateZ(50px);
+    }
+    
+    /* Neon Glow Top Edge */
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #f97316, transparent);
+      box-shadow: 0 0 20px #f97316;
+    }
+
+    /* SEO Dashboard Elements */
+    .dash-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 15px;
+    }
+    .dash-title {
+      width: 120px;
+      height: 16px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+    }
+    .dash-btn {
+      width: 80px;
+      height: 24px;
+      background: #f97316;
+      border-radius: 6px;
+      box-shadow: 0 0 15px rgba(249,115,22,0.5);
+    }
+    
+    .dash-chart {
+      height: 140px;
+      background: linear-gradient(to top, rgba(249,115,22,0.2), transparent);
+      border-bottom: 3px solid #f97316;
+      border-radius: 8px 8px 0 0;
+      position: relative;
+    }
+    /* Upward trend line */
+    .dash-chart::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent 40%, #fbd38d 45%, #f97316 50%, transparent 55%);
+      background-size: 200% 200%;
+      animation: sweep 3s infinite linear;
+      opacity: 0.8;
+      clip-path: polygon(0 100%, 20% 80%, 40% 90%, 60% 50%, 80% 60%, 100% 10%);
+    }
+    @keyframes sweep {
+      0% { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    .dash-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .dash-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(255,255,255,0.05);
+      padding: 12px;
+      border-radius: 8px;
+    }
+    .di-icon {
+      width: 30px; height: 30px; border-radius: 6px;
+      background: rgba(34,197,94,0.2); border: 1px solid rgba(34,197,94,0.5);
+    }
+    .di-text {
+      height: 10px; width: 60%; background: rgba(255,255,255,0.15); border-radius: 4px;
+    }
+
+    /* Floating Abstract Elements */
+    .float-badge-1 {
+      position: absolute;
+      top: 10%;
+      right: -60px;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid #f97316;
+      padding: 15px 25px;
+      border-radius: 16px;
+      transform: translateZ(150px) rotate(5deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      z-index: 100;
+    }
+    .fb-icon-1 {
+      width: 40px; height: 40px; border-radius: 10px; background: #f97316;
+      display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: 800;
+    }
+    .fb-text-1 div:first-child { color: white; font-size: 16px; font-weight: 700; }
+    .fb-text-1 div:last-child { color: #fdba74; font-size: 12px; margin-top: 4px; }
+
+    .float-badge-2 {
+      position: absolute;
+      bottom: 25%;
+      left: -80px;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid #22c55e;
+      padding: 15px 25px;
+      border-radius: 16px;
+      transform: translateZ(120px) rotate(-5deg);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .fb-icon-2 {
+      width: 40px; height: 40px; border-radius: 10px; background: #22c55e;
+      display: flex; justify-content: center; align-items: center; color: white; font-size: 20px; font-weight: 800;
+    }
+    .fb-text-2 div:first-child { color: white; font-size: 16px; font-weight: 700; }
+    .fb-text-2 div:last-child { color: #86efac; font-size: 12px; margin-top: 4px; }
+
+    /* Particles */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: #f97316;
+      filter: blur(1px);
+    }
+    .p1 { width: 10px; height: 10px; top: 20%; left: 0%; transform: translateZ(200px); box-shadow: 0 0 20px #f97316; }
+    .p2 { width: 14px; height: 14px; bottom: 10%; right: -20%; transform: translateZ(80px); box-shadow: 0 0 30px #f97316; }
+
+    /* ToolStack Brand Tag */
+    .brand-tag {
+      position: absolute;
+      top: 40px;
+      left: 80px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 20;
+    }
+    .brand-logo {
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-weight: 900;
+      font-size: 14px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .brand-name {
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner-canvas">
+    <div class="bg-grid"></div>
+    <div class="glow-sphere-1"></div>
+    <div class="glow-sphere-2"></div>
+
+    <div class="brand-tag">
+      <div class="brand-logo">T</div>
+      <div class="brand-name">TOOLSTACK</div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="left-column">
+        <div class="pill-container">
+          <div class="pill">AI SEO AUTOPILOT</div>
+          <div class="pill accent">FREE TRIAL</div>
+        </div>
+
+        <h1 class="title">RankSpot Review<br>2026 Edition.</h1>
+        <p class="subtitle">It researches keywords, generates images, and publishes daily SEO articles on autopilot. But does it actually rank?</p>
+
+        <div class="rating-box">
+          <div class="rating-score">8.2</div>
+          <div class="rating-text">
+            <div class="rating-label">TOP PERFORMER</div>
+            <div class="stars">
+              <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star" style="clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); opacity:0.3"></div>
+            </div>
+            <div class="rating-sub">Automated Growth Engine</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="hero-art">
+          
+          <!-- Main Dashboard -->
+          <div class="glass-card">
+            <div class="dash-header">
+              <div class="dash-title"></div>
+              <div class="dash-btn"></div>
+            </div>
+            
+            <div class="dash-chart"></div>
+
+            <div class="dash-list">
+              <div class="dash-item">
+                <div class="di-icon"></div>
+                <div class="di-text" style="width: 70%"></div>
+              </div>
+              <div class="dash-item">
+                <div class="di-icon"></div>
+                <div class="di-text" style="width: 50%"></div>
+              </div>
+              <div class="dash-item" style="opacity: 0.5;">
+                <div class="di-icon" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);"></div>
+                <div class="di-text" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="float-badge-1">
+            <div class="fb-icon-1">↗</div>
+            <div class="fb-text-1">
+              <div>10,000+ Clicks</div>
+              <div>Real Monthly Traffic</div>
+            </div>
+          </div>
+
+          <div class="float-badge-2">
+            <div class="fb-icon-2">✓</div>
+            <div class="fb-text-2">
+              <div>Published</div>
+              <div>Auto-Synced to CMS</div>
+            </div>
+          </div>
+
+          <div class="particle p1"></div>
+          <div class="particle p2"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

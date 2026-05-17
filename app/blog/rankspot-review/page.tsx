@@ -18,13 +18,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-05-16",
         modifiedTime: "2026-05-16",
-        images: [{ url: "https://toolstack.tech/blog/rankspot-review/infographic.png", width: 2752, height: 1536 }],
+        images: [{ url: "https://toolstack.tech/blog/rankspot-review/hero-banner.png", width: 1200, height: 630 }],
     },
     twitter: {
         card: "summary_large_image",
         title: "RankSpot Review 2026: Does This AI SEO Autopilot Actually Rank Your Blog?",
         description: "RankSpot publishes daily SEO articles automatically — full 2-week review, real results, pricing, verdict.",
-        images: ["https://toolstack.tech/blog/rankspot-review/infographic.png"],
+        images: ["https://toolstack.tech/blog/rankspot-review/hero-banner.png"],
     },
 };
 
@@ -99,9 +99,21 @@ export default function BlogPost() {
                     </div>
 
                     {/* Title */}
-                    <h1 style={{ fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 800, lineHeight: 1.15, marginBottom: 20, letterSpacing: "-0.02em" }}>
+                    <h1 style={{ fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 800, lineHeight: 1.15, marginBottom: 28, letterSpacing: "-0.02em" }}>
                         RankSpot Review 2026: Does This AI SEO Autopilot Actually Rank Your Blog?
                     </h1>
+
+                    {/* Hero Banner Image */}
+                    <div style={{ margin: "0 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                        <Image
+                            src="/blog/rankspot-review/hero-banner.png"
+                            alt="RankSpot Review 2026 Hero Banner"
+                            width={1200}
+                            height={630}
+                            style={{ width: "100%", height: "auto", display: "block" }}
+                            priority
+                        />
+                    </div>
 
                     {/* Direct answer — 50 words */}
                     <p style={{ fontSize: 18, color: "rgba(255,255,255,0.75)", lineHeight: 1.7, marginBottom: 36 }}>
