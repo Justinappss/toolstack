@@ -27,6 +27,16 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.toolstack.tech" }],
+        destination: "https://toolstack.tech/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
