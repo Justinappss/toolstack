@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
@@ -75,38 +76,45 @@ export default function BlogPost() {
             />
 
             {/* Hero */}
-            <div style={{ position: "relative", overflow: "hidden", paddingTop: 140, paddingBottom: 0, borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
-                {/* Hero banner image with overlay */}
-                <div style={{ position: "relative", width: "100%", aspectRatio: "1200/630", maxHeight: 500 }}>
-                    <img
-                        src="/blog/utm-builder-guide/hero-banner.png"
-                        alt="UTM Builder for GA4 — campaign URL builder tool interface with tracking link generation"
-                        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
-                    />
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(5,5,5,0.85) 0%, rgba(5,5,5,0.35) 60%, transparent 100%)" }} />
-                    <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, display: "flex", flexDirection: "column", justifyContent: "center", padding: "40px 48px", maxWidth: 720 }}>
-                        {/* Breadcrumb */}
-                        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 24, fontSize: 13 }}>
-                            <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home</Link>
-                            <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                            <Link href="/blog" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Blog</Link>
-                            <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                            <span style={{ color: "rgba(255,255,255,0.5)" }}>Free UTM Builder Guide</span>
+            <div style={{ position: "relative", overflow: "hidden", paddingTop: 140, paddingBottom: 64, borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                <div style={{ position: "absolute", top: "20%", left: "50%", transform: "translateX(-50%)", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(56,189,248,0.07) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
+                <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 24px", position: "relative" }}>
+                    {/* Breadcrumb */}
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 36, fontSize: 13 }}>
+                        <Link href="/" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Home</Link>
+                        <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
+                        <Link href="/blog" style={{ color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>Blog</Link>
+                        <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
+                        <span style={{ color: "rgba(255,255,255,0.5)" }}>Free UTM Builder Guide</span>
+                    </div>
+
+                    <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
+                        <span style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 999, border: `1px solid ${accentBorder}`, background: accentBg }}>Marketing</span>
+                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>May 19, 2026 · 6 min read</span>
+                    </div>
+
+                    <h1 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.025em", marginBottom: 28, color: "white" }}>
+                        Free UTM Builder for GA4: Build Campaign URLs in 10 Seconds
+                    </h1>
+
+                    <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 40 }}>
+                        <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg, #6366f1, #7c3aed)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "white", flexShrink: 0 }}>JP</div>
+                        <div>
+                            <p style={{ fontSize: 14, fontWeight: 600, color: "white", margin: 0 }}>Justin Pirrie</p>
+                            <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", margin: 0 }}>Founder, ToolStack · May 19, 2026</p>
                         </div>
-                        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-                            <span style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 999, border: `1px solid ${accentBorder}`, background: accentBg }}>Marketing</span>
-                            <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>May 19, 2026 · 6 min read</span>
-                        </div>
-                        <h1 style={{ fontSize: "clamp(24px, 3.5vw, 42px)", fontWeight: 900, lineHeight: 1.1, letterSpacing: "-0.025em", marginBottom: 24, color: "white", maxWidth: 600 }}>
-                            Free UTM Builder for GA4: Build Campaign URLs in 10 Seconds
-                        </h1>
-                        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                            <div style={{ width: 34, height: 34, borderRadius: "50%", background: "linear-gradient(135deg, #6366f1, #7c3aed)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 700, color: "white", flexShrink: 0 }}>JP</div>
-                            <div>
-                                <p style={{ fontSize: 13, fontWeight: 600, color: "white", margin: 0 }}>Justin Pirrie</p>
-                                <p style={{ fontSize: 11, color: "rgba(255,255,255,0.55)", margin: 0 }}>Founder, ToolStack · May 19, 2026</p>
-                            </div>
-                        </div>
+                    </div>
+
+                    {/* Hero banner image — contained, like other blog posts */}
+                    <div style={{ margin: "0 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                        <Image
+                            src="/blog/utm-builder-guide/hero-banner.png"
+                            alt="ToolStack Free UTM Builder — campaign URL builder tool with GA4 tracking link generation"
+                            width={1200}
+                            height={630}
+                            style={{ width: "100%", height: "auto", display: "block" }}
+                            priority
+                        />
                     </div>
                 </div>
             </div>
