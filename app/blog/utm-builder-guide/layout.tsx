@@ -35,6 +35,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     { "@type": "ListItem", "position": 3, "name": "Free UTM Builder for GA4", "item": "https://toolstack.tech/blog/utm-builder-guide" },
                 ],
             }) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "VideoObject",
+                "name": "The Attribution Black Hole: Why GA4 Shows Your Traffic as Direct",
+                "description": "Why untagged campaign links disappear into GA4's Direct bucket and how to fix it with UTM parameters in under 10 seconds.",
+                "thumbnailUrl": "https://img.youtube.com/vi/XeoMgiSZymM/maxresdefault.jpg",
+                "uploadDate": "2026-05-19",
+                "duration": "PT4M27S",
+                "embedUrl": "https://www.youtube.com/embed/XeoMgiSZymM",
+                "contentUrl": "https://youtu.be/XeoMgiSZymM",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ToolStack",
+                    "url": "https://toolstack.tech",
+                },
+            }) }} />
             {children}
         </>
     );
