@@ -62,6 +62,8 @@ import { GradingComparisonThumbnail } from "./GradingComparisonThumbnail";
 import { EbayBestOfferThumbnail } from "./EbayBestOfferThumbnail";
 import { WorldCupAccumulatorThumbnail } from "./WorldCupAccumulatorThumbnail";
 import { WorldCupTeamFinderThumbnail } from "./WorldCupTeamFinderThumbnail";
+import { PasswordBreachCheckerThumbnail } from "./PasswordBreachCheckerThumbnail";
+import { CreditCardRewardsThumbnail } from "./CreditCardRewardsThumbnail";
 // Inlined to avoid chunk-splitting import issues
 function YoutubeTranscriptThumbnail() {
     const [vidIdx, setVidIdx] = useState(0);
@@ -168,6 +170,8 @@ const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
     "WC 2026 Accumulator Calculator": WorldCupAccumulatorThumbnail,
     "World Cup 2026 Team Finder": WorldCupTeamFinderThumbnail,
     "YouTube Transcript Extractor": YoutubeTranscriptThumbnail,
+    "Password Breach Checker": PasswordBreachCheckerThumbnail,
+    "Credit Card Rewards Optimiser": CreditCardRewardsThumbnail,
 };
 
 interface Tool {

@@ -176,6 +176,35 @@ export default function UTMBuilder() {
           </p>
         </div>
 
+        {/* ── Quick-start presets ──────────────────────────────────────── */}
+        <div style={{ marginBottom: 28 }}>
+          <p style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 12 }}>Quick-start presets</p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {[
+              { label: "📧 Email", source: "newsletter", medium: "email", campaign: "may-newsletter-2026" },
+              { label: "🔵 Google Ads", source: "google", medium: "cpc", campaign: "brand-search-may26" },
+              { label: "📘 Facebook", source: "facebook", medium: "paid-social", campaign: "may-promo-2026" },
+              { label: "💼 LinkedIn", source: "linkedin", medium: "paid-social", campaign: "b2b-lead-gen-may26" },
+              { label: "🎵 TikTok", source: "tiktok", medium: "paid-social", campaign: "product-launch-may26" },
+              { label: "📌 Organic Social", source: "instagram", medium: "social", campaign: "organic-may26" },
+            ].map(p => (
+              <button
+                key={p.label}
+                onClick={() => { setSource(p.source); setMedium(p.medium); setCampaign(p.campaign); }}
+                style={{
+                  padding: "7px 14px", borderRadius: 8, fontSize: 12, fontWeight: 700,
+                  background: "rgba(59,130,246,0.08)", border: "1px solid rgba(59,130,246,0.2)",
+                  color: "#93c5fd", cursor: "pointer", transition: "all 0.15s",
+                }}
+                onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(59,130,246,0.18)"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(59,130,246,0.08)"; }}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* ── Output Box (Sticky-ish Top) ───────────────────────────────── */}
         <div style={{ 
           background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 24, 

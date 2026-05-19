@@ -70,6 +70,16 @@ export const ALL_TOOLS = [
     icon: "⚿",
   },
   {
+    title: "Password Breach Checker",
+    desc: "Check if your password has been exposed in a data breach. Uses k-anonymity — your password never leaves your device.",
+    href: "/tools/password-breach-checker",
+    category: "Security",
+    accent: "#10b981",
+    accentRgb: "16,185,129",
+    badge: "New",
+    icon: "🛡️",
+  },
+  {
     title: "QR Code Generator",
     desc: "Generate high-resolution QR codes for URLs, WiFi, email, and more. No expiry, no watermark, no signup.",
     href: "/tools/qr-code-generator",
@@ -316,7 +326,7 @@ export const ALL_TOOLS = [
     category: "Finance",
     accent: "#fbbf24",
     accentRgb: "251,191,36",
-    badge: "New",
+    badge: null,
     icon: "🏠",
   },
   {
@@ -326,7 +336,7 @@ export const ALL_TOOLS = [
     category: "Math",
     accent: "#f97316",
     accentRgb: "249,115,22",
-    badge: "New",
+    badge: null,
     icon: "%",
   },
   {
@@ -356,7 +366,7 @@ export const ALL_TOOLS = [
     category: "Dev",
     accent: "#f59e0b",
     accentRgb: "245,158,11",
-    badge: "New",
+    badge: null,
     icon: "🔑",
   },
   {
@@ -366,7 +376,7 @@ export const ALL_TOOLS = [
     category: "Domain",
     accent: "#34d399",
     accentRgb: "52,211,153",
-    badge: "New",
+    badge: null,
     icon: "🌐",
   },
   {
@@ -406,7 +416,7 @@ export const ALL_TOOLS = [
     category: "Domain",
     accent: "#818cf8",
     accentRgb: "129,140,248",
-    badge: "New",
+    badge: null,
     icon: "🌍",
   },
   {
@@ -426,7 +436,7 @@ export const ALL_TOOLS = [
     category: "Domain",
     accent: "#f97316",
     accentRgb: "249,115,22",
-    badge: "New",
+    badge: null,
     icon: "🔎",
   },
   {
@@ -456,7 +466,7 @@ export const ALL_TOOLS = [
     category: "Video",
     accent: "#ff0000",
     accentRgb: "255,0,0",
-    badge: "New",
+    badge: null,
     icon: "▶",
   },
   {
@@ -466,7 +476,7 @@ export const ALL_TOOLS = [
     category: "Video",
     accent: "#ff0000",
     accentRgb: "255,0,0",
-    badge: "New",
+    badge: null,
     icon: "▶",
   },
   {
@@ -476,7 +486,7 @@ export const ALL_TOOLS = [
     category: "Utility",
     accent: "#38bdf8",
     accentRgb: "56,189,248",
-    badge: "New",
+    badge: null,
     icon: "⏱",
   },
   {
@@ -486,7 +496,7 @@ export const ALL_TOOLS = [
     category: "Collectibles",
     accent: "#f59e0b",
     accentRgb: "245,158,11",
-    badge: "New",
+    badge: null,
     icon: "🏆",
   },
   {
@@ -506,7 +516,7 @@ export const ALL_TOOLS = [
     category: "Collectibles",
     accent: "#f59e0b",
     accentRgb: "245,158,11",
-    badge: "New",
+    badge: null,
     icon: "⚖️",
   },
   {
@@ -516,7 +526,7 @@ export const ALL_TOOLS = [
     category: "Collectibles",
     accent: "#10b981",
     accentRgb: "16,185,129",
-    badge: "New",
+    badge: null,
     icon: "📈",
   },
   {
@@ -526,7 +536,7 @@ export const ALL_TOOLS = [
     category: "Collectibles",
     accent: "#f59e0b",
     accentRgb: "245,158,11",
-    badge: "New",
+    badge: null,
     icon: "🎰",
   },
   {
@@ -566,7 +576,7 @@ export const ALL_TOOLS = [
     category: "Sports",
     accent: "#22c55e",
     accentRgb: "34,197,94",
-    badge: "New",
+    badge: null,
     icon: "⚽",
   },
   {
@@ -586,8 +596,18 @@ export const ALL_TOOLS = [
     category: "Utility",
     accent: "#f87171",
     accentRgb: "248,113,113",
-    badge: "New",
+    badge: null,
     icon: "🎬",
+  },
+  {
+    title: "Credit Card Rewards Optimiser",
+    desc: "Enter your monthly spend and see which card earns you the most. Compares 10 top cards — Chase, Amex, Capital One. Shows the exact dollar gap you're missing.",
+    href: "/tools/credit-card-rewards-optimizer",
+    category: "Finance",
+    accent: "#f59e0b",
+    accentRgb: "245,158,11",
+    badge: "New",
+    icon: "💳",
   },
 ];
 

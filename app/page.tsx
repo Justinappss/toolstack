@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
-    description: "Access 58 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+    description: "Access 60 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
     alternates: { canonical: "https://toolstack.tech" },
     openGraph: {
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 58 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        description: "Access 60 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         url: "https://toolstack.tech",
         siteName: "ToolStack",
         type: "website",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     twitter: { 
         card: "summary_large_image",
         title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 58 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        description: "Access 60 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
         images: ["https://toolstack.tech/og-image.png"],
     },
 };
@@ -100,6 +100,16 @@ const LIVE_TOOLS = [
         accent: "#4ade80",
         accentRgb: "74,222,128",
         badge: null,
+        image: "/tools/password-generator-preview.png",
+    },
+    {
+        title: "Password Breach Checker",
+        desc: "Check if your password was exposed in a data breach. K-anonymity keeps your password 100% private.",
+        href: "/tools/password-breach-checker",
+        category: "Security",
+        accent: "#10b981",
+        accentRgb: "16,185,129",
+        badge: "New",
         image: "/tools/password-generator-preview.png",
     },
     {
@@ -349,7 +359,7 @@ const LIVE_TOOLS = [
         category: "Finance",
         accent: "#fbbf24",
         accentRgb: "251,191,36",
-        badge: "New",
+        badge: null,
         image: "/tools/mortgage-calculator-preview.png",
     },
     {
@@ -359,7 +369,7 @@ const LIVE_TOOLS = [
         category: "Math",
         accent: "#f97316",
         accentRgb: "249,115,22",
-        badge: "New",
+        badge: null,
         image: "/tools/percentage-calculator-preview.png",
     },
     {
@@ -399,7 +409,7 @@ const LIVE_TOOLS = [
         category: "Dev",
         accent: "#f472b6",
         accentRgb: "244,114,182",
-        badge: "New",
+        badge: null,
         image: "/tools/code-diff-checker-preview.png",
     },
     {
@@ -409,7 +419,7 @@ const LIVE_TOOLS = [
         category: "Dev",
         accent: "#fb923c",
         accentRgb: "251,146,60",
-        badge: "New",
+        badge: null,
         image: "/tools/jwt-decoder-preview.png",
     },
     {
@@ -439,7 +449,7 @@ const LIVE_TOOLS = [
         category: "Utility",
         accent: "#818cf8",
         accentRgb: "129,140,248",
-        badge: "New",
+        badge: null,
         image: "/tools/ip-address-lookup-preview.png",
     },
     {
@@ -459,7 +469,7 @@ const LIVE_TOOLS = [
         category: "Domain",
         accent: "#f97316",
         accentRgb: "249,115,22",
-        badge: "New",
+        badge: null,
         image: "/tools/whois-lookup-preview.png",
     },
     {
@@ -489,7 +499,7 @@ const LIVE_TOOLS = [
         category: "Video",
         accent: "#ff0000",
         accentRgb: "255,0,0",
-        badge: "New",
+        badge: null,
         image: "/tools/youtube-video-downloader-preview.png",
     },
     {
@@ -499,7 +509,7 @@ const LIVE_TOOLS = [
         category: "Video",
         accent: "#ff0000",
         accentRgb: "255,0,0",
-        badge: "New",
+        badge: null,
         image: "/tools/youtube-thumbnail-downloader-preview.png",
     },
     {
@@ -509,7 +519,7 @@ const LIVE_TOOLS = [
         category: "Utility",
         accent: "#38bdf8",
         accentRgb: "56,189,248",
-        badge: "New",
+        badge: null,
         image: "/tools/online-stopwatch-preview.png",
     },
     {
@@ -519,7 +529,7 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#f59e0b",
         accentRgb: "245,158,11",
-        badge: "New",
+        badge: null,
         image: "/tools/card-grading-profit-calculator-preview.png",
     },
     {
@@ -539,7 +549,7 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#f59e0b",
         accentRgb: "245,158,11",
-        badge: "New",
+        badge: null,
         image: "/tools/grading-company-comparison-preview.png",
     },
     {
@@ -549,7 +559,7 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#10b981",
         accentRgb: "16,185,129",
-        badge: "New",
+        badge: null,
         image: "/tools/card-flip-roi-calculator-preview.png",
     },
     {
@@ -559,7 +569,7 @@ const LIVE_TOOLS = [
         category: "Collectibles",
         accent: "#f59e0b",
         accentRgb: "245,158,11",
-        badge: "New",
+        badge: null,
         image: "/tools/card-box-break-calculator-preview.png",
     },
     {
@@ -599,7 +609,7 @@ const LIVE_TOOLS = [
         category: "Sports",
         accent: "#22c55e",
         accentRgb: "34,197,94",
-        badge: "New",
+        badge: null,
         image: "/tools/world-cup-accumulator-calculator-preview.png",
     },
     {
@@ -619,8 +629,18 @@ const LIVE_TOOLS = [
         category: "Utility",
         accent: "#f87171",
         accentRgb: "248,113,113",
-        badge: "New",
+        badge: null,
         image: "/tools/youtube-transcript-preview.png",
+    },
+    {
+        title: "Credit Card Rewards Optimiser",
+        desc: "Enter your spend and see which card earns you the most. Shows the exact dollar gap you're leaving on the table.",
+        href: "/tools/credit-card-rewards-optimizer",
+        category: "Finance",
+        accent: "#f59e0b",
+        accentRgb: "245,158,11",
+        badge: "New",
+        image: "/tools/credit-card-rewards-optimizer-preview.png",
     },
 ];
 
@@ -678,6 +698,7 @@ const ALL_BLOG_POSTS = [
     { slug: "how-to-create-pdf-free",                        title: "How to Create a PDF for Free",                           tag: "Utility" },
     { slug: "what-is-a-jwt-token",                           title: "What Is a JWT Token?",                                   tag: "Developer" },
     { slug: "how-to-generate-qr-code-wifi",                  title: "How to Generate a QR Code for Wi-Fi",                    tag: "Utility" },
+    { slug: "utm-builder-guide",                              title: "Free UTM Builder for GA4: Build Campaign URLs in 10 Seconds", tag: "Marketing" },
     { slug: "what-are-utm-parameters",                       title: "What Are UTM Parameters?",                               tag: "Marketing" },
     { slug: "json-formatting-guide-for-developers",          title: "JSON Formatting Guide for Developers",                    tag: "Developer" },
     { slug: "how-to-write-cold-email-subject-lines",         title: "How to Write Cold Email Subject Lines",                   tag: "Marketing" },
@@ -754,7 +775,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    58 top-tier tools live · Free forever · No account
+                                    60 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -830,8 +851,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "58", label: "Live tools" },
-                                    { value: "5+", label: "Coming soon" },
+                                    { value: "60", label: "Live tools" },
+                                    { value: "4+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -1066,7 +1087,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 58 tools <ArrowRight size={14} />
+                        View all 60 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

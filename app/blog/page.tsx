@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "password-generator-guide",
+        title: "Best Free Password Generator 2026: Create Strong Passwords Instantly",
+        description: "Generate truly random passwords of 8–64 characters instantly — no signup, no limits, no data stored. Tested vs LastPass, Bitwarden, 1Password, and NordPass. Includes live strength checker.",
+        date: "May 18, 2026",
+        readTime: "10 min read",
+        tag: "Security",
+        accent: "#10b981",
+        accentBg: "rgba(16,185,129,0.08)",
+        accentBorder: "rgba(16,185,129,0.2)",
+        featured: true,
+    },
+    {
         slug: "postiz-review",
         title: "Postiz Review (2026): The Open-Source Agentic Social Media Scheduler",
         description: "Postiz added agentic AI scheduling in May 2026 — AI agents can now control your posting calendar via API. Open-source, self-hostable for near-zero cost, 12+ platforms. Full review vs Buffer, Hootsuite, and Later.",
@@ -25,6 +37,18 @@ const posts = [
         accent: "#06b6d4",
         accentBg: "rgba(6,182,212,0.08)",
         accentBorder: "rgba(6,182,212,0.2)",
+        featured: true,
+    },
+    {
+        slug: "utm-builder-guide",
+        title: "Free UTM Builder for GA4: Build Campaign URLs in 10 Seconds",
+        description: "Build perfectly formatted UTM tracking URLs for GA4 in seconds. Ready-to-copy templates for email, Google Ads, Facebook, and LinkedIn — free, no signup.",
+        date: "May 19, 2026",
+        readTime: "6 min read",
+        tag: "Marketing",
+        accent: "#38bdf8",
+        accentBg: "rgba(56,189,248,0.08)",
+        accentBorder: "rgba(56,189,248,0.2)",
         featured: true,
     },
     {

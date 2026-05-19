@@ -49,11 +49,11 @@ export function AdBlock({ type, label = "Sponsored" }: AdBlockProps) {
 
   return (
     <div style={styles[type]} className="ad-container">
-      <span style={{ fontSize: 10, fontWeight: 800, color: "rgba(255,255,255,0.2)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+      <span style={{ fontSize: 10, fontWeight: 800, color: "rgba(255,255,255,0.5)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
         {label}
       </span>
       <div style={{ padding: "0 20px", textAlign: "center" }}>
-        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", margin: 0, fontWeight: 500 }}>
+        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", margin: 0, fontWeight: 500 }}>
           Advertisement Space
         </p>
       </div>

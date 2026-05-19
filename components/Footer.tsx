@@ -30,6 +30,7 @@ const TOOL_CATEGORIES = [
         label: "Utility & Dev",
         tools: [
             { label: "Password Generator", href: "/tools/password-generator" },
+            { label: "Password Breach Checker", href: "/tools/password-breach-checker" },
             { label: "QR Code Generator", href: "/tools/qr-code-generator" },
             { label: "JSON Formatter", href: "/tools/json-formatter" },
             { label: "VAT Calculator", href: "/tools/vat-calculator" },
@@ -73,6 +74,7 @@ const TOOL_CATEGORIES = [
             { label: "WC 2026 Accumulator Calculator", href: "/tools/world-cup-accumulator-calculator" },
             { label: "World Cup 2026 Team Finder", href: "/tools/world-cup-team-finder" },
             { label: "YouTube Transcript Extractor", href: "/tools/youtube-transcript" },
+            { label: "Credit Card Rewards Optimiser", href: "/tools/credit-card-rewards-optimizer" },
         ],
     },
 ];

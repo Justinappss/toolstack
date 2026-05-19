@@ -74,6 +74,16 @@ export const ALL_TOOLS = [
     badge: "Security",
   },
   {
+    slug: "password-breach-checker",
+    name: "Password Breach Checker",
+    desc: "Check if your password was exposed in a data breach. K-anonymity keeps your password 100% private — never sent to any server.",
+    icon: "🛡️",
+    color: "#10b981",
+    bg: "rgba(16,185,129,0.1)",
+    border: "rgba(16,185,129,0.25)",
+    badge: "Security",
+  },
+  {
     slug: "qr-code-generator",
     name: "QR Code Generator",
     desc: "Generate QR codes for URLs, WiFi, email, phone and text. Free PNG & SVG download. No signup, no expiry, 100% private.",
@@ -191,7 +201,7 @@ export const ALL_TOOLS = [
     color: "#ff0000",
     bg: "rgba(255,0,0,0.1)",
     border: "rgba(255,0,0,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "online-stopwatch",
@@ -201,7 +211,7 @@ export const ALL_TOOLS = [
     color: "#38bdf8",
     bg: "rgba(56,189,248,0.1)",
     border: "rgba(56,189,248,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "compound-interest-calculator",
@@ -481,7 +491,7 @@ export const ALL_TOOLS = [
     color: "#f59e0b",
     bg: "rgba(245,158,11,0.1)",
     border: "rgba(245,158,11,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "grading-company-comparison",
@@ -491,7 +501,7 @@ export const ALL_TOOLS = [
     color: "#f59e0b",
     bg: "rgba(245,158,11,0.1)",
     border: "rgba(245,158,11,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "card-flip-roi-calculator",
@@ -501,7 +511,7 @@ export const ALL_TOOLS = [
     color: "#10b981",
     bg: "rgba(16,185,129,0.1)",
     border: "rgba(16,185,129,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "card-box-break-calculator",
@@ -511,7 +521,7 @@ export const ALL_TOOLS = [
     color: "#f59e0b",
     bg: "rgba(245,158,11,0.1)",
     border: "rgba(245,158,11,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "ebay-best-offer-calculator",
@@ -521,7 +531,7 @@ export const ALL_TOOLS = [
     color: "#3b82f6",
     bg: "rgba(59,130,246,0.1)",
     border: "rgba(59,130,246,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "whatnot-seller-fee-calculator",
@@ -541,7 +551,7 @@ export const ALL_TOOLS = [
     color: "#ef4444",
     bg: "rgba(239,68,68,0.1)",
     border: "rgba(239,68,68,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "pack-break-ev-calculator",
@@ -561,7 +571,7 @@ export const ALL_TOOLS = [
     color: "#22c55e",
     bg: "rgba(34,197,94,0.1)",
     border: "rgba(34,197,94,0.25)",
-    badge: "New",
+    badge: null,
   },
   {
     slug: "world-cup-team-finder",
@@ -581,7 +591,17 @@ export const ALL_TOOLS = [
     color: "#f87171",
     bg: "rgba(248,113,113,0.1)",
     border: "rgba(248,113,113,0.25)",
-    badge: "New",
+    badge: null,
+  },
+  {
+    slug: "credit-card-rewards-optimizer",
+    name: "Credit Card Rewards Optimiser",
+    desc: "Enter your monthly spend and see which card earns you the most. Compares 10 top cards — Chase, Amex, Capital One. Shows the exact dollar gap you're missing.",
+    icon: "💳",
+    color: "#f59e0b",
+    bg: "rgba(245,158,11,0.1)",
+    border: "rgba(245,158,11,0.25)",
+    badge: "Finance",
   },
 ];
 
@@ -597,7 +617,7 @@ export function MoreTools({ currentSlug }: { currentSlug: string }) {
             More Free Tools
           </h2>
           <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: 0 }}>
-            60 tools being built — all free, no signup, instant results.
+            60 tools live — all free, no signup, instant results.
           </p>
         </div>
         <Link href="/tools" style={{

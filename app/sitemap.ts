@@ -246,6 +246,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${base}/blog/password-generator-guide`,
+      lastModified: "2026-05-18",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/tools/password-breach-checker`,
+      lastModified: "2026-05-18",
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${base}/blog/utm-builder-guide`,
+      lastModified: "2026-05-19",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/tools/credit-card-rewards-optimizer`,
+      lastModified: "2026-05-18",
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
     // === Static pages ===
     {
       url: `${base}/about`,
