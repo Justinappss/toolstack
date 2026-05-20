@@ -134,7 +134,7 @@ Email Subject Line Tester: Score Your{" "}
 
                     {/* Author byline */}
                     <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                        <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg, #f472b6, #ec4899)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800, color: "white", flexShrink: 0 }}>JP</div>
+                        <img src="/images/justin-pirrie-headshot.png" alt="Justin Pirrie" style={{ width: 80, height: 80, borderRadius: "50%", objectFit: "cover", flexShrink: 0 }} />
                         <div>
                             <div style={{ fontSize: 14, fontWeight: 700, color: "white" }}>Justin Pirrie</div>
                             <div style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>Founder, ToolStack</div>

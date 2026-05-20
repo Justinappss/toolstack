@@ -102,9 +102,9 @@ export default function AboutPage() {
                         <img
                             src="/images/justin-pirrie-headshot.png"
                             alt="Justin Pirrie — Founder of ToolStack"
-                            width={80}
-                            height={80}
-                            style={{ width: 80, height: 80, borderRadius: "50%", objectFit: "cover", flexShrink: 0, border: "2px solid rgba(99,102,241,0.4)" }}
+                            width={160}
+                            height={160}
+                            style={{ width: 160, height: 160, borderRadius: 16, objectFit: "cover", objectPosition: "top center", flexShrink: 0, border: "2px solid rgba(99,102,241,0.4)" }}
                         />
                         <div style={{ flex: 1 }}>
                             <h2 style={{ fontSize: 24, fontWeight: 900, color: "white", marginBottom: 4 }}>The Story Behind ToolStack</h2>

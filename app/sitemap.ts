@@ -98,8 +98,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "ssl-checker",
       "whois-lookup",
       "uuid-generator",
-      "youtube-video-downloader",
-      "youtube-thumbnail-downloader",
       "online-stopwatch",
       "compound-interest-calculator",
     ].map(slug => ({
@@ -119,8 +117,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "panini-sticker-calculator",
       "pack-break-ev-calculator",
       "world-cup-accumulator-calculator",
-      "world-cup-team-finder",
-      "youtube-transcript",
     ].map(slug => ({
       url: `${base}/tools/${slug}`,
       lastModified: DATES.niche_tools,

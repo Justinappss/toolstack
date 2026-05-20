@@ -302,8 +302,6 @@ export default function PasswordBreachCheckerPage() {
                     ))}
                 </div>
 
-                <FaqPageSchema faqs={FAQS} />
-
                 {/* FAQ */}
                 <section style={{ marginBottom: 56 }}>
                     <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 20px", letterSpacing: "-0.02em" }}>Frequently Asked Questions</h2>
