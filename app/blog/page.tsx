@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "website-down-checker",
+        title: "Website Down Checker: How to Check, Get Alerted & Fix It (2026)",
+        description: "Is your website down? Use a free website down checker to confirm in seconds, set up instant alerts with UptimeRobot, StatusCake, or Better Uptime, and follow the 60-minute action plan when things go wrong.",
+        date: "May 20, 2026",
+        readTime: "12 min read",
+        tag: "Uptime",
+        accent: "#10b981",
+        accentBg: "rgba(16,185,129,0.08)",
+        accentBorder: "rgba(16,185,129,0.2)",
+        featured: true,
+    },
+    {
         slug: "password-generator-guide",
         title: "Best Free Password Generator 2026: Create Strong Passwords Instantly",
         description: "Generate truly random passwords of 8–64 characters instantly — no signup, no limits, no data stored. Tested vs LastPass, Bitwarden, 1Password, and NordPass. Includes live strength checker.",
