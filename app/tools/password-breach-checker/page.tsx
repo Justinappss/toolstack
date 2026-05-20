@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const ACCENT = "#10b981";
 const ACCENT_RGB = "16,185,129";

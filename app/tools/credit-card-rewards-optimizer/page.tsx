@@ -2,8 +2,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
-import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
-
+import { AlertTriangle, ArrowUpRight, CheckCircle2, TrendingUp } from "lucide-react";
 const ACCENT = "#f59e0b";
 const ACCENT_RGB = "245,158,11";
 
