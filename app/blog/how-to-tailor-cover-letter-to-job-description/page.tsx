@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const accent = "#6366f1";
@@ -351,7 +350,7 @@ export default function Page() {
 
           {/* Static infographic */}
           <div style={{ borderRadius: 16, overflow: "hidden", border: `1px solid ${border}`, marginBottom: 48 }}>
-            <Image src="/blog/how-to-tailor-cover-letter-to-job-description/infographic-steps.png" alt="5-step cover letter tailoring method — ToolStack 2026" width={760} height={427} style={{ width: "100%", height: "auto", display: "block" }} />
+            <img src="/blog/how-to-tailor-cover-letter-to-job-description/infographic-steps.png" alt="5-step cover letter tailoring method — ToolStack 2026" style={{ width: "100%", height: "auto", display: "block" }} />
             <div style={{ padding: "12px 16px", background: surface }}>
               <p style={{ fontSize: 13, color: muted, margin: 0 }}>The 5-step tailoring method at a glance — keyword extraction through AI generation.</p>
             </div>
@@ -369,7 +368,7 @@ export default function Page() {
               { src: "/blog/how-to-tailor-cover-letter-to-job-description/screenshot-output.png", caption: "Step 5 — Your tailored cover letter is ready in seconds. Copy and personalise with your real numbers." },
             ].map((img, i) => (
               <div key={i} style={{ borderRadius: 14, overflow: "hidden", border: `1px solid ${border}` }}>
-                <Image src={img.src} alt={img.caption} width={760} height={420} style={{ width: "100%", height: "auto", display: "block" }} />
+                <img src={img.src} alt={img.caption} style={{ width: "100%", height: "auto", display: "block" }} />
                 <div style={{ padding: "12px 16px", background: surface }}>
                   <p style={{ fontSize: 13, color: muted, margin: 0 }}>{img.caption}</p>
                 </div>
