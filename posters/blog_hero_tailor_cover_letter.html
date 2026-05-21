@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailor Your Cover Letter - Blog Hero</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Outfit:wght@800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #000;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .banner-canvas {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background-color: #050505;
+      overflow: hidden;
+      display: flex;
+      color: #fff;
+    }
+
+    /* Subtle grid overlay */
+    .grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+      background-size: 30px 30px;
+      z-index: 1;
+    }
+
+    .ambient-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+      bottom: -100px;
+      right: -100px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .left-side {
+      position: relative;
+      width: 55%;
+      height: 100%;
+      z-index: 10;
+      padding: 60px 40px 60px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-side {
+      position: relative;
+      width: 45%;
+      height: 100%;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 60px;
+    }
+
+    /* Badge styling */
+    .callbacks-badge {
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #818cf8;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 50px;
+      width: fit-content;
+      margin-bottom: 24px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15);
+    }
+
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .highlight {
+      color: #6366f1;
+      text-shadow: 0 0 40px rgba(99, 102, 241, 0.4);
+    }
+
+    .subtitle {
+      font-size: 22px;
+      font-weight: 500;
+      color: #94a3b8;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+    }
+
+    /* Before / After Split Visuals */
+    .split-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+    }
+
+    .document-card {
+      width: 180px;
+      height: 240px;
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    /* Before Card */
+    .card-before {
+      background: rgba(30, 41, 59, 0.2);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    }
+
+    /* After Card */
+    .card-after {
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      box-shadow: 0 25px 50px rgba(99, 102, 241, 0.15), 0 0 40px rgba(99, 102, 241, 0.05);
+    }
+
+    /* Fake Text Lines */
+    .text-line {
+      height: 8px;
+      border-radius: 4px;
+    }
+
+    .card-before .text-line {
+      background: rgba(148, 163, 184, 0.2);
+    }
+
+    .card-after .text-line {
+      background: rgba(99, 102, 241, 0.4);
+    }
+
+    .card-before .text-line.short { width: 60%; }
+    .card-before .text-line.medium { width: 85%; }
+    .card-before .text-line.long { width: 100%; }
+
+    .card-after .text-line.short { width: 60%; background: #6366f1; }
+    .card-after .text-line.medium { width: 85%; background: #6366f1; }
+    .card-after .text-line.long { width: 100%; background: #818cf8; }
+
+    /* Icons and Indicators */
+    .status-indicator {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 900;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .before-status {
+      background: #ef4444;
+      color: #fff;
+      border: 2px solid #050505;
+    }
+
+    .after-status {
+      background: #10b981;
+      color: #fff;
+      border: 2px solid #050505;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    }
+
+    /* Card Titles */
+    .card-label {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .card-before .card-label {
+      color: #64748b;
+    }
+
+    .card-after .card-label {
+      color: #818cf8;
+    }
+
+    /* Arrow Connector */
+    .connector-arrow {
+      font-size: 32px;
+      color: #475569;
+      font-weight: 900;
+      user-select: none;
+    }
+
+    /* ToolStack Brand Tag (Bottom Right) */
+    .brand-tag {
+      position: absolute;
+      bottom: 30px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 10;
+      opacity: 0.8;
+    }
+
+    .brand-logo {
+      width: 18px;
+      height: 18px;
+      background: #ffffff;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #050505;
+      font-weight: 900;
+      font-size: 11px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .brand-name {
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="banner-canvas">
+    <div class="grid-overlay"></div>
+    <div class="ambient-glow"></div>
+
+    <div class="left-side">
+      <div class="callbacks-badge">53% More Callbacks</div>
+      <h1 class="title">TAILOR YOUR<br><span class="highlight">COVER LETTER</span></h1>
+      <p class="subtitle">5-Step Method · Free AI Tool · 30 Minutes</p>
+    </div>
+
+    <div class="right-side">
+      <div class="split-container">
+        <!-- Before Document -->
+        <div class="document-card card-before">
+          <div class="status-indicator before-status">✕</div>
+          <div class="card-label">Generic</div>
+          <div class="text-line long"></div>
+          <div class="text-line medium"></div>
+          <div class="text-line short"></div>
+          <div class="text-line long"></div>
+          <div class="text-line short"></div>
+        </div>
+
+        <!-- Connector -->
+        <div class="connector-arrow">→</div>
+
+        <!-- After Document -->
+        <div class="document-card card-after">
+          <div class="status-indicator after-status">✓</div>
+          <div class="card-label">Tailored</div>
+          <div class="text-line long"></div>
+          <div class="text-line medium"></div>
+          <div class="text-line short"></div>
+          <div class="text-line long"></div>
+          <div class="text-line short"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ToolStack Logo (Bottom Right) -->
+    <div class="brand-tag">
+      <div class="brand-logo">T</div>
+      <div class="brand-name">TOOLSTACK</div>
+    </div>
+  </div>
+</body>
+</html>
