@@ -486,16 +486,16 @@ export default function CoverLetterPage() {
           <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Cover Letter Generator: Free Online Tool</h2>
           <div style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.8 }}>
             <p style={{ marginBottom: 16 }}>
-              Cover letters are the most skipped part of any job application — but the ones that do read them are doing it because something in your resume caught their interest and they want to know more. A good cover letter turns curiosity into an interview. Our AI Cover Letter Generator takes your work history and the job description and produces a tailored, professional cover letter in under a minute.
+              Cover letters are the most skipped part of any job application — but hiring managers who do read them are looking for evidence that you understand the role and the company. A good cover letter turns initial interest into an interview. ToolStack&apos;s AI cover letter generator takes your job title, company name, and a short paragraph about your background, then produces a tailored, professional cover letter in seconds.
             </p>
             <p style={{ marginBottom: 16 }}>
-              Paste the job description, enter your name and role, and optionally paste your resume bullet points. The AI generates a cover letter that directly addresses the requirements in the job posting, uses your specific achievements, and matches the professional tone of the industry. You can regenerate with different tones, adjust length, and edit the output before downloading as PDF.
+              Enter the role you&apos;re applying for, add the company name, and describe your relevant experience and achievements. The more specific your background description — actual metrics, real projects, concrete outcomes — the better the output. You can also optionally add the hiring manager&apos;s name to personalise the greeting. GPT-4o generates a cover letter that opens with a strong hook, highlights your most relevant experience, and closes professionally.
             </p>
             <p style={{ marginBottom: 16 }}>
-              Common uses include applying to 10+ jobs quickly without sacrificing cover letter quality, tailoring a generic cover letter to a specific job posting's exact requirements, overcoming employment gaps by framing your experience positively, and applying to roles where you have less traditional experience but transferable skills.
+              Common uses include applying to multiple roles quickly without sacrificing letter quality, getting past the blank-page paralysis of starting from scratch, and producing a strong first draft to personalise with company-specific details before sending.
             </p>
             <p style={{ marginBottom: 0 }}>
-              Writing a good cover letter takes 30-60 minutes per job. Most people either skip them entirely or send the same generic letter to every posting. Ours generates genuinely tailored letters in seconds by matching your background to the specific job requirements. Free to use, no signup required, generates unlimited letters.
+              Writing a cover letter from scratch takes 30–60 minutes per application. Most people either skip them or send the same generic letter to every posting. ToolStack generates a genuinely tailored letter in under 10 seconds. Free, no signup, unlimited uses.
             </p>
           </div>
         </section>
