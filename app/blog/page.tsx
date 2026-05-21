@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "how-to-tailor-cover-letter-to-job-description",
+        title: "How to Tailor a Cover Letter to a Job Description Fast — Free in 2026",
+        description: "Tailored cover letters get 53% more callbacks and make you 1.9× more likely to land interviews. Here is the exact 5-step method — plus a free AI tool to cut the work to under 30 minutes, no signup required.",
+        date: "May 21, 2026",
+        readTime: "9 min read",
+        tag: "Career & Job Search",
+        accent: "#6366f1",
+        accentBg: "rgba(99,102,241,0.08)",
+        accentBorder: "rgba(99,102,241,0.2)",
+        featured: true,
+    },
+    {
         slug: "cover-letter-generator-guide",
         title: "The Best Free AI Cover Letter Generator (No Signup, No Limits)",
         description: "Stop rewriting from scratch. ToolStack's free AI cover letter generator is powered by GPT-4o, has 4 tone modes, and requires no signup — unlimited uses, full letter in seconds. Compared vs Grammarly, Zety, Kickresume, and more.",
