@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Cover Letter Generator Thumbnail</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Outfit:wght@800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #000;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .banner-canvas {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #0f0f13;
+      overflow: hidden;
+      display: flex;
+      color: #fff;
+    }
+
+    /* Core Background Image (Aligned to Right) */
+    .bg-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 720px;
+      height: 720px;
+      background-image: url('../public/blog/cover_letter_bg.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+
+    /* Cinematic Gradient Fading to Left Dark Background */
+    .bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #0f0f13 0%, #0f0f13 40%, rgba(15, 15, 19, 0.95) 50%, rgba(15, 15, 19, 0.4) 75%, transparent 100%);
+      z-index: 2;
+    }
+
+    /* Left Side Content (60%) */
+    .left-side {
+      position: relative;
+      width: 58%;
+      height: 100%;
+      z-index: 10;
+      padding: 80px 40px 80px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge-free {
+      background-color: #f97316;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+      padding: 6px 18px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
+    }
+
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 76px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      margin-bottom: 24px;
+      text-transform: none;
+    }
+
+    .title span {
+      background: linear-gradient(135deg, #f97316, #fdba74);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 30px;
+      font-weight: 600;
+      color: #94a3b8;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .subtitle::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #f97316;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #f97316;
+    }
+
+    /* ToolStack Brand Tag (Bottom Right) */
+    .brand-tag {
+      position: absolute;
+      bottom: 40px;
+      right: 50px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 10;
+      background: rgba(15, 15, 19, 0.7);
+      padding: 10px 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand-logo {
+      width: 22px;
+      height: 22px;
+      background: #ffffff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #0f0f13;
+      font-weight: 900;
+      font-size: 13px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .brand-name {
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="banner-canvas">
+    <div class="bg-image"></div>
+    <div class="bg-overlay"></div>
+
+    <div class="left-side">
+      <div class="badge-free">FREE</div>
+      <h1 class="title">AI Cover Letter<br><span>Generator</span></h1>
+      <p class="subtitle">No signup. No limits.</p>
+    </div>
+
+    <!-- ToolStack Logo (Bottom Right) -->
+    <div class="brand-tag">
+      <div class="brand-logo">T</div>
+      <div class="brand-name">TOOLSTACK</div>
+    </div>
+  </div>
+</body>
+</html>
