@@ -139,13 +139,6 @@ export default function BlogPost() {
                         </div>
                     </div>
 
-                    <div style={{ margin: "0 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
-                        <img
-                            src="/blog/cover-letter-generator-guide/hero-banner.png"
-                            alt="ToolStack Free AI Cover Letter Generator — write a tailored cover letter in seconds with GPT-4o"
-                            style={{ width: "100%", height: "auto", display: "block" }}
-                        />
-                    </div>
                 </div>
             </div>
 
@@ -257,7 +250,7 @@ export default function BlogPost() {
                         Once you hit generate, GPT-4o produces a full, structured cover letter — typically 300–400 words — formatted correctly for the role type, with an opener that doesn't start with "I am writing to apply for." The output is ready to copy, paste into your application, and personalise.
                     </p>
 
-                    <div style={{ display: "flex", flexDirection: "column", gap: 10, margin: "0 0 36px" }}>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 10, margin: "0 0 28px" }}>
                         {[
                             ["Step 1 — Enter the job title", "Be specific. 'Senior Marketing Manager' produces a better letter than 'Marketing Manager'. The AI calibrates seniority level and responsibilities based on the title."],
                             ["Step 2 — Add the company name", "The company name lets the AI frame the letter correctly — startup vs enterprise language, industry references, and the right formality level."],
@@ -268,6 +261,20 @@ export default function BlogPost() {
                             <div key={i} style={{ padding: "18px 22px", borderRadius: 14, border: "1px solid rgba(255,255,255,0.06)", background: "rgba(255,255,255,0.015)" }}>
                                 <strong style={{ color: "white", display: "block", marginBottom: 6 }}>→ {title}</strong>
                                 <span style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.65 }}>{body}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Tool screenshots */}
+                    <div style={{ display: "flex", flexDirection: "column", gap: 16, margin: "8px 0 40px" }}>
+                        {[
+                            { src: "/blog/cover-letter-generator-guide/screenshot-tool-empty.png", alt: "ToolStack AI Cover Letter Generator — empty form showing job title, company, background and tone mode fields", caption: "Step 1–3 — Enter your job title, company name, and background. The more specific your background, the better the output." },
+                            { src: "/blog/cover-letter-generator-guide/screenshot-tool-filled.png", alt: "ToolStack AI Cover Letter Generator with form filled in — Marketing Manager role at Spotify", caption: "Step 4 — Fields filled and tone selected. The Generate button activates as soon as the required fields are complete." },
+                            { src: "/blog/cover-letter-generator-guide/screenshot-tool-output.png", alt: "ToolStack AI Cover Letter Generator output — full tailored cover letter generated for Marketing Manager at Spotify", caption: "Step 5 — Your cover letter is ready. Copy it in one click, then personalise with a company-specific detail and a real achievement with a number." },
+                        ].map(({ src, alt, caption }) => (
+                            <div key={src} style={{ borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                                <img src={src} alt={alt} style={{ width: "100%", display: "block" }} loading="lazy" />
+                                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>{caption}</p>
                             </div>
                         ))}
                     </div>
@@ -326,9 +333,14 @@ export default function BlogPost() {
                     </div>
 
                     {/* Infographic comparison */}
-                    <div style={{ margin: "8px 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                    <div style={{ margin: "8px 0 24px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
                         <img src="/blog/cover-letter-generator-guide/infographic-comparison.png" alt="Free AI Cover Letter Generators Compared 2026 — ToolStack vs Grammarly vs Zety vs Kickresume" style={{ width: "100%", display: "block" }} loading="lazy" />
                         <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>Free AI cover letter tools compared — save this</p>
+                    </div>
+
+                    {/* Hero banner */}
+                    <div style={{ margin: "0 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                        <img src="/blog/cover-letter-generator-guide/hero-banner.png" alt="ToolStack Free AI Cover Letter Generator — write a tailored cover letter in seconds with GPT-4o" style={{ width: "100%", height: "auto", display: "block" }} loading="lazy" />
                     </div>
 
                     {/* Pros / Cons */}
