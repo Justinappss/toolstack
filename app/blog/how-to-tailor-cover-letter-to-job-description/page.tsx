@@ -211,6 +211,25 @@ export default function Page() {
         {/* ── Article Body ── */}
         <article style={{ minWidth: 0 }}>
 
+          {/* ── YouTube embed placeholder — add URL when video is ready ── */}
+          {/* Uncomment and replace VIDEO_ID once you have the YouTube URL:
+          <div style={{ position: "relative", paddingBottom: "56.25%", borderRadius: 16, overflow: "hidden", marginBottom: 16 }}>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          </div>
+          <div style={{ padding: "12px 16px", borderRadius: 10, background: surface, marginBottom: 40 }}>
+            <p style={{ fontSize: 13, color: muted, margin: 0 }}>Watch: How to tailor a cover letter to any job description in under 30 minutes — free AI tool demo included.</p>
+          </div>
+          */}
+
+          {/* Audio Overview */}
+          <div style={{ padding: "20px 24px", borderRadius: 16, background: surface, border: `1px solid ${border}`, marginBottom: 40 }}>
+            <p style={{ fontSize: 10, fontWeight: 800, letterSpacing: "0.12em", textTransform: "uppercase", color: accent, marginBottom: 10 }}>NotebookLM Audio Overview — Deep Dive Podcast</p>
+            <p style={{ fontSize: 13, color: muted, marginBottom: 14 }}>Prefer to listen? Full breakdown of the 5-step tailoring method, real stats, and before/after examples — audio format.</p>
+            <audio controls style={{ width: "100%", accentColor: accent }}>
+              <source src="/blog/how-to-tailor-cover-letter-to-job-description/audio-overview.m4a" type="audio/mp4" />
+            </audio>
+          </div>
+
           {/* Direct answer */}
           <div id="short-answer" style={{ padding: "24px 28px", borderRadius: 16, background: accentDim, border: `1px solid ${accentBorder}`, marginBottom: 40 }}>
             <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: accent, marginBottom: 10 }}>The Short Answer</p>
@@ -291,6 +310,16 @@ export default function Page() {
             </div>
           </div>
 
+          {/* Animated infographic */}
+          <div style={{ borderRadius: 16, overflow: "hidden", border: `1px solid ${border}`, marginBottom: 48 }}>
+            <video autoPlay muted loop playsInline style={{ width: "100%", display: "block" }}>
+              <source src="/blog/how-to-tailor-cover-letter-to-job-description/infographic-animated.mp4" type="video/mp4" />
+            </video>
+            <div style={{ padding: "12px 16px", background: surface }}>
+              <p style={{ fontSize: 13, color: muted, margin: 0 }}>The tailored vs generic cover letter gap — why the difference in callbacks is so large.</p>
+            </div>
+          </div>
+
           {/* 5-Step Guide */}
           <h2 id="five-steps" style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 8 }}>The 5-Step Method: Tailor Any Cover Letter in Under 30 Minutes</h2>
           <p style={{ fontSize: 14, color: muted, marginBottom: 32 }}>Total time: ~27 minutes. Works for any role, any industry, any experience level.</p>
@@ -309,6 +338,14 @@ export default function Page() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Static infographic */}
+          <div style={{ borderRadius: 16, overflow: "hidden", border: `1px solid ${border}`, marginBottom: 48 }}>
+            <Image src="/blog/how-to-tailor-cover-letter-to-job-description/infographic-steps.png" alt="5-step cover letter tailoring method — ToolStack 2026" width={760} height={427} style={{ width: "100%", height: "auto", display: "block" }} />
+            <div style={{ padding: "12px 16px", background: surface }}>
+              <p style={{ fontSize: 13, color: muted, margin: 0 }}>The 5-step tailoring method at a glance — keyword extraction through AI generation.</p>
+            </div>
           </div>
 
           {/* Tool Screenshots */}
