@@ -147,37 +147,46 @@ export default function Page() {
   return (
     <div style={{ background: bg, minHeight: "100vh", color: text, fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
 
+      {/* ── Banner placeholder — replace with <Image> when asset is ready ── */}
+      <div style={{ width: "100%", height: 380, background: surface, borderBottom: `1px solid ${border}` }} />
+
       {/* ── Hero ── */}
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "60px 24px 0" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
-          <Link href="/blog" style={{ fontSize: 12, color: muted, textDecoration: "none" }}>Blog</Link>
-          <span style={{ color: muted, fontSize: 12 }}>›</span>
-          <span style={{ fontSize: 12, color: accent }}>Career & Job Search</span>
+      <div style={{ maxWidth: 760, margin: "0 auto", padding: "48px 24px 0" }}>
+
+        {/* Breadcrumb */}
+        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 24 }}>
+          <Link href="/blog" style={{ fontSize: 12, color: muted, textDecoration: "none", letterSpacing: "0.02em" }}>Blog</Link>
+          <span style={{ color: border, fontSize: 12 }}>/</span>
+          <span style={{ fontSize: 12, color: accent, fontWeight: 600, letterSpacing: "0.02em" }}>Career &amp; Job Search</span>
         </div>
-        <div style={{ display: "flex", gap: 8, marginBottom: 20, flexWrap: "wrap" }}>
-          {["Tutorial", "Cover Letters", "AI Tools", "Free"].map(tag => (
-            <span key={tag} style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 999, background: accentDim, border: `1px solid ${accentBorder}`, color: accent }}>{tag}</span>
-          ))}
-        </div>
-        <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, marginBottom: 20, color: "white", maxWidth: 820 }}>
+
+        {/* H1 */}
+        <h1 style={{ fontSize: "clamp(30px, 4.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: 22, color: "white" }}>
           How to Tailor a Cover Letter to a Job Description Fast — Free in 2026
         </h1>
-        <p style={{ fontSize: 18, color: muted, lineHeight: 1.7, maxWidth: 680, marginBottom: 28 }}>
-          Most cover letters never get read. Tailored ones get 53% more callbacks. Here is the exact 5-step method — and a free AI tool to cut the work to under 30 minutes.
+
+        {/* Subtitle */}
+        <p style={{ fontSize: 19, color: muted, lineHeight: 1.65, marginBottom: 32, fontWeight: 400 }}>
+          Most cover letters never get read. Tailored ones get 53% more callbacks. The exact 5-step method — and a free AI tool to do it in under 30 minutes.
         </p>
-        <div style={{ display: "flex", gap: 20, fontSize: 13, color: muted, flexWrap: "wrap", marginBottom: 48, alignItems: "center" }}>
-          <span>By <strong style={{ color: text }}>Justin Pirrie</strong></span>
-          <span>May 21, 2026</span>
-          <span>9 min read</span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <span style={{ width: 8, height: 8, borderRadius: "50%", background: green, display: "inline-block" }} />
-            Updated for 2026
+
+        {/* Meta */}
+        <div style={{ display: "flex", alignItems: "center", gap: 0, paddingBottom: 40, borderBottom: `1px solid ${border}`, flexWrap: "wrap" }}>
+          <span style={{ fontSize: 13, color: muted }}>By <strong style={{ color: text, fontWeight: 700 }}>Justin Pirrie</strong></span>
+          <span style={{ margin: "0 14px", color: border }}>·</span>
+          <span style={{ fontSize: 13, color: muted }}>May 21, 2026</span>
+          <span style={{ margin: "0 14px", color: border }}>·</span>
+          <span style={{ fontSize: 13, color: muted }}>9 min read</span>
+          <span style={{ margin: "0 14px", color: border }}>·</span>
+          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13 }}>
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: green, display: "inline-block" }} />
+            <span style={{ color: green, fontWeight: 600 }}>Updated 2026</span>
           </span>
         </div>
       </div>
 
       {/* ── Main layout ── */}
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px 80px", display: "grid", gridTemplateColumns: "220px 1fr", gap: 56 }} className="blog-layout">
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "48px 24px 80px", display: "grid", gridTemplateColumns: "220px 1fr", gap: 56 }} className="blog-layout">
 
         {/* ── Sidebar TOC ── */}
         <aside style={{ position: "sticky", top: 100, height: "fit-content", display: "flex", flexDirection: "column", gap: 4 }}>
