@@ -211,15 +211,13 @@ export default function Page() {
         {/* ── Article Body ── */}
         <article style={{ minWidth: 0 }}>
 
-          {/* ── YouTube embed placeholder — add URL when video is ready ── */}
-          {/* Uncomment and replace VIDEO_ID once you have the YouTube URL:
+          {/* YouTube embed */}
           <div style={{ position: "relative", paddingBottom: "56.25%", borderRadius: 16, overflow: "hidden", marginBottom: 16 }}>
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe src="https://www.youtube.com/embed/4BT10fPJAI8" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: "none" }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </div>
           <div style={{ padding: "12px 16px", borderRadius: 10, background: surface, marginBottom: 40 }}>
             <p style={{ fontSize: 13, color: muted, margin: 0 }}>Watch: How to tailor a cover letter to any job description in under 30 minutes — free AI tool demo included.</p>
           </div>
-          */}
 
           {/* Audio Overview */}
           <div style={{ padding: "20px 24px", borderRadius: 16, background: surface, border: `1px solid ${border}`, marginBottom: 40 }}>

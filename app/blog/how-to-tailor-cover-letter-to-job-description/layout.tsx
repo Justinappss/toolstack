@@ -188,6 +188,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     ],
   };
 
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "How to Tailor a Cover Letter to Any Job Description (Free — 27 Minutes)",
+    "description": "The exact 5-step method to tailor any cover letter to a job description in under 30 minutes — free AI tool included, no login required.",
+    "thumbnailUrl": "https://toolstack.tech/blog/thumbnail-cover-letter.png",
+    "uploadDate": "2026-05-21",
+    "embedUrl": "https://www.youtube.com/embed/4BT10fPJAI8",
+    "url": "https://youtu.be/4BT10fPJAI8",
+    "publisher": { "@type": "Organization", "name": "ToolStack", "logo": { "@type": "ImageObject", "url": "https://toolstack.tech/favicon.png" } },
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -226,6 +238,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
       <script
         type="application/ld+json"
