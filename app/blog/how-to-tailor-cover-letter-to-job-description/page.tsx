@@ -8,7 +8,7 @@ const bg = "#050505";
 const surface = "#0f0f1a";
 const border = "rgba(255,255,255,0.07)";
 const text = "rgba(255,255,255,0.88)";
-const muted = "rgba(255,255,255,0.45)";
+const muted = "rgba(255,255,255,0.58)";
 const green = "#34d399";
 const red = "#f87171";
 const amber = "#f59e0b";
@@ -196,9 +196,7 @@ export default function Page() {
             ["#predictions", "2026 Predictions"],
             ["#faq", "FAQ"],
           ].map(([href, label]) => (
-            <a key={href} href={href} style={{ fontSize: 13, color: muted, textDecoration: "none", padding: "5px 0 5px 12px", borderLeft: `2px solid ${border}`, transition: "all 0.15s" }}
-              onMouseEnter={e => { (e.target as HTMLAnchorElement).style.color = text; (e.target as HTMLAnchorElement).style.borderLeftColor = accent; }}
-              onMouseLeave={e => { (e.target as HTMLAnchorElement).style.color = muted; (e.target as HTMLAnchorElement).style.borderLeftColor = border; }}>
+            <a key={href} href={href} className="toc-link" style={{ fontSize: 13, color: muted, textDecoration: "none", padding: "5px 0 5px 12px", borderLeft: `2px solid ${border}`, transition: "all 0.15s" }}>
               {label}
             </a>
           ))}
@@ -213,7 +211,7 @@ export default function Page() {
 
           {/* YouTube embed */}
           <div style={{ position: "relative", paddingBottom: "56.25%", borderRadius: 16, overflow: "hidden", marginBottom: 16 }}>
-            <iframe src="https://www.youtube.com/embed/4BT10fPJAI8" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: "none" }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe title="How to Tailor a Cover Letter to Any Job Description — Free in 2026" src="https://www.youtube.com/embed/4BT10fPJAI8" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: "none" }} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
           </div>
           <div style={{ padding: "12px 16px", borderRadius: 10, background: surface, marginBottom: 40 }}>
             <p style={{ fontSize: 13, color: muted, margin: 0 }}>Watch: How to tailor a cover letter to any job description in under 30 minutes — free AI tool demo included.</p>
@@ -399,7 +397,7 @@ export default function Page() {
                 "Cover letter is under one page (250–350 words)",
               ].map((item, i) => (
                 <label key={i} style={{ display: "flex", alignItems: "flex-start", gap: 14, cursor: "pointer" }}>
-                  <input type="checkbox" data-score-item className="score-cb" style={{ marginTop: 3, accentColor: accent, width: 16, height: 16, flexShrink: 0 }} onChange={() => {}} />
+                  <input type="checkbox" data-score-item className="score-cb" style={{ marginTop: 3, accentColor: accent, width: 16, height: 16, flexShrink: 0 }} />
                   <span style={{ fontSize: 14, lineHeight: 1.6, color: text }}>{item}</span>
                 </label>
               ))}
@@ -630,6 +628,7 @@ export default function Page() {
           .blog-layout { grid-template-columns: 1fr !important; }
           aside { display: none !important; }
         }
+        .toc-link:hover { color: rgba(255,255,255,0.88) !important; border-left-color: #6366f1 !important; }
       `}</style>
     </div>
   );
