@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "cover-letter-generator-guide",
+        title: "The Best Free AI Cover Letter Generator (No Signup, No Limits)",
+        description: "Stop rewriting from scratch. ToolStack's free AI cover letter generator is powered by GPT-4o, has 4 tone modes, and requires no signup — unlimited uses, full letter in seconds. Compared vs Grammarly, Zety, Kickresume, and more.",
+        date: "May 21, 2026",
+        readTime: "10 min read",
+        tag: "Career Tools",
+        accent: "#6366f1",
+        accentBg: "rgba(99,102,241,0.08)",
+        accentBorder: "rgba(99,102,241,0.2)",
+        featured: true,
+    },
+    {
         slug: "website-down-checker",
         title: "Website Down Checker: How to Check, Get Alerted & Fix It (2026)",
         description: "Is your website down? Use a free website down checker to confirm in seconds, set up instant alerts with UptimeRobot, StatusCake, or Better Uptime, and follow the 60-minute action plan when things go wrong.",
