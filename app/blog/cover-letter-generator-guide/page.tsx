@@ -142,6 +142,13 @@ export default function BlogPost() {
                 </div>
             </div>
 
+            {/* Hero banner */}
+            <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px" }}>
+                <div style={{ margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                    <img src="/blog/cover-letter-generator-guide/hero-banner.png" alt="ToolStack Free AI Cover Letter Generator — write a tailored cover letter in seconds with GPT-4o" style={{ width: "100%", height: "auto", display: "block" }} />
+                </div>
+            </div>
+
             {/* Body */}
             <div style={{ maxWidth: 720, margin: "0 auto", padding: "48px 24px 120px" }}>
 
@@ -336,11 +343,6 @@ export default function BlogPost() {
                     <div style={{ margin: "8px 0 24px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
                         <img src="/blog/cover-letter-generator-guide/infographic-comparison.png" alt="Free AI Cover Letter Generators Compared 2026 — ToolStack vs Grammarly vs Zety vs Kickresume" style={{ width: "100%", display: "block" }} loading="lazy" />
                         <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>Free AI cover letter tools compared — save this</p>
-                    </div>
-
-                    {/* Hero banner */}
-                    <div style={{ margin: "0 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
-                        <img src="/blog/cover-letter-generator-guide/hero-banner.png" alt="ToolStack Free AI Cover Letter Generator — write a tailored cover letter in seconds with GPT-4o" style={{ width: "100%", height: "auto", display: "block" }} loading="lazy" />
                     </div>
 
                     {/* Pros / Cons */}
