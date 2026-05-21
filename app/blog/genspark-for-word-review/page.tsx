@@ -64,7 +64,7 @@ const accentBg = "rgba(124,58,237,0.07)";
 const accentBorder = "rgba(124,58,237,0.2)";
 const accentLight = "rgba(124,58,237,0.12)";
 
-const AFFILIATE_LINK = "https://bit.ly/gensparkjustin";
+const AFFILIATE_LINK = "https://bit.ly/gesparks";
 
 export default function BlogPost() {
     return (

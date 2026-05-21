@@ -62,7 +62,7 @@ const FAQS = [
 const accent = "#f97316";
 const accentBg = "rgba(249,115,22,0.06)";
 const accentBorder = "rgba(249,115,22,0.18)";
-const AFFILIATE_LINK = "RANKSPOT_AFFILIATE_LINK_HERE";
+const AFFILIATE_LINK = "https://bit.ly/4fzbNmc";
 
 export default function BlogPost() {
     return (
@@ -644,7 +644,7 @@ export default function BlogPost() {
 
                     <div style={{ display: "flex", flexDirection: "column", gap: 0, marginBottom: 40 }}>
                         {[
-                            { day: "Day 1", title: "Sign up and generate your 3 free articles", body: "Go to rankspot.ai, add your website URL. RankSpot will scan your site and propose the first 3 article topics based on your niche. Review and approve — pick keywords in a topic you already know to help evaluate output quality. No credit card needed." },
+                            { day: "Day 1", title: "Sign up and generate your 3 free articles", body: (<>Go to <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer" style={{ color: accent, textDecoration: "underline" }}>rankspot.ai</a>, add your website URL. RankSpot will scan your site and propose the first 3 article topics based on your niche. Review and approve — pick keywords in a topic you already know to help evaluate output quality. No credit card needed.</>) },
                             { day: "Day 2", title: "Add your top 2–5 competitor URLs", body: "Add your highest-ranking competitors in the settings. RankSpot will immediately start tracking their keywords. Within 24 hours it surfaces their best-performing search terms as article candidates — prioritize these as your first batch." },
                             { day: "Day 3", title: "Review your 30-day content plan", body: "Read the content calendar it proposes. Look for quick wins — low-competition keywords you haven&apos;t covered yet and topics where existing SERP results are thin forum threads or outdated articles. Approve the plan or swap in your preferred topics." },
                             { day: "Day 4–5", title: "Connect your CMS and enable the review queue", body: "Connect WordPress, Framer, Ghost, or whichever platform you use. Enable the review queue so articles land in drafts before going live — this gives you a chance to add custom screenshots and adjust tone before each article publishes." },

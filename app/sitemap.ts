@@ -261,6 +261,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${base}/blog/cover-letter-generator-guide`,
+      lastModified: "2026-05-21",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${base}/tools/credit-card-rewards-optimizer`,
       lastModified: "2026-05-18",
       changeFrequency: "monthly",
