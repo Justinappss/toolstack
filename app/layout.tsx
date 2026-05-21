@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable}>
       <head>
         <meta name="fo-verify" content="495a7eb7-eb12-4f76-b34f-83f0579e9492" />
-        <meta name="impact-site-verification" value="31285788-f25c-4c44-ba40-e02d7962a5ff" />
+        <meta name="impact-site-verification" {...({ value: "2d586c3c-7af3-44d6-b4ac-a2b803df18fe" } as any)} />
         {/* Preconnect to third-party origins for faster resource loading */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
