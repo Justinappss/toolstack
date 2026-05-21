@@ -147,41 +147,45 @@ export default function Page() {
   return (
     <div style={{ background: bg, minHeight: "100vh", color: text, fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
 
-      {/* ── Banner placeholder — replace with <Image> when asset is ready ── */}
-      <div style={{ width: "100%", height: 380, background: surface, borderBottom: `1px solid ${border}` }} />
-
       {/* ── Hero ── */}
-      <div style={{ maxWidth: 760, margin: "0 auto", padding: "48px 24px 0" }}>
+      <div style={{ position: "relative", overflow: "hidden", paddingTop: 120, paddingBottom: 48, borderBottom: `1px solid ${border}` }}>
+        <div style={{ position: "absolute", top: "20%", left: "50%", transform: "translateX(-50%)", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(99,102,241,0.07) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
 
-        {/* Breadcrumb */}
-        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 24 }}>
-          <Link href="/blog" style={{ fontSize: 12, color: muted, textDecoration: "none", letterSpacing: "0.02em" }}>Blog</Link>
-          <span style={{ color: border, fontSize: 12 }}>/</span>
-          <span style={{ fontSize: 12, color: accent, fontWeight: 600, letterSpacing: "0.02em" }}>Career &amp; Job Search</span>
+        <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 24px" }}>
+
+          {/* Breadcrumb */}
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 24 }}>
+            <Link href="/blog" style={{ fontSize: 12, color: muted, textDecoration: "none", letterSpacing: "0.02em" }}>Blog</Link>
+            <span style={{ color: border, fontSize: 12 }}>/</span>
+            <span style={{ fontSize: 12, color: accent, fontWeight: 600, letterSpacing: "0.02em" }}>Career &amp; Job Search</span>
+          </div>
+
+          {/* Category badge */}
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 999, border: `1px solid ${accentBorder}`, background: accentDim }}>Career Tools</span>
+            <span style={{ fontSize: 13, color: muted }}>May 21, 2026 · 9 min read</span>
+          </div>
+
+          {/* H1 */}
+          <h1 style={{ fontSize: "clamp(30px, 4.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: 24, color: "white" }}>
+            How to Tailor a Cover Letter to a Job Description Fast — Free in 2026
+          </h1>
+
+          {/* Author info */}
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 0 }}>
+            <div style={{ width: 44, height: 44, borderRadius: "50%", background: accentDim, border: `2px solid ${accentBorder}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, fontWeight: 900, color: accent, flexShrink: 0 }}>JP</div>
+            <div>
+              <p style={{ fontSize: 14, fontWeight: 600, color: "white", margin: 0 }}>Justin Pirrie</p>
+              <p style={{ fontSize: 12, color: muted, margin: 0 }}>Founder, ToolStack · May 21, 2026</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        {/* H1 */}
-        <h1 style={{ fontSize: "clamp(30px, 4.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: 22, color: "white" }}>
-          How to Tailor a Cover Letter to a Job Description Fast — Free in 2026
-        </h1>
-
-        {/* Subtitle */}
-        <p style={{ fontSize: 19, color: muted, lineHeight: 1.65, marginBottom: 32, fontWeight: 400 }}>
-          Most cover letters never get read. Tailored ones get 53% more callbacks. The exact 5-step method — and a free AI tool to do it in under 30 minutes.
-        </p>
-
-        {/* Meta */}
-        <div style={{ display: "flex", alignItems: "center", gap: 0, paddingBottom: 40, borderBottom: `1px solid ${border}`, flexWrap: "wrap" }}>
-          <span style={{ fontSize: 13, color: muted }}>By <strong style={{ color: text, fontWeight: 700 }}>Justin Pirrie</strong></span>
-          <span style={{ margin: "0 14px", color: border }}>·</span>
-          <span style={{ fontSize: 13, color: muted }}>May 21, 2026</span>
-          <span style={{ margin: "0 14px", color: border }}>·</span>
-          <span style={{ fontSize: 13, color: muted }}>9 min read</span>
-          <span style={{ margin: "0 14px", color: border }}>·</span>
-          <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13 }}>
-            <span style={{ width: 7, height: 7, borderRadius: "50%", background: green, display: "inline-block" }} />
-            <span style={{ color: green, fontWeight: 600 }}>Updated 2026</span>
-          </span>
+      {/* ── Hero banner ── */}
+      <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px" }}>
+        <div style={{ margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: `1px solid ${border}`, boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+          <img src="/blog/how-to-tailor-cover-letter-to-job-description/hero-banner.png" alt="How to Tailor a Cover Letter to a Job Description Fast — Free in 2026 | ToolStack" style={{ width: "100%", height: "auto", display: "block" }} />
         </div>
       </div>
 

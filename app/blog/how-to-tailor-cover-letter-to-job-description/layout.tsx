@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "ToolStack",
       images: [
         {
-          url: "https://toolstack.tech/blog/thumbnail-cover-letter.png",
+          url: "https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description/hero-banner.png",
           width: 1200,
           height: 630,
         },
@@ -42,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "How to Tailor a Cover Letter to Any Job in 30 Minutes — Free",
       description:
         "Tailored cover letters get 53% more callbacks. Free 5-step guide + AI tool, no account needed.",
-      images: ["https://toolstack.tech/blog/thumbnail-cover-letter.png"],
+      images: ["https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description/hero-banner.png"],
     },
   };
 }
@@ -71,7 +71,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         url: "https://toolstack.tech/favicon.png",
       },
     },
-    image: "https://toolstack.tech/blog/thumbnail-cover-letter.png",
+    image: "https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description/hero-banner.png",
     mainEntityOfPage:
       "https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description",
   };
@@ -193,7 +193,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     "@type": "VideoObject",
     "name": "How to Tailor a Cover Letter to Any Job Description (Free — 27 Minutes)",
     "description": "The exact 5-step method to tailor any cover letter to a job description in under 30 minutes — free AI tool included, no login required.",
-    "thumbnailUrl": "https://toolstack.tech/blog/thumbnail-cover-letter.png",
+    "thumbnailUrl": "https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description/hero-banner.png",
     "uploadDate": "2026-05-21",
     "embedUrl": "https://www.youtube.com/embed/4BT10fPJAI8",
     "url": "https://youtu.be/4BT10fPJAI8",
