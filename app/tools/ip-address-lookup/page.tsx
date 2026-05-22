@@ -15,18 +15,32 @@ const FAQS = [
 
 interface IpData {
     ip: string;
+    version: string;
     city: string;
     region: string;
     country_name: string;
     country_code: string;
-    org: string;
+    asn: string | null;
+    org: string | null;
     timezone: string;
     latitude: number | null;
     longitude: number | null;
     hostname: string | null;
     currency: string | null;
     languages: string | null;
+    in_eu: boolean;
     is_local: boolean;
+}
+
+const DATACENTER_KEYWORDS = ["amazon", "aws", "google", "microsoft", "azure", "digitalocean", "cloudflare", "linode", "akamai", "vultr", "ovh", "hetzner", "leaseweb", "fastly", "oracle cloud", "ibm cloud", "rackspace"];
+const VPN_KEYWORDS = ["nordvpn", "expressvpn", "mullvad", "protonvpn", "surfshark", "private internet", "pia vpn", "ipvanish", "cyberghost", "purevpn", "windscribe"];
+
+function getNetworkType(org: string | null): { label: string; color: string } | null {
+    if (!org) return null;
+    const lower = org.toLowerCase();
+    if (VPN_KEYWORDS.some(k => lower.includes(k))) return { label: "VPN Provider", color: "#f59e0b" };
+    if (DATACENTER_KEYWORDS.some(k => lower.includes(k))) return { label: "Datacenter IP", color: "#f87171" };
+    return { label: "Residential / ISP", color: "#34d399" };
 }
 
 const FLAG_URL = (code: string) => `https://flagcdn.com/32x24/${code.toLowerCase()}.png`;
@@ -154,14 +168,7 @@ export default function IpLookupPage() {
                     )}
                     {myData && (
                         <>
-                            <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 24, flexWrap: "wrap" }}>
-                                <div style={{ fontSize: "clamp(28px, 5vw, 42px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", fontFamily: "monospace" }}>
-                                    {myData.ip}
-                                </div>
-                                {myData.country_code && (
-                                    <img src={FLAG_URL(myData.country_code)} alt={myData.country_name} style={{ height: 24, borderRadius: 3 }} />
-                                )}
-                            </div>
+                            <IpHeader data={myData} />
                             <IpDetails data={myData} />
                         </>
                     )}
@@ -203,12 +210,7 @@ export default function IpLookupPage() {
                     )}
                     {lookupData && (
                         <div style={{ marginTop: 20 }}>
-                            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16, flexWrap: "wrap" }}>
-                                <span style={{ fontSize: 22, fontWeight: 900, color: "white", fontFamily: "monospace" }}>{lookupData.ip}</span>
-                                {lookupData.country_code && (
-                                    <img src={FLAG_URL(lookupData.country_code)} alt={lookupData.country_name} style={{ height: 20, borderRadius: 3 }} />
-                                )}
-                            </div>
+                            <IpHeader data={lookupData} compact />
                             <IpDetails data={lookupData} />
                         </div>
                     )}
@@ -287,6 +289,17 @@ export default function IpLookupPage() {
                   </div>
                 </section>
 
+                {/* Blog CTA */}
+                <div style={{ marginBottom: 40, padding: "24px 28px", background: "rgba(99,102,241,0.06)", border: "1px solid rgba(99,102,241,0.2)", borderRadius: 16, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+                    <div>
+                        <p style={{ fontSize: 14, fontWeight: 700, color: "white", margin: "0 0 4px" }}>Want to understand everything this tool shows?</p>
+                        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", margin: 0 }}>Read the complete guide — use cases, accuracy breakdown, common mistakes.</p>
+                    </div>
+                    <a href="/blog/how-to-use-ip-address-lookup" style={{ flexShrink: 0, padding: "10px 20px", borderRadius: 10, background: "linear-gradient(135deg, #6366f1, #818cf8)", color: "white", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>
+                        Read the Guide →
+                    </a>
+                </div>
+
                 <MoreTools currentSlug="ip-address-lookup" />
                 
             </div>
@@ -294,14 +307,59 @@ export default function IpLookupPage() {
     );
 }
 
+function IpHeader({ data, compact }: { data: IpData; compact?: boolean }) {
+    const networkType = getNetworkType(data.org);
+    return (
+        <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 20, flexWrap: "wrap" }}>
+            <div style={{ fontSize: compact ? "clamp(20px,3vw,28px)" : "clamp(28px,5vw,42px)", fontWeight: 900, color: "white", letterSpacing: "-0.02em", fontFamily: "monospace" }}>
+                {data.ip}
+            </div>
+            {data.country_code && (
+                <img src={FLAG_URL(data.country_code)} alt={data.country_name} style={{ height: compact ? 18 : 24, borderRadius: 3 }} />
+            )}
+            <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999, background: "rgba(129,140,248,0.15)", border: "1px solid rgba(129,140,248,0.3)", color: "#818cf8" }}>
+                {data.version ?? "IPv4"}
+            </span>
+            {networkType && (
+                <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999, background: `${networkType.color}18`, border: `1px solid ${networkType.color}40`, color: networkType.color }}>
+                    {networkType.label}
+                </span>
+            )}
+            {data.in_eu && (
+                <span style={{ fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999, background: "rgba(96,165,250,0.12)", border: "1px solid rgba(96,165,250,0.3)", color: "#60a5fa" }}>
+                    🇪🇺 EU
+                </span>
+            )}
+            <CopyButton text={data.ip} />
+        </div>
+    );
+}
+
+function CopyButton({ text }: { text: string }) {
+    const [copied, setCopied] = useState(false);
+    const copy = () => {
+        navigator.clipboard.writeText(text).then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        });
+    };
+    return (
+        <button onClick={copy} style={{ padding: "4px 12px", borderRadius: 8, border: "1px solid rgba(255,255,255,0.12)", background: copied ? "rgba(52,211,153,0.15)" : "rgba(255,255,255,0.05)", color: copied ? "#34d399" : "rgba(255,255,255,0.5)", fontSize: 12, fontWeight: 600, cursor: "pointer" }}>
+            {copied ? "✓ Copied" : "Copy IP"}
+        </button>
+    );
+}
+
 function IpDetails({ data }: { data: IpData }) {
     const fields = [
         { label: "Location", value: [data.city, data.region, data.country_name].filter(Boolean).join(", ") || "Unknown" },
-        { label: "ISP / Organisation", value: data.org ?? "Unknown" },
+        { label: "Organisation", value: data.org ?? "Unknown" },
+        { label: "ASN", value: data.asn ?? "Not available" },
         { label: "Timezone", value: data.timezone ?? "Unknown" },
         { label: "Hostname", value: data.hostname ?? "Not available" },
         { label: "Coordinates", value: data.latitude != null && data.longitude != null ? `${data.latitude}, ${data.longitude}` : "Not available" },
         { label: "Currency", value: data.currency ?? "Not available" },
+        { label: "Languages", value: data.languages ? data.languages.split(",").slice(0, 3).join(", ") : "Not available" },
     ];
 
     return (
