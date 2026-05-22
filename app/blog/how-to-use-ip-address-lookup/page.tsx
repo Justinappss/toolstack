@@ -173,48 +173,46 @@ export default function Page() {
         @media (max-width: 900px) { .layout-grid { flex-direction: column !important; } .sidebar { display: none !important; } .mistake-row { grid-template-columns: 1fr !important; } }
       `}</style>
 
-      {/* Banner placeholder */}
-      <div style={{ width: "100%", height: 380, background: "linear-gradient(135deg, #0a0b0f 0%, #0d1117 50%, #091418 100%)", borderBottom: "1px solid rgba(6,182,212,0.15)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <p style={{ color: "rgba(255,255,255,0.15)", fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase" }}>Hero Banner Coming Soon</p>
+      {/* ── Hero ── */}
+      <div style={{ position: "relative", overflow: "hidden", paddingTop: 120, paddingBottom: 48, borderBottom: `1px solid ${accentBorder}` }}>
+        <div style={{ position: "absolute", top: "20%", left: "50%", transform: "translateX(-50%)", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
+
+        <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 24px" }}>
+
+          {/* Breadcrumb */}
+          <nav style={{ display: "flex", gap: 8, alignItems: "center", fontSize: 13, color: muted, marginBottom: 20 }}>
+            <Link href="/" style={{ color: muted, textDecoration: "none" }}>Home</Link>
+            <span>/</span>
+            <Link href="/blog" style={{ color: muted, textDecoration: "none" }}>Blog</Link>
+            <span>/</span>
+            <span style={{ color: accent }}>IP Address Lookup Guide</span>
+          </nav>
+
+          {/* Category + date */}
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.08em", textTransform: "uppercase", padding: "4px 10px", borderRadius: 999, border: `1px solid ${accentBorder}`, background: accentDim }}>Security & Networking</span>
+            <span style={{ fontSize: 13, color: muted }}>May 22, 2026 · 8 min read</span>
+          </div>
+
+          <h1 style={{ fontSize: "clamp(30px, 4.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: 24, color: "white" }}>
+            How to Use an IP Address Lookup Tool — Complete Guide 2026
+          </h1>
+
+          {/* Author */}
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 0 }}>
+            <Image src="/blog/how-to-use-ip-address-lookup/author-avatar.jpg" alt="Justin Pirrie" width={44} height={44} style={{ width: 44, height: 44, borderRadius: "50%", objectFit: "cover", border: `2px solid ${accentBorder}`, flexShrink: 0 }} />
+            <div>
+              <p style={{ fontSize: 14, fontWeight: 600, color: "white", margin: 0 }}>Justin Pirrie</p>
+              <p style={{ fontSize: 12, color: muted, margin: 0 }}>Founder, ToolStack · May 22, 2026</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Hero content */}
-      <div style={{ maxWidth: 760, margin: "0 auto", padding: "40px 24px 0" }}>
-        {/* Breadcrumb */}
-        <nav style={{ display: "flex", gap: 8, alignItems: "center", fontSize: 13, color: muted, marginBottom: 24 }}>
-          <Link href="/" style={{ color: muted, textDecoration: "none" }}>Home</Link>
-          <span>/</span>
-          <Link href="/blog" style={{ color: muted, textDecoration: "none" }}>Blog</Link>
-          <span>/</span>
-          <span style={{ color: accent }}>IP Address Lookup Guide</span>
-        </nav>
-
-        {/* Tag */}
-        <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: accentDim, border: `1px solid ${accentBorder}`, borderRadius: 20, padding: "4px 12px", fontSize: 12, fontWeight: 600, color: accent, marginBottom: 20, letterSpacing: "0.05em", textTransform: "uppercase" }}>
-          Security & Networking
-        </div>
-
-        <h1 style={{ fontSize: "clamp(30px, 4.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.08, marginBottom: 20, color: "white" }}>
-          How to Use an IP Address Lookup Tool — Complete Guide 2026
-        </h1>
-
-        <p style={{ fontSize: 19, color: "rgba(255,255,255,0.72)", lineHeight: 1.65, marginBottom: 28 }}>
-          Your IP address reveals more than you think — geolocation, ISP, VPN status, and whether you're a bot. Here's exactly how to read all of it, and what to do with the information.
-        </p>
-
-        {/* Meta bar */}
-        <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
-          <Image src="/blog/how-to-use-ip-address-lookup/author-avatar.jpg" alt="Justin Pirrie" width={40} height={40} style={{ width: 40, height: 40, borderRadius: "50%", objectFit: "cover", border: `2px solid ${accentBorder}`, flexShrink: 0 }} />
-          <span style={{ fontSize: 14, fontWeight: 600, color: "white" }}>Justin Pirrie</span>
-          <span style={{ color: muted, fontSize: 13 }}>·</span>
-          <span style={{ fontSize: 13, color: muted }}>May 22, 2026</span>
-          <span style={{ color: muted, fontSize: 13 }}>·</span>
-          <span style={{ fontSize: 13, color: muted }}>8 min read</span>
-          <span style={{ color: muted, fontSize: 13 }}>·</span>
-          <span style={{ display: "inline-flex", alignItems: "center", gap: 5, fontSize: 12, fontWeight: 600, color: "#22c55e", background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.2)", borderRadius: 20, padding: "3px 10px" }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#22c55e", display: "inline-block" }} />
-            Updated 2026
-          </span>
+      {/* ── Hero Banner ── */}
+      <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px" }}>
+        <div style={{ margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: `1px solid ${accentBorder}`, boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+          <img src="/blog/how-to-use-ip-address-lookup/hero-banner.png" alt="How to Use an IP Address Lookup Tool — Complete Guide 2026 | ToolStack" style={{ width: "100%", height: "auto", display: "block" }} />
         </div>
       </div>
 
