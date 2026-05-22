@@ -117,6 +117,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "panini-sticker-calculator",
       "pack-break-ev-calculator",
       "world-cup-accumulator-calculator",
+      "world-cup-team-finder",
+      "youtube-video-downloader",
+      "youtube-thumbnail-downloader",
     ].map(slug => ({
       url: `${base}/tools/${slug}`,
       lastModified: DATES.niche_tools,
@@ -283,6 +286,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: "2026-05-18",
       changeFrequency: "monthly",
       priority: 0.95,
+    },
+    {
+      url: `${base}/blog/free-meta-description-generator`,
+      lastModified: "2026-05-22",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${base}/blog/website-down-checker`,
+      lastModified: "2026-05-22",
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
     // === Static pages ===
     {

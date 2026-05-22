@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-static";
 
 import { useState, useMemo } from "react";
 import { Copy, Check, Eye, Palette } from "lucide-react";

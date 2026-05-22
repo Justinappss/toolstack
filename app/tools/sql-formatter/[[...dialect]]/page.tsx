@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-static";
 
 import React, { useState, useCallback, useEffect } from "react";
 import { Download, Copy, Check, Trash2, Database, Settings } from "lucide-react";

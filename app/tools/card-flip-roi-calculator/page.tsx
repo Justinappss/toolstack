@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-static";
 import { useState, useCallback } from "react";
 import { MoreTools } from "@/components/MoreTools";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";

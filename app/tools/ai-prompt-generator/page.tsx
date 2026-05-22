@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-static";
 
 import { useState, useEffect, useRef } from "react";
 import { Sparkles, Copy, Check, RefreshCw, Zap, Star, Download, ExternalLink, ChevronRight, Search, Code2, BarChart3, FileText, Briefcase, MessageSquare, GraduationCap, Megaphone, Lightbulb, FlaskConical } from "lucide-react";

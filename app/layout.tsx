@@ -12,8 +12,8 @@ import { SmartPasteListener } from "@/components/SmartPasteListener";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: { default: "ToolStack — Free AI & Utility Tools", template: "%s | ToolStack" },
-  description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+  title: { default: "ToolStack — 60+ Free Tools for Developers & Marketers", template: "%s | ToolStack" },
+  description: "60+ completely free tools for developers, marketers & creators. No paywall, no signup, no limits. JSON formatter, password generator, UTM builder & more.",
   keywords: ["free online tools", "ai tools", "utility tools", "prompt generator", "word counter", "seo tools"],
   metadataBase: new URL("https://toolstack.tech"),
   manifest: "/manifest.json",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "ToolStack",
-    title: "ToolStack — Free AI & Utility Tools",
-    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+    title: "ToolStack — 60+ Free Tools for Developers & Marketers",
+    description: "60+ completely free tools for developers, marketers & creators. No paywall, no signup, no limits. JSON formatter, password generator, UTM builder & more.",
     images: [
       {
         url: "https://toolstack.tech/og-image.png",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ToolStack — Free AI & Utility Tools",
-    description: "Access 57+ premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+    title: "ToolStack — 60+ Free Tools for Developers & Marketers",
+    description: "60+ completely free tools for developers, marketers & creators. No paywall, no signup, no limits. JSON formatter, password generator, UTM builder & more.",
     images: ["https://toolstack.tech/og-image.png"],
   },
   robots: { index: true, follow: true },

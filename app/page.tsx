@@ -5,12 +5,12 @@ import ShaderBanner from "@/components/ui/ShaderBanner";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "ToolStack — Free AI & Utility Tools for Writers, Marketers & Developers",
-    description: "Access 60 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+    title: "ToolStack — 60+ Free Tools for Developers & Marketers",
+    description: "60+ completely free tools for developers, marketers & creators. No paywall, no signup, no limits. JSON formatter, password generator, UTM builder & more.",
     alternates: { canonical: "https://toolstack.tech" },
     openGraph: {
-        title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 60 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        title: "ToolStack — 60+ Free Tools for Developers & Marketers",
+        description: "60+ completely free tools for developers, marketers & creators. No paywall, no signup, no limits. JSON formatter, password generator, UTM builder & more.",
         url: "https://toolstack.tech",
         siteName: "ToolStack",
         type: "website",
@@ -23,10 +23,10 @@ export const metadata: Metadata = {
             },
         ],
     },
-    twitter: { 
+    twitter: {
         card: "summary_large_image",
-        title: "ToolStack — Free AI & Utility Tools",
-        description: "Access 60 premium, completely free utility tools for developers, marketers, and creators. No paywalls and no forced sign-ups. Experience the frictionless arsenal.",
+        title: "ToolStack — 60+ Free Tools for Developers & Marketers",
+        description: "60+ completely free tools for developers, marketers & creators. No paywall, no signup, no limits. JSON formatter, password generator, UTM builder & more.",
         images: ["https://toolstack.tech/og-image.png"],
     },
 };
