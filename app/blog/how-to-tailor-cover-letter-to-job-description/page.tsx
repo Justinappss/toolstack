@@ -173,7 +173,7 @@ export default function Page() {
 
           {/* Author info */}
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 0 }}>
-            <div style={{ width: 44, height: 44, borderRadius: "50%", background: accentDim, border: `2px solid ${accentBorder}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, fontWeight: 900, color: accent, flexShrink: 0 }}>JP</div>
+            <Image src="/blog/how-to-tailor-cover-letter-to-job-description/author-avatar.jpg" alt="Justin Pirrie" width={44} height={44} style={{ width: 44, height: 44, borderRadius: "50%", objectFit: "cover", border: `2px solid ${accentBorder}`, flexShrink: 0 }} />
             <div>
               <p style={{ fontSize: 14, fontWeight: 600, color: "white", margin: 0 }}>Justin Pirrie</p>
               <p style={{ fontSize: 12, color: muted, margin: 0 }}>Founder, ToolStack · May 21, 2026</p>
