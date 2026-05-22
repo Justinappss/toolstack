@@ -273,6 +273,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${base}/blog/how-to-use-ip-address-lookup`,
+      lastModified: "2026-05-22",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${base}/tools/credit-card-rewards-optimizer`,
       lastModified: "2026-05-18",
       changeFrequency: "monthly",

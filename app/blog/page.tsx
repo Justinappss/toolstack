@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "how-to-use-ip-address-lookup",
+        title: "How to Use an IP Address Lookup Tool — Complete Guide 2026",
+        description: "Your IP address reveals geolocation, ISP, VPN status, and whether traffic is a bot. Here's exactly how to read all of it — free tool included, no signup needed.",
+        date: "May 22, 2026",
+        readTime: "8 min read",
+        tag: "Security & Networking",
+        accent: "#06b6d4",
+        accentBg: "rgba(6,182,212,0.08)",
+        accentBorder: "rgba(6,182,212,0.2)",
+        featured: true,
+    },
+    {
         slug: "how-to-tailor-cover-letter-to-job-description",
         title: "How to Tailor a Cover Letter to a Job Description Fast — Free in 2026",
         description: "Tailored cover letters get 53% more callbacks and make you 1.9× more likely to land interviews. Here is the exact 5-step method — plus a free AI tool to cut the work to under 30 minutes, no signup required.",
