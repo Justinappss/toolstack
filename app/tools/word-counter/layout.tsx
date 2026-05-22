@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Free Word Counter & Readability Checker — Flesch Score",
-  description: "Count words, characters, sentences, and paragraphs in real time. Get a Flesch readability score and estimated reading time. Free, no signup.",
+  description: "How readable is your writing? Free word counter with live Flesch readability score, reading time, keyword density, and sentence count. No signup, instant results.",
   keywords: [
     "word counter",
     "word counter online",

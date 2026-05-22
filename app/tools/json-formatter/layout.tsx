@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'JSON Formatter | Free Format Minify & Validate JSON — ToolStack',
-    description: 'Format, minify, and validate JSON instantly with syntax highlighting. No signup, no limits, works in your browser.',
+    description: 'Need to format or validate JSON fast? Free JSON formatter that beautifies, minifies, and validates JSON instantly in your browser — syntax highlighting, tree view, no signup.',
     keywords: ['JSON formatter', 'JSON validator', 'format JSON', 'minify JSON', 'JSON syntax checker', 'online JSON formatter'],
     alternates: { canonical: 'https://toolstack.tech/tools/json-formatter' },
     openGraph: {
       type: 'website',
       title: 'JSON Formatter | Free Format Minify & Validate JSON — ToolStack',
-      description: 'Format, minify, and validate JSON instantly with syntax highlighting.',
+      description: 'Free JSON formatter — beautify, minify, and validate JSON instantly. Syntax highlighting, tree view, no signup.',
       url: 'https://toolstack.tech/tools/json-formatter',
       siteName: 'ToolStack',
     },

@@ -299,6 +299,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: `${base}/blog/google-ai-search-redesign-2026`,
+      lastModified: "2026-05-22",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     // === Static pages ===
     {
       url: `${base}/about`,

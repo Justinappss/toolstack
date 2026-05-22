@@ -113,6 +113,7 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 - https://toolstack.tech/blog/email-subject-line-tester-guide/index.md
 - https://toolstack.tech/blog/essential-free-developer-tools/index.md
 - https://toolstack.tech/blog/free-meta-description-generator/index.md
+- https://toolstack.tech/blog/google-ai-search-redesign-2026/index.md
 - https://toolstack.tech/blog/genspark-for-word-review/index.md
 - https://toolstack.tech/blog/hashtag-generator-guide/index.md
 - https://toolstack.tech/blog/how-to-create-pdf-free/index.md

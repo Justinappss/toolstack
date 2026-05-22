@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "UTM Campaign Builder — Marketing Link Generator",
   description:
-    "Free online UTM builder. Instantly generate perfectly formatted campaign tracking URLs with UTM parameters for Google Analytics, Meta Ads, and more.",
+    "How do you build UTM tracking links for GA4? Free UTM builder with real-time preview — generate perfectly formatted campaign URLs for Google Analytics, Meta Ads, and email in seconds.",
   keywords: [
     "utm builder",
     "utm generator",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "UTM Campaign Builder — Marketing Link Generator",
     description:
-      "Free online UTM builder. Instantly generate perfectly formatted campaign tracking URLs with UTM parameters for Google Analytics, Meta Ads, and more.",
+      "Free UTM builder with real-time preview — generate GA4-compatible campaign tracking URLs for Google Analytics, Meta Ads, and email in seconds.",
     url: "https://toolstack.tech/tools/utm-builder",
     siteName: "ToolStack",
     type: "website",
