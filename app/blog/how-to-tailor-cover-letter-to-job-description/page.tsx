@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const accent = "#6366f1";
@@ -584,7 +585,7 @@ export default function Page() {
 
           {/* Author Bio */}
           <div style={{ padding: "24px 26px", borderRadius: 16, background: surface, border: `1px solid ${border}`, display: "flex", gap: 20, alignItems: "flex-start", marginBottom: 56 }}>
-            <div style={{ width: 56, height: 56, borderRadius: "50%", background: accentDim, border: `2px solid ${accentBorder}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, fontWeight: 900, color: accent, flexShrink: 0 }}>JP</div>
+            <Image src="/blog/how-to-tailor-cover-letter-to-job-description/author-avatar.jpg" alt="Justin Pirrie" width={56} height={56} style={{ width: 56, height: 56, borderRadius: "50%", objectFit: "cover", border: `2px solid ${accentBorder}`, flexShrink: 0 }} />
             <div>
               <p style={{ fontSize: 15, fontWeight: 800, color: "white", margin: "0 0 4px" }}>Justin Pirrie</p>
               <p style={{ fontSize: 12, color: accent, margin: "0 0 10px" }}>Founder, ToolStack · Digital Growth Strategist at <a href="https://advertsgpt.com" target="_blank" rel="noopener noreferrer" style={{ color: accent }}>AdvertsGPT</a></p>
