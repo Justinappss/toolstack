@@ -103,26 +103,44 @@ ToolStack was built as a direct response to the modern web's over-monetisation o
 Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /index.md to any page URL to get clean content without navigation, scripts, or layout chrome. Served as text/plain.
 
 ### Blog Post Mirrors
+- https://toolstack.tech/blog/ai-prompt-generator-guide/index.md
 - https://toolstack.tech/blog/ai-writing-tools-ultimate-guide/index.md
+- https://toolstack.tech/blog/aweber-review/index.md
 - https://toolstack.tech/blog/best-ai-tools-for-optimizing-product-visibility/index.md
+- https://toolstack.tech/blog/best-free-online-tools-2026/index.md
 - https://toolstack.tech/blog/complete-guide-to-free-seo-tools/index.md
+- https://toolstack.tech/blog/cover-letter-generator-guide/index.md
+- https://toolstack.tech/blog/email-subject-line-tester-guide/index.md
 - https://toolstack.tech/blog/essential-free-developer-tools/index.md
+- https://toolstack.tech/blog/free-meta-description-generator/index.md
+- https://toolstack.tech/blog/genspark-for-word-review/index.md
+- https://toolstack.tech/blog/hashtag-generator-guide/index.md
 - https://toolstack.tech/blog/how-to-create-pdf-free/index.md
 - https://toolstack.tech/blog/how-to-generate-qr-code-wifi/index.md
+- https://toolstack.tech/blog/how-to-improve-developer-productivity/index.md
+- https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description/index.md
+- https://toolstack.tech/blog/how-to-use-ip-address-lookup/index.md
 - https://toolstack.tech/blog/how-to-write-cold-email-subject-lines/index.md
 - https://toolstack.tech/blog/is-it-down-or-just-me/index.md
 - https://toolstack.tech/blog/json-formatting-guide-for-developers/index.md
 - https://toolstack.tech/blog/mastering-json-visual-guide/index.md
+- https://toolstack.tech/blog/password-generator-guide/index.md
 - https://toolstack.tech/blog/perfect-meta-description-anatomy/index.md
+- https://toolstack.tech/blog/postiz-review/index.md
+- https://toolstack.tech/blog/rankspot-review/index.md
 - https://toolstack.tech/blog/regex-cheat-sheet-beginners/index.md
 - https://toolstack.tech/blog/ssl-certificate-checker-guide/index.md
 - https://toolstack.tech/blog/understanding-case-sensitivity/index.md
+- https://toolstack.tech/blog/utm-builder-guide/index.md
+- https://toolstack.tech/blog/website-down-checker/index.md
 - https://toolstack.tech/blog/what-are-productivity-tools/index.md
 - https://toolstack.tech/blog/what-are-utm-parameters/index.md
 - https://toolstack.tech/blog/what-is-a-jwt-token/index.md
+- https://toolstack.tech/blog/what-is-a-uuid/index.md
 - https://toolstack.tech/blog/what-is-base64-encoding/index.md
 - https://toolstack.tech/blog/what-is-my-ip-address/index.md
 - https://toolstack.tech/blog/why-every-ai-tool-has-a-paywall-problem/index.md
+- https://toolstack.tech/blog/word-count-checker-guide/index.md
 
 ### Tool Page Mirrors
 - https://toolstack.tech/tools/age-calculator/index.md
