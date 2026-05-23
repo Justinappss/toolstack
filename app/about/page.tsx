@@ -4,7 +4,7 @@ import { Zap, Sparkles, Shield, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "About ToolStack — Free Tools for Writers, Marketers & Developers",
-    description: "ToolStack is a free collection of 36+ AI and utility tools for writers, marketers, and developers. No signup, no paywalls, instant results.",
+    description: "ToolStack is a free collection of 60+ AI and utility tools for writers, marketers, and developers. No signup, no paywalls, instant results.",
     alternates: { canonical: "https://toolstack.tech/about" },
     openGraph: {
         title: "About ToolStack",
