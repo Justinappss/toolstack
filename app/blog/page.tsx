@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "google-ai-search-redesign-2026",
+        title: "Google's New AI Search Bar: What It Means for Your Website Traffic (2026)",
+        description: "Google redesigned its search bar for the first time in 25 years at I/O 2026. Here's exactly what changed, what happened to the blue links, and how to keep your traffic.",
+        date: "May 22, 2026",
+        readTime: "10 min read",
+        tag: "SEO",
+        accent: "#6366f1",
+        accentBg: "rgba(99,102,241,0.08)",
+        accentBorder: "rgba(99,102,241,0.2)",
+        featured: true,
+    },
+    {
         slug: "how-to-use-ip-address-lookup",
         title: "How to Use an IP Address Lookup Tool — Complete Guide 2026",
         description: "Your IP address reveals geolocation, ISP, VPN status, and whether traffic is a bot. Here's exactly how to read all of it — free tool included, no signup needed.",
