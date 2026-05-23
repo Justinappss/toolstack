@@ -121,7 +121,7 @@ export default function TermsPage() {
 
                     <div style={{ marginBottom: 0 }}>
                         <h2 style={H2}>10. Contact</h2>
-                        <p style={{ ...P, margin: 0 }}>Questions about these Terms? Contact us at <a href="mailto:hello@toolstack.tech" style={{ color: "#818cf8" }}>hello@toolstack.tech</a>.</p>
+                        <p style={{ ...P, margin: 0 }}>Questions about these Terms? Contact us at <a href="mailto:justinmakemoneyonline@gmail.com" style={{ color: "#818cf8" }}>justinmakemoneyonline@gmail.com</a>.</p>
                     </div>
 
                 </div>

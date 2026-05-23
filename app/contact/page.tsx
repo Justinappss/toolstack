@@ -106,7 +106,7 @@ export default function ContactPage() {
                                 <input
                                     type="email"
                                     required
-                                    placeholder="jane@example.com"
+                                    placeholder="justinmakemoneyonline@gmail.com"
                                     value={email}
                                     onChange={e => setEmail(e.target.value)}
                                     style={inputStyle}

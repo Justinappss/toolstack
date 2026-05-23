@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy — ToolStack",
+    title: "Privacy Policy",
     description: "ToolStack privacy policy. Learn how we handle data, cookies, and advertising on our free tool platform.",
     alternates: { canonical: "https://toolstack.tech/privacy" },
     openGraph: {
-        title: "Privacy Policy — ToolStack",
+        title: "Privacy Policy",
         description: "How ToolStack handles your data and privacy.",
         url: "https://toolstack.tech/privacy",
         siteName: "ToolStack",

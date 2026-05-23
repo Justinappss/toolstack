@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://x.com/toolstack",
                 "https://www.linkedin.com/company/toolstacktech"
               ],
-              "description": "57+ free online AI & utility tools for writers, marketers, and developers."
+              "description": "60+ free online AI & utility tools for writers, marketers, and developers."
             }),
           }}
         />
