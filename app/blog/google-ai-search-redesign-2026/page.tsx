@@ -106,16 +106,21 @@ export default function BlogPost() {
                         </div>
                     </div>
 
-                    {/* Hero banner */}
-                    <img
-                        src="/blog/google-ai-search-redesign-2026/hero-banner.png"
-                        alt="The AI Evolution of Search — Google I/O 2026"
-                        style={{ width: "100%", borderRadius: 16, border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 24px 64px rgba(0,0,0,0.4)", display: "block" }}
-                    />
+                    </div>
                 </div>
-            </div>
 
-            {/* Article body */}
+                {/* Hero banner */}
+                <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px" }}>
+                    <div style={{ margin: "32px 0 40px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                        <img
+                            src="/blog/google-ai-search-redesign-2026/hero-banner.png"
+                            alt="Google AI Search Redesign 2026 — What It Means for Your Website Traffic"
+                            style={{ width: "100%", height: "auto", display: "block" }}
+                        />
+                    </div>
+                </div>
+
+                {/* Article body */}
             <div style={{ maxWidth: 720, margin: "0 auto", padding: "48px 24px 120px" }}>
 
                 {/* Direct answer */}
