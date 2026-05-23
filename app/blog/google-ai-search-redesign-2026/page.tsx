@@ -438,6 +438,22 @@ export default function BlogPost() {
                             </div>
                         ))}
                     </div>
+
+                    {/* Related Reading */}
+                    <div style={{ marginTop: 56, paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                        <p style={{ fontSize: 11, fontWeight: 800, color: "rgba(255,255,255,0.35)", letterSpacing: "0.12em", textTransform: "uppercase" as const, margin: "0 0 16px" }}>Related Reading</p>
+                        <div style={{ display: "flex", flexDirection: "column" as const, gap: 10 }}>
+                            <Link href="/blog/cover-letter-generator-guide" style={{ display: "flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 12, background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", textDecoration: "none", color: "rgba(255,255,255,0.7)", fontSize: 14, fontWeight: 600 }}>
+                                → How to Write Content That Gets Cited by AI Search Engines
+                            </Link>
+                            <Link href="/blog/how-to-tailor-cover-letter-to-job-description" style={{ display: "flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 12, background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", textDecoration: "none", color: "rgba(255,255,255,0.7)", fontSize: 14, fontWeight: 600 }}>
+                                → Tailoring for AI-First Search — Adapting Your Content Strategy
+                            </Link>
+                            <Link href="/blog/utm-builder-guide" style={{ display: "flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 12, background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", textDecoration: "none", color: "rgba(255,255,255,0.7)", fontSize: 14, fontWeight: 600 }}>
+                                → UTM Builder Guide — Track Your Content Performance After Google's AI Redesign
+                            </Link>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Back to Blog */}
