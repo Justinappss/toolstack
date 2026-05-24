@@ -120,6 +120,26 @@ function highlightKeyword(text: string, keyword: string): React.ReactNode {
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
+function CopyAllButton({ descriptions, onCopy }: { descriptions: Description[]; onCopy: () => void }) {
+    const [copied, setCopied] = useState(false);
+    const handle = () => { onCopy(); setCopied(true); setTimeout(() => setCopied(false), 2000); };
+    return (
+        <button
+            onClick={handle}
+            style={{
+                padding: "6px 14px", borderRadius: 8, fontSize: 12, fontWeight: 700,
+                background: copied ? "rgba(52,211,153,0.12)" : "rgba(255,255,255,0.06)",
+                border: `1px solid ${copied ? "rgba(52,211,153,0.3)" : "rgba(255,255,255,0.1)"}`,
+                color: copied ? "#34d399" : "rgba(255,255,255,0.55)",
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+            }}
+        >
+            {copied ? "✓ All Copied!" : "Copy All 5"}
+        </button>
+    );
+}
+
 function SerpPreview({ title, description, keyword, url, mobile }: {
     title: string; description: string; keyword: string; url: string; mobile: boolean;
 }) {
@@ -174,17 +194,28 @@ function SerpPreview({ title, description, keyword, url, mobile }: {
     );
 }
 
-function DescriptionCard({ desc, keyword, selected, onSelect, onChange }: {
+function DescriptionCard({ desc, keyword, selected, onSelect, onChange, onRegenerate }: {
     desc: Description;
     keyword: string;
     selected: boolean;
     onSelect: () => void;
     onChange: (text: string) => void;
+    onRegenerate?: () => Promise<void>;
 }) {
     const [copied, setCopied] = useState<"text" | "html" | null>(null);
+    const [regenerating, setRegenerating] = useState(false);
     const status = charStatus(desc.text.length);
     const score = ctrScore(desc.text, keyword);
     const { label: scoreText, color: scoreColor } = scoreLabel(score);
+    const geo = geoScore(desc.text, keyword);
+    const { label: geoText, color: geoColor } = geoScoreLabel(geo);
+
+    const handleRegenerate = async (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (!onRegenerate) return;
+        setRegenerating(true);
+        try { await onRegenerate(); } finally { setRegenerating(false); }
+    };
 
     const copy = (type: "text" | "html") => {
         const val = type === "html"
@@ -222,19 +253,34 @@ function DescriptionCard({ desc, keyword, selected, onSelect, onChange }: {
                     </span>
                     <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>{desc.angleDesc}</span>
                 </div>
-                {/* CTR score */}
-                <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <div style={{
-                        width: 32, height: 32, borderRadius: "50%",
-                        background: `conic-gradient(${scoreColor} ${score}%, rgba(255,255,255,0.07) 0%)`,
-                        display: "flex", alignItems: "center", justifyContent: "center",
-                        flexShrink: 0,
-                    }}>
-                        <div style={{ width: 22, height: 22, borderRadius: "50%", background: "#080810", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                            <span style={{ fontSize: 8, fontWeight: 800, color: scoreColor }}>{score}</span>
+                {/* Scores */}
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    {/* CTR score */}
+                    <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                        <div style={{
+                            width: 32, height: 32, borderRadius: "50%",
+                            background: `conic-gradient(${scoreColor} ${score}%, rgba(255,255,255,0.07) 0%)`,
+                            display: "flex", alignItems: "center", justifyContent: "center",
+                            flexShrink: 0,
+                        }}>
+                            <div style={{ width: 22, height: 22, borderRadius: "50%", background: "#080810", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                <span style={{ fontSize: 8, fontWeight: 800, color: scoreColor }}>{score}</span>
+                            </div>
                         </div>
+                        <span style={{ fontSize: 12, fontWeight: 700, color: scoreColor }}>{scoreText}</span>
                     </div>
-                    <span style={{ fontSize: 12, fontWeight: 700, color: scoreColor }}>{scoreText}</span>
+                    {/* GEO / AI Overview score */}
+                    <div style={{
+                        display: "flex", alignItems: "center", gap: 4,
+                        padding: "3px 9px", borderRadius: 999,
+                        background: `${geoColor}12`,
+                        border: `1px solid ${geoColor}30`,
+                        fontSize: 11, fontWeight: 700,
+                    }}>
+                        <span style={{ color: geoColor, fontSize: 9 }}>◉</span>
+                        <span style={{ color: geoColor }}>GEO {geo}</span>
+                        <span style={{ color: `${geoColor}80`, fontWeight: 400 }}>— {geoText}</span>
+                    </div>
                 </div>
             </div>
 
@@ -265,8 +311,11 @@ function DescriptionCard({ desc, keyword, selected, onSelect, onChange }: {
             <div style={{ marginBottom: 12 }}>
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 5 }}>
                     <span style={{ fontSize: 12, color: status.color, fontWeight: 600 }}>{status.label}</span>
+                    <span style={{ fontSize: 11, color: desc.text.length >= 120 ? "rgba(251,191,36,0.7)" : "rgba(255,255,255,0.2)" }}>
+                        {desc.text.length >= 120 ? "✓ mobile safe" : `${120 - desc.text.length} to mobile cutoff`}
+                    </span>
                 </div>
-                <div style={{ height: 4, borderRadius: 999, background: "rgba(255,255,255,0.07)", overflow: "hidden" }}>
+                <div style={{ height: 4, borderRadius: 999, background: "rgba(255,255,255,0.07)", position: "relative" }}>
                     <div style={{
                         height: "100%",
                         borderRadius: 999,
@@ -274,6 +323,14 @@ function DescriptionCard({ desc, keyword, selected, onSelect, onChange }: {
                         width: `${Math.min((desc.text.length / 160) * 100, 100)}%`,
                         transition: "width 0.2s, background 0.2s",
                     }} />
+                    {/* Mobile cutoff at 120 chars = 75% of 160 */}
+                    <div style={{
+                        position: "absolute", left: "75%", top: -2, bottom: -2,
+                        width: 2, background: "rgba(251,191,36,0.5)", borderRadius: 1,
+                    }} />
+                </div>
+                <div style={{ textAlign: "right", marginTop: 2 }}>
+                    <span style={{ fontSize: 10, color: "rgba(251,191,36,0.4)" }}>│ 120 mobile</span>
                 </div>
             </div>
 
@@ -321,6 +378,22 @@ function DescriptionCard({ desc, keyword, selected, onSelect, onChange }: {
                         ✓ Previewing in Google
                     </span>
                 )}
+                {onRegenerate && (
+                    <button
+                        onClick={handleRegenerate}
+                        disabled={regenerating}
+                        style={{
+                            padding: "7px 14px", borderRadius: 8, fontSize: 12, fontWeight: 700,
+                            background: regenerating ? "rgba(255,255,255,0.03)" : "rgba(255,255,255,0.04)",
+                            border: "1px solid rgba(255,255,255,0.08)",
+                            color: regenerating ? "rgba(255,255,255,0.2)" : "rgba(255,255,255,0.4)",
+                            cursor: regenerating ? "not-allowed" : "pointer",
+                            marginLeft: "auto",
+                        }}
+                    >
+                        {regenerating ? "↺ Regenerating..." : "↺ Regenerate"}
+                    </button>
+                )}
             </div>
         </div>
     );
@@ -366,6 +439,23 @@ export default function MetaDescriptionGenerator() {
 
     const updateDescription = (idx: number, text: string) => {
         setDescriptions(prev => prev.map((d, i) => i === idx ? { ...d, text } : d));
+    };
+
+    const handleRegenerate = async (idx: number) => {
+        const res = await fetch("/api/meta-description-generator", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ pageTitle, pageTopic, targetKeyword, tone, audience, singleAngle: true, angleIndex: idx }),
+        });
+        const data = await res.json();
+        if (res.ok && data.descriptions?.[0]) {
+            setDescriptions(prev => prev.map((d, i) => i === idx ? { ...d, text: data.descriptions[0].text } : d));
+        }
+    };
+
+    const copyAll = () => {
+        const all = descriptions.map((d, i) => `${i + 1}. [${d.angle}]\n${d.text}`).join("\n\n");
+        navigator.clipboard.writeText(all);
     };
 
     const selected = descriptions[selectedIdx];
@@ -430,6 +520,7 @@ export default function MetaDescriptionGenerator() {
                             { label: "✓ Meta Description Generator", color: "#6366f1" },
                             { label: "5 Variants Free", color: "#34d399" },
                             { label: "Live SERP Preview", color: "#38bdf8" },
+                            { label: "AI Overview Score", color: "#10b981" },
                             { label: "No Signup", color: "#fbbf24" },
                         ].map(b => (
                             <span key={b.label} style={{
@@ -625,7 +716,10 @@ export default function MetaDescriptionGenerator() {
                         <div style={{ marginBottom: 12 }}>
                             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16, flexWrap: "wrap", gap: 8 }}>
                                 <h2 style={{ fontSize: 17, fontWeight: 800, color: "white", margin: 0 }}>Your 5 Meta Descriptions</h2>
-                                <span style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>Click any card to preview · Edit directly in the box</span>
+                                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                                    <span style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>Click to preview · Edit inline</span>
+                                    <CopyAllButton descriptions={descriptions} onCopy={copyAll} />
+                                </div>
                             </div>
                             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                                 {descriptions.map((desc, i) => (
@@ -636,26 +730,45 @@ export default function MetaDescriptionGenerator() {
                                         selected={selectedIdx === i}
                                         onSelect={() => setSelectedIdx(i)}
                                         onChange={(text) => updateDescription(i, text)}
+                                        onRegenerate={() => handleRegenerate(i)}
                                     />
                                 ))}
                             </div>
                         </div>
 
-                        {/* CTR Score legend */}
-                        <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 14, padding: "14px 18px", marginTop: 16 }}>
-                            <p style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.4)", margin: "0 0 8px", letterSpacing: "0.04em" }}>CTR SCORE BREAKDOWN — what the score measures:</p>
-                            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 20px" }}>
-                                {[
-                                    { label: "Ideal length (150–160 chars)", pts: "30 pts" },
-                                    { label: "Keyword present", pts: "25 pts" },
-                                    { label: "CTA word detected", pts: "20 pts" },
-                                    { label: "Power words", pts: "up to 15 pts" },
-                                    { label: "No generic opener", pts: "10 pts" },
-                                ].map(item => (
-                                    <div key={item.label} style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>
-                                        <span style={{ color: "#6366f1", fontWeight: 700 }}>{item.pts}</span> — {item.label}
-                                    </div>
-                                ))}
+                        {/* Score legends */}
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 10, marginTop: 16 }}>
+                            <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 14, padding: "14px 18px" }}>
+                                <p style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.4)", margin: "0 0 8px", letterSpacing: "0.04em" }}>CTR SCORE — human click-through rate:</p>
+                                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                    {[
+                                        { label: "Ideal length (150–160 chars)", pts: "30 pts" },
+                                        { label: "Keyword present", pts: "25 pts" },
+                                        { label: "CTA word detected", pts: "20 pts" },
+                                        { label: "Power words", pts: "up to 15 pts" },
+                                        { label: "No generic opener", pts: "10 pts" },
+                                    ].map(item => (
+                                        <div key={item.label} style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>
+                                            <span style={{ color: "#6366f1", fontWeight: 700 }}>{item.pts}</span> — {item.label}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div style={{ background: "rgba(16,185,129,0.03)", border: "1px solid rgba(16,185,129,0.12)", borderRadius: 14, padding: "14px 18px" }}>
+                                <p style={{ fontSize: 12, fontWeight: 700, color: "rgba(16,185,129,0.6)", margin: "0 0 8px", letterSpacing: "0.04em" }}>GEO SCORE — AI Overview citation readiness:</p>
+                                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                    {[
+                                        { label: "Statement opener (not a question)", pts: "25 pts" },
+                                        { label: "Contains a specific number or fact", pts: "20 pts" },
+                                        { label: "Keyword present", pts: "20 pts" },
+                                        { label: "Optimal AI snippet length (80–155)", pts: "20 pts" },
+                                        { label: "Not aggressively promotional", pts: "15 pts" },
+                                    ].map(item => (
+                                        <div key={item.label} style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>
+                                            <span style={{ color: "#10b981", fontWeight: 700 }}>{item.pts}</span> — {item.label}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

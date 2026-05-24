@@ -71,7 +71,7 @@ Return ONLY valid JSON in this exact format:
 Page topic / content: ${pageTopic}
 Target keyword: ${targetKeyword || "Not specified"}
 
-Generate 5 meta descriptions following the system instructions exactly.`;
+${singleAngle && angleIndex !== undefined ? `Generate 1 meta description for the "${angles[angleIndex].angle}" angle following the system instructions exactly.` : "Generate 5 meta descriptions following the system instructions exactly."}`;
 
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
