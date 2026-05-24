@@ -306,13 +306,6 @@ export default function BlogPost() {
                         These four changes to a single page take roughly 45 minutes total. Do this for your top three pages and you will have covered the majority of your GEO exposure before writing a single new word. Use ToolStack&apos;s free <Link href="/tools/meta-description-generator" style={{ color: accent, textDecoration: "none" }}>meta description generator</Link> to sharpen your descriptions at the same time — AI Overviews use meta descriptions as context when evaluating and summarising pages.
                     </p>
 
-                    {/* Animated infographic 3 */}
-                    <div style={{ margin: "32px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
-                        <video autoPlay muted loop playsInline style={{ width: "100%", display: "block" }}>
-                            <source src="/blog/how-to-rank-in-google-ai-overviews-2026/infographic-animated-3.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-
                     {/* YouTube embed */}
                     <h2 style={h2Style}>Watch: The Full GEO Framework Walkthrough</h2>
                     <p style={pStyle}>
