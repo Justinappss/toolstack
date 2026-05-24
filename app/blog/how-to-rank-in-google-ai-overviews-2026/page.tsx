@@ -67,9 +67,9 @@ export default function BlogPost() {
 
                     {/* Breadcrumb */}
                     <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 36, fontSize: 13 }}>
-                        <Link href="/" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Home</Link>
+                        <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Home</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
-                        <Link href="/blog" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Blog</Link>
+                        <Link href="/blog" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Blog</Link>
                         <span style={{ color: "rgba(255,255,255,0.15)" }}>/</span>
                         <span style={{ color: "rgba(255,255,255,0.5)" }}>Google AI Overviews 2026</span>
                     </div>
@@ -129,7 +129,7 @@ export default function BlogPost() {
                         <p style={{ margin: "0 0 4px", fontSize: 14, fontWeight: 700, color: "white" }}>Free: Write AI-optimised meta descriptions instantly</p>
                         <p style={{ margin: 0, fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Generate 5 click-optimised variants with live Google SERP preview — no signup</p>
                     </div>
-                    <Link href="/tools/meta-description-generator" style={{ flexShrink: 0, padding: "10px 20px", borderRadius: 10, background: "#22c55e", color: "white", fontSize: 13, fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" as const }}>
+                    <Link href="/tools/meta-description-generator" style={{ flexShrink: 0, padding: "10px 20px", borderRadius: 10, background: "#166534", color: "white", fontSize: 13, fontWeight: 700, textDecoration: "none", whiteSpace: "nowrap" as const }}>
                         Try It Free →
                     </Link>
                 </div>
@@ -272,8 +272,8 @@ export default function BlogPost() {
                         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                             <thead>
                                 <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-                                    <th style={{ padding: "12px 16px", textAlign: "left", color: "rgba(255,255,255,0.4)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>Factor</th>
-                                    <th style={{ padding: "12px 16px", textAlign: "left", color: "rgba(255,255,255,0.4)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>Traditional SEO</th>
+                                    <th style={{ padding: "12px 16px", textAlign: "left", color: "rgba(255,255,255,0.65)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>Factor</th>
+                                    <th style={{ padding: "12px 16px", textAlign: "left", color: "rgba(255,255,255,0.65)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>Traditional SEO</th>
                                     <th style={{ padding: "12px 16px", textAlign: "left", color: accent, fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>GEO (2026)</th>
                                 </tr>
                             </thead>
@@ -288,7 +288,7 @@ export default function BlogPost() {
                                 ].map(([factor, seo, geo], i) => (
                                     <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.04)", background: i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.015)" }}>
                                         <td style={{ padding: "12px 16px", color: "rgba(255,255,255,0.5)", fontWeight: 600 }}>{factor}</td>
-                                        <td style={{ padding: "12px 16px", color: "rgba(255,255,255,0.45)" }}>{seo}</td>
+                                        <td style={{ padding: "12px 16px", color: "rgba(255,255,255,0.65)" }}>{seo}</td>
                                         <td style={{ padding: "12px 16px", color: "rgba(255,255,255,0.8)", fontWeight: 500 }}>{geo}</td>
                                     </tr>
                                 ))}
@@ -316,7 +316,7 @@ export default function BlogPost() {
                     </div>
 
                     <p style={pStyle}>
-                        These four changes to a single page take roughly 45 minutes total. Do this for your top three pages and you will have covered the majority of your GEO exposure before writing a single new word. Use ToolStack&apos;s free <Link href="/tools/meta-description-generator" style={{ color: accent, textDecoration: "none" }}>meta description generator</Link> to sharpen your descriptions at the same time — AI Overviews use meta descriptions as context when evaluating and summarising pages.
+                        These four changes to a single page take roughly 45 minutes total. Do this for your top three pages and you will have covered the majority of your GEO exposure before writing a single new word. Use ToolStack&apos;s free <Link href="/tools/meta-description-generator" style={{ color: accent, textDecoration: "underline" }}>meta description generator</Link> to sharpen your descriptions at the same time — AI Overviews use meta descriptions as context when evaluating and summarising pages.
                     </p>
 
                     <h2 style={h2Style}>The Bigger Picture: Both Matter Now</h2>
@@ -346,10 +346,10 @@ export default function BlogPost() {
                     <p style={{ fontSize: 11, fontWeight: 700, color: accent, letterSpacing: "0.1em", textTransform: "uppercase" as const, margin: "0 0 10px" }}>Take the Next Step</p>
                     <h3 style={{ fontSize: 22, fontWeight: 800, color: "white", margin: "0 0 12px", lineHeight: 1.2 }}>Start optimising for AI Overviews today</h3>
                     <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 24px", lineHeight: 1.7 }}>
-                        Use ToolStack&apos;s free <Link href="/tools/meta-description-generator" style={{ color: accent, textDecoration: "none", fontWeight: 600 }}>meta description generator</Link> to write AI-optimised descriptions for your top pages. No signup, no paywall — results in seconds. Or if you want the whole GEO strategy handled for you, AdvertsGPT builds and executes it end to end.
+                        Use ToolStack&apos;s free <Link href="/tools/meta-description-generator" style={{ color: accent, textDecoration: "underline", fontWeight: 600 }}>meta description generator</Link> to write AI-optimised descriptions for your top pages. No signup, no paywall — results in seconds. Or if you want the whole GEO strategy handled for you, AdvertsGPT builds and executes it end to end.
                     </p>
                     <div style={{ display: "flex", gap: 12, flexWrap: "wrap" as const }}>
-                        <Link href="/tools/meta-description-generator" style={{ padding: "12px 24px", borderRadius: 12, background: accent, color: "white", fontSize: 14, fontWeight: 700, textDecoration: "none" }}>
+                        <Link href="/tools/meta-description-generator" style={{ padding: "12px 24px", borderRadius: 12, background: "#047857", color: "white", fontSize: 14, fontWeight: 700, textDecoration: "none" }}>
                             Try Meta Description Generator Free →
                         </Link>
                         <a href="https://advertisegpt.vercel.app" target="_blank" rel="noopener noreferrer" style={{ padding: "12px 24px", borderRadius: 12, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
@@ -358,7 +358,7 @@ export default function BlogPost() {
                     </div>
                     <p style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", margin: "20px 0 0" }}>
                         Want to grow your audience while your SEO adapts?{" "}
-                        <a href="https://bit.ly/aweberjustin" target="_blank" rel="noopener noreferrer" style={{ color: accent, textDecoration: "none" }}>
+                        <a href="https://bit.ly/aweberjustin" target="_blank" rel="noopener noreferrer" style={{ color: accent, textDecoration: "underline" }}>
                             AWeber makes email marketing free up to 500 subscribers →
                         </a>
                     </p>
@@ -392,7 +392,7 @@ export default function BlogPost() {
                 </div>
 
                 {/* Back to blog */}
-                <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,0.35)", textDecoration: "none", fontSize: 14 }}>
+                <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,0.65)", textDecoration: "none", fontSize: 14 }}>
                     ← Back to Blog
                 </Link>
             </div>
