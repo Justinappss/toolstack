@@ -375,6 +375,22 @@ export default function BlogPost() {
                     ))}
                 </div>
 
+                {/* Related Reading */}
+                <div style={{ marginBottom: 56, paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+                    <p style={{ fontSize: 11, fontWeight: 800, color: "rgba(255,255,255,0.35)", letterSpacing: "0.12em", textTransform: "uppercase" as const, margin: "0 0 16px" }}>Related Reading</p>
+                    <div style={{ display: "flex", flexDirection: "column" as const, gap: 10 }}>
+                        <Link href="/blog/google-ai-search-redesign-2026" style={{ display: "flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 12, background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", textDecoration: "none", color: "rgba(255,255,255,0.7)", fontSize: 14, fontWeight: 600 }}>
+                            → Google's New AI Search Bar: What It Means for Your Website Traffic
+                        </Link>
+                        <Link href="/blog/cover-letter-generator-guide" style={{ display: "flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 12, background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", textDecoration: "none", color: "rgba(255,255,255,0.7)", fontSize: 14, fontWeight: 600 }}>
+                            → The Best Free AI Cover Letter Generator (No Signup, No Limits)
+                        </Link>
+                        <Link href="/blog/utm-builder-guide" style={{ display: "flex", alignItems: "center", gap: 8, padding: "14px 18px", borderRadius: 12, background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.07)", textDecoration: "none", color: "rgba(255,255,255,0.7)", fontSize: 14, fontWeight: 600 }}>
+                            → UTM Builder Guide — Track Campaign Performance
+                        </Link>
+                    </div>
+                </div>
+
                 {/* Back to blog */}
                 <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: 8, color: "rgba(255,255,255,0.35)", textDecoration: "none", fontSize: 14 }}>
                     ← Back to Blog
