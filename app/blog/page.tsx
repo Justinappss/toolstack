@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "how-to-rank-in-google-ai-overviews-2026",
+        title: "How to Rank in Google AI Overviews: The Complete GEO Guide (2026)",
+        description: "Google AI Overviews now appear on 40%+ of searches. Here's the exact 5-step GEO framework to get your website cited inside Google's AI answers — not just ranked below them.",
+        date: "May 24, 2026",
+        readTime: "9 min read",
+        tag: "SEO",
+        accent: "#10b981",
+        accentBg: "rgba(16,185,129,0.08)",
+        accentBorder: "rgba(16,185,129,0.2)",
+        featured: true,
+    },
+    {
         slug: "google-ai-search-redesign-2026",
         title: "Google's New AI Search Bar: What It Means for Your Website Traffic (2026)",
         description: "Google redesigned its search bar for the first time in 25 years at I/O 2026. Here's exactly what changed, what happened to the blue links, and how to keep your traffic.",
