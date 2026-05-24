@@ -105,6 +105,7 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 ### Blog Post Mirrors
 - https://toolstack.tech/blog/ai-prompt-generator-guide/index.md
 - https://toolstack.tech/blog/ai-writing-tools-ultimate-guide/index.md
+- https://toolstack.tech/blog/blog-title-generator/index.md
 - https://toolstack.tech/blog/aweber-review/index.md
 - https://toolstack.tech/blog/best-ai-tools-for-optimizing-product-visibility/index.md
 - https://toolstack.tech/blog/best-free-online-tools-2026/index.md
