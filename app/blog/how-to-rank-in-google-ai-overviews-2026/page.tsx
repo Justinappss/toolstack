@@ -156,6 +156,19 @@ export default function BlogPost() {
 
                 <AdBlock type="horizontal" />
 
+                {/* YouTube embed */}
+                <div style={{ margin: "0 0 48px" }}>
+                    <div style={{ margin: "0 0 16px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", aspectRatio: "16/9", position: "relative" as const }}>
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/nymPvtY5vU8"
+                            title="How to Rank in Google AI Overviews 2026 — Complete GEO Framework"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ position: "absolute" as const, top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+                        />
+                    </div>
+                </div>
+
                 {/* Body content */}
                 <div style={{ fontSize: 16, lineHeight: 1.85, color: "rgba(255,255,255,0.62)" }}>
 
@@ -305,22 +318,6 @@ export default function BlogPost() {
                     <p style={pStyle}>
                         These four changes to a single page take roughly 45 minutes total. Do this for your top three pages and you will have covered the majority of your GEO exposure before writing a single new word. Use ToolStack&apos;s free <Link href="/tools/meta-description-generator" style={{ color: accent, textDecoration: "none" }}>meta description generator</Link> to sharpen your descriptions at the same time — AI Overviews use meta descriptions as context when evaluating and summarising pages.
                     </p>
-
-                    {/* YouTube embed */}
-                    <h2 style={h2Style}>Watch: The Full GEO Framework Walkthrough</h2>
-                    <p style={pStyle}>
-                        This video walks through the complete five-step framework with live examples — including exactly what to change on an existing page to start earning AI Overview citations today.
-                    </p>
-
-                    <div style={{ margin: "32px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", aspectRatio: "16/9", position: "relative" as const }}>
-                        <iframe
-                            src="https://www.youtube-nocookie.com/embed/nymPvtY5vU8"
-                            title="How to Rank in Google AI Overviews 2026 — Complete GEO Framework"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            style={{ position: "absolute" as const, top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
-                        />
-                    </div>
 
                     <h2 style={h2Style}>The Bigger Picture: Both Matter Now</h2>
                     <p style={pStyle}>
