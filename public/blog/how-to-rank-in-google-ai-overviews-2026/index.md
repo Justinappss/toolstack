@@ -50,4 +50,4 @@ These four changes per page take roughly 45 minutes and can produce AI Overview 
 
 Use ToolStack's free Meta Description Generator to write AI-optimised descriptions for your top pages: https://toolstack.tech/tools/meta-description-generator
 
-Want GEO done for you? AdvertsGPT: https://advertisegpt.vercel.app
+Want GEO done for you? AdvertsGPT: https://advertsgpt.com

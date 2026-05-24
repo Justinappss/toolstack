@@ -423,7 +423,7 @@ export default function BlogPost() {
                             </p>
                             <p style={{ margin: 0, fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>
                                 For AI-first content strategy and GEO (Generative Engine Optimisation) services, visit{" "}
-                                <a href="https://advertisegpt.vercel.app" target="_blank" rel="noopener noreferrer" style={{ color: accent, textDecoration: "underline" }}>AdvertsGPT</a>.
+                                <a href="https://advertsgpt.com" target="_blank" rel="noopener noreferrer" style={{ color: accent, textDecoration: "underline" }}>AdvertsGPT</a>.
                             </p>
                         </div>
                     </div>

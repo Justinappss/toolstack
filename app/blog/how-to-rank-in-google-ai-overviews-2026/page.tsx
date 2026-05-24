@@ -352,7 +352,7 @@ export default function BlogPost() {
                         <Link href="/tools/meta-description-generator" style={{ padding: "12px 24px", borderRadius: 12, background: "#047857", color: "white", fontSize: 14, fontWeight: 700, textDecoration: "none" }}>
                             Try Meta Description Generator Free →
                         </Link>
-                        <a href="https://advertisegpt.vercel.app" target="_blank" rel="noopener noreferrer" style={{ padding: "12px 24px", borderRadius: 12, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
+                        <a href="https://advertsgpt.com" target="_blank" rel="noopener noreferrer" style={{ padding: "12px 24px", borderRadius: 12, background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", color: "white", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
                             Get GEO Done For You — AdvertsGPT →
                         </a>
                     </div>
