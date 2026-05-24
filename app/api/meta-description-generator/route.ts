@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
     try {
-        const { pageTitle, pageTopic, targetKeyword, tone, audience } = await req.json();
+        const { pageTitle, pageTopic, targetKeyword, tone, audience, singleAngle, angleIndex } = await req.json();
 
         if (!pageTopic || pageTopic.trim().length < 10) {
             return NextResponse.json({ error: "Please describe your page in more detail." }, { status: 400 });
@@ -19,7 +19,15 @@ export async function POST(req: NextRequest) {
             informative: "educational, clear, factual — perfect for guides, how-tos, and documentation",
         };
 
-        const systemPrompt = `You are a world-class SEO copywriter who specialises in writing meta descriptions that maximise click-through rate from Google search results.
+        const angles = [
+            { angle: "Benefit-led", angleDesc: "Leads with your reader's main gain", hint: "Lead with the most compelling benefit for the reader" },
+            { angle: "Feature-focused", angleDesc: "Highlights what makes this stand out", hint: "Highlight what makes this page/tool/content stand out" },
+            { angle: "Urgency / FOMO", angleDesc: "Makes missing out feel costly", hint: "Create a sense of what they'll miss if they don't click" },
+            { angle: "Question-led", angleDesc: "Mirrors what readers are searching", hint: "Open with a question the reader is already asking" },
+            { angle: "CTA-first", angleDesc: "Strong action verb leads the way", hint: "Lead with a strong action verb and clear next step" },
+        ];
+
+        const systemPrompt = `You are a world-class SEO copywriter who specialises in writing meta descriptions that maximise click-through rate from Google search results and are optimised to be cited by Google AI Overviews.
 
 Rules for every description you write:
 - Between 150 and 160 characters EXACTLY (count carefully — this is critical)
@@ -29,11 +37,19 @@ Rules for every description you write:
 - Never start with the page title verbatim
 - No vague filler phrases like "In this article..." or "Learn more about..."
 - Every word must earn its place
+- Where possible, include at least one specific fact, number, or concrete detail — this helps with AI Overview citation
 
 Tone to use: ${toneGuide[tone] || toneGuide.professional}
 ${audience ? `Target audience: ${audience}` : ""}
 
-Write exactly 5 meta description variants, each with a different angle:
+${singleAngle && angleIndex !== undefined ? `Write exactly 1 meta description using the "${angles[angleIndex].angle}" angle: ${angles[angleIndex].hint}
+
+Return ONLY valid JSON in this exact format:
+{
+  "descriptions": [
+    { "text": "...", "angle": "${angles[angleIndex].angle}", "angleDesc": "${angles[angleIndex].angleDesc}" }
+  ]
+}` : `Write exactly 5 meta description variants, each with a different angle:
 1. Benefit-led: Lead with the most compelling benefit for the reader
 2. Feature-focused: Highlight what makes this page/tool/content stand out
 3. Urgency/FOMO: Create a sense of what they'll miss if they don't click
@@ -49,7 +65,7 @@ Return ONLY valid JSON in this exact format:
     { "text": "...", "angle": "Question-led", "angleDesc": "Mirrors what readers are searching" },
     { "text": "...", "angle": "CTA-first", "angleDesc": "Strong action verb leads the way" }
   ]
-}`;
+}`}`;
 
         const userPrompt = `Page title: ${pageTitle || "Not provided"}
 Page topic / content: ${pageTopic}

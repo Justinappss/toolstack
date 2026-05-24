@@ -72,6 +72,42 @@ function scoreLabel(score: number): { label: string; color: string } {
     return { label: "Poor CTR", color: "#f87171" };
 }
 
+function geoScore(text: string, keyword: string): number {
+    if (!text) return 0;
+    const lower = text.toLowerCase();
+    const kw = keyword.toLowerCase().trim();
+    let score = 0;
+
+    // Direct statement opener (not a question — AI prefers statements): 25 pts
+    const questionStarters = ["what", "how", "why", "is ", "are ", "can ", "do ", "does ", "should ", "will "];
+    if (!questionStarters.some(s => lower.startsWith(s))) score += 25;
+
+    // Contains a number or specific stat (factual signals help AI citation): 20 pts
+    if (/\d+/.test(text)) score += 20;
+
+    // Keyword present: 20 pts
+    if (kw && lower.includes(kw)) score += 20;
+    else if (!kw) score += 10;
+
+    // Optimal AI snippet length (80–155 chars): 20 pts
+    const len = text.length;
+    if (len >= 80 && len <= 155) score += 20;
+    else if (len >= 60 && len <= 165) score += 10;
+
+    // Not aggressively promotional (AI prefers informational): 15 pts
+    const hardSell = ["buy now", "shop now", "limited time", "act now", "click here", "sign up now"];
+    if (!hardSell.some(w => lower.includes(w))) score += 15;
+
+    return Math.min(score, 100);
+}
+
+function geoScoreLabel(score: number): { label: string; color: string } {
+    if (score >= 85) return { label: "AI-Ready", color: "#10b981" };
+    if (score >= 65) return { label: "Good GEO", color: "#34d399" };
+    if (score >= 45) return { label: "Avg GEO", color: "#fbbf24" };
+    return { label: "Weak GEO", color: "#f87171" };
+}
+
 function highlightKeyword(text: string, keyword: string): React.ReactNode {
     if (!keyword.trim() || !text) return text;
     const kw = keyword.trim();
