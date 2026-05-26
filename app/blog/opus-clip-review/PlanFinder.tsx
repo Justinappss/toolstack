@@ -31,7 +31,7 @@ export function PlanFinder() {
     return (
         <div>
             <div style={{ marginBottom: 16 }}>
-                <label style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", display: "block", marginBottom: 8 }}>How much long-form video do you publish per month?</label>
+                <label htmlFor="oc-video-volume" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", display: "block", marginBottom: 8 }}>How much long-form video do you publish per month?</label>
                 <select id="oc-video-volume" style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, padding: "10px 14px", color: "white", fontSize: 14, cursor: "pointer" }}>
                     <option value="trial">Just testing — I want to see the quality first</option>
                     <option value="moderate">1–4 hours/month (podcaster, YouTuber, webinars)</option>
@@ -39,7 +39,7 @@ export function PlanFinder() {
                 </select>
             </div>
             <div style={{ marginBottom: 20 }}>
-                <label style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", display: "block", marginBottom: 8 }}>Are you working solo or with a team?</label>
+                <label htmlFor="oc-team-size" style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", display: "block", marginBottom: 8 }}>Are you working solo or with a team?</label>
                 <select id="oc-team-size" style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, padding: "10px 14px", color: "white", fontSize: 14, cursor: "pointer" }}>
                     <option value="solo">Solo creator</option>
                     <option value="team">Team (2+ people editing or scheduling)</option>

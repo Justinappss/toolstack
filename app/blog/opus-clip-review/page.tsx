@@ -154,7 +154,7 @@ export default function BlogPost() {
                         <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
                             <iframe
                                 style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-                                src={`https://www.youtube.com/embed/${YOUTUBE_ID}`}
+                                src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}`}
                                 title="Opus Clip Review 2026 — Does AI Video Repurposing Actually Save You Time?"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
@@ -605,6 +605,8 @@ export default function BlogPost() {
                     .blog-grid { grid-template-columns: 1fr !important; }
                     .blog-grid > aside { display: none; }
                 }
+                article a { text-decoration: underline; text-decoration-color: rgba(139,92,246,0.35); text-underline-offset: 3px; }
+                article a:hover { text-decoration-color: rgba(139,92,246,0.8); }
             `}</style>
         </main>
     );
