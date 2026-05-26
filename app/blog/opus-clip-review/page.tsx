@@ -140,6 +140,15 @@ export default function BlogPost() {
 
                 <article style={{ minWidth: 0 }}>
 
+                    {/* ── Audio overview ── */}
+                    <div style={{ background: "rgba(139,92,246,0.06)", border: "1px solid rgba(139,92,246,0.18)", borderRadius: 14, padding: "20px 24px", marginBottom: 48 }}>
+                        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", color: accent, marginBottom: 10 }}>AUDIO OVERVIEW</div>
+                        <p style={{ margin: "0 0 14px", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>Prefer to listen? Full review narrated — 2.5 minutes.</p>
+                        <audio controls style={{ width: "100%", accentColor: accent }}>
+                            <source src="/blog/opus-clip-review/audio-overview.m4a" type="audio/mp4" />
+                        </audio>
+                    </div>
+
                     {/* ── S1: What Is Opus Clip ── */}
                     <section id="what-is" style={{ marginBottom: 64 }}>
                         <h2 style={{ fontSize: "clamp(22px,3vw,30px)", fontWeight: 700, marginBottom: 20, letterSpacing: "-0.01em" }}>What Is Opus Clip?</h2>
@@ -184,6 +193,16 @@ export default function BlogPost() {
                             </p>
                         </div>
                     </section>
+
+                    {/* ── Animated infographic 1 — How It Works ── */}
+                    <div style={{ margin: "40px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
+                        <video autoPlay muted loop playsInline style={{ width: "100%", display: "block" }}>
+                            <source src="/blog/opus-clip-review/animated-infographic-1.mp4" type="video/mp4" />
+                        </video>
+                        <div style={{ padding: "12px 20px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+                            <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Opus Clip in action — upload to viral clips in minutes</p>
+                        </div>
+                    </div>
 
                     {/* ── S3: Features ── */}
                     <section id="features" style={{ marginBottom: 64 }}>
@@ -365,6 +384,16 @@ export default function BlogPost() {
                             </p>
                         </div>
                     </section>
+
+                    {/* ── Animated infographic 2 — Comparison ── */}
+                    <div style={{ margin: "40px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
+                        <video autoPlay muted loop playsInline style={{ width: "100%", display: "block" }}>
+                            <source src="/blog/opus-clip-review/animated-infographic-2.mp4" type="video/mp4" />
+                        </video>
+                        <div style={{ padding: "12px 20px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+                            <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Opus Clip vs alternatives — feature comparison at a glance</p>
+                        </div>
+                    </div>
 
                     {/* ── S7: Pros/Cons ── */}
                     <section id="pros-cons" style={{ marginBottom: 64 }}>
