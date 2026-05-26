@@ -141,12 +141,28 @@ export default function BlogPost() {
                 <article style={{ minWidth: 0 }}>
 
                     {/* ── Audio overview ── */}
-                    <div style={{ background: "rgba(139,92,246,0.06)", border: "1px solid rgba(139,92,246,0.18)", borderRadius: 14, padding: "20px 24px", marginBottom: 48 }}>
+                    <div style={{ background: "rgba(139,92,246,0.06)", border: "1px solid rgba(139,92,246,0.18)", borderRadius: 14, padding: "20px 24px", marginBottom: 24 }}>
                         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", color: accent, marginBottom: 10 }}>AUDIO OVERVIEW</div>
                         <p style={{ margin: "0 0 14px", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>Prefer to listen? Full review narrated — 2.5 minutes.</p>
                         <audio controls style={{ width: "100%", accentColor: accent }}>
                             <source src="/blog/opus-clip-review/audio-overview.m4a" type="audio/mp4" />
                         </audio>
+                    </div>
+
+                    {/* ── YouTube embed ── */}
+                    <div style={{ margin: "0 0 48px", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                        <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
+                            <iframe
+                                style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
+                                src={`https://www.youtube.com/embed/${YOUTUBE_ID}`}
+                                title="Opus Clip Review 2026 — Does AI Video Repurposing Actually Save You Time?"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                        </div>
+                        <div style={{ padding: "12px 20px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+                            <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Full video review — watch the 45-minute podcast test in real time</p>
+                        </div>
                     </div>
 
                     {/* ── S1: What Is Opus Clip ── */}
@@ -279,24 +295,6 @@ export default function BlogPost() {
                             <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Opus Clip workflow — from raw recording to platform-ready clips with AI virality scoring</p>
                         </div>
                     </div>
-
-                    {/* ── YouTube embed (add YOUTUBE_ID when video is live) ── */}
-                    {YOUTUBE_ID ? (
-                        <div style={{ margin: "40px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
-                            <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
-                                <iframe
-                                    style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-                                    src={`https://www.youtube.com/embed/${YOUTUBE_ID}`}
-                                    title="Opus Clip Review 2026 — Does AI Video Repurposing Actually Save You Time?"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                />
-                            </div>
-                            <div style={{ padding: "12px 20px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                                <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Full video review — watch the 45-minute podcast test in real time</p>
-                            </div>
-                        </div>
-                    ) : null}
 
                     {/* ── S5: Pricing ── */}
                     <section id="pricing" style={{ marginBottom: 64 }}>
