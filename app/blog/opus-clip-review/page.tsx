@@ -67,7 +67,7 @@ const accent = "#8b5cf6";
 const accentBg = "rgba(139,92,246,0.06)";
 const accentBorder = "rgba(139,92,246,0.18)";
 const AFFILIATE_LINK = "https://www.opus.pro/?via=4e4786";
-const YOUTUBE_ID = "";
+const YOUTUBE_ID = "E3wijtF5D80";
 
 export default function BlogPost() {
     return (

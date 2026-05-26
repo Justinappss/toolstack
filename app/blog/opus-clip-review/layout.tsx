@@ -36,18 +36,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         },
         "datePublished": "2026-05-26"
       }) }} />
-      {/* Add VideoObject schema once YouTube video is live — replace YOUTUBE_ID below:
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": "Opus Clip Review 2026: Does AI Video Repurposing Actually Save You Time?",
         "description": "We tested Opus Clip on a 45-minute podcast and got 22 clips in 14 minutes. Full review of accuracy, pricing, and who it's for.",
-        "thumbnailUrl": "https://img.youtube.com/vi/YOUTUBE_ID/maxresdefault.jpg",
-        "embedUrl": "https://www.youtube.com/embed/YOUTUBE_ID",
+        "thumbnailUrl": "https://img.youtube.com/vi/E3wijtF5D80/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/E3wijtF5D80",
         "uploadDate": "2026-05-26",
         "author": { "@type": "Person", "name": "Justin Pirrie" }
       }) }} />
-      */}
       {children}
     </>
   );
