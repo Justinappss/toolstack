@@ -122,6 +122,7 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 - https://toolstack.tech/blog/how-to-generate-qr-code-wifi/index.md
 - https://toolstack.tech/blog/how-to-improve-developer-productivity/index.md
 - https://toolstack.tech/blog/how-to-tailor-cover-letter-to-job-description/index.md
+- https://toolstack.tech/blog/how-to-rank-in-google-ai-overviews-2026/index.md
 - https://toolstack.tech/blog/how-to-use-ip-address-lookup/index.md
 - https://toolstack.tech/blog/how-to-write-cold-email-subject-lines/index.md
 - https://toolstack.tech/blog/is-it-down-or-just-me/index.md
@@ -129,6 +130,8 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 - https://toolstack.tech/blog/mastering-json-visual-guide/index.md
 - https://toolstack.tech/blog/password-generator-guide/index.md
 - https://toolstack.tech/blog/perfect-meta-description-anatomy/index.md
+- https://toolstack.tech/blog/pokemon-tcg-pocket-pull-rates/index.md
+- https://toolstack.tech/blog/opus-clip-review/index.md
 - https://toolstack.tech/blog/postiz-review/index.md
 - https://toolstack.tech/blog/rankspot-review/index.md
 - https://toolstack.tech/blog/regex-cheat-sheet-beginners/index.md

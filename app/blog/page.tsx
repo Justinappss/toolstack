@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "pokemon-tcg-pocket-pull-rates",
+        title: "Pokémon TCG Pocket Pull Rates Explained: Crown Rare, God Pack & Every Rarity",
+        description: "The official Pokémon TCG Pocket pull rates decoded. How many packs you need for Crown Rare, God Pack, Immersive Rare and every rarity — with a free pull probability calculator.",
+        date: "May 26, 2026",
+        readTime: "10 min read",
+        tag: "Collectibles",
+        accent: "#6366f1",
+        accentBg: "rgba(99,102,241,0.08)",
+        accentBorder: "rgba(99,102,241,0.2)",
+        featured: true,
+    },
+    {
         slug: "how-to-rank-in-google-ai-overviews-2026",
         title: "How to Rank in Google AI Overviews: The Complete GEO Guide (2026)",
         description: "Google AI Overviews now appear on 40%+ of searches. Here's the exact 5-step GEO framework to get your website cited inside Google's AI answers — not just ranked below them.",
@@ -157,6 +169,18 @@ const posts = [
         accent: "#2563eb",
         accentBg: "rgba(37,99,235,0.08)",
         accentBorder: "rgba(37,99,235,0.2)",
+        featured: true,
+    },
+    {
+        slug: "opus-clip-review",
+        title: "Opus Clip Review 2026: Does AI Video Repurposing Actually Save You Time?",
+        description: "We tested Opus Clip on a 45-minute podcast and got 22 clips in 14 minutes. Honest breakdown of accuracy, pricing, who it's for, and whether it's worth paying for.",
+        date: "May 26, 2026",
+        readTime: "12 min read",
+        tag: "Video Tools",
+        accent: "#8b5cf6",
+        accentBg: "rgba(139,92,246,0.08)",
+        accentBorder: "rgba(139,92,246,0.2)",
         featured: true,
     },
     {
