@@ -120,6 +120,19 @@ export default function BlogPost() {
                     </div>
                 </div>
 
+                {/* YouTube embed */}
+                <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px 40px" }}>
+                    <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", aspectRatio: "16/9", position: "relative" }}>
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/x2WQWusAiAw"
+                            title="Google Just Changed Search Forever — Here's What It Means For Your Website (2026)"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+                        />
+                    </div>
+                </div>
+
                 {/* Article body */}
             <div style={{ maxWidth: 720, margin: "0 auto", padding: "48px 24px 120px" }}>
 
@@ -283,17 +296,6 @@ export default function BlogPost() {
                         alt="Write for AI, not Google — the new SEO paradigm"
                         style={{ width: "100%", borderRadius: 16, border: "1px solid rgba(255,255,255,0.07)", marginBottom: 40, display: "block" }}
                     />
-
-                    {/* YouTube embed */}
-                    <div style={{ margin: "40px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", aspectRatio: "16/9", position: "relative" }}>
-                        <iframe
-                            src="https://www.youtube-nocookie.com/embed/x2WQWusAiAw"
-                            title="Google Just Changed Search Forever — Here's What It Means For Your Website (2026)"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
-                        />
-                    </div>
 
                     <AdBlock type="horizontal" />
 

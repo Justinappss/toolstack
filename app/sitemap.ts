@@ -116,6 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "ebay-best-offer-calculator",
       "panini-sticker-calculator",
       "pack-break-ev-calculator",
+      "pokemon-tcg-pocket-pull-calculator",
       "world-cup-accumulator-calculator",
       "world-cup-team-finder",
       "youtube-video-downloader",
@@ -205,6 +206,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${base}/blog/blog-title-generator`,
+      lastModified: "2026-05-15",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/blog/hashtag-generator-guide`,
       lastModified: "2026-05-14",
       changeFrequency: "monthly",
@@ -258,6 +265,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
     },
     {
+      url: `${base}/blog/pokemon-tcg-pocket-pull-rates`,
+      lastModified: "2026-05-26",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/blog/opus-clip-review`,
+      lastModified: "2026-05-26",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${base}/blog/utm-builder-guide`,
       lastModified: "2026-05-19",
       changeFrequency: "monthly",
@@ -304,6 +323,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: "2026-05-22",
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${base}/blog/how-to-rank-in-google-ai-overviews-2026`,
+      lastModified: "2026-05-24",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    // === Alternative / comparison pages ===
+    {
+      url: `${base}/10015-alternative`,
+      lastModified: "2026-05-25",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/smallseotools-alternative`,
+      lastModified: "2026-05-25",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/codebeautify-alternative`,
+      lastModified: "2026-05-25",
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/freeformatter-alternative`,
+      lastModified: "2026-05-25",
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     // === Static pages ===
     {

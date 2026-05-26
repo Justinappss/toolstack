@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbnail: Opus Clip Review 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Space+Grotesk:wght@700&family=JetBrains+Mono:wght@700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #111111;
+      overflow: hidden;
+    }
+
+    /* 16:9 Aspect Ratio Container */
+    .thumbnail-container {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      background-color: #050505;
+      overflow: hidden;
+      display: flex;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Subtle background grid pattern for depth */
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Radial glow behind the phone to pop the subject */
+    .bg-glow {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Top Left branding */
+    .brand-logo {
+      position: absolute;
+      top: 40px;
+      left: 50px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-icon {
+      width: 16px;
+      height: 16px;
+      background-color: #8b5cf6;
+      border-radius: 3px;
+    }
+
+    .brand-text {
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      opacity: 0.95;
+    }
+
+    /* Left Half: Phone Mockup */
+    .left-half {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      padding-bottom: 60px; /* Offset for bottom strip */
+    }
+
+    /* Phone container with 3D tilt */
+    .phone-wrapper {
+      position: relative;
+      width: 300px;
+      height: 520px;
+      transform: perspective(1000px) rotateY(12deg) rotateX(4deg) rotateZ(-2deg);
+      filter: drop-shadow(25px 25px 40px rgba(0, 0, 0, 0.85));
+    }
+
+    /* Phone shell */
+    .phone-body {
+      position: absolute;
+      inset: 0;
+      background-color: #121214;
+      border: 6px solid #27272a;
+      border-radius: 44px;
+      overflow: hidden;
+      box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Phone Screen - vertical video */
+    .phone-screen {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #0d0d0f;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    /* Vertical video content mockup (e.g. speaker avatar & sound waves) */
+    .video-mockup {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #18102b 0%, #0d0d0f 100%);
+    }
+
+    /* Podcast host avatar silhouette/icon */
+    .host-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b0764 0%, #1e1b4b 100%);
+      border: 3px solid #8b5cf6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+      margin-bottom: 24px;
+    }
+
+    .host-avatar svg {
+      width: 44px;
+      height: 44px;
+      fill: #a78bfa;
+    }
+
+    /* Waveform graphic */
+    .waveform {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .wave-bar {
+      width: 4px;
+      background-color: #8b5cf6;
+      border-radius: 2px;
+      animation: wave 1.2s ease-in-out infinite alternate;
+    }
+
+    .wave-bar:nth-child(1) { height: 16px; animation-delay: 0.1s; }
+    .wave-bar:nth-child(2) { height: 28px; animation-delay: 0.3s; }
+    .wave-bar:nth-child(3) { height: 38px; animation-delay: 0.5s; }
+    .wave-bar:nth-child(4) { height: 22px; animation-delay: 0.2s; }
+    .wave-bar:nth-child(5) { height: 32px; animation-delay: 0.4s; }
+    .wave-bar:nth-child(6) { height: 12px; animation-delay: 0.6s; }
+
+    @keyframes wave {
+      0% { transform: scaleY(0.6); }
+      100% { transform: scaleY(1.2); }
+    }
+
+    /* Video overlay details (likes, share icons) */
+    .video-ui-right {
+      position: absolute;
+      right: 12px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .ui-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ui-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: #ffffff;
+    }
+
+    /* Custom Captions mock */
+    .captions-mock {
+      position: absolute;
+      bottom: 45px;
+      left: 18px;
+      right: 18px;
+      text-align: left;
+    }
+
+    .caption-line {
+      display: inline;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.8;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .caption-highlight {
+      color: #8b5cf6;
+    }
+
+    /* Virality Score Badge */
+    .virality-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 12px;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .badge-label {
+      font-family: 'JetBrains+Mono', monospace;
+      font-size: 8px;
+      color: #e9d5ff;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-score {
+      font-size: 16px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+
+    /* Phone Purple Progress Bar */
+    .phone-progress-container {
+      position: absolute;
+      bottom: 12px;
+      left: 18px;
+      right: 18px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .phone-progress-bar {
+      width: 74%;
+      height: 100%;
+      background-color: #8b5cf6;
+      border-radius: 2px;
+      box-shadow: 0 0 8px #8b5cf6;
+    }
+
+    /* Right Half: Text Content */
+    .right-half {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 30px;
+      padding-right: 60px;
+      padding-bottom: 60px; /* Offset for bottom strip */
+      z-index: 5;
+    }
+
+    /* Bold typography for podcast conversions */
+    .text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .title-large {
+      font-size: 60px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -2px;
+      line-height: 1.0;
+      text-transform: uppercase;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    /* Downward arrow styling */
+    .arrow-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 25px 0 25px 40px;
+    }
+
+    .arrow-svg {
+      width: 48px;
+      height: 48px;
+      fill: #8b5cf6;
+      filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+    }
+
+    .result-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: #121214;
+      border: 2px solid #27272a;
+      padding: 14px 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .result-highlight {
+      font-size: 42px;
+      font-weight: 900;
+      color: #8b5cf6;
+      letter-spacing: -1.5px;
+      text-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+    }
+
+    .result-sub {
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -1px;
+    }
+
+    /* Solid Purple Bottom Strip */
+    .bottom-strip {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 76px;
+      background-color: #8b5cf6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .strip-text {
+      color: #050505;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="thumbnail-container">
+    
+    <!-- Background Details -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Branding (Top Left) -->
+    <div class="brand-logo">
+      <div class="logo-icon"></div>
+      <div class="brand-text">toolstack.tech</div>
+    </div>
+
+    <!-- Left Half: Phone Mockup -->
+    <div class="left-half">
+      <div class="phone-wrapper">
+        <div class="phone-body">
+          <div class="phone-screen">
+            
+            <!-- Virality Score Badge -->
+            <div class="virality-badge">
+              <span class="badge-label">Virality Score</span>
+              <span class="badge-score">94</span>
+            </div>
+
+            <!-- Video Mockup Background -->
+            <div class="video-mockup">
+              <!-- Host Silhouette Icon -->
+              <div class="host-avatar">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+
+              <!-- Animating Waveform -->
+              <div class="waveform">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+            </div>
+
+            <!-- TikTok UI icons overlay -->
+            <div class="video-ui-right">
+              <div class="ui-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
+              <div class="ui-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                </svg>
+              </div>
+              <div class="ui-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Custom captions overlay -->
+            <div class="captions-mock">
+              <span class="caption-line">How I turned a <span class="caption-highlight">45 Minute</span> podcast...</span>
+            </div>
+
+            <!-- Purple Progress Bar -->
+            <div class="phone-progress-container">
+              <div class="phone-progress-bar"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Half: Stats & Text -->
+    <div class="right-half">
+      <div class="text-block">
+        <h1 class="title-large">45 MIN<br>PODCAST</h1>
+        
+        <!-- Downward Arrow -->
+        <div class="arrow-container">
+          <svg class="arrow-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/>
+          </svg>
+        </div>
+
+        <div class="result-badge">
+          <span class="result-highlight">22 CLIPS</span>
+          <span class="result-sub">· 14 MIN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solid Purple Bottom Strip -->
+    <div class="bottom-strip">
+      <h2 class="strip-text">Opus Clip Review 2026</h2>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -570,6 +570,16 @@ export const ALL_TOOLS = [
     icon: "🎁",
   },
   {
+    title: "Pokémon TCG Pocket Pull Calculator",
+    desc: "Calculate your odds of pulling Crown Rares, Immersive Rares, God Packs and more. Based on official in-game pull rates. See packs needed for any target probability.",
+    href: "/tools/pokemon-tcg-pocket-pull-calculator",
+    category: "Collectibles",
+    accent: "#6366f1",
+    accentRgb: "99,102,241",
+    badge: "NEW",
+    icon: "⚡",
+  },
+  {
     title: "WC 2026 Accumulator Calculator",
     desc: "Build your World Cup 2026 accumulator bet in seconds. Decimal, fractional or American odds, 2–8 selections, combined return and implied probability instantly.",
     href: "/tools/world-cup-accumulator-calculator",

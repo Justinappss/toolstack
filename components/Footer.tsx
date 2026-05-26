@@ -71,12 +71,20 @@ const TOOL_CATEGORIES = [
             { label: "eBay Best Offer Calculator", href: "/tools/ebay-best-offer-calculator" },
             { label: "Panini Sticker Calculator", href: "/tools/panini-sticker-calculator" },
             { label: "Pack Break EV Calculator", href: "/tools/pack-break-ev-calculator" },
+            { label: "Pokémon TCG Pocket Pull Calculator", href: "/tools/pokemon-tcg-pocket-pull-calculator" },
             { label: "WC 2026 Accumulator Calculator", href: "/tools/world-cup-accumulator-calculator" },
             { label: "World Cup 2026 Team Finder", href: "/tools/world-cup-team-finder" },
             { label: "YouTube Transcript Extractor", href: "/tools/youtube-transcript" },
             { label: "Credit Card Rewards Optimiser", href: "/tools/credit-card-rewards-optimizer" },
         ],
     },
+];
+
+const ALTERNATIVES = [
+    { label: "10015.io Alternative", href: "/10015-alternative" },
+    { label: "SmallSEOTools Alternative", href: "/smallseotools-alternative" },
+    { label: "CodeBeautify Alternative", href: "/codebeautify-alternative" },
+    { label: "FreeFormatter Alternative", href: "/freeformatter-alternative" },
 ];
 
 const COMPANY = [
@@ -168,6 +176,23 @@ export function Footer() {
                             </div>
                         </div>
                     ))}
+
+                    {/* Compare column */}
+                    <div>
+                        <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.55)", marginBottom: 14 }}>
+                            Compare
+                        </p>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                            {ALTERNATIVES.map(({ label, href }) => (
+                                <Link key={href} href={href} style={linkStyle}
+                                    onMouseEnter={e => { e.currentTarget.style.color = "white"; }}
+                                    onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.5)"; }}
+                                >
+                                    {label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
 
                     {/* Company column */}
                     <div>

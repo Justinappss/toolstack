@@ -603,6 +603,16 @@ export const ALL_TOOLS = [
     border: "rgba(245,158,11,0.25)",
     badge: "Finance",
   },
+  {
+    slug: "pokemon-tcg-pocket-pull-calculator",
+    name: "Pokémon TCG Pocket Pull Calculator",
+    desc: "Calculate your odds of pulling Crown Rares, God Packs, Immersive Rares and more. Based on official Pokémon TCG Pocket in-game pull rates.",
+    icon: "⚡",
+    color: "#6366f1",
+    bg: "rgba(99,102,241,0.1)",
+    border: "rgba(99,102,241,0.25)",
+    badge: "Collectibles",
+  },
 ];
 
 export function MoreTools({ currentSlug }: { currentSlug: string }) {
@@ -617,7 +627,7 @@ export function MoreTools({ currentSlug }: { currentSlug: string }) {
             More Free Tools
           </h2>
           <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: 0 }}>
-            60 tools live — all free, no signup, instant results.
+            61 tools live — all free, no signup, instant results.
           </p>
         </div>
         <Link href="/tools" style={{

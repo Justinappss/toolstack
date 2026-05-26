@@ -43,7 +43,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         "description": "We tested Opus Clip on a 45-minute podcast and got 22 clips in 14 minutes. Full review of accuracy, pricing, and who it's for.",
         "thumbnailUrl": "https://img.youtube.com/vi/E3wijtF5D80/maxresdefault.jpg",
         "embedUrl": "https://www.youtube.com/embed/E3wijtF5D80",
-        "uploadDate": "2026-05-26",
+        "uploadDate": "2026-05-26T00:00:00+00:00",
         "author": { "@type": "Person", "name": "Justin Pirrie" }
       }) }} />
       {children}

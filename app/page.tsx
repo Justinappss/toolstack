@@ -639,8 +639,18 @@ const LIVE_TOOLS = [
         category: "Finance",
         accent: "#f59e0b",
         accentRgb: "245,158,11",
-        badge: "New",
+        badge: null,
         image: "/tools/credit-card-rewards-optimizer-preview.png",
+    },
+    {
+        title: "Pokémon TCG Pocket Pull Calculator",
+        desc: "Crown Rare, God Pack, Immersive Rare odds from official pull rates. See packs needed for any target probability.",
+        href: "/tools/pokemon-tcg-pocket-pull-calculator",
+        category: "Collectibles",
+        accent: "#6366f1",
+        accentRgb: "99,102,241",
+        badge: "New",
+        image: "/tools/pack-break-ev-calculator-preview.png",
     },
 ];
 
@@ -775,7 +785,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    60 top-tier tools live · Free forever · No account
+                                    61 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -851,7 +861,7 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "60", label: "Live tools" },
+                                    { value: "61", label: "Live tools" },
                                     { value: "4+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
@@ -1087,7 +1097,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 60 tools <ArrowRight size={14} />
+                        View all 61 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 
