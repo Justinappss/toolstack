@@ -378,19 +378,6 @@ export default function BlogPost() {
                         </div>
 
                         <div style={{ margin: "32px 0 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
-                            <Image
-                                src="/blog/opus-clip-alternatives/infographic-speed.png"
-                                alt="Speed vs usable clips — Opus Clip vs Vidyo.ai vs Captions.ai vs Submagic — same 45-minute podcast"
-                                width={1200}
-                                height={630}
-                                style={{ width: "100%", height: "auto", display: "block" }}
-                            />
-                            <div style={{ padding: "12px 20px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                                <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Processing speed vs. usable clips — same 45-minute podcast, all four tools</p>
-                            </div>
-                        </div>
-
-                        <div style={{ margin: "24px 0 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)" }}>
                             <video autoPlay loop muted playsInline style={{ width: "100%", display: "block" }}>
                                 <source src="/blog/opus-clip-alternatives/infographic-animated-2.mp4" type="video/mp4" />
                             </video>
@@ -581,19 +568,6 @@ export default function BlogPost() {
                             >
                                 Try Opus Clip Free — No Card Required →
                             </a>
-                        </div>
-                    </section>
-
-                    {/* ── Deep Dive Video ── */}
-                    <section style={{ marginBottom: 64 }}>
-                        <h2 style={{ fontSize: "clamp(22px,3vw,30px)", fontWeight: 700, marginBottom: 12, letterSpacing: "-0.01em" }}>The Output Equation: Full ROI Breakdown</h2>
-                        <p style={{ fontSize: 16, lineHeight: 1.8, color: "rgba(255,255,255,0.65)", marginBottom: 24 }}>
-                            A deeper look at the true return on investment of AI video repurposing — beyond clip count and keeper rate.
-                        </p>
-                        <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", background: "#000" }}>
-                            <video controls playsInline style={{ width: "100%", display: "block", maxHeight: 500 }}>
-                                <source src="/blog/opus-clip-alternatives/infographic-animated-1.mp4" type="video/mp4" />
-                            </video>
                         </div>
                     </section>
 
