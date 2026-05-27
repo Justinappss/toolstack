@@ -65,6 +65,7 @@ const FAQS = [
 const accent = "#8b5cf6";
 const accentBg = "rgba(139,92,246,0.06)";
 const accentBorder = "rgba(139,92,246,0.18)";
+const accentText = "#a78bfa";
 const AFFILIATE_LINK = "https://bit.ly/4dIErjP";
 
 export default function BlogPost() {
@@ -93,10 +94,10 @@ export default function BlogPost() {
                     </div>
 
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 28 }}>
-                        <span style={{ background: accentBg, border: `1px solid ${accentBorder}`, color: accent, padding: "5px 14px", borderRadius: 99, fontSize: 12, fontWeight: 600, letterSpacing: "0.04em" }}>AI VIDEO REPURPOSING</span>
+                        <span style={{ background: accentBg, border: `1px solid ${accentBorder}`, color: accentText, padding: "5px 14px", borderRadius: 99, fontSize: 12, fontWeight: 600, letterSpacing: "0.04em" }}>AI VIDEO REPURPOSING</span>
                         <span style={{ background: "rgba(34,197,94,0.08)", border: "1px solid rgba(34,197,94,0.2)", color: "#22c55e", padding: "5px 14px", borderRadius: 99, fontSize: 12, fontWeight: 600 }}>4 TOOLS TESTED</span>
-                        <span style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.55)", padding: "5px 14px", borderRadius: 99, fontSize: 12 }}>Updated May 2026</span>
-                        <span style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.55)", padding: "5px 14px", borderRadius: 99, fontSize: 12 }}>Same 45-min test</span>
+                        <span style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.65)", padding: "5px 14px", borderRadius: 99, fontSize: 12 }}>Updated May 2026</span>
+                        <span style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)", color: "rgba(255,255,255,0.65)", padding: "5px 14px", borderRadius: 99, fontSize: 12 }}>Same 45-min test</span>
                     </div>
 
                     <h1 style={{ fontSize: "clamp(28px, 5vw, 44px)", fontWeight: 800, lineHeight: 1.15, marginBottom: 28, letterSpacing: "-0.02em" }}>
@@ -408,7 +409,7 @@ export default function BlogPost() {
                                         { tool: "Submagic", free: "10 videos/mo", entry: "$20/mo", mid: "$40/mo", best: "Entry ($20/mo)" },
                                     ].map((row, i) => (
                                         <tr key={row.tool} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)", background: i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.01)" }}>
-                                            <td style={{ padding: "14px", fontWeight: 700, color: i === 0 ? accent : "white" }}>{row.tool}{i === 0 && <span style={{ marginLeft: 8, fontSize: 11, background: accentBg, border: `1px solid ${accentBorder}`, color: accent, padding: "2px 8px", borderRadius: 99 }}>WINNER</span>}</td>
+                                            <td style={{ padding: "14px", fontWeight: 700, color: i === 0 ? accent : "white" }}>{row.tool}{i === 0 && <span style={{ marginLeft: 8, fontSize: 11, background: accentBg, border: `1px solid ${accentBorder}`, color: accentText, padding: "2px 8px", borderRadius: 99 }}>WINNER</span>}</td>
                                             <td style={{ padding: "14px", color: "rgba(255,255,255,0.75)" }}>{row.free}</td>
                                             <td style={{ padding: "14px", color: "rgba(255,255,255,0.75)" }}>{row.entry}</td>
                                             <td style={{ padding: "14px", color: "rgba(255,255,255,0.6)", fontSize: 13 }}>{row.mid}</td>
@@ -459,7 +460,7 @@ export default function BlogPost() {
                                     ].map((row, i) => (
                                         <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.05)", background: i % 2 === 0 ? "transparent" : "rgba(255,255,255,0.01)" }}>
                                             {row.map((cell, j) => (
-                                                <td key={j} style={{ padding: "12px 14px", color: j === 1 ? "rgba(255,255,255,0.85)" : "rgba(255,255,255,0.55)", fontSize: 13, fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
+                                                <td key={j} style={{ padding: "12px 14px", color: j === 1 ? "rgba(255,255,255,0.85)" : "rgba(255,255,255,0.7)", fontSize: 13, fontWeight: j === 0 ? 600 : 400 }}>{cell}</td>
                                             ))}
                                         </tr>
                                     ))}
