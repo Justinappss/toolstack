@@ -36,6 +36,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         },
         "datePublished": "2026-05-27"
       }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Is Opus Clip Still King? We Tested 3 New AI Rivals (2026)",
+        "description": "We tested Opus Clip, Vidyo.ai, Captions.ai, and Submagic on the same 45-minute podcast. Full comparison of clips, keeper rates, speed, and pricing.",
+        "thumbnailUrl": "https://img.youtube.com/vi/J3w0wYxGRVs/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/J3w0wYxGRVs",
+        "uploadDate": "2026-05-27T00:00:00+00:00",
+        "duration": "PT10M",
+        "contentUrl": "https://www.youtube.com/watch?v=J3w0wYxGRVs",
+        "author": { "@type": "Person", "name": "Justin Pirrie" }
+      }) }} />
       {children}
     </>
   );

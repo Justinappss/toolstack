@@ -277,6 +277,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${base}/blog/opus-clip-alternatives`,
+      lastModified: "2026-05-27",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${base}/blog/utm-builder-guide`,
       lastModified: "2026-05-19",
       changeFrequency: "monthly",
