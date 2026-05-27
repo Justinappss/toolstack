@@ -84,10 +84,10 @@ export default function BlogPost() {
                 <div style={{ position: "absolute", top: "10%", left: "50%", transform: "translateX(-50%)", width: 700, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 70%)", filter: "blur(80px)", pointerEvents: "none" }} />
                 <div style={{ maxWidth: 780, margin: "0 auto", padding: "0 24px", position: "relative" }}>
 
-                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.45)" }}>
-                        <Link href="/" style={{ color: "inherit", textDecoration: "none" }}>Home</Link>
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 32, fontSize: 13, color: "rgba(255,255,255,0.6)" }}>
+                        <Link href="/" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Home</Link>
                         <span>/</span>
-                        <Link href="/blog" style={{ color: "inherit", textDecoration: "none" }}>Blog</Link>
+                        <Link href="/blog" style={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}>Blog</Link>
                         <span>/</span>
                         <span style={{ color: "rgba(255,255,255,0.7)" }}>Opus Clip Alternatives 2026</span>
                     </div>
@@ -173,7 +173,7 @@ export default function BlogPost() {
                         </p>
 
                         <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, padding: "20px 24px", marginTop: 24 }}>
-                            <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.4)", marginBottom: 8, letterSpacing: "0.06em" }}>TEST CONDITIONS</div>
+                            <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.6)", marginBottom: 8, letterSpacing: "0.06em" }}>TEST CONDITIONS</div>
                             <ul style={{ margin: 0, paddingLeft: 20, display: "flex", flexDirection: "column", gap: 8, fontSize: 15, color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}>
                                 <li><strong style={{ color: "white" }}>Source video:</strong> 45-minute solo podcast, clean audio, single speaker</li>
                                 <li><strong style={{ color: "white" }}>Settings:</strong> Default on all tools — no custom prompts or manual overrides</li>
@@ -248,11 +248,11 @@ export default function BlogPost() {
                                             <h3 style={{ fontSize: 20, fontWeight: 800, margin: 0 }}>{name}</h3>
                                             <span style={{ background: tagBg, border: `1px solid ${tagBorder}`, color: tagColor, padding: "3px 10px", borderRadius: 99, fontSize: 11, fontWeight: 700, letterSpacing: "0.06em" }}>{tag}</span>
                                         </div>
-                                        <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>{price}</div>
+                                        <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>{price}</div>
                                     </div>
                                     <div style={{ textAlign: "right" }}>
                                         <div style={{ fontSize: 36, fontWeight: 900, color: tagColor, lineHeight: 1 }}>{rating}</div>
-                                        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", marginTop: 2 }}>/10</div>
+                                        <div style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", marginTop: 2 }}>/10</div>
                                     </div>
                                 </div>
                                 <p style={{ fontSize: 15, lineHeight: 1.75, color: "rgba(255,255,255,0.65)", marginBottom: 16 }}>{description}</p>
@@ -291,14 +291,14 @@ export default function BlogPost() {
                                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 8 }}>
                                     <div>
                                         <span style={{ fontSize: 15, fontWeight: 700, color: "white" }}>{tool}</span>
-                                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginLeft: 12 }}>{keepers}/{clips} keepers</span>
+                                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", marginLeft: 12 }}>{keepers}/{clips} keepers</span>
                                     </div>
                                     <span style={{ fontSize: 22, fontWeight: 800, color }}>{pct}%</span>
                                 </div>
                                 <div style={{ height: 8, background: "rgba(255,255,255,0.08)", borderRadius: 99, overflow: "hidden", marginBottom: 6 }}>
                                     <div style={{ height: "100%", width: `${pct}%`, background: `linear-gradient(90deg, ${color}, ${color}80)`, borderRadius: 99 }} />
                                 </div>
-                                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", fontStyle: "italic" }}>{note}</div>
+                                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", fontStyle: "italic" }}>{note}</div>
                             </div>
                         ))}
 
@@ -331,7 +331,7 @@ export default function BlogPost() {
                                 <div style={{ height: 8, background: "rgba(255,255,255,0.08)", borderRadius: 99, overflow: "hidden", marginBottom: 6 }}>
                                     <div style={{ height: "100%", width: `${pct}%`, background: `linear-gradient(90deg, ${color}, ${color}80)`, borderRadius: 99 }} />
                                 </div>
-                                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", fontStyle: "italic" }}>{note}</div>
+                                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", fontStyle: "italic" }}>{note}</div>
                             </div>
                         ))}
 
@@ -359,7 +359,7 @@ export default function BlogPost() {
                             <div key={tool} style={{ display: "flex", gap: 16, alignItems: "center", marginBottom: 18 }}>
                                 <div style={{ width: 120, flexShrink: 0 }}>
                                     <div style={{ fontSize: 14, fontWeight: 700, color: "white", marginBottom: 2 }}>{tool}</div>
-                                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>{clips} clips</div>
+                                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.6)" }}>{clips} clips</div>
                                 </div>
                                 <div style={{ flex: 1 }}>
                                     <div style={{ height: 8, background: "rgba(255,255,255,0.08)", borderRadius: 99, overflow: "hidden" }}>
@@ -396,7 +396,7 @@ export default function BlogPost() {
                                 <thead>
                                     <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
                                         {["Tool", "Free Tier", "Entry Paid", "Mid Tier", "Best Value Plan"].map((h, i) => (
-                                            <th key={h} style={{ textAlign: "left", padding: "10px 14px", color: i === 1 ? accent : "rgba(255,255,255,0.4)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", whiteSpace: "nowrap" }}>{h}</th>
+                                            <th key={h} style={{ textAlign: "left", padding: "10px 14px", color: i === 1 ? accent : "rgba(255,255,255,0.6)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", whiteSpace: "nowrap" }}>{h}</th>
                                         ))}
                                     </tr>
                                 </thead>
@@ -439,7 +439,7 @@ export default function BlogPost() {
                                 <thead>
                                     <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
                                         {["Metric", "Opus Clip", "Vidyo.ai", "Captions.ai", "Submagic"].map((h, i) => (
-                                            <th key={h} style={{ textAlign: "left", padding: "10px 14px", color: i === 1 ? accent : "rgba(255,255,255,0.4)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", whiteSpace: "nowrap" }}>{h}</th>
+                                            <th key={h} style={{ textAlign: "left", padding: "10px 14px", color: i === 1 ? accent : "rgba(255,255,255,0.6)", fontWeight: 600, fontSize: 12, letterSpacing: "0.06em", whiteSpace: "nowrap" }}>{h}</th>
                                         ))}
                                     </tr>
                                 </thead>
@@ -476,7 +476,7 @@ export default function BlogPost() {
                                 style={{ width: "100%", height: "auto", display: "block" }}
                             />
                             <div style={{ padding: "12px 20px", background: "rgba(255,255,255,0.02)", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                                <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.3)" }}>Full feature comparison — Opus Clip vs top 3 alternatives in 2026 · toolstack.tech</p>
+                                <p style={{ margin: 0, fontSize: 12, color: "rgba(255,255,255,0.6)" }}>Full feature comparison — Opus Clip vs top 3 alternatives in 2026 · toolstack.tech</p>
                             </div>
                         </div>
 
@@ -497,7 +497,7 @@ export default function BlogPost() {
                                 <div key={name} style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
                                     <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 8 }}>
                                         <span style={{ fontSize: 32, fontWeight: 900, color, lineHeight: 1 }}>{rating}</span>
-                                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>/10</span>
+                                        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>/10</span>
                                     </div>
                                     <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 6 }}>{name}</div>
                                     <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.5 }}>{verdict}</div>
@@ -564,7 +564,7 @@ export default function BlogPost() {
                                 href={AFFILIATE_LINK}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ display: "inline-block", background: accent, color: "white", padding: "16px 36px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}
+                                style={{ display: "inline-block", background: "#6d28d9", color: "white", padding: "16px 36px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}
                             >
                                 Try Opus Clip Free — No Card Required →
                             </a>
@@ -582,7 +582,7 @@ export default function BlogPost() {
                                 >
                                     <summary style={{ fontWeight: 600, fontSize: 15, cursor: "pointer", color: "white", listStyle: "none", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                         {question}
-                                        <span style={{ fontSize: 18, color: "rgba(255,255,255,0.4)", flexShrink: 0, marginLeft: 16 }}>+</span>
+                                        <span style={{ fontSize: 18, color: "rgba(255,255,255,0.6)", flexShrink: 0, marginLeft: 16 }}>+</span>
                                     </summary>
                                     <p style={{ fontSize: 14, lineHeight: 1.75, color: "rgba(255,255,255,0.65)", marginTop: 14, marginBottom: 0 }}>{answer}</p>
                                 </details>
@@ -601,7 +601,7 @@ export default function BlogPost() {
                         />
                         <div>
                             <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Justin Pirrie</div>
-                            <div style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", marginBottom: 10 }}>Founder, ToolStack · Content marketing consultant · 60+ tools tested in 2026</div>
+                            <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", marginBottom: 10 }}>Founder, ToolStack · Content marketing consultant · 60+ tools tested in 2026</div>
                             <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, margin: 0 }}>
                                 Justin runs <Link href="/" style={{ color: accent }}>ToolStack</Link> — a collection of 60+ free online tools — and{" "}
                                 <a href="https://advertsgpt.com" target="_blank" rel="noopener noreferrer" style={{ color: accent }}>AdvertsGPT</a>,
@@ -612,20 +612,20 @@ export default function BlogPost() {
 
                     {/* Sources */}
                     <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 32 }}>
-                        <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.3)", marginBottom: 14 }}>SOURCES</div>
-                        <ul style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", lineHeight: 2, paddingLeft: 20 }}>
-                            <li><a href="https://sacra.com/c/opusclip/" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)" }}>OpusClip Revenue, Funding &amp; Valuation — Sacra Research</a></li>
-                            <li><a href="https://marketingltb.com/blog/statistics/short-form-video-statistics/" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)" }}>Short-Form Video Statistics 2026 — MarketingLTB</a></li>
-                            <li><a href="https://autofaceless.ai/blog/content-repurposing-statistics-2026" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)" }}>Content Repurposing Statistics 2026 — AutoFaceless</a></li>
-                            <li><a href="https://vidyo.ai" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)" }}>Vidyo.ai — Official Site</a></li>
-                            <li><a href="https://captions.ai" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)" }}>Captions.ai — Official Site</a></li>
-                            <li><a href="https://submagic.co" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)" }}>Submagic — Official Site</a></li>
+                        <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.6)", marginBottom: 14 }}>SOURCES</div>
+                        <ul style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", lineHeight: 2, paddingLeft: 20 }}>
+                            <li><a href="https://sacra.com/c/opusclip/" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>OpusClip Revenue, Funding &amp; Valuation — Sacra Research</a></li>
+                            <li><a href="https://marketingltb.com/blog/statistics/short-form-video-statistics/" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>Short-Form Video Statistics 2026 — MarketingLTB</a></li>
+                            <li><a href="https://autofaceless.ai/blog/content-repurposing-statistics-2026" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>Content Repurposing Statistics 2026 — AutoFaceless</a></li>
+                            <li><a href="https://vidyo.ai" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>Vidyo.ai — Official Site</a></li>
+                            <li><a href="https://captions.ai" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>Captions.ai — Official Site</a></li>
+                            <li><a href="https://submagic.co" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.6)" }}>Submagic — Official Site</a></li>
                         </ul>
                     </div>
 
                     {/* Related Free Tools */}
                     <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 32, marginTop: 32 }}>
-                        <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.3)", marginBottom: 14 }}>RELATED FREE TOOLS</div>
+                        <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.6)", marginBottom: 14 }}>RELATED FREE TOOLS</div>
                         <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
                             <Link href="/tools/youtube-tag-generator" style={{ fontSize: 13, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Tag Generator →</Link>
                             <Link href="/tools/youtube-transcript" style={{ fontSize: 13, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Transcript Extractor →</Link>
