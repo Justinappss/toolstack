@@ -196,7 +196,7 @@ export default function BlogPost() {
                             {
                                 name: "Opus Clip",
                                 tag: "THE BENCHMARK",
-                                tagColor: accent,
+                                tagColor: accentText,
                                 tagBg: accentBg,
                                 tagBorder: accentBorder,
                                 price: "From $19/mo · Free plan: 60 min/mo",
@@ -628,9 +628,9 @@ export default function BlogPost() {
                     <div style={{ borderTop: "1px solid rgba(255,255,255,0.07)", paddingTop: 32, marginTop: 32 }}>
                         <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", color: "rgba(255,255,255,0.6)", marginBottom: 14 }}>RELATED FREE TOOLS</div>
                         <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                            <Link href="/tools/youtube-tag-generator" style={{ fontSize: 13, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Tag Generator →</Link>
-                            <Link href="/tools/youtube-transcript" style={{ fontSize: 13, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Transcript Extractor →</Link>
-                            <Link href="/tools/youtube-thumbnail-downloader" style={{ fontSize: 13, color: accent, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Thumbnail Downloader →</Link>
+                            <Link href="/tools/youtube-tag-generator" style={{ fontSize: 13, color: accentText, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Tag Generator →</Link>
+                            <Link href="/tools/youtube-transcript" style={{ fontSize: 13, color: accentText, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Transcript Extractor →</Link>
+                            <Link href="/tools/youtube-thumbnail-downloader" style={{ fontSize: 13, color: accentText, textDecoration: "none", padding: "8px 16px", borderRadius: 10, background: accentBg, border: `1px solid ${accentBorder}`, fontWeight: 600 }}>YouTube Thumbnail Downloader →</Link>
                         </div>
                     </div>
 
