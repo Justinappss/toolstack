@@ -24,9 +24,9 @@ export function SidebarToc({ affiliateLink }: { affiliateLink: string }) {
                         <li key={href}>
                             <a
                                 href={href}
-                                style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 10px", borderRadius: 8, color: "rgba(255,255,255,0.5)", fontSize: 13, textDecoration: "none" }}
+                                style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 10px", borderRadius: 8, color: "rgba(255,255,255,0.65)", fontSize: 13, textDecoration: "none" }}
                                 onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.color = accent; el.style.background = "rgba(139,92,246,0.08)"; }}
-                                onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.color = "rgba(255,255,255,0.5)"; el.style.background = "transparent"; }}
+                                onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.color = "rgba(255,255,255,0.65)"; el.style.background = "transparent"; }}
                             >
                                 <span style={{ fontSize: 10, color: "rgba(139,92,246,0.9)", fontWeight: 700, minWidth: 14 }}>{i + 1}</span>
                                 {label}
@@ -39,7 +39,7 @@ export function SidebarToc({ affiliateLink }: { affiliateLink: string }) {
                         href={affiliateLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ display: "block", background: accent, color: "white", padding: "10px 14px", borderRadius: 10, fontWeight: 700, fontSize: 13, textDecoration: "none", textAlign: "center" }}
+                        style={{ display: "block", background: "#6d28d9", color: "white", padding: "10px 14px", borderRadius: 10, fontWeight: 700, fontSize: 13, textDecoration: "none", textAlign: "center" }}
                     >
                         Try Opus Clip Free →
                     </a>

@@ -142,7 +142,7 @@ export default function BlogPost() {
                     {/* ── Audio overview ── */}
                     <div style={{ background: "rgba(139,92,246,0.06)", border: "1px solid rgba(139,92,246,0.18)", borderRadius: 14, padding: "20px 24px", marginBottom: 24 }}>
                         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", color: accent, marginBottom: 10 }}>AUDIO OVERVIEW</div>
-                        <p style={{ margin: "0 0 14px", fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.6 }}>Prefer to listen? Full comparison narrated — 3 minutes.</p>
+                        <p style={{ margin: "0 0 14px", fontSize: 14, color: "rgba(255,255,255,0.65)", lineHeight: 1.6 }}>Prefer to listen? Full comparison narrated — 3 minutes.</p>
                         <audio controls style={{ width: "100%", accentColor: accent }}>
                             <source src="/blog/opus-clip-alternatives/audio-overview.m4a" type="audio/mp4" />
                         </audio>
@@ -500,7 +500,7 @@ export default function BlogPost() {
                                         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.6)" }}>/10</span>
                                     </div>
                                     <div style={{ fontSize: 15, fontWeight: 700, marginBottom: 6 }}>{name}</div>
-                                    <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.5 }}>{verdict}</div>
+                                    <div style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>{verdict}</div>
                                 </div>
                             ))}
                         </div>
