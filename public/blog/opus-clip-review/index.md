@@ -114,7 +114,7 @@ Benchmarks by content type:
 
 Opus Clip does what it promises — turns a 45-minute podcast into 22 clips in 14 minutes with captions that need minimal correction. The virality scoring isn't magic, but it's a better starting filter than random manual selection. The free plan is genuinely useful for evaluation. Skip if you need to do real editing; choose it if your job is repurposing, not producing.
 
-**Try free:** https://www.opus.pro/?via=4e4786
+**Try free:** https://bit.ly/4dIErjP
 
 ## FAQ
 

@@ -131,6 +131,7 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 - https://toolstack.tech/blog/password-generator-guide/index.md
 - https://toolstack.tech/blog/perfect-meta-description-anatomy/index.md
 - https://toolstack.tech/blog/pokemon-tcg-pocket-pull-rates/index.md
+- https://toolstack.tech/blog/opus-clip-alternatives/index.md
 - https://toolstack.tech/blog/opus-clip-review/index.md
 - https://toolstack.tech/blog/postiz-review/index.md
 - https://toolstack.tech/blog/rankspot-review/index.md

@@ -16,6 +16,18 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "opus-clip-alternatives",
+        title: "Is Opus Clip Still King? We Tested 3 New AI Rivals (2026)",
+        description: "We ran the same 45-min podcast through Opus Clip, Vidyo.ai, Captions.ai, and Submagic. Honest breakdown — clip quality, caption accuracy, speed, and who should switch.",
+        date: "May 27, 2026",
+        readTime: "11 min read",
+        tag: "Video Tools",
+        accent: "#8b5cf6",
+        accentBg: "rgba(139,92,246,0.08)",
+        accentBorder: "rgba(139,92,246,0.2)",
+        featured: true,
+    },
+    {
         slug: "pokemon-tcg-pocket-pull-rates",
         title: "Pokémon TCG Pocket Pull Rates Explained: Crown Rare, God Pack & Every Rarity",
         description: "The official Pokémon TCG Pocket pull rates decoded. How many packs you need for Crown Rare, God Pack, Immersive Rare and every rarity — with a free pull probability calculator.",
