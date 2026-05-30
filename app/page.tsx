@@ -33,6 +33,16 @@ export const metadata: Metadata = {
 
 const LIVE_TOOLS = [
     {
+        title: "UCL Final 2026 Accumulator",
+        desc: "PSG vs Arsenal — Champions League final acca calculator. Enter your odds, see combined return and implied probability instantly.",
+        href: "/tools/ucl-final-accumulator-2026",
+        category: "Sports",
+        accent: "#22c55e",
+        accentRgb: "34,197,94",
+        badge: "🔥 Live Today",
+        image: "/tools/ai-prompt-generator-preview.png",
+    },
+    {
         title: "AI Prompt Generator",
         desc: "Expert prompts using RISEN, STAR & Chain-of-Thought frameworks.",
         href: "/tools/ai-prompt-generator",
