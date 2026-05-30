@@ -155,6 +155,17 @@ export default function BlogPost() {
                         AWeber is still the right call for enterprise teams running complex B2B automation who need a 99.8% deliverability guarantee backed by own sending infrastructure. But for solo creators, bloggers, and anyone growing a newsletter from scratch — the math doesn&apos;t work in AWeber&apos;s favour anymore.
                     </p>
 
+                    {/* ToolStack inline CTA */}
+                    <div style={{ background: "rgba(16,185,129,0.06)", border: "1px solid rgba(16,185,129,0.2)", borderRadius: 12, padding: "20px 24px", marginBottom: 28, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, flexWrap: "wrap" }}>
+                        <div>
+                            <div style={{ fontSize: 13, fontWeight: 700, color: "#10b981", marginBottom: 4 }}>Free Email Tool — No Signup</div>
+                            <div style={{ fontSize: 13, color: "rgba(255,255,255,0.6)", lineHeight: 1.5 }}>Writing subject lines for your newsletter? Test them free — scores open rate potential, spam triggers, and power words instantly.</div>
+                        </div>
+                        <Link href="/tools/email-subject-line-tester" style={{ background: "#10b981", color: "#000", padding: "10px 20px", borderRadius: 8, fontWeight: 700, fontSize: 13, textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}>
+                            Test Subject Lines Free →
+                        </Link>
+                    </div>
+
                     {/* Dual CTA */}
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 40 }}>
                         <a href={BEEHIIV_LINK} target="_blank" rel="noopener noreferrer" style={{ background: accentB, color: "#000", padding: "16px 20px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none", textAlign: "center", display: "block" }}>
@@ -463,7 +474,13 @@ export default function BlogPost() {
                             Try AWeber Instead
                         </a>
                     </div>
-                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", marginTop: 16 }}>
+                    <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,0.07)" }}>
+                        <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", marginBottom: 10 }}>Want help growing your newsletter with AI-powered content?</div>
+                        <a href="https://advertsgpt.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 13, fontWeight: 600, color: "#a78bfa", textDecoration: "none" }}>
+                            AdvertsGPT — GEO &amp; AEO content agency →
+                        </a>
+                    </div>
+                    <div style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", marginTop: 12 }}>
                         Affiliate disclosure: ToolStack earns a commission if you sign up via these links, at no extra cost to you.
                     </div>
                 </section>
