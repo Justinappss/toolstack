@@ -1,0 +1,22 @@
+{
+  "success_metric": "post_deploy_fix_count",
+  "target": 0,
+  "history": [
+    {
+      "date": "2026-05-30",
+      "release": "ucl-final-accumulator-2026",
+      "type": "tool",
+      "post_deploy_fixes": 5,
+      "fixes": ["missing layout.tsx", "missing AdvertsGPT banner", "missing Footer entry", "missing MoreTools entry", "wrong homepage count"]
+    },
+    {
+      "date": "2026-05-30",
+      "release": "aweber-vs-beehiiv blog",
+      "type": "blog",
+      "post_deploy_fixes": 3,
+      "fixes": ["missing author avatar", "missing ToolStack inline CTA", "missing AdvertsGPT link in conclusion"]
+    }
+  ],
+  "current_fix_count": 8,
+  "releases_since_zero": 0
+}
