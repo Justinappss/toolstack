@@ -72,6 +72,7 @@ const TOOL_CATEGORIES = [
             { label: "Panini Sticker Calculator", href: "/tools/panini-sticker-calculator" },
             { label: "Pack Break EV Calculator", href: "/tools/pack-break-ev-calculator" },
             { label: "Pokémon TCG Pocket Pull Calculator", href: "/tools/pokemon-tcg-pocket-pull-calculator" },
+            { label: "UCL Final 2026 Accumulator", href: "/tools/ucl-final-accumulator-2026" },
             { label: "WC 2026 Accumulator Calculator", href: "/tools/world-cup-accumulator-calculator" },
             { label: "World Cup 2026 Team Finder", href: "/tools/world-cup-team-finder" },
             { label: "YouTube Transcript Extractor", href: "/tools/youtube-transcript" },

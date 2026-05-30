@@ -795,7 +795,7 @@ export default function Home() {
                                     <span style={{ position: "relative", width: 8, height: 8, borderRadius: "50%", background: "#818cf8", display: "inline-block" }} />
                                 </span>
                                 <span style={{ fontSize: 13, fontWeight: 700, color: "#c7d2fe", letterSpacing: "0.02em" }}>
-                                    61 top-tier tools live · Free forever · No account
+                                    62 top-tier tools live · Free forever · No account
                                 </span>
                             </div>
 
@@ -871,8 +871,8 @@ export default function Home() {
                             {/* Stats */}
                             <div className="fade-up-delay-4" style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
                                 {[
-                                    { value: "61", label: "Live tools" },
-                                    { value: "4+", label: "Coming soon" },
+                                    { value: "62", label: "Live tools" },
+                                    { value: "3+", label: "Coming soon" },
                                     { value: "GPT-4o", label: "AI model" },
                                     { value: "Free", label: "No catch" },
                                 ].map((s, i) => (
@@ -1107,7 +1107,7 @@ export default function Home() {
                         color: "rgba(255,255,255,0.55)", textDecoration: "none",
                         transition: "all 0.15s",
                     }}>
-                        View all 61 tools <ArrowRight size={14} />
+                        View all 62 tools <ArrowRight size={14} />
                     </Link>
                 </div>
 

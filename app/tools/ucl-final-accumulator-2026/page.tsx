@@ -3,6 +3,7 @@ export const dynamic = "force-static";
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { MoreTools } from "@/components/MoreTools";
+import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 import { FaqPageSchema } from "@/components/ui/FaqPageSchema";
 
 const FAQS = [
@@ -546,6 +547,7 @@ export default function UCLFinalAccumulatorPage() {
         </div>
 
         <MoreTools currentSlug="ucl-final-accumulator-2026" />
+        <AdvertiseGPTBanner />
       </div>
     </div>
   );

@@ -564,6 +564,16 @@ export const ALL_TOOLS = [
     badge: "Collectibles",
   },
   {
+    slug: "ucl-final-accumulator-2026",
+    name: "UCL Final 2026 Accumulator",
+    desc: "PSG vs Arsenal Champions League final acca calculator. Combined return and implied probability live.",
+    icon: "⭐",
+    color: "#22c55e",
+    bg: "rgba(34,197,94,0.1)",
+    border: "rgba(34,197,94,0.25)",
+    badge: "🔥 Live Today",
+  },
+  {
     slug: "world-cup-accumulator-calculator",
     name: "WC 2026 Accumulator Calculator",
     desc: "Build your World Cup acca in seconds. Decimal, fractional or American odds across 2–8 selections. Combined return and implied probability instantly.",
