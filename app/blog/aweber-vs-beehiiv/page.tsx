@@ -128,7 +128,7 @@ export default function BlogPost() {
 
                     {/* Author */}
                     <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 40, fontSize: 13, color: "rgba(255,255,255,0.5)" }}>
-                        <div style={{ width: 36, height: 36, borderRadius: "50%", background: "linear-gradient(135deg, #f59e0b, #ef4444)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 14, fontWeight: 700, flexShrink: 0 }}>JP</div>
+                        <Image src="/blog/aweber-vs-beehiiv/author-avatar.jpg" alt="Justin Pirrie" width={36} height={36} style={{ borderRadius: "50%", flexShrink: 0 }} />
                         <div>
                             <div style={{ color: "white", fontWeight: 600, fontSize: 14 }}>Justin Pirrie</div>
                             <div>Founder, ToolStack · May 29, 2026</div>
