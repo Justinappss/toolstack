@@ -16,6 +16,30 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "aweber-vs-beehiiv",
+        title: "AWeber vs Beehiiv: Why Creators Are Switching After the 50% Price Hike (2026)",
+        description: "AWeber raised prices 50–150% in late 2024 and cut its free tier to 300 subscribers. Beehiiv offers 2,500 free subscribers plus a built-in Ad Network, Boosts, and paid subscriptions. Full 2026 comparison.",
+        date: "May 29, 2026",
+        readTime: "10 min read",
+        tag: "Email Marketing",
+        accent: "#f59e0b",
+        accentBg: "rgba(245,158,11,0.08)",
+        accentBorder: "rgba(245,158,11,0.2)",
+        featured: true,
+    },
+    {
+        slug: "salary-after-tax-uk-us-2025",
+        title: "Salary After Tax 2025: UK vs US — What You Actually Take Home",
+        description: "Exact take-home pay after tax for UK and US salaries in 2025/26. Full PAYE + NI breakdown for the UK, Federal + FICA for the US — with a free salary calculator for both countries.",
+        date: "May 28, 2026",
+        readTime: "9 min read",
+        tag: "Finance",
+        accent: "#34d399",
+        accentBg: "rgba(52,211,153,0.08)",
+        accentBorder: "rgba(52,211,153,0.2)",
+        featured: true,
+    },
+    {
         slug: "opus-clip-alternatives",
         title: "Is Opus Clip Still King? We Tested 3 New AI Rivals (2026)",
         description: "We ran the same 45-min podcast through Opus Clip, Vidyo.ai, Captions.ai, and Submagic. Honest breakdown — clip quality, caption accuracy, speed, and who should switch.",

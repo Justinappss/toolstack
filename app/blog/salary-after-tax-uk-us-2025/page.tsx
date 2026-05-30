@@ -388,6 +388,13 @@ export default function BlogPost() {
                     <p style={pStyle}>
                         The <Link href="/tools/salary-calculator" style={{ color: accent, textDecoration: "underline" }}>ToolStack salary calculator</Link> covers both UK PAYE (2024/25 rates) and US Federal tax (2024 brackets). It's free, no account required, and gives you the full breakdown in one click.
                     </p>
+
+                    {/* Tool screenshot — UK result */}
+                    <div style={{ margin: "0 0 32px", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                        <img src="/blog/salary-after-tax-uk-us-2025/screenshot-tool-uk-result.png" alt="ToolStack salary calculator showing UK £50,000 take-home pay — income tax, National Insurance, monthly and annual net breakdown" style={{ width: "100%", display: "block" }} loading="lazy" />
+                        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center" as const, padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>The free ToolStack salary calculator — full UK PAYE breakdown in one click</p>
+                    </div>
+
                     <div style={{ display: "flex", flexDirection: "column" as const, gap: 12, margin: "0 0 32px" }}>
                         {[
                             ["1", "Select your country", "Choose 🇬🇧 UK (Income Tax + NI) or 🇺🇸 US (Federal Tax + FICA)"],
