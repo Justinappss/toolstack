@@ -580,6 +580,16 @@ export const ALL_TOOLS = [
     icon: "⚡",
   },
   {
+    title: "UCL Final 2026 Accumulator",
+    desc: "PSG vs Arsenal Champions League final accumulator calculator. Build your UCL final acca with decimal, fractional or American odds — combined return and implied probability live.",
+    href: "/tools/ucl-final-accumulator-2026",
+    category: "Sports",
+    accent: "#22c55e",
+    accentRgb: "34,197,94",
+    badge: "🔥 Live Today",
+    icon: "⭐",
+  },
+  {
     title: "WC 2026 Accumulator Calculator",
     desc: "Build your World Cup 2026 accumulator bet in seconds. Decimal, fractional or American odds, 2–8 selections, combined return and implied probability instantly.",
     href: "/tools/world-cup-accumulator-calculator",

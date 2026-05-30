@@ -119,6 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "pokemon-tcg-pocket-pull-calculator",
       "world-cup-accumulator-calculator",
       "world-cup-team-finder",
+      "ucl-final-accumulator-2026",
       "youtube-video-downloader",
       "youtube-thumbnail-downloader",
     ].map(slug => ({
@@ -247,6 +248,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${base}/blog/aweber-vs-beehiiv`,
+      lastModified: "2026-05-29",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${base}/blog/aweber-review`,
       lastModified: "2026-05-17",
       changeFrequency: "monthly",
@@ -327,6 +334,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${base}/blog/google-ai-search-redesign-2026`,
       lastModified: "2026-05-22",
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/blog/salary-after-tax-uk-us-2025`,
+      lastModified: "2026-05-28",
       changeFrequency: "monthly",
       priority: 0.9,
     },

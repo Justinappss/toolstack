@@ -82,6 +82,7 @@ All tools are free, browser-based, and require no account.
 - [Panini Sticker Album Calculator](https://toolstack.tech/tools/panini-sticker-calculator): Calculate how many packs to complete any Panini album.
 
 ### Sports Tools
+- [UCL Final 2026 Accumulator Calculator](https://toolstack.tech/tools/ucl-final-accumulator-2026): PSG vs Arsenal Champions League final accumulator calculator — free, all odds formats.
 - [WC 2026 Accumulator Calculator](https://toolstack.tech/tools/world-cup-accumulator-calculator): Build World Cup 2026 accumulator bets with decimal, fractional or American odds.
 - [World Cup 2026 Team Finder](https://toolstack.tech/tools/world-cup-team-finder): Match to a World Cup 2026 team through 5 personality questions.
 
@@ -206,6 +207,7 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 - https://toolstack.tech/tools/whatnot-seller-fee-calculator/index.md
 - https://toolstack.tech/tools/whois-lookup/index.md
 - https://toolstack.tech/tools/word-counter/index.md
+- https://toolstack.tech/tools/ucl-final-accumulator-2026/index.md
 - https://toolstack.tech/tools/world-cup-accumulator-calculator/index.md
 - https://toolstack.tech/tools/world-cup-team-finder/index.md
 - https://toolstack.tech/tools/youtube-tag-generator/index.md
