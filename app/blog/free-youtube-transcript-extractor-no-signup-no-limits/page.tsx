@@ -219,8 +219,8 @@ export default function FreeYoutubeTranscriptExtractorPage() {
                     We built it for ourselves first — we needed to extract transcripts from dozens of videos per week for content research. Every existing tool got in the way. So we made our own, and now it's available for everyone.
                 </p>
 
-                {/* INFographic 1 */}
-                <img src="/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-features.png" alt="YouTube Transcript Extractor features overview" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0" }} />
+                {/* Infographic 1 — MP4 video */}
+                <video src="/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-features.mp4" controls style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0" }} />
 
                 {/* Section 3: How to Use the ToolStack YouTube Transcript Extractor */}
                 <h2 style={h2Style}>How to Use the ToolStack YouTube Transcript Extractor</h2>
@@ -266,7 +266,7 @@ export default function FreeYoutubeTranscriptExtractorPage() {
                 </p>
 
                 {/* Infographic 2 */}
-                <img src="/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-how-it-works.png" alt="YouTube Transcript Extractor how it works" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0" }} />
+                <video src="/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-how-it-works.mp4" controls style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0" }} />
 
                 {/* Section 5: Real Statistics on Video Content and Transcripts */}
                 <h2 style={h2Style}>Real Statistics on Video Content and Transcripts</h2>
