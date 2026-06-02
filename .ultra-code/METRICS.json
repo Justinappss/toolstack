@@ -18,5 +18,7 @@
     }
   ],
   "current_fix_count": 8,
-  "releases_since_zero": 0
+  "releases_since_zero": 0,
+  "retrospective_audits_passed": ["ucl-final-accumulator-2026", "aweber-vs-beehiiv"],
+  "gate_active_from": "2026-05-30"
 }

@@ -20,6 +20,17 @@ The SOP files are at:
 
 Read the relevant SOP **before writing a single line of code or content**.
 
+## Security — non-negotiable
+
+Never introduce:
+- Hardcoded API keys, tokens, or secrets (use env vars)
+- Unescaped user input rendered in JSX (XSS)
+- `dangerouslySetInnerHTML` without DOMPurify sanitisation
+- SQL string concatenation (use parameterised queries)
+- User-controlled file paths without sanitisation
+
+After any code change, use the `code-reviewer` subagent to verify before pushing.
+
 ## graphify
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.

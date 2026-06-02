@@ -125,6 +125,12 @@ export default function BlogPost() {
 
                 <AdBlock type="horizontal" />
 
+                    {/* Tool screenshot */}
+                    <div style={{ margin: "32px 0", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                        <img src="/blog/what-are-utm-parameters/screenshot-tool.png" alt="ToolStack UTM builder — generate GA4-ready tracking URLs for every campaign channel" style={{ width: "100%", display: "block" }} loading="lazy" />
+                        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>The free ToolStack tool — no signup, works instantly in your browser</p>
+                    </div>
+
                 {/* Body */}
                 <div style={{ fontSize: 16, lineHeight: 1.85, color: "rgba(255,255,255,0.62)" }}>
 

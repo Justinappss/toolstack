@@ -651,6 +651,17 @@ export default function BlogPost() {
                         </div>
                     </section>
 
+                    {/* Beehiiv affiliate callout */}
+                    <div style={{ marginBottom: 48, padding: "20px 24px", borderRadius: 14, background: "rgba(96,165,250,0.05)", border: "1px solid rgba(96,165,250,0.2)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+                        <div>
+                            <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.8)", marginBottom: 4 }}>Want a modern, newsletter-first platform?</div>
+                            <div style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", lineHeight: 1.5 }}>Beehiiv is built for creators — cleaner editor, built-in monetisation, and a generous free tier. 14-day free trial + 20% off for 3 months.</div>
+                        </div>
+                        <a href="https://www.beehiiv.com/?via=justin-pirrie" target="_blank" rel="noopener noreferrer" style={{ flexShrink: 0, padding: "10px 20px", borderRadius: 10, background: "rgba(96,165,250,0.12)", border: "1px solid rgba(96,165,250,0.3)", color: "#60a5fa", fontWeight: 700, fontSize: 13, textDecoration: "none", whiteSpace: "nowrap" }}>
+                            Try Beehiiv Free →
+                        </a>
+                    </div>
+
                     {/* ── SECTION 8: REAL RESULTS ── */}
                     <section id="results" style={{ marginBottom: 64 }}>
                         <h2 style={{ fontSize: 28, fontWeight: 800, marginBottom: 32, letterSpacing: "-0.02em" }}>

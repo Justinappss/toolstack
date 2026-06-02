@@ -103,6 +103,12 @@ export default function BlogPost() {
 
                 <AdBlock type="horizontal" />
 
+                    {/* Tool screenshot */}
+                    <div style={{ margin: "32px 0", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                        <img src="/blog/how-to-generate-qr-code-wifi/screenshot-tool.png" alt="ToolStack QR code generator — create a free WiFi QR code in seconds, no signup required" style={{ width: "100%", display: "block" }} loading="lazy" />
+                        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>The free ToolStack tool — no signup, works instantly in your browser</p>
+                    </div>
+
                 <div style={{ fontSize: 16, lineHeight: 1.85, color: "rgba(255,255,255,0.62)" }}>
                     <p style={{ margin: "0 0 22px" }}>
                         Telling someone your WiFi password — especially one that looks like <code style={{ fontFamily: "monospace", color: accent, fontSize: 14 }}>xK9#mP2$qR7!</code> — is one of those small frictions that shouldn't exist in 2026. A WiFi QR code eliminates it entirely. Your guest scans, their phone connects. Done.

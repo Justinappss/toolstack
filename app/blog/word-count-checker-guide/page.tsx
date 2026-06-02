@@ -131,6 +131,12 @@ export default function BlogPost() {
 
                 <AdBlock type="horizontal" />
 
+                    {/* Tool screenshot */}
+                    <div style={{ margin: "32px 0", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                        <img src="/blog/word-count-checker-guide/screenshot-tool.png" alt="ToolStack word count checker — live word, character, sentence and reading time analysis" style={{ width: "100%", display: "block" }} loading="lazy" />
+                        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>The free ToolStack tool — no signup, works instantly in your browser</p>
+                    </div>
+
                 {/* Section 1 */}
                 <h2 style={{ fontSize: 26, fontWeight: 800, color: "white", margin: "40px 0 16px", letterSpacing: "-0.02em" }}>Why Word Count Is Only Half the Story</h2>
                 <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 16 }}>

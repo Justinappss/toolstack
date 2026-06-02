@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
 
@@ -100,6 +101,28 @@ const QUOTES = [
     },
 ];
 
+export const metadata: Metadata = {
+    title: "Free YouTube Transcript Extractor No Signup — No Limits, No Paywall",
+    description: "Extract transcripts from any public YouTube video instantly. ToolStack's free YouTube transcript extractor no signup required — no limits, no friction. Paste URL, get text.",
+    alternates: { canonical: "https://toolstack.tech/blog/free-youtube-transcript-extractor-no-signup-no-limits" },
+    openGraph: {
+        title: "Free YouTube Transcript Extractor No Signup — No Limits, No Paywall",
+        description: "Extract transcripts from any public YouTube video instantly. ToolStack's free YouTube transcript extractor no signup required — no limits, no friction. Paste URL, get text.",
+        url: "https://toolstack.tech/blog/free-youtube-transcript-extractor-no-signup-no-limits",
+        siteName: "ToolStack",
+        type: "article",
+        publishedTime: "2026-06-02T08:00:00Z",
+        modifiedTime: "2026-06-02T08:00:00Z",
+        images: [{ url: "https://toolstack.tech/blog/free-youtube-transcript-extractor-no-signup-no-limits/hero-banner.png", width: 1200, height: 630 }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Free YouTube Transcript Extractor No Signup — No Limits, No Paywall",
+        description: "Extract transcripts from any public YouTube video instantly. ToolStack's free YouTube transcript extractor no signup required — no limits, no friction.",
+        images: ["https://toolstack.tech/blog/free-youtube-transcript-extractor-no-signup-no-limits/hero-banner.png"],
+    },
+};
+
 export default function FreeYoutubeTranscriptExtractorPage() {
     return (
         <>
@@ -108,6 +131,7 @@ export default function FreeYoutubeTranscriptExtractorPage() {
                 description="Extract transcripts from any public YouTube video instantly. ToolStack's free YouTube transcript extractor no signup required — no limits, no friction. Paste URL, get text."
                 url="https://toolstack.tech/blog/free-youtube-transcript-extractor-no-signup-no-limits"
                 datePublished="2026-06-02"
+                dateModified="2026-06-02"
             />
             {/* HERO SECTION */}
             <div className="blog-hero" style={{ padding: "64px 24px 24px", maxWidth: 800, margin: "0 auto" }}>
@@ -237,6 +261,15 @@ export default function FreeYoutubeTranscriptExtractorPage() {
                 <p style={pStyle}>
                     That's it. No login, no hidden steps. The tool works for any video that has captions enabled (including auto-generated captions).
                 </p>
+
+                {/* Tool Screenshot */}
+                <div style={{ margin: "32px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+                    <img
+                        src="/blog/free-youtube-transcript-extractor-no-signup-no-limits/screenshot-tool.png"
+                        alt="ToolStack YouTube Transcript Extractor tool interface showing URL input, timestamp toggle, and extract button"
+                        style={{ width: "100%", height: "auto", display: "block" }}
+                    />
+                </div>
 
                 {/* YouTube Embed */}
                 <div style={{ margin: "32px 0", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)", aspectRatio: "16/9", position: "relative" }}>

@@ -326,6 +326,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${base}/blog/free-youtube-transcript-extractor-no-signup-no-limits`,
+      lastModified: "2026-06-02",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/blog/website-down-checker`,
       lastModified: "2026-05-22",
       changeFrequency: "monthly",

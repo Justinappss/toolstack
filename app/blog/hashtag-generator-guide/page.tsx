@@ -137,6 +137,12 @@ export default function BlogPost() {
             {/* Body */}
             <div style={{ maxWidth: 720, margin: "0 auto", padding: "60px 24px 100px" }}>
 
+                {/* Tool screenshot */}
+                <div style={{ margin: "0 0 32px", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}>
+                    <img src="/blog/hashtag-generator-guide/screenshot-tool.png" alt="ToolStack hashtag generator — AI-powered platform-specific hashtag sets for Instagram, TikTok and LinkedIn" style={{ width: "100%", display: "block" }} loading="lazy" />
+                    <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", textAlign: "center", padding: "10px 16px", margin: 0, background: "rgba(255,255,255,0.02)" }}>The free ToolStack tool — no signup, works instantly in your browser</p>
+                </div>
+
                 {/* TL;DR */}
                 <div style={{ padding: "20px 24px", borderRadius: 14, border: "1px solid rgba(225,48,108,0.25)", background: "rgba(225,48,108,0.06)", marginBottom: 40 }}>
                     <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.1em", color: "#f9a8d4", margin: "0 0 12px", textTransform: "uppercase" }}>TL;DR</p>

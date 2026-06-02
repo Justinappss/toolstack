@@ -15,6 +15,8 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  { slug: "free-youtube-transcript-extractor-no-signup-no-limits", title: "** Free YouTube Transcript Extractor — No Signup, No Limits", description: "** free youtube transcript extractor no signup — free tool guide on toolstack.tech", date: "2026-06-02", readTime: "10 min", tag: "Tools", tagColor: "cyan" },
+  { slug: "how-a-compound-interest-calculator-works-plain-english", title: "How a Compound Interest Calculator Works (Plain English)", description: "how does a compound interest calculator work — free tool guide on toolstack.tech", date: "2026-06-02", readTime: "10 min", tag: "Tools", tagColor: "cyan" },
     {
         slug: "aweber-vs-beehiiv",
         title: "AWeber vs Beehiiv: Why Creators Are Switching After the 50% Price Hike (2026)",
@@ -532,6 +534,17 @@ const posts = [
         featured: false,
     },
     {
+        title: "How a Compound Interest Calculator Works (Plain English)",
+        description: "A compound interest calculator works by applying A = P(1 + r/n)^nt to your principal, rate, frequency, and time. Walk through every input and a real worked example — no math degree needed.",
+        date: "June 2, 2026",
+        readTime: "13 min read",
+        tag: "Finance",
+        accent: "#38bdf8",
+        accentBg: "rgba(56,189,248,0.08)",
+        accentBorder: "rgba(56,189,248,0.2)",
+        featured: true,
+    },
+    {
         slug: "understanding-case-sensitivity",
         title: "camelCase vs snake_case vs PascalCase: When to Use Each",
         description: "The wrong naming convention creates friction and bugs. This guide covers camelCase, snake_case, PascalCase, kebab-case, and SCREAMING_SNAKE_CASE with rules for every language.",
@@ -657,3 +670,6 @@ export default function BlogIndex() {
         </main>
     );
 }
+
+
+
