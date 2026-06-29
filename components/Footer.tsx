@@ -29,6 +29,7 @@ const TOOL_CATEGORIES = [
     {
         label: "Utility & Dev",
         tools: [
+            { label: "ToolStack Design Studio", href: "/tools/jdesigns-studio" },
             { label: "Password Generator", href: "/tools/password-generator" },
             { label: "Password Breach Checker", href: "/tools/password-breach-checker" },
             { label: "QR Code Generator", href: "/tools/qr-code-generator" },

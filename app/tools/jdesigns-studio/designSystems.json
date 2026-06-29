@@ -1,0 +1,961 @@
+[
+{
+"slug": "agentic",
+"name": "Agentic",
+"category": "Themed & Unique",
+"blurb": "Conversational AI-first interface with minimal controls, clear outcomes, and delegated task flows for agentic workflows.",
+"directive": ""
+},
+{
+"slug": "airbnb",
+"name": "Airbnb",
+"category": "E-Commerce & Retail",
+"blurb": "Travel marketplace. Warm coral accent, photography-driven, rounded UI.",
+"directive": "Rausch coral-pink (#ff385c) as a single-accent brand color, used only for primary CTAs and the search button Full-bleed photography at 4:3 / 16:9 with gentle corner rounding (14\u201320px) as the primary visual vocabulary 3D rendered category icons paired with typographic tabs \u2014 the one place the system allows illustration Circular 50% icon buttons (back arrow, share, favorite, carousel arrows) scattered throughout Airbnb Cereal VF carries every label, from 8px legal footnote to 28px section heading \u2014 a single-family system"
+},
+{
+"slug": "airtable",
+"name": "Airtable",
+"category": "Design & Creative",
+"blurb": "Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic.",
+"directive": "White canvas with deep navy text (#181d26) Airtable Blue (#1b61c9) as primary CTA and link color Haas + Haas Groot Disp dual font system Positive letter-spacing on body text (0.08px\u20130.28px) 12px radius buttons, 16px\u201332px for cards"
+},
+{
+"slug": "ant",
+"name": "Ant",
+"category": "Professional & Corporate",
+"blurb": "Structured, enterprise-focused design system emphasizing clarity, consistency, and efficiency for data-dense web applications.",
+"directive": ""
+},
+{
+"slug": "apple",
+"name": "Apple",
+"category": "Media & Consumer",
+"blurb": "Consumer electronics. Premium white space, SF Pro, cinematic imagery.",
+"directive": "Binary section rhythm: deep black scenes (#000000) alternating with pale neutral fields (#f5f5f7) Single blue accent family for action and link semantics (#0071e3, #0066cc, #2997ff) Dual operating modes in one system: cinematic showcase modules and dense commerce configurators Heavy reliance on imagery and material finishes; UI chrome remains visually thin Tight headline metrics (SF Pro Display, semibold) paired with compact body/link typography (SF Pro Text)"
+},
+{
+"slug": "application",
+"name": "Application",
+"category": "Professional & Corporate",
+"blurb": "App dashboard with purple-themed aesthetic, top-bar navigation, card-based layouts, and developer-first workflows.",
+"directive": ""
+},
+{
+"slug": "arc",
+"name": "Arc Browser",
+"category": "Productivity & SaaS",
+"blurb": "\"The browser that browses for you.\" Translucent surfaces, gradient warmth, sidebar-first layout.",
+"directive": "Translucent frosted-glass surfaces over a saturated gradient background Theme-color gradients (peach-coral, violet-fuchsia, mint-cyan) as the primary mood Inter for product chrome, Argent CF (serif) for marketing display Squircle-soft 12\u201316px radii everywhere Sidebar-first layout: tabs, spaces, and bookmarks live on the left, not the top"
+},
+{
+"slug": "artistic",
+"name": "Artistic",
+"category": "Creative & Artistic",
+"blurb": "High-contrast, expressive style with creative typography and bold color choices for visually striking interfaces.",
+"directive": ""
+},
+{
+"slug": "bento",
+"name": "Bento",
+"category": "Layout & Structure",
+"blurb": "Modular grid layout with card-like blocks, clear hierarchy, soft spacing, and subtle visual contrast for organized, scannable interfaces.",
+"directive": ""
+},
+{
+"slug": "binance",
+"name": "Binance.US",
+"category": "Fintech & Crypto",
+"blurb": "Crypto exchange. Bold yellow accent on monochrome, trading-floor urgency.",
+"directive": "Two-tone light/dark section alternation \u2014 white surfaces for trust, dark panels for depth Binance Yellow (#F0B90B) as the singular accent color driving all primary actions BinancePlex custom typeface providing proprietary brand identity at every text level Pill-shaped CTA buttons (50px radius) that demand attention Floating device mockups on golden gradients for product showcasing"
+},
+{
+"slug": "bmw",
+"name": "BMW",
+"category": "Automotive",
+"blurb": "Luxury automotive. Dark premium surfaces, precise German engineering aesthetic.",
+"directive": "BMWTypeNextLatin Light (weight 300) uppercase for display \u2014 whispered authority BMW Blue (#1c69d4) as singular accent \u2014 used only for interactive elements Zero border-radius detected \u2014 angular, sharp-cornered, industrial geometry Dark hero photography + white content sections \u2014 showroom lighting rhythm CSS variable-driven theming: --site-context-* tokens for brand flexibility"
+},
+{
+"slug": "bold",
+"name": "Bold",
+"category": "Bold & Expressive",
+"blurb": "Strong visual presence with heavyweight typography, high-contrast colors, and commanding layouts.",
+"directive": ""
+},
+{
+"slug": "brutalism",
+"name": "Brutalism",
+"category": "Bold & Expressive",
+"blurb": "Raw, anti-design aesthetic inspired by concrete architecture with unadorned elements, jarring layouts, and functional minimalism.",
+"directive": ""
+},
+{
+"slug": "bugatti",
+"name": "Bugatti",
+"category": "Automotive",
+"blurb": "Hypercar brand. Cinema-black canvas, monochrome austerity, monumental display type.",
+"directive": "Cinema-black #000000 canvas for the entire page \u2014 no gradients, no tints, no accents 288px Bugatti Display ALL-CAPS headline \u2014 the most extreme display scale in the catalog Three-font custom family: Bugatti Display (sculptural), Bugatti Monospace (UI labels), Bugatti Text Regular (body) Monochrome-only palette: black, white, and a single #999999 mid gray for tertiary/disabled Pill buttons at 9999px radius \u2014 transparent with a 1px white border, padding 12px 24px"
+},
+{
+"slug": "cafe",
+"name": "Cafe",
+"category": "Creative & Artistic",
+"blurb": "Cozy cafe-inspired interface with warm tones, soft typography, and clean layouts for a relaxed browsing experience.",
+"directive": ""
+},
+{
+"slug": "cal",
+"name": "Cal.com",
+"category": "Productivity & SaaS",
+"blurb": "Open-source scheduling. Clean neutral UI, developer-oriented simplicity.",
+"directive": "Purely grayscale brand palette \u2014 no brand colors, boldness through monochrome Cal Sans custom geometric display font with extremely tight default letter-spacing Multi-layered shadow system (11 definitions) with ring borders + diffused shadows + inset highlights Cal Sans for headings, Inter for body \u2014 clean typographic division Wide border-radius scale from 2px to 9999px (pill) \u2014 versatile rounding"
+},
+{
+"slug": "canva",
+"name": "Canva",
+"category": "Design & Creative",
+"blurb": "Visual creation platform. Vivid purple-blue gradient, generous spacing, friendly geometry.",
+"directive": "White canvas with a violet-to-cyan gradient (#7d2ae8 \u2192 #00c4cc) Canva Sans (rounded geometric) for everything; weight contrast over color 12\u201320px radii everywhere; 9999px pills for chips and tags Soft cool-toned shadows that grow on hover Filled rounded iconography \u2014 never outlined"
+},
+{
+"slug": "claude",
+"name": "Claude (Anthropic)",
+"category": "AI & LLM",
+"blurb": "Anthropic's AI assistant. Warm terracotta accent, clean editorial layout.",
+"directive": "Warm parchment canvas (#f5f4ed) evoking premium paper, not screens Custom Anthropic type family: Serif for headlines, Sans for UI, Mono for code Terracotta brand accent (#c96442) \u2014 warm, earthy, deliberately un-tech Exclusively warm-toned neutrals \u2014 every gray has a yellow-brown undertone Organic, editorial illustrations replacing typical tech iconography"
+},
+{
+"slug": "clay",
+"name": "Clay",
+"category": "Design & Creative",
+"blurb": "Creative agency. Organic shapes, soft gradients, art-directed layout.",
+"directive": "Warm cream canvas (#faf9f7) with oat-toned borders (#dad4c8) \u2014 artisanal, not clinical Named swatch palette: Matcha, Slushie, Lemon, Ube, Pomegranate, Blueberry, Dragonfruit Roobert font with 5 OpenType stylistic sets \u2014 quirky geometric character Playful hover animations: rotateZ(-8deg) + translateY(-80%) + hard offset shadow Space Mono for code and technical labels"
+},
+{
+"slug": "claymorphism",
+"name": "Claymorphism",
+"category": "Morphism & Effects",
+"blurb": "Soft, rounded 3D-like shapes mimicking malleable clay with playful, puffy elements and colorful surfaces.",
+"directive": ""
+},
+{
+"slug": "clean",
+"name": "Clean",
+"category": "Modern & Minimal",
+"blurb": "Simplicity-focused design with ample whitespace, legible typography, and a limited color palette to reduce visual clutter.",
+"directive": ""
+},
+{
+"slug": "clickhouse",
+"name": "ClickHouse",
+"category": "Backend & Data",
+"blurb": "Fast analytics database. Yellow-accented, technical documentation style.",
+"directive": "Pure black canvas (#000000) with neon yellow-green (#faff69) accent \u2014 maximum contrast Extra-heavy display typography: Inter at weight 900 (Black) up to 96px Dark charcoal card system with #414141 borders at 80% opacity Forest green (#166534) secondary CTA buttons Performance stats as oversized display numbers"
+},
+{
+"slug": "cohere",
+"name": "Cohere",
+"category": "AI & LLM",
+"blurb": "Enterprise AI platform. Vibrant gradients, data-rich dashboard aesthetic.",
+"directive": "Bright white canvas with cool gray containment borders 22px signature border-radius \u2014 the distinctive \"Cohere card\" roundness Dual custom typeface: CohereText (display serif) + Unica77 (body sans) Enterprise-grade chromatic restraint: black, white, cool grays, minimal purple-blue accent Deep purple/violet hero sections providing dramatic contrast"
+},
+{
+"slug": "coinbase",
+"name": "Coinbase",
+"category": "Fintech & Crypto",
+"blurb": "Crypto exchange. Clean blue identity, trust-focused, institutional feel.",
+"directive": "Coinbase Blue (#0052ff) as singular brand accent Four-font proprietary family: Display, Sans, Text, Icons 56px radius pill buttons with blue hover transition Near-black (#0a0b0d) dark sections + white light sections 1.00 line-height on display headings \u2014 ultra-tight"
+},
+{
+"slug": "colorful",
+"name": "Colorful",
+"category": "Bold & Expressive",
+"blurb": "Vibrant, high-contrast palettes and gradients for engaging, memorable, and modern user experiences.",
+"directive": ""
+},
+{
+"slug": "composio",
+"name": "Composio",
+"category": "Backend & Data",
+"blurb": "Tool integration platform. Modern dark with colorful integration icons.",
+"directive": "Pitch-black canvas with near-invisible white-border containment (4-12% opacity) Dual-font identity: geometric sans-serif (abcDiatype) for content, monospace (JetBrains Mono) for technical credibility Ultra-tight heading line-heights (0.87-1.0) creating compressed, impactful text blocks Bioluminescent accent strategy \u2014 cyan and blue glows that feel like they're emitting light from within Hard-offset brutalist shadows (4px 4px) on select interactive elements"
+},
+{
+"slug": "contemporary",
+"name": "Contemporary",
+"category": "Modern & Minimal",
+"blurb": "Current-era minimalist design with bento grids, dark mode support, and high-performance accessible layouts.",
+"directive": ""
+},
+{
+"slug": "corporate",
+"name": "Corporate",
+"category": "Professional & Corporate",
+"blurb": "Professional, brand-aligned design with structured grids, minimalist layouts, and consistent enterprise patterns.",
+"directive": ""
+},
+{
+"slug": "cosmic",
+"name": "Cosmic",
+"category": "Creative & Artistic",
+"blurb": "Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersive spatial elements.",
+"directive": ""
+},
+{
+"slug": "creative",
+"name": "Creative",
+"category": "Creative & Artistic",
+"blurb": "Playful, character-driven design with expressive typography and bold graphics for landing pages and creative projects.",
+"directive": ""
+},
+{
+"slug": "cursor",
+"name": "Cursor",
+"category": "Developer Tools",
+"blurb": "AI-first code editor. Sleek dark interface, gradient accents.",
+"directive": "CursorGothic with aggressive negative letter-spacing (-2.16px at 72px, -0.72px at 36px) for compressed display headings jjannon serif for body text with OpenType \"cswh\" (contextual swash alternates) berkeleyMono for code and technical labels Warm off-white background (#f2f1ed) instead of pure white -- the entire system is warm-shifted Primary text color #26251e (warm near-black with yellow undertone)"
+},
+{
+"slug": "dashboard",
+"name": "Dashboard",
+"category": "Professional & Corporate",
+"blurb": "Dark-themed cloud-platform aesthetic with modular grids, glass-like panels, and strong data hierarchy for productivity dashboards.",
+"directive": ""
+},
+{
+"slug": "default",
+"name": "Neutral Modern",
+"category": "Starter",
+"blurb": "A clean, product-oriented default. Use when the brief doesn't call for a",
+"directive": ""
+},
+{
+"slug": "discord",
+"name": "Discord",
+"category": "Productivity & SaaS",
+"blurb": "Voice / chat platform. Deep blurple, dark-first surfaces, playful accent moments.",
+"directive": "Dark-first surfaces: #1e1f22 / #2b2d31 / #313338 (3-step depth) Blurple #5865f2 as the only saturated accent in the chat surface gg sans (Whitney-style) for all text \u2014 friendly, geometric, neutral Rounded-square server avatars (16px radius) that snap to circles on hover Tight chat-row spacing, generous side-panel padding"
+},
+{
+"slug": "dithered",
+"name": "Dithered",
+"category": "Retro & Nostalgic",
+"blurb": "Dot-pattern rendering technique that simulates shades with a limited palette for nostalgic, retro, high-contrast visuals.",
+"directive": ""
+},
+{
+"slug": "doodle",
+"name": "Doodle",
+"category": "Creative & Artistic",
+"blurb": "Hand-drawn, sketch-like style with doodles, handwritten fonts, and imperfect lines for a playful, informal feel.",
+"directive": ""
+},
+{
+"slug": "dramatic",
+"name": "Dramatic",
+"category": "Bold & Expressive",
+"blurb": "High-contrast, theatrical design with bold layouts, immersive visuals, and unconventional compositions that command attention.",
+"directive": ""
+},
+{
+"slug": "duolingo",
+"name": "Duolingo",
+"category": "Productivity & SaaS",
+"blurb": "Language-learning platform. Bright owl green, chunky shadows, gamified joy.",
+"directive": "Owl green (#58cc02) as the dominant brand color, used in 30%+ of the surface Chunky 4px bottom-shadow on every button (the \"tactile press\" affordance) 2\u20133px solid borders, never hairlines Feather Bold (rounded display) + Mona Sans (body) Big confident type \u2014 display sizes start at 48px and climb"
+},
+{
+"slug": "editorial",
+"name": "Editorial",
+"category": "Creative & Artistic",
+"blurb": "Magazine-inspired editorial layout with refined serif typography, structured grids, and elegant reading experiences.",
+"directive": ""
+},
+{
+"slug": "elegant",
+"name": "Elegant",
+"category": "Professional & Corporate",
+"blurb": "Graceful, refined aesthetic with delicate typography, minimal palettes, and polished layouts that exude sophistication.",
+"directive": ""
+},
+{
+"slug": "elevenlabs",
+"name": "ElevenLabs",
+"category": "AI & LLM",
+"blurb": "AI voice platform. Dark cinematic UI, audio-waveform aesthetics.",
+"directive": "Near-white canvas with warm undertones (#f5f5f5, #f5f2ef) Waldenburg weight 300 (light) for display \u2014 ethereal, whisper-thin headings Inter with positive letter-spacing (0.14\u20130.18px) for body \u2014 airy readability Multi-layered shadow stacks at sub-0.1 opacity \u2014 surfaces barely exist Pill buttons (9999px) with warm stone-tinted backgrounds"
+},
+{
+"slug": "energetic",
+"name": "Energetic",
+"category": "Bold & Expressive",
+"blurb": "Dynamic, vibrant style with thick borders, geometric shapes, high-contrast colors, and expressive typography conveying motion and vitality.",
+"directive": ""
+},
+{
+"slug": "enterprise",
+"name": "Enterprise",
+"category": "Professional & Corporate",
+"blurb": "Clean, high-contrast enterprise design for data-driven workflows with intuitive drag-and-drop patterns and structured layouts.",
+"directive": ""
+},
+{
+"slug": "expo",
+"name": "Expo",
+"category": "Developer Tools",
+"blurb": "React Native platform. Dark theme, tight letter-spacing, code-centric.",
+"directive": "Luminous cool-white canvas (#f0f0f3) with gallery-like vertical spacing Strictly monochromatic: pure black headlines, cool blue-gray body text, no decorative color Pill-shaped geometry everywhere \u2014 buttons, tabs, containers, images (24px\u20139999px radius) Massive display headlines (64px) with extreme negative letter-spacing (-1.6px to -3px) Inter as the sole typeface, used at weights 400\u2013900 for full expressive range"
+},
+{
+"slug": "expressive",
+"name": "Expressive",
+"category": "Bold & Expressive",
+"blurb": "Vibrant, personality-driven design with bold colors, playful graphics, and dynamic layouts that balance creativity with structure.",
+"directive": ""
+},
+{
+"slug": "fantasy",
+"name": "Fantasy",
+"category": "Creative & Artistic",
+"blurb": "Game-inspired fantasy aesthetic with bold, premium visuals, rich color palettes, and immersive thematic elements.",
+"directive": ""
+},
+{
+"slug": "ferrari",
+"name": "Ferrari",
+"category": "Automotive",
+"blurb": "Luxury automotive. Chiaroscuro editorial, Ferrari Red accents, cinematic black.",
+"directive": "Chiaroscuro layout alternating between deep black sections and clean white editorial panels Ferrari Red (#DA291C) used with extreme sparseness \u2014 accent, not atmosphere Prancing Horse emblem as isolated hero element on a void-black field FerrariSans proprietary typeface with compact proportions and medium weights Photo-journalism imagery: concept renders, driver portraits, lineup parades \u2014 each section is a story"
+},
+{
+"slug": "figma",
+"name": "Figma",
+"category": "Design & Creative",
+"blurb": "Collaborative design tool. Vibrant multi-color, playful yet professional.",
+"directive": "Custom variable font (figmaSans) with unusual weight stops: 320, 330, 340, 450, 480, 540, 700 Strictly black-and-white interface chrome \u2014 color exists only in product content figmaMono for uppercase technical labels with wide letter-spacing Pill (50px) and circular (50%) button geometry Dashed focus outlines echoing Figma's editor selection handles"
+},
+{
+"slug": "flat",
+"name": "Flat",
+"category": "Modern & Minimal",
+"blurb": "Two-dimensional minimalist style with vibrant colors, clean typography, and no 3D effects for fast, user-friendly interfaces.",
+"directive": ""
+},
+{
+"slug": "framer",
+"name": "Framer",
+"category": "Design & Creative",
+"blurb": "Website builder. Bold black and blue, motion-first, design-forward.",
+"directive": "Pure black (#000000) void canvas \u2014 absolute dark, not warm or gray-tinted GT Walsheim display font with extreme negative letter-spacing (-5.5px at 110px) Framer Blue (#0099ff) as the sole accent color \u2014 cold, electric, precise Pill-shaped buttons (40px\u2013100px radius) \u2014 no sharp corners on interactive elements Product screenshots as hero art \u2014 the tool IS the marketing"
+},
+{
+"slug": "friendly",
+"name": "Friendly",
+"category": "Creative & Artistic",
+"blurb": "Approachable, intuitive design with rounded elements, ample whitespace, and soft pastel color palettes.",
+"directive": ""
+},
+{
+"slug": "futuristic",
+"name": "Futuristic",
+"category": "Themed & Unique",
+"blurb": "Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.",
+"directive": ""
+},
+{
+"slug": "github",
+"name": "GitHub",
+"category": "Developer Tools",
+"blurb": "Code-forward platform. Functional density, blue-on-white precision, Primer foundations.",
+"directive": "True white canvas (#ffffff) or deep navy-black (#0d1117) \u2014 no warmth, no tint Hairline gray borders (#d0d7de) define every pane and panel Primer blue (#0969da) for links/primary; GitHub green (#1a7f37) for success/merge system-ui for prose; SFMono for code \u2014 no custom typeface Dense list rows with minimal padding; whitespace is rare"
+},
+{
+"slug": "glassmorphism",
+"name": "Glassmorphism",
+"category": "Morphism & Effects",
+"blurb": "Frosted glass effect with translucent layers, subtle blur, and luminous borders for depth and modern elegance.",
+"directive": ""
+},
+{
+"slug": "gradient",
+"name": "Gradient",
+"category": "Morphism & Effects",
+"blurb": "Smooth color transitions and gradient-rich surfaces for modern, playful interfaces with visual depth.",
+"directive": ""
+},
+{
+"slug": "hashicorp",
+"name": "HashiCorp",
+"category": "Backend & Data",
+"blurb": "Infrastructure automation. Enterprise-clean, black and white.",
+"directive": "Dual-mode: clean white sections + dramatic dark (#15181e) hero/product areas Custom HashiCorp Sans font with 600\u2013700 weights and \"kern\" feature Multi-product color system via --mds-color-* CSS custom properties Product brand colors: Terraform purple, Vault yellow, Waypoint teal, Vagrant blue Uppercase letter-spaced captions (13px, weight 600, 1.3px letter-spacing)"
+},
+{
+"slug": "huggingface",
+"name": "Hugging Face",
+"category": "AI & LLM",
+"blurb": "ML community hub. Sunny yellow accent, monospace identity, cheerful and dense.",
+"directive": "Sunshine yellow #ffd21e as the lone saturated accent IBM Plex Mono for headings and tags; Source Sans Pro for body Off-white canvas (#fafafa) with crisp 1px borders (#e5e7eb) 4\u20136px radii \u2014 closer to brutalist than rounded Hugging-face emoji \ud83e\udd17 used unironically as a system glyph"
+},
+{
+"slug": "ibm",
+"name": "IBM",
+"category": "Media & Consumer",
+"blurb": "Enterprise technology. Carbon design system, structured blue palette.",
+"directive": "IBM Plex Sans at weight 300 (Light) for display \u2014 corporate gravitas through typographic restraint IBM Plex Mono for code and technical content with consistent 0.16px letter-spacing at small sizes Single accent color: IBM Blue 60 (#0f62fe) \u2014 every interactive element, every CTA, every link Carbon token system (--cds-*) driving all semantic colors, enabling theme-switching at the variable level 8px spacing grid with strict adherence \u2014 no arbitrary values, everything aligns"
+},
+{
+"slug": "intercom",
+"name": "Intercom",
+"category": "Productivity & SaaS",
+"blurb": "Customer messaging. Friendly blue palette, conversational UI patterns.",
+"directive": "Warm off-white canvas (#faf9f6) with oat-toned borders (#dedbd6) Saans font with extreme negative tracking (-2.4px at 80px) and 1.00 line-height Fin Orange (#ff5600) as singular brand accent Sharp 4px border-radius \u2014 near-rectangular buttons and elements Scale(1.1) hover with scale(0.85) active \u2014 physical button interaction"
+},
+{
+"slug": "kami",
+"name": "kami (\u7d19 / \u7eb8)",
+"category": "Editorial & Print",
+"blurb": "Editorial paper system: warm parchment canvas, ink-blue accent, serif-led hierarchy. Built for resumes, one-pagers, white papers, portfolios, slide decks \u2014 anything that should feel like high-quality print rather than UI. Multilingual by design (EN \u00b7 zh-CN \u00b7 ja).",
+"directive": "Warm parchment canvas (#f5f4ed) \u2014 never #ffffff Single accent: ink-blue (#1B365D), covers \u2264 5% of any surface All grays warm (R \u2248 G > B), no cool blue-grays anywhere Serif everywhere for hierarchy: Charter (EN), TsangerJinKai02 / Source Han Serif (CN), YuMincho (JA) Locked at weight 500 \u2014 no synthetic bold (700/900) and **no italic**"
+},
+{
+"slug": "kraken",
+"name": "Kraken",
+"category": "Fintech & Crypto",
+"blurb": "Crypto trading. Purple-accented dark UI, data-dense dashboards.",
+"directive": "Kraken Purple (#7132f5) as primary brand with darker variants (#5741d8, #5b1ecf) Kraken-Brand (display) + Kraken-Product (UI) dual font system Near-black (#101114) text with cool blue-gray neutral scale 12px radius buttons (rounded but not pill) Subtle shadows (rgba(0,0,0,0.03) 0px 4px 24px) \u2014 whisper-level"
+},
+{
+"slug": "lamborghini",
+"name": "Lamborghini",
+"category": "Automotive",
+"blurb": "Supercar brand. True black surfaces, gold accents, dramatic uppercase typography.",
+"directive": "True black (#000000) dominant surfaces with white and gold as the only relief colors LamboType custom Neo-Grotesk font with 12\u00b0 angled terminals inspired by aerodynamic car lines Lamborghini Gold (#FFC000) as the sole accent color \u2014 used exclusively for primary CTA buttons All-uppercase display typography at extreme scales (120px, 80px, 54px) with tight line-heights Full-viewport video heroes with cinematic event/vehicle content"
+},
+{
+"slug": "levels",
+"name": "Levels",
+"category": "Layout & Structure",
+"blurb": "Conversion-focused design that removes friction and guides users toward action through clarity, trust, and speed.",
+"directive": ""
+},
+{
+"slug": "linear-app",
+"name": "Linear",
+"category": "Productivity & SaaS",
+"blurb": "Project management. Ultra-minimal, precise, purple accent.",
+"directive": "Dark-mode-native: #08090a marketing background, #0f1011 panel background, #191a1b elevated surfaces Inter Variable with \"cv01\", \"ss03\" globally \u2014 geometric alternates for a cleaner aesthetic Signature weight 510 (between regular and medium) for most UI text Aggressive negative letter-spacing at display sizes (-1.584px at 72px, -1.056px at 48px) Brand indigo-violet: #5e6ad2 (bg) / #7170ff (accent) / #828fff (hover) \u2014 the only chromatic color in the system"
+},
+{
+"slug": "lingo",
+"name": "Lingo",
+"category": "Creative & Artistic",
+"blurb": "Playful, minimal design with bright colors, rounded shapes, tactile 3D borders, and friendly illustrations for approachable interfaces.",
+"directive": ""
+},
+{
+"slug": "lovable",
+"name": "Lovable",
+"category": "Developer Tools",
+"blurb": "AI full-stack builder. Playful gradients, friendly dev aesthetic.",
+"directive": "Warm parchment background (#f7f4ed) \u2014 not white, not beige, a deliberate cream that feels hand-selected Camera Plain Variable typeface with humanist warmth and editorial letter-spacing at display sizes Opacity-driven color system: all grays derived from #1c1c1c at varying transparency levels Inset shadow technique on buttons: rgba(255,255,255,0.2) 0px 0.5px 0px 0px inset, rgba(0,0,0,0.2) 0px 0px 0px 0.5px inset Warm neutral border palette: #eceae4 for subtle, rgba(28,28,28,0.4) for interactive elements"
+},
+{
+"slug": "luxury",
+"name": "Luxury",
+"category": "Professional & Corporate",
+"blurb": "High-end dark aesthetic with bold headings, monochromatic palette, and premium feel for luxury brand experiences.",
+"directive": ""
+},
+{
+"slug": "mastercard",
+"name": "Mastercard",
+"category": "Fintech & Crypto",
+"blurb": "Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth.",
+"directive": "Warm cream canvas (#F3F0EE) replaces traditional white \u2014 every surface is tinted, never sterile Extreme border-radius as design language: 40px, 99px, 1000px dominate; anything square is a cookie-banner third-party Circular image portraits with attached white satellite-CTAs and traced-orange orbital paths Ghost \"watermark\" headlines (cream-on-cream text at heading scale) layered behind circle portraits Black primary CTAs with 20px radius in the body \u2014 the cookie-banner orange is kept to consent flows"
+},
+{
+"slug": "material",
+"name": "Material",
+"category": "Professional & Corporate",
+"blurb": "Google's Material Design with layered surfaces, dynamic theming, built-in motion, and responsive cross-platform patterns.",
+"directive": ""
+},
+{
+"slug": "meta",
+"name": "Meta (Store)",
+"category": "E-Commerce & Retail",
+"blurb": "Tech retail store. Photography-first, binary light/dark surfaces, Meta Blue CTAs.",
+"directive": "Photography-first retail design where products are the visual heroes, not UI Binary surface strategy: pure white for information, deep dark for immersive product moments Pill-shaped CTAs in saturated blue create unmistakable action points Optimistic VF typeface with OpenType ss01/ss02 features brings geometric warmth Generous whitespace frames products like gallery exhibits"
+},
+{
+"slug": "minimal",
+"name": "Minimal",
+"category": "Modern & Minimal",
+"blurb": "Stripped-back design emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.",
+"directive": ""
+},
+{
+"slug": "minimax",
+"name": "MiniMax",
+"category": "AI & LLM",
+"blurb": "AI model provider. Bold dark interface with neon accents.",
+"directive": "White-dominant layout with colorful product card accents Multi-font system: DM Sans (UI), Outfit (display), Poppins (mid-tier), Roboto (data) Pill buttons (9999px radius) for primary navigation and CTAs Generous rounded cards (20px\u201324px radius) for product showcases Brand blue spectrum: from #1456f0 (brand-6) through #3b82f6 (primary-500) to #60a5fa (light)"
+},
+{
+"slug": "mintlify",
+"name": "Mintlify",
+"category": "Productivity & SaaS",
+"blurb": "Documentation platform. Clean, green-accented, reading-optimized.",
+"directive": "Inter with tight negative tracking at display sizes (-0.8px to -1.28px) \u2014 compressed yet readable Geist Mono for code labels: uppercase, 12px, tracked-out, the terminal voice Brand green (#18E299) used sparingly \u2014 CTAs, hover states, focus rings, and accent touches Atmospheric gradient hero with cloud-like green-white wash Ultra-round corners: 16px for containers, 24px for featured cards, full-round (9999px) for buttons and pills"
+},
+{
+"slug": "miro",
+"name": "Miro",
+"category": "Design & Creative",
+"blurb": "Visual collaboration. Bright yellow accent, infinite canvas aesthetic.",
+"directive": "White canvas with near-black (#1c1c1e) text Roobert PRO Medium with multiple OpenType character variants Pastel accent palette: coral, rose, teal, orange, yellow, moss (light + dark pairs) Blue 450 (#5b76fe) as primary interactive color Success green (#00b473) for positive states"
+},
+{
+"slug": "mistral-ai",
+"name": "Mistral AI",
+"category": "AI & LLM",
+"blurb": "Open-weight LLM provider. French-engineered minimalism, purple-toned.",
+"directive": "Golden-amber color universe: every tone from pale cream (#fffaeb) to burnt orange (#fa520f) Massive display typography (82px) with aggressive negative letter-spacing (-2.05px) Warm golden shadow system using amber-tinted rgba values The Mistral \"M\" block identity \u2014 a gradient from yellow to orange Dramatic landscape photography in warm golden tones"
+},
+{
+"slug": "modern",
+"name": "Modern",
+"category": "Modern & Minimal",
+"blurb": "Contemporary editorial style with serif typography, minimal palettes, and clean layouts for polished digital products.",
+"directive": ""
+},
+{
+"slug": "mongodb",
+"name": "MongoDB",
+"category": "Backend & Data",
+"blurb": "Document database. Green leaf branding, developer documentation focus.",
+"directive": "Deep teal-black backgrounds (#001e2b) \u2014 forest-dark, not space-dark Neon MongoDB Green (#00ed64) as the singular brand accent \u2014 electric and organic MongoDB Value Serif for hero headlines \u2014 editorial authority at tech scale Euclid Circular A for body with weight 300 (light) as a distinctive body weight Source Code Pro with wide uppercase letter-spacing (1px\u20133px) for technical labels"
+},
+{
+"slug": "mono",
+"name": "Mono",
+"category": "Modern & Minimal",
+"blurb": "Monospace-driven, matrix-inspired design with high-contrast elements, compact density, and a hacker-chic aesthetic.",
+"directive": ""
+},
+{
+"slug": "neobrutalism",
+"name": "Neobrutalism",
+"category": "Bold & Expressive",
+"blurb": "Modern take on brutalism with bold borders, vivid accent colors, and raw, high-contrast layouts on warm surfaces.",
+"directive": ""
+},
+{
+"slug": "neon",
+"name": "Neon",
+"category": "Morphism & Effects",
+"blurb": "Electric neon glow effects with high-contrast color pairings for bold, attention-grabbing interfaces.",
+"directive": ""
+},
+{
+"slug": "neumorphism",
+"name": "Neumorphism",
+"category": "Morphism & Effects",
+"blurb": "Soft, extruded UI elements with inner and outer shadows on monochromatic surfaces for a tactile, embedded look.",
+"directive": ""
+},
+{
+"slug": "nike",
+"name": "Nike",
+"category": "E-Commerce & Retail",
+"blurb": "Athletic retail. Monochrome UI, massive uppercase type, full-bleed photography.",
+"directive": "Monochromatic UI (black/white/grey) that lets product photography be the only color source Massive uppercase display typography (96px, line-height 0.90) that punches through hero images Full-bleed photography with no border radius \u2014 imagery fills every available edge Pill-shaped buttons (30px radius) as the primary interactive element 8px spacing grid with athletic discipline \u2014 every measurement snaps to the system"
+},
+{
+"slug": "notion",
+"name": "Notion",
+"category": "Productivity & SaaS",
+"blurb": "All-in-one workspace. Warm minimalism, serif headings, soft surfaces.",
+"directive": "NotionInter (modified Inter) with negative letter-spacing at display sizes (-2.125px at 64px) Warm neutral palette: grays carry yellow-brown undertones (#f6f5f4 warm white, #31302e warm dark) Near-black text via rgba(0,0,0,0.95) -- not pure black, creating micro-warmth Ultra-thin borders: 1px solid rgba(0,0,0,0.1) throughout -- whisper-weight division Multi-layer shadow stacks with sub-0.05 opacity for barely-there depth"
+},
+{
+"slug": "nvidia",
+"name": "NVIDIA",
+"category": "Media & Consumer",
+"blurb": "GPU computing. Green-black energy, technical power aesthetic.",
+"directive": "NVIDIA Green (#76b900) as pure accent -- borders, underlines, and interactive highlights only Black (#000000) dominant background with white (#ffffff) text on dark sections NVIDIA-EMEA custom font with Arial/Helvetica fallback -- industrial, European, clean Tight line-heights (1.25 for headings) creating dense, authoritative text blocks Minimal border radius (1-2px) -- sharp, engineered corners throughout"
+},
+{
+"slug": "ollama",
+"name": "Ollama",
+"category": "AI & LLM",
+"blurb": "Run LLMs locally. Terminal-first, monochrome simplicity.",
+"directive": "Pure white canvas with zero chromatic color \u2014 completely grayscale SF Pro Rounded headlines creating a distinctively Apple-like softness Binary border-radius system: 12px (containers) or 9999px (everything interactive) Zero shadows \u2014 depth comes exclusively from background color shifts and borders Pill-shaped geometry on all interactive elements (buttons, tabs, inputs, tags)"
+},
+{
+"slug": "openai",
+"name": "OpenAI",
+"category": "AI & LLM",
+"blurb": "Calm, near-monochrome system anchored in deep teal-black with generous white space and editorial typography.",
+"directive": "True white canvas (#ffffff) with deep teal-black ink (#0d0d0d) S\u00f6hne / Inter at modest weights (400, 500, 600) \u2014 restraint over assertion Signifier serif for editorial display headlines Soft 8\u201312px radii everywhere; 9999px pills for chips Hairline borders (#e5e5e5) used sparingly; whitespace as primary divider"
+},
+{
+"slug": "opencode-ai",
+"name": "OpenCode",
+"category": "AI & LLM",
+"blurb": "AI coding platform. Developer-centric dark theme.",
+"directive": "Berkeley Mono as the sole typeface -- monospace everywhere, no sans-serif or serif voices Warm near-black primary (#201d1d) with reddish-brown undertone, not pure black Off-white text (#fdfcfc) with warm tint, not pure white Minimal 4px border radius throughout -- sharp, utilitarian corners 8px base spacing system scaling up to 96px"
+},
+{
+"slug": "pacman",
+"name": "Pacman",
+"category": "Themed & Unique",
+"blurb": "Retro arcade-inspired design with pixel fonts, dotted borders, playful high-contrast colors, and 8-bit game aesthetics.",
+"directive": ""
+},
+{
+"slug": "paper",
+"name": "Paper",
+"category": "Retro & Nostalgic",
+"blurb": "Paper-textured, print-inspired design with minimal colors, clean serif/sans typography, and tactile surface qualities.",
+"directive": ""
+},
+{
+"slug": "perspective",
+"name": "Perspective",
+"category": "Layout & Structure",
+"blurb": "Spatial depth design with isometric views, vanishing points, and layered elements that guide attention through 3D-like realism.",
+"directive": ""
+},
+{
+"slug": "pinterest",
+"name": "Pinterest",
+"category": "Media & Consumer",
+"blurb": "Visual discovery. Red accent, masonry grid, image-first.",
+"directive": "Warm white canvas with olive/sand-toned neutrals \u2014 cozy, not clinical Pinterest Red (#e60023) as singular bold accent \u2014 never subtle, always confident Pin Sans custom font with global fallback stack (including CJK) Three-tier token architecture: --comp-* / --sema-* / --base-* Warm secondary surfaces: sand gray (#e5e5e0), warm badge (hsla(60,20%,98%,.5))"
+},
+{
+"slug": "playstation",
+"name": "PlayStation",
+"category": "Media & Consumer",
+"blurb": "Gaming console retail. Three-surface channel layout, quiet-authority display type, cyan hover-scale.",
+"directive": "Three-surface channel layout: near-black hero, paper-white content, cobalt-blue footer \u2014 alternating, never blending SST weight 300 at 22\u201354px for display \u2014 \"quiet authority\" headlines that let product photography lead PlayStation Blue #0070cc as the brand anchor; cyan #1eaedb reserved exclusively for hover/focus states Every interactive element scales 1.2\u00d7 on hover \u2014 a signature \"power-on\" lift unique to PlayStation Pill buttons at full 999px radius; card art in rounded 12\u201324px rectangles"
+},
+{
+"slug": "posthog",
+"name": "PostHog",
+"category": "Backend & Data",
+"blurb": "Product analytics. Playful hedgehog branding, developer-friendly dark UI.",
+"directive": "Warm sage/olive color palette instead of conventional blues \u2014 earthy and approachable IBM Plex Sans Variable font at bold weights (700/800) for headings with generous 1.50+ line-heights Hidden brand orange (#F54E00) that only appears on hover interactions \u2014 a delightful surprise Hand-drawn hedgehog illustrations and playful imagery \u2014 deliberately anti-corporate Sage-tinted borders (#bfc1b7) and backgrounds (#eeefe9) creating a unified warm-green system"
+},
+{
+"slug": "premium",
+"name": "Premium",
+"category": "Professional & Corporate",
+"blurb": "Apple-inspired premium aesthetic with precise spacing, modern typography, and a refined, polished visual language.",
+"directive": ""
+},
+{
+"slug": "professional",
+"name": "Professional",
+"category": "Professional & Corporate",
+"blurb": "Polished, business-ready design with modern typography, structured layouts, and a trustworthy visual identity.",
+"directive": ""
+},
+{
+"slug": "publication",
+"name": "Publication",
+"category": "Creative & Artistic",
+"blurb": "Print-inspired visual language for books, magazines, and reports with editorial grids and expressive typography.",
+"directive": ""
+},
+{
+"slug": "raycast",
+"name": "Raycast",
+"category": "Developer Tools",
+"blurb": "Productivity launcher. Sleek dark chrome, vibrant gradient accents.",
+"directive": "Near-black blue-tinted background (#07080a) \u2014 not pure black, subtly blue-shifted macOS-native shadow system with multi-layer inset highlights simulating physical depth Raycast Red (#FF6363) as a punctuation color \u2014 hero stripes, not pervasive Inter with positive letter-spacing (0.2px) for an airy, readable dark-mode experience Radix UI component primitives powering the interaction layer"
+},
+{
+"slug": "refined",
+"name": "Refined",
+"category": "Modern & Minimal",
+"blurb": "Carefully curated, modern minimal style with elegant serif typography and understated, sophisticated palettes.",
+"directive": ""
+},
+{
+"slug": "renault",
+"name": "Renault",
+"category": "Automotive",
+"blurb": "French automotive. Vibrant aurora gradients, NouvelR typography, bold energy.",
+"directive": "Full-screen hero carousel with vivid aurora gradient backgrounds (magenta/violet/teal) behind vehicle imagery NouvelR proprietary typeface with 28-degree \"radical r\" cut matching the diamond logo geometry Renault Yellow (#EFDF00) as the super-primary accent \u2014 used sparingly for highest-priority CTAs Zero border-radius on all buttons \u2014 sharp rectangular forms expressing precision engineering Card-based editorial grid with full-bleed photography and dark gradient overlays"
+},
+{
+"slug": "replicate",
+"name": "Replicate",
+"category": "AI & LLM",
+"blurb": "Run ML models via API. Clean white canvas, code-forward.",
+"directive": "Explosive orange-red-magenta gradient hero (#ea2804 brand anchor) Massive display typography (128px) in heavy rb-freigeist-neue Exclusively pill-shaped geometry: 9999px radius on EVERYTHING High-contrast black (#202020) and white palette with red brand accent Developer-community energy: model galleries, code examples, dotted-underline links"
+},
+{
+"slug": "resend",
+"name": "Resend",
+"category": "Productivity & SaaS",
+"blurb": "Email API. Minimal dark theme, monospace accents.",
+"directive": "Pure black background with near-white (#f0f0f0) text \u2014 theatrical, gallery-like darkness Three-font hierarchy: Domaine Display (serif hero), ABC Favorit (geometric sections), Inter (body/UI) Icy blue-tinted borders: rgba(214, 235, 253, 0.19) \u2014 every border has a cold, crystalline shimmer Multi-color accent system: orange, green, blue, yellow, red \u2014 each with numbered CSS variable scales Pill-shaped buttons and tags (9999px radius) with transparent backgrounds"
+},
+{
+"slug": "retro",
+"name": "Retro",
+"category": "Retro & Nostalgic",
+"blurb": "Throwback design with vintage-inspired typography, high-contrast retro palettes, and nostalgic visual elements.",
+"directive": ""
+},
+{
+"slug": "revolut",
+"name": "Revolut",
+"category": "Fintech & Crypto",
+"blurb": "Digital banking. Sleek dark interface, gradient cards, fintech precision.",
+"directive": "Aeonik Pro display at 136px weight 500 \u2014 billboard-scale fintech headlines Near-black (#191c1f) + white binary with comprehensive --rui-* semantic tokens Universal pill buttons (9999px radius) with generous padding (14px 32px) Inter for body text with positive letter-spacing (0.16px\u20130.24px) Rich semantic color system: blue, teal, pink, yellow, green, brown, danger, warning"
+},
+{
+"slug": "runwayml",
+"name": "Runway",
+"category": "AI & LLM",
+"blurb": "AI video generation. Cinematic dark UI, media-rich layout.",
+"directive": "Cinematic full-bleed photography and video as primary UI elements Single typeface system: abcNormal for everything from display to micro labels Dark-dominant palette with cool-toned neutrals (#767d88, #7d848e) Zero shadows, minimal borders \u2014 the interface is intentionally invisible Tight display typography (line-height 1.0) with negative tracking (-0.9px to -1.2px)"
+},
+{
+"slug": "sanity",
+"name": "Sanity",
+"category": "Backend & Data",
+"blurb": "Headless CMS. Red accent, content-first editorial layout.",
+"directive": "Near-black canvas (#0b0b0b) as the default, natural environment -- not a dark \"mode\" but the primary identity waldenburgNormal with extreme negative tracking at display sizes, creating a precision-engineered typographic voice Pure achromatic gray scale -- no warm or cool undertones, pure neutral discipline Vivid accent punctuation: neon green, electric blue (#0052ef), and coral-red (#f36458) against the dark field Pill-shaped primary buttons (99999px radius) contrasting with subtle rounded rectangles (3-6px) for secondary actions"
+},
+{
+"slug": "sentry",
+"name": "Sentry",
+"category": "Backend & Data",
+"blurb": "Error monitoring. Dark dashboard, data-dense, pink-purple accent.",
+"directive": "Dark purple-black backgrounds (#1f1633, #150f23) \u2014 never pure black Warm purple accent spectrum: from deep (#362d59) through mid (#79628c, #6a5fc1) to vibrant (#422082) Lime-green accent (#c2ef4e) for high-visibility CTAs and highlights Pink/coral accents (#ffb287, #fa7faa) for focus states and secondary highlights \"Dammit Sans\" display font for brand personality at hero scale"
+},
+{
+"slug": "shadcn",
+"name": "Shadcn",
+"category": "Modern & Minimal",
+"blurb": "Shadcn/ui-inspired design with minimal, clean components, monochrome palette, and utility-first patterns.",
+"directive": ""
+},
+{
+"slug": "shopify",
+"name": "Shopify",
+"category": "E-Commerce & Retail",
+"blurb": "E-commerce platform. Dark-first cinematic, neon green accent, ultra-light type.",
+"directive": "Dark-first design with deep forest-teal undertones (not pure black) Ultra-light display typography (weight 330) at monumental scale (96px) creating an ethereal presence Neon Green (#36F4A4) as the singular high-energy accent against darkness Full-pill buttons (9999px radius) as the primary interactive shape Layered, multi-stage box shadows creating photographic depth"
+},
+{
+"slug": "simple",
+"name": "Simple",
+"category": "Modern & Minimal",
+"blurb": "Straightforward, no-frills design with clean typography, neutral colors, and intuitive layouts that stay out of the way.",
+"directive": ""
+},
+{
+"slug": "skeumorphism",
+"name": "Skeumorphism",
+"category": "Morphism & Effects",
+"blurb": "Real-world mimicry with textured surfaces, 3D effects, and familiar physical metaphors for intuitive digital interfaces.",
+"directive": ""
+},
+{
+"slug": "sleek",
+"name": "Sleek",
+"category": "Modern & Minimal",
+"blurb": "Modern minimalist aesthetic with clean lines, intentional color palette, subtle interactions, and consistent spacing.",
+"directive": ""
+},
+{
+"slug": "spacex",
+"name": "SpaceX",
+"category": "Media & Consumer",
+"blurb": "Space technology. Stark black and white, full-bleed imagery, futuristic.",
+"directive": "Pure black canvas with full-viewport cinematic photography \u2014 the interface is invisible D-DIN / D-DIN-Bold \u2014 industrial DIN-heritage typeface Universal uppercase + positive letter-spacing (0.96px\u20131.17px) \u2014 aerospace stencil aesthetic Near-white spectral text (#f0f0fa) \u2014 not pure white, a slight blue-violet tint Zero shadows, zero cards, zero containers \u2014 text on image only"
+},
+{
+"slug": "spacious",
+"name": "Spacious",
+"category": "Layout & Structure",
+"blurb": "Generous whitespace, consistent padding, and grid-based layouts for clean, readable, and breathing interfaces.",
+"directive": ""
+},
+{
+"slug": "spotify",
+"name": "Spotify",
+"category": "Media & Consumer",
+"blurb": "Music streaming. Vibrant green on dark, bold type, album-art-driven.",
+"directive": "Near-black immersive dark theme (#121212\u2013#1f1f1f) \u2014 UI disappears behind content Spotify Green (#1ed760) as singular brand accent \u2014 never decorative, always functional SpotifyMixUI/CircularSp font family with global script support Pill buttons (500px\u20139999px) and circular controls (50%) \u2014 rounded, touch-optimized Uppercase button labels with wide letter-spacing (1.4px\u20132px)"
+},
+{
+"slug": "starbucks",
+"name": "Starbucks",
+"category": "E-Commerce & Retail",
+"blurb": "Global coffee retail brand. Four-tier green system, warm cream canvas, full-pill buttons.",
+"directive": "Four-tier green brand system (Starbucks / Accent / House / Uplift) each mapped to a distinct surface role \u2014 not a single \"brand green\" Gold reserved for Rewards-status moments only; never a general-purpose accent Warm-neutral canvas (#f2f0eb / #edebe9) instead of cold white \u2014 references caf\u00e9 materials Custom proprietary typeface (SoDoSans) with tight -0.16px letter-spacing as the universal voice Context-specific type switches: serif (Lander Tall) for Rewards, script (Kalam) for Careers cup-names"
+},
+{
+"slug": "storytelling",
+"name": "Storytelling",
+"category": "Creative & Artistic",
+"blurb": "Narrative-driven design using visuals, copy, and interaction to guide users through engaging, emotionally resonant journeys.",
+"directive": ""
+},
+{
+"slug": "stripe",
+"name": "Stripe",
+"category": "Fintech & Crypto",
+"blurb": "Payment infrastructure. Signature purple gradients, weight-300 elegance.",
+"directive": "sohne-var with OpenType \"ss01\" on all text -- a custom stylistic set that defines the brand's letterforms Weight 300 as the signature headline weight -- light, confident, anti-convention Negative letter-spacing at display sizes (-1.4px at 56px, progressive relaxation downward) Blue-tinted multi-layer shadows using rgba(50,50,93,0.25) -- elevation that feels brand-colored Deep navy (#061b31) headings instead of black -- warm, premium, financial-grade"
+},
+{
+"slug": "supabase",
+"name": "Supabase",
+"category": "Backend & Data",
+"blurb": "Open-source Firebase alternative. Dark emerald theme, code-first.",
+"directive": "Dark-mode-native: near-black backgrounds (#0f0f0f, #171717) \u2014 never pure black Emerald green brand accent (#3ecf8e, #00c573) used sparingly as identity marker Circular font \u2014 geometric sans-serif with rounded terminals Source Code Pro for uppercase technical labels (1.2px letter-spacing) HSL-based color token system with alpha channels for translucent layering"
+},
+{
+"slug": "superhuman",
+"name": "Superhuman",
+"category": "Developer Tools",
+"blurb": "Fast email client. Premium dark UI, keyboard-first, purple glow.",
+"directive": "Deep purple gradient hero (#1b1938) contrasting against a predominantly white content body Super Sans VF variable font with non-standard weight stops (460, 540, 600, 700) \u2014 sits between conventional weight categories Ultra-tight display line-height (0.96) creating compressed, powerful headlines Warm Cream (#e9e5dd) buttons instead of bright/saturated CTAs \u2014 understated luxury Lavender Purple (#cbb7fb) as the singular accent color \u2014 a soft, approachable purple"
+},
+{
+"slug": "tesla",
+"name": "Tesla",
+"category": "Automotive",
+"blurb": "Electric automotive. Radical subtraction, full-viewport photography, near-zero UI.",
+"directive": "Full-viewport hero sections (100vh) dominated by cinematic car photography with minimal overlay UI Near-zero UI decoration: no shadows, no gradients, no borders, no patterns anywhere on the page Single accent color \u2014 Electric Blue (#3E6AE1) \u2014 used exclusively for primary CTA buttons Universal Sans font family (Display + Text) unifying web, app, and in-car interfaces Photography-first presentation where product imagery carries all emotional weight"
+},
+{
+"slug": "tetris",
+"name": "Tetris",
+"category": "Themed & Unique",
+"blurb": "Classic block-game inspired design with playful colors, bold display fonts, and compact, high-energy layouts.",
+"directive": ""
+},
+{
+"slug": "theverge",
+"name": "The Verge",
+"category": "Media & Consumer",
+"blurb": "Tech editorial media. Acid-mint and ultraviolet accents, Manuka display, rave-flyer story tiles.",
+"directive": "Near-black editorial canvas (#131313) as the default surface \u2014 no light mode on the homepage Acid-mint #3cffd0 + ultraviolet #5200ff as hazard-tape accents, never quiet background wash Massive Manuka display headlines up to 107px \u2014 the single loudest type move in mainstream tech media Rounded pill-card everything: 20/24/30/40px corner radii, never square Fully saturated color-block story tiles (mint, purple, yellow, pink, orange, electric blue) on a dark page"
+},
+{
+"slug": "together-ai",
+"name": "Together AI",
+"category": "AI & LLM",
+"blurb": "Open-source AI infrastructure. Technical, blueprint-style design.",
+"directive": "Soft pastel gradients (pink, blue, lavender) against pure white canvas Deep midnight blue (#010120) for dark/research sections \u2014 not gray-black Custom \"The Future\" font with aggressive negative letter-spacing throughout PP Neue Montreal Mono for uppercase technical labels Sharp geometry (4px, 8px radius) \u2014 not rounded, not pill"
+},
+{
+"slug": "uber",
+"name": "Uber",
+"category": "Media & Consumer",
+"blurb": "Mobility platform. Bold black and white, tight type, urban energy.",
+"directive": "Pure black-and-white foundation with virtually no mid-tone grays in the UI chrome UberMove (headlines) + UberMoveText (body/UI) -- proprietary geometric sans-serif family Pill-shaped everything: buttons, chips, nav items all use 999px border-radius Warm, human illustrations contrasting the stark monochrome interface Card-based layout with whisper-soft shadows (0.12-0.16 opacity)"
+},
+{
+"slug": "vercel",
+"name": "Vercel",
+"category": "Developer Tools",
+"blurb": "Frontend deployment. Black and white precision, Geist font.",
+"directive": "Geist Sans with extreme negative letter-spacing (-2.4px to -2.88px at display) \u2014 text as compressed infrastructure Geist Mono for code and technical labels with OpenType \"liga\" globally Shadow-as-border technique: box-shadow 0px 0px 0px 1px replaces traditional borders throughout Multi-layer shadow stacks for nuanced depth (border + elevation + ambient in single declarations) Near-pure white canvas with #171717 text \u2014 not quite black, creating micro-contrast softness"
+},
+{
+"slug": "vibrant",
+"name": "Vibrant",
+"category": "Bold & Expressive",
+"blurb": "Lively, colorful design with bold playful typography, warm accents, and dynamic visual energy.",
+"directive": ""
+},
+{
+"slug": "vintage",
+"name": "Vintage",
+"category": "Retro & Nostalgic",
+"blurb": "1950s-1990s nostalgia with skeuomorphic touches, grainy textures, retro color palettes, and pixel-style typography.",
+"directive": ""
+},
+{
+"slug": "vodafone",
+"name": "Vodafone",
+"category": "Media & Consumer",
+"blurb": "Global telecom brand. Monumental uppercase display, Vodafone Red chapter bands.",
+"directive": "Vodafone Red (#e60000) is the single dominant accent \u2014 used for CTAs, dividers, band sections, the speech-mark logo, and the rotated \"IMPACT\" brand-mark type on the sustainability map Monumental uppercase display type (up to 144px, weight 800, negative letter-spacing) paired with calm 16-18px body copy A universal page rhythm: dark atmospheric hero \u2192 monumental uppercase headline \u2192 full-width red band \u2192 white editorial canvas \u2192 dark charcoal institutional panel \u2192 charcoal footer Two-tier button system: tight 2px-radius rectangles for utility actions, fully-pill 60px buttons for primary content"
+},
+{
+"slug": "voltagent",
+"name": "VoltAgent",
+"category": "AI & LLM",
+"blurb": "AI agent framework. Void-black canvas, emerald accent, terminal-native.",
+"directive": "Carbon-black canvas (#050507) with warm-gray border containment (#3d3a39) \u2014 not cold or sterile Single-accent identity: Emerald Signal Green (#00d992) as the sole chromatic energy source Dual-typography system: system-ui for authoritative headings, Inter for precise UI/body text, SFMono for code credibility Ultra-tight heading line-heights (1.0\u20131.11) creating dense, compressed power blocks Warm neutral palette (#3d3a39, #8b949e, #b8b3b0) that prevents the dark theme from feeling clinical"
+},
+{
+"slug": "warm-editorial",
+"name": "Warm Editorial",
+"category": "Starter",
+"blurb": "A serif-led magazine aesthetic. Terracotta accent on warm off-white paper \u2014",
+"directive": ""
+},
+{
+"slug": "warp",
+"name": "Warp",
+"category": "Developer Tools",
+"blurb": "Modern terminal. Dark IDE-like interface, block-based command UI.",
+"directive": "Warm dark background \u2014 not cold black, but earthy near-black with warm gray undertones Warm Parchment (#faf9f6) text instead of pure white \u2014 subtle cream warmth Matter font family (Regular weight) \u2014 geometric but approachable, not the typical developer-tool typeface Nature photography interleaved with product screenshots \u2014 lifestyle meets developer tool Almost monochromatic warm gray palette \u2014 no bold accent colors"
+},
+{
+"slug": "webflow",
+"name": "Webflow",
+"category": "Design & Creative",
+"blurb": "Visual web builder. Blue-accented, polished marketing site aesthetic.",
+"directive": "White canvas with near-black (#080808) text Webflow Blue (#146ef5) as primary brand + interactive color WF Visual Sans Variable \u2014 custom variable font with weight 500\u2013600 Rich secondary palette: purple #7a3dff, pink #ed52cb, green #00d722, orange #ff6b00, yellow #ffae13, red #ee1d36 Conservative 4px\u20138px border-radius \u2014 sharp, not rounded"
+},
+{
+"slug": "wired",
+"name": "WIRED",
+"category": "Media & Consumer",
+"blurb": "Tech magazine. Paper-white broadsheet density, custom serif display, mono kickers, ink-blue links.",
+"directive": "Newsstand-density editorial grid: rules and whitespace, never cards or shadows Custom serif display + technical mono kickers \u2014 the Cond\u00e9-Nast-meets-engineering-lab voice Strictly square corners on every image, container, and ribbon (only icon buttons are circular) 2px hard black borders on buttons and links \u2014 printerly, not webby Mono ALL-CAPS eyebrows on every story with wide tracking (0.9\u20131.2px)"
+},
+{
+"slug": "wise",
+"name": "Wise",
+"category": "Fintech & Crypto",
+"blurb": "Money transfer. Bright green accent, friendly and clear.",
+"directive": "Wise Sans at weight 900, 0.85 line-height \u2014 billboard-scale bold headlines Lime Green (#9fe870) accent with dark green text (#163300) \u2014 nature-inspired fintech Inter body at weight 600 as default \u2014 confident, not light Near-black (#0e0f0c) primary with warm green undertone Scale(1.05) hover animations \u2014 buttons physically grow"
+},
+{
+"slug": "x-ai",
+"name": "xAI",
+"category": "AI & LLM",
+"blurb": "Elon Musk's AI lab. Stark monochrome, futuristic minimalism.",
+"directive": "Pure dark theme: #1f2228 background with #ffffff text -- no gray middle ground GeistMono at extreme display sizes (320px, weight 300) -- monospace as luxury Uppercase monospace buttons with 1.4px letter-spacing -- technical, commanding universalSans for body text at 16px/1.5 and headings at 30px/1.2 -- clean contrast Zero decorative elements: no shadows, no gradients, no colored accents"
+},
+{
+"slug": "xiaohongshu",
+"name": "Xiaohongshu",
+"category": "Media & Consumer",
+"blurb": "Lifestyle UGC social platform. Singular brand red, generous radius, content-first.",
+"directive": "Singular brand red (#FF2442 token, #FF2E4D at the component layer) \u2014 never two saturated colors at once Translucent neutrals (rgba(48,48,52, .05/.10/.20)) instead of discrete grey steps Generous rounding everywhere: cards 12\u201316px, buttons fully pill, sheets 16px top-only Near-zero shadow \u2014 flat by default PingFang SC at 400/500/600 only; no thin display weights"
+},
+{
+"slug": "zapier",
+"name": "Zapier",
+"category": "Productivity & SaaS",
+"blurb": "Automation platform. Warm orange, friendly illustration-driven.",
+"directive": "Warm cream canvas (#fffefb) instead of pure white -- organic, paper-like warmth Near-black with reddish undertone (#201515) -- text that breathes rather than dominates Degular Display for hero headlines at 0.90 line-height -- compressed, impactful, modern Inter as the universal UI font across all functional typography GT Alpina for editorial accents -- thin-weight serif with extreme negative tracking"
+}
+]

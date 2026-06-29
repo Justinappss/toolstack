@@ -49,6 +49,7 @@ All tools are free, browser-based, and require no account.
 - [Invoice Generator](https://toolstack.tech/tools/invoice-generator): Create professional PDF invoices instantly. No watermarks, no signup.
 - [Mortgage Calculator](https://toolstack.tech/tools/mortgage-calculator): Monthly payments, total interest, and full amortisation schedule. 15 currencies.
 - [Salary Calculator](https://toolstack.tech/tools/salary-calculator): Calculate take-home pay after tax. UK PAYE 2024/25 and US Federal 2024.
+- [Jdesigns Studio](https://toolstack.tech/tools/jdesigns-studio): AI carousel builder. Scan any brand, generate on-brand carousel post ideas with GPT-4o, and render branded visuals with AI.
 - [Tip Calculator](https://toolstack.tech/tools/tip-calculator): Calculate tips and split bills. Tipping customs for 20+ countries.
 - [Compound Interest Calculator](https://toolstack.tech/tools/compound-interest-calculator): Calculate investment growth with compounding and monthly contributions.
 

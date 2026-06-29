@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, X } from "lucide-react";
 import { ThumbnailAnimation } from "./ThumbnailAnimations";
 import { PasswordGeneratorThumbnail } from "./PasswordGeneratorThumbnail";
+import { JdesignsStudioThumbnail } from "./JdesignsStudioThumbnail";
 import { JsonFormatterThumbnail } from "./JsonFormatterThumbnail";
 import { AiPromptGeneratorThumbnail } from "./AiPromptGeneratorThumbnail";
 import { MortgageCalculatorThumbnail } from "./MortgageCalculatorThumbnail";
@@ -112,6 +113,7 @@ function YoutubeTranscriptThumbnail() {
 }
 
 const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
+    "ToolStack Design Studio": JdesignsStudioThumbnail,
     "Password Generator": PasswordGeneratorThumbnail,
     "JSON Formatter": JsonFormatterThumbnail,
     "AI Prompt Generator": AiPromptGeneratorThumbnail,

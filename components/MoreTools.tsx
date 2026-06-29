@@ -4,6 +4,16 @@ import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
 
 export const ALL_TOOLS = [
   {
+    slug: "jdesigns-studio",
+    name: "ToolStack Design Studio",
+    desc: "AI ad & campaign studio — scan a brand, generate on-brand campaigns and finished ads with GPT-4o, and render branded visuals with AI.",
+    icon: "◫",
+    color: "#8b7cf6",
+    bg: "rgba(139,124,246,0.1)",
+    border: "rgba(139,124,246,0.25)",
+    badge: "Design",
+  },
+  {
     slug: "ai-prompt-generator",
     name: "AI Prompt Generator",
     desc: "Generate expert prompts for ChatGPT, Claude, Gemini & more using RISEN, STAR, Chain-of-Thought and 4 other frameworks.",

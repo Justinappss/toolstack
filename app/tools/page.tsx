@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { ALL_TOOLS, CATEGORIES, CATEGORY_MAP } from "./tool-data";
 import ShaderBanner from "@/components/ui/ShaderBanner";
+import DesignStudioPromo from "@/components/DesignStudioPromo";
 function ToolsGrid() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
@@ -73,7 +74,8 @@ function ToolsGrid() {
           gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
           gap: 16,
         }}>
-          {filtered.map(tool => (
+          {filtered.flatMap((tool, i) => {
+            const card = (
             <Link key={tool.href} href={tool.href} style={{ textDecoration: "none" }}>
               <div style={{
                 padding: "24px 26px",
@@ -125,7 +127,11 @@ function ToolsGrid() {
                 <div style={{ fontSize: 13, fontWeight: 700, color: tool.accent }}>Use free →</div>
               </div>
             </Link>
-          ))}
+            );
+            return i === Math.floor(filtered.length / 2)
+              ? [<div key="ds-promo" style={{ gridColumn: "1 / -1" }}><DesignStudioPromo /></div>, card]
+              : [card];
+          })}
         </div>
 
         {/* CTA */}

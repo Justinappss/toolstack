@@ -1,5 +1,15 @@
 export const ALL_TOOLS = [
   {
+    title: "ToolStack Design Studio",
+    desc: "AI ad & campaign studio. Scan any brand, generate on-brand campaigns and finished ads with GPT-4o, and render branded visuals with AI.",
+    href: "/tools/jdesigns-studio",
+    category: "Design",
+    accent: "#8b7cf6",
+    accentRgb: "139,124,246",
+    badge: "New",
+    icon: "◫",
+  },
+  {
     title: "AI Prompt Generator",
     desc: "Generate expert-level prompts for ChatGPT, Claude & Gemini using RISEN, STAR, and 5 other proven frameworks.",
     href: "/tools/ai-prompt-generator",

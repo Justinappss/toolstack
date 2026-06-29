@@ -33,6 +33,16 @@ export const metadata: Metadata = {
 
 const LIVE_TOOLS = [
     {
+        title: "ToolStack Design Studio",
+        desc: "AI ad & campaign studio. Scan any brand, generate on-brand campaigns and finished ads with GPT-4o, and render branded visuals with AI.",
+        href: "/tools/jdesigns-studio",
+        category: "Design",
+        accent: "#8b7cf6",
+        accentRgb: "139,124,246",
+        badge: "New",
+        icon: "◫",
+    },
+    {
         title: "UCL Final 2026 Accumulator",
         desc: "PSG vs Arsenal — Champions League final acca calculator. Enter your odds, see combined return and implied probability instantly.",
         href: "/tools/ucl-final-accumulator-2026",
@@ -1459,6 +1469,8 @@ export default function Home() {
                             <div style={{ display: "flex", gap: 16, marginTop: 32 }}>
                                 <Link href="/about" style={{ fontSize: 14, fontWeight: 700, color: "white", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)", paddingBottom: 2 }}>Read our full story →</Link>
                                 <Link href="/privacy" style={{ fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.5)", textDecoration: "none", borderBottom: "1px solid transparent" }}>Privacy Policy</Link>
+                                <Link href="/disclaimer" style={{ fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.5)", textDecoration: "none", borderBottom: "1px solid transparent" }}>Disclaimer</Link>
+                                <Link href="/terms" style={{ fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.5)", textDecoration: "none", borderBottom: "1px solid transparent" }}>Terms</Link>
                             </div>
                         </div>
                         
