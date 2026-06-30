@@ -5,9 +5,10 @@ import { Check, ArrowRight } from "lucide-react";
    Until a link is filled, its button points to "#". One place to edit.
    ──────────────────────────────────────────────────────────────────────── */
 export const WHOP_LINKS = {
-  selfUse: "https://whop.com/checkout/prod_LpfQ0gWijddbm",   // Studio Pass · Starter $29/mo checkout — used at the in-app UPGRADE prompt after the 5 free gens (the free trial itself is app-side, NOT a Whop product)
-  power: "https://whop.com/checkout/prod_LpfQ0gWijddbm",     // Studio Pass · Power — $99/mo (hosted, ~$85 cost cap). Same Whop product as Starter; use its plan checkout URL (or reuse the product URL).
-  ownSystem: "https://whop.com/checkout/prod_EH6iWxTArcjYE", // Done-For-You Campaign Manager — $1,000 one-time, own your system + bring your own keys
+  selfUse: "https://whop.com/checkout/plan_E7y48vqdXAWO9",   // Studio Pass · Starter $29/mo checkout — used at the in-app UPGRADE prompt after the 5 free gens (the free trial itself is app-side, NOT a Whop product)
+  power: "https://whop.com/checkout/plan_xleGyCKLW7YcM",     // Studio Pass · Power — $99/mo (hosted, ~$85 cost cap). Same Whop product as Starter; use its plan checkout URL (or reuse the product URL).
+  ownSystem: "https://whop.com/checkout/plan_g2bzz1utiDpPa", // Done-For-You Campaign Manager — $1,000 one-time, own your system + bring your own keys
+  affiliate: "", // Whop affiliate SIGNUP link for the $1,000 product (40% = $400/sale). Paste once Hermes returns it; empty → callout hidden.
 };
 
 const POSTLY_LINK = "https://poster.ly?atp=toolstack";
@@ -206,6 +207,23 @@ export function Pricing({
           <a href={POSTLY_LINK} target="_blank" rel="noopener noreferrer sponsored" style={{ color: primary, fontWeight: 700, textDecoration: "none" }}>Postly</a>.
         </div>
       </div>
+
+      {/* affiliate recruitment — only renders once the signup link is set */}
+      {WHOP_LINKS.affiliate && (
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16, flexWrap: "wrap", maxWidth: 760, margin: "26px auto 0", padding: "16px 22px", borderRadius: 14, border: `1px dashed ${primary}55`, background: `${primary}08` }}>
+          <div style={{ fontSize: 14, color: "#4B4636", lineHeight: 1.5 }}>
+            <strong style={{ color: ink }}>Earn $400 per sale.</strong> Refer the Done-For-You Campaign Manager and keep <strong style={{ color: ink }}>40%</strong> of every $1,000 sale.
+          </div>
+          <a
+            href={WHOP_LINKS.affiliate}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "inline-flex", alignItems: "center", gap: 7, height: 42, padding: "0 18px", borderRadius: 10, background: ink, color: "#fff", fontSize: 13.5, fontWeight: 800, textDecoration: "none", whiteSpace: "nowrap" }}
+          >
+            Become an affiliate <ArrowRight size={16} />
+          </a>
+        </div>
+      )}
     </section>
   );
 }
