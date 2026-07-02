@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import designSystems from "../../../tools/jdesigns-studio/designSystems.json";
+import { withPaywall, recordPaywallUsage } from "../_paywall";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -108,6 +109,10 @@ async function extractAssets(domain: string, html: string, baseUrl: string): Pro
 
 export async function POST(req: NextRequest) {
   try {
+    // Paywall: check allowance before generating
+    const guard = await withPaywall(req, "scan");
+    if (!guard.allowed) return guard.response;
+
     const { url } = await req.json();
     if (!url || typeof url !== "string") {
       return NextResponse.json({ error: "Missing url" }, { status: 400 });
@@ -176,6 +181,7 @@ ${DS_CATALOG}`;
     const parsed = JSON.parse(content);
     const assets = await extractAssets(domain, page.html, target);
     const designSystem = DS_SLUGS.has(parsed.designSystem) ? parsed.designSystem : "clean";
+    await recordPaywallUsage(guard.userKey, guard.plan, "scan");
     return NextResponse.json({ brand: { ...parsed, url: domain, logo: assets.logo, images: assets.images, designSystem, fetched } });
   } catch (error: any) {
     console.error("Jdesigns brandbook API error:", error);

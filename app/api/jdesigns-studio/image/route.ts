@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { withPaywall, recordPaywallUsage } from "../_paywall";
 
 // fal.ai image generation. Key stays server-side (FAL_KEY) — never exposed to the browser.
 export const runtime = "nodejs";
@@ -21,6 +22,10 @@ function hexToRgb(hex: string): { r: number; g: number; b: number } | null {
 
 export async function POST(req: NextRequest) {
   try {
+    // Paywall: check allowance before generating
+    const guard = await withPaywall(req, "image");
+    if (!guard.allowed) return guard.response;
+
     const {
       prompt,
       model = "recraft",
@@ -77,6 +82,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "No image returned" }, { status: 502 });
     }
 
+    await recordPaywallUsage(guard.userKey, guard.plan, "image");
     return NextResponse.json({ url, model: modelId });
   } catch (error: any) {
     console.error("Jdesigns image API error:", error);

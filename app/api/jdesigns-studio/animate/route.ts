@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { withPaywall, recordPaywallUsage } from "../_paywall";
 
 // Image-to-video via fal.ai (premium add-on). Key stays server-side.
 // NOTE: i2v is slow (~30s–2min). Sync call here is fine locally / on Vercel Pro
@@ -14,6 +15,10 @@ const I2V_MODELS: Record<string, string> = {
 
 export async function POST(req: NextRequest) {
   try {
+    // Paywall: check allowance before generating
+    const guard = await withPaywall(req, "animate");
+    if (!guard.allowed) return guard.response;
+
     const { imageUrl, prompt, model = "kling", aspectRatio = "9:16", duration = 5 } = await req.json();
     if (!imageUrl || typeof imageUrl !== "string") {
       return NextResponse.json({ error: "Missing imageUrl" }, { status: 400 });
@@ -47,6 +52,7 @@ export async function POST(req: NextRequest) {
     if (!url) {
       return NextResponse.json({ error: "No video returned" }, { status: 502 });
     }
+    await recordPaywallUsage(guard.userKey, guard.plan, "animate");
     return NextResponse.json({ url, model: modelId });
   } catch (error: any) {
     console.error("Jdesigns animate API error:", error);

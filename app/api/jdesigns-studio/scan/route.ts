@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { withPaywall, recordPaywallUsage } from "../_paywall";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -41,6 +42,9 @@ async function fetchPageText(url: string): Promise<{ title: string; description:
 
 export async function POST(req: NextRequest) {
   try {
+    const guard = await withPaywall(req, "scan");
+    if (!guard.allowed) return guard.response;
+
     const { url } = await req.json();
     if (!url || typeof url !== "string") {
       return NextResponse.json({ error: "Missing url" }, { status: 400 });
@@ -99,6 +103,7 @@ Scraped content: ${page.text || "(could not fetch — infer from the domain/bran
     const content = data.choices?.[0]?.message?.content ?? "{}";
     const parsed = JSON.parse(content);
 
+    await recordPaywallUsage(guard.userKey, guard.plan, "scan");
     return NextResponse.json({ brand: { ...parsed, url: domain } });
   } catch (error: any) {
     console.error("Jdesigns scan API error:", error);

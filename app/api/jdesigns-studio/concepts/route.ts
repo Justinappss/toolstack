@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
+import { withPaywall, recordPaywallUsage } from "../_paywall";
 
 export const runtime = "nodejs";
 export const maxDuration = 45;
 
 export async function POST(req: NextRequest) {
   try {
+    // Paywall: check allowance before generating
+    const guard = await withPaywall(req, "concepts");
+    if (!guard.allowed) return guard.response;
+
     const { brand, direction } = await req.json();
     if (!brand?.name) {
       return NextResponse.json({ error: "Missing brand" }, { status: 400 });
@@ -69,6 +74,7 @@ Creative direction: ${direction || "Surprise me with campaigns that fit the bran
     const parsed = JSON.parse(content);
     const concepts = Array.isArray(parsed) ? parsed : parsed.concepts || [];
 
+    await recordPaywallUsage(guard.userKey, guard.plan, "concepts");
     return NextResponse.json({ concepts });
   } catch (error: any) {
     console.error("Jdesigns concepts API error:", error);

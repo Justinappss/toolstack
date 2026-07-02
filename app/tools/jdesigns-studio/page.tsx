@@ -207,14 +207,41 @@ function fitBox(w: number, h: number, maxW: number, maxH: number) {
   return { cw: Math.round(cw), ch: Math.round(ch) };
 }
 
-async function api<T>(path: string, body: unknown): Promise<T> {
+// ─── Device ID & paywall helpers ──────────────────────────────────────────
+function getDeviceId(): string {
+  let id = localStorage.getItem("jd_device_id");
+  if (id) return id;
+  // Generate a stable random fingerprint stored in localStorage
+  const chars = "abcdef0123456789";
+  let h = "";
+  for (let i = 0; i < 32; i++) h += chars[Math.floor(Math.random() * chars.length)];
+  localStorage.setItem("jd_device_id", h);
+  return h;
+}
+
+function getWhopPlan(): string | null {
+  // whop_plan is a readable cookie set on login (the auth token itself is httpOnly)
+  const m = document.cookie.match(/(?:^|;\s*)whop_plan=([^;]*)/);
+  return m ? decodeURIComponent(m[1]) : null;
+}
+
+async function api<T>(path: string, body: unknown): Promise<T & { _paywall?: { code: string; remaining: number } }> {
+  const deviceId = getDeviceId();
+  // whop_token (httpOnly) rides automatically on same-origin requests; only the device id needs sending
+  const headers: Record<string, string> = { "Content-Type": "application/json", "x-device-id": deviceId };
   const res = await fetch(path, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify(body),
   });
   const data = await res.json();
-  if (!res.ok) throw new Error(data?.error || "Request failed");
+  if (!res.ok) {
+    // 402 = paywall hit — carry the paywall info so the caller can show the upgrade prompt
+    if (res.status === 402) {
+      return { _paywall: { code: data?.code || "trial_used", remaining: data?.remaining ?? 0 } } as any;
+    }
+    throw new Error(data?.error || "Request failed");
+  }
   return data as T;
 }
 
@@ -231,11 +258,14 @@ export default function JdesignsStudioPage() {
   const [loadingConcepts, setLoadingConcepts] = useState(false);
   const [campaign, setCampaign] = useState<Concept | null>(null);
   const [ideas, setIdeas] = useState<Idea[]>([]);
-  // each pitched campaign keeps its own built post-series, keyed by campaign name —
-  // so switching between the 3 campaigns never discards work (expand any on demand)
   const [builtByCampaign, setBuiltByCampaign] = useState<Record<string, Idea[]>>({});
   const [error, setError] = useState("");
   const [preview, setPreview] = useState<number | null>(null);
+  // paywall state
+  const [showPaywall, setShowPaywall] = useState(false);
+  const [paywallReason, setPaywallReason] = useState<"trial" | "cap">("trial");
+  const [remaining, setRemaining] = useState(5);
+  const [loggedIn, setLoggedIn] = useState(false);
   // real brand assets — scraped on scan, overridable/extendable by customer uploads
   const [logoUrl, setLogoUrl] = useState("");
   const [brandImages, setBrandImages] = useState<string[]>([]);
@@ -264,6 +294,38 @@ export default function JdesignsStudioPage() {
 
   // data URLs (uploads) load directly; remote images go through the same-origin proxy so canvas stays untainted
   const proxied = (u: string) => (!u ? "" : u.startsWith("data:") ? u : "/api/jdesigns-studio/proxy?url=" + encodeURIComponent(u));
+
+  // ─── Whop OAuth login ──────────────────────────────────────────────────
+  const WHOP_AUTH_URL = "/api/jdesigns-studio/whop/login"; // server route builds the authorize URL + CSRF state
+  useEffect(() => {
+    const plan = getWhopPlan();
+    setLoggedIn(!!plan && plan !== "free");
+  }, []);
+
+  function handlePaywall(pw: { code: string; remaining: number }) {
+    if (pw.code === "trial_used") {
+      setPaywallReason("trial");
+      setRemaining(0);
+    } else {
+      setPaywallReason("cap");
+      setRemaining(pw.remaining);
+    }
+    setShowPaywall(true);
+  }
+
+  // Check on mount if we recently authenticated
+  useEffect(() => {
+    const token = getWhopToken();
+    if (token) setLoggedIn(true);
+    // Check URL for auth errors
+    const params = new URLSearchParams(window.location.search);
+    const authErr = params.get("auth_error");
+    if (authErr) {
+      setError(authErr === "no_code" ? "" : `Login issue: ${authErr.replace(/_/g, " ")}`);
+      // Clean the URL
+      window.history.replaceState({}, "", window.location.pathname);
+    }
+  }, []);
 
   // ---- unified ad editor: drag/place the logo AND the editable text layers ----
   const canvasRef = useRef<HTMLDivElement>(null);
@@ -644,7 +706,9 @@ export default function JdesignsStudioPage() {
     setError("");
     try {
       // one deep brand-learning pass — powers the creatives AND the Brand Book
-      const { brand: b } = await api<{ brand: Brand }>("/api/jdesigns-studio/brandbook", { url: brandUrl });
+      const scanRes = await api<{ brand: Brand }>("/api/jdesigns-studio/brandbook", { url: brandUrl });
+      if (scanRes._paywall) { handlePaywall(scanRes._paywall); return; }
+      const b = scanRes.brand;
       const learned: Brand = {
         name: b.name || "Brand",
         tagline: b.tagline || "",
@@ -693,11 +757,12 @@ export default function JdesignsStudioPage() {
     setIdeas([]);
     setBuiltByCampaign({});
     try {
-      const { concepts: list } = await api<{ concepts: Concept[] }>("/api/jdesigns-studio/concepts", {
+      const concRes = await api<{ concepts: Concept[] }>("/api/jdesigns-studio/concepts", {
         brand,
         direction,
       });
-      setConcepts(list);
+      if (concRes._paywall) { handlePaywall(concRes._paywall); return; }
+      setConcepts(concRes.concepts);
     } catch (e: any) {
       setError(e.message || "Couldn't pitch campaigns");
     } finally {
@@ -727,14 +792,15 @@ export default function JdesignsStudioPage() {
     setGenerating(true);
     try {
       const ds = dsBySlug(designSystem);
-      const { ideas: list } = await api<{ ideas: Idea[] }>("/api/jdesigns-studio/ideas", {
+      const ideasRes = await api<{ ideas: Idea[] }>("/api/jdesigns-studio/ideas", {
         brand,
         direction,
         count: ideaCount,
         campaign: concept,
         designDirective: ds ? `${ds.name} design language — ${ds.directive || ds.blurb}` : "",
       });
-      const built = list.map((i) => ({ ...i }));
+      if (ideasRes._paywall) { handlePaywall(ideasRes._paywall); return; }
+      const built = ideasRes.ideas.map((i) => ({ ...i }));
       setIdeas(built);
       setBuiltByCampaign((prev) => ({ ...prev, [concept.name]: built }));
     } catch (e: any) {
@@ -773,7 +839,10 @@ export default function JdesignsStudioPage() {
           style: recraftStyle,
           colors: brand.palette.map((p) => p.hex),
         })
-          .then((r) => r.url)
+          .then((r) => {
+            if (r._paywall) throw new Error("paywall");
+            return r.url;
+          })
           .catch(() => null)
       );
       const urls = (await Promise.all(reqs)).filter(Boolean) as string[];
@@ -839,8 +908,9 @@ export default function JdesignsStudioPage() {
     try {
       const fmt = FORMATS[format];
       const aspectRatio = fmt.w > fmt.h ? "16:9" : fmt.w === fmt.h ? "1:1" : "9:16";
-      const { url } = await api<{ url: string }>("/api/jdesigns-studio/animate", { imageUrl: it.imageUrl, aspectRatio, duration: it.animSeconds || 5 });
-      setIdeas((prev) => prev.map((x, i) => (i === idx ? { ...x, videoUrl: url, animating: false } : x)));
+      const animRes = await api<{ url: string }>("/api/jdesigns-studio/animate", { imageUrl: it.imageUrl, aspectRatio, duration: it.animSeconds || 5 });
+      if (animRes._paywall) { handlePaywall(animRes._paywall); return; }
+      setIdeas((prev) => prev.map((x, i) => (i === idx ? { ...x, videoUrl: animRes.url, animating: false } : x)));
     } catch (e: any) {
       setIdeas((prev) => prev.map((x, i) => (i === idx ? { ...x, animating: false, animError: e.message || "Animation failed — try again." } : x)));
     }
@@ -928,6 +998,26 @@ export default function JdesignsStudioPage() {
               </div>
             )}
           </div>
+
+          {/* ─── Whop login + remaining trials ─── */}
+          {!loggedIn && (
+            <div style={{ textAlign: "center", marginBottom: 12 }}>
+              <a
+                href={WHOP_AUTH_URL}
+                style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 20px", borderRadius: 10, border: "1.5px solid #6c5ce7", background: "#6c5ce710", color: "#6c5ce7", fontWeight: 700, fontSize: 13.5, textDecoration: "none", transition: "background .15s" }}
+                onMouseOver={(e) => (e.currentTarget.style.background = "#6c5ce720")}
+                onMouseOut={(e) => (e.currentTarget.style.background = "#6c5ce710")}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#6c5ce7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                Log in with Whop
+              </a>
+            </div>
+          )}
+          {loggedIn && (
+            <div style={{ textAlign: "center", marginBottom: 12, fontSize: 13.5, color: "#4B4760", fontWeight: 600 }}>
+              ✅ Connected to Whop — unlimited generations
+            </div>
+          )}
 
           <p
             style={{
@@ -1630,6 +1720,44 @@ export default function JdesignsStudioPage() {
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* PAYWALL MODAL — shown when free trial runs out or cap is hit */}
+      {showPaywall && (
+        <div onClick={() => setShowPaywall(false)} style={{ position: "fixed", inset: 0, zIndex: 100, background: "rgba(28,24,19,.55)", backdropFilter: "blur(3px)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24, animation: "jdfade .2s ease both" }}>
+          <div onClick={(e) => e.stopPropagation()} style={{ background: "#fff", borderRadius: 20, maxWidth: 460, width: "100%", padding: "36px 28px", boxShadow: "0 30px 80px -20px rgba(0,0,0,.6)", textAlign: "center" }}>
+            <div style={{ fontSize: 48, marginBottom: 12 }}>
+              {paywallReason === "trial" ? "🎨" : "📊"}
+            </div>
+            <h3 style={{ fontFamily: "'Newsreader',Georgia,serif", fontSize: 24, fontWeight: 700, margin: "0 0 8px", color: "#221F1A" }}>
+              {paywallReason === "trial" ? "Free trial used" : "Monthly cap reached"}
+            </h3>
+            <p style={{ fontSize: 15, lineHeight: 1.55, color: "#5C554A", margin: "0 0 20px" }}>
+              {paywallReason === "trial"
+                ? "You've used all 5 free generations. Subscribe to keep creating unlimited on-brand ads."
+                : "You've hit your plan's monthly usage limit. Upgrade or wait for next billing period."}
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              <a
+                href={loggedIn ? "https://whop.com/checkout/plan_E7y48vqdXAWO9" : WHOP_AUTH_URL}
+                style={{ display: "block", padding: "14px 0", borderRadius: 12, border: "none", background: "#6c5ce7", color: "#fff", fontSize: 15, fontWeight: 800, textDecoration: "none", cursor: "pointer" }}
+              >
+                {loggedIn ? "Upgrade to Studio Pass — $29/mo" : "Log in with Whop to continue"}
+              </a>
+              <button
+                onClick={() => setShowPaywall(false)}
+                style={{ padding: "10px 0", borderRadius: 12, border: "1.5px solid #E4DECF", background: "#FBFAF6", color: "#5C554A", fontSize: 14, fontWeight: 700, cursor: "pointer" }}
+              >
+                Maybe later
+              </button>
+            </div>
+            {paywallReason === "trial" && !loggedIn && (
+              <div style={{ marginTop: 16, fontSize: 12.5, color: "#A79E8A", lineHeight: 1.45 }}>
+                No credit card needed to try. Plans start at $29/mo.
+              </div>
+            )}
           </div>
         </div>
       )}
