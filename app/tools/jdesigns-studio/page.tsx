@@ -313,11 +313,8 @@ export default function JdesignsStudioPage() {
     setShowPaywall(true);
   }
 
-  // Check on mount if we recently authenticated
+  // Surface any OAuth callback error on mount (login state is handled by getWhopPlan above)
   useEffect(() => {
-    const token = getWhopToken();
-    if (token) setLoggedIn(true);
-    // Check URL for auth errors
     const params = new URLSearchParams(window.location.search);
     const authErr = params.get("auth_error");
     if (authErr) {
