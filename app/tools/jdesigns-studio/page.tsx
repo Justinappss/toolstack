@@ -1762,6 +1762,18 @@ export default function JdesignsStudioPage() {
       {/* PRICING — adopts the scanned brand's colours in-session */}
       <Pricing primary={primary} ink={ink} accent={accent} />
 
+      {/* AFFILIATE — recruit affiliates via Whop (own storefront enrol link) */}
+      <section style={{ maxWidth: 880, margin: "0 auto", padding: "8px 20px 36px" }}>
+        <div style={{ background: "linear-gradient(135deg,#f3f1ff,#efe9ff)", border: "1px solid #e2dbff", borderRadius: 20, padding: "28px 30px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 18 }}>
+          <div style={{ maxWidth: 520 }}>
+            <div style={{ fontSize: 12, fontWeight: 800, letterSpacing: "0.14em", textTransform: "uppercase", color: "#6D5EF5", marginBottom: 8 }}>Affiliate program</div>
+            <h2 style={{ fontFamily: "'Newsreader',Georgia,serif", fontSize: 26, fontWeight: 800, marginBottom: 8 }}>Love it? Get paid to share it.</h2>
+            <p style={{ color: "#5C554A", fontSize: 15, lineHeight: 1.55 }}>Earn <strong>40% on every Done-For-You sale</strong> — that&apos;s <strong>$400 each</strong> — plus <strong>20% recurring</strong> on every Studio Pass subscriber you refer. Free to join, paid out through Whop.</p>
+          </div>
+          <a href="https://whop.com/toolstack-design-studio" target="_blank" rel="noopener noreferrer" style={{ background: "#6D5EF5", color: "#fff", fontWeight: 800, fontSize: 16, textDecoration: "none", padding: "14px 26px", borderRadius: 14, whiteSpace: "nowrap", boxShadow: "0 10px 28px rgba(109,94,245,.35)" }}>Become an affiliate →</a>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ maxWidth: 880, margin: "0 auto", padding: "10px 20px 40px" }}>
         <h2 style={{ fontFamily: "'Newsreader',Georgia,serif", fontSize: 28, marginBottom: 18 }}>Frequently asked questions</h2>

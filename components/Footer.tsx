@@ -96,6 +96,7 @@ const COMPANY = [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms of Use", href: "/terms" },
     { label: "All Tools", href: "/tools" },
+    { label: "Affiliates", href: "https://whop.com/toolstack-design-studio" },
 ];
 
 const linkStyle: React.CSSProperties = {
