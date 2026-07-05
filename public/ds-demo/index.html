@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ToolStack Design Studio — Interactive Demo</title>
+<meta name="description" content="See how ToolStack Design Studio turns any website into a month of on-brand ads — scan, campaigns, finished ads, and one-click scheduling."/>
+<meta property="og:title" content="ToolStack Design Studio — Interactive Demo"/>
+<meta property="og:description" content="From website to a month of on-brand ads, in one flow."/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--indigo:#6D5EF5;--ink:#14122b;--paper:#f6f5ff;--muted:#6b6890}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:
+      radial-gradient(1200px 600px at 50% -10%,#efeaff 0%,#f6f5ff 45%,#ffffff 100%);min-height:100vh}
+  .wrap{max-width:1100px;margin:0 auto;padding:40px 22px 72px}
+  header{text-align:center;margin-bottom:26px}
+  .eyebrow{color:var(--indigo);font-weight:700;letter-spacing:.26em;font-size:13px;text-transform:uppercase}
+  h1{font-size:clamp(30px,5vw,50px);font-weight:800;letter-spacing:-.02em;margin:10px 0 8px}
+  .sub{color:var(--muted);font-size:clamp(15px,2.4vw,19px);font-weight:500}
+  .video{border-radius:20px;overflow:hidden;box-shadow:0 30px 80px rgba(60,40,160,.22);border:1px solid #e7e3ff;background:#000;margin:24px 0 40px}
+  .video video{display:block;width:100%;height:auto}
+  .stage{background:#fff;border:1px solid #e7e3ff;border-radius:22px;box-shadow:0 20px 60px rgba(60,40,160,.14);overflow:hidden}
+  .shot{position:relative;background:#0e0c22}
+  .shot img{display:block;width:100%;height:auto}
+  .cap{display:flex;gap:16px;align-items:flex-start;padding:20px 24px}
+  .num{flex:none;width:44px;height:44px;border-radius:13px;background:var(--indigo);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center}
+  .cap h3{font-size:20px;font-weight:800;margin-bottom:3px}
+  .cap p{color:var(--muted);font-size:15px;font-weight:500;line-height:1.4}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px 22px;gap:14px}
+  .dots{display:flex;gap:9px}
+  .dot{width:10px;height:10px;border-radius:50%;background:#d9d4ff;cursor:pointer;transition:.2s}
+  .dot.on{background:var(--indigo);transform:scale(1.25)}
+  .btn{border:none;cursor:pointer;font-family:inherit;font-weight:700;font-size:15px;border-radius:12px;padding:11px 20px;transition:.15s}
+  .ghost{background:#efecff;color:var(--indigo)}
+  .ghost:hover{background:#e3ddff}
+  .btn:disabled{opacity:.4;cursor:default}
+  .cta{text-align:center;margin-top:40px}
+  .cta a{display:inline-block;background:var(--indigo);color:#fff;font-weight:800;font-size:18px;text-decoration:none;padding:16px 34px;border-radius:15px;box-shadow:0 14px 34px rgba(109,94,245,.4)}
+  .cta a:hover{transform:translateY(-1px)}
+  .foot{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">AI Ad &amp; Campaign Studio</div>
+    <h1>ToolStack Design Studio</h1>
+    <div class="sub">From a website to a month of on-brand ads — posted everywhere in one click.</div>
+  </header>
+
+  <div class="video"><video src="./demo.mp4" controls playsinline poster="./1_scan.png"></video></div>
+
+  <div class="stage">
+    <div class="shot"><img id="shot" src="./1_scan.png" alt="step"></div>
+    <div class="cap"><div class="num" id="num">1</div><div><h3 id="title">Scan any brand</h3><p id="desc">Paste any website and the studio pulls the real brand — logo, colours, fonts and voice — and re-themes itself to you. (Here: Apple.)</p></div></div>
+    <div class="bar">
+      <button class="btn ghost" id="prev">← Back</button>
+      <div class="dots" id="dots"></div>
+      <button class="btn ghost" id="next">Next →</button>
+    </div>
+  </div>
+
+  <div class="cta"><a href="https://toolstack.tech/tools/jdesigns-studio">Try it free → toolstack.tech</a></div>
+  <div class="foot">Real screenshots from live runs across Apple, SpaceX, Coca-Cola &amp; more.</div>
+</div>
+
+<script>
+  var steps=[
+    {img:"1_scan.png",     t:"Scan any brand",              d:"Paste any website and the studio pulls the real brand — logo, colours, fonts and voice — and re-themes itself to you. (Here: Apple.)"},
+    {img:"2_campaigns.png",t:"Get 3 campaigns",             d:"It pitches three full campaigns built for your brand, each with a goal and audience. Pick one and build it out."},
+    {img:"3_ad.png",       t:"Finished, ready-to-post ads", d:"Every post becomes a finished ad with your real logo — hook, caption and visual. Schedule it everywhere in one click, or download in 4K. (Here: SpaceX.)"},
+    {img:"4_library.png",  t:"A whole library of ads",      d:"Everything you generate is saved — a growing library of on-brand ads across every campaign."},
+    {img:"5_variety.png",  t:"Any brand, any style",        d:"Fitness, tech, beverage — the studio matches each brand's real look. One tool, every brand you run."}
+  ];
+  var i=0, shot=document.getElementById('shot'), num=document.getElementById('num'),
+      title=document.getElementById('title'), desc=document.getElementById('desc'),
+      prev=document.getElementById('prev'), next=document.getElementById('next'), dots=document.getElementById('dots');
+  steps.forEach(function(_,k){var d=document.createElement('div');d.className='dot';d.onclick=function(){i=k;render()};dots.appendChild(d)});
+  function render(){
+    var s=steps[i]; shot.src="./"+s.img; num.textContent=i+1; title.textContent=s.t; desc.textContent=s.d;
+    prev.disabled=(i===0); next.disabled=(i===steps.length-1);
+    [].forEach.call(dots.children,function(d,k){d.className='dot'+(k===i?' on':'')});
+  }
+  prev.onclick=function(){if(i>0){i--;render()}};
+  next.onclick=function(){if(i<steps.length-1){i++;render()}};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')next.onclick();if(e.key==='ArrowLeft')prev.onclick()});
+  render();
+</script>
+</body>
+</html>
