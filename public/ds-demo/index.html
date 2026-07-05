@@ -49,10 +49,10 @@
     <div class="sub">From a website to a month of on-brand ads — posted everywhere in one click.</div>
   </header>
 
-  <div class="video"><video src="./demo.mp4" controls playsinline poster="./1_scan.png"></video></div>
+  <div class="video"><video src="/ds-demo/demo.mp4" controls playsinline poster="/ds-demo/1_scan.png"></video></div>
 
   <div class="stage">
-    <div class="shot"><img id="shot" src="./1_scan.png" alt="step"></div>
+    <div class="shot"><img id="shot" src="/ds-demo/1_scan.png" alt="step"></div>
     <div class="cap"><div class="num" id="num">1</div><div><h3 id="title">Scan any brand</h3><p id="desc">Paste any website and the studio pulls the real brand — logo, colours, fonts and voice — and re-themes itself to you. (Here: Apple.)</p></div></div>
     <div class="bar">
       <button class="btn ghost" id="prev">← Back</button>
@@ -78,7 +78,7 @@
       prev=document.getElementById('prev'), next=document.getElementById('next'), dots=document.getElementById('dots');
   steps.forEach(function(_,k){var d=document.createElement('div');d.className='dot';d.onclick=function(){i=k;render()};dots.appendChild(d)});
   function render(){
-    var s=steps[i]; shot.src="./"+s.img; num.textContent=i+1; title.textContent=s.t; desc.textContent=s.d;
+    var s=steps[i]; shot.src="/ds-demo/"+s.img; num.textContent=i+1; title.textContent=s.t; desc.textContent=s.d;
     prev.disabled=(i===0); next.disabled=(i===steps.length-1);
     [].forEach.call(dots.children,function(d,k){d.className='dot'+(k===i?' on':'')});
   }
