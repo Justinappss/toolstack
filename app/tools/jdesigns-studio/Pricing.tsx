@@ -29,6 +29,7 @@ type Tier = {
   ctaLink: string;
   badge?: string;
   featured?: boolean;
+  guarantee?: string;
 };
 
 const TIERS: Tier[] = [
@@ -73,22 +74,26 @@ const TIERS: Tier[] = [
   {
     key: "own-system",
     eyebrow: "Own it · one-time",
-    name: "Done-For-You Campaign Manager",
-    tagline: "Your own AI campaign manager — yours to keep.",
+    name: "Own Your Ad Studio",
+    tagline: "Not a subscription — your own AI ad agency, yours to keep and resell.",
     price: "$1,000",
     per: " one-time",
-    highlight: "No monthly fees, ever",
+    highlight: "$3,200+ value · no monthly fee, ever",
     features: [
-      "Your own system — yours to keep & rebrand",
-      "Bring your own keys = unlimited + cheapest AI",
-      "White-label it as your own studio",
-      "Step-by-step setup videos included",
-      "Optional 1:1 onboarding call",
+      "Your own private studio on your keys — unlimited ads at pennies each",
+      "We build & deploy the whole thing FOR you, fully branded",
+      "Your first month of campaigns done-for-you — start with finished ads",
+      "Full Brand Book PDF for your business",
+      "White-label + resell rights — sell it to your own clients",
+      "1:1 onboarding call + step-by-step video playbook",
+      "🎁 Bonus: “First 3 Clients” playbook + proven ad swipe file",
+      "🎁 Bonus: 90 days priority support",
     ],
     ctaLabel: "Own it for $1,000",
     ctaLink: WHOP_LINKS.ownSystem,
-    badge: "Best value",
+    badge: "Own the machine",
     featured: true,
+    guarantee: "7-day guarantee: your studio live + first campaign produced within 7 days — or we keep working free until it is.",
   },
 ];
 
@@ -172,6 +177,12 @@ export function Pricing({
                 ))}
               </div>
 
+              {t.guarantee && (
+                <div style={{ display: "flex", gap: 9, alignItems: "flex-start", fontSize: 12.5, lineHeight: 1.45, fontWeight: 600, padding: "11px 13px", borderRadius: 11, marginBottom: 18, background: featured ? "rgba(255,255,255,.12)" : `${accent}1e`, color: featured ? "#fff" : "#3B362E" }}>
+                  <span style={{ flexShrink: 0 }}>🛡️</span><span>{t.guarantee}</span>
+                </div>
+              )}
+
               <a
                 href={t.ctaLink || "#"}
                 target="_blank"
@@ -201,7 +212,7 @@ export function Pricing({
 
       {/* anchor: monthly → own it */}
       <div style={{ textAlign: "center", maxWidth: 620, margin: "22px auto 0", fontSize: 13.5, color: "#6B6456", lineHeight: 1.55 }}>
-        Start on <strong style={{ color: ink }}>$29/mo</strong> and scale up anytime. About <strong style={{ color: ink }}>10 months on Power = the price of owning it</strong> — so heavy users may as well own the system outright: your own keys, unlimited generations at the lowest cost, no monthly fee.
+        An agency charges <strong style={{ color: ink }}>$2,000–$5,000 every month, forever.</strong> Owning your studio is <strong style={{ color: ink }}>$1,000 once</strong> — you keep the machine that makes the ads, run unlimited campaigns on your own keys, and can even resell it to your own clients. Start on $29/mo to try it; own it the moment you&apos;re serious.
         <div style={{ marginTop: 8 }}>
           Every plan schedules straight to your channels with{" "}
           <a href={POSTLY_LINK} target="_blank" rel="noopener noreferrer sponsored" style={{ color: primary, fontWeight: 700, textDecoration: "none" }}>Postly</a>.
