@@ -1766,6 +1766,30 @@ export default function JdesignsStudioPage() {
         </div>
       )}
 
+      {/* WHY IT'S DIFFERENT — the wedge, stated plainly */}
+      <section style={{ maxWidth: 1080, margin: "0 auto", padding: "24px 20px 8px" }}>
+        <div style={{ textAlign: "center", maxWidth: 720, margin: "0 auto 28px" }}>
+          <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: ".18em", color: primary, textTransform: "uppercase", marginBottom: 10 }}>Why it&apos;s different</div>
+          <h2 style={{ fontFamily: "'Newsreader',Georgia,serif", fontSize: 32, fontWeight: 800, lineHeight: 1.12, color: ink }}>Every other AI tool ignores the one thing that matters: your brand.</h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 18 }}>
+          {[
+            ["🎯", "Not templates — your real brand", "It scans your site and pulls your actual logo, colours, fonts and voice. The ads look like you — not a stock template with your name slapped on."],
+            ["📅", "Full campaigns, not one-off images", "Three campaign concepts, each built into a finished post series — a whole month of content, not a single graphic you still have to figure out."],
+            ["🚀", `Finished & scheduled, not "here's a draft"`, "Real logo placed, editable text, HD-to-4K downloads, and one-click scheduling to every platform. It's done — not homework."],
+          ].map(([e, t, d]) => (
+            <div key={t} style={{ background: "#fff", border: "1px solid #ECE7DC", borderRadius: 16, padding: "22px 22px" }}>
+              <div style={{ fontSize: 26, marginBottom: 10 }}>{e}</div>
+              <div style={{ fontSize: 17, fontWeight: 800, fontFamily: "'Newsreader',Georgia,serif", marginBottom: 7, color: ink }}>{t}</div>
+              <div style={{ fontSize: 14, lineHeight: 1.5, color: "#5C554A" }}>{d}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{ textAlign: "center", marginTop: 22, fontSize: 13.5, fontWeight: 600, color: "#6B6456" }}>
+          No card to start · 5 free ads · works for any website · your images stay private on your device
+        </div>
+      </section>
+
       {/* PRICING — adopts the scanned brand's colours in-session */}
       <Pricing primary={primary} ink={ink} accent={accent} />
 
