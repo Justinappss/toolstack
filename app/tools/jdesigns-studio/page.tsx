@@ -1038,6 +1038,15 @@ export default function JdesignsStudioPage() {
             </div>
           )}
 
+          {/* ownership angle — the real differentiator, planted in the hero */}
+          {!themed && (
+            <div style={{ marginTop: 14, marginBottom: 4, display: "flex", justifyContent: "center" }}>
+              <a href="#ds-pricing" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "10px 20px", borderRadius: 999, background: `${ink}0f`, border: `1px solid ${ink}26`, color: ink, fontSize: 14, fontWeight: 700, textDecoration: "none" }}>
+                💎 Or own the whole studio outright — your own AI ad agency, yours to resell <ArrowRight size={15} strokeWidth={2.6} />
+              </a>
+            </div>
+          )}
+
           {/* feature tiles */}
           <div
             style={{
@@ -1791,7 +1800,9 @@ export default function JdesignsStudioPage() {
       </section>
 
       {/* PRICING — adopts the scanned brand's colours in-session */}
-      <Pricing primary={primary} ink={ink} accent={accent} />
+      <div id="ds-pricing" style={{ scrollMarginTop: 20 }}>
+        <Pricing primary={primary} ink={ink} accent={accent} />
+      </div>
 
       {/* AFFILIATE — recruit affiliates via Whop (own storefront enrol link) */}
       <section style={{ maxWidth: 880, margin: "0 auto", padding: "8px 20px 36px" }}>
