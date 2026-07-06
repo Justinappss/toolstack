@@ -996,17 +996,39 @@ export default function JdesignsStudioPage() {
             )}
           </div>
 
-          {/* ─── Whop login + remaining trials ─── */}
+          {/* ─── HERO hook (cold visitors only) ─── */}
+          {!themed && (
+            <h1 style={{ maxWidth: 820, margin: "10px auto 16px", fontFamily: dispFont, fontWeight: 800, fontSize: "clamp(33px,5.3vw,58px)", lineHeight: 1.03, letterSpacing: "-.02em", color: ink }}>
+              Paste your website.<br />Get a month of on-brand ads.
+            </h1>
+          )}
+
+          <p
+            style={{
+              maxWidth: 650,
+              margin: "0 auto 26px",
+              fontSize: 18.5,
+              lineHeight: 1.5,
+              color: "#4B4760",
+              fontWeight: 500,
+            }}
+          >
+            {themed
+              ? `${brand.name}'s own design studio — campaigns, finished ads and a brand book, all rendered in your colours, fonts and voice.`
+              : "Design Studio reads your real brand — logo, colours, fonts, voice — then builds full campaigns of finished, ready-to-post ads. No designer. No agency. No blank canvas. Schedule the whole month everywhere in one click."}
+          </p>
+
+          {/* primary CTA → the free trial lives in the builder below; login is secondary */}
           {!loggedIn && (
-            <div style={{ textAlign: "center", marginBottom: 12 }}>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 11, marginBottom: 8 }}>
               <a
-                href={WHOP_AUTH_URL}
-                style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "8px 20px", borderRadius: 10, border: "1.5px solid #6c5ce7", background: "#6c5ce710", color: "#6c5ce7", fontWeight: 700, fontSize: 13.5, textDecoration: "none", transition: "background .15s" }}
-                onMouseOver={(e) => (e.currentTarget.style.background = "#6c5ce720")}
-                onMouseOut={(e) => (e.currentTarget.style.background = "#6c5ce710")}
+                href="#ds-builder"
+                style={{ display: "inline-flex", alignItems: "center", gap: 9, padding: "15px 32px", borderRadius: 13, background: primary, color: "#fff", fontWeight: 800, fontSize: 17, textDecoration: "none", boxShadow: `0 16px 34px -12px ${primary}` }}
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#6c5ce7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                Log in with Whop
+                Try it free — 5 ads, no card <ArrowRight size={19} strokeWidth={2.6} />
+              </a>
+              <a href={WHOP_AUTH_URL} style={{ fontSize: 13, fontWeight: 600, color: primary, textDecoration: "none", opacity: 0.85 }}>
+                Already own it? Log in with Whop →
               </a>
             </div>
           )}
@@ -1015,21 +1037,6 @@ export default function JdesignsStudioPage() {
               ✅ Connected to Whop — unlimited generations
             </div>
           )}
-
-          <p
-            style={{
-              maxWidth: 620,
-              margin: "0 auto 30px",
-              fontSize: 18,
-              lineHeight: 1.5,
-              color: "#4B4760",
-              fontWeight: 500,
-            }}
-          >
-            {themed
-              ? `${brand.name}'s own design studio — campaigns, finished ads and a brand book, all rendered in your colours, fonts and voice.`
-              : "Paste your website and get a month of on-brand social ads — full campaigns, finished designed posts with your real logo, and a brand book. No designer required."}
-          </p>
 
           {/* feature tiles */}
           <div
@@ -1085,7 +1092,7 @@ export default function JdesignsStudioPage() {
       </nav>
 
       {/* ===================== BUILDER ===================== */}
-      <div className="jd-cols" style={{ maxWidth: 1240, margin: "0 auto", padding: "26px 20px 80px" }}>
+      <div id="ds-builder" className="jd-cols" style={{ maxWidth: 1240, margin: "0 auto", padding: "26px 20px 80px", scrollMarginTop: 20 }}>
         {/* LEFT: brand source */}
         <aside
           className="jd-aside"
