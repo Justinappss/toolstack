@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+    robots: { index: false, follow: false },
     title: "CodeBeautify Alternative — 65+ Free Dev & AI Tools, No Ads | ToolStack",
     description: "Looking for a CodeBeautify alternative? ToolStack has JSON formatter with tree view, SQL formatter with 4 dialects, Base64, Regex tester, and 60+ more free tools. No ads, no login.",
     alternates: { canonical: "https://toolstack.tech/codebeautify-alternative" },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+    robots: { index: false, follow: false },
     title: "FreeFormatter Alternative — 65+ Free Tools, No Ads, AI-Powered | ToolStack",
     description: "Looking for a FreeFormatter alternative? ToolStack has JSON formatter, SQL formatter (4 dialects), Base64, Regex tester, and 60+ more free tools. No ads, no login, browser-based.",
     alternates: { canonical: "https://toolstack.tech/freeformatter-alternative" },

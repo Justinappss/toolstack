@@ -1,6 +1,47 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ArticleSchema } from "@/components/ui/ArticleSchema";
 import { AdBlock } from "@/components/AdBlock";
+
+export const metadata: Metadata = {
+  title: "How Does a Compound Interest Calculator Work? (Plain English)",
+  description:
+    "Learn exactly how a compound interest calculator works — the formula, inputs, and step-by-step examples. Understand A = P(1+r/n)^(nt) in plain English with real numbers.",
+  openGraph: {
+    title: "How Does a Compound Interest Calculator Work? (Plain English)",
+    description:
+      "Learn exactly how a compound interest calculator works — the formula, inputs, and step-by-step examples. Understand A = P(1+r/n)^(nt) in plain English with real numbers.",
+    type: "article",
+    publishedTime: "2026-06-02",
+    url: "https://toolstack.tech/blog/how-a-compound-interest-calculator-works-plain-english",
+    images: [
+      {
+        url: "/blog/how-a-compound-interest-calculator-works-plain-english/hero-banner.png",
+        width: 1536,
+        height: 1024,
+        alt: "How a Compound Interest Calculator Works — ToolStack",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How Does a Compound Interest Calculator Work? (Plain English)",
+    description:
+      "Learn exactly how a compound interest calculator works — the formula, inputs, and step-by-step examples. Understand A = P(1+r/n)^(nt) in plain English.",
+    images: ["/blog/how-a-compound-interest-calculator-works-plain-english/hero-banner.png"],
+  },
+  keywords: [
+    "compound interest calculator",
+    "how does compound interest work",
+    "compound interest formula explained",
+    "A = P(1+r/n)^(nt)",
+    "investment calculator",
+  ],
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://toolstack.tech/blog/how-a-compound-interest-calculator-works-plain-english",
+  },
+};
 
 const FAQS = [
   {
@@ -202,7 +243,7 @@ export default function CompoundInterestCalculatorPage() {
         <div style={{ marginBottom: 32 }}>
           <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 8px" }}>🎙 Listen to this article</p>
           <audio controls style={{ width: "100%", borderRadius: 8, accentColor: accent }}>
-            <source src="/Users/justinpirrie/Documents/Obsidian Vault/Agentic OS/Notebooks/_assets/compound_interest_calculator/compound_interest_calculator-audio-fa11f592.m4a" type="audio/mp4" />
+            <source src="/blog/how-a-compound-interest-calculator-works-plain-english/audio.m4a" type="audio/mp4" />
           </audio>
         </div>
 
@@ -265,7 +306,7 @@ export default function CompoundInterestCalculatorPage() {
 
         {/* Infographic 1 */}
         <img
-          src="/Users/justinpirrie/Documents/Obsidian Vault/Agentic OS/Notebooks/_assets/compound_interest_calculator/compound_interest_calculator-infographic-1-cb81f25d.png"
+          src="/blog/how-a-compound-interest-calculator-works-plain-english/infographic-1.png"
           alt="compound interest calculator features overview"
           style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0" }}
         />
@@ -387,7 +428,7 @@ export default function CompoundInterestCalculatorPage() {
 
         {/* Infographic 2 */}
         <img
-          src="/Users/justinpirrie/Documents/Obsidian Vault/Agentic OS/Notebooks/_assets/compound_interest_calculator/compound_interest_calculator-infographic-2-86f5049e.png"
+          src="/blog/how-a-compound-interest-calculator-works-plain-english/infographic-2.png"
           alt="compound interest calculator how it works"
           style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0" }}
         />

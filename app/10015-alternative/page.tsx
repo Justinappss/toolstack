@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+    robots: { index: false, follow: false },
     title: "10015.io Alternative — 65+ Free Tools, No Login, No Ads | ToolStack",
     description: "Looking for a 10015.io alternative? ToolStack gives you 65+ free online tools with no login, no sign-up, and no paywalls. AI-powered tools included. Use any tool instantly.",
     alternates: { canonical: "https://toolstack.tech/10015-alternative" },

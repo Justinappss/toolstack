@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+    robots: { index: false, follow: false },
     title: "SmallSEOTools Alternative — 65+ Free Tools, No Ads, No Login | ToolStack",
     description: "Looking for a SmallSEOTools alternative? ToolStack gives you 65+ free online tools with no ads on tool pages, no login, and AI-powered tools included. Use any tool instantly.",
     alternates: { canonical: "https://toolstack.tech/smallseotools-alternative" },

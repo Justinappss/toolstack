@@ -100,6 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "uuid-generator",
       "online-stopwatch",
       "compound-interest-calculator",
+      "jdesigns-studio",
     ].map(slug => ({
       url: `${base}/tools/${slug}`,
       lastModified: DATES.new_tools,
@@ -332,6 +333,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${base}/blog/how-a-compound-interest-calculator-works-plain-english`,
+      lastModified: "2026-06-02",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/blog/website-down-checker`,
       lastModified: "2026-05-22",
       changeFrequency: "monthly",
@@ -356,30 +363,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     // === Alternative / comparison pages ===
-    {
-      url: `${base}/10015-alternative`,
-      lastModified: "2026-05-25",
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/smallseotools-alternative`,
-      lastModified: "2026-05-25",
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/codebeautify-alternative`,
-      lastModified: "2026-05-25",
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${base}/freeformatter-alternative`,
-      lastModified: "2026-05-25",
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
     // === Static pages ===
     {
       url: `${base}/about`,
@@ -389,6 +372,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${base}/privacy`,
+      lastModified: DATES.static,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${base}/disclaimer`,
       lastModified: DATES.static,
       changeFrequency: "yearly",
       priority: 0.3,
