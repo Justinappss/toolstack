@@ -18,6 +18,20 @@ export const metadata: Metadata = {
     description: "Start free, use it monthly, or own the whole system. On-brand ads, no designer required.",
     url: "https://toolstack.tech/tools/jdesigns-studio/pricing",
     siteName: "ToolStack",
+    images: [
+      {
+        url: "https://toolstack.tech/jdesigns-studio-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ToolStack Design Studio — paste a URL, get 3 campaigns of finished on-brand ads",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ToolStack Design Studio — Pricing",
+    description: "Start free, use it monthly, or own the whole system.",
+    images: ["https://toolstack.tech/jdesigns-studio-og.jpg"],
   },
 };
 

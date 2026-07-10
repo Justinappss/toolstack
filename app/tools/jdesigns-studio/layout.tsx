@@ -21,11 +21,20 @@ export const metadata: Metadata = {
       "Scan a brand, generate on-brand campaigns and finished ads with GPT-4o, and render branded visuals with AI.",
     url: "https://toolstack.tech/tools/jdesigns-studio",
     siteName: "ToolStack",
+    images: [
+      {
+        url: "https://toolstack.tech/jdesigns-studio-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ToolStack Design Studio — paste a URL, get 3 campaigns of finished on-brand ads",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ToolStack Design Studio — AI Ad & Campaign Studio",
     description: "Scan a brand → on-brand campaigns → finished ads → AI visuals.",
+    images: ["https://toolstack.tech/jdesigns-studio-og.jpg"],
   },
 };
 
