@@ -50,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="fo-verify" content="495a7eb7-eb12-4f76-b34f-83f0579e9492" />
         <meta name="impact-site-verification" {...({ value: "2d586c3c-7af3-44d6-b4ac-a2b803df18fe" } as any)} />
+        <meta name="google-adsense-account" content="ca-pub-9041474852138049" />
         {/* Preconnect to third-party origins for faster resource loading */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -59,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col antialiased">
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-MNRHVXL2X9" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MNRHVXL2X9');`}</Script>
-        <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2395093382559560" strategy="lazyOnload" crossOrigin="anonymous" />
+        <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041474852138049" strategy="lazyOnload" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
