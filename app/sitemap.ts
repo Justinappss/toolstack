@@ -26,6 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${base}/about/justin`,
+      lastModified: new Date("2026-07-11"),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: `${base}/tools`,
       lastModified: DATES.tools_index,
       changeFrequency: "weekly",
