@@ -246,7 +246,7 @@ async function api<T>(path: string, body: unknown): Promise<T & { _paywall?: { c
 }
 
 export default function JdesignsStudioPage() {
-  const [brandUrl, setBrandUrl] = useState("coca-cola.com");
+  const [brandUrl, setBrandUrl] = useState("");
   const [scanning, setScanning] = useState(false);
   const [brand, setBrand] = useState<Brand>(DEFAULT_BRAND);
   const [direction, setDirection] = useState("");
@@ -1368,7 +1368,8 @@ export default function JdesignsStudioPage() {
               </div>
               <button
                 onClick={onGenerateConcepts}
-                disabled={loadingConcepts || generating}
+                disabled={loadingConcepts || generating || !themed}
+                title={!themed ? "Scan your brand first" : undefined}
                 style={{
                   height: 46,
                   padding: "0 22px",
@@ -1378,7 +1379,8 @@ export default function JdesignsStudioPage() {
                   color: "#fff",
                   fontSize: 15,
                   fontWeight: 700,
-                  cursor: loadingConcepts || generating ? "default" : "pointer",
+                  cursor: loadingConcepts || generating || !themed ? "default" : "pointer",
+                  opacity: !themed ? 0.55 : 1,
                   display: "flex",
                   alignItems: "center",
                   gap: 9,
@@ -1399,9 +1401,23 @@ export default function JdesignsStudioPage() {
 
           {/* empty state */}
           {concepts.length === 0 && !loadingConcepts && !campaign && (
-            <div style={{ textAlign: "center", color: "#A79E8A", padding: "60px 20px", border: "1.5px dashed #E2DBCB", borderRadius: 18, background: "#fff" }}>
+            <div style={{ textAlign: "center", color: "#A79E8A", padding: "56px 20px", border: "1.5px dashed #E2DBCB", borderRadius: 18, background: "#fff" }}>
               <LayoutGrid size={34} style={{ opacity: 0.5 }} />
-              <div style={{ marginTop: 12, fontSize: 15, fontWeight: 600 }}>Scan a brand, set a direction, and pitch 3 campaign concepts — then pick one to build out.</div>
+              {!themed ? (
+                <>
+                  <div style={{ marginTop: 14, fontSize: 18, fontWeight: 800, color: "#3A342A" }}>👈 Start here</div>
+                  <div style={{ marginTop: 6, fontSize: 15, fontWeight: 600, maxWidth: 460, margin: "6px auto 0" }}>
+                    Paste your website on the left and hit <b style={{ color: primary }}>Scan</b>. We&rsquo;ll pull your real brand — logo, colours, fonts, voice — then you pitch campaigns.
+                  </div>
+                  <div style={{ marginTop: 18, fontSize: 13, fontWeight: 700, color: "#8A8275", letterSpacing: ".01em" }}>
+                    1. Scan your site&nbsp;&nbsp;→&nbsp;&nbsp;2. Pick a direction&nbsp;&nbsp;→&nbsp;&nbsp;3. Pitch campaigns
+                  </div>
+                </>
+              ) : (
+                <div style={{ marginTop: 12, fontSize: 15, fontWeight: 600, maxWidth: 440, margin: "12px auto 0" }}>
+                  Brand loaded <b style={{ color: primary }}>✓</b> — set a direction above (or leave it on auto), then hit <b>Pitch 3 campaigns</b>.
+                </div>
+              )}
             </div>
           )}
 
