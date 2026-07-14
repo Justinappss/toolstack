@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CommandPalette } from "@/components/CommandPalette";
 import { SmartPasteListener } from "@/components/SmartPasteListener";
+import { ChromeGate } from "@/components/ChromeGate";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -97,11 +98,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-        <Navbar />
-        <CommandPalette />
+        <ChromeGate><Navbar /></ChromeGate>
+        <ChromeGate><CommandPalette /></ChromeGate>
         <SmartPasteListener />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <ChromeGate><Footer /></ChromeGate>
         <Analytics />
         <SpeedInsights />
       </body>
