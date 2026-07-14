@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { VIDEOS as MINDWIRE_VIDEOS } from "./mindwire/videos";
 
 // Real last-modified dates per content group.
 // Update these when you actually modify the pages.
@@ -31,6 +32,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
     },
+    {
+      url: `${base}/mindwire`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    ...MINDWIRE_VIDEOS.map((v) => ({
+      url: `${base}/mindwire/${v.slug}`,
+      lastModified: new Date(v.published),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     {
       url: `${base}/tools`,
       lastModified: DATES.tools_index,

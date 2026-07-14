@@ -1,13 +1,13 @@
-// Mindwire video catalog. Add a new entry here and its page + hub card appear automatically.
+// Mindwire video catalog. Add a new entry (newest first) and its page + hub card appear automatically.
 export type MindwireVideo = {
   slug: string;
   youtubeId: string;
   title: string;
-  kicker: string;      // short category label
-  hook: string;        // 1–2 sentence teaser (cards + meta description)
-  published: string;   // ISO date
-  read: string;        // "3 min read"
-  article: string[];   // the explainer, paragraph by paragraph (SEO + depth)
+  kicker: string;
+  hook: string;
+  published: string;
+  read: string;
+  article: string[];
 };
 
 export const VIDEOS: MindwireVideo[] = [
@@ -20,12 +20,10 @@ export const VIDEOS: MindwireVideo[] = [
     published: "2026-07-14",
     read: "4 min read",
     article: [
-      "You're mid-sentence, everyone's looking at you, and the end of your own thought just vanishes into thin air. It's one of the most universal — and most quietly unsettling — glitches your brain pulls on you. And it's not a sign you're losing it. It's a sign of exactly how your mind is built.",
-      "To say even one sentence, your brain is juggling an absurd amount at once: the idea you're chasing, the shape of the sentence, the next word, the last word, and a little voice checking it all sounds right. All of that lives in one tiny space called working memory — and working memory is brutally small. It holds only a handful of things, for only a few seconds.",
-      "So it doesn't take much to knock it over. A phone buzzes. Someone raises an eyebrow. A better word muscles its way in. Any tiny interruption, and the thing you were holding — 'where was I going with this' — gets bumped out to make room. And once it's gone, there's nothing underneath to catch it. The words stop, because the plan they were running on just got wiped.",
-      "There's an even crueler version: the tip-of-the-tongue moment. The word is right there — you can feel its shape, maybe its first letter — you just can't grab it. That's a retrieval glitch: the meaning loaded fine, but the sound of the word didn't come with it. And the harder you reach, the worse it gets, because your brain keeps shoving the wrong, similar words in front of the real one.",
-      "The fix is almost funny, because it's the opposite of what you want to do. Don't chase it. Stop. Go quiet for a second, then go back to the start of the sentence — 'we were talking about…' — and the plan usually reloads on its own. Or just let it go completely, and it'll pop back thirty seconds later, uninvited, the moment you stop strangling it.",
-      "Which leaves one genuinely strange thought: the ideas you 'have' aren't sitting safely in your head. They're being held, for a few fragile seconds, in a space smaller than you'd ever believe — and your brain will drop them the instant something more urgent walks in. You're always one small interruption away from losing your own train of thought.",
+      "You're mid-sentence, everyone's looking at you, and the end of your own thought just vanishes into thin air. It's one of the most universal — and quietly unsettling — glitches your brain pulls on you. And it's not a sign you're losing it. It's a sign of exactly how your mind is built.",
+      "To say even one sentence, your brain is juggling an absurd amount at once: the idea, the shape of the sentence, the next word, the last word, and a voice checking it all sounds right. All of that lives in one tiny space called working memory — and working memory is brutally small. It holds only a handful of things, for only a few seconds.",
+      "So it doesn't take much to knock it over. A phone buzzes, someone raises an eyebrow, a better word muscles in — and the thing you were holding gets bumped out to make room. Once it's gone, there's nothing underneath to catch it. The words stop, because the plan they were running on just got wiped.",
+      "The fix is almost funny: don't chase it. Stop, go quiet, and go back to the start of the sentence — the plan usually reloads on its own. The harder you grab for a lost word, the more stress floods that tiny space and the faster it disappears.",
     ],
   },
   {
@@ -38,25 +36,204 @@ export const VIDEOS: MindwireVideo[] = [
     read: "3 min read",
     article: [
       "You've done it — torn the house apart hunting for your phone while it's in your hand. Or the cursed version: using your phone's flashlight to look for your phone. You're not going crazy. You've hit one of the strangest glitches in human attention: inattentional blindness.",
-      "Here's the truth your brain doesn't advertise: it doesn't show you reality. It shows you what it's looking for. Every second, your senses fire millions of signals at it, and it can't possibly use them all — so it builds a shortcut. A 'search image' of what you want, and it quietly filters everything else out.",
-      "In the most famous version of this experiment, people counted basketball passes in a video and half of them never noticed a person in a gorilla suit stroll right through the middle. Your phone is that gorilla. The second you decide it's lost, your search image says 'out there, somewhere' — so the phone in your hand doesn't match, and your brain leaves it off the screen.",
-      "The fix is almost funny: stop, freeze, and look away for three seconds. That breaks the search image. Your brain drops the old template and re-scans the room from scratch — and the phone reappears, exactly where it always was.",
-      "Which leaves a genuinely unsettling question: if your brain can hide a phone in your own hand, what else is it filtering out right now?",
+      "Your brain doesn't show you reality. It shows you what it's looking for. Every second, your senses fire millions of signals at it, and it can't use them all — so it builds a 'search image' of what you want and quietly filters everything else out.",
+      "In the most famous version, people counting basketball passes in a video failed to notice a person in a gorilla suit walk right through the middle. Your phone is that gorilla: the second you decide it's lost, your search image says 'out there' — so the phone in your hand doesn't match, and your brain leaves it off the screen.",
+      "The fix: stop, freeze, and look away for three seconds. That breaks the search image, your brain re-scans from scratch, and the phone reappears exactly where it always was.",
+    ],
+  },
+  {
+    slug: "why-you-cant-tickle-yourself",
+    youtubeId: "ZmBCiFSrKGE",
+    title: "The Secret Reason You Can't Tickle Yourself",
+    kicker: "Sensory glitch",
+    hook: "Try it — you can't do it. Your brain cancels the sensation before it even arrives, because it already knows exactly what you're about to do.",
+    published: "2026-06-30",
+    read: "3 min read",
+    article: [
+      "Go on, try to tickle yourself. Nothing. You can be as unpredictable as you like and your brain just shrugs. But let someone else do the exact same thing and you're helpless. Why?",
+      "The answer is prediction. Every time you move, a part of your brain called the cerebellum quietly predicts the sensation that move will cause — and then subtracts it. It's how you can walk without feeling like the ground is attacking your feet, and how you don't flinch at your own voice. Self-generated touch gets cancelled before it reaches your awareness.",
+      "Someone else's fingers, though, are unpredictable. Your brain can't forecast them, so it can't cancel them — and the full, unfiltered signal lands. That mismatch between expected and actual is exactly what tickling is.",
+      "It's the same system that lets you tell 'me' from 'not me' a thousand times a second. Tickling is just the funny edge case where you get to feel it working.",
+    ],
+  },
+  {
+    slug: "why-your-brain-deletes-your-dreams",
+    youtubeId: "78cam5i929M",
+    title: "The Real Reason Your Brain Deletes Your Dreams Every Morning",
+    kicker: "Memory glitch",
+    hook: "You just lived an entire dream — and 90 seconds after waking it's gone. Your brain isn't failing to save it. It's actively choosing not to.",
+    published: "2026-06-23",
+    read: "3 min read",
+    article: [
+      "You wake up mid-dream, absolutely certain you'll remember it. You reach for your phone, and by the time you unlock it the whole thing has evaporated. It feels like a memory failure. It's closer to a memory policy.",
+      "During the dreaming stage of sleep, the brain chemical that acts like a 'save' button for memories — norepinephrine — is switched almost completely off. So the vivid movie you're watching is playing on a system with recording disabled. The dream is real; the saving isn't happening.",
+      "On top of that, dreams don't get the usual rehearsal that turns a short-term memory into a lasting one. Waking life gets replayed and consolidated; dreams mostly don't. So they sit in the most fragile kind of memory there is — and the smallest interruption wipes them.",
+      "That's why the trick that works is doing nothing: stay still, eyes closed, and mentally hold the dream for a moment before you move. Grab it before the world overwrites it, and it survives.",
+    ],
+  },
+  {
+    slug: "why-you-hate-your-own-voice",
+    youtubeId: "7D9yJYGrzBo",
+    title: "Why You Hate the Sound of Your Own Voice",
+    kicker: "Self glitch",
+    hook: "That recording doesn't sound like you — and you hate it. But everyone else has been hearing that voice your whole life. Here's the twist.",
+    published: "2026-06-16",
+    read: "3 min read",
+    article: [
+      "You hear yourself on a recording and instantly cringe. 'That's not my voice.' But it is — it's exactly what everyone else hears. The version you're used to is the fake one.",
+      "When you speak, sound reaches your ears two ways: through the air, like normal, and through the bones of your skull. Bone conduction adds richness and drops the pitch, so the voice in your head sounds deeper and warmer than reality. Strip that away on a recording and you get the thinner, higher voice the world actually hears — and it feels wrong.",
+      "There's a second sting: it's the self-confrontation effect. Suddenly hearing an unfiltered version of yourself, one you can't control, is uncomfortable in the same way seeing an unflattering photo is. Your brain built an idealised self-image, and the recording doesn't match it.",
+      "The reassuring part: everyone you know already likes (or at least is completely used to) the 'real' version. You're the only one who ever thought it sounded off.",
+    ],
+  },
+  {
+    slug: "why-your-first-memory-is-fake",
+    youtubeId: "jo-y7ZWsc6Q",
+    title: "Why Your First Memory Is Probably Fake",
+    kicker: "Memory glitch",
+    hook: "That vivid early memory you're so sure of? There's a good chance your brain quietly invented it — and you'd never be able to tell.",
+    published: "2026-06-09",
+    read: "4 min read",
+    article: [
+      "Picture your earliest memory. Now sit with an uncomfortable fact: a large share of people's 'first memories' are things that never actually happened. Your brain built them — from photos, family stories, and imagination — and filed them as real.",
+      "It's called confabulation, and it isn't lying. Memory isn't a recording you play back; it's a story your brain rebuilds from fragments every time you recall it. When there's a gap, it fills it in with something plausible, and it doesn't tag the difference. The invented detail feels exactly as real as the true one.",
+      "That's why so many first memories are suspiciously cinematic — you can see yourself in the scene, from the outside. But you were behind your own eyes at the time. A memory shot from a camera angle you never had is a memory your brain reconstructed, not recorded.",
+      "The unsettling takeaway isn't that some memories are fake. It's that you can't feel the difference — which means confidence in a memory tells you almost nothing about whether it's true.",
+    ],
+  },
+  {
+    slug: "why-life-feels-faster-every-year",
+    youtubeId: "1OTj_UrepOY",
+    title: "Why Life Feels Faster Every Year",
+    kicker: "Time glitch",
+    hook: "Summers used to last forever. Now a whole year vanishes. Time isn't speeding up — your brain is measuring it in a way that guarantees this feeling.",
+    published: "2026-06-02",
+    read: "3 min read",
+    article: [
+      "As a kid, a single summer felt endless. As an adult, entire years slip past before you've noticed. Nothing about time has changed. The way your brain measures it has.",
+      "One big reason is proportion. When you're five, one year is 20% of your entire life — enormous. When you're fifty, that same year is 2%. Each new year is a smaller and smaller slice of everything you've lived, so it feels shorter by comparison. This is the proportional theory of time.",
+      "The other reason is novelty. Your brain measures time by how many new memories it lays down. Childhood is wall-to-wall firsts, so it records densely and stretches long in hindsight. Adult life runs on routine — same commute, same rooms — and routine barely gets recorded, so whole stretches compress into nothing.",
+      "Which points to the only real fix: to slow time down, feed your brain new things. Novel places, skills, and routines lay down fresh memories — and a rich month in hindsight always feels longer than an empty year.",
     ],
   },
   {
     slug: "why-a-doorway-makes-you-forget",
     youtubeId: "GX_P3uKEdBc",
-    title: "Why a Doorway Makes You Forget",
+    title: "Why You Forget Why You Walked Into a Room",
     kicker: "Memory glitch",
-    hook: "You walk into a room and… why did you come in here? It's not old age. Doorways literally trigger your brain to wipe the slate. It's called the Doorway Effect.",
-    published: "2026-06-19",
+    hook: "You get up with a clear mission, walk into the room, and… why did you come in here? It's not old age. Doorways literally wipe the slate.",
+    published: "2026-05-26",
     read: "3 min read",
     article: [
-      "You get up with a clear mission, walk into the kitchen, and — nothing. Why did you come in here? It happens to everyone, at every age, and it has a name: the Doorway Effect. And it's not a memory failure. It's your brain doing exactly what it's designed to do.",
-      "Your mind doesn't record your day as one continuous stream. It slices it into 'events.' And every time something shifts — you change task, you finish a thought, or you walk through a doorway — your brain treats that as a boundary and clears the desk for whatever comes next. The doorway is a full-stop your brain reads as 'new scene, new priorities.'",
-      "That's why the memory of your mission — which was being held loosely in working memory, not filed away for keeps — gets flushed at the threshold. Cross back through the doorway, or return to where the thought started, and the old context reloads. Suddenly you remember exactly what you came for.",
-      "It's a feature, not a bug. Those event boundaries are how you keep separate moments from blurring into one long, unusable mush. The same mechanism that loses your kitchen mission is the reason you can tell yesterday apart from today.",
+      "You get up with a clear mission, walk into the kitchen, and — nothing. Why did you come in here? It happens to everyone, at every age, and it has a name: the Doorway Effect. It's not a memory failure; it's your brain doing exactly what it's designed to do.",
+      "Your mind doesn't record your day as one continuous stream. It slices it into 'events.' Every time something shifts — you change task, finish a thought, or walk through a doorway — your brain treats that as a boundary and clears the desk for whatever's next.",
+      "So the memory of your mission, which was being held loosely in working memory rather than filed away, gets flushed at the threshold. Walk back through the doorway, or return to where the thought started, and the old context reloads — and you remember instantly.",
+      "It's a feature, not a bug. Those event boundaries are how you keep separate moments from blurring into one long, unusable mush. The same mechanism that loses your kitchen mission is why you can tell yesterday apart from today.",
+    ],
+  },
+  {
+    slug: "why-you-cant-remember-being-a-baby",
+    youtubeId: "kRpTWjWG4SE",
+    title: "Why You Can't Remember Being a Baby",
+    kicker: "Memory glitch",
+    hook: "You spent years learning to walk, talk and love — and remember none of it. Those years weren't lost. They were built over.",
+    published: "2026-05-19",
+    read: "4 min read",
+    article: [
+      "The first few years of your life were the most important you'll ever live — learning to walk, talk, and recognise the people who love you. And you remember essentially none of it. It's called infantile amnesia, and it's one of the strangest blanks in the human mind.",
+      "Part of the reason is hardware. The hippocampus, the part of the brain that files experiences into long-term memories, is still under heavy construction in your first years. It's so busy generating new neurons that it can't reliably store lasting memories yet — the recording studio isn't finished.",
+      "Part of it is language. Much of adult memory is scaffolded on words and narrative. Before you had language to hang experiences on, there were few hooks to store or retrieve them by. The events happened; the filing system to keep them didn't exist yet.",
+      "So those years weren't wasted — they shaped you completely, from your attachment style to your first words. They were just built over, like foundations you can't see but are standing on right now.",
+    ],
+  },
+  {
+    slug: "the-mandela-effect",
+    youtubeId: "UgvJWdFe3ic",
+    title: "Why You Remember Things That Never Happened",
+    kicker: "Memory glitch",
+    hook: "Thousands of people share the exact same memory of something that never existed. It's not parallel universes — it's how memory actually works.",
+    published: "2026-05-12",
+    read: "4 min read",
+    article: [
+      "Huge groups of people vividly remember the same things that never happened — a famous line that was never said, a logo spelled a way it never was, an event that didn't occur. It's spooky enough that people reach for parallel universes. The real explanation is stranger, because it's about you.",
+      "Memory isn't storage; it's reconstruction. Each time you recall something, your brain rebuilds it from fragments and patches the gaps with what's most plausible. Do that with a detail everyone's brain 'corrects' the same way — because it fits a pattern or expectation — and thousands of people land on the identical false memory.",
+      "Suggestion pours fuel on it. Hear other people describe the 'wrong' version confidently, and your brain quietly overwrites its own copy to match. Memories are editable every time you touch them, and social confidence is a powerful editor.",
+      "So the Mandela Effect isn't evidence of another timeline. It's a mass demonstration that your memory is a shared, editable story — and that a whole crowd can be certain, and wrong, together.",
+    ],
+  },
+  {
+    slug: "the-barnum-effect",
+    youtubeId: "53gePoCwEK8",
+    title: "Why You Think Horoscopes Are About You",
+    kicker: "Cognitive bias",
+    hook: "\"You have a great need for others to like you, yet you're critical of yourself.\" Feels personal? It was written to fit everyone. That's the Barnum Effect.",
+    published: "2026-05-05",
+    read: "3 min read",
+    article: [
+      "Read your horoscope and it feels eerily accurate. So does a personality quiz result, a psychic reading, a tarot card. The trick isn't that they know you — it's that the description was engineered to fit almost anyone. It's called the Barnum Effect.",
+      "Statements like 'you have a lot of unused potential' or 'sometimes you're outgoing, sometimes reserved' are vague enough to apply to virtually every human, but phrased to feel specific. Your brain does the rest, reaching into your life for the one example that matches and ignoring everything that doesn't.",
+      "It's turbocharged by wanting it to be true. When a description is flattering, or when you've paid for it, or when it comes from an 'expert', you lower your guard and hunt for hits instead of misses. Confirmation does the heavy lifting.",
+      "None of this makes you gullible — it makes you human. Knowing the effect is the defence: next time something feels personally accurate, ask whether it would also feel accurate to the person sitting next to you.",
+    ],
+  },
+  {
+    slug: "the-spotlight-effect",
+    youtubeId: "QqaCljS3YTc",
+    title: "Why You Think Everyone's Watching You",
+    kicker: "Self glitch",
+    hook: "That stain, that stumble, that thing you said — you're convinced everyone noticed. They didn't. They were too busy worrying about their own.",
+    published: "2026-04-28",
+    read: "3 min read",
+    article: [
+      "You spill something on your shirt, trip on a step, or say something slightly wrong, and it feels like a spotlight has swung onto you — everyone saw, everyone's judging. Almost nobody did. It's called the Spotlight Effect.",
+      "You experience your own life from the centre of it, in high definition, so your blunders feel enormous to you. But everyone else is the star of their own show, running the same self-focused spotlight, worrying about their own shirt and their own stumble. Nobody has spare attention to spend on yours.",
+      "Studies show it plainly: people wildly overestimate how many others noticed something embarrassing about them. The gap between 'everyone saw' and 'almost nobody did' is huge — and it's the source of a surprising amount of social anxiety.",
+      "The freeing takeaway: you can relax, because you were never actually on stage. The audience you're afraid of is busy being afraid of their own.",
+    ],
+  },
+  {
+    slug: "the-baader-meinhof-phenomenon",
+    youtubeId: "MvX7uyD3DsQ",
+    title: "Why You Suddenly See It EVERYWHERE",
+    kicker: "Perception glitch",
+    hook: "Learn a new word, and suddenly it's everywhere. Nothing changed in the world — your brain just flipped a filter you didn't know you had.",
+    published: "2026-04-21",
+    read: "3 min read",
+    article: [
+      "You learn a new word, notice a car model, hear a band's name — and suddenly it's everywhere, all week. It feels like the universe is conspiring. It's actually two quiet tricks your brain is playing, and it's called the Baader-Meinhof phenomenon, or frequency illusion.",
+      "First, selective attention. The thing was always around; you just filtered it out. The moment it becomes relevant, your brain flags it, and now it pops out of the background every time it appears. The world didn't get busier — your filter changed.",
+      "Second, confirmation bias. Each new sighting feels like proof of a spike, so you notice and remember the hits and completely ignore all the times it didn't appear. A handful of coincidences gets remembered as a pattern.",
+      "So the surge isn't out there — it's a change in what you're tuned to notice. Which is a small, useful reminder of how much of 'reality' is really just your attention deciding what's worth seeing.",
+    ],
+  },
+  {
+    slug: "the-zeigarnik-effect",
+    youtubeId: "UsHgidjL20k",
+    title: "The Zeigarnik Effect: Why Your Brain Haunts You at 2AM",
+    kicker: "Memory glitch",
+    hook: "Finished tasks vanish from your mind. Unfinished ones claw their way back at 2am. Your brain is built to hold the door open until you close it.",
+    published: "2026-04-14",
+    read: "3 min read",
+    article: [
+      "You forget completed tasks the second they're done — but the unfinished email, the unsaid thing, the half-started project claws its way back into your head, often at 2am. That's the Zeigarnik Effect: your brain holds onto unfinished business far more tightly than finished business.",
+      "An open task is a bit of tension your mind keeps active, like a browser tab it refuses to close. It nudges you, reminds you, resurfaces at the worst times — all to make sure the thing gets finished. The moment you complete it, the tension releases and the memory fades fast.",
+      "It's why you can lie in bed exhausted while your brain replays a loose end on a loop. The nagging isn't malfunction; it's the reminder system doing its job a little too well.",
+      "You can hack it. You don't always have to finish a task to quiet it — just make a concrete plan for it. Writing down exactly when and how you'll deal with it can trick the brain into treating it as 'handled', and the 2am loop finally stops.",
+    ],
+  },
+  {
+    slug: "the-dunning-kruger-effect",
+    youtubeId: "wPn64VOl1wg",
+    title: "Why Stupid People Think They're Geniuses",
+    kicker: "Cognitive bias",
+    hook: "The less someone knows, the more confident they often are — because the very skill you'd need to spot your own mistakes is the one you're missing.",
+    published: "2026-04-07",
+    read: "3 min read",
+    article: [
+      "The people who know the least are often the loudest and most certain, while genuine experts hesitate and hedge. It looks backwards. It's the Dunning-Kruger Effect, and it comes from a single, brutal catch.",
+      "The skills you need to be good at something are the exact same skills you need to realise you're bad at it. If you don't know the rules of grammar, you also can't see your grammar mistakes. Incompetence is invisible from the inside — so a little knowledge can feel like mastery.",
+      "The flip side hits experts. The more you learn, the more you discover how much you don't know, so your confidence drops even as your ability climbs. That's why real experts sound uncertain and beginners sound sure.",
+      "The humbling lesson: confidence is a terrible measure of competence — including your own. The healthiest move is to assume there's a level above you that you can't yet see, because from inside your own skull, you can't.",
     ],
   },
 ];
