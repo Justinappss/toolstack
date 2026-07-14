@@ -72,7 +72,11 @@ const MW_CSS = `
 .mw-wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
 
 /* hero */
-.mw-hero{max-width:1120px;margin:0 auto;padding:clamp(54px,9vw,104px) clamp(18px,5vw,40px) clamp(30px,5vw,54px);text-align:center}
+.mw-hero{position:relative;max-width:1120px;margin:0 auto;padding:clamp(54px,9vw,104px) clamp(18px,5vw,40px) clamp(30px,5vw,54px);text-align:center;overflow:visible}
+.mw-hero::before{content:"";position:absolute;top:clamp(-30px,-2vw,-10px);left:50%;transform:translateX(-50%);width:min(760px,92vw);aspect-ratio:1024/840;background:url(/mindwire/brain.png) center/contain no-repeat;mix-blend-mode:multiply;opacity:.17;z-index:0;pointer-events:none;animation:mw-float 9s ease-in-out infinite}
+.mw-hero>*{position:relative;z-index:1}
+@keyframes mw-float{0%,100%{transform:translateX(-50%) translateY(0) rotate(-.4deg)}50%{transform:translateX(-50%) translateY(-14px) rotate(.6deg)}}
+@media (prefers-reduced-motion:reduce){.mw-hero::before{animation:none}}
 .mw-eyebrow{font-size:13px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
 .mw-h1{font-family:"SF Pro Rounded",ui-rounded,system-ui;font-weight:850;font-size:clamp(40px,8vw,86px);line-height:.98;letter-spacing:-.02em;margin:.24em 0 0;text-wrap:balance}
 .mw-u{position:relative;white-space:nowrap}
