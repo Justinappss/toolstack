@@ -52,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="fo-verify" content="495a7eb7-eb12-4f76-b34f-83f0579e9492" />
         <meta name="impact-site-verification" {...({ value: "2d586c3c-7af3-44d6-b4ac-a2b803df18fe" } as any)} />
         <meta name="google-adsense-account" content="ca-pub-9041474852138049" />
+        <meta name="p:domain_verify" content="3b894a6baae10d4742060fa943be40e0" />
         {/* Preconnect to third-party origins for faster resource loading */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
