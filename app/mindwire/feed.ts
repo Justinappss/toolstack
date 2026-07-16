@@ -19,7 +19,12 @@ function decodeXml(s: string): string {
 
 export async function getFeedVideos(): Promise<FeedVideo[]> {
   try {
-    const res = await fetch(FEED_URL, { next: { revalidate: 21600 } }); // 6h
+    // Hard timeout so a slow/blocked feed can never hang the build or a request.
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 6000);
+    const res = await fetch(FEED_URL, { next: { revalidate: 21600 }, signal: ctrl.signal }).finally(() =>
+      clearTimeout(timer),
+    );
     if (!res.ok) return [];
     const xml = await res.text();
     const entries = xml.split("<entry>").slice(1);
