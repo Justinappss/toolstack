@@ -1,12 +1,18 @@
 import Link from "next/link";
-import { VIDEOS } from "./videos";
+import { getCatalog, type Card } from "./catalog";
+
+export const revalidate = 21600; // auto-refresh from YouTube every 6h
 
 const YT = "https://www.youtube.com/channel/UCzoCFvVEoffY6XAdo9fAUgg";
 const thumb = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+const watch = (id: string) => `https://www.youtube.com/watch?v=${id}`;
+const cardHref = (c: Card) => (c.hasPage ? `/mindwire/${c.slug}` : watch(c.youtubeId));
 
-export default function MindwireHub() {
-  const feat = VIDEOS[0];
-  const rest = VIDEOS.slice(1);
+export default async function MindwireHub() {
+  const cards = await getCatalog();
+  const feat = cards[0];
+  const rest = cards.slice(1);
+
   return (
     <>
       {/* Hero */}
@@ -24,44 +30,65 @@ export default function MindwireHub() {
       </section>
 
       {/* Featured */}
-      <section className="mw-sec">
-        <h2 className="mw-sec-h mw-disp"><span className="mw-spark">✦</span>Latest glitch</h2>
-        <p className="mw-sec-sub">The newest one your brain is pulling on you right now.</p>
-        <div className="mw-feat">
-          <Link href={`/mindwire/${feat.slug}`} className="mw-thumb" aria-label={feat.title}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={thumb(feat.youtubeId)} alt={feat.title} />
-            <span className="mw-play"><span /></span>
-          </Link>
-          <div>
-            <div className="mw-kick">{feat.kicker}</div>
-            <h3 className="mw-disp">{feat.title}</h3>
-            <p>{feat.hook}</p>
-            <Link href={`/mindwire/${feat.slug}`} className="mw-readmore">Watch &amp; read →</Link>
+      {feat && (
+        <section className="mw-sec">
+          <h2 className="mw-sec-h mw-disp"><span className="mw-spark">✦</span>Latest glitch</h2>
+          <p className="mw-sec-sub">The newest one your brain is pulling on you right now.</p>
+          <div className="mw-feat">
+            {feat.hasPage ? (
+              <Link href={cardHref(feat)} className="mw-thumb" aria-label={feat.title}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={thumb(feat.youtubeId)} alt={feat.title} />
+                <span className="mw-play"><span /></span>
+              </Link>
+            ) : (
+              <a href={cardHref(feat)} target="_blank" rel="noopener noreferrer" className="mw-thumb" aria-label={feat.title}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={thumb(feat.youtubeId)} alt={feat.title} />
+                <span className="mw-play"><span /></span>
+              </a>
+            )}
+            <div>
+              <div className="mw-kick">{feat.kicker}</div>
+              <h3 className="mw-disp">{feat.title}</h3>
+              <p>{feat.hook}</p>
+              {feat.hasPage ? (
+                <Link href={cardHref(feat)} className="mw-readmore">Watch &amp; read →</Link>
+              ) : (
+                <a href={cardHref(feat)} target="_blank" rel="noopener noreferrer" className="mw-readmore">Watch on YouTube →</a>
+              )}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Grid */}
       <section id="videos" className="mw-sec">
         <h2 className="mw-sec-h mw-disp"><span className="mw-spark">✦</span>Every glitch, explained</h2>
         <p className="mw-sec-sub">Short, sharp breakdowns of the tricks your own mind plays.</p>
         <div className="mw-grid">
-          {rest.map((v) => (
-            <Link key={v.slug} href={`/mindwire/${v.slug}`} className="mw-card">
-              <span className="mw-thumb">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={thumb(v.youtubeId)} alt={v.title} />
-                <span className="mw-play"><span /></span>
-              </span>
-              <div className="mw-body">
-                <div className="mw-kick">{v.kicker}</div>
-                <h4>{v.title}</h4>
-                <p className="ex">{v.hook}</p>
-                <span className="rd">{v.read}</span>
-              </div>
-            </Link>
-          ))}
+          {rest.map((v) => {
+            const inner = (
+              <>
+                <span className="mw-thumb">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={thumb(v.youtubeId)} alt={v.title} />
+                  <span className="mw-play"><span /></span>
+                </span>
+                <div className="mw-body">
+                  <div className="mw-kick">{v.kicker}</div>
+                  <h4>{v.title}</h4>
+                  <p className="ex">{v.hook}</p>
+                  {v.read && <span className="rd">{v.read}</span>}
+                </div>
+              </>
+            );
+            return v.hasPage ? (
+              <Link key={v.youtubeId} href={cardHref(v)} className="mw-card">{inner}</Link>
+            ) : (
+              <a key={v.youtubeId} href={cardHref(v)} target="_blank" rel="noopener noreferrer" className="mw-card">{inner}</a>
+            );
+          })}
         </div>
       </section>
 
