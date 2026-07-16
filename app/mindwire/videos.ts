@@ -12,6 +12,21 @@ export type MindwireVideo = {
 
 export const VIDEOS: MindwireVideo[] = [
   {
+    slug: "why-you-procrastinate",
+    youtubeId: "YuJgQves3oo",
+    title: "Why You Procrastinate (and How to Actually Stop)",
+    kicker: "Cognitive bias",
+    hook: "You know exactly what to do — so why are you suddenly deep-cleaning a spotless fridge? Procrastination was never about laziness. It's your brain protecting you from a feeling.",
+    published: "2026-07-16",
+    read: "4 min read",
+    article: [
+      "You've got the deadline. You know exactly what to do. You even want it done. And yet — there you are, deep-cleaning a fridge that was already clean. Here's the twist that changes everything: you're not lazy. Chronic procrastination has almost nothing to do with willpower, and everything to do with emotion. You're not avoiding the task — you're avoiding a feeling.",
+      "Inside your head, two systems are fighting. Your prefrontal cortex is the calm planner that thinks about future-you. Your limbic system is the ancient, impulsive part that only cares about feeling good right now. The moment a task feels boring, hard, or scary, the limbic system slams the brakes — because your brain massively overvalues the present and barely registers later. To your brain, the future version of you stuck pulling the all-nighter is practically a stranger.",
+      "So procrastination isn't poor time management. It's mood management — your brain reaching for the fastest way to feel better right now, and dodging the task delivers instant relief. The trap is what comes next: you feel guilty for putting it off, and that guilt makes the task feel even worse to face, so you avoid it again to escape the guilt. Avoid, shame, avoid, shame. The spiral isn't a character flaw. It's a feedback loop.",
+      "And that's exactly where you break it — not by trying harder, but by forgiving yourself. Studies found people who forgave themselves for procrastinating actually did it less next time, because dropping the guilt starves the loop. Then shrink the task until it's almost stupidly small: not \"write the essay,\" just \"type one ugly sentence.\" Your brain doesn't fear the work — it fears the moment of starting. Get past the first two minutes, and the resistance quietly melts away.",
+    ],
+  },
+  {
     slug: "why-you-forget-mid-sentence",
     youtubeId: "M1FagmmdOMQ",
     title: "Why You Forget What You're Saying Mid-Sentence",
