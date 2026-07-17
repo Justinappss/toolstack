@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="fo-verify" content="495a7eb7-eb12-4f76-b34f-83f0579e9492" />
         <meta name="impact-site-verification" {...({ value: "2d586c3c-7af3-44d6-b4ac-a2b803df18fe" } as any)} />
-        <meta name="google-adsense-account" content="ca-pub-9041474852138049" />
+        <meta name="google-adsense-account" content="ca-pub-2395093382559560" />
         <meta name="p:domain_verify" content="3b894a6baae10d4742060fa943be40e0" />
         {/* Preconnect to third-party origins for faster resource loading */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
           <Script id="meta-pixel" strategy="afterInteractive">{`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${process.env.NEXT_PUBLIC_META_PIXEL_ID}');fbq('track','PageView');`}</Script>
         )}
-        <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041474852138049" strategy="lazyOnload" crossOrigin="anonymous" />
+        <Script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2395093382559560" strategy="lazyOnload" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
