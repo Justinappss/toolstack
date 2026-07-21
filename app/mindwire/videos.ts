@@ -12,6 +12,21 @@ export type MindwireVideo = {
 
 export const VIDEOS: MindwireVideo[] = [
   {
+    slug: "your-brain-on-doomscrolling",
+    youtubeId: "9BCPuakFek4",
+    title: "Your Brain On Doomscrolling (Why You Can't Stop at 1AM)",
+    kicker: "Dopamine glitch",
+    hook: "It's 1am and you're still scrolling — and you're not even enjoying it anymore. You're not weak. You're running an ancient program that modern apps have quietly hijacked.",
+    published: "2026-07-21",
+    read: "4 min read",
+    article: [
+      "It's 1am and you're still scrolling — and you're not even enjoying it anymore. So why can't you stop? It isn't laziness, and it isn't a broken will. You're running an ancient survival program, written millions of years before your phone existed, and modern apps have quietly hijacked it.",
+      "For almost all of human history, survival meant searching — scanning the treeline for food, the horizon for danger — so your brain evolved to reward the search itself with a hit of dopamine. But here's the part almost everyone gets wrong: dopamine doesn't spike when you get the reward. It spikes when you might get one. It's the chemistry of 'maybe' — and an endless feed is just an infinite stack of maybes, one swipe after another.",
+      "That pattern has a name: a variable reward schedule, the exact loop that runs a slot machine. In the 1950s the psychologist B.F. Skinner found animals pressed a lever calmly when it always gave food — but obsessively, for hours, when it paid out at random. The people who build your apps know this. As ex-Google ethicist Tristan Harris put it, every time you check your phone you're pulling a slot-machine lever — and the feed never ends on purpose, because an ending is a place you might put it down.",
+      "It isn't free, either. Every little hit is a tiny withdrawal from the same system that lets slower things — a book, a walk, a conversation — feel satisfying, until they start to feel flat by comparison. But the trap runs on 'maybe', so the way out is to remove it: kill the notifications, put the phone in another room so checking it costs a walk, and when you feel the pull, name it out loud — this is a slot machine, designed so I never really win. You were never weak. You were being farmed — and naming the program is the first crack in it.",
+    ],
+  },
+  {
     slug: "why-you-procrastinate",
     youtubeId: "YuJgQves3oo",
     title: "Why You Procrastinate (and How to Actually Stop)",
