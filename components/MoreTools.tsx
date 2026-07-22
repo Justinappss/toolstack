@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { AdvertiseGPTBanner } from "@/components/AdvertiseGPTBanner";
+import { TOOL_GUIDES } from "./toolGuides";
 
 export const ALL_TOOLS = [
   {
@@ -637,9 +638,38 @@ export const ALL_TOOLS = [
 
 export function MoreTools({ currentSlug }: { currentSlug: string }) {
   const tools = ALL_TOOLS.filter(t => t.slug !== currentSlug);
+  const guides = TOOL_GUIDES[currentSlug] ?? [];
 
   return (
     <div style={{ marginTop: 0, marginBottom: 16 }}>
+      {guides.length > 0 && (
+        <div style={{ marginBottom: 36 }}>
+          <h2 style={{ fontSize: 22, fontWeight: 900, color: "white", margin: "0 0 4px", letterSpacing: "-0.02em" }}>
+            Related Guides
+          </h2>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: "0 0 16px" }}>
+            Go deeper — free step-by-step guides for this tool.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: guides.length > 1 ? "repeat(2, 1fr)" : "1fr", gap: 12 }}>
+            {guides.map(g => (
+              <Link key={g.slug} href={`/blog/${g.slug}`} style={{ textDecoration: "none" }}>
+                <div style={{
+                  padding: "18px 20px", borderRadius: 16,
+                  background: "rgba(99,102,241,0.08)", border: "1px solid rgba(99,102,241,0.22)",
+                  height: "100%", display: "flex", flexDirection: "column" as const, gap: 8,
+                }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.background = "rgba(99,102,241,0.16)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.background = "rgba(99,102,241,0.08)"; }}
+                >
+                  <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const, color: "#a5b4fc" }}>📖 Guide</span>
+                  <h3 style={{ fontSize: 15, fontWeight: 800, color: "white", margin: 0, lineHeight: 1.35 }}>{g.title}</h3>
+                  <span style={{ marginTop: "auto", fontSize: 13, fontWeight: 700, color: "#a5b4fc" }}>Read guide →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
       <AdvertiseGPTBanner />
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 24, flexWrap: "wrap", gap: 12 }}>
         <div>
@@ -647,7 +677,7 @@ export function MoreTools({ currentSlug }: { currentSlug: string }) {
             More Free Tools
           </h2>
           <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", margin: 0 }}>
-            61 tools live — all free, no signup, instant results.
+            65 tools live — all free, no signup, instant results.
           </p>
         </div>
         <Link href="/tools" style={{
