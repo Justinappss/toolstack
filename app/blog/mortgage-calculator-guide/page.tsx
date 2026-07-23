@@ -219,10 +219,14 @@ export default function MortgageCalculatorGuidePage() {
         {/* Video */}
         <div style={{ margin: "0 0 40px" }}>
           <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 10px" }}>🎬 Watch: how mortgages really work</p>
-          <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
-            <video controls preload="none" poster="/blog/mortgage-calculator-guide/video-poster.jpg" style={{ width: "100%", height: "auto", display: "block", background: "#000" }}>
-              <source src="/blog/mortgage-calculator-guide/mortgage-video.mp4" type="video/mp4" />
-            </video>
+          <div style={{ position: "relative", paddingTop: "56.25%", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/R_j9wAhLWUg"
+              title="How a Mortgage Calculator Works — The Term Trap Explained"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+            />
           </div>
         </div>
         <script
@@ -233,10 +237,11 @@ export default function MortgageCalculatorGuidePage() {
               "@type": "VideoObject",
               name: "Decoding Mortgages — How a Mortgage Calculator Works",
               description: "A plain-English explainer on how mortgage payments are calculated, why the loan term matters so much, and how to work out what you can afford.",
-              thumbnailUrl: "https://toolstack.tech/blog/mortgage-calculator-guide/video-poster.jpg",
+              thumbnailUrl: "https://i.ytimg.com/vi/R_j9wAhLWUg/maxresdefault.jpg",
               uploadDate: "2026-07-23",
               duration: "PT6M35S",
-              contentUrl: "https://toolstack.tech/blog/mortgage-calculator-guide/mortgage-video.mp4",
+              contentUrl: "https://www.youtube.com/watch?v=R_j9wAhLWUg",
+              embedUrl: "https://www.youtube.com/embed/R_j9wAhLWUg",
             }),
           }}
         />
