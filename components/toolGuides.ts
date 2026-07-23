@@ -79,4 +79,10 @@ export const TOOL_GUIDES: Record<string, Guide[]> = {
   "youtube-transcript": [
     { slug: "free-youtube-transcript-extractor-no-signup-no-limits", title: "Free YouTube Transcript Extractor — No Signup, No Limits" },
   ],
+  "blog-title-generator": [
+    { slug: "blog-title-generator", title: "SEO Blog Title Generator: Write Titles That Rank and Get Clicked" },
+  ],
+  "pokemon-tcg-pocket-pull-calculator": [
+    { slug: "pokemon-tcg-pocket-pull-rates", title: "Pokémon TCG Pocket Pull Rates Explained" },
+  ],
 };
