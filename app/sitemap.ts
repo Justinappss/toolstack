@@ -346,6 +346,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${base}/blog/vat-calculator-guide`,
+      lastModified: "2026-07-23",
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${base}/blog/free-youtube-transcript-extractor-no-signup-no-limits`,
       lastModified: "2026-06-02",
       changeFrequency: "monthly",

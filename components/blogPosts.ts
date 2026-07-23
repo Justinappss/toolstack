@@ -45,6 +45,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   { slug: "how-a-compound-interest-calculator-works-plain-english", title: "How Does a Compound Interest Calculator Work? (Plain English)", topic: "finance" },
   { slug: "salary-after-tax-uk-us-2025", title: "Salary After Tax 2025: UK vs US — What You Actually Take Home", topic: "finance" },
+  { slug: "vat-calculator-guide", title: "How to Calculate VAT: Adding & Removing VAT Explained", topic: "finance" },
 
   { slug: "aweber-review", title: "AWeber Review 2026: Still the Best Email Marketing Tool for Creators?", topic: "reviews" },
   { slug: "aweber-vs-beehiiv", title: "AWeber vs Beehiiv: Why Creators Are Switching After the Price Hike (2026)", topic: "reviews" },

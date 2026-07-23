@@ -15,6 +15,17 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+    {
+        slug: "vat-calculator-guide",
+        title: "How to Calculate VAT: Adding & Removing VAT Explained",
+        description: "How to add and remove VAT the right way — the formulas, worked examples, the mistake everyone makes when reversing VAT, and standard rates for the UK, EU, UAE and more.",
+        date: "July 23, 2026",
+        readTime: "7 min read",
+        tag: "Finance",
+        accent: "#fbbf24",
+        accentBg: "rgba(251,191,36,0.08)",
+        accentBorder: "rgba(251,191,36,0.2)",
+    },
   { slug: "free-youtube-transcript-extractor-no-signup-no-limits", title: "** Free YouTube Transcript Extractor — No Signup, No Limits", description: "** free youtube transcript extractor no signup — free tool guide on toolstack.tech", date: "2026-06-02", readTime: "10 min", tag: "Tools", tagColor: "cyan" },
   { slug: "how-a-compound-interest-calculator-works-plain-english", title: "How a Compound Interest Calculator Works (Plain English)", description: "how does a compound interest calculator work — free tool guide on toolstack.tech", date: "2026-06-02", readTime: "10 min", tag: "Tools", tagColor: "cyan" },
     {

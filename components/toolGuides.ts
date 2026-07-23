@@ -73,6 +73,9 @@ export const TOOL_GUIDES: Record<string, Guide[]> = {
   "compound-interest-calculator": [
     { slug: "how-a-compound-interest-calculator-works-plain-english", title: "How Does a Compound Interest Calculator Work? (Plain English)" },
   ],
+  "vat-calculator": [
+    { slug: "vat-calculator-guide", title: "How to Calculate VAT: Adding & Removing VAT Explained" },
+  ],
   "salary-calculator": [
     { slug: "salary-after-tax-uk-us-2025", title: "Salary After Tax 2025: UK vs US — What You Actually Take Home" },
   ],
