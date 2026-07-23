@@ -219,6 +219,7 @@ Every page on ToolStack has a plain markdown mirror at a predictable URL. Add /i
 
 
 
+https://toolstack.tech/blog/mortgage-calculator-guide — How a Mortgage Calculator Works (+ How Much House You Can Afford)
 https://toolstack.tech/blog/vat-calculator-guide — How to Calculate VAT: Adding & Removing VAT Explained
 https://toolstack.tech/blog/how-a-compound-interest-calculator-works-plain-english — How a Compound Interest Calculator Works (Plain English)
 https://toolstack.tech/blog/free-youtube-transcript-extractor-no-signup-no-limits — ** Free YouTube Transcript Extractor — No Signup, No Limits

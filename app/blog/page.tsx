@@ -16,6 +16,17 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "mortgage-calculator-guide",
+        title: "How a Mortgage Calculator Works (+ How Much House You Can Afford)",
+        description: "How a mortgage calculator works — the monthly payment formula, a worked example, the 28/36 affordability rule, and how term and extra payments change the total cost.",
+        date: "July 23, 2026",
+        readTime: "8 min read",
+        tag: "Finance",
+        accent: "#fbbf24",
+        accentBg: "rgba(251,191,36,0.08)",
+        accentBorder: "rgba(251,191,36,0.2)",
+    },
+    {
         slug: "vat-calculator-guide",
         title: "How to Calculate VAT: Adding & Removing VAT Explained",
         description: "How to add and remove VAT the right way — the formulas, worked examples, the mistake everyone makes when reversing VAT, and standard rates for the UK, EU, UAE and more.",

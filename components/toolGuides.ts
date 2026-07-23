@@ -76,6 +76,9 @@ export const TOOL_GUIDES: Record<string, Guide[]> = {
   "vat-calculator": [
     { slug: "vat-calculator-guide", title: "How to Calculate VAT: Adding & Removing VAT Explained" },
   ],
+  "mortgage-calculator": [
+    { slug: "mortgage-calculator-guide", title: "How a Mortgage Calculator Works (+ How Much House You Can Afford)" },
+  ],
   "salary-calculator": [
     { slug: "salary-after-tax-uk-us-2025", title: "Salary After Tax 2025: UK vs US — What You Actually Take Home" },
   ],
