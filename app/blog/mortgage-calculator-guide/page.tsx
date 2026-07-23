@@ -208,6 +208,39 @@ export default function MortgageCalculatorGuidePage() {
           </ul>
         </div>
 
+        {/* Podcast */}
+        <div style={{ marginBottom: 24 }}>
+          <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 8px" }}>🎙 Listen to the full podcast episode</p>
+          <audio controls preload="none" style={{ width: "100%", accentColor: accent }}>
+            <source src="/blog/mortgage-calculator-guide/podcast.m4a" type="audio/mp4" />
+          </audio>
+        </div>
+
+        {/* Video */}
+        <div style={{ margin: "0 0 40px" }}>
+          <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 10px" }}>🎬 Watch: how mortgages really work</p>
+          <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+            <video controls preload="none" poster="/blog/mortgage-calculator-guide/video-poster.jpg" style={{ width: "100%", height: "auto", display: "block", background: "#000" }}>
+              <source src="/blog/mortgage-calculator-guide/mortgage-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              name: "Decoding Mortgages — How a Mortgage Calculator Works",
+              description: "A plain-English explainer on how mortgage payments are calculated, why the loan term matters so much, and how to work out what you can afford.",
+              thumbnailUrl: "https://toolstack.tech/blog/mortgage-calculator-guide/video-poster.jpg",
+              uploadDate: "2026-07-23",
+              duration: "PT6M35S",
+              contentUrl: "https://toolstack.tech/blog/mortgage-calculator-guide/mortgage-video.mp4",
+            }),
+          }}
+        />
+
         <AdBlock type="horizontal" />
 
         {/* Section 1 */}
@@ -218,6 +251,8 @@ export default function MortgageCalculatorGuidePage() {
         <p style={pStyle}>
           The clever part is how each payment is split. Interest is always charged on the <em>remaining</em> balance, so in month one &mdash; when the balance is highest &mdash; most of your payment is interest. As the balance falls, the interest portion shrinks and more of each payment goes to principal. That&rsquo;s why the balance barely moves in the early years and then falls quickly near the end.
         </p>
+
+        <img src="/blog/mortgage-calculator-guide/chronicle-amortization.jpg" alt="The Law of Amortization — how each mortgage payment splits between interest and principal" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Section 2 */}
         <h2 style={h2Style}>The Mortgage Payment Formula</h2>
@@ -238,6 +273,8 @@ export default function MortgageCalculatorGuidePage() {
         <p style={pStyle}>
           You never need to work this out by hand &mdash; that&rsquo;s the calculator&rsquo;s job &mdash; but knowing the shape of it explains why small rate changes move your payment so much: the rate appears three times, including inside an exponent.
         </p>
+
+        <img src="/blog/mortgage-calculator-guide/chronicle-equation.jpg" alt="The mortgage payment formula illustrated as an illuminated manuscript equation" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Section 3 */}
         <h2 style={h2Style}>Worked Example: £250,000 at 5% Over 25 Years</h2>
@@ -287,6 +324,8 @@ export default function MortgageCalculatorGuidePage() {
           Going from 30 years to 15 more than doubles nothing about the loan &mdash; the £250,000 is identical &mdash; yet it saves about £127,000 in interest. The trade-off is a payment that&rsquo;s roughly £635 higher each month. A good mortgage calculator lets you slide the term back and forth to find the balance you can actually afford.
         </p>
 
+        <img src="/blog/mortgage-calculator-guide/chronicle-term-table.jpg" alt="The Burden of Years — monthly payment and total interest for 15, 20, 25 and 30-year mortgage terms" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
+
         {/* Section 5 */}
         <h2 style={h2Style}>How Much House Can You Afford? The 28/36 Rule</h2>
         <p style={pStyle}>
@@ -300,6 +339,8 @@ export default function MortgageCalculatorGuidePage() {
           On a £6,000 gross monthly income, that&rsquo;s about £1,680 for housing and £2,160 for total debt. Plug a payment near your 28% ceiling into the calculator, then work backwards to the loan amount &mdash; that&rsquo;s a realistic budget, not a bank&rsquo;s maximum.
         </p>
 
+        <img src="/blog/mortgage-calculator-guide/chronicle-scales.jpg" alt="The Scales of Prudence — the 28/36 affordability rule for housing and total debt" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
+
         {/* Section 6 */}
         <h2 style={h2Style}>Why Extra Payments Are So Powerful</h2>
         <p style={pStyle}>
@@ -308,6 +349,8 @@ export default function MortgageCalculatorGuidePage() {
         <p style={pStyle}>
           On our £250,000 mortgage at 5% over 25 years, adding just £100 a month can shorten the term by roughly three years and save tens of thousands in interest. Use the calculator&rsquo;s extra-payment field to test it: even small, consistent overpayments quietly rewrite the amortization schedule in your favour.
         </p>
+
+        <img src="/blog/mortgage-calculator-guide/chronicle-extra.jpg" alt="The Strike Against Time — how overpaying principal early saves years of interest" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Section 7 */}
         <h2 style={h2Style}>What the Calculator Doesn&rsquo;t Show</h2>
@@ -323,6 +366,8 @@ export default function MortgageCalculatorGuidePage() {
         <p style={pStyle}>
           Always budget for these on top of the calculator&rsquo;s figure. The principal-and-interest number tells you what the <em>loan</em> costs; these extras tell you what the <em>home</em> costs.
         </p>
+
+        <img src="/blog/mortgage-calculator-guide/chronicle-hidden.jpg" alt="The Hidden Tithes — property taxes, insurance and other costs a mortgage calculator doesn't show" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Conclusion CTA (green 10b981 + AdvertsGPT + affiliate) */}
         <div style={{ background: "linear-gradient(135deg, rgba(16,185,129,0.12), rgba(16,185,129,0.04))", border: "1px solid rgba(16,185,129,0.25)", borderRadius: 12, padding: "24px 28px", margin: "40px 0" }}>
