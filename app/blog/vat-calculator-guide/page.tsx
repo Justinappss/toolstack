@@ -214,6 +214,14 @@ export default function VatCalculatorGuidePage() {
           </ul>
         </div>
 
+        {/* Podcast */}
+        <div style={{ marginBottom: 24 }}>
+          <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 8px" }}>🎙 Listen to the full podcast episode</p>
+          <audio controls preload="none" style={{ width: "100%", accentColor: accent }}>
+            <source src="/blog/vat-calculator-guide/podcast.m4a" type="audio/mp4" />
+          </audio>
+        </div>
+
         {/* Video */}
         <div style={{ margin: "0 0 40px" }}>
           <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 10px" }}>🎬 Watch: VAT explained in 5 minutes</p>
