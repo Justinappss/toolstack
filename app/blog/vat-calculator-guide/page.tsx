@@ -214,6 +214,31 @@ export default function VatCalculatorGuidePage() {
           </ul>
         </div>
 
+        {/* Video */}
+        <div style={{ margin: "0 0 40px" }}>
+          <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 10px" }}>🎬 Watch: VAT explained in 5 minutes</p>
+          <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+            <video controls preload="none" poster="/blog/vat-calculator-guide/video-poster.jpg" style={{ width: "100%", height: "auto", display: "block", background: "#000" }}>
+              <source src="/blog/vat-calculator-guide/vat-video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              name: "The Great VAT Swindle — How to Calculate VAT",
+              description: "A quick, fun explainer on how to add and remove VAT correctly — including the mistake almost everyone makes when reversing VAT from a gross price.",
+              thumbnailUrl: "https://toolstack.tech/blog/vat-calculator-guide/video-poster.jpg",
+              uploadDate: "2026-07-23",
+              duration: "PT4M50S",
+              contentUrl: "https://toolstack.tech/blog/vat-calculator-guide/vat-video.mp4",
+            }),
+          }}
+        />
+
         <AdBlock type="horizontal" />
 
         {/* Section 1 */}
@@ -224,6 +249,8 @@ export default function VatCalculatorGuidePage() {
         <p style={pStyle}>
           Two figures matter for every calculation. The <strong>net price</strong> is the value of the goods before tax. The <strong>gross price</strong> is the net price with VAT added on top. VAT is always a percentage of the net price &mdash; that single fact is the key to calculating it correctly in both directions.
         </p>
+
+        <img src="/blog/vat-calculator-guide/comic-net-vs-gross.jpg" alt="Net price vs gross price — VAT explained as a comic" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Section 2 */}
         <h2 style={h2Style}>How to Add VAT to a Price</h2>
@@ -248,6 +275,8 @@ export default function VatCalculatorGuidePage() {
         <p style={pStyle}>
           The customer pays £300, of which £50 is VAT you&rsquo;ll pass on to the tax authority. To find just the VAT amount without the total, multiply the net price by the rate on its own (£250 &times; 0.20 = £50).
         </p>
+
+        <img src="/blog/vat-calculator-guide/comic-add-vat.jpg" alt="Adding VAT — multiply the net price by 1.20, shown as a comic panel" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Section 3 */}
         <h2 style={h2Style}>How to Remove VAT From a Price (The Right Way)</h2>
@@ -277,6 +306,8 @@ export default function VatCalculatorGuidePage() {
             Subtracting 20% of the gross price gives £300 &times; 0.20 = £60 &mdash; but the real VAT is only £50. The 20% was added to the £250 net price, not the £300 gross price, so taking 20% off the larger number always overstates the VAT. Divide by 1.20 instead.
           </p>
         </div>
+        <img src="/blog/vat-calculator-guide/comic-wrong-vs-right.jpg" alt="The wrong way vs the right way to remove VAT: subtracting gives £60, dividing gives the correct £50" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
+
         <p style={pStyle}>
           Quick shortcut for 20% VAT: to get the VAT portion of a gross total, just divide by 6 (£300 &divide; 6 = £50). That works because VAT is one-sixth of a 20%-inclusive total.
         </p>
@@ -310,6 +341,8 @@ export default function VatCalculatorGuidePage() {
           Rates change from time to time and many countries apply reduced rates to essentials like food, energy and children&rsquo;s items. Always confirm the current rate for your specific goods, then apply the same add/remove method. The free <Link href="/tools/vat-calculator" style={{ color: accent, textDecoration: "underline" }}>VAT calculator</Link> keeps 40+ countries&rsquo; rates on hand so you don&rsquo;t have to look them up.
         </p>
 
+        <img src="/blog/vat-calculator-guide/comic-rates-world.jpg" alt="VAT and GST rates around the world — UK 20%, Ireland 23%, Germany 19%, UAE 5% and more" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
+
         {/* Section 5 */}
         <h2 style={h2Style}>Worked Example: A Freelancer&rsquo;s Invoice</h2>
         <p style={pStyle}>
@@ -323,6 +356,8 @@ export default function VatCalculatorGuidePage() {
         <p style={pStyle}>
           You collected £240 from the client but only hand over £215, because you offset the £25 you already paid. That&rsquo;s the &ldquo;value added&rdquo; idea in action &mdash; you only remit tax on the value <em>you</em> added, not the full sale price.
         </p>
+
+        <img src="/blog/vat-calculator-guide/comic-value-added.jpg" alt="The value-added duel: output VAT minus input VAT is what a business remits" style={{ width: "100%", height: "auto", display: "block", borderRadius: 12, margin: "32px 0", border: "1px solid rgba(255,255,255,0.08)" }} />
 
         {/* Section 6 */}
         <h2 style={h2Style}>When You Might Need to Reverse VAT</h2>
