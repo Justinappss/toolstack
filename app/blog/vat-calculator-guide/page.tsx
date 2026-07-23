@@ -225,10 +225,14 @@ export default function VatCalculatorGuidePage() {
         {/* Video */}
         <div style={{ margin: "0 0 40px" }}>
           <p style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.7)", margin: "0 0 10px" }}>🎬 Watch: VAT explained in 5 minutes</p>
-          <div style={{ borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
-            <video controls preload="none" poster="/blog/vat-calculator-guide/video-poster.jpg" style={{ width: "100%", height: "auto", display: "block", background: "#000" }}>
-              <source src="/blog/vat-calculator-guide/vat-video.mp4" type="video/mp4" />
-            </video>
+          <div style={{ position: "relative", paddingTop: "56.25%", borderRadius: 16, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", boxShadow: "0 20px 40px rgba(0,0,0,0.3)" }}>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/4KuxLHrUtFI"
+              title="How to Calculate VAT — The Mistake Everyone Makes"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
+            />
           </div>
         </div>
         <script
@@ -239,10 +243,11 @@ export default function VatCalculatorGuidePage() {
               "@type": "VideoObject",
               name: "The Great VAT Swindle — How to Calculate VAT",
               description: "A quick, fun explainer on how to add and remove VAT correctly — including the mistake almost everyone makes when reversing VAT from a gross price.",
-              thumbnailUrl: "https://toolstack.tech/blog/vat-calculator-guide/video-poster.jpg",
+              thumbnailUrl: "https://i.ytimg.com/vi/4KuxLHrUtFI/maxresdefault.jpg",
               uploadDate: "2026-07-23",
               duration: "PT4M50S",
-              contentUrl: "https://toolstack.tech/blog/vat-calculator-guide/vat-video.mp4",
+              contentUrl: "https://www.youtube.com/watch?v=4KuxLHrUtFI",
+              embedUrl: "https://www.youtube.com/embed/4KuxLHrUtFI",
             }),
           }}
         />
