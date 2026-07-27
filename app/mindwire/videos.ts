@@ -12,6 +12,21 @@ export type MindwireVideo = {
 
 export const VIDEOS: MindwireVideo[] = [
   {
+    slug: "why-some-people-are-always-late",
+    youtubeId: "kEftcsSXstY",
+    title: "The Psychology of People Who Are Always Late",
+    kicker: "Time glitch",
+    hook: "That friend who's late to everything? It's not rudeness or laziness — their brain literally measures time differently than yours.",
+    published: "2026-07-27",
+    read: "3 min read",
+    article: [
+      "You know that one friend who's late to everything — the dinner, the meeting, their own birthday party. It's easy to decide they're rude, or lazy, or just don't respect your time. But here's the uncomfortable truth: for a lot of chronically late people, it's not a character flaw at all. Their brain literally measures time differently than yours.",
+      "Study after study points at the same culprit: time perception. In one now-famous experiment, the psychologist Jeff Conte asked driven, deadline-obsessed 'Type A' people and laid-back 'Type B' people to guess when a single minute had passed, with no clock. The Type As nailed it. The Type Bs? They didn't feel a full minute go by until seventy-seven seconds had passed. Their internal clock genuinely runs slow — so when a late person swears 'I only left five minutes ago,' to their brain, that's actually true.",
+      "The other half of the puzzle is optimism. Psychologists call it the planning fallacy — our habit of remembering the one time traffic was clear, and planning for that perfect run every single time. Chronically late people are often chronic optimists: they truly believe they can answer one more email, wash one more dish, and still make it out the door. And here's the twist — that same sunny, time-bending brain comes with a perk. Researchers have found people who run late tend to be more optimistic, more relaxed, and less stressed than the punctual crowd.",
+      "So why can't they just leave earlier? Because the problem is invisible to them — you can't correct a clock you can't feel is wrong. The fix isn't willpower; it's building an external clock the brain can't argue with: set the alarm for when to leave, not when to arrive, build in a buffer, and treat 'I've got time for one more thing' as the lie it usually is. And next time your friend rushes in, breathless and sorry? Go a little easier on them. Their brain is just running a slower clock and a sunnier forecast — and honestly, they might be the happier one.",
+    ],
+  },
+  {
     slug: "your-brain-on-doomscrolling",
     youtubeId: "9BCPuakFek4",
     title: "Your Brain On Doomscrolling (Why You Can't Stop at 1AM)",
