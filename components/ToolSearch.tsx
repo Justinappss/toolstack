@@ -63,6 +63,7 @@ import { GradingComparisonThumbnail } from "./GradingComparisonThumbnail";
 import { EbayBestOfferThumbnail } from "./EbayBestOfferThumbnail";
 import { WorldCupAccumulatorThumbnail } from "./WorldCupAccumulatorThumbnail";
 import { UCLFinalAccumulatorThumbnail } from "./UCLFinalAccumulatorThumbnail";
+import { Gta6CostCalculatorThumbnail } from "./Gta6CostCalculatorThumbnail";
 import { WorldCupTeamFinderThumbnail } from "./WorldCupTeamFinderThumbnail";
 import { PasswordBreachCheckerThumbnail } from "./PasswordBreachCheckerThumbnail";
 import { CreditCardRewardsThumbnail } from "./CreditCardRewardsThumbnail";
@@ -171,6 +172,7 @@ const LIVE_THUMBNAILS: Record<string, React.ComponentType> = {
     "Grading Company Comparison": GradingComparisonThumbnail,
     "eBay Best Offer Calculator": EbayBestOfferThumbnail,
     "UCL Final 2026 Accumulator": UCLFinalAccumulatorThumbnail,
+    "GTA 6 Cost Calculator": Gta6CostCalculatorThumbnail,
     "WC 2026 Accumulator Calculator": WorldCupAccumulatorThumbnail,
     "World Cup 2026 Team Finder": WorldCupTeamFinderThumbnail,
     "YouTube Transcript Extractor": YoutubeTranscriptThumbnail,

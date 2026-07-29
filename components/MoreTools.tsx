@@ -575,6 +575,16 @@ export const ALL_TOOLS = [
     badge: "Collectibles",
   },
   {
+    slug: "gta-6-cost-calculator",
+    name: "GTA 6 Cost Calculator",
+    desc: "Console-exclusive on 19 Nov 2026 — work out your real day-one cost including hardware, storage and trade-in.",
+    icon: "◈",
+    color: "#ff2e88",
+    bg: "rgba(255,46,136,0.1)",
+    border: "rgba(255,46,136,0.25)",
+    badge: "New",
+  },
+  {
     slug: "ucl-final-accumulator-2026",
     name: "UCL Final 2026 Accumulator",
     desc: "PSG vs Arsenal Champions League final acca calculator. Combined return and implied probability live.",

@@ -1,5 +1,15 @@
 export const ALL_TOOLS = [
   {
+    title: "GTA 6 Cost Calculator",
+    desc: "GTA 6 lands 19 Nov 2026 on PS5 and Xbox Series X|S only. Work out your true day-one cost — game, console, storage and online sub, minus trade-in.",
+    href: "/tools/gta-6-cost-calculator",
+    category: "Gaming",
+    accent: "#ff2e88",
+    accentRgb: "255,46,136",
+    badge: "New",
+    icon: "◈",
+  },
+  {
     title: "ToolStack Design Studio",
     desc: "AI ad & campaign studio. Scan any brand, generate on-brand campaigns and finished ads with GPT-4o, and render branded visuals with AI.",
     href: "/tools/jdesigns-studio",
@@ -641,7 +651,7 @@ export const ALL_TOOLS = [
   },
 ];
 
-export const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Domain", "Video", "Collectibles", "Sports"];
+export const CATEGORIES = ["All", "AI", "Writing", "SEO", "Marketing", "Social", "Business", "Security", "Utility", "Finance", "Math", "Dev", "Design", "Domain", "Video", "Collectibles", "Sports", "Gaming"];
 
 export const CATEGORY_MAP: Record<string, string> = {
   ai: "AI",
@@ -660,4 +670,5 @@ export const CATEGORY_MAP: Record<string, string> = {
   video: "Video",
   collectibles: "Collectibles",
   sports: "Sports",
+  gaming: "Gaming",
 };

@@ -43,6 +43,16 @@ const LIVE_TOOLS = [
         icon: "◫",
     },
     {
+        title: "GTA 6 Cost Calculator",
+        desc: "GTA 6 lands 19 Nov 2026 on PS5 and Xbox Series X|S only. See your true day-one cost — game, console, storage, online sub, minus trade-in.",
+        href: "/tools/gta-6-cost-calculator",
+        category: "Gaming",
+        accent: "#ff2e88",
+        accentRgb: "255,46,136",
+        badge: "New",
+        image: "/tools/ai-prompt-generator-preview.png",
+    },
+    {
         title: "UCL Final 2026 Accumulator",
         desc: "PSG vs Arsenal — Champions League final acca calculator. Enter your odds, see combined return and implied probability instantly.",
         href: "/tools/ucl-final-accumulator-2026",
