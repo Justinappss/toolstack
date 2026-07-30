@@ -64,7 +64,7 @@ export default function PrivacyPage() {
                 </nav>
 
                 <h1 style={{ fontSize: 40, fontWeight: 900, color: "white", marginBottom: 12, letterSpacing: "-0.02em" }}>Privacy Policy</h1>
-                <p style={{ fontSize: 14, color: "rgba(255,255,255,0.3)", marginBottom: 48 }}>Last updated: 13 April 2026</p>
+                <p style={{ fontSize: 14, color: "rgba(255,255,255,0.3)", marginBottom: 48 }}>Last updated: 7 July 2026</p>
 
                 <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: 36 }}>
 
@@ -139,8 +139,13 @@ export default function PrivacyPage() {
                         <p style={P}>ToolStack is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
                     </div>
 
+                    <div style={SECTION}>
+                        <h2 style={H2}>10. Browser extension</h2>
+                        <p style={P}>Our Chrome extension, <strong style={{ color: "rgba(255,255,255,0.7)" }}>ToolStack — Quick Utilities</strong>, runs entirely on your device. It does not collect, store, or transmit any data, requests no browser permissions, makes no network requests, and includes no analytics or tracking. Any text you enter into the extension (for the password, counter, case, UUID, or Base64 tools) is processed locally in the popup and never leaves your browser.</p>
+                    </div>
+
                     <div style={{ ...SECTION, marginBottom: 0 }}>
-                        <h2 style={H2}>10. Changes to this policy</h2>
+                        <h2 style={H2}>11. Changes to this policy</h2>
                         <p style={{ ...P, margin: 0 }}>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of ToolStack after changes constitutes your acceptance of the revised policy.</p>
                     </div>
 
