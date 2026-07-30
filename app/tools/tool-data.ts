@@ -1,5 +1,25 @@
 export const ALL_TOOLS = [
   {
+    title: "GTA 6 Launch Time",
+    desc: "When does GTA 6 unlock where you are? Live countdown to 19 Nov 2026 in your own timezone, plus which countries get it first.",
+    href: "/tools/gta-6-launch-time",
+    category: "Gaming",
+    accent: "#22d3ee",
+    accentRgb: "34,211,238",
+    badge: "New",
+    icon: "◷",
+  },
+  {
+    title: "GTA 6 Edition Comparison",
+    desc: "Standard vs Ultimate, side by side. What the extra $20 actually buys — and why the pre-order pack comes with both.",
+    href: "/tools/gta-6-edition-comparison",
+    category: "Gaming",
+    accent: "#a78bfa",
+    accentRgb: "167,139,250",
+    badge: "New",
+    icon: "⊞",
+  },
+  {
     title: "GTA 6 Cost Calculator",
     desc: "GTA 6 lands 19 Nov 2026 on PS5 and Xbox Series X|S only. Work out your true day-one cost — game, console, storage and online sub, minus trade-in.",
     href: "/tools/gta-6-cost-calculator",

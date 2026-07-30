@@ -75,6 +75,8 @@ const TOOL_CATEGORIES = [
             { label: "Pokémon TCG Pocket Pull Calculator", href: "/tools/pokemon-tcg-pocket-pull-calculator" },
             { label: "UCL Final 2026 Accumulator", href: "/tools/ucl-final-accumulator-2026" },
             { label: "GTA 6 Cost Calculator", href: "/tools/gta-6-cost-calculator" },
+            { label: "GTA 6 Launch Time", href: "/tools/gta-6-launch-time" },
+            { label: "GTA 6 Edition Comparison", href: "/tools/gta-6-edition-comparison" },
             { label: "WC 2026 Accumulator Calculator", href: "/tools/world-cup-accumulator-calculator" },
             { label: "World Cup 2026 Team Finder", href: "/tools/world-cup-team-finder" },
             { label: "YouTube Transcript Extractor", href: "/tools/youtube-transcript" },

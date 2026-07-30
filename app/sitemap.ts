@@ -141,6 +141,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "world-cup-team-finder",
       "ucl-final-accumulator-2026",
       "gta-6-cost-calculator",
+      "gta-6-launch-time",
+      "gta-6-edition-comparison",
       "youtube-video-downloader",
       "youtube-thumbnail-downloader",
     ].map(slug => ({
