@@ -4,8 +4,8 @@
     "hash": "239f3ebf717465dc636818a1a619398d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/next-env.d.ts": {
-    "mtime": 1777810170.2352734,
-    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
+    "mtime": 1785365235.780223,
+    "hash": "d0f8375ae1199dc7acd3977fc33b78b8"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/tailwind.config.ts": {
     "mtime": 1776034825.8548894,
@@ -16,616 +16,1124 @@
     "hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/next.config.ts": {
-    "mtime": 1778280723.4308753,
-    "hash": "e0775b4b4160e10499962f134a1440b4"
+    "mtime": 1785097108.4192514,
+    "hash": "b7246b1835f6825d8e4a3d97864c70e2"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/robots.ts": {
-    "mtime": 1776158337.4576983,
-    "hash": "524bd964edc244ac6b5503dfb19a6f26"
+    "mtime": 1778456805.7445662,
+    "hash": "375a68b409e366ddef4dd84c1cc50e7c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/sitemap.ts": {
-    "mtime": 1778336059.1009338,
-    "hash": "113288fc43452e4f9dc65e6602caf618"
+    "mtime": 1785697963.4922905,
+    "hash": "5db0cd90edbdc52b8c58413f31e8f3d4"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/layout.tsx": {
-    "mtime": 1778140677.3213017,
-    "hash": "2653e5f780b99e121209520d23be042e"
+    "mtime": 1784300081.2160974,
+    "hash": "8f685985e0336dc1bbeee998bcc0b5bc"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/page.tsx": {
-    "mtime": 1778280327.9922853,
-    "hash": "49ba765710826d0589fc046ee8ee6148"
+    "mtime": 1785405671.680431,
+    "hash": "31f6c716a8965276f31bec7cb0caad3b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/the-markup/videos.ts": {
+    "mtime": 1785698503.6729248,
+    "hash": "40c6de4c49ef104fc72739d2a7b1bfa4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/the-markup/layout.tsx": {
+    "mtime": 1785698513.7651448,
+    "hash": "f339062e658234d90c71a7095a3a375d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/the-markup/page.tsx": {
+    "mtime": 1785698533.010299,
+    "hash": "0cac778d584ed8fcb3b5e3c6c647820a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/the-markup/[slug]/page.tsx": {
+    "mtime": 1785698802.506472,
+    "hash": "18d648a63f7d87d9d1d647b0234db0c2"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/contact/layout.tsx": {
     "mtime": 1777030058.1819232,
     "hash": "c27de38bc0306672e433b67895b2dd63"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/contact/page.tsx": {
-    "mtime": 1777042756.753961,
-    "hash": "c1661dba2d597423e6e1c77053b2d366"
+    "mtime": 1779545725.1306603,
+    "hash": "17bd66ba903fb54f02696bf4443b9076"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/tool-data.ts": {
-    "mtime": 1778278044.7625294,
-    "hash": "a75b92f32298b62afeb52689c7c8e942"
+    "mtime": 1785405661.9302115,
+    "hash": "8c67fd1f144b662cf5ea561091450414"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/layout.tsx": {
-    "mtime": 1778280643.5212803,
+    "mtime": 1778450769.8289769,
     "hash": "15875484dba75de7ad4fe29f67e59c6e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/page.tsx": {
-    "mtime": 1778278142.7062488,
-    "hash": "5bb4d0f69630537e774af3ba2a5f648f"
+    "mtime": 1782395144.7602243,
+    "hash": "8e4f4678f0a8d9e8f31e4e4f8fce6f69"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/whois-lookup/layout.tsx": {
-    "mtime": 1776936987.285727,
-    "hash": "2707c2b91187dafc556206ab30df52b2"
+    "mtime": 1778456805.763077,
+    "hash": "a162f9cfbaeb76a4c215ef0608c50f71"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/whois-lookup/page.tsx": {
-    "mtime": 1778274949.7152863,
-    "hash": "e6b7f8282eea93b60856f2fbf571dafd"
+    "mtime": 1779477289.5455287,
+    "hash": "499e8456ed9db5dc7187a93d404c25e7"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/pack-break-ev-calculator/layout.tsx": {
-    "mtime": 1778002780.6812694,
-    "hash": "3757446dca0b0a01ae13dd1f99ebacf7"
+    "mtime": 1778456805.756757,
+    "hash": "df9498164e79bd3a4eb205c9fd3c8829"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/pack-break-ev-calculator/page.tsx": {
-    "mtime": 1778274949.7075968,
-    "hash": "858b3f57469f09b08c2e7c6f444672c6"
+    "mtime": 1779477289.5544047,
+    "hash": "86731da03e8263539086f73e257fa09c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/card-grading-profit-calculator/layout.tsx": {
-    "mtime": 1777999020.3129897,
-    "hash": "a8a1dac833a8bde9a3f37986defe6011"
+    "mtime": 1778456805.7478676,
+    "hash": "28057b366633fd5d9f6d4dea71dd166b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/card-grading-profit-calculator/page.tsx": {
-    "mtime": 1778274949.6972291,
-    "hash": "06ecec3fed0e8b770afac3da0f289d98"
+    "mtime": 1779477289.564604,
+    "hash": "d2363c1ab65a0d090bcfeb8e914b775b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/card-flip-roi-calculator/layout.tsx": {
-    "mtime": 1777999013.5553079,
-    "hash": "62be61d9d200ddab4bd5ccb1f6423ab6"
+    "mtime": 1778456805.7476254,
+    "hash": "77653b6d6f83bc5a4942a0f65b3187f1"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/card-flip-roi-calculator/page.tsx": {
-    "mtime": 1778274949.696702,
-    "hash": "a2adc7d6cd9dd4d8d06fb2efbc4e29b5"
+    "mtime": 1779477289.5762777,
+    "hash": "0d3b3649247b8fba75777d2862414fa7"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/text-summarizer/layout.tsx": {
-    "mtime": 1778280474.8159504,
-    "hash": "3e831c4b555280a3de7c28b8b917247d"
+    "mtime": 1778456805.7609847,
+    "hash": "494fb2b25379f4e165520f60f97de4b4"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/text-summarizer/page.tsx": {
-    "mtime": 1778274949.7120898,
-    "hash": "c62f498cedd9964b4ecfe4ad87c1071e"
+    "mtime": 1779477289.5843062,
+    "hash": "0399225ffb3c578b4155a1385426e2cc"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/qr-code-generator/layout.tsx": {
-    "mtime": 1778006266.4612436,
-    "hash": "a653cf73b867d0587153bcdc547ce912"
+    "mtime": 1778456805.7598662,
+    "hash": "8b5fb56b8b3d5f92c428c1b7c47c20f3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/qr-code-generator/page.tsx": {
-    "mtime": 1778274949.7104743,
-    "hash": "81f965284d5f11a2e828eb5135459607"
+    "mtime": 1779477289.5917041,
+    "hash": "d69c58199fa43226f0f99364ddb89aca"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/gta-6-edition-comparison/layout.tsx": {
+    "mtime": 1785404020.539167,
+    "hash": "0388786066b65879220eec858008a64e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/gta-6-edition-comparison/page.tsx": {
+    "mtime": 1785413915.0019283,
+    "hash": "0e7f27865665844eb6af88704fee6b1b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/uuid-generator/layout.tsx": {
-    "mtime": 1776951458.170879,
-    "hash": "09d7aa445d16a1244bc6ba2ed7d4b2b9"
+    "mtime": 1778456805.7620392,
+    "hash": "3e60cebad0c7f19aa165924fdee6e4c4"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/uuid-generator/page.tsx": {
-    "mtime": 1778274949.7135801,
-    "hash": "4b73e45504606306667d2b61c0814aac"
+    "mtime": 1779477289.598901,
+    "hash": "fa5b36bdca599bf7e80b3846ad926be5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/gta-6-cost-calculator/layout.tsx": {
+    "mtime": 1785364876.8478675,
+    "hash": "14e9c0731b148999fe0874d78832041f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/gta-6-cost-calculator/page.tsx": {
+    "mtime": 1785365307.8971477,
+    "hash": "048dca7115b11ef02c2995efddb89d60"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/category/[category]/layout.tsx": {
-    "mtime": 1778283810.4307847,
-    "hash": "228b6826552ed7d5179d5741c73c181a"
+    "mtime": 1778456805.7486577,
+    "hash": "cc0998069e40a4dea3faf4674f7ba6d4"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/category/[category]/page.tsx": {
-    "mtime": 1778278068.370132,
-    "hash": "4a6a1c5d897f495deca12cdd1a19f290"
+    "mtime": 1778614700.6179645,
+    "hash": "8891ec747e266dad8e6197c1695b45b5"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/category/[category]/category-content.tsx": {
     "mtime": 1777809673.8497763,
     "hash": "dbc1c03a5811b260afbcdc97cddc747a"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/pdf-generator/layout.tsx": {
-    "mtime": 1778006254.4819617,
-    "hash": "16da8f1f4ac90c2c4d254dbaecb3338f"
+    "mtime": 1778456805.7592878,
+    "hash": "9d3dff574d20f6ec36eb2d3934c9a7a9"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/pdf-generator/page.tsx": {
-    "mtime": 1778274949.7098162,
-    "hash": "805fe13f68a7ee93af0c86aa44f26c14"
+    "mtime": 1779477289.606885,
+    "hash": "4bdd52b39887341cf0810c4b2cd02f18"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/age-calculator/layout.tsx": {
-    "mtime": 1777998974.850324,
-    "hash": "6428b59e897ff6881869b4968371c156"
+    "mtime": 1778456805.7449222,
+    "hash": "32747e14665af8fd3ba9a1c7dde91886"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/age-calculator/page.tsx": {
-    "mtime": 1778274949.6938946,
-    "hash": "1cba61402d17fa4e247daf51b054ee5e"
+    "mtime": 1779477289.6139796,
+    "hash": "1eac154c383cbb90cacc9858b67e015a"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/meta-description-generator/layout.tsx": {
-    "mtime": 1778002766.207189,
-    "hash": "50256568b54c12733ff64ddda7065fb3"
+    "mtime": 1778456805.7544496,
+    "hash": "dc8317c334c295ae1776898f6a1dbeca"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/meta-description-generator/page.tsx": {
-    "mtime": 1778274949.7062604,
-    "hash": "ec3571ea4f93bc5d9fd637df75c7e6a7"
+    "mtime": 1779662444.9301572,
+    "hash": "cd9725ee5050c1fea4775208a7da2dd3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/case-converter/layout.tsx": {
-    "mtime": 1777999022.324435,
-    "hash": "6ba9909a22d0e6bae1af30c825a3361e"
+    "mtime": 1778456805.7480876,
+    "hash": "a717bc6d8d98cf59759304997233f02f"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/case-converter/page.tsx": {
-    "mtime": 1778274949.6975567,
-    "hash": "107acc0b83d3b9f82d295963387cc910"
+    "mtime": 1779477289.6298282,
+    "hash": "45434031a6246f29a6acdb2411d80d1e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/panini-sticker-calculator/layout.tsx": {
-    "mtime": 1778006236.1557417,
-    "hash": "66e99cb9aa386e9bf97ba048f8f658ff"
+    "mtime": 1778456805.7569768,
+    "hash": "2cad7208a349fd05ffb817b5378fe3d0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/panini-sticker-calculator/page.tsx": {
-    "mtime": 1778274949.708479,
-    "hash": "ac385fcbc4c93e343f61bf828093b121"
+    "mtime": 1779477289.6409645,
+    "hash": "ee0fcfeb8f697be6126cb4f4f1dff76e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/grammar-checker/layout.tsx": {
-    "mtime": 1778000423.1228971,
-    "hash": "358728562ce00275e8a33e79b16652d6"
+    "mtime": 1778456805.7528226,
+    "hash": "9ff9d0d79b429092bdf46c2670b85dbf"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/grammar-checker/page.tsx": {
-    "mtime": 1778274949.7031136,
-    "hash": "4e862e79e56bcd61e4f4fa871121735b"
+    "mtime": 1779477289.6504612,
+    "hash": "b5484e2f39caffc03b493a8ebc77f12e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-thumbnail-downloader/layout.tsx": {
-    "mtime": 1777025081.2270133,
-    "hash": "faf5fae7598aa0a187e1536408c4da8e"
+    "mtime": 1778456805.766454,
+    "hash": "bff83ec4025812e325a310772669c9e0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-thumbnail-downloader/page.tsx": {
-    "mtime": 1778274949.7173746,
-    "hash": "ff925d684825b85b09ac428f7d302043"
+    "mtime": 1779477289.663641,
+    "hash": "0c37ba5fdc3e55f8dba8e07d49afea87"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/world-cup-team-finder/layout.tsx": {
-    "mtime": 1777365383.57995,
-    "hash": "f6f2c0f6b7b8292a7d61983918f815a1"
+    "mtime": 1778456805.7655766,
+    "hash": "7381a02153ff145f897540bba787b749"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/world-cup-team-finder/page.tsx": {
-    "mtime": 1778274949.7166755,
-    "hash": "b15b99ab747e2668031234ed40e034d9"
+    "mtime": 1779477289.673056,
+    "hash": "9bde3c8345d84f2a6d4b9b40ca32a60d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/paraphrasing-tool/layout.tsx": {
-    "mtime": 1778006242.4028254,
-    "hash": "687e8eeb1510f9927e54e3aeef7716ad"
+    "mtime": 1778456805.758615,
+    "hash": "b5f1c83d1d0db24ade9adc951b2b0f5e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/paraphrasing-tool/page.tsx": {
-    "mtime": 1778274949.7089367,
-    "hash": "14623ab9bee33dc7dae09fc43ec9abb6"
+    "mtime": 1779477289.6802304,
+    "hash": "c1050a0a0d993427d9e010ea4415bae9"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/utm-builder/layout.tsx": {
-    "mtime": 1778280474.824951,
-    "hash": "0828b4f2f2b8fcf4dad0c14b16ea66e9"
+    "mtime": 1779484602.3402586,
+    "hash": "4d52f612a59b4b190e64828cdb7e9d97"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/utm-builder/page.tsx": {
-    "mtime": 1778274949.7132103,
-    "hash": "871e469cb3586f85bad1436067243ff7"
+    "mtime": 1779477289.6894727,
+    "hash": "2414f5038c4857f7f7111fc23528fd7c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/password-breach-checker/layout.tsx": {
+    "mtime": 1779139157.3519402,
+    "hash": "ec5a385ff2e46020e3155ac52d73ceb2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/password-breach-checker/page.tsx": {
+    "mtime": 1779477289.69692,
+    "hash": "aff2ea66ab3b1ad23b43fda211a24603"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/markdown-editor/layout.tsx": {
-    "mtime": 1778002759.855208,
-    "hash": "408a957ac994130ef42ac4cd80903a09"
+    "mtime": 1778456805.7542055,
+    "hash": "0dce0a4a8e662cc41f4a1026dee1a590"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/markdown-editor/page.tsx": {
-    "mtime": 1778274949.7058518,
-    "hash": "83789f7c2affdcfd29e02b28bd12e789"
+    "mtime": 1779477289.7070956,
+    "hash": "d8a9fcfd68fc26049cff326dd0cee4bc"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/lorem-ipsum-generator/layout.tsx": {
-    "mtime": 1778002753.6077113,
-    "hash": "72b5b0f6560e987b8d25b1b74d6e576d"
+    "mtime": 1778456805.7540321,
+    "hash": "19b032a61d35acad3637974a352f0305"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/lorem-ipsum-generator/page.tsx": {
-    "mtime": 1778274949.7055056,
-    "hash": "fb8731071a504cd8a54c2136c12c18fa"
+    "mtime": 1779477289.7144666,
+    "hash": "409b5b6306f4ad21693adc16d23d3363"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/website-down-checker/layout.tsx": {
-    "mtime": 1777993995.3997347,
-    "hash": "966ac689a833c69eaade296376a7a4ce"
+    "mtime": 1778456805.7623782,
+    "hash": "dfffa40f2ab2fcc9e2bd2ef820649c47"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/website-down-checker/page.tsx": {
-    "mtime": 1778274949.7143607,
-    "hash": "9bba808453d9eea82ecaf81cbc2a7240"
+    "mtime": 1779477289.7234619,
+    "hash": "99171fde0c78d94b4872a36e2867193d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/salary-calculator/layout.tsx": {
-    "mtime": 1778006274.6179142,
-    "hash": "79449ea1def900639f76b7733a379406"
+    "mtime": 1779966414.8731194,
+    "hash": "935e2c3b585b384f9330f3fa05246b1b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/salary-calculator/page.tsx": {
-    "mtime": 1778274949.7111137,
-    "hash": "315cd0ad5e017a5182f1f7c16f047103"
+    "mtime": 1779966575.7283711,
+    "hash": "efdefb31e966a17134c38290d57a6f32"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/regex-tester/layout.tsx": {
-    "mtime": 1778006272.6062534,
-    "hash": "4191c776cfcfb1062c0183f6d8540602"
+    "mtime": 1778456805.7602382,
+    "hash": "5a64834150d918a5a379778c2e793091"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/regex-tester/page.tsx": {
-    "mtime": 1778274949.7107964,
-    "hash": "d2f39730e29e0b57334ba7dfeb2cdc29"
+    "mtime": 1779477289.7383616,
+    "hash": "adc3e6a214f1a89b5fdf6b7664531f08"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/invoice-generator/layout.tsx": {
-    "mtime": 1778000433.0535073,
-    "hash": "fa89a095fda1d8cdea9bc59aac66e5e4"
+    "mtime": 1778456805.7531905,
+    "hash": "01d55a55fc62e4368f3a27d5ea71f3da"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/invoice-generator/page.tsx": {
-    "mtime": 1778274949.7038534,
-    "hash": "b3d9ea9d185e76b06f47524bcb56274a"
+    "mtime": 1779477289.7453868,
+    "hash": "66a94d47b038c2fd3a6d62f5bd81138e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/tip-calculator/layout.tsx": {
-    "mtime": 1776503597.4427912,
-    "hash": "37036b5ba9fa9234ec5f1cd8dd0bd0ca"
+    "mtime": 1778456805.761336,
+    "hash": "1f2c388b7df2a2f174c679fb03a7e3a6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/tip-calculator/page.tsx": {
-    "mtime": 1778274949.712504,
-    "hash": "01a4d28799c43036b92e61145a0afa12"
+    "mtime": 1779477289.7548122,
+    "hash": "9da2bbdd896c1414ad3d21f2e30f2b15"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/world-cup-accumulator-calculator/layout.tsx": {
-    "mtime": 1777323024.0124815,
-    "hash": "4f597c8593208f9d5d0c77781f9da889"
+    "mtime": 1778456805.7640705,
+    "hash": "e42b8cc9fd2810ec8da48268a039f69b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/world-cup-accumulator-calculator/page.tsx": {
-    "mtime": 1778274949.7161288,
-    "hash": "81f6f390e06cd51d330be90e3bccb019"
+    "mtime": 1779477289.7672179,
+    "hash": "c11327793a323867245b6caf3abb1688"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/unix-timestamp-converter/layout.tsx": {
-    "mtime": 1778280474.8309245,
-    "hash": "42fb18a73ebc84b925dca5d805531c18"
+    "mtime": 1778456805.7615905,
+    "hash": "4a16f62d4be7cdb3706fe922bba76b61"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/unix-timestamp-converter/page.tsx": {
-    "mtime": 1778274949.712922,
-    "hash": "7f124b76ac81801facd682e3c242aad8"
+    "mtime": 1779477289.777524,
+    "hash": "01e6b88aded20a2a54159a0fc997a522"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/percentage-calculator/layout.tsx": {
-    "mtime": 1778006262.6751585,
-    "hash": "3dc27b6a62c6879b79dcf4d62bb54952"
+    "mtime": 1778456805.7594497,
+    "hash": "6857b6862f2a63beefc6e24092f15792"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/percentage-calculator/page.tsx": {
-    "mtime": 1778274949.7101207,
-    "hash": "eeee51b9bb443b84907a2efd83e7a43d"
+    "mtime": 1779477289.786754,
+    "hash": "4189c1a2379fcb1a0120bd56170e16a2"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/character-counter/layout.tsx": {
-    "mtime": 1777999728.2397897,
-    "hash": "d7845604a55126113ebd8d6a4ad09c88"
+    "mtime": 1778456805.7492118,
+    "hash": "65ece116e54874d43fef888bcf9c07a1"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/character-counter/page.tsx": {
-    "mtime": 1778274949.6981597,
-    "hash": "b70497b960353c9f94a2d6fd53bb9781"
+    "mtime": 1779477289.7947793,
+    "hash": "94663de54f9662465d90c003cdaf2ded"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/card-box-break-calculator/layout.tsx": {
-    "mtime": 1777999006.4924002,
-    "hash": "833e308603c77460e44763bb3f81e9d4"
+    "mtime": 1778456805.7474566,
+    "hash": "accb929f6eb20797fc93cf5f58619ef6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/card-box-break-calculator/page.tsx": {
-    "mtime": 1778274949.6962156,
-    "hash": "69c472a3b9428684e376cb0739951ee9"
+    "mtime": 1779477289.8024995,
+    "hash": "6c3a05617521b854284a938a2cfc4b2a"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/blog-title-generator/layout.tsx": {
-    "mtime": 1777998992.9742289,
-    "hash": "1fc79fba7caf7908ce3a143748d6ce2a"
+    "mtime": 1778456805.7464538,
+    "hash": "7170d5218bd026baaa9acc40f0d02d3f"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/blog-title-generator/page.tsx": {
-    "mtime": 1778274949.6954105,
-    "hash": "0c1c7c7b3a63d877207592e396bbeb1e"
+    "mtime": 1779477289.8115234,
+    "hash": "06220252f37eee3aa610acc3a19501bb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ucl-final-accumulator-2026/layout.tsx": {
+    "mtime": 1780145001.05708,
+    "hash": "b28f46151fe6d34a4450d07fd0cd1b5e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ucl-final-accumulator-2026/page.tsx": {
+    "mtime": 1780145037.0519578,
+    "hash": "55137d8a9f1436c825ccd0a42c8b0bcc"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ssl-checker/layout.tsx": {
-    "mtime": 1776892863.109471,
-    "hash": "457128051333a0247f5cb12589925b73"
+    "mtime": 1778456805.76078,
+    "hash": "6ebd3dde7791e03b68c364478808caa6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ssl-checker/page.tsx": {
-    "mtime": 1778274949.7116914,
-    "hash": "772219c2bda02a37ec7409eac6595ace"
+    "mtime": 1779477289.8206398,
+    "hash": "52e1f9854fc7e4f65ccefd83e341b29e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/css-gradient-generator/layout.tsx": {
-    "mtime": 1777999765.6304965,
-    "hash": "dfd42f6e41eb14ed759d19984ae5447f"
+    "mtime": 1778456805.7513895,
+    "hash": "7279274dac7b43599ca728fb7986c8d1"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/css-gradient-generator/page.tsx": {
-    "mtime": 1778274949.70059,
-    "hash": "2d4d91ed387bdeef8021cd39b93b4475"
+    "mtime": 1779477289.8276596,
+    "hash": "54c5f709ed719e721e346dc9fa5077fb"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/vat-calculator/layout.tsx": {
-    "mtime": 1778280474.8351223,
-    "hash": "952836bfb7cce891ed4e460ae8cf8af3"
+    "mtime": 1778456805.7622094,
+    "hash": "2366986ebc54c9409969e9ec1d1686f0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/vat-calculator/page.tsx": {
-    "mtime": 1778274949.7139463,
-    "hash": "c03f9ffd2b3723c6df38f6377c7b7fd2"
+    "mtime": 1779477289.8353047,
+    "hash": "473be533294f389cecf43e99a211d4c8"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/code-diff-checker/layout.tsx": {
-    "mtime": 1777999734.4917107,
-    "hash": "914f26825461c0a1b68aa52d837af02b"
+    "mtime": 1778456805.7494092,
+    "hash": "edbc8771c5bb85e65f45570b6c11bf47"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/code-diff-checker/page.tsx": {
-    "mtime": 1778274949.6986258,
-    "hash": "534b439ee015ae1b37bac59c1b193870"
+    "mtime": 1779477289.8421113,
+    "hash": "83f49df5af12b17eec9d1250af085ea6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ebay-best-offer-calculator/layout.tsx": {
-    "mtime": 1777999771.1536205,
-    "hash": "8d89fc72b3bbfe716ba0b36925960bc5"
+    "mtime": 1778456805.7515414,
+    "hash": "9422ba114577d5164857223bb28960ca"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ebay-best-offer-calculator/page.tsx": {
-    "mtime": 1778274949.7009778,
-    "hash": "de0481d86faeb4a587c03558a2735c87"
+    "mtime": 1779477289.849678,
+    "hash": "b9e1adf5a21d367b09c2ace1a5387062"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/business-name-generator/layout.tsx": {
-    "mtime": 1777998999.6872122,
-    "hash": "ddd435b3966c732565d7567395819807"
+    "mtime": 1778456805.746668,
+    "hash": "af72e0a1516a61ad3f9cb1b8d43336e6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/business-name-generator/page.tsx": {
-    "mtime": 1778274949.6958177,
-    "hash": "b46a3eba78e7b68284e6f6806771bff0"
+    "mtime": 1779477289.8575459,
+    "hash": "c45c56788f5b86d5313b7857e8bee30a"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-video-downloader/layout.tsx": {
-    "mtime": 1778284528.7486596,
-    "hash": "fcdb4ac464a65916e4863146156d83e5"
+    "mtime": 1778456805.7667174,
+    "hash": "05928b1f0ef5b6e6f536d7c80f1a8163"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-video-downloader/page.tsx": {
-    "mtime": 1778285129.0300636,
-    "hash": "d62c1558a1c6aa46d305cf0657f5d2fc"
+    "mtime": 1779477289.8644352,
+    "hash": "77f30646e5f7296299c5dda697d64bf4"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/compound-interest-calculator/layout.tsx": {
-    "mtime": 1777999752.3076518,
-    "hash": "3319a1dc9eee46fe7f2d1e3b1f48f6f3"
+    "mtime": 1778456805.7508907,
+    "hash": "019688b5e2e7b0702ae5fc30826e2fe3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/compound-interest-calculator/page.tsx": {
-    "mtime": 1778274949.6998496,
-    "hash": "c832e90f176c3290fbec8cd1d10ec0a1"
+    "mtime": 1779477289.8738258,
+    "hash": "39424736d212d77148e8acb3f9b44b7c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/favicon-generator/layout.tsx": {
-    "mtime": 1778000407.728197,
-    "hash": "2bce1ea5509d2e003bfa83cc1f6cd8d4"
+    "mtime": 1778456805.7522767,
+    "hash": "45019ac9eda0b43d76091bfa643c0c2b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/favicon-generator/page.tsx": {
-    "mtime": 1778274949.7022343,
-    "hash": "40d5dc8ee9aaa1d804a26bab820b7743"
+    "mtime": 1779477289.881339,
+    "hash": "3d9f6ae9a60fc7aa21270f472c561284"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jdesigns-studio/Pricing.tsx": {
+    "mtime": 1783332426.9523566,
+    "hash": "62d016e38d44761ad48d82a147b1cbd7"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jdesigns-studio/savedAds.ts": {
+    "mtime": 1782470689.0748448,
+    "hash": "2741f50bbbe7594cb4ef37f1dfed54e8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jdesigns-studio/layout.tsx": {
+    "mtime": 1783685847.3719287,
+    "hash": "378a1943c4c1ae8d039c766346234891"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jdesigns-studio/page.tsx": {
+    "mtime": 1783805767.124567,
+    "hash": "49dd1023247529bcc1c5f610c8f7df13"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jdesigns-studio/brand-book/page.tsx": {
+    "mtime": 1782559812.5509477,
+    "hash": "6dfdc73e4a7fb0fc404cbc36c37484a2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jdesigns-studio/pricing/page.tsx": {
+    "mtime": 1783685880.0233848,
+    "hash": "a293c0277999a4fe064bd05a8e6bc126"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/mortgage-calculator/layout.tsx": {
-    "mtime": 1778002772.289006,
-    "hash": "e1729a4776cf07dc1aad43136096ddf6"
+    "mtime": 1778456805.7547956,
+    "hash": "5913a2d065fc985eba45f195f64e96b3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/mortgage-calculator/page.tsx": {
-    "mtime": 1778274949.7066789,
-    "hash": "14bb5a0ae2185ec73f6f8dd66283acc9"
+    "mtime": 1779477289.8935199,
+    "hash": "46ba0f2205b8c5f8ea6cd226a423ddfe"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/gta-6-launch-time/layout.tsx": {
+    "mtime": 1785404030.3074577,
+    "hash": "9a56fd9a2f98d235709b6caf19863517"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/gta-6-launch-time/page.tsx": {
+    "mtime": 1785413881.0571818,
+    "hash": "46eb9feef01ce5857e4822685fccc24c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/json-formatter/layout.tsx": {
-    "mtime": 1778000445.313274,
-    "hash": "518610afb0aeaa612ab77122b4158b44"
+    "mtime": 1779484584.1968317,
+    "hash": "f8298679131438a4980f52ed7bbfcfbb"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/json-formatter/page.tsx": {
-    "mtime": 1778274949.704749,
-    "hash": "b4cc3788a5b2c635ccb34bde04f0e3e3"
+    "mtime": 1779477000.2964323,
+    "hash": "15f346d7f641cf8cf716e02a6eb7ca6e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/color-contrast-checker/layout.tsx": {
-    "mtime": 1777999741.875447,
-    "hash": "1e422a8214eb0cdbd04b10cb0bc74f16"
+    "mtime": 1778456805.7502697,
+    "hash": "030a0805fbc6b8169e63300ac4d4a395"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/color-contrast-checker/page.tsx": {
-    "mtime": 1778274949.699015,
-    "hash": "c40052e8fbdc9cf30cbbc3b2b2ae4678"
+    "mtime": 1779477289.9095304,
+    "hash": "6bed2b8ac9dd8c961da0a03cdf9ac47f"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/color-palette-generator/layout.tsx": {
-    "mtime": 1777999746.5872643,
-    "hash": "060744a7cf2b4f74ec415c3c28f6215b"
+    "mtime": 1778456805.7506127,
+    "hash": "862f1cf39ba29bf7d895d3167f0fc419"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/color-palette-generator/page.tsx": {
-    "mtime": 1778274949.6994615,
-    "hash": "636db4a3e8994c8d9ac8683d1eda1dfc"
+    "mtime": 1779477289.9176648,
+    "hash": "fccab3bf96a67c8a7b61cf479d3244b1"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/online-stopwatch/layout.tsx": {
-    "mtime": 1778002778.6708667,
-    "hash": "22858d33a8ff9775cfcf9dd777dda85c"
+    "mtime": 1778456805.7562273,
+    "hash": "649f2d889b934aa783d4a90869c13724"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/online-stopwatch/page.tsx": {
-    "mtime": 1778274949.707102,
-    "hash": "8fb6948a47b65a473b7267d59037f5da"
+    "mtime": 1779477289.9261363,
+    "hash": "e4a06ef9c8e326158629341b2d59d089"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/cover-letter-generator/layout.tsx": {
-    "mtime": 1777999758.5653603,
-    "hash": "771c89d5f7a2c5bd66c11f0e9f2d4831"
+    "mtime": 1779361284.86531,
+    "hash": "95a0463d64e5f983ccc70bd87e6620bc"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/cover-letter-generator/page.tsx": {
-    "mtime": 1778274949.7002428,
-    "hash": "a7b8cda5a55d29c10be9cde85a04a032"
+    "mtime": 1779477289.9341874,
+    "hash": "d5d809325f479a89edd057183aea54f4"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jwt-decoder/layout.tsx": {
-    "mtime": 1778000447.3476005,
-    "hash": "c5651aeb5044352197c8bc878460b835"
+    "mtime": 1778456805.7537847,
+    "hash": "381050a82f83950fc05b6381c15da8e9"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/jwt-decoder/page.tsx": {
-    "mtime": 1778274949.7051198,
-    "hash": "f558eff3594959d7cd7f8bdf452d1815"
+    "mtime": 1779477289.941975,
+    "hash": "2e35b326f34a7088c656126e81485e8b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-tag-generator/layout.tsx": {
-    "mtime": 1778280474.8446226,
-    "hash": "61a0a4c3949eba2dd9a64cd088361767"
+    "mtime": 1778456805.7662811,
+    "hash": "ccd444d6c3d1f257989dedf09c5e11ef"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-tag-generator/page.tsx": {
-    "mtime": 1778274949.717041,
-    "hash": "27b399454c2f0afce809a99e96767525"
+    "mtime": 1779477289.949165,
+    "hash": "9603a359a30b82a69782fa41fd586875"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/email-subject-line-tester/layout.tsx": {
-    "mtime": 1778000401.077481,
-    "hash": "0d9283e0641db9aea010abbb5302c540"
+    "mtime": 1778456805.752038,
+    "hash": "a2748c530104e049b72c1e518a599d44"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/email-subject-line-tester/page.tsx": {
-    "mtime": 1778274949.701886,
-    "hash": "afdb87072d2c24a68771afdebec5cb65"
+    "mtime": 1779477289.9569077,
+    "hash": "ca2416145b240127d5430f2da0b34b58"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/whatnot-seller-fee-calculator/layout.tsx": {
-    "mtime": 1777995797.9785116,
-    "hash": "e430e57296c813e1e9c81ab36ca563d6"
+    "mtime": 1778456805.7625656,
+    "hash": "c1650a2745f03756ac416f4b5554e9d9"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/whatnot-seller-fee-calculator/page.tsx": {
-    "mtime": 1778280257.741417,
-    "hash": "c740d7f83706c553a172c61b9924d869"
+    "mtime": 1779477289.9640694,
+    "hash": "cb12810a0605ce9cd1625aba425bd05d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/email-signature-generator/layout.tsx": {
-    "mtime": 1777999773.1711097,
-    "hash": "1942b3429846e44aabf6e7da13ff49c4"
+    "mtime": 1778456805.7518327,
+    "hash": "eda529dcebbc8c3dc947e611e1d646e3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/email-signature-generator/page.tsx": {
-    "mtime": 1778274949.7013373,
-    "hash": "c5410fb9dfe8b2f5f014e98910a5c22a"
+    "mtime": 1779477289.9728115,
+    "hash": "beee725b03df927579f6089a0951a7b6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/base64-encoder-decoder/layout.tsx": {
-    "mtime": 1777998987.2393897,
-    "hash": "5a0e592108a9ba650ca174a7c17e95d8"
+    "mtime": 1778456805.7461638,
+    "hash": "491276721b94306160ee3bca2d381371"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/base64-encoder-decoder/page.tsx": {
-    "mtime": 1778274949.6948729,
-    "hash": "26317f6d457eceb21e620f9a16a26663"
+    "mtime": 1779477289.9806771,
+    "hash": "fcffb8dcb1d40b706bdfa4132b098a7c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ai-prompt-generator/layout.tsx": {
-    "mtime": 1777998981.095037,
-    "hash": "88a0faef390998d53099456071ed9264"
+    "mtime": 1778456805.7452445,
+    "hash": "0bb61396cb650f4807d0e03fe453cb22"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ai-prompt-generator/page.tsx": {
-    "mtime": 1778274949.6943583,
-    "hash": "d77940fa4e4d714fbc8ad87094d4c329"
+    "mtime": 1779477289.9928093,
+    "hash": "81c6734ee9893afaf9a91a0b2eaaca42"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/grading-company-comparison/layout.tsx": {
-    "mtime": 1778000414.002556,
-    "hash": "e314b61259e93766a9078688a429c892"
+    "mtime": 1778456805.752538,
+    "hash": "4e5db7dc5ac42f1cf8202b2fd663c34b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/grading-company-comparison/page.tsx": {
-    "mtime": 1778274949.702748,
-    "hash": "1d6a3b06f607e59daf9d16b4281aac42"
+    "mtime": 1779477290.0009596,
+    "hash": "b13dc7e2f81cd63813c891b296b34575"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/hashtag-generator/layout.tsx": {
-    "mtime": 1778000426.3908565,
-    "hash": "7d67cbfb7b1fa08e82499812b75f4958"
+    "mtime": 1778456805.753033,
+    "hash": "243f5863991dcf27a7c3ec3ec2be6ba3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/hashtag-generator/page.tsx": {
-    "mtime": 1778264633.817762,
-    "hash": "77e857260a9b4932aec88760741b7026"
+    "mtime": 1779477290.0093212,
+    "hash": "a8bf0455656f559e688938672b72d045"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/credit-card-rewards-optimizer/layout.tsx": {
+    "mtime": 1779143686.9580004,
+    "hash": "deb1e6b431b15f8e14542d7312c81d87"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/credit-card-rewards-optimizer/page.tsx": {
+    "mtime": 1779477290.0181525,
+    "hash": "b2fc00c6b785855e4a38c5210e518224"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/password-generator/layout.tsx": {
-    "mtime": 1778006248.2374134,
-    "hash": "592bac4c36b5f4c6c727f4b6c872e350"
+    "mtime": 1778456805.758951,
+    "hash": "9d83da7840d7288ff579b074ff587b5d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/password-generator/page.tsx": {
-    "mtime": 1778274949.7093923,
-    "hash": "833cda96350af77c60479e1386ad0e68"
+    "mtime": 1779477290.0266805,
+    "hash": "ab5ab734cbd5a6702d644d0bba06e9ba"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/pokemon-tcg-pocket-pull-calculator/layout.tsx": {
+    "mtime": 1779789296.2815945,
+    "hash": "ddbcc2e5f889c106902fa09b9d6232df"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/pokemon-tcg-pocket-pull-calculator/page.tsx": {
+    "mtime": 1779804556.205991,
+    "hash": "acafc567710ed4cd7a8db4a102fa5f32"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/sql-formatter/[[...dialect]]/layout.tsx": {
-    "mtime": 1776506950.022177,
-    "hash": "e0c1ae79a0d59540b4acf9f533ceb0ea"
+    "mtime": 1778456805.7605844,
+    "hash": "55e67d07ec893074fa7c8f964af6991b"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/sql-formatter/[[...dialect]]/page.tsx": {
-    "mtime": 1778274949.7113397,
-    "hash": "6bc909c7a252b84fd5c252e669a22e4c"
+    "mtime": 1779477290.073315,
+    "hash": "3aa659c65689281d8a7d652105aeac21"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/word-counter/layout.tsx": {
-    "mtime": 1778280474.8514428,
-    "hash": "b1d9e4d3c914aad28c2afbd184e6554c"
+    "mtime": 1779484591.5682743,
+    "hash": "2e266e8c63af1444dcf5f4872e7565d0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/word-counter/page.tsx": {
-    "mtime": 1778274949.7156568,
-    "hash": "81ef0ab538daea32becd4b0886e84caf"
+    "mtime": 1779477290.0385392,
+    "hash": "3590097065fc65fc24ad5d871242a6cb"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ip-address-lookup/layout.tsx": {
-    "mtime": 1778000438.8920188,
-    "hash": "0ac00f25ddf890356ad9ae38da54dd66"
+    "mtime": 1778456805.7534325,
+    "hash": "603458554bc262bf0dcc93f9e3330232"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/ip-address-lookup/page.tsx": {
-    "mtime": 1778274949.7043552,
-    "hash": "f5c13a607626504b4af7f36726c7890a"
+    "mtime": 1779477290.0465512,
+    "hash": "5ed677656c254b5dca90cfd3f8823cd5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-transcript/layout.tsx": {
+    "mtime": 1778442103.3149905,
+    "hash": "7fba458e9e3148da51ab1b2be48fafbb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/tools/youtube-transcript/page.tsx": {
+    "mtime": 1779477290.0570743,
+    "hash": "fac4bea91c0191398e9164623bc23d88"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/mindwire/videos.ts": {
+    "mtime": 1785181610.6394362,
+    "hash": "48b4502fbf3a1128362c29a856a9d20f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/mindwire/layout.tsx": {
+    "mtime": 1784065741.3609922,
+    "hash": "c3375a231fa6f7952ddb35103ba4e90f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/mindwire/page.tsx": {
+    "mtime": 1784243483.058249,
+    "hash": "fda6e59111901b43bcd7f98f87a9cc6d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/mindwire/[slug]/page.tsx": {
+    "mtime": 1784062595.1223562,
+    "hash": "0c1df145d01d2cf96cec02a4c8c8a936"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/privacy/page.tsx": {
-    "mtime": 1776618561.1533854,
-    "hash": "364902ed69bb4927553f8657a69e3046"
+    "mtime": 1783455045.2069046,
+    "hash": "fe394a10209743e26e1e7ff01751aa31"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/10015-alternative/page.tsx": {
+    "mtime": 1780477067.7229834,
+    "hash": "4411a9bf08807f8fae0bc46b8e0cf3e6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/disclaimer/page.tsx": {
+    "mtime": 1780477154.8240502,
+    "hash": "bde491b9369ecf2759195344b988dfec"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/freeformatter-alternative/page.tsx": {
+    "mtime": 1780477067.7250953,
+    "hash": "8bd1716e6c682aaad383b69e3f4f06e6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/codebeautify-alternative/page.tsx": {
+    "mtime": 1780477067.7246878,
+    "hash": "f363c82bb0661b97811d467d5235c18e"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/terms/page.tsx": {
-    "mtime": 1776158337.4724605,
-    "hash": "0273578659efa9f2a809795b9c70bf17"
+    "mtime": 1779545750.9647658,
+    "hash": "3e2d47f5437641fc069de9e0f987dfd1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/free-ads/CTA.tsx": {
+    "mtime": 1783930919.8967621,
+    "hash": "2cc6e5d01047aab6df21159c8df56d14"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/free-ads/page.tsx": {
+    "mtime": 1783930957.5196092,
+    "hash": "890ed7d6470fec80d0e837084bb5aebb"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/about/page.tsx": {
-    "mtime": 1776618562.173587,
-    "hash": "efcaf3edda2d3a3626fc0bacd081c7f9"
+    "mtime": 1779532154.8029046,
+    "hash": "fa4e4d22b577bf32e2fd03a0016e4dbd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/about/justin/page.tsx": {
+    "mtime": 1783723191.4057028,
+    "hash": "f6bec430998bda1d1b92d4d1e64b4e82"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/layout.tsx": {
+    "mtime": 1784802399.0580633,
+    "hash": "d9a20676144e2d5593bdea5c277aa249"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/page.tsx": {
-    "mtime": 1778336044.423495,
-    "hash": "ac4970afdac49b91447df9873cb0642c"
+    "mtime": 1784809099.8145072,
+    "hash": "817403e4dde62d5aeb020eea371f84b8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/complete-guide-to-free-seo-tools/layout.tsx": {
+    "mtime": 1778360216.914162,
+    "hash": "92fa35dd2cadf062414b343ac88488b2"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/complete-guide-to-free-seo-tools/page.tsx": {
-    "mtime": 1778280482.3956144,
-    "hash": "43c85536bc29bcf6f594a02a5899a3f5"
+    "mtime": 1779285707.4924371,
+    "hash": "fa0cfe378f91193df068defccfa895b7"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-a-uuid/layout.tsx": {
+    "mtime": 1778362771.9470365,
+    "hash": "1a05101643c57ea43e8644b440d36e52"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-a-uuid/page.tsx": {
+    "mtime": 1779285707.4933932,
+    "hash": "3e0991057a53ee7f9c79b8d8d2673011"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/free-youtube-transcript-extractor-no-signup-no-limits/layout.tsx": {
+    "mtime": 1780435874.7670708,
+    "hash": "658b8d491eeb75dc38ad9a8903aae608"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/free-youtube-transcript-extractor-no-signup-no-limits/page.tsx": {
+    "mtime": 1780436001.0122828,
+    "hash": "e47996463a70be2151af32cb88aa8ffc"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-use-ip-address-lookup/layout.tsx": {
+    "mtime": 1779449945.3161213,
+    "hash": "5728a93f0f4c863891cab1d7ff9130a6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-use-ip-address-lookup/page.tsx": {
+    "mtime": 1779451039.171821,
+    "hash": "b4d253cb031493a86336e58923016423"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/best-ai-tools-for-optimizing-product-visibility/layout.tsx": {
+    "mtime": 1778360216.9139123,
+    "hash": "e64b20bed4a86cca1cc27b8d1fad4212"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/best-ai-tools-for-optimizing-product-visibility/page.tsx": {
-    "mtime": 1778280482.3959475,
-    "hash": "369a4808e5d7ea49d6a5e99dea0e807a"
+    "mtime": 1779285707.4955413,
+    "hash": "94a0e081c0e771910ca5cea9c913c1c4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-alternatives/SidebarToc.tsx": {
+    "mtime": 1779903805.8711853,
+    "hash": "610b3556301ae42d9cff726e6d9fd893"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-alternatives/layout.tsx": {
+    "mtime": 1779902134.8175557,
+    "hash": "f6fe88dd5b24ff29521bf6316421e30c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-alternatives/page.tsx": {
+    "mtime": 1779904758.962801,
+    "hash": "93db2c0c7c17699c90b0537be378c0ab"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/mortgage-calculator-guide/page.tsx": {
+    "mtime": 1784833996.9907043,
+    "hash": "0fcec9f2b0be4a415633f4fd3ddc485b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-my-ip-address/layout.tsx": {
+    "mtime": 1778360216.9186113,
+    "hash": "de3e02a57705b5d0846f4bb5b39d2443"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-my-ip-address/page.tsx": {
-    "mtime": 1778280482.3961935,
-    "hash": "fe16d253307d790f18c283d742c5053d"
+    "mtime": 1779285707.496512,
+    "hash": "a83a08e5cba5abdf41099a36b490d123"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/ai-prompt-generator-guide/layout.tsx": {
+    "mtime": 1778748469.7885447,
+    "hash": "dee91aa3eaa57f9b9e896d9708ec680e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/ai-prompt-generator-guide/page.tsx": {
+    "mtime": 1779965954.349749,
+    "hash": "9e9ee753ad407f9bdf316e71974f508b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/ssl-certificate-checker-guide/layout.tsx": {
+    "mtime": 1778360216.9166646,
+    "hash": "cb5ac7db53d959880fab3c07a5bde73d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/ssl-certificate-checker-guide/page.tsx": {
-    "mtime": 1778280482.3964212,
-    "hash": "55c56b163e37d530e7f2a649880e2ead"
+    "mtime": 1779965954.349385,
+    "hash": "47801379a8402a91057a629ec41b8b16"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-generate-qr-code-wifi/layout.tsx": {
+    "mtime": 1778360216.9150226,
+    "hash": "0c35418b649009f569becb44e6a73157"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-generate-qr-code-wifi/page.tsx": {
-    "mtime": 1778280474.8577545,
-    "hash": "5fb68731fc0d23b09d900b5c6ee8ef78"
+    "mtime": 1779965954.3492782,
+    "hash": "017c4af71c558a7c2039c9175845b97d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/aweber-vs-beehiiv/page.tsx": {
+    "mtime": 1780140144.892646,
+    "hash": "f54b4d13330de05d738786778eed2ae0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/understanding-case-sensitivity/layout.tsx": {
+    "mtime": 1778360216.9169416,
+    "hash": "1ce60d0f9ee3a508599f2bcf9216740c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/understanding-case-sensitivity/page.tsx": {
-    "mtime": 1778280482.3967865,
-    "hash": "bd83b5ae00956f2ce4eb8018c5bf7934"
+    "mtime": 1779285707.5009823,
+    "hash": "e1b8da4266ebcfe8826062a8a355507f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-review/SidebarToc.tsx": {
+    "mtime": 1779832079.1683555,
+    "hash": "a9a743d508182ecb44d097ed717aeee6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-review/layout.tsx": {
+    "mtime": 1779830837.2718925,
+    "hash": "59b03afc660601034c40ae89f6d42f6d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-review/PlanFinder.tsx": {
+    "mtime": 1779832090.3149984,
+    "hash": "fc98973a30fd25e2de0431aa0fc9fd78"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/opus-clip-review/page.tsx": {
+    "mtime": 1779896924.6163127,
+    "hash": "d420bf0f4d33043ad93eed4fa5e852db"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/why-every-ai-tool-has-a-paywall-problem/layout.tsx": {
+    "mtime": 1778748471.9561238,
+    "hash": "dd4661ecf4024c3435f2f47c42e4d5ee"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/why-every-ai-tool-has-a-paywall-problem/page.tsx": {
-    "mtime": 1778335940.108822,
-    "hash": "3d6cd3964298933390920aaf6748812c"
+    "mtime": 1779285707.5021763,
+    "hash": "aaeccbc6904b64a3f01bb5c1aea331a7"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/word-count-checker-guide/layout.tsx": {
+    "mtime": 1778748470.8822618,
+    "hash": "ecc2df2eed95079ded6ac71b44dc8a10"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/word-count-checker-guide/page.tsx": {
+    "mtime": 1779965954.3490827,
+    "hash": "3689e5c15235fa4da2af50e0f0d708f4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/rankspot-review/SidebarToc.tsx": {
+    "mtime": 1778966369.429471,
+    "hash": "6f32a5490b1023e5d416b45220045fb2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/rankspot-review/layout.tsx": {
+    "mtime": 1778966673.0266092,
+    "hash": "05a4b1fa20b0f55b391d343d818a2004"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/rankspot-review/PlanFinder.tsx": {
+    "mtime": 1778966390.6145637,
+    "hash": "43d6822e53db480c8dd32fb266516b41"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/rankspot-review/page.tsx": {
+    "mtime": 1779351564.054004,
+    "hash": "995bad129973ecc0eb9a69ba810681d6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/salary-after-tax-uk-us-2025/layout.tsx": {
+    "mtime": 1779963636.9144197,
+    "hash": "dae24097d8e89ce1589104c7bc0bd2d2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/salary-after-tax-uk-us-2025/page.tsx": {
+    "mtime": 1779964194.9749496,
+    "hash": "a66b8ff2ce7e8069bcd51504d79b3776"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-a-compound-interest-calculator-works-plain-english/page.tsx": {
+    "mtime": 1783362518.731193,
+    "hash": "be01a8c1ab1d450cfb8767c7339c6269"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/essential-free-developer-tools/layout.tsx": {
+    "mtime": 1778360216.9145231,
+    "hash": "5abc28b2a0791eb569129fa761c363cf"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/essential-free-developer-tools/page.tsx": {
-    "mtime": 1778280482.3971446,
-    "hash": "88929f899f8be07ed01bf48df224c391"
+    "mtime": 1779285707.507642,
+    "hash": "0895ce3f8b151f8db5d8d60f86f9f77a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/email-subject-line-tester-guide/layout.tsx": {
+    "mtime": 1778748467.6096685,
+    "hash": "c04cc425bcf8c291b6703af25e2aab04"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/email-subject-line-tester-guide/page.tsx": {
+    "mtime": 1779965954.3489623,
+    "hash": "2755e23f131c71d48be20c0ec853929a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/website-down-checker/layout.tsx": {
+    "mtime": 1779276851.5864239,
+    "hash": "935b6a19c73351fba0783239d75d774f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/website-down-checker/page.tsx": {
+    "mtime": 1779965954.3481233,
+    "hash": "53b22472241dfbdd9d1cff5207ccd990"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/perfect-meta-description-anatomy/layout.tsx": {
+    "mtime": 1778360216.9162173,
+    "hash": "d8d2da200711ac3a569f00ad901a65a6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/perfect-meta-description-anatomy/page.tsx": {
-    "mtime": 1778280482.397416,
-    "hash": "3e0c8dfb99a0b91738257122683fd5fb"
+    "mtime": 1779285707.5130873,
+    "hash": "70661ca10d5dfbe8d2f3c3f32cb11e44"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-are-utm-parameters/layout.tsx": {
+    "mtime": 1778360216.9173605,
+    "hash": "70766da12f366c68d7cf4eb6afe4c096"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-are-utm-parameters/page.tsx": {
-    "mtime": 1778286848.0241065,
-    "hash": "6a824c06db31531ccfd9f8aeac96f484"
+    "mtime": 1779965954.3498588,
+    "hash": "88322f69a54d17478ed5ab1a44f4173c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/json-formatting-guide-for-developers/layout.tsx": {
+    "mtime": 1778360216.9159176,
+    "hash": "c2517246376b0cb6923d88617e60c59d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/json-formatting-guide-for-developers/page.tsx": {
-    "mtime": 1778286848.0247386,
-    "hash": "59b69abec590bc34d0260ad3d37a3927"
+    "mtime": 1779285707.5148447,
+    "hash": "d827f3fe9150a65682894e580f587f23"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/utm-builder-guide/UtmlPlanRecommender.tsx": {
+    "mtime": 1779194574.269738,
+    "hash": "363a63be036b729b63375373b670ff23"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/utm-builder-guide/layout.tsx": {
+    "mtime": 1779193832.7860727,
+    "hash": "2ca41f9a6e0fc197c45a123f5d377702"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/utm-builder-guide/page.tsx": {
+    "mtime": 1779285707.5171595,
+    "hash": "adaf5cb2ab6c3cec418011cd0bf3b497"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/postiz-review/layout.tsx": {
+    "mtime": 1778942525.9152255,
+    "hash": "dbf8ed8dd1f1739a77dd562e09a91a49"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/postiz-review/page.tsx": {
+    "mtime": 1779285707.5200777,
+    "hash": "8e438e3e11517e23569ae6e51d4b5a4d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-write-cold-email-subject-lines/layout.tsx": {
+    "mtime": 1778360216.9153702,
+    "hash": "3f03f719e2a6fe1681df4d1a8fe9bbc0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-write-cold-email-subject-lines/page.tsx": {
-    "mtime": 1778286707.6371288,
-    "hash": "864d6de77022cc989b5190258cb3d5f1"
+    "mtime": 1779285707.5231316,
+    "hash": "2085952c7ff59f63e90c3af2df43a7f4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-a-jwt-token/layout.tsx": {
+    "mtime": 1778360216.918019,
+    "hash": "008eb929e2dc9ab998f1c83137ac5a7c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-a-jwt-token/page.tsx": {
-    "mtime": 1778280474.8616893,
-    "hash": "a43ea799187f90b5276d96c9b90d7a7d"
+    "mtime": 1779285707.5240533,
+    "hash": "dfbb219c6043ac29ae0a8b48b7a761b7"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/cover-letter-generator-guide/layout.tsx": {
+    "mtime": 1779358301.3022518,
+    "hash": "8cdb50b146c422284db771c48e400d13"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/cover-letter-generator-guide/page.tsx": {
+    "mtime": 1779362029.9709914,
+    "hash": "57cbea6624d7b37722d66be6079c6979"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/regex-cheat-sheet-beginners/layout.tsx": {
+    "mtime": 1778360216.91639,
+    "hash": "fe1599146bfc892886d186986fcfc350"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/regex-cheat-sheet-beginners/page.tsx": {
-    "mtime": 1778280482.3983994,
-    "hash": "212244a53eddaa18b199ec7acdf9ec20"
+    "mtime": 1779285707.5253363,
+    "hash": "2e739b33cecfd628fd707231c0b08a2a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-tailor-cover-letter-to-job-description/layout.tsx": {
+    "mtime": 1779400716.032935,
+    "hash": "e8261bf6f0eff5a409e4e48d288ec0fd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-tailor-cover-letter-to-job-description/page.tsx": {
+    "mtime": 1779441843.4910848,
+    "hash": "c7743dd12cd68e1a2350c56a2c7cbc75"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/aweber-review/SidebarToc.tsx": {
+    "mtime": 1779020264.1794987,
+    "hash": "96854226452f2d42006eac434b7792d8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/aweber-review/layout.tsx": {
+    "mtime": 1779024453.7790346,
+    "hash": "8f52b56433e9cdd6bc33036d8551c2d8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/aweber-review/page.tsx": {
+    "mtime": 1779967736.819141,
+    "hash": "c665dcb1c3e8e123fcd0d666bac975ff"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/aweber-review/PlanRecommender.tsx": {
+    "mtime": 1779020285.2403977,
+    "hash": "f9e66de7d1a12086fdb2b1e06b8599b1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/best-free-online-tools-2026/layout.tsx": {
+    "mtime": 1778834965.2916863,
+    "hash": "93d099cae1682a5e9e5c27076a5f3d5c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/best-free-online-tools-2026/page.tsx": {
+    "mtime": 1779285707.5307493,
+    "hash": "546cbbaa6e0d4e548252e0e52d204a7a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/pokemon-tcg-pocket-pull-rates/layout.tsx": {
+    "mtime": 1779800775.8828108,
+    "hash": "c01d1f4f0338abda6a11735ae07e4d36"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/pokemon-tcg-pocket-pull-rates/page.tsx": {
+    "mtime": 1779801940.1674945,
+    "hash": "ece3859703589c65cdfade40f409a9b9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-improve-developer-productivity/layout.tsx": {
+    "mtime": 1778362771.9431608,
+    "hash": "6634d664e9714b9e8e0cf51543775c17"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-improve-developer-productivity/page.tsx": {
+    "mtime": 1779285707.5323265,
+    "hash": "7f8299c93b68557469c6341336855797"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/blog-title-generator/layout.tsx": {
+    "mtime": 1778842218.4865403,
+    "hash": "594a18f1467011dde423aaa8b908bab1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/blog-title-generator/page.tsx": {
+    "mtime": 1779965954.3496132,
+    "hash": "8ea0aea93330eb1dfc964536a0401610"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/ai-writing-tools-ultimate-guide/layout.tsx": {
+    "mtime": 1778360216.9136329,
+    "hash": "fa2a35c51e698e8286af28982f27def6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/ai-writing-tools-ultimate-guide/page.tsx": {
-    "mtime": 1778280482.398582,
-    "hash": "ea41e83dd2693fb37821af159303eb8f"
+    "mtime": 1779285707.5348597,
+    "hash": "9969fb03ef0311012df0bc1666432055"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/google-ai-search-redesign-2026/layout.tsx": {
+    "mtime": 1779555665.8698115,
+    "hash": "a954c13ec2b0b20c404af65bf97a4511"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/google-ai-search-redesign-2026/page.tsx": {
+    "mtime": 1779737318.8793967,
+    "hash": "dc26eb64748b4b0e9519434b03594caa"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/mastering-json-visual-guide/layout.tsx": {
+    "mtime": 1778360216.9160652,
+    "hash": "17e912ed3cedf31d7d40e3dbe9c4654c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/mastering-json-visual-guide/page.tsx": {
-    "mtime": 1778280482.3987396,
-    "hash": "b9d09680a4bbafba9cf38d6d9995a72f"
+    "mtime": 1779285707.535136,
+    "hash": "a100eea45b1aa92fcb4ebe316b0f3aed"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-create-pdf-free/layout.tsx": {
+    "mtime": 1778360216.9147499,
+    "hash": "17eb7f9cc690415968f3cd3fb352e5da"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-create-pdf-free/page.tsx": {
-    "mtime": 1778280482.3988886,
-    "hash": "f024104b921fc0917bc2180d921b8324"
+    "mtime": 1779965954.3491757,
+    "hash": "f01820add3cffc628978ba5fa5fbb3b8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-rank-in-google-ai-overviews-2026/layout.tsx": {
+    "mtime": 1779658029.1666863,
+    "hash": "30f1fb497a6dfc708a1d52a3d205df94"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/how-to-rank-in-google-ai-overviews-2026/page.tsx": {
+    "mtime": 1779664445.1620288,
+    "hash": "e53a06233ce9c8f1da9d7b5e4b734232"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/hashtag-generator-guide/layout.tsx": {
+    "mtime": 1778757736.7733157,
+    "hash": "d90b228cfcf44358589fd7c5bb91fc05"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/hashtag-generator-guide/page.tsx": {
+    "mtime": 1779965968.9904468,
+    "hash": "abd3a38cd501da3b7e71a9aaaf29ef39"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/vat-calculator-guide/page.tsx": {
+    "mtime": 1784833806.4572763,
+    "hash": "0d8c6a0da3eb27129c7b219e84c89e3f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/genspark-for-word-review/SidebarToc.tsx": {
+    "mtime": 1778964035.7472034,
+    "hash": "1580ddbf352870da96ada7944cd6e887"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/genspark-for-word-review/layout.tsx": {
+    "mtime": 1778973651.678705,
+    "hash": "c9735b9f44222c62ae22d0e22f422d8b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/genspark-for-word-review/page.tsx": {
+    "mtime": 1779351573.5420115,
+    "hash": "57bfde36955b789cf1c7b6524fd11c44"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/genspark-for-word-review/PlanRecommender.tsx": {
+    "mtime": 1778961262.8198287,
+    "hash": "e550b749eb8c1a05ee7da58efe9578a9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/is-it-down-or-just-me/layout.tsx": {
+    "mtime": 1778360216.9155967,
+    "hash": "04f1f3e68c47e4f124f7358375ed85e6"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/is-it-down-or-just-me/page.tsx": {
-    "mtime": 1778280474.8642855,
-    "hash": "fb4b65e5274e042f6dc41cea2940a7ce"
+    "mtime": 1779965954.3483734,
+    "hash": "95531f369227fc70d9978f3138fbc9c4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-are-productivity-tools/layout.tsx": {
+    "mtime": 1778360216.9172125,
+    "hash": "fa72c032a75244486ac33c9b46ad8010"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-are-productivity-tools/page.tsx": {
-    "mtime": 1778280482.399281,
-    "hash": "4dcc7a1768f34d4b64569b20dbde3153"
+    "mtime": 1779285707.484997,
+    "hash": "9b2f598b4b059636b76d68a28d99218d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/password-generator-guide/StrengthChecker.tsx": {
+    "mtime": 1779098701.020268,
+    "hash": "bc223fb090378501d7d0f8ed05c8ebf2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/password-generator-guide/SidebarToc.tsx": {
+    "mtime": 1779098718.713237,
+    "hash": "bdf98878bc99e75655196fdc9afd3c76"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/password-generator-guide/layout.tsx": {
+    "mtime": 1779103158.76808,
+    "hash": "84ce315b22e5de7c59ce6de6e92dc3c6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/password-generator-guide/page.tsx": {
+    "mtime": 1779285707.4872663,
+    "hash": "2a9887f3053d24ef1a76a7690d5cc81d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/free-meta-description-generator/layout.tsx": {
+    "mtime": 1778748468.6981966,
+    "hash": "6f649642a05fcb514f4dfcacb8608ca5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/free-meta-description-generator/page.tsx": {
+    "mtime": 1779965954.3487322,
+    "hash": "cef56bf2eb59d5f01caa0900aba026dd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-base64-encoding/layout.tsx": {
+    "mtime": 1778360216.9182413,
+    "hash": "392e25b55d329683e243a9ab315f5a6d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/blog/what-is-base64-encoding/page.tsx": {
-    "mtime": 1778280482.399498,
-    "hash": "361470c9e7c393fb9ed5f4472f915f13"
+    "mtime": 1779285707.4894488,
+    "hash": "ceddc772008462285f6ca12a8750d261"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/smallseotools-alternative/page.tsx": {
+    "mtime": 1780477067.725442,
+    "hash": "1c40071d4feb7e95429eeafb181d035a"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/whois-lookup/route.ts": {
     "mtime": 1776936978.6607714,
@@ -648,8 +1156,8 @@
     "hash": "b3054aac82bfd6926cfbb0b22e1ae1e0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/meta-description-generator/route.ts": {
-    "mtime": 1776158337.4776688,
-    "hash": "81d8c4a50b3e40f6ee123e4104a9b64c"
+    "mtime": 1779662472.2914667,
+    "hash": "2b273189be1a6507745ff64b237267b1"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/grammar-checker/route.ts": {
     "mtime": 1776242264.0056567,
@@ -687,6 +1195,58 @@
     "mtime": 1776158337.4782183,
     "hash": "eb8063913e0b865d098474121524e206"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/_meter.ts": {
+    "mtime": 1783001694.5344896,
+    "hash": "38e9aacbcf47a708f53ec54326ad2b78"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/_whop.ts": {
+    "mtime": 1783002790.7054973,
+    "hash": "0f0772d104894e364a0545e39dea957f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/_paywall.ts": {
+    "mtime": 1783002941.074684,
+    "hash": "5ff53de165bf20ba29e858e12e475119"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/_meter_schema.sql": {
+    "mtime": 1782986321.3918269,
+    "hash": "2962e758cae864e44577e87af200fdb9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/brandbook/route.ts": {
+    "mtime": 1782999610.9227762,
+    "hash": "1a9ee1d4ed49a0cbeb17c14834431607"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/animate/route.ts": {
+    "mtime": 1782999683.6119437,
+    "hash": "87621cc4af80105cb65167e8bdeeaf63"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/proxy/route.ts": {
+    "mtime": 1782484669.2482867,
+    "hash": "8b96916c89ecdd0ef759ccf9be52b333"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/whop/callback/route.ts": {
+    "mtime": 1783002835.275488,
+    "hash": "0a888266b20b77ed219c32ed17713bdb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/whop/login/route.ts": {
+    "mtime": 1783002853.1022675,
+    "hash": "9f4447f2b4541b79928c404b34322bfb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/scan/route.ts": {
+    "mtime": 1783001784.3651893,
+    "hash": "7e2a72a98f1314c5947225aba66498aa"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/image/route.ts": {
+    "mtime": 1782999671.323163,
+    "hash": "8eeb59bf73c583a7ac3eba6ddcffecb0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/concepts/route.ts": {
+    "mtime": 1782999630.126584,
+    "hash": "ded1cc3a11ca591db600252c60bffc1e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/jdesigns-studio/ideas/route.ts": {
+    "mtime": 1782999660.1840098,
+    "hash": "e181a562d95bca46f9941608a6c8a1ce"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/color-palette-generator/route.ts": {
     "mtime": 1776640618.9907904,
     "hash": "7fbb78bfb071ba3098faa843bff5a9ce"
@@ -704,8 +1264,8 @@
     "hash": "a9cc4a403ec6a260eed9eea25e660a56"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/ip-lookup/route.ts": {
-    "mtime": 1776892832.0938857,
-    "hash": "ec0fcc69ac211cf6421c218a6ec3340d"
+    "mtime": 1779455223.6064012,
+    "hash": "de3465650288b9a6dfecb09bc632f5d0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/hashtag-generator/route.ts": {
     "mtime": 1776158337.4796216,
@@ -719,13 +1279,17 @@
     "mtime": 1776520706.1926353,
     "hash": "de61639e1fdafc5891923a3f3250aa3c"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/api/youtube-transcript/route.ts": {
+    "mtime": 1778442093.209814,
+    "hash": "2ff538329985ea02e600542151bf80b0"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/utils/supabase.ts": {
     "mtime": 1776501289.5545158,
     "hash": "a8af13a9ff3669bc85201b3da984b605"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/AdBlock.tsx": {
-    "mtime": 1776367873.9584556,
-    "hash": "a5c95ebb9c0fcd75d1bff63933b73190"
+    "mtime": 1779184480.364734,
+    "hash": "18e2c6e62f082324cfe50b3b4d337058"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/CaseConverterThumbnail.tsx": {
     "mtime": 1777711968.3741481,
@@ -736,8 +1300,8 @@
     "hash": "b2724195de3244382ec1ad220a4d196f"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/Navbar.tsx": {
-    "mtime": 1778284152.7021942,
-    "hash": "b9155481d941bc3ec1b3a151ffde9930"
+    "mtime": 1778862960.3366706,
+    "hash": "940d74c46cd5266edb927de93bac81ce"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/MortgageCalculatorThumbnail.tsx": {
     "mtime": 1777656165.4941356,
@@ -772,8 +1336,8 @@
     "hash": "433068313d63cd3e19caa986ad85ce5d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ToolSearch.tsx": {
-    "mtime": 1778286451.97295,
-    "hash": "a9ac96f3490637ceb95bbaecd042c047"
+    "mtime": 1785405706.2810555,
+    "hash": "7b43b100fc114fed303d4f7662cbb273"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/EmailSubjectThumbnail.tsx": {
     "mtime": 1777707921.4459946,
@@ -792,12 +1356,20 @@
     "hash": "6e5d1f850aa89d7b7a3fe8fe2182705a"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/MoreTools.tsx": {
-    "mtime": 1777365673.6722298,
-    "hash": "7e094970fdf0d270408a62e0aa6a36df"
+    "mtime": 1785405689.8556323,
+    "hash": "270036bfafdbe38691936e6bc70753b8"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/CommandPalette.tsx": {
     "mtime": 1777047837.8855278,
     "hash": "dc6222762e51e56dbdfe5574ff613942"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/JdesignsStudioThumbnail.tsx": {
+    "mtime": 1782393636.6802194,
+    "hash": "e09e1f296a8028970f4f3823c9895a13"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/Gta6LaunchTimeThumbnail.tsx": {
+    "mtime": 1785404110.4967146,
+    "hash": "479405726c32ddc296c7552c1e242286"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ColorContrastThumbnail.tsx": {
     "mtime": 1777729986.6625862,
@@ -811,6 +1383,10 @@
     "mtime": 1778140725.3035138,
     "hash": "e92dfff5c08e2759ee62ee317cb9e7ad"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/Gta6CostCalculatorThumbnail.tsx": {
+    "mtime": 1785364999.5017805,
+    "hash": "baa9bf9124cf8229227b77f370b27686"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/JsonFormatterThumbnail.tsx": {
     "mtime": 1777656107.8851547,
     "hash": "b6c76d125de05e5d799a06518a606f99"
@@ -818,6 +1394,10 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/CardFlipRoiThumbnail.tsx": {
     "mtime": 1777751929.669987,
     "hash": "4584e35f92846240c23a978f3aebe584"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/RelatedPosts.tsx": {
+    "mtime": 1784802379.8905227,
+    "hash": "b13c3e04c4b703eda3da7c41c3e8bff3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/PdfGeneratorThumbnail.tsx": {
     "mtime": 1777729458.1218653,
@@ -875,6 +1455,10 @@
     "mtime": 1777751812.4088027,
     "hash": "beeb3ada8bce6a0032ec858edd50717f"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/UCLFinalAccumulatorThumbnail.tsx": {
+    "mtime": 1780145449.2674592,
+    "hash": "d3e354acbf3427f8960c10923905da90"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/QrCodeGeneratorThumbnail.tsx": {
     "mtime": 1777656215.1834066,
     "hash": "4a269703b7677daa91037fdc29419874"
@@ -884,8 +1468,12 @@
     "hash": "ef9d060de27651a37430394e66263964"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/Footer.tsx": {
-    "mtime": 1778140751.1717122,
-    "hash": "438bc40d0667c71a77d8765f80b2d931"
+    "mtime": 1785405679.915304,
+    "hash": "861433e9f7f85c9ec67638c9f42ab061"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/DesignStudioPromo.tsx": {
+    "mtime": 1782769015.2642608,
+    "hash": "740e51eb3242bef8a317f6566e6efb39"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/EbayBestOfferThumbnail.tsx": {
     "mtime": 1778140725.2905447,
@@ -895,6 +1483,10 @@
     "mtime": 1778140725.2927408,
     "hash": "cf808687940ceeaa62f3edec9ab63291"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/toolGuides.ts": {
+    "mtime": 1784809132.5124946,
+    "hash": "cc47f9d936eb9108c4c2a6104322bddd"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/HistorySidebar.tsx": {
     "mtime": 1776506821.2384324,
     "hash": "47850bcc4e8745546a37860c1c77a7ca"
@@ -902,6 +1494,10 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/PackBreakEvThumbnail.tsx": {
     "mtime": 1778140725.2947717,
     "hash": "f357a2f914a688ac519af5c712549375"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/PasswordBreachCheckerThumbnail.tsx": {
+    "mtime": 1779138734.1032684,
+    "hash": "0f1543c3852f4acb82155005baee9769"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/CoverLetterThumbnail.tsx": {
     "mtime": 1777709201.719282,
@@ -927,6 +1523,10 @@
     "mtime": 1776509272.2136552,
     "hash": "9468c9892cf04a4139476bb9886220ed"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/YoutubeTranscriptThumbnail.tsx": {
+    "mtime": 1778448709.0961587,
+    "hash": "985e0e7685af2641b483f6f978a285ea"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/PercentageCalculatorThumbnail.tsx": {
     "mtime": 1777708536.6490479,
     "hash": "df2b97369e1500988203206ae5db329c"
@@ -946,6 +1546,10 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/MarkdownEditorThumbnail.tsx": {
     "mtime": 1777712005.3878484,
     "hash": "4042b290cc300c4f1a44106dd8c955c8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ChromeGate.tsx": {
+    "mtime": 1785697959.4302502,
+    "hash": "fe835336de0e9102ba91cf2246314fd5"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/BrandForgeThumbnail.tsx": {
     "mtime": 1777712070.0085015,
@@ -979,13 +1583,25 @@
     "mtime": 1777707842.664482,
     "hash": "e429ff52fff5369ddb26bf621b0a423e"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/CreditCardRewardsThumbnail.tsx": {
+    "mtime": 1779143712.5276015,
+    "hash": "2becf35c9b527815280e221cd659782b"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/CssGradientThumbnail.tsx": {
     "mtime": 1777656188.4788694,
     "hash": "6ff89ac6708e67aba5e3ffa45224739b"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/Gta6EditionComparisonThumbnail.tsx": {
+    "mtime": 1785413923.9601948,
+    "hash": "80faf4eeaa758edc2ccd52bb0871bcc4"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/EmailSignatureThumbnail.tsx": {
     "mtime": 1777729952.170747,
     "hash": "9b5e980cd3b5a03d5f71f75a1e3efb74"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/blogPosts.ts": {
+    "mtime": 1784809142.5209317,
+    "hash": "221024137d7ed8951bf1de5afcb92e54"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/PasswordPreviewOverlay.tsx": {
     "mtime": 1777560743.3251708,
@@ -1011,6 +1627,22 @@
     "mtime": 1778140725.2881706,
     "hash": "6d6ac5fb7a38167b9d73a02226a9512c"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/YouTubeLite.tsx": {
+    "mtime": 1780065494.7158713,
+    "hash": "56f22e3e9b64e7578dd20ba32fb7b981"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ui/animated-shader-background.tsx": {
+    "mtime": 1778441012.8941534,
+    "hash": "1e06dc136f330042c5bb41cef6acc9b3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ui/ShaderBanner.tsx": {
+    "mtime": 1778490054.5847673,
+    "hash": "7f25b4142a83e74d9e0eb552918eb46e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ui/HowToSchema.tsx": {
+    "mtime": 1778617102.826814,
+    "hash": "7ae8550a43bb94140a403f3f7ebda9d7"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ui/ToolSchemaInjector.tsx": {
     "mtime": 1778280635.7167633,
     "hash": "7291de5af8a41490a0b7e4fdc7628245"
@@ -1022,6 +1654,18 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/components/ui/FaqPageSchema.tsx": {
     "mtime": 1778264471.785978,
     "hash": "81b79bcc06110a571ca5b045ede015dd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/scripts/inject-breadcrumbs.mjs": {
+    "mtime": 1778360210.5834517,
+    "hash": "26d12441d8c27018ef3bff512be4d34e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/scripts/sop-check.js": {
+    "mtime": 1780156006.0774512,
+    "hash": "8affcb612b731d0659ac5fd78ad7ca51"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/scripts/generate-markdown-mirrors.mjs": {
+    "mtime": 1778360368.958806,
+    "hash": "addad93b0141d37a64ae21cb7ade5b55"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/BUILD-REPORT-20.md": {
     "mtime": 1776421626.6740613,
@@ -1036,8 +1680,8 @@
     "hash": "9e09241799026ac05be315a2f0b50055"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/CLAUDE.md": {
-    "mtime": 1776034808.1320953,
-    "hash": "5c27369b226fcf2be8a6cfe52224e767"
+    "mtime": 1780172314.8959265,
+    "hash": "b5055c8c1cff9d1051b54ac938dc6be0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/FULL-AUDIT-REPORT.md": {
     "mtime": 1778283767.3250556,
@@ -1047,9 +1691,141 @@
     "mtime": 1778283794.1775,
     "hash": "e44df0a30726a7f79377ede3722ee8ec"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/blog_header_rankspot.html": {
+    "mtime": 1779041027.2384713,
+    "hash": "0a6deeeafefa57b336a3290596737a6f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_attribution_v2.html": {
+    "mtime": 1779189221.936698,
+    "hash": "9ad721efec25176564cd10775b2349c1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_opus_clip.html": {
+    "mtime": 1779829723.447981,
+    "hash": "25183168df37ef7ed7cd7732efe73ca1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_aweber_review.html": {
+    "mtime": 1779022685.6370242,
+    "hash": "3e7c995e3b5fd3869987805afe10cf63"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_hashtag_generator_2.html": {
+    "mtime": 1778835185.8265853,
+    "hash": "eadc129058b2811f480ba00f280131bb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail-1-shock.html": {
+    "mtime": 1778498265.8923557,
+    "hash": "805d86106bd2c57b3a0da3af872024d4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_rankspot_review.html": {
+    "mtime": 1778953823.0020173,
+    "hash": "bcc3a350f921765ac94c44e265b47ab0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_rankspot_review_2.html": {
+    "mtime": 1778954155.1887426,
+    "hash": "4cb7feb12747cfddf3fc9527390024b2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_beats_copilot.html": {
+    "mtime": 1778972882.3671823,
+    "hash": "8bcda5a8c04a5c2f31eb75e0bef320dd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_email_tester_2.html": {
+    "mtime": 1778673237.0580237,
+    "hash": "78f961e0df28d2f0947e3d13cfb298be"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail-4-mrbeast-angry.html": {
+    "mtime": 1778499354.330075,
+    "hash": "43808dce792b7d70ba29a24af16b2495"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_beats_copilot_pro_1.html": {
+    "mtime": 1778973302.6135666,
+    "hash": "cce305f13b75995a9972a3e1f11d6897"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/blog_header_genspark.html": {
+    "mtime": 1779040534.6597977,
+    "hash": "06d9f0cde64cb3fe3331fbe6bec70c28"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_rankspot_pro_2.html": {
+    "mtime": 1778954716.5759876,
+    "hash": "a568c569035557b99b86f9899dc29faf"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/blog_hero_tailor_cover_letter.html": {
+    "mtime": 1779399111.1444538,
+    "hash": "e60c4e8229ff1d7fbcfb7bb9b3989eb0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_password_generator.html": {
+    "mtime": 1779102860.6934605,
+    "hash": "a3e4d70f126592a6083cc815c70ab217"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_aweber_review_v2.html": {
+    "mtime": 1779022844.6634893,
+    "hash": "b9f296c882c8a91839ed6affb96b6192"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_beats_copilot_pro_2.html": {
+    "mtime": 1778973303.5133574,
+    "hash": "83c5e7b432207c561d1058eb3dd18dc3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_rankspot_pro_1.html": {
+    "mtime": 1778954715.7217927,
+    "hash": "01ab2a03f2e65f796afac4b62b933299"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail-2-challenge.html": {
+    "mtime": 1778498658.412213,
+    "hash": "b30766ae6024155ac17611f156ed4d6f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_cover_letter.html": {
+    "mtime": 1779357713.9943066,
+    "hash": "e4cf860b8f2f3d4b556feb09ee70d260"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_aweber_review_v3.html": {
+    "mtime": 1779022956.903453,
+    "hash": "042242086474297f1bb7ad770ba06f3d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_website_down.html": {
+    "mtime": 1779275678.680012,
+    "hash": "8e5d1fad54b4ff4241c4e250736146e6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_email_tester_1.html": {
+    "mtime": 1778673191.6676261,
+    "hash": "9a42180f2f8be3a6ec98fb6df42cf974"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_hashtag_generator_1.html": {
+    "mtime": 1778835146.8341255,
+    "hash": "3c7c0c34dace08c924a24ce054875642"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_beats_copilot_v2.html": {
+    "mtime": 1778973051.1720934,
+    "hash": "2d149b6df79efd3c958f64f744155f3e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/blog_header_aweber.html": {
+    "mtime": 1779039438.1973934,
+    "hash": "0a4fc3c2027ae9891ed37d5ebee3669e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail-6-mrbeast-excited.html": {
+    "mtime": 1778499757.512914,
+    "hash": "93b60b77b5f866a9eb003ba793e65f44"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_split_panel.html": {
+    "mtime": 1778841286.9103827,
+    "hash": "eb88ac1001e8e8e841154d26590a4402"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_attribution_v1.html": {
+    "mtime": 1779189177.7346997,
+    "hash": "59291f593766d3ff4a4bcf51c35a9900"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/blog_header_aweber_v2.html": {
+    "mtime": 1779040271.5331225,
+    "hash": "25b6d699ccd1ffe766f51ba30923f454"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/launch-poster.html": {
     "mtime": 1777824092.6900947,
     "hash": "adde2a6f5b8d5cd6e0c0f1f14b85177c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail-3-mrbeast-shocked.html": {
+    "mtime": 1778499352.3117576,
+    "hash": "a7a5b1e84375e2d3fd3919a0d87a4cea"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/thumbnail_aweber_masterclass.html": {
+    "mtime": 1779023525.513882,
+    "hash": "516f4d279d0562ebb6e1e6a83a829ed0"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/etsy-card-tracker/ETSY-LISTING-PACKAGE.md": {
     "mtime": 1777848102.7424786,
@@ -1064,20 +1840,488 @@
     "hash": "2f94d87b470cc8241bb09fd60f4b728c"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/llms.txt": {
-    "mtime": 1778280704.1944182,
-    "hash": "efa2a152f81f3b84a74ae1d5165f0754"
+    "mtime": 1785408040.994877,
+    "hash": "76c2602eb7fa610fe2f07fda936895d3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ads.txt": {
-    "mtime": 1777033087.7177005,
+    "mtime": 1784300081.2175968,
     "hash": "2bffb7ada3c83326b94fb2886cf36499"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/fo-verify.html": {
+    "mtime": 1778927236.169424,
+    "hash": "8a0fc1933173ffe3b54d6a78d4cdb710"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ultra-code.html": {
+    "mtime": 1780155228.033992,
+    "hash": "5acd7941df9b04932f1de9915533984a"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/robots.txt": {
-    "mtime": 1778280662.3122296,
-    "hash": "677503085c5f3f6e4f4a7c9074d1a2c2"
+    "mtime": 1778456805.7713292,
+    "hash": "42a755b0160518bbc8fa7aa33209f350"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/whois-lookup/index.md": {
+    "mtime": 1779531839.8533514,
+    "hash": "e72e72152e31fe49477ae00b54d3ca78"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/pack-break-ev-calculator/index.md": {
+    "mtime": 1778360391.8271782,
+    "hash": "196ef04635fabdf131111011daa6478b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/card-grading-profit-calculator/index.md": {
+    "mtime": 1778360391.8128252,
+    "hash": "c312fd46c3701ef88306d29ff9ae899f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/card-flip-roi-calculator/index.md": {
+    "mtime": 1778360391.8124278,
+    "hash": "794e23528a1647c8c1529fa771e84b1e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/text-summarizer/index.md": {
+    "mtime": 1778360391.8313868,
+    "hash": "f6b26bcf3103384a76e05c9e48b3227a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/qr-code-generator/index.md": {
+    "mtime": 1778360391.8301454,
+    "hash": "b5d30110619dce29636f5da2d652f7e7"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/uuid-generator/index.md": {
+    "mtime": 1778360391.8323944,
+    "hash": "68a0deb446a42900e90a6c2fc3513e3a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/pdf-generator/index.md": {
+    "mtime": 1778360391.8286376,
+    "hash": "1296b9baebd8296c676fcfbed4e2af0a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/age-calculator/index.md": {
+    "mtime": 1778360391.80915,
+    "hash": "c58a8084a704c69bdee57dfebc18e1d6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/meta-description-generator/index.md": {
+    "mtime": 1779532085.26305,
+    "hash": "8ae93b905d350f6c46e5ab82ef3ff866"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/case-converter/index.md": {
+    "mtime": 1778360391.8130963,
+    "hash": "ab898197d1c781a8914f613e09685428"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/panini-sticker-calculator/index.md": {
+    "mtime": 1778360391.827529,
+    "hash": "756b392b3113180ff44016221e38a3de"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/grammar-checker/index.md": {
+    "mtime": 1778360391.8218396,
+    "hash": "1bfe1284c8b0a08cee91aca6c10a644f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/youtube-thumbnail-downloader/index.md": {
+    "mtime": 1778360391.835687,
+    "hash": "2632a59b57fdf66c974e745202e773ff"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/world-cup-team-finder/index.md": {
+    "mtime": 1778360391.8351233,
+    "hash": "d64ef2a2aca2a00f5451a8d3fe330042"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/paraphrasing-tool/index.md": {
+    "mtime": 1778360391.8277469,
+    "hash": "d2eb38f78c30df0913bae2d7c6433e8d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/utm-builder/index.md": {
+    "mtime": 1778360391.8320594,
+    "hash": "b2404122db3ddca21ba6b8870c557d6b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/markdown-editor/index.md": {
+    "mtime": 1778360391.825684,
+    "hash": "f72569f4ff8125988208124fb5aab7d5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/lorem-ipsum-generator/index.md": {
+    "mtime": 1778360391.8254972,
+    "hash": "8317cd1a911c802ce3c297f6ab952dd4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/website-down-checker/index.md": {
+    "mtime": 1778360391.8329906,
+    "hash": "726116cfa442147ac28901e6d26f9d15"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/salary-calculator/index.md": {
+    "mtime": 1778360391.8306286,
+    "hash": "3818d756bfc839f80943f835bf911422"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/regex-tester/index.md": {
+    "mtime": 1778360391.8304348,
+    "hash": "3ccea4d71228b8f975f56ec43d9f5380"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/invoice-generator/index.md": {
+    "mtime": 1778360391.8235915,
+    "hash": "c640d049444851a4e0dc7df46442f1df"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/tip-calculator/index.md": {
+    "mtime": 1778360391.831654,
+    "hash": "415a9b83e7e2594a3cab878c12a60cfb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/world-cup-accumulator-calculator/index.md": {
+    "mtime": 1778360391.834247,
+    "hash": "54b3e4c1a297e6fb948b7c1400ba4aaa"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/unix-timestamp-converter/index.md": {
+    "mtime": 1778360391.8318675,
+    "hash": "02393ccc6018349545877e2a2203edfa"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/percentage-calculator/index.md": {
+    "mtime": 1778360391.8293333,
+    "hash": "1c487fc347dbece3d6c596ee3277debe"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/character-counter/index.md": {
+    "mtime": 1778360391.8138163,
+    "hash": "ece4f3f1849d9662bec6adda1729963e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/card-box-break-calculator/index.md": {
+    "mtime": 1778360391.8116455,
+    "hash": "77c55ea8f4f2b16ffc75a1ae882ef7d2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/blog-title-generator/index.md": {
+    "mtime": 1778360391.8107882,
+    "hash": "2164fbf5e9f7d14456015173d7319302"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/ssl-checker/index.md": {
+    "mtime": 1779532046.691303,
+    "hash": "017efff45fb331cecdee9d9a08694bc6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/css-gradient-generator/index.md": {
+    "mtime": 1778360391.8168335,
+    "hash": "042e49229193cbae2d5c79883cf254ad"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/vat-calculator/index.md": {
+    "mtime": 1778360391.8327873,
+    "hash": "be24f058feb4010c93163a2f8b275f6a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/code-diff-checker/index.md": {
+    "mtime": 1778360391.8140547,
+    "hash": "b321c15250f4cab46fff3701e54de5e9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/ebay-best-offer-calculator/index.md": {
+    "mtime": 1778360391.8181143,
+    "hash": "0434705a47b724212fb1fb286913024d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/business-name-generator/index.md": {
+    "mtime": 1778360391.8113794,
+    "hash": "b3bb61739514d136f600d95eacf269e1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/youtube-video-downloader/index.md": {
+    "mtime": 1778360391.8364367,
+    "hash": "1b5e787065c7cb45d52b9ea27b201d57"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/compound-interest-calculator/index.md": {
+    "mtime": 1779531819.7696686,
+    "hash": "9a34d58297b87d86c0e596e038ab8229"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/favicon-generator/index.md": {
+    "mtime": 1778360391.8213487,
+    "hash": "3685687496c51a89852d884fe2b1f31f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/mortgage-calculator/index.md": {
+    "mtime": 1778360391.8265676,
+    "hash": "1467ae88c21c4a0f4302c144caf641a6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/json-formatter/index.md": {
+    "mtime": 1778360391.8244452,
+    "hash": "7903c2b6f7ef3612c7715218b27c1413"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/color-contrast-checker/index.md": {
+    "mtime": 1778360391.8147378,
+    "hash": "4ad15f67579915b45bf645ff1d143a17"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/color-palette-generator/index.md": {
+    "mtime": 1778360391.8152468,
+    "hash": "e177f434ab882b4bef3316e2358e225f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/online-stopwatch/index.md": {
+    "mtime": 1779532119.4971614,
+    "hash": "df1a88e10de4167292b000d78739ec8c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/cover-letter-generator/index.md": {
+    "mtime": 1778360391.815936,
+    "hash": "230e202065553d05dfe7b64cfe9d2d58"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/jwt-decoder/index.md": {
+    "mtime": 1778360391.825291,
+    "hash": "3c3c3f03eb1afecb7849070566cdd381"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/youtube-tag-generator/index.md": {
+    "mtime": 1778360391.8353863,
+    "hash": "dea561dba31e7f128478b187e2131d0a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/email-subject-line-tester/index.md": {
+    "mtime": 1779532142.8618271,
+    "hash": "84957e99ae65f1bad070d65cdf18e4c6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/whatnot-seller-fee-calculator/index.md": {
+    "mtime": 1778360391.833404,
+    "hash": "f659b478039e5e9547e3b5af53bd205e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/email-signature-generator/index.md": {
+    "mtime": 1778360391.8191228,
+    "hash": "4406649d120bfb1195f2a8e0ba96b459"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/base64-encoder-decoder/index.md": {
+    "mtime": 1778360391.8104804,
+    "hash": "e9cc98a83de42ad569c32cf7cff261d1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/ai-prompt-generator/index.md": {
+    "mtime": 1778360391.8099506,
+    "hash": "f5c0c6c259ae25eed70869c09433596b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/grading-company-comparison/index.md": {
+    "mtime": 1778360391.8215923,
+    "hash": "97e13a6117a18c58496ee46e5c7ef275"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/hashtag-generator/index.md": {
+    "mtime": 1778360391.8227308,
+    "hash": "50ea03dfadfdb16909a1c06ebeba6ac9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/password-generator/index.md": {
+    "mtime": 1778360391.8284063,
+    "hash": "dd04040056a1dc99b996871b5bcd5db1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/sql-formatter/index.md": {
+    "mtime": 1778360391.830962,
+    "hash": "7735da7e8c4c8577b661508ea228d289"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/word-counter/index.md": {
+    "mtime": 1778360391.8339498,
+    "hash": "d37e3b42e9688da4fbe58e8d8b81ecf4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/ip-address-lookup/index.md": {
+    "mtime": 1778360391.823804,
+    "hash": "4932e404bff11c11cd5b08d1df300541"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/index.html": {
+    "mtime": 1783291092.8393402,
+    "hash": "b5446b614f58f757a5bc1d411fde6a00"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/complete-guide-to-free-seo-tools/index.md": {
+    "mtime": 1778360391.7999985,
+    "hash": "3f2515db3c8f08265eb067b567bedafe"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-is-a-uuid/index.md": {
+    "mtime": 1779483619.7881062,
+    "hash": "0fc4e4902b0b6e4c1241c773b4c9fd4e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/inspection-report.md": {
+    "mtime": 1780431338.699721,
+    "hash": "ffcd21c09fa4035ce2e1cf972d0cca85"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/index.md": {
+    "mtime": 1780425453.0281615,
+    "hash": "a28bf45033ce727c8736e3f95d596cd6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/index.md": {
+    "mtime": 1779483790.4109063,
+    "hash": "5d93c65a465b850ee15f842f46ace8dd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/best-ai-tools-for-optimizing-product-visibility/index.md": {
+    "mtime": 1778360391.7994714,
+    "hash": "239e427be2acef770959d85cc046dd83"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-alternatives/index.md": {
+    "mtime": 1779896765.0002022,
+    "hash": "de1b630775ce70714e2b4e4eff09d246"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-is-my-ip-address/index.md": {
+    "mtime": 1778360391.8063428,
+    "hash": "efaa702b4b6fbdd5bef6b5d80586f446"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/ai-prompt-generator-guide/index.md": {
+    "mtime": 1779483544.4177125,
+    "hash": "8e2ccdf4b93a92d7816a6c6153575023"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/ssl-certificate-checker-guide/index.md": {
+    "mtime": 1778360391.8042338,
+    "hash": "352ef7261e5da8e40a59a2fbcfcf2537"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-generate-qr-code-wifi/index.md": {
+    "mtime": 1778360391.8016083,
+    "hash": "c828afecc911c2de49b841bd2e743a57"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/index.md": {
+    "mtime": 1780053759.6533515,
+    "hash": "1cb9fccb1008dea9458379609b39b3f2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/understanding-case-sensitivity/index.md": {
+    "mtime": 1778360391.8046515,
+    "hash": "14b251489a817b9d2f3ddd08b9b4204d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/index.md": {
+    "mtime": 1779896937.152183,
+    "hash": "e44a078c95273866a26009fab21efa05"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/why-every-ai-tool-has-a-paywall-problem/index.md": {
+    "mtime": 1778360391.8078365,
+    "hash": "c92b983d93c20e364c4c13704451034c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/word-count-checker-guide/index.md": {
+    "mtime": 1779483816.6252234,
+    "hash": "f7cfc68029ceab3f14d8c95dfe8d90ad"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/index.md": {
+    "mtime": 1779483802.6707194,
+    "hash": "498e8a6e474ceaa0f716cfc619cd8825"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/index.md": {
+    "mtime": 1780069523.1581762,
+    "hash": "57f2d0e76caf7a796d3a1cc66d890438"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-a-compound-interest-calculator-works-plain-english/inspection-report.md": {
+    "mtime": 1780416299.5281835,
+    "hash": "5f0603c7f3a69721c33bcd0a680d9bd0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-a-compound-interest-calculator-works-plain-english/index.md": {
+    "mtime": 1780415511.347341,
+    "hash": "b5bde3002c21497b4ec6535740b8318a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/essential-free-developer-tools/index.md": {
+    "mtime": 1778360391.8006883,
+    "hash": "fc5fcc0f37dc8e3787e5eb61f60c457f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/email-subject-line-tester-guide/index.md": {
+    "mtime": 1779483704.8081696,
+    "hash": "bce9dd898d2d6aa0175b39ce0c3d1010"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/index.md": {
+    "mtime": 1779483635.2300715,
+    "hash": "bb6f95ed673c57078e2c6451bdf3a982"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/perfect-meta-description-anatomy/index.md": {
+    "mtime": 1778360391.8035069,
+    "hash": "9e05821596b4d2a3ad7ac39f8ea8079e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-are-utm-parameters/index.md": {
+    "mtime": 1778360391.8053522,
+    "hash": "9045e53f0e67dac939288904fe16b3f2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/json-formatting-guide-for-developers/index.md": {
+    "mtime": 1778360391.8029635,
+    "hash": "169b5fa5c11200793b03466e54ebf6b9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/index.md": {
+    "mtime": 1779483658.1604593,
+    "hash": "eca3db1e2255f67d32f070d8253ca9e4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/postiz-review/index.md": {
+    "mtime": 1779483603.4160383,
+    "hash": "cc05aa36ddb581c150b3f68fe4a87a0c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-write-cold-email-subject-lines/index.md": {
+    "mtime": 1778360391.802026,
+    "hash": "14ca87fe48d2cc776261905390270b20"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-is-a-jwt-token/index.md": {
+    "mtime": 1778360391.805726,
+    "hash": "a93a966cfdb2a7002f14a2465665adaf"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/index.md": {
+    "mtime": 1779483676.6069744,
+    "hash": "4afbac82f431aa1e829376af8d12635e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/regex-cheat-sheet-beginners/index.md": {
+    "mtime": 1778360391.8038511,
+    "hash": "698a6e95c61605c7bc5ead0c715423cf"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/index.md": {
+    "mtime": 1779483770.820912,
+    "hash": "919e23562a957ae8fa6e152e3fecfbbb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/index.md": {
+    "mtime": 1779483562.121848,
+    "hash": "f80bd5e5ba1b42b2fa68e579667d1cc1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/best-free-online-tools-2026/index.md": {
+    "mtime": 1779483685.291133,
+    "hash": "e65c5d10990b40b3a824d4b6314320be"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/index.md": {
+    "mtime": 1779797561.5405486,
+    "hash": "799d56c9f9f5a414ccc2d5307b3d3924"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-improve-developer-productivity/index.md": {
+    "mtime": 1779483757.065512,
+    "hash": "56ac968340a0d9fad9b41e7b32a22d8d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/blog-title-generator/index.md": {
+    "mtime": 1779801490.3311524,
+    "hash": "a045c44abbdb2468897a62540706ddc2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/ai-writing-tools-ultimate-guide/index.md": {
+    "mtime": 1778360391.7978003,
+    "hash": "74aa891b907b9686554d514d647f194a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/index.md": {
+    "mtime": 1779484523.434583,
+    "hash": "4a035ae10b0095c81fe49bcfe021188c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mastering-json-visual-guide/index.md": {
+    "mtime": 1778360391.8032842,
+    "hash": "6781933eda1b1c4323ee67c8490c33c4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-create-pdf-free/index.md": {
+    "mtime": 1778360391.8012497,
+    "hash": "0caa31d515d9f11dbd7f6ccbdbf4654b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/index.md": {
+    "mtime": 1779664445.162474,
+    "hash": "4d6bd430671ff83a2ce29ce58e1f508d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/hashtag-generator-guide/index.md": {
+    "mtime": 1779483745.4723985,
+    "hash": "479cd54331451bb9ba7224f0711118c1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/index.md": {
+    "mtime": 1779483728.643946,
+    "hash": "c6cf129879bd39d8534d69898cdd812e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/is-it-down-or-just-me/index.md": {
+    "mtime": 1778360391.8023007,
+    "hash": "ccaa7bef9926dc811caee1c055fe4dd8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-are-productivity-tools/index.md": {
+    "mtime": 1778360391.805044,
+    "hash": "716a6f4e5da730ac488e4306df3c23b9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/index.md": {
+    "mtime": 1779483580.046416,
+    "hash": "c2b95ce41c7d1e06d3a2aadfa59c3639"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-meta-description-generator/index.md": {
+    "mtime": 1779483717.0624638,
+    "hash": "f5c499f639948f04bc4ee9548360db29"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-is-base64-encoding/index.md": {
+    "mtime": 1778360391.8058913,
+    "hash": "b31c1befa2d3d088e326d648f95edba3"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/app/favicon.png": {
     "mtime": 1776541812.089213,
     "hash": "365b182fbbf2304924414c37cf3031d2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/assets/pereira_secret.png": {
+    "mtime": 1778499698.83059,
+    "hash": "285946f02b9b448bd5b83fa1c0bf1cde"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/assets/pereira_angry.png": {
+    "mtime": 1778499277.0538635,
+    "hash": "e9969c6326a3172271fab0734f710122"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/assets/pereira_shocked.png": {
+    "mtime": 1778499277.0518608,
+    "hash": "eacb9f9edca1c10db715add41f58f871"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/assets/alex_pereira.png": {
+    "mtime": 1778498642.084982,
+    "hash": "fda46bf57bc9a3f06ba04df15ebf6551"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/posters/assets/pereira_excited.png": {
+    "mtime": 1778499698.8323848,
+    "hash": "21bd5f0013d9c927c0ae5b9b93afa6d0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/jdesigns-studio-og.jpg": {
+    "mtime": 1783685838.422034,
+    "hash": "0a770bc305453233615ef745131d8a74"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/file.svg": {
     "mtime": 1776034776.025765,
@@ -1110,6 +2354,22 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/window.svg": {
     "mtime": 1776034776.025726,
     "hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/the-markup/ep1-still.jpg": {
+    "mtime": 1785697031.858512,
+    "hash": "e4e6b7f96408097518d708fec54b97d5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/the-markup/banner.png": {
+    "mtime": 1785697178.1263628,
+    "hash": "9582fb85b8d8bedd05203bf611af87a4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/the-markup/icon-192.png": {
+    "mtime": 1785697178.0910683,
+    "hash": "c9a3aac25beea745b4ab982942a26d4e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/the-markup/logo.png": {
+    "mtime": 1785697178.0733304,
+    "hash": "770e4e6ef6c069bc0795f15bb71b1150"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/tools/panini-sticker-calculator-preview.png": {
     "mtime": 1777320020.0869846,
@@ -1339,6 +2599,30 @@
     "mtime": 1777027070.67462,
     "hash": "966c2dbe8dab787757ab6c47d27cdeda"
   },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/mindwire/brain.png": {
+    "mtime": 1784065706.2581239,
+    "hash": "4ebd149cd32a17f56ab1334611dae938"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/3_ad.png": {
+    "mtime": 1783290692.4541886,
+    "hash": "7dc85fb9efddc40e3f3fdd80ce21a936"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/5_variety.png": {
+    "mtime": 1783290692.468506,
+    "hash": "9f8bcdd24446b2ef573c16cba23a2727"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/2_campaigns.png": {
+    "mtime": 1783290692.4505002,
+    "hash": "3fb5dcabe82896a8f78a0212fba612a4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/4_library.png": {
+    "mtime": 1783290692.4606326,
+    "hash": "a3a29dc53bb6a1ca8facee448693eaa7"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/1_scan.png": {
+    "mtime": 1783290692.4469137,
+    "hash": "41260e8dea666364291aabb5c67bd4d2"
+  },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/images/card-flip-hero.png": {
     "mtime": 1777140544.6490018,
     "hash": "9ae514fab9a731018546ae7edbaf5e47"
@@ -1346,6 +2630,10 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/images/blog_hero_ai_future.png": {
     "mtime": 1776347274.7290199,
     "hash": "b614f07a0bfaa16b0bcd3cc8b629a702"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/images/justin-pirrie-headshot.png": {
+    "mtime": 1779284210.6209984,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
   },
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/images/grading-company-hero.png": {
     "mtime": 1777140544.6432498,
@@ -1358,5 +2646,793 @@
   "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/images/card-grading-hero.png": {
     "mtime": 1777075627.7510233,
     "hash": "32e4d30c02250d5befb29eff7c57fe13"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/free-ads/ad2.png": {
+    "mtime": 1783930879.744216,
+    "hash": "7cdffd6f8557c02380bada26ae231bdf"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/free-ads/ad3.png": {
+    "mtime": 1783930879.746217,
+    "hash": "5e5f50b13760898632327faed90a640f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/free-ads/ad1.png": {
+    "mtime": 1783930879.7413955,
+    "hash": "40a8f3f7b74aad21fe38167e6b290ec2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/trump_cutout.png": {
+    "mtime": 1779102651.3326676,
+    "hash": "887bde4712820545ef822e1aa08a64a9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover_letter_bg.png": {
+    "mtime": 1779357697.5625448,
+    "hash": "e0fc4bd4e2090802f8653c635190aeb9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/thumbnail-website-down.png": {
+    "mtime": 1779275467.3585992,
+    "hash": "f0e5abc52b9eff0f4d74fc98e92a6f07"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/ronaldinho_cutout.png": {
+    "mtime": 1779275396.7480094,
+    "hash": "16b5bbfeff624e1079bd516500ef72d4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/tailor-cover-letter-hero.png": {
+    "mtime": 1779396374.4056385,
+    "hash": "f868cf6f62db26a86deb59cad61675fc"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/tailor-cover-letter-hero-v2.png": {
+    "mtime": 1779399135.8876288,
+    "hash": "89578a209cb8e946244e58b7c2b5a32c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/thumbnail-website-down-v2.png": {
+    "mtime": 1779275702.7579603,
+    "hash": "bf5a13fc374c1bc7776a4db83efab034"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/thumbnail-cover-letter.png": {
+    "mtime": 1779357733.8554904,
+    "hash": "ac7a23b8b5c6bc0047799aaae0ecd3fa"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mourinho_cutout.png": {
+    "mtime": 1779399025.7873106,
+    "hash": "8d0c23ce814d17462981614b64034732"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/thumbnail-attribution-v2.png": {
+    "mtime": 1779189243.0958333,
+    "hash": "6e4e9484fdc3439b2865d99f91f2e588"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/thumbnail-attribution-v1.png": {
+    "mtime": 1779189239.2555757,
+    "hash": "0593f925cae7bddbd697d9fee41daa7a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/screenshot-tool.png": {
+    "mtime": 1780435968.0889518,
+    "hash": "6952d692d9c16797a4888b4b6a5169a8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-how-it-works.png": {
+    "mtime": 1780433096.5179734,
+    "hash": "6c63999eee4b7b703b9d5f2c7b4bb34c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-features.png": {
+    "mtime": 1780433096.5052752,
+    "hash": "f7d5377425fd237fe64f997e1e5308a2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/hero-banner.png": {
+    "mtime": 1780433483.7767212,
+    "hash": "c9e31446c01f629cbeb83854eb4be8bf"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/screenshot-tool.png": {
+    "mtime": 1779449892.6879857,
+    "hash": "dde5ea278d29eb14400615c335cb2832"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/infographic-reveals.png": {
+    "mtime": 1779449871.967123,
+    "hash": "d85cef9873cd496ef20da3acd2b94205"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/infographic-uses.png": {
+    "mtime": 1779450828.516318,
+    "hash": "e03331025c56418638a5790fb4cab89c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/screenshot-results.png": {
+    "mtime": 1779449896.881032,
+    "hash": "97d8e2766a54aad367323a02feac7382"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/hero-banner.png": {
+    "mtime": 1779456088.8471396,
+    "hash": "87421a4eae44c9c378d5aca08c8646a3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/author-avatar.jpg": {
+    "mtime": 1779449872.0244339,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-alternatives/infographic-comparison.png": {
+    "mtime": 1779901601.1887295,
+    "hash": "c54f378824c95530691a803797479d6c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-alternatives/hero-banner.png": {
+    "mtime": 1779902087.519516,
+    "hash": "c6dbd7d7fa7c46d9fe52703a0794a76e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/video-poster.jpg": {
+    "mtime": 1784812512.6747272,
+    "hash": "c4802869fe3de9128dba474ffdfc2e9d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/chronicle-scales.jpg": {
+    "mtime": 1784812496.2469223,
+    "hash": "7a6e8ab07c529239ac5c173192a9c230"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/chronicle-equation.jpg": {
+    "mtime": 1784812478.177545,
+    "hash": "282244e99780ab56d7bc19b0470a43a4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/chronicle-extra.jpg": {
+    "mtime": 1784812502.130708,
+    "hash": "647480bc2c21a5f720211b6f98b7169d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/chronicle-hidden.jpg": {
+    "mtime": 1784812507.222192,
+    "hash": "358592671efd59bf64dd85639973ea34"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/chronicle-term-table.jpg": {
+    "mtime": 1784812490.3620324,
+    "hash": "4a79466d424db0cc8fa5979ed7e122ee"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/chronicle-amortization.jpg": {
+    "mtime": 1784812483.1387098,
+    "hash": "40a281befd8cef8be2cd4771c11bfa5f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/hero-banner.png": {
+    "mtime": 1784834935.02576,
+    "hash": "f18a3a31958b2273ad3f399ff35ddb62"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/author-avatar.jpg": {
+    "mtime": 1784809086.0809011,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/ai-prompt-generator-guide/screenshot-tool.png": {
+    "mtime": 1779965887.1619644,
+    "hash": "e337dfe630163243a7c6b567acd8b06f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/ssl-certificate-checker-guide/screenshot-tool.png": {
+    "mtime": 1779965864.9893167,
+    "hash": "62e31509efb0052dc8f71d5eca8679fa"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-generate-qr-code-wifi/screenshot-tool.png": {
+    "mtime": 1779965855.7994976,
+    "hash": "a3c7bf9901a169166e2e3dcc4ddd5238"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/screenshot-beehiiv.png": {
+    "mtime": 1780064932.7068799,
+    "hash": "5703a56ebddbf87f9726934426507db9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/hero-banner.png": {
+    "mtime": 1780069229.9123487,
+    "hash": "4911cc55be0fe2ced4cf18a96d4d6199"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/author-avatar.jpg": {
+    "mtime": 1780139976.7263236,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/screenshot-aweber.png": {
+    "mtime": 1780064916.3919864,
+    "hash": "748c1e4d8cf13a025efa5a24409063c1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/hero-banner.png": {
+    "mtime": 1779830804.4661086,
+    "hash": "ba449eb3020081dc4458a1eb692bd45a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/infographic.png": {
+    "mtime": 1779828225.3960214,
+    "hash": "c54f378824c95530691a803797479d6c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/author-avatar.jpg": {
+    "mtime": 1779824825.7262583,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/word-count-checker-guide/screenshot-tool.png": {
+    "mtime": 1779965835.8318708,
+    "hash": "d18c442e0fab4d7b52a723530d35de8c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/word-count-checker-guide/infographic.png": {
+    "mtime": 1778505571.12414,
+    "hash": "a5f2956f01e0fc5dea1c9181c9a68628"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/result-schon.png": {
+    "mtime": 1778965995.1032755,
+    "hash": "97fdf7e80afb38e59c1d47eb7c439f3e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/rankspot-homepage.png": {
+    "mtime": 1778965969.1697152,
+    "hash": "4627ee8973382af53b5691594a1c3579"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/feature-reddit.svg": {
+    "mtime": 1778965994.6808646,
+    "hash": "10675f12e2b0a94f6de5c82581e20993"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/feature-competitors.svg": {
+    "mtime": 1778965994.5735605,
+    "hash": "cf29211da380d5e64fc4c9a7c8b4a7bb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/screenshot-dashboard.svg": {
+    "mtime": 1778965994.2408073,
+    "hash": "8cad99a55e5d195bb4f82241a76df228"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/feature-keywords.svg": {
+    "mtime": 1778965994.472644,
+    "hash": "31b61dea536e642277ca536aa5de21b8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/result-alex.png": {
+    "mtime": 1778965995.703959,
+    "hash": "4ba27dd1059cea998bf213cc0e997b5d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/hero-banner.jpg": {
+    "mtime": 1778967568.1331599,
+    "hash": "0458e2769f0ec91c530ac47dd6c29144"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/hero-banner.png": {
+    "mtime": 1779056475.8651764,
+    "hash": "8d66b073affe9d3aa7cd14534258a547"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/infographic.png": {
+    "mtime": 1778947299.541597,
+    "hash": "b1d40e78e9d751f9549b2068ad3b68a4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/feature-articles.svg": {
+    "mtime": 1778965994.3459747,
+    "hash": "66770ae20a1d372653c034a365d938f9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/author-avatar.jpg": {
+    "mtime": 1779441346.0141933,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/uk-us-salary-infographic.png": {
+    "mtime": 1779960070.2905767,
+    "hash": "4a7d19dad910113bef85076f3e925685"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/screenshot-tool-uk-result.png": {
+    "mtime": 1779963717.0950923,
+    "hash": "65c0a3b6a8272e814faeee6012121c9b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/screenshot-tool-us-result.png": {
+    "mtime": 1779963736.63218,
+    "hash": "27635f5cf97fac6540b826b397a866fd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/hero-banner.png": {
+    "mtime": 1779963544.3853817,
+    "hash": "554674ddd1834f0ce88ebf16112a4e41"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/screenshot-tool-empty.png": {
+    "mtime": 1779963703.7725625,
+    "hash": "921d7069d9920706db04036fa33cbbdd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-a-compound-interest-calculator-works-plain-english/hero-banner.png": {
+    "mtime": 1783362468.270383,
+    "hash": "d790c51b29491f6cda9024c330bc13cb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/email-subject-line-tester-guide/screenshot-tool.png": {
+    "mtime": 1779965825.5809028,
+    "hash": "4cf974eeba8ad262d37fdfa7494eb384"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/screenshot-tool.png": {
+    "mtime": 1779965788.499645,
+    "hash": "674e10d2a14207567219a6e549f392e3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/tool-result.png": {
+    "mtime": 1779277378.2596774,
+    "hash": "dfa59e14de482470350e1e3fd05274b1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/hero-banner.png": {
+    "mtime": 1779281844.9099216,
+    "hash": "a5f2f649f7fb6e566f0e449fa7eccfa6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/infographic.png": {
+    "mtime": 1779276638.9953663,
+    "hash": "070bae76b9af8f234aec77521402b1b1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/tool-empty.png": {
+    "mtime": 1779277409.6091313,
+    "hash": "060eb85516467ae153147d287a712190"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/what-are-utm-parameters/screenshot-tool.png": {
+    "mtime": 1779965892.3207333,
+    "hash": "289ab5e01a009288d49a3e938b465d08"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/utm-parameters-visual-guide.png": {
+    "mtime": 1779187752.2626483,
+    "hash": "42235572fca92308e35508d0a61f4acb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/utm-naming-convention-guide.png": {
+    "mtime": 1779187752.2692704,
+    "hash": "31a9a15f4d9013a3f46cd1423d2fc95d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/screenshot-tool-filled.png": {
+    "mtime": 1779191937.1099927,
+    "hash": "7fe15ec7e227f0ff3ddb31d1bd95fc98"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/screenshot-tool-output.png": {
+    "mtime": 1779191950.2421205,
+    "hash": "6b9162ef8da2aec1b558d9cea5eb2378"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/hero-banner.png": {
+    "mtime": 1779200274.3367574,
+    "hash": "851bf09bba9e27f5244a6b503081ac6b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/screenshot-tool-empty.png": {
+    "mtime": 1779191885.5451753,
+    "hash": "289ab5e01a009288d49a3e938b465d08"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/postiz-review/hero-banner.png": {
+    "mtime": 1779057592.0999868,
+    "hash": "6e23a7fa76389e397404fb8450f2ddf2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/screenshot-tool-filled.png": {
+    "mtime": 1779360428.36005,
+    "hash": "9d8e54d9f973f584a23a8a7299384cc9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/infographic-comparison.png": {
+    "mtime": 1779358283.3055003,
+    "hash": "d1afcf1d5cff869c7302b0a78def26de"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/screenshot-tool-output.png": {
+    "mtime": 1779360468.6060045,
+    "hash": "fff7a90d11e309cf28cac461034579e6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/hero-banner.png": {
+    "mtime": 1779361359.1656868,
+    "hash": "fbd5f93c04bba7ddc94eafeec8ef1d0e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/screenshot-tool-empty.png": {
+    "mtime": 1779360142.6616476,
+    "hash": "b438fdeb5328b6f13a12f915bddd6de2"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/infographic-steps.png": {
+    "mtime": 1779398619.6691537,
+    "hash": "521293feacb76de9de23d3d9eec4b3e6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/screenshot-output.png": {
+    "mtime": 1779396098.9935126,
+    "hash": "198c1cc8f4819bbdca9b52b2d989f512"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/hero-banner.png": {
+    "mtime": 1779400587.0141037,
+    "hash": "3dbe0c8d21457b1445027c1bc6603c75"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/screenshot-step2.png": {
+    "mtime": 1779396034.108598,
+    "hash": "8137e4cfcd4082df7decf6f66133a703"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/screenshot-step1.png": {
+    "mtime": 1779395965.9956942,
+    "hash": "23bfd6e57e309c51278a634acd930820"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/author-avatar.jpg": {
+    "mtime": 1779441339.3455317,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/infographic-vs-competitors.png": {
+    "mtime": 1779020158.1516683,
+    "hash": "c7ea431359117652a4be48f589cc4cc0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/infographic-features.png": {
+    "mtime": 1779020158.1441126,
+    "hash": "c5eb51b9242d9787dc86d3dc0f1f8fbf"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/screenshot-ai-assistant.png": {
+    "mtime": 1779021278.9797022,
+    "hash": "bdb8cae0c16d323fc7580196ea27e15c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/hero-banner.png": {
+    "mtime": 1779055966.1051524,
+    "hash": "fbb1e1416881d6a693f635a8c8b88d88"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/screenshot-landing-page.png": {
+    "mtime": 1779021374.8816197,
+    "hash": "f66a3bf51dcc147d2b4917a540a16973"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/author-avatar.jpg": {
+    "mtime": 1779441346.0071037,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/screenshot-builder.png": {
+    "mtime": 1779021249.3385143,
+    "hash": "36ceb7d8861f75f6af7849b7cc6885f8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/screenshot-automation.png": {
+    "mtime": 1779021347.918561,
+    "hash": "234a349c95e796943f965e0e4f9d3e6a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/infographic-pack-odds.png": {
+    "mtime": 1779798674.3217077,
+    "hash": "8c10dc43cffa55e71aecf1c13fb44492"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/hero-banner.png": {
+    "mtime": 1779800764.4965706,
+    "hash": "463d51a70382b54a26423da65445dd09"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/blog-title-generator/screenshot-tool.png": {
+    "mtime": 1779965876.9547484,
+    "hash": "e66948d9e902c35a7e99410c3cb4a913"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/blog-title-generator/infographic.png": {
+    "mtime": 1778842192.23481,
+    "hash": "c310bf079d348952e019cdd76e49f9b8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/ai-search-content-visibility.png": {
+    "mtime": 1779555465.2347724,
+    "hash": "fa0bb837b6eab3ee444b313aad7ad3e0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/write-for-ai-not-google.png": {
+    "mtime": 1779555465.251445,
+    "hash": "01764f942d2ebd6e8b5d0f41a88e5d98"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/ai-evolution-autonomous-agents.png": {
+    "mtime": 1779555465.2482183,
+    "hash": "5d4b517e464bb392a5ccbf5f264f4958"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/hero-banner.png": {
+    "mtime": 1779557860.739773,
+    "hash": "c29fc35ded295d4f3307fafea5e05066"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/autonomous-search-agent-evolution.png": {
+    "mtime": 1779555465.242136,
+    "hash": "c4173a92ef5c7d1ac55aa8e4cf1b3e34"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-create-pdf-free/screenshot-tool.png": {
+    "mtime": 1779965845.0472875,
+    "hash": "b90c0db6e2f0ca40e6803a39283ec506"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/hero-banner.png": {
+    "mtime": 1779662322.3189433,
+    "hash": "b32eb1c59505e886da586f8239b47637"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/seo-vs-geo.png": {
+    "mtime": 1779658014.5968893,
+    "hash": "de4894dd9f76a5cf35a854070970d02f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/geo-checklist.png": {
+    "mtime": 1779658014.602571,
+    "hash": "62d23841d790cfdb05b9ce836d14db81"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/hashtag-generator-guide/screenshot-tool.png": {
+    "mtime": 1779965801.7514484,
+    "hash": "45f6c629b6ce9532099c0548234d0e7b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/video-poster.jpg": {
+    "mtime": 1784807780.0007594,
+    "hash": "2ee142892754a14b975872660657fa9a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/comic-add-vat.jpg": {
+    "mtime": 1784807463.3968902,
+    "hash": "d0e61f4e90dbe6030e3037c5795db8ce"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/comic-wrong-vs-right.jpg": {
+    "mtime": 1784807468.4581316,
+    "hash": "38fd3058879d5a08228cf9911beaae5e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/comic-value-added.jpg": {
+    "mtime": 1784807474.366635,
+    "hash": "f5639d4f38543371be1c4d88a7f70662"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/hero-banner.png": {
+    "mtime": 1784834971.1438193,
+    "hash": "7cb884d0d38d8e04748e93ce3ebb3fa0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/comic-net-vs-gross.jpg": {
+    "mtime": 1784807457.94383,
+    "hash": "afd0201046f64d3c152b99e3ea77b52a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/comic-rates-world.jpg": {
+    "mtime": 1784807479.5245328,
+    "hash": "a488cee0c23e0aae66fbea9073ab63e4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/author-avatar.jpg": {
+    "mtime": 1784803684.3214347,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/screenshot-draft.png": {
+    "mtime": 1778963417.000628,
+    "hash": "4bba4c65c1f8b06ef8485dfb4c700c0a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/infographic-vs-copilot.png": {
+    "mtime": 1778972733.5069237,
+    "hash": "ad91fe0eed4c0c299cbce9f3d9c8aa2d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/screenshot-word-interface.png": {
+    "mtime": 1778963417.2175446,
+    "hash": "92124315c6f20aa7871279afca35ec2e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/product-screenshot-1.png": {
+    "mtime": 1778963388.4603968,
+    "hash": "61b2888986efdf2ee136e7b60babb46e"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/infographic-features.png": {
+    "mtime": 1778972733.5002007,
+    "hash": "517fcd8a1ea2cc31fe5ccba2c9161e49"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/screenshot-research.png": {
+    "mtime": 1778963417.1894238,
+    "hash": "2c96e8a99e87805dd4b560b10241df4c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/hero-banner.jpg": {
+    "mtime": 1778967747.8644605,
+    "hash": "05206360c984e108e76a4f91826e9eff"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/hero-banner.png": {
+    "mtime": 1779055903.7252598,
+    "hash": "ab2e88fd8559445ad843682e4c8838f8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/screenshot-edit.png": {
+    "mtime": 1778963417.0255382,
+    "hash": "7022779ca78d8385f5af1a748eefa176"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/author-avatar.jpg": {
+    "mtime": 1779441346.0100849,
+    "hash": "c2b5f22084b0334dfa81b5b43910b18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/is-it-down-or-just-me/screenshot-tool.png": {
+    "mtime": 1779965792.033861,
+    "hash": "674e10d2a14207567219a6e549f392e3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/infographic-vs-competitors.png": {
+    "mtime": 1779103388.2636735,
+    "hash": "be9b13f09514d9a034b707951a184fdc"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/screenshot-strength.png": {
+    "mtime": 1779104355.05097,
+    "hash": "07862abf818fd2a1100b700cb5b9ecb9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/infographic-features.png": {
+    "mtime": 1779103388.2764335,
+    "hash": "0e2946c64c4ea30bc8644c2b77e5883d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/hero-banner.png": {
+    "mtime": 1779104200.3055978,
+    "hash": "09526de26f69ce4f1f5414d3655b9542"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/screenshot-settings.png": {
+    "mtime": 1779104342.3617675,
+    "hash": "50cfe1611767715e172b4f390379580b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/screenshot-generator.png": {
+    "mtime": 1779104326.3839905,
+    "hash": "b3ca80a61ec51cebc4c2e2ecf22ffa78"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-meta-description-generator/screenshot-tool.png": {
+    "mtime": 1779965814.3408606,
+    "hash": "eed28bcf58cbc9a51782ef93af6b0f6f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-meta-description-generator/infographic.png": {
+    "mtime": 1778609556.082747,
+    "hash": "e61ab2f5b91151e08311596c05e96288"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/the-markup/ep1.mp4": {
+    "mtime": 1785698490.14344,
+    "hash": "3ccfdc0cfee3e74afeba4258be0d261c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/ds-demo/demo.mp4": {
+    "mtime": 1783290692.4421732,
+    "hash": "c426a63eafee355573cd159a8f998a06"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-how-it-works.mp4": {
+    "mtime": 1780434713.6511037,
+    "hash": "d9d0a6c8e955135c20118ac9f1be904b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/infographic-features.mp4": {
+    "mtime": 1780434713.639429,
+    "hash": "49b9dfa08ebc7f1eb1bfee993026ddcd"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/free-youtube-transcript-extractor-no-signup-no-limits/audio-overview.m4a": {
+    "mtime": 1780433096.4928854,
+    "hash": "9cb6e6c4f527f6ea58a0f999c308b88a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/infographic-animated.mp4": {
+    "mtime": 1779449871.9860427,
+    "hash": "a1f5a28059640f02d188de2fca85e8c1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-use-ip-address-lookup/audio-overview.m4a": {
+    "mtime": 1779449872.0180688,
+    "hash": "46477ebf39cc4dc9adba499ebf021562"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-alternatives/infographic-animated-2.mp4": {
+    "mtime": 1779898016.9613557,
+    "hash": "adb66756a64f41972694e050db155e5f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-alternatives/infographic-animated-3.mp4": {
+    "mtime": 1779898017.046052,
+    "hash": "522b15cebc8def565d341f81a47ad24c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-alternatives/audio-overview.m4a": {
+    "mtime": 1779898017.1871734,
+    "hash": "b156808ce4cbf82556192b00ac8b4815"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/mortgage-video.mp4": {
+    "mtime": 1784812522.1981618,
+    "hash": "521c47fca231c2296faf876b748b234f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/mortgage-calculator-guide/podcast.m4a": {
+    "mtime": 1784812529.8116302,
+    "hash": "748892cfc08e23fa63b63c5748a9485c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/podcast.m4a": {
+    "mtime": 1780063225.9494245,
+    "hash": "f98f6b8ad87baa0dae1c31ba04a063ef"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/infographic-2.mp4": {
+    "mtime": 1780063225.8958373,
+    "hash": "7890a27c1b33c71694c26be014f9687f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/infographic-3.mp4": {
+    "mtime": 1780063225.908736,
+    "hash": "990679b430dc6ff8c8e3bb799a8ccf4c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-vs-beehiiv/infographic-1.mp4": {
+    "mtime": 1780063225.876174,
+    "hash": "433fde9eb049a6490897c29283f61099"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/animated-infographic-2.mp4": {
+    "mtime": 1779828225.4581125,
+    "hash": "e0f62e8586ccf780da86de6436528a32"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/animated-infographic-1.mp4": {
+    "mtime": 1779828225.4436154,
+    "hash": "fe5903d6be56913060b492b507dadd6f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/opus-clip-review/audio-overview.m4a": {
+    "mtime": 1779828225.4881995,
+    "hash": "4b953b9e99788bb60ff3b6961793ccf0"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/rankspot-review/animated-infographic.mp4": {
+    "mtime": 1778957390.068734,
+    "hash": "9bbd0aa1eb48a92e7fbd06bb080fa6d9"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/tax-breakdown-animated.mp4": {
+    "mtime": 1779960070.337031,
+    "hash": "8ce3709f8deeba6dfe4438df0f67fd85"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/uk-us-comparison-animated.mp4": {
+    "mtime": 1779960070.3459322,
+    "hash": "9fb52d43a9d0b086b53308274b16c954"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/salary-after-tax-uk-us-2025/salary-podcast.m4a": {
+    "mtime": 1779960070.3262448,
+    "hash": "4e6e122ec5243fe10950b33cf4624b70"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/alerts-explainer.mp4": {
+    "mtime": 1779276639.0180206,
+    "hash": "9037a8729ab857365c11311b9d9b99a5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/tools-comparison.mp4": {
+    "mtime": 1779276639.0090613,
+    "hash": "7e861baee3d57997e605b82ebf3f00fb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/website-down-checker/audio-overview.m4a": {
+    "mtime": 1779276639.1248267,
+    "hash": "bc8f15bb86ad05d819358644048779ca"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/utm-parameters-animated.mp4": {
+    "mtime": 1779187752.3906777,
+    "hash": "2045df2aac9761c1e64130025af700a1"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/utm-ga4-podcast.m4a": {
+    "mtime": 1779187752.3817246,
+    "hash": "0e2a4c5fe90f3718f789adf8aa01530f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/utm-builder-guide/utm-attribution-black-hole.mp4": {
+    "mtime": 1779187752.3148873,
+    "hash": "64d48d5657acdd9f2fc738a8f700b143"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/animated-infographic.mp4": {
+    "mtime": 1779358283.4015,
+    "hash": "e55d5fc6be5c934080c5e60e7618974c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/cover-letter-generator-guide/audio-overview.m4a": {
+    "mtime": 1779358283.3920803,
+    "hash": "680b4cbcba2be56b7fd350a9b0559c84"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/infographic-animated.mp4": {
+    "mtime": 1779398619.6561499,
+    "hash": "c030e6b4df0aa6033821a3a7f9f6ae9c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-tailor-cover-letter-to-job-description/audio-overview.m4a": {
+    "mtime": 1779398619.6475294,
+    "hash": "34817c521a2daaf33086a2e396183c19"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/aweber-review/infographic-animated.mp4": {
+    "mtime": 1779020158.135903,
+    "hash": "8325c7582c5e1e1d66897cc73477a18d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/infographic-animated-2.mp4": {
+    "mtime": 1779801903.879427,
+    "hash": "6bb61f61ea6d929f5ec22aa7aa077669"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/infographic-animated-3.mp4": {
+    "mtime": 1779801903.886276,
+    "hash": "f9da9afdda4d5aa6578e77099b88937d"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/infographic-crown-rare-cost.mp4": {
+    "mtime": 1779798674.4481547,
+    "hash": "9fbc41288158fd4605c7a5eba6a03cb3"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/infographic-animated.mp4": {
+    "mtime": 1779798674.3844154,
+    "hash": "96d5f0d4000d324ec61cd6683f1e5381"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/pokemon-tcg-pocket-pull-rates/pokemon-pull-rates-podcast.m4a": {
+    "mtime": 1779798674.369738,
+    "hash": "6d7ec30be6525482f7428c34f61f612a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/infographic-animated-1.mp4": {
+    "mtime": 1779555465.2566352,
+    "hash": "24b788af6ddc4df56cac73d0f323bf4b"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/infographic-animated-2.mp4": {
+    "mtime": 1779555465.2656996,
+    "hash": "390f403ea4fb9aa95903dc7c6bdb694a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/infographic-animated-3.mp4": {
+    "mtime": 1779555465.2732246,
+    "hash": "388c1edb2bd06a4d4604a7bd8dc64486"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/infographic-animated-4.mp4": {
+    "mtime": 1779555465.278916,
+    "hash": "2a707a51dd973cc8606ca39944a4a9b5"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/google-ai-search-redesign-2026/audio-overview.m4a": {
+    "mtime": 1779555465.3258247,
+    "hash": "b0a4ce12b99ec0dbcd1800467f3a9aa8"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/infographic-animated-1.mp4": {
+    "mtime": 1779658014.6180136,
+    "hash": "e753d49fbaa4f8672f437190b739dc3a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/infographic-animated-2.mp4": {
+    "mtime": 1779658014.6286333,
+    "hash": "5f6e619167e2003ceeda2d4c2c4220fb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/how-to-rank-in-google-ai-overviews-2026/audio-overview.m4a": {
+    "mtime": 1779661047.8689542,
+    "hash": "be423e9af73a4509efa3359ae11dc534"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/hashtag-generator-guide/animated-infographic-2.mp4": {
+    "mtime": 1778757712.8759096,
+    "hash": "9ba2c753ccafc3d5322f73db2865c726"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/hashtag-generator-guide/animated-infographic-1.mp4": {
+    "mtime": 1778757712.8651886,
+    "hash": "839f7aea331829dac827143c6c94f76c"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/hashtag-generator-guide/animated-overview.mp4": {
+    "mtime": 1778757712.8500848,
+    "hash": "bf393672f2e3eb737a5291422e3d30f4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/podcast.m4a": {
+    "mtime": 1784813192.5347338,
+    "hash": "8bce3bbccf5cf29b83792b6a72a336c4"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/vat-calculator-guide/vat-video.mp4": {
+    "mtime": 1784807775.3780334,
+    "hash": "e3c1fb2fa82ffa9af87d9c216f8a6f33"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/review-video.mp4": {
+    "mtime": 1778972733.4869335,
+    "hash": "9e02bea9001db5ced75d9ca77d443297"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/genspark-for-word-review/infographic-animated.mp4": {
+    "mtime": 1778972733.4947171,
+    "hash": "fa402dea343e48bdaee51df4670a1fcb"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/email-subject-line-tester/animated-infographic.mp4": {
+    "mtime": 1778679756.8696136,
+    "hash": "5502bfa93f4d3991b76c9016cfe59aa6"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/email-subject-line-tester/animated-overview.mp4": {
+    "mtime": 1778679756.8551085,
+    "hash": "33c0dcc1fc7c08c7169fb93d6430736a"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/infographic-animated.mp4": {
+    "mtime": 1779103388.2547808,
+    "hash": "37e867aff5018403ac42083cbdc5d00f"
+  },
+  "/Users/justinpirrie/Downloads/Daijavu skills 2/utility-tools/toolstack/public/blog/password-generator-guide/audio-overview.m4a": {
+    "mtime": 1779103388.2358186,
+    "hash": "fcd965488a8a69f24cf1a8fb5434d9ea"
   }
 }
