@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     url: "https://toolstack.tech/the-markup",
     siteName: "The Markup",
     type: "website",
+    images: [{ url: "https://toolstack.tech/the-markup/banner.png", width: 2560, height: 1440 }],
   },
 };
 

@@ -15,14 +15,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const v = getVideo(slug);
   if (!v) return { title: "Not found" };
   const url = `https://toolstack.tech/the-markup/${v.slug}`;
-  const image = v.youtubeId ? `https://i.ytimg.com/vi/${v.youtubeId}/maxresdefault.jpg` : "https://toolstack.tech/the-markup/ep1-still.jpg";
+  const image = v.youtubeId
+    ? { url: `https://i.ytimg.com/vi/${v.youtubeId}/maxresdefault.jpg`, width: 1280, height: 720 }
+    : { url: "https://toolstack.tech/the-markup/ep1-still.jpg", width: 1920, height: 1080 };
   return {
     title: v.title,
     description: v.hook,
     alternates: { canonical: url },
     openGraph: {
-      title: v.title, description: v.hook, url, siteName: "The Markup", type: "article",
-      images: [{ url: image, width: 1280, height: 720 }],
+      title: v.title, description: v.hook, url, siteName: "The Markup", type: "video.other",
+      images: [image],
     },
   };
 }
@@ -49,7 +51,11 @@ export default async function TheMarkupVideoPage({ params }: { params: Promise<{
               uploadDate: v.published,
               embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
               contentUrl: watch,
-              publisher: { "@type": "Organization", name: "The Markup" },
+              publisher: {
+                "@type": "Organization",
+                name: "The Markup",
+                logo: { "@type": "ImageObject", url: "https://toolstack.tech/the-markup/logo.png" },
+              },
             }),
           }}
         />

@@ -1,16 +1,16 @@
-# Graph Report - toolstack  (2026-08-02)
+# Graph Report - toolstack  (2026-08-03)
 
 ## Corpus Check
-- 532 files · ~10,608,287 words
+- 532 files · ~10,608,310 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2842 nodes · 3421 edges · 447 communities (297 shown, 150 thin omitted)
+- 2842 nodes · 3421 edges · 446 communities (297 shown, 149 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 145 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `62f52144`
+- Built from commit: `7dacbbb7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -224,35 +224,35 @@
 - [[_COMMUNITY_Misc components vatcalculatorthumbn|Misc: components vatcalculatorthumbn]]
 - [[_COMMUNITY_Misc components salarycalculatorthu|Misc: components salarycalculatorthu]]
 - [[_COMMUNITY_Misc components websitedownthumbnai|Misc: components websitedownthumbnai]]
-- [[_COMMUNITY_Misc postcss config mjs|Misc: postcss config mjs]]
-- [[_COMMUNITY_Misc eslint config mjs|Misc: eslint config mjs]]
+- [[_COMMUNITY_Misc components caseconverterthumbn|Misc: components caseconverterthumbn]]
+- [[_COMMUNITY_Misc tailwind config ts|Misc: tailwind config ts]]
 - [[_COMMUNITY_Misc app robots robots|Misc: app robots robots]]
 - [[_COMMUNITY_Misc app contact page tsx|Misc: app contact page tsx]]
-- [[_COMMUNITY_Misc app api website down checker r|Misc: app api website down checker r]]
+- [[_COMMUNITY_Misc app api whois lookup route ts|Misc: app api whois lookup route ts]]
 - [[_COMMUNITY_Misc app api blog title generator r|Misc: app api blog title generator r]]
-- [[_COMMUNITY_Misc app api youtube video download|Misc: app api youtube video download]]
+- [[_COMMUNITY_Misc app api business name generato|Misc: app api business name generato]]
 - [[_COMMUNITY_Misc app api generate prompts route|Misc: app api generate prompts route]]
-- [[_COMMUNITY_Misc etsy listing package|Misc: etsy listing package]]
+- [[_COMMUNITY_Misc app api color palette generato|Misc: app api color palette generato]]
 - [[_COMMUNITY_Misc etsy whats included|Misc: etsy whats included]]
 - [[_COMMUNITY_Misc etsy hero image|Misc: etsy hero image]]
-- [[_COMMUNITY_Community 239|Community 239]]
+- [[_COMMUNITY_Community 236|Community 236]]
 - [[_COMMUNITY_Community 240|Community 240]]
-- [[_COMMUNITY_Community 242|Community 242]]
-- [[_COMMUNITY_Community 246|Community 246]]
-- [[_COMMUNITY_Community 249|Community 249]]
-- [[_COMMUNITY_Community 251|Community 251]]
-- [[_COMMUNITY_Community 258|Community 258]]
-- [[_COMMUNITY_Community 266|Community 266]]
-- [[_COMMUNITY_Community 269|Community 269]]
-- [[_COMMUNITY_Community 272|Community 272]]
+- [[_COMMUNITY_Community 241|Community 241]]
+- [[_COMMUNITY_Community 243|Community 243]]
+- [[_COMMUNITY_Community 247|Community 247]]
+- [[_COMMUNITY_Community 250|Community 250]]
+- [[_COMMUNITY_Community 252|Community 252]]
+- [[_COMMUNITY_Community 259|Community 259]]
+- [[_COMMUNITY_Community 267|Community 267]]
+- [[_COMMUNITY_Community 270|Community 270]]
 - [[_COMMUNITY_Community 273|Community 273]]
 - [[_COMMUNITY_Community 274|Community 274]]
 - [[_COMMUNITY_Community 275|Community 275]]
-- [[_COMMUNITY_Community 277|Community 277]]
+- [[_COMMUNITY_Community 276|Community 276]]
 - [[_COMMUNITY_Community 278|Community 278]]
 - [[_COMMUNITY_Community 279|Community 279]]
 - [[_COMMUNITY_Community 280|Community 280]]
-- [[_COMMUNITY_Community 282|Community 282]]
+- [[_COMMUNITY_Community 281|Community 281]]
 - [[_COMMUNITY_Community 283|Community 283]]
 - [[_COMMUNITY_Community 284|Community 284]]
 - [[_COMMUNITY_Community 285|Community 285]]
@@ -299,8 +299,8 @@
 - [[_COMMUNITY_Community 326|Community 326]]
 - [[_COMMUNITY_Community 327|Community 327]]
 - [[_COMMUNITY_Community 328|Community 328]]
+- [[_COMMUNITY_Community 329|Community 329]]
 - [[_COMMUNITY_Community 330|Community 330]]
-- [[_COMMUNITY_Community 331|Community 331]]
 - [[_COMMUNITY_Community 332|Community 332]]
 - [[_COMMUNITY_Community 333|Community 333]]
 - [[_COMMUNITY_Community 334|Community 334]]
@@ -355,15 +355,14 @@
 - [[_COMMUNITY_Community 383|Community 383]]
 - [[_COMMUNITY_Community 384|Community 384]]
 - [[_COMMUNITY_Community 385|Community 385]]
-- [[_COMMUNITY_Community 437|Community 437]]
-- [[_COMMUNITY_Community 438|Community 438]]
+- [[_COMMUNITY_Community 386|Community 386]]
+- [[_COMMUNITY_Community 387|Community 387]]
 - [[_COMMUNITY_Community 439|Community 439]]
 - [[_COMMUNITY_Community 440|Community 440]]
 - [[_COMMUNITY_Community 441|Community 441]]
-- [[_COMMUNITY_Community 442|Community 442]]
+- [[_COMMUNITY_Community 443|Community 443]]
 - [[_COMMUNITY_Community 444|Community 444]]
 - [[_COMMUNITY_Community 445|Community 445]]
-- [[_COMMUNITY_Community 446|Community 446]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `ToolStack` - 84 edges
@@ -386,10 +385,10 @@
   public/tools/lorem-ipsum-generator-preview.png → public/llms.txt
 - `Unix Timestamp Converter Preview Image` --belongs_to--> `ToolStack`  [INFERRED]
   public/tools/unix-timestamp-preview.png → public/llms.txt
-- `World Cup Team Finder Preview Image` --belongs_to--> `ToolStack`  [INFERRED]
-  public/tools/world-cup-team-finder-preview.png → public/llms.txt
+- `Website Down Checker Preview Image` --belongs_to--> `ToolStack`  [INFERRED]
+  public/tools/website-down-checker-preview.png → public/llms.txt
 
-## Communities (447 total, 150 thin omitted)
+## Communities (446 total, 149 thin omitted)
 
 ### Community 0 - "JSON Formatter Tool"
 Cohesion: 0.08
@@ -405,11 +404,11 @@ Nodes (28): CATEGORIES, COMPLEXITY_CONFIG, EXAMPLES, FAQS, FRAMEWORKS, MODELS, P
 
 ### Community 3 - "Word Counter Tool"
 Cohesion: 0.06
-Nodes (22): FAQS, HOW_IT_WORKS, FAQS, HistoryItem, saveToHistory(), PipeDataButton(), PipeDataButtonProps, TOOL_PIPELINES (+14 more)
+Nodes (19): FAQS, HistoryItem, saveToHistory(), FAQS, FONTS, HOW_IT_WORKS, POPULAR_EMOJIS, FAQS (+11 more)
 
 ### Community 4 - "Utility Tool Pages"
 Cohesion: 0.07
-Nodes (25): AgeCalculatorThumbnail(), PROFILES, ColorContrastThumbnail(), PAIRS, CreditCardRewardsThumbnail(), SCENARIOS, CssGradientThumbnail(), PRESETS (+17 more)
+Nodes (26): AiPromptGeneratorThumbnail(), FRAMEWORKS, RESPONSES, CssGradientThumbnail(), PRESETS, EmailSubjectThumbnail(), SUBJECTS, Gta6LaunchTimeThumbnail() (+18 more)
 
 ### Community 5 - "Email Subject Tester"
 Cohesion: 0.07
@@ -420,8 +419,8 @@ Cohesion: 0.08
 Nodes (28): ShareSnippetButton(), ShareSnippetButtonProps, [activeSample, setActiveSample], activeTab, [activeTabId, setActiveTabId], clear(), [copied, setCopied], EditorTab (+20 more)
 
 ### Community 7 - "UTM Campaign Builder"
-Cohesion: 0.1
-Nodes (35): ToolStack App Favicon (T Lightning Bolt), Developer Tools Category, Productivity Tools Category, Security Tools Category, Email Signature Generator Preview Image, JSON Formatter Preview Image, JWT Decoder Tool Preview, ToolStack Public Favicon (T Lightning Bolt) (+27 more)
+Cohesion: 0.09
+Nodes (32): ToolStack App Favicon (T Lightning Bolt), Blog Post - AI Future, Blog Hero Image - AI Future, Productivity Tools Category, Security Tools Category, Sports Tools Category, Email Signature Generator Preview Image, Online Stopwatch Tool Preview Screenshot (+24 more)
 
 ### Community 8 - "AI Prompt Generator"
 Cohesion: 0.06
@@ -448,40 +447,40 @@ Cohesion: 0.11
 Nodes (22): allMirrors, blogAppDir, blogBase, buildBlogMirror(), buildToolMirror(), __dirname, errors, extractFaqs() (+14 more)
 
 ### Community 14 - "Email Signature Builder"
-Cohesion: 0.09
-Nodes (13): FAQS, metadata, FAQS, metadata, mono, ArticleSchema(), FAQS, metadata (+5 more)
-
-### Community 15 - "Hashtag Generator"
 Cohesion: 0.11
 Nodes (20): Alternative, analyse(), ANGLE_COLORS, Breakdown, CAT_BG, CAT_COLOR, CAT_LABEL, countEmojis() (+12 more)
 
+### Community 15 - "Hashtag Generator"
+Cohesion: 0.09
+Nodes (13): AdBlockProps, FAQS, h2Style, pStyle, code, FAQS, metadata, FAQS (+5 more)
+
 ### Community 16 - "AdvertiseGPT Banner"
 Cohesion: 0.09
-Nodes (12): FAQS, metadata, sectionCard, toolsLink, metadata, AdBlock(), FAQS, metadata (+4 more)
+Nodes (13): FAQS, metadata, FAQS, h2Style, pStyle, PULL_RATES, ArticleSchemaProps, FAQ (+5 more)
 
 ### Community 17 - "Color Palette Generator"
 Cohesion: 0.1
-Nodes (12): FAQS, metadata, FAQS, metadata, ArticleSchemaProps, FAQ, FAQS, metadata (+4 more)
+Nodes (11): metadata, FAQS, metadata, FAQS, metadata, FAQS, metadata, mono (+3 more)
 
 ### Community 18 - "Thumbnail Animation System"
 Cohesion: 0.1
-Nodes (12): AdBlockProps, FAQS, metadata, FAQS, metadata, tools, codeStyle, FAQS (+4 more)
+Nodes (11): AdBlock(), FAQS, metadata, FAQS, metadata, FAQS, metadata, FAQS (+3 more)
 
 ### Community 19 - "AI Tool Previews"
 Cohesion: 0.1
 Nodes (20): 10. llms-full.txt (AI Search Readiness), 11. CSP Header (Technical SEO), 12. WebP Audit for All Pages (Images), 1. Fix Category Page Brand Suffix (On-Page SEO), 2. Add Article Schema to Blog Posts (Schema), 3. Add Author Attribution to Blog Posts (Content E-E-A-T), 4. Create About/Founder Page (Content E-E-A-T), 5. Increase Blog Post Word Count (Content Quality) (+12 more)
 
 ### Community 20 - "UUID Generator Tool"
-Cohesion: 0.12
-Nodes (12): Badge(), FAQS, getRatio(), hexToRgb(), HOW_IT_WORKS, luminance(), MoreTools(), FAQS (+4 more)
-
-### Community 21 - "Age Calculator Tool"
 Cohesion: 0.1
 Nodes (17): [campaign, setCampaign], [content, setContent], [copied, setCopied], [faqOpen, setFaqOpen], FAQS, finalUrlStr, [generatedUrl, setGeneratedUrl], HOW_IT_WORKS (+9 more)
 
-### Community 22 - "World Cup Accumulator"
+### Community 21 - "Age Calculator Tool"
 Cohesion: 0.1
 Nodes (19): 10. CSS Gradient Generator for Modern UI Design, 11. Color Contrast Checker for Accessibility Compliance, 12. Color Palette Generator for Design Systems, 13. Password Generator for Secure Credentials, 14. QR Code Generator for Instant Sharing, 15. Favicon Generator for Brand Identity, 1. JSON Formatter and Validator for API Debugging, 2. Regex Tester for Pattern Validation and Text Extraction (+11 more)
+
+### Community 22 - "World Cup Accumulator"
+Cohesion: 0.12
+Nodes (14): Badge(), FAQS, getRatio(), hexToRgb(), HOW_IT_WORKS, luminance(), MoreTools(), FAQS (+6 more)
 
 ### Community 23 - "Project Config & Docs"
 Cohesion: 0.11
@@ -496,36 +495,36 @@ Cohesion: 0.14
 Nodes (9): ALL_MODES, DEV_MODES, FAQS, MINOR_WORDS, STANDARD_MODES, toKebabCase(), toLowerCase(), toSentenceCase() (+1 more)
 
 ### Community 26 - "Navigation & QR Tool"
-Cohesion: 0.12
-Nodes (16): 10. YouTube Tag Generator — Get Found on the World's Second Largest Search Engine, 11. UTM Builder — Measure What Actually Works, 1. AI Prompt Generator — The Foundation of Every AI Workflow, 2. Grammar Checker — Polish Everything Before Publishing, 3. Paraphrasing Tool — Create Unique Content at Scale, 4. Text Summariser — Distill Product Benefits Instantly, 5. Blog Title Generator — Drive Search Traffic with Better Headlines, 6. Cover Letter Generator — Professional Communication That Gets Read (+8 more)
+Cohesion: 0.14
+Nodes (10): FAQS, HOW_IT_WORKS, PipeDataButton(), PipeDataButtonProps, TOOL_PIPELINES, Dialect, FAQS, HOW_IT_WORKS (+2 more)
 
 ### Community 27 - "Whatnot Fee Calculator"
 Cohesion: 0.12
-Nodes (16): Auto Clip Selection Results, Caption Accuracy, Captions.ai — CAPTION CHAMPION, Executive Summary, Frequently Asked Questions, Full Feature Comparison, Is Opus Clip Still King? We Tested 3 New AI Rivals (2026), Opus Clip — THE BENCHMARK (+8 more)
+Nodes (16): 10. YouTube Tag Generator — Get Found on the World's Second Largest Search Engine, 11. UTM Builder — Measure What Actually Works, 1. AI Prompt Generator — The Foundation of Every AI Workflow, 2. Grammar Checker — Polish Everything Before Publishing, 3. Paraphrasing Tool — Create Unique Content at Scale, 4. Text Summariser — Distill Product Benefits Instantly, 5. Blog Title Generator — Drive Search Traffic with Better Headlines, 6. Cover Letter Generator — Professional Communication That Gets Read (+8 more)
 
 ### Community 28 - "Meta Description Generator"
-Cohesion: 0.17
-Nodes (9): inter, metadata, ChromeGate(), CommandPalette(), ALL_TOOLS, NAV_LINKS, Navbar(), SmartPasteListener() (+1 more)
+Cohesion: 0.12
+Nodes (16): Auto Clip Selection Results, Caption Accuracy, Captions.ai — CAPTION CHAMPION, Executive Summary, Frequently Asked Questions, Full Feature Comparison, Is Opus Clip Still King? We Tested 3 New AI Rivals (2026), Opus Clip — THE BENCHMARK (+8 more)
 
 ### Community 29 - "Panini Sticker Calculator"
-Cohesion: 0.19
-Nodes (5): CATEGORY_SEO_CONTENT, CATEGORY_DESCRIPTIONS, ALL_TOOLS, CATEGORIES, CATEGORY_MAP
-
-### Community 30 - "World Cup Team Finder"
 Cohesion: 0.12
 Nodes (15): 10. YouTube Tag Generator, 1. Meta Description Generator, 2. SSL Certificate Checker, 3. Website Down Checker, 4. Whois Lookup, 5. UTM Campaign Builder, 6. Word Counter, 7. Character Counter (+7 more)
 
-### Community 31 - "CSS Gradient Generator"
+### Community 30 - "World Cup Team Finder"
 Cohesion: 0.16
 Nodes (12): AdvertiseGPTBanner(), Guide, TOOL_GUIDES, calculateResult(), cardStyle, FAQS, jsonLd, Question (+4 more)
 
-### Community 32 - "Business Name Generator"
+### Community 31 - "CSS Gradient Generator"
 Cohesion: 0.26
 Nodes (13): ACCENT_COLORS, buildContactLine(), buildCTA(), buildPhoto(), buildSocialLine(), esc(), FAQS, FONTS (+5 more)
 
-### Community 33 - "Lorem Ipsum Generator"
+### Community 32 - "Business Name Generator"
 Cohesion: 0.13
 Nodes (8): COPY_FORMATS, FAQS, HashtagResult, HOW_IT_WORKS, JSON_LD, PLATFORMS, TIERS, TONES
+
+### Community 33 - "Lorem Ipsum Generator"
+Cohesion: 0.18
+Nodes (9): inter, metadata, ChromeGate(), ALTERNATIVES, COMPANY, Footer(), linkStyle, TOOL_CATEGORIES (+1 more)
 
 ### Community 34 - "Character & Percentage Tools"
 Cohesion: 0.14
@@ -548,36 +547,36 @@ Cohesion: 0.14
 Nodes (13): 7-Day Start Plan, Core Features, FAQ, How It Works, Opus Clip Review 2026: Does AI Video Repurposing Actually Save You Time?, Performance Test, Pricing Plans, Pros & Cons (+5 more)
 
 ### Community 39 - "SSL Certificate Checker"
-Cohesion: 0.22
-Nodes (14): AI Prompt Generator Preview Image, Blog Title Generator Preview Image, Business Name Generator Preview Image, AI Tools Category, Design Tools Category, Marketing Tools Category, Writing Tools Category, Character Counter Preview Image (+6 more)
-
-### Community 40 - "Blog Content Tools"
 Cohesion: 0.23
 Nodes (10): charStatus(), ctrScore(), Description, DescriptionCard(), FAQS, geoScore(), geoScoreLabel(), highlightKeyword() (+2 more)
 
-### Community 41 - "Network Status Blog Posts"
+### Community 40 - "Blog Content Tools"
 Cohesion: 0.15
 Nodes (5): FAQS, Format, FORMATS, NAMESPACES, QUANTITIES
 
-### Community 42 - "WHOIS Domain Lookup"
+### Community 41 - "Network Status Blog Posts"
 Cohesion: 0.17
 Nodes (10): AMEX_ELIGIBLE, Card, CARDS, CatId, CATS, CreditCardRewardsOptimizerPage(), FAQS, fmt$() (+2 more)
 
-### Community 43 - "Developer Tool Previews"
+### Community 42 - "WHOIS Domain Lookup"
 Cohesion: 0.19
 Nodes (10): DATACENTER_KEYWORDS, FAQS, FIELD_STYLE, FLAG_URL(), getNetworkType(), IpData, IpHeader(), IpLookupPage() (+2 more)
 
-### Community 44 - "Color Contrast Checker"
+### Community 43 - "Developer Tool Previews"
 Cohesion: 0.19
 Nodes (9): CONS, FAQS, metadata, PROS, STATS, items, SidebarToc(), analyze() (+1 more)
 
-### Community 45 - "YouTube Tag Generator"
+### Community 44 - "Color Contrast Checker"
 Cohesion: 0.15
 Nodes (12): 1. AI Prompt Generator, 2. Grammar Checker, 3. Paraphrasing Tool, 4. Text Summariser, 5. Blog Title Generator, 6. Cover Letter Generator, 7. Case Converter, 8. Business Name Generator (+4 more)
 
-### Community 46 - "Card Flip ROI Calculator"
+### Community 45 - "YouTube Tag Generator"
 Cohesion: 0.15
 Nodes (12): 1. Time Management Tools, 2. Writing and Content Tools, 3. Development and Data Tools, 4. Design and Visual Tools, 5. Security and Credential Tools, Article Contents, Frequently Asked Questions, How to Build Your Productivity Tool Stack (+4 more)
+
+### Community 46 - "Card Flip ROI Calculator"
+Cohesion: 0.27
+Nodes (4): CATEGORY_SEO_CONTENT, ALL_TOOLS, CATEGORIES, CATEGORY_MAP
 
 ### Community 47 - "Website Down Checker"
 Cohesion: 0.18
@@ -624,20 +623,20 @@ Cohesion: 0.18
 Nodes (10): Article Contents, Build UTM Links Without Errors, Email Campaigns, Frequently Asked Questions, Paid Ads, Social and Content, The Five UTM Parameters Explained, The Most Common UTM Mistakes (+2 more)
 
 ### Community 58 - "Card Box Break Calculator"
-Cohesion: 0.2
-Nodes (5): ALL_WORDS, FAQS, pick(), SENTENCES, TYPES
+Cohesion: 0.22
+Nodes (8): ANGLES, ColorStop, CSSGradientGenerator(), FAQS, GradientType, HOW_IT_WORKS, PRESETS, uid()
 
 ### Community 59 - "Password Generator Tool"
-Cohesion: 0.22
-Nodes (9): Album, ALBUMS, card, CURRENCIES, FAQS, fmt(), input, label (+1 more)
-
-### Community 60 - "PDF Generator Tool"
 Cohesion: 0.29
 Nodes (8): CheckResult, EXAMPLES, formatTime(), getSpeedLabel(), getStatusColor(), WebsiteDownChecker(), extractVideoId(), POST()
 
+### Community 60 - "PDF Generator Tool"
+Cohesion: 0.2
+Nodes (5): ALL_WORDS, FAQS, pick(), SENTENCES, TYPES
+
 ### Community 61 - "Mortgage Calculator Tool"
 Cohesion: 0.22
-Nodes (8): ANGLES, ColorStop, CSSGradientGenerator(), FAQS, GradientType, HOW_IT_WORKS, PRESETS, uid()
+Nodes (9): Album, ALBUMS, card, CURRENCIES, FAQS, fmt(), input, label (+1 more)
 
 ### Community 62 - "VAT Calculator Tool"
 Cohesion: 0.31
@@ -645,7 +644,7 @@ Nodes (9): card, FAQS, fmtPacks(), packsForProbability(), pAtLeastOne(), pct(), 
 
 ### Community 63 - "Terms of Service Page"
 Cohesion: 0.2
-Nodes (8): affiliateLink, factorCard, FAQS, mistakeCard, previewBox, sectionCard, templateCard, toolsLink
+Nodes (8): code, FAQS, h2Style, h3Style, metadata, pStyle, QUOTES, STATS
 
 ### Community 64 - "Developer Tools Blog Post"
 Cohesion: 0.2
@@ -653,7 +652,7 @@ Nodes (8): code, FAQS, h2Style, h3Style, metadata, pStyle, QUOTES, STATS
 
 ### Community 65 - "AI Writing Tools Blog"
 Cohesion: 0.2
-Nodes (8): code, FAQS, h2Style, h3Style, metadata, pStyle, QUOTES, STATS
+Nodes (8): affiliateLink, factorCard, FAQS, mistakeCard, previewBox, sectionCard, templateCard, toolsLink
 
 ### Community 66 - "Free SEO Tools Blog"
 Cohesion: 0.2
@@ -692,200 +691,200 @@ Cohesion: 0.31
 Nodes (10): Card Flip ROI Tool Hero Image, Card Flip ROI Calculator Tool, Card Grading ROI Hero Image, Card Grading ROI Tool, Trading Card Hobby / Whatnot Niche, Grading Company Comparison Tool, Grading Company Comparison Tool Hero Image, PSA (Professional Sports Authenticator) (+2 more)
 
 ### Community 75 - "AI Paywall Blog Post"
+Cohesion: 0.29
+Nodes (10): AI Prompt Generator Preview Image, Blog Title Generator Preview Image, Business Name Generator Preview Image, AI Tools Category, Design Tools Category, Writing Tools Category, Character Counter Preview Image, Color Contrast Checker Preview Image (+2 more)
+
+### Community 76 - "Mastering JSON Blog"
 Cohesion: 0.33
 Nodes (8): EXAMPLES, expiryColor(), expiryLabel(), fmt(), jsonLd, statusBadge(), WhoisLookupPage(), WhoisResult
 
-### Community 76 - "Mastering JSON Blog"
+### Community 77 - "AI Product Visibility Blog"
 Cohesion: 0.22
 Nodes (5): Currency, FAQS, PRICES, Row, ROWS
 
-### Community 77 - "AI Product Visibility Blog"
+### Community 78 - "Tool Requests API"
 Cohesion: 0.31
 Nodes (8): daysColor(), daysLabel(), EXAMPLES, FAQS, fmt(), jsonLd, SslCheckerPage(), SslResult
 
-### Community 78 - "Tool Requests API"
+### Community 79 - "Monetisation & Ownership"
 Cohesion: 0.25
 Nodes (7): COUNTRIES, CountryConfig, CURRENCIES, FAQS, fmt(), InvoiceGeneratorPage(), LineItem
 
-### Community 79 - "Monetisation & Ownership"
+### Community 80 - "Misc: app tools layout tsx"
 Cohesion: 0.25
 Nodes (6): CalcResult, FAQS, fmt(), SalaryCalculator(), UKResult, USResult
 
-### Community 80 - "Misc: app tools layout tsx"
+### Community 81 - "Misc: app tools sql formatter dialec"
 Cohesion: 0.25
 Nodes (8): CATEGORIES, COUNTRIES, CountryTip, FAQS, fmt(), jsonLd, SERVICE_PRESETS, TipCalculatorPage()
 
-### Community 81 - "Misc: app tools sql formatter dialec"
+### Community 82 - "Misc: app blog what is base64 encodi"
 Cohesion: 0.22
 Nodes (7): accuracyData, dataFields, faqs, mistakes, steps, tocItems, useCases
 
-### Community 82 - "Misc: app blog what is base64 encodi"
+### Community 83 - "Misc: app blog what are utm paramete"
 Cohesion: 0.22
 Nodes (7): FAQS, h2Style, h3Style, metadata, pStyle, UK_TABLE, US_TABLE
 
-### Community 83 - "Misc: app blog what are utm paramete"
-Cohesion: 0.28
-Nodes (5): FAQS, metadata, PlanRecommender(), SidebarToc(), TOC
-
 ### Community 84 - "Misc: app blog regex cheat sheet beg"
-Cohesion: 0.22
-Nodes (7): affiliateLink, FAQS, mistakeCard, platformCard, sectionCard, tierCard, toolsLink
-
-### Community 85 - "Misc: app blog json formatting guide"
-Cohesion: 0.28
-Nodes (5): FAQS, metadata, PlanFinder(), SidebarToc(), TOC
-
-### Community 86 - "Misc: app blog what is my ip address"
 Cohesion: 0.22
 Nodes (7): COMPARE_ROWS, FAQS, h2Style, h3Style, pStyle, QUOTES, STATS
 
-### Community 87 - "Misc: components worldcupteamfindert"
+### Community 85 - "Misc: app blog json formatting guide"
 Cohesion: 0.22
 Nodes (7): FAQS, metadata, sectionCard, tableStyle, tdStyle, thStyle, toolsLink
 
-### Community 88 - "Misc: category card hobby tools"
+### Community 86 - "Misc: app blog what is my ip address"
 Cohesion: 0.28
 Nodes (5): FAQS, metadata, PlanFinder(), SidebarToc(), TOC
 
-### Community 89 - "Misc: card box break calculator prev"
+### Community 87 - "Misc: components worldcupteamfindert"
+Cohesion: 0.28
+Nodes (5): FAQS, metadata, PlanFinder(), SidebarToc(), TOC
+
+### Community 88 - "Misc: category card hobby tools"
 Cohesion: 0.22
 Nodes (7): affiliateLink, categoryCard, FAQS, highlightBox, sectionCard, toolItem, toolsLink
 
+### Community 89 - "Misc: card box break calculator prev"
+Cohesion: 0.28
+Nodes (5): FAQS, metadata, PlanRecommender(), SidebarToc(), TOC
+
 ### Community 90 - "Misc: card flip roi calculator previ"
+Cohesion: 0.22
+Nodes (7): affiliateLink, FAQS, mistakeCard, platformCard, sectionCard, tierCard, toolsLink
+
+### Community 91 - "Misc: meta description generator pre"
 Cohesion: 0.22
 Nodes (7): actionPlan, comparisonTools, faqs, predictions, quotes, stats, steps
 
-### Community 91 - "Misc: meta description generator pre"
+### Community 92 - "Misc: next config ts"
 Cohesion: 0.28
 Nodes (5): BLOG_POSTS, BlogPost, BlogTopic, relatedPosts(), RelatedPosts()
 
-### Community 92 - "Misc: next config ts"
+### Community 93 - "Misc: app blog page tsx"
 Cohesion: 0.22
 Nodes (8): Article Contents, Check Any Website's SSL Certificate, Frequently Asked Questions, How to Read SSL Certificate Details, SSL Certificate Explained: What It Is, How to Check It & When It Expires, The Three Types of SSL Certificate, What Happens When an SSL Certificate Expires?, What Is an SSL Certificate?
 
-### Community 93 - "Misc: app blog page tsx"
+### Community 94 - "Misc: app blog how to create pdf fre"
 Cohesion: 0.22
 Nodes (8): 60+ Free AI Tools. No Account. No Credit Card. No Paywall., Article Contents, Frequently Asked Questions, The Anti-Friction Philosophy, What Is the Friction Deficit?, What This Means for Creators, Developers, and Marketers, Why Every AI Tool Has a Paywall Problem (And How to Fix It), Why the Modern Internet Got Greedy With Simple Utilities
 
-### Community 94 - "Misc: app blog how to create pdf fre"
+### Community 95 - "Misc: app api text summarizer route "
 Cohesion: 0.22
 Nodes (7): Best Free Website Monitoring Tools, Common Causes of Downtime, Frequently Asked Questions, How to Check If Your Site Is Down, How to Set Up Instant Alerts, Website Down Checker, Website Down Checker: Check, Alert & Fix Downtime (2026)
 
-### Community 95 - "Misc: app api text summarizer route "
+### Community 96 - "Misc: app api ssl checker route ts"
 Cohesion: 0.22
 Nodes (8): Content Type Outlook, Context: Google's Market Position, Frequently Asked Questions, Google's New AI Search Bar: What It Means for Your Website Traffic (2026), How to Optimise for AI-First Search, "Spark" — Google's Second Agent Layer, The 4 New Features, What Happened to the 10 Blue Links?
 
-### Community 96 - "Misc: app api ssl checker route ts"
-Cohesion: 0.29
-Nodes (6): CompoundInterestCalculator(), CURRENCIES, fmt(), FREQUENCIES, jsonLd, YearRow
-
 ### Community 97 - "Misc: components sslcheckerthumbnail"
-Cohesion: 0.25
-Nodes (4): BreachResult, FAQS, jsonLd, SEVERITY_CONFIG
+Cohesion: 0.36
+Nodes (9): Developer Tools Category, JSON Formatter Preview Image, JWT Decoder Tool Preview, Regex Tester Preview Image, SQL Formatter Tool Preview, Base64 Encoder Decoder Tool, Code Diff Checker Tool (Code Diff Viewer), UUID Generator Tool (Bulk Identifier Generator) (+1 more)
 
 ### Community 98 - "Misc: components aipromptgeneratorth"
-Cohesion: 0.32
-Nodes (5): base64UrlDecode(), decodeJwt(), FAQS, formatTimestamp(), JwtResult
+Cohesion: 0.25
+Nodes (5): CommandPalette(), ALL_TOOLS, NAV_LINKS, Navbar(), ToolSearch()
 
 ### Community 99 - "Misc: components faviconthumbnail fa"
 Cohesion: 0.29
-Nodes (6): calcFlip(), CardFlipROIPage(), CURRENCIES, FAQS, PLATFORMS, SHIPPING_OPTIONS
+Nodes (6): CompoundInterestCalculator(), CURRENCIES, fmt(), FREQUENCIES, jsonLd, YearRow
 
 ### Community 100 - "Misc: components loremipsumthumbnail"
 Cohesion: 0.29
 Nodes (7): CardType, CardValue, FAQS, getRecommendation(), GRADERS, GradingComparisonPage(), Priority
 
 ### Community 101 - "Misc: components youtubethumbnaildow"
-Cohesion: 0.43
-Nodes (7): FAQS, fmt(), getDigits(), Lap, Mode, OnlineStopwatch(), pad()
+Cohesion: 0.32
+Nodes (5): base64UrlDecode(), decodeJwt(), FAQS, formatTimestamp(), JwtResult
 
 ### Community 102 - "Misc: components uuidgeneratorthumbn"
 Cohesion: 0.25
-Nodes (6): H2, LI, metadata, P, SECTION, UL
+Nodes (4): BreachResult, FAQS, jsonLd, SEVERITY_CONFIG
 
 ### Community 103 - "Misc: components charactercounterthu"
-Cohesion: 0.25
-Nodes (6): FAQS, h2Style, h3Style, metadata, pStyle, TERMS
+Cohesion: 0.29
+Nodes (6): calcFlip(), CardFlipROIPage(), CURRENCIES, FAQS, PLATFORMS, SHIPPING_OPTIONS
 
 ### Community 104 - "Misc: components qrcodegeneratorthum"
-Cohesion: 0.25
-Nodes (6): FAQS, h2Style, h3Style, metadata, pStyle, RATES
+Cohesion: 0.43
+Nodes (7): FAQS, fmt(), getDigits(), Lap, Mode, OnlineStopwatch(), pad()
 
 ### Community 105 - "Misc: components grammarcheckerthumb"
+Cohesion: 0.25
+Nodes (6): H2, LI, metadata, P, SECTION, UL
+
+### Community 106 - "Misc: components textsummarizerthumb"
 Cohesion: 0.32
 Nodes (4): FAQS, metadata, PlanRecommender(), SidebarToc()
 
-### Community 106 - "Misc: components textsummarizerthumb"
-Cohesion: 0.25
-Nodes (7): Article Contents, Frequently Asked Questions, How to Create a WiFi QR Code, How to Generate a QR Code for Your WiFi (No App Needed), Security: Should You Worry?, What the QR Code Actually Contains, Where to Use It
-
 ### Community 107 - "Misc: components paraphrasingthumbna"
 Cohesion: 0.25
-Nodes (7): 7 Mistakes That Kill CTR, Article Contents, Frequently Asked Questions, Good vs Bad: Side-by-Side Examples, The 5 Components Broken Down, The Anatomy of a Perfect Meta Description (With Examples), The Formula
+Nodes (6): FAQS, h2Style, h3Style, metadata, pStyle, RATES
 
 ### Community 108 - "Misc: components base64converterthum"
 Cohesion: 0.25
-Nodes (7): Agentic Scheduling: What It Means, Frequently Asked Questions, n8n Integration, Postiz Review (2026): The Open-Source Agentic Social Media Scheduler, Postiz vs Buffer vs Hootsuite, Self-Hosting vs Cloud Plan, What Is Postiz?
+Nodes (6): FAQS, h2Style, h3Style, metadata, pStyle, TERMS
 
 ### Community 109 - "Misc: components hashtaggeneratorthu"
 Cohesion: 0.25
-Nodes (7): Free Tool, How Google AI Overviews Selects Its Sources, How to Rank in Google AI Overviews: The Complete GEO Guide (2026), Quick Wins You Can Do Today, The 5-Step GEO Framework, Traditional SEO vs GEO, What Is GEO and Why Does It Matter in 2026?
+Nodes (7): Article Contents, Frequently Asked Questions, How to Create a WiFi QR Code, How to Generate a QR Code for Your WiFi (No App Needed), Security: Should You Worry?, What the QR Code Actually Contains, Where to Use It
 
 ### Community 110 - "Misc: app sitemap dates"
 Cohesion: 0.25
-Nodes (7): Article Contents, Frequently Asked Questions, HTTP Status Codes Explained, If the Site Is Down for Everyone, If the Site Is Up But You Can't Access It, Is It Down or Just Me? How to Check if a Website Is Down, Step 1: Check From an External Source
+Nodes (7): 7 Mistakes That Kill CTR, Article Contents, Frequently Asked Questions, Good vs Bad: Side-by-Side Examples, The 5 Components Broken Down, The Anatomy of a Perfect Meta Description (With Examples), The Formula
 
 ### Community 111 - "Misc: app contact layout tsx"
+Cohesion: 0.25
+Nodes (7): Agentic Scheduling: What It Means, Frequently Asked Questions, n8n Integration, Postiz Review (2026): The Open-Source Agentic Social Media Scheduler, Postiz vs Buffer vs Hootsuite, Self-Hosting vs Cloud Plan, What Is Postiz?
+
+### Community 112 - "Misc: app tools whois lookup layout "
+Cohesion: 0.25
+Nodes (7): Free Tool, How Google AI Overviews Selects Its Sources, How to Rank in Google AI Overviews: The Complete GEO Guide (2026), Quick Wins You Can Do Today, The 5-Step GEO Framework, Traditional SEO vs GEO, What Is GEO and Why Does It Matter in 2026?
+
+### Community 113 - "Misc: app tools pack break ev calcul"
+Cohesion: 0.25
+Nodes (7): Article Contents, Frequently Asked Questions, HTTP Status Codes Explained, If the Site Is Down for Everyone, If the Site Is Up But You Can't Access It, Is It Down or Just Me? How to Check if a Website Is Down, Step 1: Check From an External Source
+
+### Community 114 - "Misc: app tools card grading profit "
 Cohesion: 0.39
 Nodes (8): E-commerce Tools Category, Finance Tools Category, Mortgage Calculator Preview Image, Percentage Calculator Preview, Salary Calculator Preview Image, Compound Interest Calculator Tool, VAT Calculator Tool Preview, Whatnot Seller Fee Calculator Preview Image
 
-### Community 112 - "Misc: app tools whois lookup layout "
+### Community 115 - "Misc: app tools card flip roi calcul"
 Cohesion: 0.29
 Nodes (8): CSS Gradient Generator Preview Image, Favicon Generator Preview Image, IP Address Lookup Preview Image, Lorem Ipsum Generator Preview Image, CSS / Design Tool Category, Developer / Network Tool Category, Unix Timestamp Converter Preview Image, WHOIS Lookup Preview Image
 
-### Community 113 - "Misc: app tools pack break ev calcul"
+### Community 116 - "Misc: app tools text summarizer layo"
 Cohesion: 0.54
 Nodes (8): File Icon SVG, Globe / Web Icon SVG, Next.js Logo SVG, Next.js Framework, Toolstack Public Assets Directory, Vercel Deployment Platform, Vercel Logo SVG, Browser Window Icon SVG
 
-### Community 114 - "Misc: app tools card grading profit "
+### Community 117 - "Misc: app tools qr code generator la"
 Cohesion: 0.29
 Nodes (5): ConsoleOption, CONSOLES, Currency, Edition, GAME_PRICES
-
-### Community 115 - "Misc: app tools card flip roi calcul"
-Cohesion: 0.29
-Nodes (4): FAQS, FONTS, HOW_IT_WORKS, POPULAR_EMOJIS
-
-### Community 116 - "Misc: app tools text summarizer layo"
-Cohesion: 0.38
-Nodes (6): FAQS, LENGTHS, MODES, readingTime(), TextSummarizerPage(), wordCount()
-
-### Community 117 - "Misc: app tools qr code generator la"
-Cohesion: 0.33
-Nodes (6): Correction, FAQS, GrammarCheckerPage(), Result, scoreColour(), TYPE_COLORS
 
 ### Community 118 - "Misc: app tools uuid generator layou"
 Cohesion: 0.29
 Nodes (4): CURRENCIES, FAQS, jsonLd, PLATFORMS
 
 ### Community 119 - "Misc: app tools pdf generator layout"
-Cohesion: 0.33
-Nodes (5): AmortRow, COUNTRIES, FAQS, fmt(), MortgageCalculator()
+Cohesion: 0.38
+Nodes (6): FAQS, LENGTHS, MODES, readingTime(), TextSummarizerPage(), wordCount()
 
 ### Community 120 - "Misc: age calculator layout generate"
-Cohesion: 0.29
-Nodes (5): FAQS, FONT_SIZES, FONTS, jsonLd, PAGE_SIZES
-
-### Community 121 - "Misc: app tools meta description gen"
 Cohesion: 0.33
 Nodes (6): COUNTRIES, FAQS, fmt(), HistoryItem, LineItem, VATCalculatorPage()
 
+### Community 121 - "Misc: app tools meta description gen"
+Cohesion: 0.33
+Nodes (6): Correction, FAQS, GrammarCheckerPage(), Result, scoreColour(), TYPE_COLORS
+
 ### Community 122 - "Misc: app tools case converter layou"
-Cohesion: 0.29
-Nodes (5): H2, LI, metadata, P, UL
+Cohesion: 0.33
+Nodes (5): AmortRow, COUNTRIES, FAQS, fmt(), MortgageCalculator()
 
 ### Community 123 - "Misc: app tools panini sticker calcu"
 Cohesion: 0.29
-Nodes (5): COMPARISON, FAQS, metadata, schema, TOOLS
+Nodes (5): H2, LI, metadata, P, UL
 
 ### Community 124 - "Misc: app tools grammar checker layo"
 Cohesion: 0.29
@@ -893,15 +892,15 @@ Nodes (5): COMPARISON, FAQS, metadata, schema, TOOLS
 
 ### Community 125 - "Misc: app tools youtube thumbnail do"
 Cohesion: 0.29
-Nodes (5): H2, LI, metadata, P, UL
+Nodes (5): COMPARISON, FAQS, metadata, schema, TOOLS
 
 ### Community 126 - "Misc: app tools world cup team finde"
-Cohesion: 0.33
-Nodes (4): CTA(), Window, btn, metadata
+Cohesion: 0.29
+Nodes (5): H2, LI, metadata, P, UL
 
 ### Community 127 - "Misc: app tools paraphrasing tool la"
-Cohesion: 0.29
-Nodes (5): code, FAQS, metadata, sectionCard, toolsLink
+Cohesion: 0.33
+Nodes (4): CTA(), Window, btn, metadata
 
 ### Community 128 - "Misc: app tools utm builder layout t"
 Cohesion: 0.29
@@ -909,7 +908,7 @@ Nodes (5): code, FAQS, metadata, sectionCard, toolsLink
 
 ### Community 129 - "Misc: app tools markdown editor layo"
 Cohesion: 0.33
-Nodes (4): FAQS, metadata, SidebarToc(), TOC
+Nodes (4): COMPARISON_ROWS, FAQS, metadata, YouTubeLite()
 
 ### Community 130 - "Misc: app tools lorem ipsum generato"
 Cohesion: 0.29
@@ -917,83 +916,83 @@ Nodes (5): code, FAQS, metadata, sectionCard, toolsLink
 
 ### Community 131 - "Misc: app tools website down checker"
 Cohesion: 0.33
-Nodes (4): COMPARISON_ROWS, FAQS, metadata, YouTubeLite()
+Nodes (4): FAQS, metadata, SidebarToc(), TOC
 
 ### Community 132 - "Misc: app tools salary calculator la"
 Cohesion: 0.29
-Nodes (5): FAQS, featureCard, h2Style, pStyle, sectionCard
+Nodes (5): code, FAQS, metadata, sectionCard, toolsLink
 
 ### Community 133 - "Misc: app tools regex tester layout "
 Cohesion: 0.29
-Nodes (5): COMPARISON, FAQS, metadata, schema, TOOLS
+Nodes (5): FAQS, featureCard, h2Style, pStyle, sectionCard
 
 ### Community 134 - "Misc: app tools invoice generator la"
 Cohesion: 0.29
-Nodes (6): Frequently Asked Questions, How to Generate a UUID, UUID Format Explained, UUID v1 vs v3 vs v4 vs v5, UUID vs Auto-Increment IDs, What Is a UUID? Format, Versions & When to Use One
+Nodes (5): COMPARISON, FAQS, metadata, schema, TOOLS
 
 ### Community 135 - "Misc: app tools tip calculator layou"
 Cohesion: 0.29
-Nodes (6): 1. Completeness & Layout, 2. Deployment, 3. Lighthouse Audit (Mobile · LIVE), Inspection Report — ** Free YouTube Transcript Extractor — No Signup, No Limits, Items to review, Verdict
+Nodes (6): Frequently Asked Questions, How to Generate a UUID, UUID Format Explained, UUID v1 vs v3 vs v4 vs v5, UUID vs Auto-Increment IDs, What Is a UUID? Format, Versions & When to Use One
 
 ### Community 136 - "Misc: app tools world cup accumulato"
 Cohesion: 0.29
-Nodes (6): Frequently Asked Questions, How to Look Up Any IP Address, IP Address Lookup: What It Reveals & How to Use It Free (2026), Reading Your Results, Using IP Data for Security and Diagnostics, What Does an IP Lookup Reveal?
+Nodes (6): 1. Completeness & Layout, 2. Deployment, 3. Lighthouse Audit (Mobile · LIVE), Inspection Report — ** Free YouTube Transcript Extractor — No Signup, No Limits, Items to review, Verdict
 
 ### Community 137 - "Misc: app tools unix timestamp conve"
 Cohesion: 0.29
-Nodes (6): 5 Techniques That Work in 2026, Frequently Asked Questions, Privacy and What Not to Share with AI, Prompt Engineering: A Complete Guide to Writing Better AI Prompts, The RISEN Framework, What Is Prompt Engineering?
+Nodes (6): Frequently Asked Questions, How to Look Up Any IP Address, IP Address Lookup: What It Reveals & How to Use It Free (2026), Reading Your Results, Using IP Data for Security and Diagnostics, What Does an IP Lookup Reveal?
 
 ### Community 138 - "Misc: app tools percentage calculato"
 Cohesion: 0.29
-Nodes (6): 2-Week Test Results, Frequently Asked Questions, How the AI SEO Autopilot Works, RankSpot Review 2026: Does This AI SEO Autopilot Actually Rank Your Blog?, RankSpot vs Competitors, What Is RankSpot?
+Nodes (6): 5 Techniques That Work in 2026, Frequently Asked Questions, Privacy and What Not to Share with AI, Prompt Engineering: A Complete Guide to Writing Better AI Prompts, The RISEN Framework, What Is Prompt Engineering?
 
 ### Community 139 - "Misc: app tools character counter la"
 Cohesion: 0.29
-Nodes (6): A/B Compare Mode, AI Rewrite Suggestions, Email Subject Line Tester — Free Tool That Scores Your Subject Lines, Frequently Asked Questions, How Email Subject Line Scoring Works, The 7 Factors That Affect Open Rates
+Nodes (6): 2-Week Test Results, Frequently Asked Questions, How the AI SEO Autopilot Works, RankSpot Review 2026: Does This AI SEO Autopilot Actually Rank Your Blog?, RankSpot vs Competitors, What Is RankSpot?
 
 ### Community 140 - "Misc: app tools card box break calcu"
 Cohesion: 0.29
-Nodes (6): Common UTM Mistakes to Avoid, Frequently Asked Questions, GA4 UTM Naming Conventions, The 5 UTM Parameters Explained, Using UTMs in Email Campaigns, UTM Builder Guide — Track Every Campaign Click in GA4 (Free)
+Nodes (6): A/B Compare Mode, AI Rewrite Suggestions, Email Subject Line Tester — Free Tool That Scores Your Subject Lines, Frequently Asked Questions, How Email Subject Line Scoring Works, The 7 Factors That Affect Open Rates
 
 ### Community 141 - "Misc: app tools blog title generator"
 Cohesion: 0.29
-Nodes (6): Frequently Asked Questions, The 4 Tone Modes Explained, The Best Free AI Cover Letter Generator (No Signup, No Limits), ToolStack vs Grammarly vs Zety vs Kickresume, What Makes a Cover Letter Generator Actually Good, What to Edit After Generation
+Nodes (6): Common UTM Mistakes to Avoid, Frequently Asked Questions, GA4 UTM Naming Conventions, The 5 UTM Parameters Explained, Using UTMs in Email Campaigns, UTM Builder Guide — Track Every Campaign Click in GA4 (Free)
 
 ### Community 142 - "Misc: app tools ssl checker layout t"
 Cohesion: 0.29
-Nodes (6): Frequently Asked Questions, How to Tailor a Cover Letter to Any Job Description — Free in 2026, Step 1: Extract Keywords from the Job Description, Step 2: Score Your Background Against Requirements, Step 3: Match the Tone of the Company, Step 4: Generate and Personalise
+Nodes (6): Frequently Asked Questions, The 4 Tone Modes Explained, The Best Free AI Cover Letter Generator (No Signup, No Limits), ToolStack vs Grammarly vs Zety vs Kickresume, What Makes a Cover Letter Generator Actually Good, What to Edit After Generation
 
 ### Community 143 - "Misc: app tools css gradient generat"
 Cohesion: 0.29
-Nodes (6): Automation and AMP Emails, AWeber Free Plan: What's Included, AWeber Review 2026: Still the Best Email Marketing Tool for Creators?, AWeber vs Mailchimp vs Kit, Frequently Asked Questions, Who Should Use AWeber
+Nodes (6): Frequently Asked Questions, How to Tailor a Cover Letter to Any Job Description — Free in 2026, Step 1: Extract Keywords from the Job Description, Step 2: Score Your Background Against Requirements, Step 3: Match the Tone of the Company, Step 4: Generate and Personalise
 
 ### Community 144 - "Misc: app tools vat calculator layou"
 Cohesion: 0.29
-Nodes (6): Article Contents, Frequently Asked Questions, JSON for Beginners: A Visual Guide to Formatting & Validation, The 5 Most Common JSON Errors, The 6 Valid Value Types, What Valid JSON Looks Like
+Nodes (6): Automation and AMP Emails, AWeber Free Plan: What's Included, AWeber Review 2026: Still the Best Email Marketing Tool for Creators?, AWeber vs Mailchimp vs Kit, Frequently Asked Questions, Who Should Use AWeber
 
 ### Community 145 - "Misc: app tools code diff checker la"
 Cohesion: 0.29
-Nodes (6): 3-Tier Hashtag Strategy for Instagram, TikTok & LinkedIn — Free Generator, Frequently Asked Questions, How Many Hashtags Per Platform, How to Generate the Right Hashtags, Mistakes That Kill Your Reach, The 3-Tier Hashtag Strategy
+Nodes (6): Article Contents, Frequently Asked Questions, JSON for Beginners: A Visual Guide to Formatting & Validation, The 5 Most Common JSON Errors, The 6 Valid Value Types, What Valid JSON Looks Like
 
 ### Community 146 - "Misc: app tools ebay best offer calc"
 Cohesion: 0.29
-Nodes (6): AI Drafting and Live Research, Frequently Asked Questions, Genspark for Word Review 2026: Can This AI Add-in Beat Microsoft Copilot?, Genspark vs Microsoft Copilot, What Is Genspark for Word?, Who Should Use It
+Nodes (6): 3-Tier Hashtag Strategy for Instagram, TikTok & LinkedIn — Free Generator, Frequently Asked Questions, How Many Hashtags Per Platform, How to Generate the Right Hashtags, Mistakes That Kill Your Reach, The 3-Tier Hashtag Strategy
 
 ### Community 147 - "Misc: app tools business name genera"
 Cohesion: 0.29
-Nodes (6): Best Free Password Generator 2026: Create Strong Passwords Instantly, Frequently Asked Questions, How Often Should You Change Passwords?, Password Generator vs Password Manager, Random Characters vs Passphrases, What Makes a Strong Password?
+Nodes (6): AI Drafting and Live Research, Frequently Asked Questions, Genspark for Word Review 2026: Can This AI Add-in Beat Microsoft Copilot?, Genspark vs Microsoft Copilot, What Is Genspark for Word?, Who Should Use It
 
 ### Community 148 - "Misc: app tools youtube video downlo"
 Cohesion: 0.29
-Nodes (6): Free Meta Description Generator: Stop Google Rewriting Your Snippets (2026), Frequently Asked Questions, How to Use the Free Generator, The Ideal Length: 150–160 Characters, What Makes a Description Google Keeps, Why Google Rewrites Your Meta Descriptions
+Nodes (6): Best Free Password Generator 2026: Create Strong Passwords Instantly, Frequently Asked Questions, How Often Should You Change Passwords?, Password Generator vs Password Manager, Random Characters vs Passphrases, What Makes a Strong Password?
 
 ### Community 149 - "Misc: app tools compound interest ca"
-Cohesion: 0.62
-Nodes (7): Case Converter Tool Preview, Social Media Tools Category, Text Tools Category, Hashtag Generator Tool Preview, Markdown Editor Tool Preview, Paraphrasing Tool Preview, YouTube Thumbnail Downloader Preview
+Cohesion: 0.29
+Nodes (6): Free Meta Description Generator: Stop Google Rewriting Your Snippets (2026), Frequently Asked Questions, How to Use the Free Generator, The Ideal Length: 150–160 Characters, What Makes a Description Google Keeps, Why Google Rewrites Your Meta Descriptions
 
 ### Community 150 - "Misc: app tools favicon generator la"
-Cohesion: 0.33
-Nodes (5): ALTERNATIVES, COMPANY, Footer(), linkStyle, TOOL_CATEGORIES
+Cohesion: 0.62
+Nodes (7): Case Converter Tool Preview, Social Media Tools Category, Text Tools Category, Hashtag Generator Tool Preview, Markdown Editor Tool Preview, Paraphrasing Tool Preview, YouTube Thumbnail Downloader Preview
 
 ### Community 151 - "Misc: app tools mortgage calculator "
 Cohesion: 0.33
@@ -1001,51 +1000,51 @@ Nodes (4): COMPARISON, FAQS, metadata, schema
 
 ### Community 152 - "Misc: app tools json formatter layou"
 Cohesion: 0.33
-Nodes (4): affiliateLink, FAQS, sectionCard, toolsLink
+Nodes (4): codeStyle, FAQS, metadata, pre
 
 ### Community 153 - "Misc: app tools color contrast check"
 Cohesion: 0.33
-Nodes (4): FAQS, h2Style, pStyle, PULL_RATES
+Nodes (4): FAQS, metadata, sectionCard, toolsLink
 
 ### Community 154 - "Misc: app tools color palette genera"
 Cohesion: 0.33
-Nodes (4): FAQS, metadata, sectionCard, toolsLink
+Nodes (4): affiliateLink, FAQS, sectionCard, toolsLink
 
 ### Community 155 - "Misc: app tools online stopwatch lay"
 Cohesion: 0.33
 Nodes (4): FAQS, metadata, sectionCard, toolsLink
 
 ### Community 156 - "Misc: app tools cover letter generat"
+Cohesion: 0.33
+Nodes (4): FAQS, metadata, sectionCard, toolLink
+
+### Community 157 - "Misc: app tools jwt decoder layout t"
 Cohesion: 0.53
 Nodes (5): GET(), POST(), readRequests(), REQUESTS_FILE, writeRequests()
 
-### Community 157 - "Misc: app tools jwt decoder layout t"
+### Community 158 - "Misc: app tools youtube tag generato"
 Cohesion: 0.33
 Nodes (5): Affiliate Links, AWeber vs Beehiiv: Why Creators Are Switching After the 50% Price Hike (2026), Key Data Points, Sections, Summary
 
-### Community 158 - "Misc: app tools youtube tag generato"
+### Community 159 - "Misc: app tools email subject line t"
 Cohesion: 0.33
 Nodes (5): Article Contents, camelCase vs snake_case vs PascalCase: When to Use Each, Frequently Asked Questions, Quick Reference by Language, The 5 Naming Conventions Explained
 
-### Community 159 - "Misc: app tools email subject line t"
+### Community 160 - "Misc: app tools whatnot seller fee c"
 Cohesion: 0.33
 Nodes (5): Does Word Count Affect Google Rankings?, Frequently Asked Questions, How to Improve Your Score, What Is the Flesch Readability Score?, Word Count Checker — How to Check and Improve Your Readability Score
 
-### Community 160 - "Misc: app tools whatnot seller fee c"
+### Community 161 - "Misc: app tools email signature gene"
 Cohesion: 0.33
 Nodes (5): 1. Completeness & Layout, 2. Deployment, 3. Lighthouse Audit (Mobile · local), Inspection Report — How a Compound Interest Calculator Works (Plain English), Verdict
 
-### Community 161 - "Misc: app tools email signature gene"
+### Community 162 - "Misc: app tools base64 encoder decod"
 Cohesion: 0.33
 Nodes (5): Free Tool, SEO Blog Title Generator: Write Titles That Rank and Get Clicked (2026), Summary, The 10 Title Frameworks the Generator Uses, Why Blog Titles Matter for SEO
 
-### Community 164 - "Misc: app tools grading company comp"
-Cohesion: 0.4
-Nodes (3): code, FAQS, metadata
-
 ### Community 165 - "Misc: app tools hashtag generator la"
 Cohesion: 0.4
-Nodes (3): FAQS, h2Style, pStyle
+Nodes (3): code, FAQS, metadata
 
 ### Community 166 - "Misc: app tools password generator l"
 Cohesion: 0.4
@@ -1053,15 +1052,15 @@ Nodes (3): FAQS, metadata, mono
 
 ### Community 167 - "Misc: app tools word counter layout "
 Cohesion: 0.4
-Nodes (3): code, FAQS, metadata
+Nodes (3): FAQS, metadata, tools
 
 ### Community 168 - "Misc: app tools ip address lookup la"
-Cohesion: 0.4
-Nodes (4): Phase, QUESTIONS, TEAMS, WorldCupTeamFinderThumbnail()
-
-### Community 169 - "Misc: about page aboutpage"
 Cohesion: 0.5
 Nodes (4): fmtCount(), PasswordBreachCheckerThumbnail(), Phase, SCENARIOS
+
+### Community 169 - "Misc: about page aboutpage"
+Cohesion: 0.4
+Nodes (4): Phase, QUESTIONS, TEAMS, WorldCupTeamFinderThumbnail()
 
 ### Community 170 - "Misc: app api paraphrasing tool rout"
 Cohesion: 0.4
@@ -1100,16 +1099,16 @@ Cohesion: 0.4
 Nodes (4): Free Calculator, Pokémon TCG Pocket Pull Rates Explained: Crown Rare, God Pack & Every Rarity, Pull Rate Table, Summary
 
 ### Community 179 - "Misc: components mortgagecalculatort"
+Cohesion: 0.6
+Nodes (5): Meta Description Generator Preview Image, SEO / Marketing Tool Category, YouTube Tool Category, YouTube Tag Generator Preview Image, YouTube Video Downloader Preview Image
+
+### Community 180 - "Misc: components cssgradientthumbnai"
 Cohesion: 1.2
 Nodes (5): Card Box Break Calculator Preview, Card Grading Profit Calculator Preview, Trading Card Tools Category, eBay Best Offer Calculator Preview, Grading Company Comparison Tool Preview
 
-### Community 180 - "Misc: components cssgradientthumbnai"
+### Community 181 - "Misc: components whoislookupthumbnai"
 Cohesion: 0.5
 Nodes (5): Card Hobby Tools Category, Sports and Betting Tools Category, Pack Break EV Calculator Tool, Panini Sticker Album Calculator Tool, World Cup 2026 Accumulator Calculator Tool
-
-### Community 181 - "Misc: components whoislookupthumbnai"
-Cohesion: 0.6
-Nodes (5): Meta Description Generator Preview Image, SEO / Marketing Tool Category, YouTube Tool Category, YouTube Tag Generator Preview Image, YouTube Video Downloader Preview Image
 
 ### Community 182 - "Misc: components brandforgethumbnail"
 Cohesion: 0.4
@@ -1119,87 +1118,87 @@ Nodes (5): Card Flip ROI Calculator Preview Image, Invoice Generator Preview Ima
 Cohesion: 0.5
 Nodes (3): nextConfig, securityHeaders, withPWA
 
-### Community 189 - "Misc: components paninistickerthumbn"
+### Community 190 - "Misc: components sqlformatterthumbna"
 Cohesion: 0.83
 Nodes (3): checkSSL(), parseSANs(), POST()
 
-### Community 190 - "Misc: components sqlformatterthumbna"
+### Community 191 - "Misc: components invoicegeneratorthu"
 Cohesion: 0.83
 Nodes (3): formatResponse(), GET(), POST()
 
 ### Community 192 - "Misc: components metadescriptionthum"
-Cohesion: 0.5
-Nodes (3): ParaphrasingThumbnail(), SAMPLES, TONES
-
-### Community 193 - "Misc: components utmbuilderthumbnail"
-Cohesion: 0.67
-Nodes (3): fmt(), Gta6CostCalculatorThumbnail(), SCENARIOS
-
-### Community 194 - "Misc: components gradingcomparisonth"
-Cohesion: 0.5
-Nodes (3): HashtagGeneratorThumbnail(), PLATFORMS, SETS
-
-### Community 195 - "Misc: components tipcalculatorthumbn"
 Cohesion: 0.67
 Nodes (3): genV4(), rh(), UuidGeneratorThumbnail()
 
+### Community 193 - "Misc: components utmbuilderthumbnail"
+Cohesion: 0.5
+Nodes (3): Phase, SAMPLES, TextSummarizerThumbnail()
+
+### Community 194 - "Misc: components gradingcomparisonth"
+Cohesion: 0.5
+Nodes (3): ParaphrasingThumbnail(), SAMPLES, TONES
+
+### Community 195 - "Misc: components tipcalculatorthumbn"
+Cohesion: 0.67
+Nodes (3): fmt(), Gta6CostCalculatorThumbnail(), SCENARIOS
+
 ### Community 196 - "Misc: components passwordgeneratorth"
 Cohesion: 0.5
-Nodes (3): FaviconThumbnail(), ICONS, SIZES
+Nodes (3): RESOLUTIONS, VIDEOS, YoutubeThumbnailDownloaderThumbnail()
 
 ### Community 197 - "Misc: components emailsubjectthumbna"
 Cohesion: 0.5
-Nodes (3): CharacterCounterThumbnail(), PLATFORMS, SAMPLES
+Nodes (3): CHECKS, DOMAINS, SslCheckerThumbnail()
 
 ### Community 198 - "Misc: components cardboxbreakthumbna"
 Cohesion: 0.5
-Nodes (3): GrammarCheckerThumbnail(), Phase, SAMPLES
+Nodes (3): FaviconThumbnail(), ICONS, SIZES
 
 ### Community 199 - "Misc: components coverletterthumbnai"
 Cohesion: 0.5
 Nodes (3): Base64ConverterThumbnail(), Mode, PAIRS
 
-### Community 200 - "Misc: components cardfliproithumbnai"
-Cohesion: 0.5
-Nodes (3): Phase, SAMPLES, TextSummarizerThumbnail()
-
 ### Community 201 - "Misc: components codediffthumbnail c"
-Cohesion: 0.5
-Nodes (3): CHECKS, DOMAINS, SslCheckerThumbnail()
-
-### Community 202 - "Misc: components youtubevideodownloa"
-Cohesion: 0.5
-Nodes (3): AiPromptGeneratorThumbnail(), FRAMEWORKS, RESPONSES
-
-### Community 203 - "Misc: components youtubetagthumbnail"
 Cohesion: 0.5
 Nodes (3): LoremIpsumThumbnail(), PARAGRAPHS, TYPES
 
+### Community 202 - "Misc: components youtubevideodownloa"
+Cohesion: 0.5
+Nodes (3): HashtagGeneratorThumbnail(), PLATFORMS, SETS
+
+### Community 203 - "Misc: components youtubetagthumbnail"
+Cohesion: 0.5
+Nodes (3): GrammarCheckerThumbnail(), Phase, SAMPLES
+
 ### Community 204 - "Misc: components compoundinterestthu"
 Cohesion: 0.5
-Nodes (3): RESOLUTIONS, VIDEOS, YoutubeThumbnailDownloaderThumbnail()
+Nodes (3): CharacterCounterThumbnail(), PLATFORMS, SAMPLES
 
 ### Community 205 - "Misc: components iplookupthumbnail i"
 Cohesion: 0.5
 Nodes (3): Frequently Asked Questions, What Does a WHOIS Lookup Tell You?, WHOIS Domain Lookup
 
-### Community 382 - "Community 382"
+### Community 206 - "Misc: components vatcalculatorthumbn"
+Cohesion: 1.0
+Nodes (4): Marketing Tools Category, Email Subject Line Tester Preview Image, QR Code Generator Tool Preview, UTM Campaign Link Builder Preview
+
+### Community 384 - "Community 384"
 Cohesion: 1.0
 Nodes (3): Grammar Checker Preview Image, Text Summarizer Preview Image, Writing / AI Tool Category
 
 ## Knowledge Gaps
 - **1314 isolated node(s):** `config`, `config`, `eslintConfig`, `withPWA`, `securityHeaders` (+1309 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **150 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **149 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `FAQS` connect `Misc: components worldcupteamfindert` to `PDF Generator Tool`?**
+- **Why does `FAQS` connect `Misc: app blog json formatting guide` to `Password Generator Tool`?**
   _High betweenness centrality (0.056) - this node is a cross-community bridge._
-- **Why does `FAQS` connect `Email Subject Tester` to `AdvertiseGPT Banner`?**
+- **Why does `FAQS` connect `Email Subject Tester` to `Color Palette Generator`?**
   _High betweenness centrality (0.055) - this node is a cross-community bridge._
-- **Why does `MoreTools()` connect `UUID Generator Tool` to `Brand & Blog Assets`, `Animated Thumbnails`, `Word Counter Tool`, `Email Subject Tester`, `App Shell & JWT`, `SEO Action Plan`, `Hashtag Generator`, `Age Calculator Tool`, `Project Config & Docs`, `Tools Index & Categories`, `CSS Gradient Generator`, `Business Name Generator`, `Lorem Ipsum Generator`, `Blog & AdBlock`, `Blog Content Tools`, `Network Status Blog Posts`, `WHOIS Domain Lookup`, `Developer Tool Previews`, `Website Down Checker`, `Compound Interest Calculator`, `Grading Company Comparison`, `IP Address Lookup`, `CSS & Design Previews`, `Finance Tool Previews`, `Card Box Break Calculator`, `Password Generator Tool`, `PDF Generator Tool`, `Mortgage Calculator Tool`, `VAT Calculator Tool`, `AI Paywall Blog Post`, `Mastering JSON Blog`, `AI Product Visibility Blog`, `Tool Requests API`, `Monetisation & Ownership`, `Misc: app tools layout tsx`, `Misc: app api ssl checker route ts`, `Misc: components sslcheckerthumbnail`, `Misc: components aipromptgeneratorth`, `Misc: components faviconthumbnail fa`, `Misc: components loremipsumthumbnail`, `Misc: components youtubethumbnaildow`, `Misc: app tools card grading profit `, `Misc: app tools card flip roi calcul`, `Misc: app tools text summarizer layo`, `Misc: app tools qr code generator la`, `Misc: app tools uuid generator layou`, `Misc: app tools pdf generator layout`, `Misc: age calculator layout generate`, `Misc: app tools meta description gen`?**
+- **Why does `MoreTools()` connect `World Cup Accumulator` to `Brand & Blog Assets`, `Animated Thumbnails`, `Word Counter Tool`, `Email Subject Tester`, `App Shell & JWT`, `SEO Action Plan`, `Email Signature Builder`, `UUID Generator Tool`, `Project Config & Docs`, `Tools Index & Categories`, `Navigation & QR Tool`, `World Cup Team Finder`, `CSS Gradient Generator`, `Business Name Generator`, `Blog & AdBlock`, `SSL Certificate Checker`, `Blog Content Tools`, `Network Status Blog Posts`, `WHOIS Domain Lookup`, `Website Down Checker`, `Compound Interest Calculator`, `Grading Company Comparison`, `IP Address Lookup`, `CSS & Design Previews`, `Finance Tool Previews`, `Card Box Break Calculator`, `Password Generator Tool`, `PDF Generator Tool`, `Mortgage Calculator Tool`, `VAT Calculator Tool`, `Mastering JSON Blog`, `AI Product Visibility Blog`, `Tool Requests API`, `Monetisation & Ownership`, `Misc: app tools layout tsx`, `Misc: app tools sql formatter dialec`, `Misc: components faviconthumbnail fa`, `Misc: components loremipsumthumbnail`, `Misc: components youtubethumbnaildow`, `Misc: components uuidgeneratorthumbn`, `Misc: components charactercounterthu`, `Misc: components qrcodegeneratorthum`, `Misc: app tools qr code generator la`, `Misc: app tools uuid generator layou`, `Misc: app tools pdf generator layout`, `Misc: age calculator layout generate`, `Misc: app tools meta description gen`, `Misc: app tools case converter layou`?**
   _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Are the 38 inferred relationships involving `ToolStack` (e.g. with `Next.js Framework` and `Vercel Deployment Platform`) actually correct?**
   _`ToolStack` has 38 INFERRED edges - model-reasoned connections that need verification._
