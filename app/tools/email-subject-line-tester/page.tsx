@@ -718,6 +718,18 @@ export default function EmailSubjectLineTesterPage() {
                     </div>
                 </div>
 
+                {/* Guide bridge */}
+                <div style={{ padding: "22px 26px", borderRadius: 16, border: "1px solid rgba(52,211,153,0.2)", background: "rgba(52,211,153,0.04)", marginBottom: 48 }}>
+                    <p style={{ fontSize: 11, fontWeight: 800, letterSpacing: "0.1em", color: "#34d399", margin: "0 0 8px", textTransform: "uppercase" }}>Go Deeper</p>
+                    <p style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.7, margin: 0 }}>
+                        A great subject line only pays off if the list behind it is healthy. Read the full{" "}
+                        <Link href="/blog/email-subject-line-tester-guide" style={{ color: "#34d399", fontWeight: 700, textDecoration: "underline" }}>
+                            subject line optimisation guide
+                        </Link>{" "}
+                        for the scoring methodology, AI rewrite breakdown, and the email platform we recommend for building the list you send to.
+                    </p>
+                </div>
+
                 {/* SEO Description */}
                 <section style={{ marginTop: 48, padding: "32px 28px", borderRadius: 20, background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
                   <h2 style={{ fontSize: 22, fontWeight: 800, color: "white", marginBottom: 16, letterSpacing: "-0.02em" }}>Email Subject Line Tester: Free Online Tool</h2>
