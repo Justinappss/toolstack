@@ -14,7 +14,7 @@ export type MarkupVideo = {
 export const VIDEOS: MarkupVideo[] = [
   {
     slug: "lipstick-cost-vs-price",
-    youtubeId: "",
+    youtubeId: "mP2IcjSb-uk",
     localVideo: "/the-markup/ep1.mp4",
     title: "A $35 Lipstick Costs $2.50 to Make",
     kicker: "Beauty",
