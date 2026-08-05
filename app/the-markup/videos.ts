@@ -13,6 +13,22 @@ export type MarkupVideo = {
 
 export const VIDEOS: MarkupVideo[] = [
   {
+    slug: "silk-pajamas-cost-vs-price",
+    youtubeId: "",
+    title: "Your $280 Silk Pajamas Cost $22 to Make",
+    kicker: "Sleepwear",
+    hook: "The other $258 isn't buying better silk. It's buying the brand. Here's the real math behind the set.",
+    published: "2026-08-05",
+    read: "4 min read",
+    article: [
+      "A $280 silk pajama set costs about $22 to make. Not a guess — that's the mulberry silk, the cut-and-sew labor, the trim, the box, and the freight, added up. Everything else on that price tag is paying for something other than the two pieces of fabric on the hanger.",
+      "Break the $22 down and it thins out fast: roughly $11 for 2.6 yards of 22-momme mulberry silk, $6.50 for cut-and-sew labor at an offshore garment factory, $1.50 for buttons, piping and thread, $1.50 for the gift box and tissue paper, and $1.50 to ship it. A single cutting table can turn out a finished set in under twenty minutes once the pattern's set.",
+      "Push the momme count up and the story barely changes. Go from a mid-weight 19-momme set to a heavier 25-momme charmeuse and the fabric bill climbs maybe $4–5 more — the weight you feel when you pick it up off the shelf is real, but it isn't why the price tag jumps by hundreds.",
+      "That's sleepwear's version of the same open secret as everywhere else in apparel: a 10–15x markup from factory cost to shelf price is standard once a set carries real brand equity. Direct-to-consumer silk labels that skip the department-store markup and sell straight off their own site typically land between $80 and $150 for the same construction — still profitable, just with fewer hands taking a cut on the way to your cart.",
+      "So what does the other $258 actually buy? Not better silk — the momme count on a $280 set and an $80 set is often within a couple of points of each other. It buys the name on the label, the flagship-store lease, the ad campaign, and a box designed to feel like an event. None of that is a scam — it's just not the pajamas. Once you can see the split, you get to decide which part you're actually paying for.",
+    ],
+  },
+  {
     slug: "lipstick-cost-vs-price",
     youtubeId: "mP2IcjSb-uk",
     localVideo: "/the-markup/ep1.mp4",
