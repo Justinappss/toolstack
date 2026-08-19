@@ -1815,17 +1815,27 @@ document.querySelector('.dispatch-btn').addEventListener('click', function() {
   }
 });
 
-// Video cards: click-to-play (swap thumbnail for a youtube-nocookie iframe)
+// Video cards: click-to-play / click-to-stop (swap thumbnail for a youtube-nocookie iframe and back)
 document.querySelectorAll('.video-card').forEach(card => {
   const vid = card.dataset.vid;
+  const imgWrap = card.querySelector('.card-img');
+  const btn = card.querySelector('.card-btn');
+  const originalMarkup = imgWrap.innerHTML;
+
   const play = () => {
-    const imgWrap = card.querySelector('.card-img');
-    if (imgWrap.classList.contains('playing')) return;
     imgWrap.classList.add('playing');
     imgWrap.innerHTML = \`<iframe src="https://www.youtube-nocookie.com/embed/\${vid}?autoplay=1&rel=0" title="Forgotten Towns episode" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\`;
+    if (btn) btn.textContent = '✕ Stop';
   };
-  card.addEventListener('click', play);
-  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } });
+  const stop = () => {
+    imgWrap.classList.remove('playing');
+    imgWrap.innerHTML = originalMarkup;
+    if (btn) btn.textContent = '▶ Play';
+  };
+  const toggle = () => { imgWrap.classList.contains('playing') ? stop() : play(); };
+
+  card.addEventListener('click', toggle);
+  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
 });
 </script>
 </body>
