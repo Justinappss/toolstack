@@ -1815,24 +1815,40 @@ document.querySelector('.dispatch-btn').addEventListener('click', function() {
   }
 });
 
-// Video cards: click-to-play / click-to-stop (swap thumbnail for a youtube-nocookie iframe and back)
+// Video cards: click-to-play, then click again to pause/resume in place (keeps the
+// same iframe alive so YouTube remembers playback position instead of restarting)
 document.querySelectorAll('.video-card').forEach(card => {
   const vid = card.dataset.vid;
   const imgWrap = card.querySelector('.card-img');
   const btn = card.querySelector('.card-btn');
-  const originalMarkup = imgWrap.innerHTML;
+  let iframe = null;
+  let playing = false;
 
-  const play = () => {
-    imgWrap.classList.add('playing');
-    imgWrap.innerHTML = \`<iframe src="https://www.youtube-nocookie.com/embed/\${vid}?autoplay=1&rel=0" title="Forgotten Towns episode" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\`;
-    if (btn) btn.textContent = '✕ Stop';
+  const postCmd = (func) => {
+    if (iframe && iframe.contentWindow) {
+      iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', func, args: [] }), '*');
+    }
   };
-  const stop = () => {
-    imgWrap.classList.remove('playing');
-    imgWrap.innerHTML = originalMarkup;
-    if (btn) btn.textContent = '▶ Play';
+
+  const toggle = () => {
+    if (!iframe) {
+      imgWrap.classList.add('playing');
+      imgWrap.innerHTML = \`<iframe src="https://www.youtube-nocookie.com/embed/\${vid}?autoplay=1&rel=0&enablejsapi=1" title="Forgotten Towns episode" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\`;
+      iframe = imgWrap.querySelector('iframe');
+      playing = true;
+      if (btn) btn.textContent = '⏸ Pause';
+      return;
+    }
+    if (playing) {
+      postCmd('pauseVideo');
+      playing = false;
+      if (btn) btn.textContent = '▶ Resume';
+    } else {
+      postCmd('playVideo');
+      playing = true;
+      if (btn) btn.textContent = '⏸ Pause';
+    }
   };
-  const toggle = () => { imgWrap.classList.contains('playing') ? stop() : play(); };
 
   card.addEventListener('click', toggle);
   card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
