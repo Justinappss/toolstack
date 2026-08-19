@@ -496,6 +496,7 @@ section { position: relative; z-index: 1; }
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 40%, var(--abyss) 100%);
+  pointer-events: none;
 }
 .card-glyph {
   font-size: 4rem;
