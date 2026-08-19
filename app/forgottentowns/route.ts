@@ -1,13 +1,7 @@
-import { readFileSync } from "fs";
-import { join } from "path";
-import { NextResponse } from "next/server";
+import { FORGOTTEN_TOWNS_HTML } from "./content";
 
-export function GET() {
-  const html = readFileSync(
-    join(process.cwd(), "public/forgottentowns/index.html"),
-    "utf-8"
-  );
-  return new NextResponse(html, {
+export async function GET() {
+  return new Response(FORGOTTEN_TOWNS_HTML, {
     headers: { "Content-Type": "text/html; charset=utf-8" },
   });
 }
