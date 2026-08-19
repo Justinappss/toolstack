@@ -1815,43 +1815,39 @@ document.querySelector('.dispatch-btn').addEventListener('click', function() {
   }
 });
 
-// Video cards: click-to-play, then click again to pause/resume in place (keeps the
-// same iframe alive so YouTube remembers playback position instead of restarting)
+// Video cards: click the thumbnail once to swap in a real YouTube iframe, then get out
+// of the way — all further play/pause/seek/drag is native YouTube, not our JS. A small
+// close button lets you go back to the thumbnail (closing, not pausing, so no fake
+// position tracking to get wrong).
 document.querySelectorAll('.video-card').forEach(card => {
   const vid = card.dataset.vid;
   const imgWrap = card.querySelector('.card-img');
   const btn = card.querySelector('.card-btn');
-  let iframe = null;
-  let playing = false;
+  const originalMarkup = imgWrap.innerHTML;
+  let started = false;
 
-  const postCmd = (func) => {
-    if (iframe && iframe.contentWindow) {
-      iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', func, args: [] }), '*');
-    }
+  const play = () => {
+    if (started) return;
+    started = true;
+    imgWrap.classList.add('playing');
+    imgWrap.innerHTML = \`<iframe src="https://www.youtube-nocookie.com/embed/\${vid}?autoplay=1&rel=0" title="Forgotten Towns episode" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\`;
+    if (btn) btn.textContent = '✕ Close';
+  };
+  const close = () => {
+    started = false;
+    imgWrap.classList.remove('playing');
+    imgWrap.innerHTML = originalMarkup;
+    if (btn) btn.textContent = '▶ Play';
   };
 
-  const toggle = () => {
-    if (!iframe) {
-      imgWrap.classList.add('playing');
-      imgWrap.innerHTML = \`<iframe src="https://www.youtube-nocookie.com/embed/\${vid}?autoplay=1&rel=0&enablejsapi=1" title="Forgotten Towns episode" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\`;
-      iframe = imgWrap.querySelector('iframe');
-      playing = true;
-      if (btn) btn.textContent = '⏸ Pause';
-      return;
-    }
-    if (playing) {
-      postCmd('pauseVideo');
-      playing = false;
-      if (btn) btn.textContent = '▶ Resume';
-    } else {
-      postCmd('playVideo');
-      playing = true;
-      if (btn) btn.textContent = '⏸ Pause';
-    }
-  };
-
-  card.addEventListener('click', toggle);
-  card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  card.addEventListener('click', () => { if (!started) play(); });
+  card.addEventListener('keydown', e => { if (!started && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); play(); } });
+  if (btn) {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      started ? close() : play();
+    });
+  }
 });
 </script>
 </body>
