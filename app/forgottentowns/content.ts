@@ -5,6 +5,8 @@ export const FORGOTTEN_TOWNS_HTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FORGOTTEN TOWNS — The Archive Store</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
 <meta name="description" content="Official merch from The Forgotten Towns — gear for those who remember. Field lanterns, ghost town prints, maps &amp; apparel inspired by America's abandoned places, plus every episode of the channel.">
 <link rel="canonical" href="https://toolstack.tech/forgottentowns">
 <meta name="robots" content="index, follow">
