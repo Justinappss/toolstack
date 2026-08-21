@@ -34,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${base}/forgottentowns`,
+      lastModified: new Date("2026-08-21"),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    },
+    {
       url: `${base}/mindwire`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,

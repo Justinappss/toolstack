@@ -5,6 +5,20 @@ export const FORGOTTEN_TOWNS_HTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FORGOTTEN TOWNS — The Archive Store</title>
+<meta name="description" content="Official merch from The Forgotten Towns — gear for those who remember. Field lanterns, ghost town prints, maps &amp; apparel inspired by America's abandoned places, plus every episode of the channel.">
+<link rel="canonical" href="https://toolstack.tech/forgottentowns">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Forgotten Towns">
+<meta property="og:title" content="FORGOTTEN TOWNS — The Archive Store">
+<meta property="og:description" content="Official merch from The Forgotten Towns — gear for those who remember. Field lanterns, ghost town prints, maps &amp; apparel inspired by America's abandoned places.">
+<meta property="og:url" content="https://toolstack.tech/forgottentowns">
+<meta property="og:image" content="https://m.media-amazon.com/images/I/51-zVMR9qoL._AC_.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FORGOTTEN TOWNS — The Archive Store">
+<meta name="twitter:description" content="Official merch from The Forgotten Towns — gear for those who remember. Field lanterns, ghost town prints, maps &amp; apparel inspired by America's abandoned places.">
+<meta name="twitter:image" content="https://m.media-amazon.com/images/I/51-zVMR9qoL._AC_.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"OnlineStore","name":"Forgotten Towns — The Archive Store","url":"https://toolstack.tech/forgottentowns","description":"Official merch from The Forgotten Towns YouTube channel — gear for those who remember America's abandoned places.","sameAs":["https://www.youtube.com/@TheForgottenTowns"]}</script>
 <style>
 :root {
   --void:   #080508;
@@ -1113,7 +1127,7 @@ footer {
     <div class="grid">
 
       <!-- 001 — AFFILIATE: Vintage LED Hurricane Lantern (Black), amazon.com/dp/B07HR9PNKZ -->
-      <a href="https://amzn.to/3SlEFFw" class="card reveal d1" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B07HR9PNKZ">
+      <a href="https://amzn.to/3SlEFFw" class="card reveal d1" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B07HR9PNKZ">
         <div class="card-img bg-1"><img src="https://m.media-amazon.com/images/I/61p+A4nMthL._AC_SL1000_.jpg" alt="Hurricane Field Lantern" loading="lazy"><span class="card-glyph">🏮</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 001</span>
@@ -1127,7 +1141,7 @@ footer {
       </a>
 
       <!-- 002 — AFFILIATE: Wall Art Impact 34x24 Topographic Map of the US (framed poster), amazon.com/dp/B0DPK7M5LP -->
-      <a href="https://amzn.to/4geMHb6" class="card reveal d2" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B0DPK7M5LP">
+      <a href="https://amzn.to/4geMHb6" class="card reveal d2" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B0DPK7M5LP">
         <div class="card-img bg-2"><img src="https://m.media-amazon.com/images/I/81reZaqKh6L._AC_SL1200_.jpg" alt="Topographic Wall Map" loading="lazy"><span class="card-glyph">🗺️</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 002</span>
@@ -1141,7 +1155,7 @@ footer {
       </a>
 
       <!-- 003 — AFFILIATE: COOFANDY Men's Flannel Plaid Shirt, Dark Grey, amazon.com/dp/B0DDY559QN -->
-      <a href="https://amzn.to/4ghUoxd" class="card reveal d3" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B0DDY559QN">
+      <a href="https://amzn.to/4ghUoxd" class="card reveal d3" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B0DDY559QN">
         <div class="card-img bg-3"><img src="https://m.media-amazon.com/images/I/81jz+CKsUmL._AC_SL1500_.jpg" alt="Dark Plaid Field Shirt" loading="lazy"><span class="card-glyph">🧥</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 003</span>
@@ -1155,7 +1169,7 @@ footer {
       </a>
 
       <!-- 004 — AFFILIATE: Ghost Towns of the American West by Raymond Bial, amazon.com/dp/0618065571 -->
-      <a href="https://amzn.to/4wDOUTL" class="card reveal d1" data-affiliate="live" data-amazon="https://www.amazon.com/dp/0618065571">
+      <a href="https://amzn.to/4wDOUTL" class="card reveal d1" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/0618065571">
         <div class="card-img bg-4"><img src="https://m.media-amazon.com/images/I/51-zVMR9qoL._AC_.jpg" alt="Ghost Towns of the West" loading="lazy"><span class="card-glyph">📕</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 004</span>
@@ -1169,7 +1183,7 @@ footer {
       </a>
 
       <!-- 005 — AFFILIATE: Vintage-Style Brass Compass with Chain and Leather Case, amazon.com/dp/B0DVBYG9SQ -->
-      <a href="https://amzn.to/45vXPLX" class="card reveal d2" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B0DVBYG9SQ">
+      <a href="https://amzn.to/45vXPLX" class="card reveal d2" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B0DVBYG9SQ">
         <div class="card-img bg-5"><img src="https://m.media-amazon.com/images/I/71g1hVjphfL._AC_SL1500_.jpg" alt="Brass Survey Compass" loading="lazy"><span class="card-glyph">🧭</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 005</span>
@@ -1183,7 +1197,7 @@ footer {
       </a>
 
       <!-- 006 — AFFILIATE: Robrasim Leather Journal Cover for Field Notes, amazon.com/dp/B07CGCLFG9 -->
-      <a href="https://amzn.to/4hIkBri" class="card reveal d3" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B07CGCLFG9">
+      <a href="https://amzn.to/4hIkBri" class="card reveal d3" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B07CGCLFG9">
         <div class="card-img bg-6"><img src="https://m.media-amazon.com/images/I/71KrzFrUWHL._AC_SL1200_.jpg" alt="Leather Field Journal" loading="lazy"><span class="card-glyph">📖</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 006</span>
@@ -1197,7 +1211,7 @@ footer {
       </a>
 
       <!-- 007 — AFFILIATE: Ghost Towns: America's Abandoned Sites and Settlements, amazon.com/dp/1639386238 -->
-      <a href="https://amzn.to/3U7D7PZ" class="card reveal d1" data-affiliate="live" data-amazon="https://www.amazon.com/dp/1639386238">
+      <a href="https://amzn.to/3U7D7PZ" class="card reveal d1" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/1639386238">
         <div class="card-img bg-7"><img src="https://m.media-amazon.com/images/I/91yoCDBEGdL._SL1500_.jpg" alt="Abandoned Sites & Settlements" loading="lazy"><span class="card-glyph">📚</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 007</span>
@@ -1211,7 +1225,7 @@ footer {
       </a>
 
       <!-- 008 — AFFILIATE: Abandoned Railroad Ghost Town Bodie California Photo Poster 18x12, amazon.com/dp/B07G18D7W5 -->
-      <a href="https://amzn.to/4wEBYwT" class="card reveal d2" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B07G18D7W5">
+      <a href="https://amzn.to/4wEBYwT" class="card reveal d2" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B07G18D7W5">
         <div class="card-img bg-8"><img src="https://m.media-amazon.com/images/I/71CSLp--z-L._AC_SL1024_.jpg" alt="Bodie, CA — Photo Print" loading="lazy"><span class="card-glyph">🖼️</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 008</span>
@@ -1225,7 +1239,7 @@ footer {
       </a>
 
       <!-- 009 — AFFILIATE: Rustic Western Canvas Art Print, Cowboy Wall Decor, amazon.com/dp/B0F3GC2Z67 -->
-      <a href="https://amzn.to/4g6ST6d" class="card reveal d3" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B0F3GC2Z67">
+      <a href="https://amzn.to/4g6ST6d" class="card reveal d3" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B0F3GC2Z67">
         <div class="card-img bg-9"><img src="https://m.media-amazon.com/images/I/81+yPUqA23L._AC_SL1500_.jpg" alt="Western Ghost Town Canvas" loading="lazy"><span class="card-glyph">🌵</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 009</span>
@@ -1239,7 +1253,7 @@ footer {
       </a>
 
       <!-- 010 — AFFILIATE: Rustic Skeleton Cowboy Western Gothic Skull Ceramic Mug, amazon.com/dp/B0G12DH3GY -->
-      <a href="https://amzn.to/4hDkwFd" class="card reveal d1" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B0G12DH3GY">
+      <a href="https://amzn.to/4hDkwFd" class="card reveal d1" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B0G12DH3GY">
         <div class="card-img bg-10"><img src="https://m.media-amazon.com/images/I/71PhgOUIHNL._AC_SL1500_.jpg" alt="Skeleton Cowboy Mug" loading="lazy"><span class="card-glyph">☕</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 010</span>
@@ -1253,7 +1267,7 @@ footer {
       </a>
 
       <!-- 011 — AFFILIATE: Distressed Vintage Fleece Hoodie, amazon.com/dp/B0H7LWFVMS -->
-      <a href="https://amzn.to/4ihd6HU" class="card reveal d2" data-affiliate="live" data-amazon="https://www.amazon.com/dp/B0H7LWFVMS">
+      <a href="https://amzn.to/4ihd6HU" class="card reveal d2" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B0H7LWFVMS">
         <div class="card-img bg-11"><img src="https://m.media-amazon.com/images/I/71sI-+Gb+iL._AC_SL1500_.jpg" alt="Mineral Wash Expedition Hoodie" loading="lazy"><span class="card-glyph">🧥</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 011</span>
