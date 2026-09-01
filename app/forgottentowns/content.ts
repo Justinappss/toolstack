@@ -949,6 +949,154 @@ footer {
 @media (max-width: 400px) {
   .grid { grid-template-columns: 1fr; }
 }
+
+/* ── Field Guide ────────────────────────────────── */
+#field-guide {
+  background: linear-gradient(180deg, var(--void) 0%, #0e0a07 50%, var(--void) 100%);
+  border-top: 1px solid rgba(212,137,42,0.2);
+  border-bottom: 1px solid rgba(212,137,42,0.2);
+}
+.fg-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: start;
+}
+.fg-cover {
+  position: relative;
+  border: 1px solid rgba(212,137,42,0.3);
+  overflow: hidden;
+}
+.fg-cover img { width: 100%; display: block; filter: sepia(0.1) contrast(1.05); }
+.fg-cover-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: var(--amber);
+  color: var(--void);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  font-weight: 700;
+}
+.fg-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.fg-badge {
+  font-family: var(--mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--amber);
+  border: 1px solid rgba(212,137,42,0.4);
+  padding: 0.3rem 0.65rem;
+}
+.fg-price-line { display: flex; align-items: center; gap: 1rem; margin: 1.5rem 0; }
+.fg-price {
+  font-family: var(--display);
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+.fg-price-note {
+  font-family: var(--mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  color: var(--ghost);
+  line-height: 1.8;
+}
+.fg-buy-btn {
+  display: block;
+  padding: 1.1rem 2rem;
+  background: var(--amber);
+  border: 1px solid var(--gold);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--void);
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.fg-buy-btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(212,137,42,0.35);
+}
+.fg-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  border: 1px solid rgba(212,137,42,0.2);
+  background: rgba(212,137,42,0.12);
+  margin-top: 3rem;
+}
+.fg-feat {
+  background: var(--abyss);
+  padding: 1.4rem 1.2rem;
+  position: relative;
+}
+.fg-feat::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: linear-gradient(to bottom, var(--amber), transparent);
+}
+.fg-feat-icon { font-size: 1.4rem; margin-bottom: 0.6rem; display: block; }
+.fg-feat-title {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bone);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+.fg-feat-desc {
+  font-family: var(--mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.06em;
+  color: var(--ghost);
+  line-height: 1.7;
+}
+.fg-regions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  border: 1px solid rgba(212,137,42,0.2);
+  background: rgba(212,137,42,0.12);
+  margin-top: 1px;
+}
+.fg-region {
+  background: var(--abyss);
+  padding: 1.1rem 1.2rem;
+  border-top: 2px solid var(--amber);
+}
+.fg-region-name {
+  font-family: var(--display);
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bone);
+  margin-bottom: 0.35rem;
+}
+.fg-region-towns {
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+  color: var(--ghost);
+  line-height: 1.8;
+}
+@media (max-width: 900px) {
+  .fg-layout { grid-template-columns: 1fr; }
+  .fg-features { grid-template-columns: repeat(2, 1fr); }
+  .fg-regions { grid-template-columns: repeat(2, 1fr); }
+}
 </style>
 </head>
 <body>
@@ -960,6 +1108,7 @@ footer {
     <li><a href="#shop">Shop</a></li>
     <li><a href="#archive">Archive</a></li>
     <li><a href="#videos">Episodes</a></li>
+    <li><a href="#field-guide">Field Guide</a></li>
     <li><a href="#dispatch">Dispatch</a></li>
     <li><a href="https://www.youtube.com/@TheForgottenTowns" target="_blank" rel="noopener">Channel ↗</a></li>
   </ul>
@@ -1115,6 +1264,105 @@ footer {
     <span class="ticker-item">Cahawba</span><span class="ticker-sep">✦</span>
   </div>
 </div>
+
+<!-- Field Guide -->
+<section id="field-guide">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <span class="eyebrow" style="color:var(--amber)">New Release — Digital Field Guide</span>
+      <h2 class="sec-title">Virginia Ghost Towns</h2>
+      <div class="sec-rule" style="background:var(--amber)"></div>
+      <p class="sec-sub">The official highway companion for Virginia's ghost towns. 12 towns, 4 regions — GPS coordinates, driving directions, and legal access status for every site.</p>
+    </div>
+
+    <div class="fg-layout">
+      <div class="reveal">
+        <div class="fg-badges">
+          <span class="fg-badge">✓ GPS Coordinates</span>
+          <span class="fg-badge">✓ Legal Access Status</span>
+          <span class="fg-badge">✓ Driving Directions</span>
+          <span class="fg-badge">✓ 12 Towns</span>
+          <span class="fg-badge">✓ 4 Regions</span>
+          <span class="fg-badge">✓ Large Print 14pt+</span>
+        </div>
+        <h3 style="font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;letter-spacing:0.05em;text-transform:uppercase;color:var(--bone);line-height:1.1;margin-bottom:1.1rem">The Official Virginia Ghost Towns<br>Field Guide &amp; Highway Companion</h3>
+        <p style="font-size:0.9rem;color:var(--ghost);line-height:1.95;margin-bottom:1rem">Stop wondering if a site is accessible. Stop guessing which roads to take. This guide puts every Virginia ghost town on the page with the exact facts you need before you leave the driveway — GPS coordinates, legal status, what's still standing, and how to get there safely.</p>
+        <p style="font-size:0.9rem;color:var(--ghost);line-height:1.95">Designed in 14pt+ large print for comfortable field reading. Instant PDF — works on any device or print at home.</p>
+        <div class="fg-price-line">
+          <span class="fg-price">$12.99</span>
+          <span class="fg-price-note">Instant PDF download<br>Print at home or read on any device</span>
+        </div>
+        <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" target="_blank" rel="noopener" class="fg-buy-btn">Get the Virginia Field Guide →</a>
+      </div>
+      <div class="reveal d2">
+        <div class="fg-cover">
+          <img src="https://public-files.gumroad.com/z70ib99dzu7pthnjmosih5y7iq8z" alt="The Official Virginia Ghost Towns Field Guide & Highway Companion — cover" loading="lazy">
+          <span class="fg-cover-badge">PDF · $12.99</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="fg-features reveal">
+      <div class="fg-feat">
+        <span class="fg-feat-icon">📍</span>
+        <span class="fg-feat-title">GPS Coordinates</span>
+        <span class="fg-feat-desc">Exact coordinates for every site, ready to drop into your phone's maps app before you leave home.</span>
+      </div>
+      <div class="fg-feat">
+        <span class="fg-feat-icon">⚖️</span>
+        <span class="fg-feat-title">Legal Access Status</span>
+        <span class="fg-feat-desc">Clearly marked for every site: public land, state park, private, or restricted — before you drive out.</span>
+      </div>
+      <div class="fg-feat">
+        <span class="fg-feat-icon">🗺️</span>
+        <span class="fg-feat-title">Driving Directions</span>
+        <span class="fg-feat-desc">Turn-by-turn directions from the nearest town. No dead ends, no guesswork.</span>
+      </div>
+      <div class="fg-feat">
+        <span class="fg-feat-icon">📖</span>
+        <span class="fg-feat-title">Real History</span>
+        <span class="fg-feat-desc">The founding, the peak years, and the exact reason each town was abandoned — sourced from historical records.</span>
+      </div>
+      <div class="fg-feat">
+        <span class="fg-feat-icon">🏚️</span>
+        <span class="fg-feat-title">What's Still Standing</span>
+        <span class="fg-feat-desc">On-the-ground reality for today's visitor. What you'll actually find when you arrive — not what used to be there.</span>
+      </div>
+      <div class="fg-feat">
+        <span class="fg-feat-icon">🔠</span>
+        <span class="fg-feat-title">Large Easy-to-Read Type</span>
+        <span class="fg-feat-desc">14pt+ body text, high contrast, designed for comfortable reading whether you're in the car or out in the field.</span>
+      </div>
+    </div>
+
+    <!-- Regions -->
+    <div class="fg-regions reveal d2">
+      <div class="fg-region">
+        <div class="fg-region-name">Tidewater Coast</div>
+        <div class="fg-region-towns">Wash Woods<br>Jamestown</div>
+      </div>
+      <div class="fg-region">
+        <div class="fg-region-name">The Piedmont</div>
+        <div class="fg-region-towns">Matildaville<br>Buckland<br>Barboursville<br>Elko Tract</div>
+      </div>
+      <div class="fg-region">
+        <div class="fg-region-name">The Blue Ridge</div>
+        <div class="fg-region-towns">Afton Mountain<br>Alberene<br>Carvins Cove</div>
+      </div>
+      <div class="fg-region">
+        <div class="fg-region-name">SW Coal Country</div>
+        <div class="fg-region-towns">Lignite<br>Fairwood<br>Pocahontas</div>
+      </div>
+    </div>
+
+    <!-- Second CTA -->
+    <div class="reveal d3" style="text-align:center;margin-top:2rem;padding:2.5rem;border:1px solid rgba(212,137,42,0.3);background:rgba(212,137,42,0.04)">
+      <p style="font-family:var(--mono);font-size:0.56rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:1.1rem">12 Towns · 4 Regions · Instant PDF Download</p>
+      <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" target="_blank" rel="noopener" class="fg-buy-btn" style="max-width:440px;margin:0 auto">Get the Virginia Field Guide — $12.99 →</a>
+    </div>
+  </div>
+</section>
 
 <!-- Shop -->
 <section id="shop">
@@ -1767,6 +2015,7 @@ footer {
       <div>
         <span class="footer-col-head">Navigate</span>
         <ul class="footer-list">
+          <li><a href="#field-guide">Virginia Field Guide</a></li>
           <li><a href="#shop">Shop the Archive</a></li>
           <li><a href="#archive">About</a></li>
           <li><a href="#videos">All Episodes</a></li>
