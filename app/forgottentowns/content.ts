@@ -536,6 +536,7 @@ section { position: relative; z-index: 1; }
 .bg-9 { background: radial-gradient(ellipse at 60% 60%, #0f0c08, #060504); }
 .bg-10 { background: radial-gradient(ellipse at 35% 45%, #0d0a12, #050408); }
 .bg-11 { background: radial-gradient(ellipse at center, #110b09, #060403); }
+.bg-fg { background: radial-gradient(ellipse at center, #1a1206, #0a0704); }
 
 .video-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
 .video-card { cursor: pointer; }
@@ -1376,6 +1377,20 @@ footer {
 
     <div class="grid">
 
+      <!-- FEATURED — OWN PRODUCT: Virginia Ghost Towns Field Guide, Gumroad -->
+      <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" class="card reveal d1" target="_blank" rel="noopener">
+        <div class="card-img bg-fg"><img src="https://public-files.gumroad.com/z70ib99dzu7pthnjmosih5y7iq8z" alt="Virginia Ghost Towns Field Guide" loading="lazy"><span class="card-glyph">🗺️</span></div>
+        <div class="card-body">
+          <span class="card-no">FIELD GUIDE</span>
+          <h3 class="card-name">Virginia Ghost Towns Field Guide</h3>
+          <p class="card-desc">12 lost towns. Real GPS coordinates. Driving directions. What still stands today — printable, so you can go see it yourself.</p>
+          <div class="card-foot">
+            <span class="card-price">$12.99</span>
+            <button class="card-btn">Claim It</button>
+          </div>
+        </div>
+      </a>
+
       <!-- 001 — AFFILIATE: Vintage LED Hurricane Lantern (Black), amazon.com/dp/B07HR9PNKZ -->
       <a href="https://amzn.to/3SlEFFw" class="card reveal d1" data-affiliate="live" target="_blank" rel="nofollow sponsored noopener" data-amazon="https://www.amazon.com/dp/B07HR9PNKZ">
         <div class="card-img bg-1"><img src="https://m.media-amazon.com/images/I/61p+A4nMthL._AC_SL1000_.jpg" alt="Hurricane Field Lantern" loading="lazy"><span class="card-glyph">🏮</span></div>
@@ -1526,6 +1541,20 @@ footer {
           <div class="card-foot">
             <span class="card-price">$32</span>
             <button class="card-btn">Claim It</button>
+          </div>
+        </div>
+      </a>
+
+      <!-- 012 — DIGITAL: The Official Virginia Ghost Towns Field Guide & Highway Companion, justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide -->
+      <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" class="card reveal d3" target="_blank" rel="noopener">
+        <div class="card-img bg-3"><img src="https://public-files.gumroad.com/z70ib99dzu7pthnjmosih5y7iq8z" alt="Virginia Ghost Towns Field Guide" loading="lazy"><span class="card-glyph">📍</span></div>
+        <div class="card-body">
+          <span class="card-no">FILE NO. 012</span>
+          <h3 class="card-name">Virginia Field Guide</h3>
+          <p class="card-desc">12 Virginia ghost towns. GPS coordinates, driving directions, legal access, and what's still standing — all in one PDF.</p>
+          <div class="card-foot">
+            <span class="card-price">$12.99</span>
+            <button class="card-btn">Get PDF</button>
           </div>
         </div>
       </a>
