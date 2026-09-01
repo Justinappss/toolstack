@@ -1293,7 +1293,7 @@ footer {
           <span class="fg-price">$12.99</span>
           <span class="fg-price-note">Instant PDF download<br>Print at home or read on any device</span>
         </div>
-        <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" target="_blank" rel="noopener" class="fg-buy-btn">Get the Virginia Field Guide →</a>
+        <a href="https://forgottentowns.gumroad.com/l/virginia-ghost-towns-field-guide" target="_blank" rel="noopener" class="fg-buy-btn">Get the Virginia Field Guide →</a>
       </div>
       <div class="reveal d2">
         <div class="fg-cover">
@@ -1360,7 +1360,7 @@ footer {
     <!-- Second CTA -->
     <div class="reveal d3" style="text-align:center;margin-top:2rem;padding:2.5rem;border:1px solid rgba(212,137,42,0.3);background:rgba(212,137,42,0.04)">
       <p style="font-family:var(--mono);font-size:0.56rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:1.1rem">12 Towns · 4 Regions · Instant PDF Download</p>
-      <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" target="_blank" rel="noopener" class="fg-buy-btn" style="max-width:440px;margin:0 auto">Get the Virginia Field Guide — $12.99 →</a>
+      <a href="https://forgottentowns.gumroad.com/l/virginia-ghost-towns-field-guide" target="_blank" rel="noopener" class="fg-buy-btn" style="max-width:440px;margin:0 auto">Get the Virginia Field Guide — $12.99 →</a>
     </div>
   </div>
 </section>
@@ -1378,7 +1378,7 @@ footer {
     <div class="grid">
 
       <!-- FEATURED — OWN PRODUCT: Virginia Ghost Towns Field Guide, Gumroad -->
-      <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" class="card reveal d1" target="_blank" rel="noopener">
+      <a href="https://forgottentowns.gumroad.com/l/virginia-ghost-towns-field-guide" class="card reveal d1" target="_blank" rel="noopener">
         <div class="card-img bg-fg"><img src="https://public-files.gumroad.com/z70ib99dzu7pthnjmosih5y7iq8z" alt="Virginia Ghost Towns Field Guide" loading="lazy"><span class="card-glyph">🗺️</span></div>
         <div class="card-body">
           <span class="card-no">FIELD GUIDE</span>
@@ -1545,8 +1545,8 @@ footer {
         </div>
       </a>
 
-      <!-- 012 — DIGITAL: The Official Virginia Ghost Towns Field Guide & Highway Companion, justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide -->
-      <a href="https://justinpirrie.gumroad.com/l/virginia-ghost-towns-field-guide" class="card reveal d3" target="_blank" rel="noopener">
+      <!-- 012 — DIGITAL: The Official Virginia Ghost Towns Field Guide & Highway Companion, forgottentowns.gumroad.com/l/virginia-ghost-towns-field-guide -->
+      <a href="https://forgottentowns.gumroad.com/l/virginia-ghost-towns-field-guide" class="card reveal d3" target="_blank" rel="noopener">
         <div class="card-img bg-3"><img src="https://public-files.gumroad.com/z70ib99dzu7pthnjmosih5y7iq8z" alt="Virginia Ghost Towns Field Guide" loading="lazy"><span class="card-glyph">📍</span></div>
         <div class="card-body">
           <span class="card-no">FILE NO. 012</span>
