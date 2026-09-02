@@ -537,6 +537,7 @@ section { position: relative; z-index: 1; }
 .bg-10 { background: radial-gradient(ellipse at 35% 45%, #0d0a12, #050408); }
 .bg-11 { background: radial-gradient(ellipse at center, #110b09, #060403); }
 .bg-fg { background: radial-gradient(ellipse at center, #1a1206, #0a0704); }
+.bg-mlj { background: radial-gradient(ellipse at center, #120a14, #06040a); }
 
 .video-grid { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
 .video-card { cursor: pointer; }
@@ -1110,6 +1111,7 @@ footer {
     <li><a href="#archive">Archive</a></li>
     <li><a href="#videos">Episodes</a></li>
     <li><a href="#field-guide">Field Guide</a></li>
+    <li><a href="#memory-lane">Memory Lane</a></li>
     <li><a href="#dispatch">Dispatch</a></li>
     <li><a href="https://www.youtube.com/@TheForgottenTowns" target="_blank" rel="noopener">Channel ↗</a></li>
   </ul>
@@ -1365,6 +1367,49 @@ footer {
   </div>
 </section>
 
+<!-- Memory Lane Journal -->
+<section id="memory-lane">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <span class="eyebrow" style="color:var(--amber)">New Release — Guided Memoir Journal</span>
+      <h2 class="sec-title">The Memory Lane Journal</h2>
+      <div class="sec-rule" style="background:var(--amber)"></div>
+      <p class="sec-sub">A guided keepsake journal for remembering the towns, neighborhoods, and people that built the person you are today. 6 chapters of prompts, built on reminiscence therapy.</p>
+    </div>
+
+    <div class="fg-layout">
+      <div class="reveal">
+        <div class="fg-badges">
+          <span class="fg-badge">✓ 6 Guided Chapters</span>
+          <span class="fg-badge">✓ Reminiscence Therapy</span>
+          <span class="fg-badge">✓ Keepsake Format</span>
+          <span class="fg-badge">✓ Instant PDF</span>
+        </div>
+        <h3 style="font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;letter-spacing:0.05em;text-transform:uppercase;color:var(--bone);line-height:1.1;margin-bottom:1.1rem">A Guided Journal for Walking<br>Your Own Forgotten Places</h3>
+        <p style="font-size:0.9rem;color:var(--ghost);line-height:1.95;margin-bottom:1rem">There's a quiet kind of medicine in looking back. Reminiscence therapy shows that recalling and retelling our own history strengthens the neural pathways that keep a mind sharp and ease anxiety. This journal borrows the same pull that draws us to a crumbling foundation or a rusted-out rail line — the past isn't gone, it's just waiting to be walked again.</p>
+        <p style="font-size:0.9rem;color:var(--ghost);line-height:1.95">Six chapters of prompts guide you through the towns, homes, and people that shaped your story. Instant PDF — print at home or fill it in on any device.</p>
+        <div class="fg-price-line">
+          <span class="fg-price">$9.99</span>
+          <span class="fg-price-note">Instant PDF download<br>Print at home or fill in on any device</span>
+        </div>
+        <a href="https://forgottentowns.gumroad.com/l/MemoryLaneJournal" target="_blank" rel="noopener" class="fg-buy-btn">Get the Memory Lane Journal →</a>
+      </div>
+      <div class="reveal d2">
+        <div class="fg-cover">
+          <img src="https://public-files.gumroad.com/r69ajibjjfuhtl0xwqc01aoe6alz" alt="The Memory Lane Journal — cover" loading="lazy">
+          <span class="fg-cover-badge">PDF · $9.99</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second CTA -->
+    <div class="reveal d3" style="text-align:center;margin-top:2rem;padding:2.5rem;border:1px solid rgba(212,137,42,0.3);background:rgba(212,137,42,0.04)">
+      <p style="font-family:var(--mono);font-size:0.56rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:1.1rem">6 Chapters · Guided Prompts · Instant PDF Download</p>
+      <a href="https://forgottentowns.gumroad.com/l/MemoryLaneJournal" target="_blank" rel="noopener" class="fg-buy-btn" style="max-width:440px;margin:0 auto">Get the Memory Lane Journal — $9.99 →</a>
+    </div>
+  </div>
+</section>
+
 <!-- Shop -->
 <section id="shop">
   <div class="wrap">
@@ -1386,6 +1431,20 @@ footer {
           <p class="card-desc">12 lost towns. Real GPS coordinates. Driving directions. What still stands today — printable, so you can go see it yourself.</p>
           <div class="card-foot">
             <span class="card-price">$12.99</span>
+            <button class="card-btn">Claim It</button>
+          </div>
+        </div>
+      </a>
+
+      <!-- FEATURED — OWN PRODUCT: The Memory Lane Journal, Gumroad -->
+      <a href="https://forgottentowns.gumroad.com/l/MemoryLaneJournal" class="card reveal d1" target="_blank" rel="noopener">
+        <div class="card-img bg-mlj"><img src="https://public-files.gumroad.com/r69ajibjjfuhtl0xwqc01aoe6alz" alt="The Memory Lane Journal" loading="lazy"><span class="card-glyph">📓</span></div>
+        <div class="card-body">
+          <span class="card-no">MEMOIR JOURNAL</span>
+          <h3 class="card-name">The Memory Lane Journal</h3>
+          <p class="card-desc">6 chapters of guided prompts for remembering the towns and people that built the person you are today. Reminiscence therapy, printable.</p>
+          <div class="card-foot">
+            <span class="card-price">$9.99</span>
             <button class="card-btn">Claim It</button>
           </div>
         </div>
@@ -1554,6 +1613,20 @@ footer {
           <p class="card-desc">12 Virginia ghost towns. GPS coordinates, driving directions, legal access, and what's still standing — all in one PDF.</p>
           <div class="card-foot">
             <span class="card-price">$12.99</span>
+            <button class="card-btn">Get PDF</button>
+          </div>
+        </div>
+      </a>
+
+      <!-- 013 — DIGITAL: The Memory Lane Journal, forgottentowns.gumroad.com/l/MemoryLaneJournal -->
+      <a href="https://forgottentowns.gumroad.com/l/MemoryLaneJournal" class="card reveal d3" target="_blank" rel="noopener">
+        <div class="card-img bg-mlj"><img src="https://public-files.gumroad.com/r69ajibjjfuhtl0xwqc01aoe6alz" alt="The Memory Lane Journal" loading="lazy"><span class="card-glyph">📓</span></div>
+        <div class="card-body">
+          <span class="card-no">FILE NO. 013</span>
+          <h3 class="card-name">Memory Lane Journal</h3>
+          <p class="card-desc">A guided memoir journal — 6 chapters of prompts for remembering the places and people that shaped your story.</p>
+          <div class="card-foot">
+            <span class="card-price">$9.99</span>
             <button class="card-btn">Get PDF</button>
           </div>
         </div>
@@ -2045,6 +2118,7 @@ footer {
         <span class="footer-col-head">Navigate</span>
         <ul class="footer-list">
           <li><a href="#field-guide">Virginia Field Guide</a></li>
+          <li><a href="#memory-lane">Memory Lane Journal</a></li>
           <li><a href="#shop">Shop the Archive</a></li>
           <li><a href="#archive">About</a></li>
           <li><a href="#videos">All Episodes</a></li>
