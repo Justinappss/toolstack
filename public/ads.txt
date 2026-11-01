@@ -1,1 +1,12 @@
-google.com, pub-2395093382559560, DIRECT, f08c47fec0942fa0
+#Ads.txt toolstack.tech
+#Ads.txt managed by AdsTxtManager.com - the free ads.txt management tool for publishers
+ownerdomain=toolstack.tech
+contact=directsales@ezoic.com
+managerdomain=ezoic.ai
+
+ezoic.ai, 8aa3527d41ed13158f2cf9803f5a35a4, DIRECT
+# 35
+google.com, pub-6644558441501035, DIRECT, f08c47fec0942fa0
+google.com, pub-1175987143200523, RESELLER, f08c47fec0942fa0
+google.com, pub-4152552776930088, DIRECT, f08c47fec0942fa0
+media.net, 8CAAT6RE8, DIRECT
