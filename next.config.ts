@@ -36,6 +36,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/ads.txt",
+        destination: "https://srv.adstxtmanager.com/85304/toolstack.tech",
+        permanent: false,
+      },
+      {
         source: "/tools/category",
         destination: "/tools",
         permanent: true,
