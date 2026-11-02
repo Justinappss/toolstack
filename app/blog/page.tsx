@@ -16,6 +16,17 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        slug: "lost-youtube-monetization-adsense-invalid-traffic",
+        title: "I Lost YouTube Monetization After Watching My Own Video",
+        description: "My 28,864-subscriber YouTube channel lost monetization overnight: AdSense disabled for invalid traffic, appeal rejected. Here is the timeline, the numbers, Google's emails and what I'm doing next.",
+        date: "November 2, 2026",
+        readTime: "8 min read",
+        tag: "YouTube",
+        accent: "#f87171",
+        accentBg: "rgba(239,68,68,0.08)",
+        accentBorder: "rgba(239,68,68,0.2)",
+    },
+    {
         slug: "mortgage-calculator-guide",
         title: "How a Mortgage Calculator Works (+ How Much House You Can Afford)",
         description: "How a mortgage calculator works — the monthly payment formula, a worked example, the 28/36 affordability rule, and how term and extra payments change the total cost.",
