@@ -179,7 +179,7 @@ export default function LostYouTubeMonetizationPage() {
           I honestly don&rsquo;t know whether I clicked an ad. It was late and I wasn&rsquo;t paying attention to that. What I do know is that the next morning the account was disabled. That is a correlation, and I&rsquo;m treating it as my main suspect rather than a verdict. Google has not told me otherwise, or told me anything at all.
         </p>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, margin: "32px 0", borderRadius: 12, overflow: "hidden" }}>
-          <iframe src="https://www.youtube.com/embed/jMcmN1K983I" title="12 Ghost Towns in Virginia They Don't Want You to Find" loading="lazy" allowFullScreen style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }} />
+          <iframe src="https://www.youtube-nocookie.com/embed/jMcmN1K983I" title="12 Ghost Towns in Virginia They Don't Want You to Find" loading="lazy" allowFullScreen style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }} />
         </div>
         <p style={pStyle}>
           One thing complicates the neat story: that Virginia video had earned about $0.12 on 57,000 views when I checked. So if my own viewing triggered something, it was probably a flag on the account rather than on that video&rsquo;s revenue.
